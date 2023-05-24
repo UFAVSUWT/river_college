@@ -1,0 +1,28 @@
+@import "../../../../../style/variables";
+.cardEight{
+    grid-area: cardEight;
+}
+.newscard__background-eight{
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.newscard__frontend-eight {
+    position: absolute;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding: 3rem 2rem;
+    width: 250px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: $BACK_NEWSCARD;
+    color: $WHITE_FONT_COLOR;
+    top: -12%;
+    right: -7%;
+}
+.newscard__date-bage-eight{
+   position: absolute;
+   top: 23%;
+   left: -112%;
+}

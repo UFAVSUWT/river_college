@@ -1,0 +1,27 @@
+@import "../../../../../style/variables";
+.cardFive{
+    grid-area: cardFive;
+}
+.newscard__background-five{
+height: 100%;
+width: 100%;
+    position: relative;
+}
+.newscard__frontend-five {
+    position: absolute;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding: 3rem 2rem;
+    width: 250px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: $BACK_NEWSCARD;
+    color: $WHITE_FONT_COLOR;
+    top: 65%;
+    right: -10%;
+}
+.newscard__date-bage-five{
+   position: absolute;
+   top: -125%;
+   left: -168%;
+}

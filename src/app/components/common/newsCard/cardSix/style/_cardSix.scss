@@ -1,0 +1,29 @@
+@import "../../../../../style/variables";
+.cardSix{
+    grid-area: cardSix;
+}
+
+.newscard__background-six{
+  
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.newscard__frontend-six {
+    position: absolute;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding: 3rem 2rem;
+    width: 250px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: $BACK_NEWSCARD;
+    color: $WHITE_FONT_COLOR;
+    top: 60%;
+    right: -10%;
+}
+.newscard__date-bage-six{
+   position: absolute;
+   top: -75%;
+   left: -167%;
+}

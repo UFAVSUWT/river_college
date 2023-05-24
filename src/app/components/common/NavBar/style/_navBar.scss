@@ -1,0 +1,199 @@
+@import "../../../../style/variables";
+@import "../../../../style/mixins/response-mixins.scss";
+
+.header {
+    background-color: $MAIN_COLOR;  
+    justify-content: space-between;
+    width: 100%;
+    color: $FONT_COLOR;
+    @include desktop{
+      display: none;
+    }
+    a {
+      color: inherit;
+       }
+  }
+.header-white{
+    width: 100%;
+    justify-content: space-between;
+    background-color: $BACK_WHITE;
+    color: $DISABLED_FONT_COLOR;
+    @include desktop {
+      display: none;
+    }
+    a {
+      color: inherit;
+       }
+
+  }
+.header-black{
+    width: 100%;
+    justify-content: space-between;
+    background-color: $BACK_BLACK;
+    color: $WHITE_FONT_COLOR;
+    @include desktop {
+      display: none;
+    }
+    a {
+      color: inherit;
+       }
+  }
+.header-contrast{
+    width: 100%;
+    justify-content: space-between;
+    background-color: $BACK_CONTRAST;
+    color: $FONT_CONTRAST;
+    @include desktop {
+      display: none;
+    }
+    a {
+      color: inherit;
+       }
+  }
+
+
+.header__section1 {
+  border-bottom: solid 2px $MAIN_COLOR;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.header__item.headerName {
+    width: 40%;
+  }
+.header__section2 {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+.signBoard__logo{
+    min-width: 380px;
+    padding: 0px 140px;
+  }
+.signBoard__tagline{
+    padding: 0px 20px;
+    font-weight: 600;
+ 
+  }
+.header__section3 {
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+      
+  }	
+.header__section3-btn-margin {
+    margin: 0px  0px 0px 5px;
+  }
+.header__section3-link {
+    display: flex;
+  }
+.header__section3-btn {
+    display: flex;    
+  }
+hr.redline {
+    background-color: $RED_COLOR;
+    height: 1px;
+    margin: 4px 0px;
+    padding: 0px;
+}
+.icon {
+  margin-right: 3px;
+   }
+  
+  /* ---------------------------------Кнопка входа в личный кабинет---------------------------------------------- */
+ 
+
+.btn__office-text{
+  vertical-align: middle;
+  font-size: 0.625rem;
+  
+}
+.btn__office {
+  background-color:$RED_COLOR;
+  color: $FONT_COLOR;
+}
+.btn__office-white {
+  background-color:$BACK_WHITE;
+  color: $DISABLED_FONT_COLOR;
+  border: solid 1px $DISABLED_FONT_COLOR;
+}
+.btn__office-black {
+  background-color:$BACK_BLACK;
+  color: $WHITE_FONT_COLOR;
+  border: solid 1px $WHITE_FONT_COLOR;
+}
+.btn__office-contrast {
+  background-color:$BACK_CONTRAST;
+  color: $FONT_CONTRAST;
+  border: solid 1px $FONT_CONTRAST;
+}
+.btn__office:hover {
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.9);
+  font-weight: 500;
+}
+/* -------------Календарь */
+.btn__timetable {
+  background-color: $BACK_TIMETABLE_COLOR;
+  color: $TIMETABLE_COLOR;
+}
+.btn__timetable-white {
+  background-color: $BACK_WHITE;
+  color: $DISABLED_FONT_COLOR;
+  border: solid 1px $DISABLED_FONT_COLOR;
+}
+.btn__timetable-black {
+  background-color: $BACK_BLACK;
+  color: $WHITE_FONT_COLOR;
+  border: solid 1px $WHITE_FONT_COLOR;
+}
+.btn__timetable-contrast {
+  background-color: $BACK_CONTRAST;
+  color: $FONT_CONTRAST;
+  border: solid 1px $FONT_CONTRAST;
+}
+.btn__timetable.icon:hover {
+  color: #ffffff;
+}
+
+.btn__timetable:hover {
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,0.9);
+  font-weight: 500;
+}
+
+  .header__office {
+    position: relative;   
+    }
+ 
+  .text__underlined {
+    border-bottom: solid 1px;
+    margin-top: 2px;
+  }
+  .header__link {
+    margin: 10px;
+    &-pointer{
+      cursor: pointer;
+    }
+  }
+  
+  
+/* -------------------menuNavbar-------------------------------------- */
+  
+.header__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header__item {
+
+    text-align: center;
+
+}
+.headerButton{
+    max-width: 110px;
+    margin: 0.5em;
+}
+
+  
+  

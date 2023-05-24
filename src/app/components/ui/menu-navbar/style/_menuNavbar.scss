@@ -1,0 +1,69 @@
+@import "../../../../style/variables";
+.ant-menu-submenu-title{
+    border-bottom: solid 2px $MAIN_COLOR !important;
+    padding: 5px;
+    border-radius: 2px;
+}
+.ant-menu-submenu-title:hover{
+    background-color: $BACK_MENU_COLOR !important;
+    border-bottom: solid 2px $RED_COLOR !important;
+    padding: 5px;
+    border-radius: 2px;
+}
+.ant-menu-submenu-open::after{
+    border-bottom-color: $RED_COLOR !important;
+}
+.ant-menu-submenu-open::after{
+    border-radius: 2px !important;
+}
+.ant-menu-submenu-active{
+    border-bottom-color: $RED_COLOR !important;
+}
+.ant-menu-submenu-title{
+    padding: 5px;
+    border-radius: 2px !important;
+
+}
+.ant-menu-submenu-title:active{
+    background-color: $BACK_MENU_COLOR !important;
+
+}
+.ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected{
+    color: $RED_COLOR;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after{
+    border-bottom-color: $RED_COLOR ; 
+
+}
+.ant-space .css-dev-only-do-not-override-9ntgx0 .ant-space-horizontal .ant-space-align-center{
+    margin: 0 auto !important;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light .ant-menu-item-selected {
+    color: $MAIN_COLOR;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-item:hover::after, :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu:hover::after, :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-item-active::after, :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-active::after, :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-item-open::after, :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-open::after {
+    border-bottom-color: $RED_COLOR ; 
+}
+ :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-active::after{
+    border-bottom-color: $RED_COLOR;
+    border-width: 3px;
+ }
+ :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light .ant-menu-submenu-selected >.ant-menu-submenu-title{
+    color: $RED_COLOR;
+   
+ }
+ :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected::after{
+    border-bottom-color: $RED_COLOR !important;
+    border-width: 3px;
+ }
+.ant-menu-item ant-menu-item-selected ant-menu-item-only-child{
+    align-items: center !important;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-item-selected{
+    background-color: $BACK_MENU_COLOR;
+}
+:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-submenu-popup .ant-menu-vertical.ant-menu-sub:not([class*='-active']) {
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }

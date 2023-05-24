@@ -1,0 +1,92 @@
+@import "~bootstrap-icons/font/bootstrap-icons.scss";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "./mixins/response-mixins.scss";
+@import "./components/index.scss";
+@import "./variables";
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 1.25rem;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+ input::-ms-clear{display: none;} 
+ button{cursor: pointer;} 
+button::-moz-focus-inner {padding:0;border:0;} 
+a, a:visited{text-decoration: none;} 
+ a:hover{text-decoration: none;} 
+ul li{list-style: none;}
+
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+._container {/*технический класс, содержит общие стили*/
+    max-width: 1270px; 
+    margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
+    box-sizing: content-box;
+    padding: 0 15px;
+}
+._container-main{
+	max-width: 1270px;
+	background-color: $BLUE;
+    margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
+    box-sizing: content-box;
+    padding: 0 15px;
+}
+._container-white {
+	max-width: 1270px;
+	background-color: $BACK_WHITE;
+	color: $DISABLED_FONT_COLOR;
+    margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
+    box-sizing: content-box;
+    padding: 0 15px;
+}
+._container-black {
+	max-width: 1270px;
+	background-color: $BACK_BLACK;
+	color: $WHITE_FONT_COLOR;
+    margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
+    box-sizing: content-box;
+    padding: 0 15px;
+}
+._container-contrast {
+	max-width: 1270px; 
+	background-color: $BACK_CONTRAST;
+	color: $FONT_CONTRAST;
+    margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
+    box-sizing: content-box;
+    padding: 0 15px;
+
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.min-height{
+	min-height: 600px;
+	background-color: $BLUE;
+}
+li{
+	ul, ol{
+		padding-top: 5px;
+	}
+}
