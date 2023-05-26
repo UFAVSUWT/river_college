@@ -5,7 +5,7 @@ const Home = () => {
   const linksArray = [
     { title: "Главная", path: "/" },
     { title: "О филиале", path: "/home/aboutBranch" },
-    { title: "Историяеская справка", path: "/home/historicalReference" },
+    { title: "Историческая справка", path: "/home/historicalReference" },
     { title: "Новости", path: "/home/univercityNews" },
     { title: "План мероприятий", path: "/home/univercityEvents" },
   ];

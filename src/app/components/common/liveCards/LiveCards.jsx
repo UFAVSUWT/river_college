@@ -6,7 +6,7 @@ const LiveCards = () => {
   return (
     <div className="liveCards">
       <LiveCard
-        title={"Студеньческая жизнь"}
+        title={"Студенческая жизнь"}
         className={"liveCardOne"}
         children={
           <NavLink to="live/studentsLive">

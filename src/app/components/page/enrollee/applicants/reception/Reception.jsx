@@ -6,7 +6,6 @@ import {
 } from "../../../../../utils/disabled";
 import Rule from "../../../../../assets/pdf/applicant/pravila_priema_2023.pdf";
 import PrikazRule from "../../../../../assets/pdf/applicant/prikaz_pravila_priema_2023.pdf";
-import KCP from "../../../../../assets/pdf/applicant/КЦПСПО23-24.pdf";
 import InfoMedOsmotr from "../../../../../assets/pdf/applicant/infoMedOsmotr.pdf";
 import PerechenSpec from "../../../../../assets/pdf/applicant/priem2023_special_SPO.pdf";
 import Dogovor from "../../../../../assets/pdf/applicant/Dogovor_platn_obraz_uslug_2021.pdf";
@@ -95,6 +94,20 @@ const Reception = observer(() => {
               Свяжи свою <br /> жизнь с морем!
             </div>
           </div>
+        </div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2109.826323963219!2d55.88651099532258!3d54.78380368264479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1684927322761!5m2!1sru!2sru"
+            style={{
+              width: "100%",
+              height: "400px",
+              style: "border:0;",
+              allowfullscreen: "",
+              loading: "lazy",
+              referrerpolicy: "no-referrer-when-downgrade",
+            }}
+            title="myMap"
+          ></iframe>
         </div>
       </section>
       <ol>

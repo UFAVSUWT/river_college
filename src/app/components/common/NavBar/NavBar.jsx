@@ -99,46 +99,46 @@ const NavBar = observer(() => {
               {/*  <Search /> */}
               {/*   <!-- расписание --> */}
               <div className="header__section3-btn-margin header__timetable">
-                {/*   <NavLink to="schedule"> */}
-                <Button
-                  className={`button ${toggleClassName(
-                    "btn__timetable",
-                    "btn__timetable-white",
-                    "btn__timetable-black",
-                    "btn__timetable-contrast"
-                  )}`}
-                >
-                  {
-                    <span className="icon">
-                      <object>
-                        <CalendarLogo
-                          fill={toggleIconColor("#C80000")}
-                          width={toggleIconWidthSize(
-                            "18px",
-                            "22px",
-                            "25px",
-                            "28px"
-                          )}
-                          height={toggleIconHeightSize(
-                            "18px",
-                            "22px",
-                            "25px",
-                            "28px"
-                          )}
-                        />
-                      </object>
-                    </span>
-                  }
-                  {
-                    <span
-                      style={{ fontSize: toggleFontSize(0.6) }}
-                      className="btn__office-text"
-                    >
-                      Расписание
-                    </span>
-                  }
-                </Button>
-                {/*   </NavLink> */}
+                <NavLink to="schedule">
+                  <Button
+                    className={`button ${toggleClassName(
+                      "btn__timetable",
+                      "btn__timetable-white",
+                      "btn__timetable-black",
+                      "btn__timetable-contrast"
+                    )}`}
+                  >
+                    {
+                      <span className="icon">
+                        <object>
+                          <CalendarLogo
+                            fill={toggleIconColor("#C80000")}
+                            width={toggleIconWidthSize(
+                              "18px",
+                              "22px",
+                              "25px",
+                              "28px"
+                            )}
+                            height={toggleIconHeightSize(
+                              "18px",
+                              "22px",
+                              "25px",
+                              "28px"
+                            )}
+                          />
+                        </object>
+                      </span>
+                    }
+                    {
+                      <span
+                        style={{ fontSize: toggleFontSize(0.6) }}
+                        className="btn__office-text"
+                      >
+                        Расписание
+                      </span>
+                    }
+                  </Button>
+                </NavLink>
               </div>
               {/*  <!-- кнопка входа в личный кабинет --> */}
               <div className="header__section3-btn-margin header__office">

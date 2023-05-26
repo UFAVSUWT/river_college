@@ -4,12 +4,23 @@ import Header from "./header/Header";
 import Monitor from "./monitor/Monitor";
 import CalendarGrid from "./calendarGrid/CalendarGrid";
 import ScheduleInfo from "../../../mockData/Расписание_14.json";
+import axios from "axios";
 const Calendar = ({ selectedDay, handlSelectDay }) => {
-  const groups = ScheduleInfo.faculties.map((e) => e.groups);
+  axios
+    .get("https://cloud.mail.ru/public/teph/1vGVRnswq") // Возвращение обещаний используя get-запрос
+    .then((response) => {
+      // Получение данных и их обработка
+      console.log(response.data);
+    })
+    .catch((error) => {
+      // Если запрос не будет выполнен, то ошибка выводится в терминал
+      console.error(error);
+    });
+  /* const groups = ScheduleInfo.faculties.map((e) => e.groups);
   const firstCourse = ScheduleInfo.faculties.map((e) =>
     e.groups.filter((e) => e.course === 1)
   );
-  const firstcourse = groups.filter((e) => e.course === 1);
+  const firstcourse = groups.filter((e) => e.course === 1); */
 
   window.moment = moment;
   moment.updateLocale("ru", { week: { dow: 1 } });
