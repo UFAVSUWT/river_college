@@ -69,7 +69,7 @@ const LiveCards = () => {
         title={"Абитуриенту"}
         className={"liveCardFive"}
         children={
-          <NavLink to="enrollee/applicants">
+          <NavLink to="enrollee/reception">
             <Image
               src="img/liveImg/prepod.png"
               alt="Фото уплыло:("
