@@ -63,8 +63,8 @@ import ZaklSanitar1 from "../../../../assets/pdf/documentPage/zakl_sanitar_1.pdf
 import ZaklSanitar2 from "../../../../assets/pdf/documentPage/zakl_sanitar_2.pdf";
 import ZaklSanitar3 from "../../../../assets/pdf/documentPage/zakl_sanitar_3.pdf";
 import ZaklSanitar5 from "../../../../assets/pdf/documentPage/zakl_sanitar_5.pdf";
-import DoDop from "../../../../assets/pdf/documentPage/DO_dop.pdf";
-import PolozPd from "../../../../assets/pdf/documentPage/Pologenie_PD.pdf";
+/* import DoDop from "../../../../assets/pdf/documentPage/DO_dop.pdf";
+import PolozPd from "../../../../assets/pdf/documentPage/Pologenie_PD.pdf"; */
 import DropDown from "../../../common/dropDown/DropDown";
 
 import vipiska_iz_reestra11042023 from "../../../../assets/pdf/documentPage/vipiska_iz_reestra11.04.2023.pdf";
@@ -110,7 +110,7 @@ const Document = observer(() => {
           "btn-show-black-active",
           "btn-show-contrast-active"
         )}`}
-        title={"Документы"}
+        title={"Уставные документы"}
       >
         <ul>
           <li itemProp="ustavDocLink" className="doc__item">
@@ -185,7 +185,7 @@ const Document = observer(() => {
           "btn-show-black-active",
           "btn-show-contrast-active"
         )}`}
-        title={"Аккредитация"}
+        title={"Свидетельство об аккредитации и лицензиях"}
       >
         <ul>
           <li className="doc__item">
@@ -312,7 +312,6 @@ const Document = observer(() => {
           </li>
         </ul>
       </DropDown>
-
       <DropDown
         className={`${toggleClassName(
           "btn-show",
@@ -326,7 +325,7 @@ const Document = observer(() => {
           "btn-show-black-active",
           "btn-show-contrast-active"
         )}`}
-        title={"План финансово-хозяйственной деятельности, расписание"}
+        title={"План ФХД"}
       >
         <ul>
           <li className="doc__item">
@@ -373,7 +372,7 @@ const Document = observer(() => {
           "btn-show-black-active",
           "btn-show-contrast-active"
         )}`}
-        title={"Контроля успеваемости и промежуточная аттестация"}
+        title={"Локальные акты, регламентирующие образовательную деятельность"}
       >
         <h3
           className={`common__container-title ${toggleClassName(
@@ -410,7 +409,6 @@ const Document = observer(() => {
           </li>
         </ul>
       </DropDown>
-
       <DropDown
         className={`${toggleClassName(
           "btn-show",
@@ -460,7 +458,7 @@ const Document = observer(() => {
           "btn-show-black-active",
           "btn-show-contrast-active"
         )}`}
-        title={"Правила, договоры"}
+        title={"Локальные акты, регламентирующие трудовую деятельность"}
       >
         <ul>
           <li itemProp="vozDocLink" className="doc__item">
@@ -523,7 +521,7 @@ const Document = observer(() => {
           "btn-show-black-active",
           "btn-show-contrast-active"
         )}`}
-        title={"Отчеты"}
+        title={"Отчеты о самообследовании"}
       >
         <ul>
           <li itemProp="reportEduDocLink" className="doc__item">
@@ -703,7 +701,7 @@ const Document = observer(() => {
           "btn-show-black-active",
           "btn-show-contrast-active"
         )}`}
-        title={"Письма и заключения"}
+        title={"Заключения санэпиднадзора и противопожарной службы"}
       >
         <ul>
           <li className="doc__item">
@@ -785,7 +783,7 @@ const Document = observer(() => {
           </li>
         </ul>
       </DropDown>
-      <DropDown
+      {/* <DropDown
         className={`${toggleClassName(
           "btn-show",
           "btn-show-white",
@@ -827,7 +825,7 @@ const Document = observer(() => {
             </a>
           </li>
         </ul>
-      </DropDown>
+      </DropDown> */}
     </div>
   );
 });

@@ -2,6 +2,12 @@ import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
 import TableWrapper from "../../../common/tableWrapper/TableWrapper";
+import protocol from "../../../../assets/pdf/grants/protocol.pdf";
+import poloj_stepend_obesp from "../../../../assets/pdf/grants/poloj_stepend_obesp.pdf";
+import postanovlenie_1390_17122016 from "../../../../assets/pdf/grants/postanovlenie_1390_17.12.2016.pdf";
+import prikaz_527_230922_o_naznach_komis from "../../../../assets/pdf/grants/prikaz_№527_230922_o_naznach_komis.pdf";
+
+import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
 const Grants = observer(() => {
   return (
     <div
@@ -45,26 +51,34 @@ const Grants = observer(() => {
       </h3>
       <ul>
         <li className="doc__item">
+          <PDF height={"25px"} width={"25px"} />
           <a
             itemProp="localAct"
-            href={"Ustav"}
+            href={protocol}
             target={"_blank"}
             rel="noreferrer"
           >
-            Протокол заседания стипендиальной комиссии № 1 от 26.09.2022 об
-            установлении размера стипендий
+            Протокол заседания стипендиальной комиссии №7 от 23.01.2023 г. об
+            установление размера стипендий.
           </a>
         </li>
         <li className="doc__item">
-          <a itemProp="grant" href={"Ustav"} target={"_blank"} rel="noreferrer">
+          <PDF height={"25px"} width={"25px"} />
+          <a
+            itemProp="grant"
+            href={prikaz_527_230922_o_naznach_komis}
+            target={"_blank"}
+            rel="noreferrer"
+          >
             Приказ "О назначении стипендиальной комиссии" № 527-УФСПО-06 от
             23.09.2022 г
           </a>
         </li>
         <li className="doc__item">
+          <PDF height={"25px"} width={"25px"} />
           <a
             itemProp="support"
-            href={"Ustav"}
+            href={poloj_stepend_obesp}
             target={"_blank"}
             rel="noreferrer"
           >
@@ -73,9 +87,14 @@ const Grants = observer(() => {
           </a>
         </li>
         <li className="doc__item">
-          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-            Постановление Правительства РФ от 17.12.2016 г. № 1390 "О
-            ФОРМИРОВАНИИ СТИПЕНДИАЛЬНОГО ФОНДА"
+          <PDF height={"25px"} width={"25px"} />
+          <a
+            href={postanovlenie_1390_17122016}
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            Постановление Правительства Российской Федерации № 1390 от
+            17.12.2016 г. «О формировании стипендиального фонда»
           </a>
         </li>
       </ul>
