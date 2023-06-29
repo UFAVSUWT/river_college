@@ -266,10 +266,11 @@ const routes = () => [
         path: "kcp",
         element: <KCP />,
       },
-      {
+      /* Скорее всего этот компонент больше будет не нужен, можно будет удалить */
+      /*     {
         path: "applicants",
         element: <ApplicantsEnrollee />,
-      },
+      }, */
       {
         path: "messageFromDirector",
         element: <Message />,
@@ -418,7 +419,7 @@ const routes = () => [
         element: <ProfessionalTrainingPrograms />,
       },
       {
-        path: "addEducationProgramsChildrenAdults",
+        path: "aplicants",
         element: <AddEducationProgramsChildrenAdults />,
       },
     ],

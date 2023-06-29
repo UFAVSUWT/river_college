@@ -21,13 +21,14 @@
     opacity: 1;
     display: none;
     ul{
-        /* display: flex;
-        flex-wrap: wrap; */
+        padding: 0;
         color: $LINK_COLOR;
-        columns: 3;
+       
         justify-content: space-around;
         
         li{
+            width: calc(100%/3);
+            float: left;
             padding-top: 15px;
             text-align: center;
             border-bottom: solid 2px white;

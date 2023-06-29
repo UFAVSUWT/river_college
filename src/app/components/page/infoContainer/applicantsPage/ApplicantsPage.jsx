@@ -9,6 +9,8 @@ import {
 import Button from "../../../common/button/Button";
 import { ReactComponent as ArrowButton } from "../../../../assets/svg/arrowButton.svg";
 import Image from "../../../common/image/Image";
+import Pamyatka from "../../../../assets/doc/enrollee/Памятка_Расписка.docx";
+import { ReactComponent as DOC } from "../../../../assets/svg/office/word.svg";
 const ApplicantsPage = observer(() => {
   return (
     <div className="applicantsPage">
@@ -47,32 +49,41 @@ const ApplicantsPage = observer(() => {
             )}
           >
             <li>
-              {" "}
-              <NavLink to={"enrollee/applicants"}>Выбор профессии</NavLink>
-            </li>
-            <li>
-              <NavLink to={"enrollee/applicants/reception"}>
+              <NavLink to={"enrollee/reception"}>
                 Приемная кампания 2023
               </NavLink>
             </li>
             <li>
-              <NavLink to={"enrollee/applicants/submissionDoc"}>
-                Подача документов
+              {" "}
+              <NavLink to={"enrollee/submissionDoc"}>Подача документов</NavLink>
+            </li>
+
+            <li>
+              <NavLink to={"enrollee/messageFromDirector"}>
+                Обращение директора
               </NavLink>
             </li>
-            <li style={{ backgroundColor: "red" }}>
-              <NavLink to={"enrollee/applicants/monitoring"}>
+            <li>
+              <NavLink to={"enrollee/monitoring"}>
                 Мониторинг подачи документов
               </NavLink>
             </li>
             <li>
-              <NavLink to={"enrollee/applicants/applicantsInfo"}>
+              <NavLink to={"enrollee/applicantsInfo"}>
                 Узнать как стать нашим курсантом
               </NavLink>
             </li>
             <li>
               {" "}
               <NavLink to={"enrollee/open-day"}>Дни открытых дверей</NavLink>
+            </li>
+            <li>
+              {" "}
+              <DOC height={"25px"} width={"25px"} />
+              <a href={Pamyatka} target={"_blank"} rel="noreferrer">
+                {" "}
+                Памятка для абитуриента
+              </a>
             </li>
           </ul>
         </div>
