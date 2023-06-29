@@ -80,6 +80,10 @@ import ProfessionalTrainingPrograms from "./components/page/training/professiona
 import ShipPowerPlantsVO2023 from "./components/page/educationsPrograms/260506/ShipPowerPlantsVO2023";
 import ShipPowerPlantsVO2023FOS from "./components/page/educationsPrograms/260506/ShipPowerPlantsVO2023FOS";
 import KCP from "./components/page/enrollee/applicants/reception/KCP/KCP";
+import Contacts from "./components/page/homePage/contacts/contacts";
+import Reviews from "./components/page/homePage/reviews/reviews";
+import UserSurvey from "./components/page/homePage/user-survey/user-survey";
+import AddEducationProgramsChildrenAdults from "./components/page/training/add-education-programs-children-adults/add-education-programs-children-adults";
 const routes = () => [
   {
     path: "",
@@ -413,6 +417,10 @@ const routes = () => [
         path: "professionalTrainingPrograms",
         element: <ProfessionalTrainingPrograms />,
       },
+      {
+        path: "addEducationProgramsChildrenAdults",
+        element: <AddEducationProgramsChildrenAdults />,
+      },
     ],
   },
   {
@@ -434,6 +442,18 @@ const routes = () => [
       {
         path: "univercityEvents",
         element: <UniversityEvents />,
+      },
+      {
+        path: "contacts",
+        element: <Contacts />,
+      },
+      {
+        path: "reviews",
+        element: <Reviews />,
+      },
+      {
+        path: "userSurvey",
+        element: <UserSurvey />,
       },
     ],
   },

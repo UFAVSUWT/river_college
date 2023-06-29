@@ -1,69 +1,95 @@
 @import "../../../../style/variables";
-.ant-menu-submenu-title{
-    border-bottom: solid 2px $MAIN_COLOR !important;
-    padding: 5px;
-    border-radius: 2px;
+.header__navbar{
+    width: 1270px;
+    position: relative;
+    &-list{ 
+        ul{
+        width: 100%;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        
+        li{
+            text-align: center;
+            line-height: 22px;
+            height: 60px;
+            padding: 5px;
+            cursor: pointer;
+        }
+    
+        li:nth-child(1){
+            width: 30%;
+            height: 100%;
+            font-size: 0.8em;
+        }
+        li:nth-child(2){
+            width: 8%;
+            vertical-align: middle;
+            &:hover{
+                background-color: white;
+                color: $MAIN_COLOR;
+            }
+        }
+        li:nth-child(2):before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+       }
+        li:nth-child(3){
+            width: 13%;
+            &:hover{
+                background-color: white;
+                color: $MAIN_COLOR;
+            }
+        }
+        li:nth-child(3):before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+       }
+        li:nth-child(4){
+            width: 12%;
+            &:hover{
+                background-color: white;
+                color: $MAIN_COLOR;
+            }
+        }
+        li:nth-child(4):before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+       }
+        li:nth-child(5){
+            width: 15%;
+            &:hover{
+                background-color: white;
+                color: $MAIN_COLOR;
+            }
+        }
+        li:nth-child(6){
+            width: 13%;
+            &:hover{
+                background-color: white;
+                color: $MAIN_COLOR;
+            }
+        }
+        li:nth-child(7){
+            width: 10%;
+            &:hover{
+                background-color: white;
+                color: $MAIN_COLOR;
+            }
+        }
+        li:nth-child(7):before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+       }
+    }
 }
-.ant-menu-submenu-title:hover{
-    background-color: $BACK_MENU_COLOR !important;
-    border-bottom: solid 2px $RED_COLOR !important;
-    padding: 5px;
-    border-radius: 2px;
 }
-.ant-menu-submenu-open::after{
-    border-bottom-color: $RED_COLOR !important;
-}
-.ant-menu-submenu-open::after{
-    border-radius: 2px !important;
-}
-.ant-menu-submenu-active{
-    border-bottom-color: $RED_COLOR !important;
-}
-.ant-menu-submenu-title{
-    padding: 5px;
-    border-radius: 2px !important;
 
-}
-.ant-menu-submenu-title:active{
-    background-color: $BACK_MENU_COLOR !important;
-
-}
-.ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected{
-    color: $RED_COLOR;
-}
-:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after{
-    border-bottom-color: $RED_COLOR ; 
-
-}
-.ant-space .css-dev-only-do-not-override-9ntgx0 .ant-space-horizontal .ant-space-align-center{
-    margin: 0 auto !important;
-}
-:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light .ant-menu-item-selected {
-    color: $MAIN_COLOR;
-}
-:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-item:hover::after, :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu:hover::after, :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-item-active::after, :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-active::after, :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-item-open::after, :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-open::after {
-    border-bottom-color: $RED_COLOR ; 
-}
- :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-active::after{
-    border-bottom-color: $RED_COLOR;
-    border-width: 3px;
- }
- :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light .ant-menu-submenu-selected >.ant-menu-submenu-title{
-    color: $RED_COLOR;
-   
- }
- :where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-selected::after{
-    border-bottom-color: $RED_COLOR !important;
-    border-width: 3px;
- }
-.ant-menu-item ant-menu-item-selected ant-menu-item-only-child{
-    align-items: center !important;
-}
-:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-light:not(.ant-menu-horizontal) .ant-menu-item-selected{
-    background-color: $BACK_MENU_COLOR;
-}
-:where(.css-dev-only-do-not-override-9ntgx0).ant-menu-submenu-popup .ant-menu-vertical.ant-menu-sub:not([class*='-active']) {
-    align-items: center !important;
-    justify-content: center !important;
-    margin: 0 auto !important;
-  }

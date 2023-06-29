@@ -6,6 +6,7 @@ import PerechenProfPerepodgot from "../../../../assets/doc/training/perechenProf
 import PerechenProgramm from "../../../../assets/doc/training/perechenProgramm.docx";
 import PreiskurantCen from "../../../../assets/pdf/training/PreiskurantCen.pdf";
 import Dogovor from "../../../../assets/pdf/documentPage/Dogovor_platn_obraz_uslug_2021.pdf";
+import { NavLink } from "react-router-dom";
 const AdvancedTraining = observer(() => {
   return (
     <div
@@ -26,14 +27,9 @@ const AdvancedTraining = observer(() => {
         </h2>
         <ul>
           <li>
-            <a
-              href="/"
-              target={"_blank"}
-              rel="noreferrer"
-              style={{ backgroundColor: "red" }}
-            >
+            <NavLink to={"../addEducationProgramsChildrenAdults"}>
               Программы дополнительного образования детей и взрослых
-            </a>
+            </NavLink>
           </li>
           <li>
             <a href={PerechenPovKval} target={"_blank"} rel="noreferrer">

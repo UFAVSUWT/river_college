@@ -2,7 +2,9 @@ import React from "react";
 import { Outlet } from "react-router";
 import BreadCrumbs from "../components/common/breadCrumbs/BreadCrumbs";
 import ChapterMenu from "../components/ui/chapterMenu/ChapterMenu";
-const Training = () => {
+import { toggleClassName, toggleFontSize } from "../utils/disabled";
+import { observer } from "mobx-react-lite";
+const Training = observer(() => {
   const linksMenu = [
     {
       title: "О центре конвенционной подготовки и доп. образования",
@@ -18,13 +20,23 @@ const Training = () => {
     },
   ];
   return (
-    <div className="_container min-height">
-      <BreadCrumbs />
-      <div className="chapter__menu-show">
-        <ChapterMenu linksArray={linksMenu} />
+    <div
+      style={{ fontSize: toggleFontSize(1) }}
+      className={`sveden__container ${toggleClassName(
+        "_container",
+        "_container-white",
+        "_container-black",
+        "_container-contrast"
+      )} background-blue`}
+    >
+      <div className="_container min-height ">
+        <BreadCrumbs />
+        <div className="chapter__menu-show">
+          <ChapterMenu linksArray={linksMenu} />
+        </div>
+        <Outlet />
       </div>
-      <Outlet />
     </div>
   );
-};
+});
 export default Training;

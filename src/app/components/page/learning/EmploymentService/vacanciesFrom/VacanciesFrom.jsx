@@ -9,6 +9,8 @@ import Logo7 from "../../../../../assets/img/learning/employmentServices/logo7.p
 import Image from "../../../../common/image/Image";
 import { observer } from "mobx-react-lite";
 import { toggleClassName } from "../../../../../utils/disabled";
+import { ReactComponent as PDF } from "../../../../../assets/svg/office/pdf.svg";
+import Pismo from "../../../../../assets/pdf/employmentService/Письмо  о практике ВГУВТ от ВСРП.pdf";
 const VacanciesFrom = observer(() => {
   return (
     <>
@@ -28,7 +30,39 @@ const VacanciesFrom = observer(() => {
       </section>
       <section>
         <h1>ВАКАНСИИ СУДОХОДНЫХ КОМПАНИЙ</h1>
-
+        <h2>
+          АО "Восточно-Сибирское речное параходство приглашает на практику
+          студентов на следующих условиях:
+        </h2>
+        <p>
+          Ознакомиться с условиями можно в оффициальном письме от работодателя:{" "}
+          <a
+            href={Pismo}
+            target={"_blank"}
+            rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
+            <PDF width={"25px"} height={"25px"} />
+          </a>{" "}
+          <a
+            href={Pismo}
+            target={"_blank"}
+            rel="noreferrer"
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
+            скачать
+          </a>
+        </p>
         <h2>Кадровое агентство «Тафф Стафф»</h2>
         <p>
           <a href="https://tough-staff.ru/" target={"_blank"} rel="noreferrer">

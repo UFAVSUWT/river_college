@@ -4,10 +4,10 @@ import { ReactComponent as MuseumLogo } from "../../../assets/svg/museum.svg";
 import { ReactComponent as RiverUniversityLogo } from "../../../assets/svg/riveruniversityLogo.svg";
 import { ReactComponent as UserLogo } from "../../../assets/svg/user.svg";
 import React, { useState } from "react";
-import Button from "../button/Button";
-import MenuNavbar from "../../ui/menu-navbar/navbar-menu";
+import Button from "../../common/button/Button";
+import MenuNavbar from "../menu-navbar/navbar-menu";
 import { NavLink } from "react-router-dom";
-import Disabled from "../../ui/disabled/disabled-panel";
+import Disabled from "../disabled/disabled-panel";
 import { observer } from "mobx-react-lite";
 import fontSize from "../../../store/fontSize";
 import { toggleIconColor } from "../../../utils/disabled";
@@ -18,8 +18,8 @@ import {
 } from "../../../utils/disabled";
 import { disabled } from "../../../utils/disabled";
 import { toggleClassName } from "../../../utils/disabled";
-import PhoneMenu from "../phoneMenu/PhoneMenu";
-import DesktopLogIn from "../../ui/logIn/desktopLogIn";
+import PhoneMenu from "../../common/phoneMenu/PhoneMenu";
+import DesktopLogIn from "../logIn/desktopLogIn";
 const NavBar = observer(() => {
   const [isActive, setIsActive] = useState(false);
   return (
@@ -207,10 +207,10 @@ const NavBar = observer(() => {
 
         <div className="_container">
           <div className="header__section1">
-            <div className="header__item headerName">
+            {/*  <div className="header__item headerName">
               Уфимский филиал ФГБОУ ВО <br />
               "Волжский государственный университет водного транспорта"
-            </div>
+            </div> */}
             <MenuNavbar toggleFontSize={toggleFontSize} />
           </div>
         </div>

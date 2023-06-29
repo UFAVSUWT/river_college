@@ -8,7 +8,6 @@ const Sveden = observer(() => {
   return (
     <>
       <div className="_container">
-        {" "}
         <BreadCrumbs />
       </div>
 

@@ -53,13 +53,15 @@
 
 
 .header__section1 {
-  border-bottom: solid 2px $MAIN_COLOR;
+    border-bottom: solid 2px $MAIN_COLOR;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
   }
 .header__item.headerName {
     width: 40%;
+    padding-bottom: 10px;
   }
 .header__section2 {
     display: flex;
