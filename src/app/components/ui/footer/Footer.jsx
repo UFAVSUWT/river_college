@@ -20,6 +20,68 @@ const Footer = observer(() => {
           <a href="https://vk.com/uf_vsuwt" target={"_blank"} rel="noreferrer">
             <Vk className="footer__vk" />
           </a>
+          <ul style={{ color: "white" }}>
+            <li>
+              <a
+                href="https://mintrans.gov.ru/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={toggleClassName(
+                  "education__link",
+                  "education__link-white",
+                  "education__link-black",
+                  "education__link-contrast"
+                )}
+              >
+                Министерство транспорта Российской Федерации
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://morflot.gov.ru/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={toggleClassName(
+                  "education__link",
+                  "education__link-white",
+                  "education__link-black",
+                  "education__link-contrast"
+                )}
+              >
+                Федеральное агентство морского и речного транспорта
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.pasp.ru/bolshoy_port_sankt-peterburg1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={toggleClassName(
+                  "education__link",
+                  "education__link-white",
+                  "education__link-black",
+                  "education__link-contrast"
+                )}
+              >
+                Морской порт «Большой порт Санкт-Петербург»
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://xn--80adbch2buek4ak3i.xn--p1ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={toggleClassName(
+                  "education__link",
+                  "education__link-white",
+                  "education__link-black",
+                  "education__link-contrast"
+                )}
+              >
+                Администрация Камского бассейна внутренних водных путей
+              </a>
+            </li>
+          </ul>
         </div>
         <div className="footer__logo">
           <NavLink to="">

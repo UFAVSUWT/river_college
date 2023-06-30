@@ -25,16 +25,11 @@ import EmploymentService from "./components/page/learning/EmploymentService/Empl
 import About from "./components/page/learning/EmploymentService/about/About";
 import Faq from "./components/page/learning/EmploymentService/faq/Faq";
 import Partners from "./components/page/learning/EmploymentService/partners/Partners";
-import News from "./components/page/learning/EmploymentService/news/New";
-import JobFair from "./components/page/learning/EmploymentService/jobFair/JobFair";
-import Links from "./components/page/learning/EmploymentService/links/Links";
 import VacanciesFrom from "./components/page/learning/EmploymentService/vacanciesFrom/VacanciesFrom";
-import Feedback from "./components/page/learning/EmploymentService/feedback/Feedback";
 import AboutPractice from "./components/page/learning/Practice/aboutPracrice/AboutPracice";
 import PracticeReviews from "./components/page/learning/Practice/PracticeReviews/Reviews";
 import ShedulePractice from "./components/page/learning/Practice/shedulePractice/ShedulePractice";
 import Enrolly from "./layouts/Enrollee";
-import ApplicantsEnrollee from "./components/page/enrollee/applicants/ApplicantsEnrollee";
 import OpenDay from "./components/page/enrollee/openDay/OpenDay";
 import ApplicantsInfo from "./components/page/enrollee/applicants/applicantsInfo/ApplicantsInfo";
 import Message from "./components/page/enrollee/applicants/message/Message";
@@ -375,24 +370,8 @@ const routes = () => [
             element: <Partners />,
           },
           {
-            path: "news",
-            element: <News />,
-          },
-          {
-            path: "jobFair",
-            element: <JobFair />,
-          },
-          {
             path: "vacanciesFrom",
             element: <VacanciesFrom />,
-          },
-          {
-            path: "feedback",
-            element: <Feedback />,
-          },
-          {
-            path: "links",
-            element: <Links />,
           },
         ],
       },

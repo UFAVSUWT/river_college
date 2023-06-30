@@ -17,7 +17,7 @@ import MobileLogIn from "../../ui/logIn/MobileLogIn";
 const PhoneMenu = () => {
   const [nav, setNav] = useState(false);
   const [login, setLogin] = useState(false);
-  const [disabled, setDisabled] = useState(false);
+  /*   const [disabled, setDisabled] = useState(false); */
   return (
     <header className="phoneMenu">
       <div className="flex jcs w1 ">

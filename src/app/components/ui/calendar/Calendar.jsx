@@ -3,7 +3,7 @@ import moment from "moment";
 import Header from "./header/Header";
 import Monitor from "./monitor/Monitor";
 import CalendarGrid from "./calendarGrid/CalendarGrid";
-import ScheduleInfo from "../../../mockData/Расписание_14.json";
+/* import ScheduleInfo from "../../../mockData/Расписание_14.json"; */
 import axios from "axios";
 const Calendar = ({ selectedDay, handlSelectDay }) => {
   axios

@@ -17,11 +17,7 @@ const EmploymentService = observer(() => {
       title: "Профильные организации - социальные партнеры филиала",
       path: "partners",
     },
-    { title: "Новости трудоустройства 2023 года", path: "news" },
-    { title: "Ярмарки вакансий", path: "jobFair" },
     { title: "Вакансии от работодателей", path: "vacanciesFrom" },
-    { title: "Мониторинг трудоустройства выпускников", path: "feedback" },
-    { title: "Полезные ссылки", path: "links" },
   ];
 
   return (
