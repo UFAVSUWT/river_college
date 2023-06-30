@@ -9,6 +9,7 @@ import PrikazRule from "../../../../../assets/pdf/applicant/prikaz_pravila_priem
 import InfoMedOsmotr from "../../../../../assets/pdf/applicant/infoMedOsmotr.pdf";
 import PerechenSpec from "../../../../../assets/pdf/applicant/priem2023_special_SPO.pdf";
 import Dogovor from "../../../../../assets/pdf/applicant/Dogovor_platn_obraz_uslug_2021.pdf";
+import { ReactComponent as PDF } from "../../../../../assets/svg/office/pdf.svg";
 import { NavLink } from "react-router-dom";
 import { ReactComponent as Logo } from "../../../../../assets/svg/riveruniversityLogo.svg";
 
@@ -112,6 +113,7 @@ const Reception = observer(() => {
       </section>
       <ol>
         <li>
+          <PDF width={"25px"} height={"25px"} />{" "}
           <a
             href={Rule}
             className={toggleClassName(
@@ -128,6 +130,7 @@ const Reception = observer(() => {
           </a>
         </li>
         <li>
+          <PDF width={"25px"} height={"25px"} />{" "}
           <a
             href={PrikazRule}
             className={toggleClassName(
@@ -142,6 +145,7 @@ const Reception = observer(() => {
             Приказ об утверждении правил приема на 2023 год
           </a>
         </li>
+
         <li>
           <NavLink to="../kcp">КЦП СПО 23/24 уч.год</NavLink>
         </li>
@@ -185,6 +189,7 @@ const Reception = observer(() => {
           </NavLink>
         </li>
         <li>
+          <PDF width={"25px"} height={"25px"} />{" "}
           <a
             href={InfoMedOsmotr}
             className={toggleClassName(
@@ -214,6 +219,7 @@ const Reception = observer(() => {
           </NavLink>
         </li>
         <li>
+          <PDF width={"25px"} height={"25px"} />{" "}
           <a
             href={PerechenSpec}
             className={toggleClassName(
@@ -242,6 +248,7 @@ const Reception = observer(() => {
           </NavLink>
         </li>
         <li>
+          <PDF width={"25px"} height={"25px"} />{" "}
           <a
             href={Dogovor}
             className={toggleClassName(
@@ -268,7 +275,6 @@ const Reception = observer(() => {
             )}
           >
             Стоимость обучения на коммерческой основе на 2023/2024 учебный год
-            (пока приказа нет)
           </NavLink>
         </li>
       </ol>

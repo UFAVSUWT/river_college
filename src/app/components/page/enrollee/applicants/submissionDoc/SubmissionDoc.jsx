@@ -3,6 +3,10 @@ import React from "react";
 import { toggleClassName } from "../../../../../utils/disabled";
 import Perechen from "../../../../../assets/doc/applicant/perechen.docx";
 import Priem2023 from "../../../../../assets/pdf/applicant/priem2023_v_el_forme.pdf";
+import zayavlenie from "../../../../../assets/doc/enrollee/zayavlenie_na_postuplenie.doc";
+import med from "../../../../../assets/pdf/enrolle/медкомиссия.pdf";
+import { ReactComponent as DOC } from "../../../../../assets/svg/office/word.svg";
+import { ReactComponent as PDF } from "../../../../../assets/svg/office/pdf.svg";
 const SubmissionDoc = observer(() => {
   return (
     <>
@@ -17,7 +21,7 @@ const SubmissionDoc = observer(() => {
             Оригинал или ксерокопия документа государственного образца об
             образовании
           </li>
-          <li>Фотографии , 3х4 , 4 шт.</li>
+          <li>Фотографии , 3х4 , 5 шт.</li>
           <li>Медицинское заключение об отсутствии противопоказаний</li>
           <li>
             Копия паспорта родителей или законного представителя (для
@@ -25,7 +29,7 @@ const SubmissionDoc = observer(() => {
           </li>
           <li>Свидетельство о рождении (копия)</li>
           <li>Справка с места жительства о составе семьи</li>
-          <li>Характеристика школы</li>
+          <li>Характеристика из школы</li>
           <li>Приписное свидетельство, военный билет (при наличии)</li>
           <li>Социальный номер ИНН (копия)</li>
           <li>Пенсионное страховое свидетельство СНИЛС (копия)</li>
@@ -34,6 +38,7 @@ const SubmissionDoc = observer(() => {
           <li>Копия трудовой книжки (при наличии)</li>
         </ol>
         <p>
+          <DOC width={"25px"} height={"25px"} />{" "}
           <a
             href={Perechen}
             target={"_blank"}
@@ -47,6 +52,54 @@ const SubmissionDoc = observer(() => {
           >
             Скачать перечень документов
           </a>
+        </p>
+        <p>
+          <a
+            href={zayavlenie}
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
+            <DOC width={"25px"} height={"25px"} />
+          </a>{" "}
+          <a
+            href={zayavlenie}
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
+            Заявление на поступление
+          </a>{" "}
+        </p>
+        <p>
+          <a
+            href={zayavlenie}
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
+            <PDF width={"25px"} height={"25px"} />
+          </a>{" "}
+          <a
+            href={med}
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
+            ЛИСТ прохождения предварительного медицинского освидетельствования
+          </a>{" "}
         </p>
       </section>
       <section>

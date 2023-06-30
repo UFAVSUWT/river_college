@@ -104,76 +104,149 @@ const Vacant = observer(() => {
               <td>-</td>
             </tr>
             <tr itemProp="vacant">
-              <td itemProp="eduCode">260203</td>
-              <td itemProp="eduName">Судовождение, 9 класс</td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
+              <td itemProp="eduCode">23.02.01</td>
+              <td itemProp="eduName">
+                Организация перевозок и управление на транспорте
               </td>
-              <td itemProp="eduCourse">1</td>
-              <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">-</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">3</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260203</td>
-              <td itemProp="eduName">Судовождение, 9 класс</td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
+              <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">2</td>
-              <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">8</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">-</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260203</td>
-              <td itemProp="eduName">Судовождение, 9 класс</td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">3</td>
-              <td itemProp="eduForm">очная </td>
-              <td itemProp="numberBFVacant">2</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">3</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260203</td>
-              <td itemProp="eduName">Судовождение, 9 класс</td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">4</td>
               <td itemProp="eduForm">очная</td>
               <td itemProp="numberBFVacant">4</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">6</td>
+              <td itemProp="numberPVacant">3</td>
             </tr>
             <tr itemProp="vacant">
-              <td itemProp="eduCode">260203</td>
-              <td itemProp="eduName">Судовождение, 9 класс</td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
+              <td itemProp="eduCode">23.02.01</td>
+              <td itemProp="eduName">
+                Организация перевозок и управление на транспорте
               </td>
-              <td itemProp="eduCourse">5</td>
+              <td itemProp="eduLevel">Основное общее</td>
+              <td itemProp="eduCourse">3</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">5</td>
+              <td itemProp="numberBFVacant">1</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">0</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">23.02.01</td>
+              <td itemProp="eduName">
+                Организация перевозок и управление на транспорте
+              </td>
+              <td itemProp="eduLevel">Основное общее</td>
+              <td itemProp="eduCourse">4</td>
+              <td itemProp="eduForm">очная</td>
+              <td itemProp="numberBFVacant">1</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">3</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">23.02.01</td>
+              <td itemProp="eduName">
+                Организация перевозок и управление на транспорте
+              </td>
+              <td itemProp="eduLevel">Среднее (полное) общее</td>
+              <td itemProp="eduCourse">2</td>
+              <td itemProp="eduForm">заочная</td>
+              <td itemProp="numberBFVacant">1</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">5</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.02.03</td>
+              <td itemProp="eduName">Судовождение</td>
+              <td itemProp="eduLevel">Основное общее</td>
+              <td itemProp="eduCourse">2</td>
+              <td itemProp="eduForm">очная</td>
+              <td itemProp="numberBFVacant">-</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">2</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.02.03</td>
+              <td itemProp="eduName">Судовождение</td>
+              <td itemProp="eduLevel">Среднее (полное) общее</td>
+              <td itemProp="eduCourse">2</td>
+              <td itemProp="eduForm">очная</td>
+              <td itemProp="numberBFVacant">1</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">-</td>
             </tr>
             <tr itemProp="vacant">
-              <td itemProp="eduCode">260203</td>
-              <td itemProp="eduName">Судовождение, 9 класс</td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
+              <td itemProp="eduCode">26.02.03</td>
+              <td itemProp="eduName">Судовождение</td>
+              <td itemProp="eduLevel">Основное общее</td>
+              <td itemProp="eduCourse">3</td>
+              <td itemProp="eduForm">очная</td>
+              <td itemProp="numberBFVacant">9</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">1</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.02.03</td>
+              <td itemProp="eduName">Судовождение</td>
+              <td itemProp="eduLevel">Среднее (полное) общее</td>
+              <td itemProp="eduCourse">3</td>
+              <td itemProp="eduForm">очная</td>
+              <td itemProp="numberBFVacant">4</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">-</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.02.03</td>
+              <td itemProp="eduName">Судовождение</td>
+              <td itemProp="eduLevel">Основное общее</td>
+              <td itemProp="eduCourse">4</td>
+              <td itemProp="eduForm">очная</td>
+              <td itemProp="numberBFVacant">1</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">3</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.02.03</td>
+              <td itemProp="eduName">Судовождение</td>
+              <td itemProp="eduLevel">Среднее (полное) общее</td>
+              <td itemProp="eduCourse">4</td>
+              <td itemProp="eduForm">очная</td>
+              <td itemProp="numberBFVacant">5</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">0</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.02.03</td>
+              <td itemProp="eduName">Судовождение</td>
+              <td itemProp="eduLevel">Основное общее</td>
+              <td itemProp="eduCourse">5</td>
+              <td itemProp="eduForm">очная</td>
+              <td itemProp="numberBFVacant">4</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">3</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.02.03</td>
+              <td itemProp="eduName">Судовождение</td>
+              <td itemProp="eduLevel">Основное общее</td>
+              <td itemProp="eduCourse">2</td>
+              <td itemProp="eduForm">заочная</td>
+              <td itemProp="numberBFVacant">-</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">8</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.02.03</td>
+              <td itemProp="eduName">Судовождение</td>
+              <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">5</td>
               <td itemProp="eduForm">заочная</td>
               <td itemProp="numberBFVacant">-</td>
@@ -182,247 +255,106 @@ const Vacant = observer(() => {
               <td itemProp="numberPVacant">16</td>
             </tr>
             <tr itemProp="vacant">
-              <td itemProp="eduCode">260203</td>
-              <td itemProp="eduName">Судовождение, 9 класс</td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
+              <td itemProp="eduCode">26.02.03</td>
+              <td itemProp="eduName">Судовождение</td>
+              <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">6</td>
               <td itemProp="eduForm">заочная</td>
-              <td itemProp="numberBFVacant">-</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">14</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260203</td>
-              <td itemProp="eduName">Судовождение, 11 класс</td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">1</td>
-              <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">9</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">-</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260203</td>
-              <td itemProp="eduName">Судовождение, 11 класс</td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">2</td>
-              <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">4</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">-</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260203</td>
-              <td itemProp="eduName">Судовождение, 11 класс</td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">3</td>
-              <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">3</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">-</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260203</td>
-              <td itemProp="eduName">Судовождение, 11 класс</td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">4</td>
-              <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBRVacant">8</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">-</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260203</td>
-              <td itemProp="eduName">Судовождение, 11 класс</td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">4</td>
-              <td itemProp="eduForm">заочная</td>
-              <td itemProp="numberBFVacant">20</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">-</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260205</td>
-              <td itemProp="eduName">
-                Эксплуатация судовых энергетических установок, 9класс
-              </td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">1</td>
-              <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">-</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">4</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260205</td>
-              <td itemProp="eduName">
-                Эксплуатация судовых энергетических установок, 9класс
-              </td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">2</td>
-              <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">8</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">1</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260205</td>
-              <td itemProp="eduName">
-                Эксплуатация судовых энергетических установок, 9класс
-              </td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">4</td>
-              <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">5</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">-</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260205</td>
-              <td itemProp="eduName">
-                Эксплуатация судовых энергетических установок, 11 класс
-              </td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">3</td>
-              <td itemProp="eduForm">заочная</td>
-              <td itemProp="numberBFVacant">-</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">23</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260205</td>
-              <td itemProp="eduName">
-                Эксплуатация судовых энергетических установок, 11 класс
-              </td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">4</td>
-              <td itemProp="eduForm">заочная</td>
-              <td itemProp="numberBFVacant">-</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">12</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260206</td>
-              <td itemProp="eduName">
-                Эксплуатация судового электрооборудования и средств автоматики
-              </td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">1</td>
-              <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">2</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">5</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260206</td>
-              <td itemProp="eduName">
-                Эксплуатация судового электрооборудования и средств автоматики
-              </td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">3</td>
-              <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">-</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">1</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">260206</td>
-              <td itemProp="eduName">
-                Эксплуатация судового электрооборудования и средств автоматики
-              </td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">4</td>
-              <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">9</td>
-              <td itemProp="numberBRVacant">-</td>
-              <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">-</td>
-            </tr>
-            <tr itemProp="vacant">
-              <td itemProp="eduCode">230201</td>
-              <td itemProp="eduName">
-                Организация перевозок и управление на транспорте (по видам)
-              </td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
-              <td itemProp="eduCourse">1</td>
-              <td itemProp="eduForm">очная</td>
               <td itemProp="numberBFVacant">-</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">2</td>
             </tr>
             <tr itemProp="vacant">
-              <td itemProp="eduCode">230201</td>
+              <td itemProp="eduCode">26.02.05</td>
               <td itemProp="eduName">
-                Организация перевозок и управление на транспорте (по видам)
+                Эксплуатация судовых энергетических установок
               </td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
-              </td>
+              <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">2</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">2</td>
+              <td itemProp="numberBFVacant">3</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">-</td>
+              <td itemProp="numberPVacant">5</td>
             </tr>
             <tr itemProp="vacant">
-              <td itemProp="eduCode">230201</td>
+              <td itemProp="eduCode">26.02.05</td>
               <td itemProp="eduName">
-                Организация перевозок и управление на транспорте (по видам)
+                Эксплуатация судовых энергетических установок
               </td>
-              <td itemProp="eduLevel">
-                Подготовка специалистов среднего звена
+              <td itemProp="eduLevel">Основное общее</td>
+              <td itemProp="eduCourse">3</td>
+              <td itemProp="eduForm">очная</td>
+              <td itemProp="numberBFVacant">10</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">2</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.02.05</td>
+              <td itemProp="eduName">
+                Эксплуатация судовых энергетических установок
               </td>
+              <td itemProp="eduLevel">Основное общее</td>
+              <td itemProp="eduCourse">4</td>
+              <td itemProp="eduForm">очная</td>
+              <td itemProp="numberBFVacant">3</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">1</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.02.05</td>
+              <td itemProp="eduName">
+                Эксплуатация судовых энергетических установок
+              </td>
+              <td itemProp="eduLevel">Среднее (полное) общее</td>
+              <td itemProp="eduCourse">2</td>
+              <td itemProp="eduForm">заочная</td>
+              <td itemProp="numberBFVacant">-</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">5</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.02.06</td>
+              <td itemProp="eduName">
+                Эксплуатация судового электрооборудования и средств автоматики
+              </td>
+              <td itemProp="eduLevel">Основное общее</td>
+              <td itemProp="eduCourse">2</td>
+              <td itemProp="eduForm">очная</td>
+              <td itemProp="numberBFVacant">-</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">5</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.02.06</td>
+              <td itemProp="eduName">
+                Эксплуатация судового электрооборудования и средств автоматики
+              </td>
+              <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">3</td>
               <td itemProp="eduForm">очная</td>
               <td itemProp="numberBFVacant">-</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">3</td>
+              <td itemProp="numberPVacant">-</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.02.06</td>
+              <td itemProp="eduName">
+                Эксплуатация судового электрооборудования и средств автоматики
+              </td>
+              <td itemProp="eduLevel">Основное общее</td>
+              <td itemProp="eduCourse">4</td>
+              <td itemProp="eduForm">очная</td>
+              <td itemProp="numberBFVacant">-</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">1</td>
             </tr>
           </tbody>
         </table>

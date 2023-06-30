@@ -1,13 +1,10 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
-import Priem2023 from "../../../../../assets/pdf/applicant/priem2023_v_el_forme.pdf";
-import InfoMedOsmotr from "../../../../../assets/pdf/applicant/infoMedOsmotr.pdf";
-import Trebov from "../../../../../assets/doc/applicant/trebov_urov_obr.docx";
-import PerechenSpec from "../../../../../assets/pdf/applicant/priem2023_special_SPO.pdf";
 import { toggleClassName } from "../../../../../utils/disabled";
-import { NavLink } from "react-router-dom";
 import zayavlenie from "../../../../../assets/doc/enrollee/zayavlenie_na_postuplenie.doc";
 import { ReactComponent as DOC } from "../../../../../assets/svg/office/word.svg";
+import med from "../../../../../assets/pdf/enrolle/медкомиссия.pdf";
+import { ReactComponent as PDF } from "../../../../../assets/svg/office/pdf.svg";
 const ApplicantsInfo = observer(() => {
   return (
     <section>
@@ -27,24 +24,28 @@ const ApplicantsInfo = observer(() => {
           Для подачи документов необходимо предоставить:
           <ul>
             <li>
-              Оригинал/копию документа об образовании государственного образца
-              (аттестат);
+              Оригинал или ксерокопия документа, удостоверяющего личность,
+              гражданство (паспорт)
             </li>
             <li>
-              Копия документа, удостоверяющего личность (паспорт 1 стр. и
-              прописка);
+              Оригинал или ксерокопия документа государственного образца об
+              образовании
             </li>
-            <li>Фотографии 3*4 см – 4 штуки;</li>
+            <li>Фотографии , 3х4 , 5 шт.</li>
+            <li>Медицинское заключение об отсутствии противопоказаний</li>
             <li>
-              Справка 086/У и прививочный паспорт;(медицинская справка
-              действует, если она получена не позднее, чем за год до завершения
-              приема документов);
+              Копия паспорта родителей или законного представителя (для
+              несовершеннолетних)
             </li>
-            <li>
-              Справка о группе здоровья, если нет отметки в справке 086/У;
-            </li>
-            <li>СНИЛС;</li>
-            <li>Медицинский полис;</li>
+            <li>Свидетельство о рождении (копия)</li>
+            <li>Справка с места жительства о составе семьи</li>
+            <li>Характеристика из школы</li>
+            <li>Приписное свидетельство, военный билет (при наличии)</li>
+            <li>Социальный номер ИНН (копия)</li>
+            <li>Пенсионное страховое свидетельство СНИЛС (копия)</li>
+            <li>Медицинский полис (копия)</li>
+            <li>Сертификат о прививках (оригинал или копия)</li>
+            <li>Копия трудовой книжки (при наличии)</li>
             <b>Зачисление осуществляется только при наличии:</b>
             <ul>
               <li>Оригинала документа об образовании (с приложением);</li>
@@ -53,6 +54,30 @@ const ApplicantsInfo = observer(() => {
             </ul>
           </ul>
         </li>
+        <p>
+          <a
+            href={zayavlenie}
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
+            <PDF width={"25px"} height={"25px"} />
+          </a>{" "}
+          <a
+            href={med}
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+          >
+            ЛИСТ прохождения предварительного медицинского освидетельствования
+          </a>{" "}
+        </p>
         <li>
           Прием в филиал осуществляется на конкурсной основе по среднему баллу
           аттестата!
@@ -117,86 +142,6 @@ const ApplicantsInfo = observer(() => {
         </a>{" "}
         и заполнить)
       </p>
-      {/*  <ul>
-        <li>
-          <a
-            href={Priem2023}
-            target={"_blank"}
-            rel="noreferrer"
-            className={toggleClassName(
-              "education__link",
-              "education__link-white",
-              "education__link-black",
-              "education__link-contrast"
-            )}
-          >
-            Информация о возможности приема заявлений и необходимых документов,
-            предусмотренных настоящими Правилами, в электронной форме
-          </a>
-        </li>
-        <li>
-          <a
-            href={InfoMedOsmotr}
-            target={"_blank"}
-            rel="noreferrer"
-            className={toggleClassName(
-              "education__link",
-              "education__link-white",
-              "education__link-black",
-              "education__link-contrast"
-            )}
-          >
-            Информация о необходимости прохождения поступающими обязательного
-            предварительного медицинского осмотра
-          </a>
-        </li>
-        <li>
-          <a
-            href={Trebov}
-            target={"_blank"}
-            rel="noreferrer"
-            className={toggleClassName(
-              "education__link",
-              "education__link-white",
-              "education__link-black",
-              "education__link-contrast"
-            )}
-          >
-            Требование уровня обр. СПО 2023
-          </a>
-        </li>
-        <li>
-          <NavLink
-            to="../../../sveden/grants"
-            className={toggleClassName(
-              "education__link",
-              "education__link-white",
-              "education__link-black",
-              "education__link-contrast"
-            )}
-          >
-            Число мест в общежитии для иногородних абитуриентов, поступающих на
-            1 курс очной формы
-          </NavLink>
-        </li>
-        <li>
-          <a
-            href={PerechenSpec}
-            target={"_blank"}
-            rel="noreferrer"
-            className={toggleClassName(
-              "education__link",
-              "education__link-white",
-              "education__link-black",
-              "education__link-contrast"
-            )}
-          >
-            Перечень специальностей СПО, по которым университет объявляет прием
-            в соответствии с лицензией на осуществление образовательной
-            деятельности
-          </a>
-        </li>
-      </ul> */}
     </section>
   );
 });
