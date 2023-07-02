@@ -1,6 +1,6 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
-import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
+import { toggleClassName } from "../../../../utils/disabled";
 import TableWrapper from "../../../common/tableWrapper/TableWrapper";
 import protocol from "../../../../assets/pdf/grants/protocol.pdf";
 import poloj_stepend_obesp from "../../../../assets/pdf/grants/poloj_stepend_obesp.pdf";
@@ -11,7 +11,6 @@ import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
 const Grants = observer(() => {
   return (
     <div
-      style={{ fontSize: toggleFontSize(1) }}
       className={toggleClassName(
         "common__container",
         "common__container-white",

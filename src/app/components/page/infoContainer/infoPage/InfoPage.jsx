@@ -9,7 +9,7 @@ import NewsCardContainer from "../../../ui/newsCardContainer/NewsCardContainer";
 const InfoPage = observer(() => {
   return (
     <div
-      style={{ fontSize: toggleFontSize(1) }}
+      style={{ fontSize: toggleFontSize(18) }}
       className={`infopage-main ${toggleClassName(
         "infopage-main ",
         "infopage-white",

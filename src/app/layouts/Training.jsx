@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet } from "react-router";
 import BreadCrumbs from "../components/common/breadCrumbs/BreadCrumbs";
 import ChapterMenu from "../components/ui/chapterMenu/ChapterMenu";
-import { toggleClassName, toggleFontSize } from "../utils/disabled";
+import { toggleClassName } from "../utils/disabled";
 import { observer } from "mobx-react-lite";
 const Training = observer(() => {
   const linksMenu = [
@@ -21,7 +21,6 @@ const Training = observer(() => {
   ];
   return (
     <div
-      style={{ fontSize: toggleFontSize(1) }}
       className={`sveden__container ${toggleClassName(
         "_container",
         "_container-white",

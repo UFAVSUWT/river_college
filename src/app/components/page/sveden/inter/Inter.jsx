@@ -1,10 +1,9 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
-import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
+import { toggleClassName } from "../../../../utils/disabled";
 const Inter = observer(() => {
   return (
     <div
-      style={{ fontSize: toggleFontSize(1) }}
       className={toggleClassName(
         "common__container",
         "common__container-white",
@@ -30,11 +29,13 @@ const Inter = observer(() => {
           "title-contrast"
         )}`}
       >
-        Сведения о заключенных и планируемых к заключению договорах с
+        Информация о заключенных и планируемых к заключению договорах с
         иностранными и (или) международными организациями по вопросам
-        образования и науки:
+        образования и науки: - заключенные или планируемые договора с
+        иностранными и (или) международными организациями по вопросам
+        образования и науки отсутствуют.
       </h3>
-      <table className="">
+      <table>
         <tbody>
           <tr>
             <td>№ п/п</td>
@@ -60,9 +61,11 @@ const Inter = observer(() => {
           "title-contrast"
         )}`}
       >
-        Информация о международной аккредитации
+        Информация о международной аккредитации образовательных программ:
+        образовательные программы, реализуемые в образовательном учреждении, не
+        имеют международной аккредитации.
       </h3>
-      <table className="">
+      <table>
         <tbody>
           <tr>
             <td>Код </td>

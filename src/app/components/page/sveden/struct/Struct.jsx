@@ -1,6 +1,6 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
-import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
+import { toggleClassName } from "../../../../utils/disabled";
 import Pologen22 from "../../../../assets/pdf/documentPage/Pologen_2022.pdf";
 import PolBuh from "../../../../assets/pdf/structPage/pol-buh.pdf";
 import PolHoz from "../../../../assets/pdf/structPage/pol-hoz.pdf";
@@ -14,7 +14,6 @@ const Struct = observer(() => {
   return (
     <div
       itemProp="copy"
-      style={{ fontSize: toggleFontSize(1) }}
       className={toggleClassName(
         "common__container",
         "common__container-white",
@@ -25,7 +24,7 @@ const Struct = observer(() => {
       <TableWrapper
         title={`Структура и органы управления Уфимского филиала ФГБОУ ВО "ВГУВТ"`}
       >
-        <table style={{ fontSize: toggleFontSize(1) }}>
+        <table>
           <tbody>
             <tr>
               <td itemProp="name">

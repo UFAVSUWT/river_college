@@ -1,14 +1,13 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import BazPraktik from "../../../../assets/pdf/commonPage/baz_praktik.pdf";
-import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
+import { toggleClassName } from "../../../../utils/disabled";
 
 const Common = observer(() => {
   return (
     <>
       <div
         itemProp="copy"
-        style={{ fontSize: toggleFontSize(1) }}
         className={toggleClassName(
           "common__container",
           "common__container-white",

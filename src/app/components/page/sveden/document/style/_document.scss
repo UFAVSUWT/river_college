@@ -1,4 +1,31 @@
 @import "../../../../../style/variables";
+
+.doc_navpanel{
+    span{
+        color: $LINK_COLOR;
+        border-bottom: solid 2px $LINK_COLOR;
+        margin: 5px 10px;
+        cursor: pointer;
+    }
+    span:hover{
+        border-bottom: solid 2px $RED_COLOR;
+    }
+    .is-active{
+        color: $MAIN_COLOR;
+        font-weight: 500;
+    }
+}
+.doc_item-show{
+    display: block;
+}
+.doc_item-hidden{
+    display: none;
+}
+.doc_container{
+    p{
+        text-transform: uppercase;
+    }
+}
 .doc__item{
     max-width: fit-content;
     margin: 5px 0px;

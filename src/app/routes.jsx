@@ -26,9 +26,6 @@ import About from "./components/page/learning/EmploymentService/about/About";
 import Faq from "./components/page/learning/EmploymentService/faq/Faq";
 import Partners from "./components/page/learning/EmploymentService/partners/Partners";
 import VacanciesFrom from "./components/page/learning/EmploymentService/vacanciesFrom/VacanciesFrom";
-import AboutPractice from "./components/page/learning/Practice/aboutPracrice/AboutPracice";
-import PracticeReviews from "./components/page/learning/Practice/PracticeReviews/Reviews";
-import ShedulePractice from "./components/page/learning/Practice/shedulePractice/ShedulePractice";
 import Enrolly from "./layouts/Enrollee";
 import OpenDay from "./components/page/enrollee/openDay/OpenDay";
 import ApplicantsInfo from "./components/page/enrollee/applicants/applicantsInfo/ApplicantsInfo";
@@ -338,20 +335,6 @@ const routes = () => [
       {
         path: "practice",
         element: <Practice />,
-        children: [
-          {
-            path: "",
-            element: <AboutPractice />,
-          },
-          {
-            path: "reviews",
-            element: <PracticeReviews />,
-          },
-          {
-            path: "shedule",
-            element: <ShedulePractice />,
-          },
-        ],
       },
       {
         path: "employmentService",
@@ -398,7 +381,7 @@ const routes = () => [
         element: <ProfessionalTrainingPrograms />,
       },
       {
-        path: "aplicants",
+        path: "addEducationProgramsChildrenAdults",
         element: <AddEducationProgramsChildrenAdults />,
       },
     ],

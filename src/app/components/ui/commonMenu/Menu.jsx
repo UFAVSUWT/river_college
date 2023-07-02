@@ -13,7 +13,7 @@ const CommonMenu = observer(() => {
       )}
     >
       <h3
-        style={{ fontSize: toggleFontSize(1) }}
+        style={{ fontSize: toggleFontSize(14) }}
         className={`common__menu-title ${toggleClassName(
           "title",
           "title-white",
@@ -23,7 +23,7 @@ const CommonMenu = observer(() => {
       >
         Навигация раздела
       </h3>
-      <ul style={{ fontSize: toggleFontSize(0.8) }}>
+      <ul style={{ fontSize: toggleFontSize(12) }}>
         <li>
           <NavLink
             className={({ isActive }) =>

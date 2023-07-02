@@ -2,6 +2,7 @@ import { observer } from "mobx-react-lite";
 import React from "react";
 import {
   toggleClassName,
+  toggleFontSize,
   toggleIconColor,
 } from "../../../../../utils/disabled";
 import Rule from "../../../../../assets/pdf/applicant/pravila_priema_2023.pdf";
@@ -22,7 +23,10 @@ const Reception = observer(() => {
           ЧАСЫ РАБОТЫ ПРИЕМНОЙ КОМИССИИ С ПОСЕТИТЕЛЯМИ В 2023 ГОДУ:
         </h1>
         <div className="margin-tb1 flex applicantsEnrollee-header">
-          <div className="applicantsEnrollee-header-body">
+          <div
+            style={{ fontSize: toggleFontSize(20) }}
+            className="applicantsEnrollee-header-body"
+          >
             <p>
               Пн-Чт: <b>с 9.00 до 17.15.</b>
             </p>

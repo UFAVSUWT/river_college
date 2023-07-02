@@ -8,9 +8,9 @@ const App = observer(() => {
   const element = useRoutes(routes());
   const toggleFontSize = () => {
     const size = fontSize.fontSize;
-    if (size === "normal") return "1.25rem";
-    if (size === "medium") return "1.5rem";
-    if (size === "large") return "2rem";
+    if (size === "normal") return "18px";
+    if (size === "medium") return "22px";
+    if (size === "large") return "28px";
   };
 
   return (

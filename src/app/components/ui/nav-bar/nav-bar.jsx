@@ -25,7 +25,6 @@ const NavBar = observer(() => {
   return (
     <>
       <header
-        style={{ fontSize: toggleFontSize(0.875) }}
         className={toggleClassName(
           "header",
           "header-white",
@@ -36,7 +35,7 @@ const NavBar = observer(() => {
         <div className="_container">
           {fontSize.fontSize !== "original" ? <Disabled /> : null}
           <div
-            style={{ fontSize: toggleFontSize(0.6) }}
+            style={{ fontSize: toggleFontSize(12) }}
             className="header__section3"
           >
             {/* ссылка версия для слабовидящих  */}
@@ -131,7 +130,7 @@ const NavBar = observer(() => {
                     }
                     {
                       <span
-                        style={{ fontSize: toggleFontSize(0.6) }}
+                        style={{ fontSize: toggleFontSize(12) }}
                         className="btn__office-text"
                       >
                         Расписание
@@ -174,7 +173,7 @@ const NavBar = observer(() => {
                   }
                   {
                     <span
-                      style={{ fontSize: toggleFontSize(0.6) }}
+                      style={{ fontSize: toggleFontSize(12) }}
                       className="btn__office-text"
                     >
                       Личный кабинет
@@ -207,10 +206,6 @@ const NavBar = observer(() => {
 
         <div className="_container">
           <div className="header__section1">
-            {/*  <div className="header__item headerName">
-              Уфимский филиал ФГБОУ ВО <br />
-              "Волжский государственный университет водного транспорта"
-            </div> */}
             <MenuNavbar toggleFontSize={toggleFontSize} />
           </div>
         </div>

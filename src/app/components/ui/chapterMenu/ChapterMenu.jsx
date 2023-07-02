@@ -15,7 +15,7 @@ const ChapterMenu = ({ title, linksArray }) => {
       >
         {title ? (
           <h3
-            style={{ fontSize: toggleFontSize(1) }}
+            /*   style={{ fontSize: toggleFontSize(1) }} */
             className={`chapter__menu-title ${toggleClassName(
               "title",
               "title-white",
@@ -28,7 +28,7 @@ const ChapterMenu = ({ title, linksArray }) => {
         ) : null}
 
         {linksArray ? (
-          <ul style={{ fontSize: toggleFontSize(0.8) }}>
+          <ul style={{ fontSize: toggleFontSize(16) }}>
             {linksArray.map((element) => (
               <li key={element.path}>
                 <NavLink

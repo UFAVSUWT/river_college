@@ -1,9 +1,8 @@
 import React from "react";
-import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
+import { toggleClassName } from "../../../../utils/disabled";
 const PaidEdu = () => {
   return (
     <div
-      style={{ fontSize: toggleFontSize(1) }}
       className={toggleClassName(
         "common__container",
         "common__container-white",

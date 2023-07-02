@@ -62,10 +62,10 @@ export const toggleIconHeightSize = (
 };
 export const toggleFontSize = (originalSize) => {
   const size = fontSize.fontSize;
-  if (size === "original") return `${originalSize}rem`;
-  if (size === "normal") return `${originalSize + 0.175}rem`;
-  if (size === "medium") return `${originalSize + 0.275}rem`;
-  if (size === "large") return `${originalSize + 0.575}rem`;
+  if (size === "original") return `${originalSize}px`;
+  if (size === "normal") return `${originalSize + 2}px`;
+  if (size === "medium") return `${originalSize + 6}px`;
+  if (size === "large") return `${originalSize + 10}px`;
 };
 export const toggleClassName = (
   mainTheme,

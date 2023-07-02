@@ -1,14 +1,7 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-import theme from "../../../store/theme";
-import {
-  toggleIconColor,
-  toggleIconHeightSize,
-  toggleIconWidthSize,
-} from "../../../utils/disabled";
-import { NavLink, useNavigate } from "react-router-dom";
-
-const MenuNavbar = ({ toggleFontSize }) => {
+const MenuNavbar = () => {
   const [isMegaMenu, setIsMegaMenu] = useState(false); //переменная для отображения контента контейнера меню, когда мышка на элементе меню
   const [isElementOfMenu, setIsElementOfMenu] = useState(""); // дублирующая переменная для отображения контента в контейнере меню, когда курсор находится на самом контейнере
   const [isMegaMenuContainerIsActive, setIsMegaMenuContainerIsActive] =
@@ -48,8 +41,7 @@ const MenuNavbar = ({ toggleFontSize }) => {
     setIsMegaMenu(false);
     setIsElementOfMenu("");
   };
-  const navigate = useNavigate();
-  const toggleBackColor = () => {
+  /*   const toggleBackColor = () => {
     const currentTheme = theme.theme;
     if (currentTheme === "main") return "#0C1C2B";
     if (currentTheme === "white") return "white";
@@ -62,10 +54,10 @@ const MenuNavbar = ({ toggleFontSize }) => {
     if (currentTheme === "white") return "black";
     if (currentTheme === "black") return "white";
     if (currentTheme === "contrast") return "#195183";
-  };
+  }; */
   return (
     <>
-      <nav style={{ fontSize: toggleFontSize(0.9) }}>
+      <nav>
         <div className="header__navbar">
           <div className="header__navbar-list">
             <ul>

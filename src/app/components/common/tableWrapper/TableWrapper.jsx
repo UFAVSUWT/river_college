@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { toggleClassName } from "../../../utils/disabled";
+import { toggleClassName, toggleFontSize } from "../../../utils/disabled";
 import { observer } from "mobx-react-lite";
 import { ReactComponent as Exit } from "../../../assets/svg/exit.svg";
 import { ReactComponent as Exit1 } from "../../../assets/svg/exit1.svg";
@@ -19,7 +19,7 @@ const TableWrapper = observer(({ title, children }) => {
     setTableSize(!tableSize);
   };
   return (
-    <>
+    <div style={{ fontSize: toggleFontSize(14) }}>
       <h3
         className={`common__container-title ${toggleClassName(
           "title",
@@ -64,7 +64,7 @@ const TableWrapper = observer(({ title, children }) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 });
 TableWrapper.propTypes = {

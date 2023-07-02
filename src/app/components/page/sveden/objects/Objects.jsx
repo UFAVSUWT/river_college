@@ -1,11 +1,10 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
-import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
+import { toggleClassName } from "../../../../utils/disabled";
 import TableWrapper from "../../../common/tableWrapper/TableWrapper";
 const Ovz = observer(() => {
   return (
     <div
-      style={{ fontSize: toggleFontSize(1) }}
       className={toggleClassName(
         "common__container",
         "common__container-white",

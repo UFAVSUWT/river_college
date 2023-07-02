@@ -13,6 +13,7 @@ import ObrazecDiplomaOProfPodg from "../../../../assets/pdf/training/obrazecDipl
 import ObrazecProfRab from "../../../../assets/pdf/training/obrazecProfRab.pdf";
 import TrenazPodg from "../../../../assets/pdf/training/trenazPodg.pdf";
 import PovKval from "../../../../assets/pdf/training/povKval.pdf";
+import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
 import { NavLink } from "react-router-dom";
 
 const AboutCdo = observer(() => {
@@ -134,7 +135,19 @@ const AboutCdo = observer(() => {
           </li>
           <ul>
             <li>
-              {" "}
+              <a
+                href={Ustav}
+                className={toggleClassName(
+                  "education__link",
+                  "education__link-white",
+                  "education__link-black",
+                  "education__link-contrast"
+                )}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <PDF width={"25px"} height={"25px"} />
+              </a>{" "}
               <a
                 href={Ustav}
                 className={toggleClassName(
@@ -161,10 +174,36 @@ const AboutCdo = observer(() => {
                 target={"_blank"}
                 rel="noreferrer"
               >
+                <PDF width={"25px"} height={"25px"} />
+              </a>{" "}
+              <a
+                href={Licenz}
+                className={toggleClassName(
+                  "education__link",
+                  "education__link-white",
+                  "education__link-black",
+                  "education__link-contrast"
+                )}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Лицензия образовательной организации
               </a>
             </li>
             <li>
+              <a
+                href={Akkr}
+                className={toggleClassName(
+                  "education__link",
+                  "education__link-white",
+                  "education__link-black",
+                  "education__link-contrast"
+                )}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <PDF width={"25px"} height={"25px"} />
+              </a>{" "}
               <a
                 href={Akkr}
                 className={toggleClassName(
@@ -191,10 +230,36 @@ const AboutCdo = observer(() => {
                 target={"_blank"}
                 rel="noreferrer"
               >
+                <PDF width={"25px"} height={"25px"} />
+              </a>{" "}
+              <a
+                href={Pologenie}
+                className={toggleClassName(
+                  "education__link",
+                  "education__link-white",
+                  "education__link-black",
+                  "education__link-contrast"
+                )}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Положение о ДПО
               </a>
             </li>
             <li>
+              <a
+                href={PolozObObuch}
+                className={toggleClassName(
+                  "education__link",
+                  "education__link-white",
+                  "education__link-black",
+                  "education__link-contrast"
+                )}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <PDF width={"25px"} height={"25px"} />
+              </a>{" "}
               <a
                 href={PolozObObuch}
                 className={toggleClassName(
@@ -221,6 +286,19 @@ const AboutCdo = observer(() => {
                 target={"_blank"}
                 rel="noreferrer"
               >
+                <PDF width={"25px"} height={"25px"} />
+              </a>{" "}
+              <a
+                href={PolozObPlatn}
+                className={toggleClassName(
+                  "education__link",
+                  "education__link-white",
+                  "education__link-black",
+                  "education__link-contrast"
+                )}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Положение об оказании платных образовательных услуг
               </a>
             </li>
@@ -228,7 +306,19 @@ const AboutCdo = observer(() => {
           <li>Образцы выдаваемых документов</li>
           <ul>
             <li>
-              {" "}
+              <a
+                href={ObrazecDiplomaOProfPerepodg}
+                className={toggleClassName(
+                  "education__link",
+                  "education__link-white",
+                  "education__link-black",
+                  "education__link-contrast"
+                )}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <PDF width={"25px"} height={"25px"} />
+              </a>{" "}
               <a
                 href={ObrazecDiplomaOProfPerepodg}
                 className={toggleClassName(
@@ -255,10 +345,36 @@ const AboutCdo = observer(() => {
                 target={"_blank"}
                 rel="noreferrer"
               >
+                <PDF width={"25px"} height={"25px"} />
+              </a>{" "}
+              <a
+                href={ObrazecDiplomaOProfPodg}
+                className={toggleClassName(
+                  "education__link",
+                  "education__link-white",
+                  "education__link-black",
+                  "education__link-contrast"
+                )}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Образец диплома о профессиональной подготовке
               </a>
             </li>
             <li>
+              <a
+                href={ObrazecProfRab}
+                className={toggleClassName(
+                  "education__link",
+                  "education__link-white",
+                  "education__link-black",
+                  "education__link-contrast"
+                )}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <PDF width={"25px"} height={"25px"} />
+              </a>{" "}
               <a
                 href={ObrazecProfRab}
                 className={toggleClassName(
@@ -285,10 +401,36 @@ const AboutCdo = observer(() => {
                 target={"_blank"}
                 rel="noreferrer"
               >
+                <PDF width={"25px"} height={"25px"} />
+              </a>{" "}
+              <a
+                href={TrenazPodg}
+                className={toggleClassName(
+                  "education__link",
+                  "education__link-white",
+                  "education__link-black",
+                  "education__link-contrast"
+                )}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Образец свидетельства о прохождении тренажерной подготовки
               </a>
             </li>
             <li>
+              <a
+                href={PovKval}
+                className={toggleClassName(
+                  "education__link",
+                  "education__link-white",
+                  "education__link-black",
+                  "education__link-contrast"
+                )}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <PDF width={"25px"} height={"25px"} />
+              </a>{" "}
               <a
                 href={PovKval}
                 className={toggleClassName(

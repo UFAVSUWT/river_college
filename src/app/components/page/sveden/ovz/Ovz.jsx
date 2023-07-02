@@ -1,5 +1,5 @@
 import React from "react";
-import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
+import { toggleClassName } from "../../../../utils/disabled";
 import otv_ovz from "../../../../assets/pdf/ovzPage/otv_ovz.pdf";
 import OVZ from "../../../../assets/pdf/ovzPage/OVZ.pdf";
 
@@ -9,7 +9,6 @@ import TableWrapper from "../../../common/tableWrapper/TableWrapper";
 const Document = observer(() => {
   return (
     <div
-      style={{ fontSize: toggleFontSize(1) }}
       className={toggleClassName(
         "common__container",
         "common__container-white",

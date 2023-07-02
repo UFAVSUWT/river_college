@@ -1,6 +1,6 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
-import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
+import { toggleClassName } from "../../../../utils/disabled";
 import Licenz from "../../../../assets/pdf/documentPage/licenz_vip20220916.pdf";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
 import d230201 from "../../../../assets/pdf/educationPage/disciplin230201.pdf";
@@ -159,7 +159,6 @@ import rp_23_24 from "../../../../assets/pdf/educationPage/260506/rp_23_24.pdf";
 const Education = observer(() => {
   return (
     <div
-      style={{ fontSize: toggleFontSize(1) }}
       className={toggleClassName(
         "common__container",
         "common__container-white",
