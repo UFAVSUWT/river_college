@@ -8,7 +8,9 @@ import EventsPages from "../components/page/infoContainer/eventsPages/EventsPage
 import InfoPage from "../components/page/infoContainer/infoPage/InfoPage";
 import SecurityPage from "../components/page/infoContainer/securityPage/SecurityPage";
 import NewsNavbar from "../components/ui/newsNavbar/NewsNavbar";
+import PartnersContainer from "../components/ui/partners-container/partners-container";
 import { toggleClassName } from "../utils/disabled";
+import HrLine from "../components/common/hrLine/HrLine";
 
 const Main = observer(() => {
   const params = useParams();
@@ -42,6 +44,8 @@ const Main = observer(() => {
         </div>
       </div>
       <LiveCardContainer />
+      <HrLine />
+      <PartnersContainer />
     </>
   );
 });

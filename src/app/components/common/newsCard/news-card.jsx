@@ -10,7 +10,7 @@ const NewsCard = () => {
         {/* <img src={Image} alt="wave" /> */}
       </div>
       <div className="card-title">
-        <a href="#" className="toggle-info btnCard">
+        <a href="/" className="toggle-info btnCard">
           <span className="left"></span>
           <span className="right"></span>
         </a>
@@ -26,7 +26,7 @@ const NewsCard = () => {
         </div>
         <div className="card-flap flap2">
           <div className="card-actions">
-            <a href="#" className="btnCard">
+            <a href="/" className="btnCard">
               Read more
             </a>
           </div>

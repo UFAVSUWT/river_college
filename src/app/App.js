@@ -4,8 +4,6 @@ import { useRoutes } from "react-router";
 import routes from "./routes";
 import { observer } from "mobx-react-lite";
 import fontSize from "./store/fontSize";
-import PartnersContainer from "./components/ui/partners-container/partners-container";
-import HrLine from "./components/common/hrLine/HrLine";
 const App = observer(() => {
   const element = useRoutes(routes());
   const toggleFontSize = () => {
@@ -19,8 +17,6 @@ const App = observer(() => {
     <div style={{ fontSize: toggleFontSize() }}>
       <NavBar />
       {element}
-      <HrLine />
-      <PartnersContainer />
       <Footer />
     </div>
   );

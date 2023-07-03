@@ -159,6 +159,9 @@ const MenuNavbar = () => {
                 >
                   <li>План мероприятий</li>
                 </NavLink>
+                <NavLink onClick={() => megaMenuIsOut()} to={"sveden/common"}>
+                  <li>Сведения об образовательной организации</li>
+                </NavLink>
               </ul>
             </div>
             <div
@@ -167,6 +170,21 @@ const MenuNavbar = () => {
               }`}
             >
               <ul>
+                <NavLink onClick={() => megaMenuIsOut()} to={"learning/cadets"}>
+                  <li>Курсантам</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"learning/correspondenceStudents"}
+                >
+                  <li>Заочникам</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"learning/parents"}
+                >
+                  <li>Родителям</li>
+                </NavLink>
                 <NavLink
                   onClick={() => megaMenuIsOut()}
                   to={"learning/practice"}

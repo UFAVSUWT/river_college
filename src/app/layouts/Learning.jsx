@@ -2,17 +2,19 @@ import React from "react";
 import { Outlet } from "react-router";
 import BreadCrumbs from "../components/common/breadCrumbs/BreadCrumbs";
 import ChapterMenu from "../components/ui/chapterMenu/ChapterMenu";
-const Learning = () => {
+import { toggleClassName } from "../utils/disabled";
+import { observer } from "mobx-react-lite";
+const Learning = observer(() => {
   const linksMenu = [
-    /*  { title: "Курсантам", path: "" },
+    { title: "Курсантам", path: "cadets" },
     {
       title: "Заочникам",
-      path: "",
+      path: "correspondenceStudents",
     },
     {
-      title: "Выпускникам",
-      path: "",
-    }, */
+      title: "Родителям",
+      path: "parents",
+    },
     {
       title: "Практическая подготовка",
       path: "practice",
@@ -28,8 +30,17 @@ const Learning = () => {
       <div className="chapter__menu-show">
         <ChapterMenu linksArray={linksMenu} />
       </div>
-      <Outlet />
+      <div
+        className={toggleClassName(
+          "education__container",
+          "education__container-white",
+          "education__container-black",
+          "education__container-contrast"
+        )}
+      >
+        <Outlet />
+      </div>
     </div>
   );
-};
+});
 export default Learning;

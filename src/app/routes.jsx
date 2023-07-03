@@ -76,6 +76,9 @@ import Contacts from "./components/page/homePage/contacts/contacts";
 import Reviews from "./components/page/homePage/reviews/reviews";
 import UserSurvey from "./components/page/homePage/user-survey/user-survey";
 import AddEducationProgramsChildrenAdults from "./components/page/training/add-education-programs-children-adults/add-education-programs-children-adults";
+import Cadets from "./components/page/learning/cadets/cadets";
+import Parents from "./components/page/learning/parents/parents";
+import CorrespondenceStudents from "./components/page/learning/correspondence-students/correspondence-students";
 const routes = () => [
   {
     path: "",
@@ -336,6 +339,19 @@ const routes = () => [
         path: "practice",
         element: <Practice />,
       },
+      {
+        path: "cadets",
+        element: <Cadets />,
+      },
+      {
+        path: "parents",
+        element: <Parents />,
+      },
+      {
+        path: "correspondenceStudents",
+        element: <CorrespondenceStudents />,
+      },
+
       {
         path: "employmentService",
         element: <EmploymentService />,
