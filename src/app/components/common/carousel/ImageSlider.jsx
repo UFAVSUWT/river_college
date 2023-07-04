@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import Arctica from "../../../assets/img/main/arctica.jpg";
 import Boat from "../../../assets/img/main/boat.png";
+import Students from "../../../assets/img/main/students.jpg";
 import { NavLink } from "react-router-dom";
 import ChapterMenu from "../../ui/chapterMenu/ChapterMenu";
 
@@ -33,6 +34,25 @@ const ImageSlider = ({ className, ...rest }) => {
           }}
         >
           <SwiperSlide>
+            <NavLink to={"enrollee/reception"}>
+              <div className="marquee-infinite">
+                <span>
+                  <img src={Boat} alt="" width={"250px"} height={"96px"} />
+                </span>
+              </div>
+              <div className="_container">
+                <div className="swiperSlideFirs__lable">
+                  <div className="_container swiperSlideFirs__lable-content">
+                    Открыт набор курсантов по специальностям высшего и среднего
+                    образования!
+                    <br /> Стань капитаном своей судьбы!
+                  </div>
+                </div>
+              </div>
+              <img src={Students} alt="Картинка уплыла" />
+            </NavLink>
+          </SwiperSlide>
+          <SwiperSlide>
             <div className="marquee-infinite">
               <span>
                 <img src={Boat} alt="" width={"250px"} height={"96px"} />
@@ -54,14 +74,6 @@ const ImageSlider = ({ className, ...rest }) => {
               </NavLink>
             </div>
             <img src={Arctica} alt="Картинка уплыла" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="marquee-infinite">
-              <span>
-                <img src={Boat} alt="" width={"250px"} height={"96px"} />
-              </span>
-            </div>
-            slide2
           </SwiperSlide>
         </Swiper>
       </div>
