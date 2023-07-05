@@ -90,3 +90,15 @@ li{
 		padding-top: 5px;
 	}
 }
+
+.app__wrapper{
+
+	&-leftPanel{
+		width: 5%;
+	}
+	&-main{
+		position: absolute;
+		width: 95%;
+		left: 5%;
+	}
+}

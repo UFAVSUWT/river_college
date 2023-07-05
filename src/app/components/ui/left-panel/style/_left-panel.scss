@@ -1,0 +1,9 @@
+@import "../../../../style/variables";
+.leftPanel__wrapper{
+    position: fixed;
+    background-color: $MAIN_COLOR;
+    left: 0;
+    width: 5%;
+    height: 100vh;
+    z-index: 100;
+}

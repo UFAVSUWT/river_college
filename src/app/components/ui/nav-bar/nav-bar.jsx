@@ -32,13 +32,13 @@ const NavBar = observer(() => {
           "header-contrast"
         )}
       >
-        <div className="_container">
+        {/* <div className="_container">
           {fontSize.fontSize !== "original" ? <Disabled /> : null}
           <div
             style={{ fontSize: toggleFontSize(12) }}
             className="header__section3"
           >
-            {/* ссылка версия для слабовидящих  */}
+            
             <div className="header__section3-link">
               <div className="header__link header__link-pointer">
                 <span className="icon">
@@ -65,7 +65,7 @@ const NavBar = observer(() => {
                 </span>
               </div>
 
-              {/*  <!-- ссылка Сведения для образовательное организации --> */}
+           
               <div className="header__link">
                 <span className="icon">
                   <object>
@@ -93,10 +93,9 @@ const NavBar = observer(() => {
                 </span>
               </div>
             </div>
-            {/*    <!-- поиск --> */}
+    
             <div className="header__section3-btn">
-              {/*  <Search /> */}
-              {/*   <!-- расписание --> */}
+
               <div className="header__section3-btn-margin header__timetable">
                 <NavLink to="schedule">
                   <Button
@@ -139,7 +138,7 @@ const NavBar = observer(() => {
                   </Button>
                 </NavLink>
               </div>
-              {/*  <!-- кнопка входа в личный кабинет --> */}
+   
               <div className="header__section3-btn-margin header__office">
                 <Button
                   onClick={() => setIsActive(!isActive)}
@@ -184,9 +183,9 @@ const NavBar = observer(() => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* Разделительная красная линия */}
-        <hr className="redline" />
+        {/* <hr className="redline" /> */}
         <div className="_container">
           <div className="header__section2">
             <div className="signBoard__logo">

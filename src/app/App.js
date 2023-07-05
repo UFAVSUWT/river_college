@@ -4,6 +4,8 @@ import { useRoutes } from "react-router";
 import routes from "./routes";
 import { observer } from "mobx-react-lite";
 import fontSize from "./store/fontSize";
+import LeftPanel from "./components/ui/left-panel/left-panel";
+import ScrollUp from "./components/ui/scroll-up/scroll-up";
 const App = observer(() => {
   const element = useRoutes(routes());
   const toggleFontSize = () => {
@@ -14,10 +16,18 @@ const App = observer(() => {
   };
 
   return (
-    <div style={{ fontSize: toggleFontSize() }}>
-      <NavBar />
-      {element}
-      <Footer />
+    <div style={{ fontSize: toggleFontSize() }} className={"app__wrapper"}>
+      <div className="app__wrapper-leftPanel">
+        <LeftPanel />
+      </div>
+      <div className="app__wrapper-main">
+        <NavBar />
+        <div>
+          {element}
+          <ScrollUp />
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 });
