@@ -20,8 +20,8 @@ const App = observer(() => {
       <div className="app__wrapper-leftPanel">
         <LeftPanel />
       </div>
+      <NavBar />
       <div className="app__wrapper-main">
-        <NavBar />
         <div>
           {element}
           <ScrollUp />

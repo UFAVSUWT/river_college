@@ -3,9 +3,11 @@
     position: absolute;
     opacity: 1;
     bottom: -210px;
+    width: 95%;
+    left:50%;
+    transform:translate(-50%);
     display: none;
-    z-index: 100;
-    color: $MAIN_COLOR;
+    z-index: 11;
     display: none;
     -webkit-box-shadow: 0px 4px 8px 0px rgba(20, 49, 71, 0.2);
     -moz-box-shadow: 0px 4px 8px 0px rgba(20, 49, 71, 0.2);
@@ -14,7 +16,7 @@
 }
 .navbar__menu-item{
     margin-top: 25px;
-    width:1270px;
+    width:100%;
     min-height: 200px;
     padding: 25px;
     background-color: white;
