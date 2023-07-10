@@ -33,7 +33,6 @@ const NavBar = observer(() => {
   };
   /* закрываем меню при уходе курсора с элемента списка */
   const onMouseOut = (event) => {
-    console.log(event);
     setIsMegaMenu(false);
   };
   const megaMenuIsActive = (e) => {
@@ -44,21 +43,16 @@ const NavBar = observer(() => {
     setIsElementOfMenu("");
   };
   const prevScrollY = window.scrollY || document.documentElement.scrollTop;
-
   const [scrollTop, setScrollTop] = useState(0);
-
   useEffect(() => {
     const handleScroll = (event) => {
       setScrollTop(window.scrollY);
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  console.log(prevScrollY);
   window.onscroll = function () {
     let currentScrollY = window.scrollY;
     if (prevScrollY > currentScrollY) {

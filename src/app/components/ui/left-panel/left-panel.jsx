@@ -1,62 +1,86 @@
 import React, { useState } from "react";
-import { ReactComponent as User } from "../../../assets/svg/user.svg";
+
 import { ReactComponent as Logo } from "../../../assets/svg/riveruniversityLogo.svg";
-import { ReactComponent as Glasses } from "../../../assets/svg/glasses.svg";
-import { ReactComponent as Museum } from "../../../assets/svg/museum.svg";
-import { ReactComponent as Calendar } from "../../../assets/svg/calendar.svg";
+import { ReactComponent as User } from "../../../assets/svg/leftPanel/user.svg";
+import { ReactComponent as Glasses } from "../../../assets/svg/leftPanel/glasses.svg";
+import { ReactComponent as Museum } from "../../../assets/svg/leftPanel/museum.svg";
+import { ReactComponent as Calendar } from "../../../assets/svg/leftPanel/calendar.svg";
+import { ReactComponent as User1 } from "../../../assets/svg/leftPanel/user1.svg";
+import { ReactComponent as Glasses1 } from "../../../assets/svg/leftPanel/glasses1.svg";
+import { ReactComponent as Museum1 } from "../../../assets/svg/leftPanel/museum1.svg";
+import { ReactComponent as Calendar1 } from "../../../assets/svg/leftPanel/calendar1.svg";
 import { toggleIconColor } from "../../../utils/disabled";
 import { observer } from "mobx-react-lite";
 import { NavLink } from "react-router-dom";
+
 const LeftPanel = observer(() => {
   const [isMegaMenu, setIsMegaMenu] = useState(false); //переменная для отображения контента контейнера меню, когда мышка на элементе меню
-  const [isElementOfMenu, setIsElementOfMenu] = useState(""); // дублирующая переменная для отображения контента в контейнере меню, когда курсор находится на самом контейнере
-  const [isMegaMenuContainerIsActive, setIsMegaMenuContainerIsActive] =
-    useState(false); // переменная для отображения самого контейнера
   /* Открываем меню при наведении на элементы главного списка */
   const onMouseEnter = (event) => {
-    setIsMegaMenuContainerIsActive(true);
-    if (event.target.innerHTML) {
-      setIsMegaMenu("isShow");
-      setIsElementOfMenu("isShow");
-    }
+    setIsMegaMenu(true);
   };
-  /* закрываем меню при уходе курсора с элемента списка */
   const onMouseOut = (event) => {
     setIsMegaMenu(false);
   };
   const megaMenuIsActive = (e) => {
-    setIsMegaMenu(isElementOfMenu);
+    setIsMegaMenu(true);
   };
   const megaMenuIsOut = () => {
     setIsMegaMenu(false);
-    setIsElementOfMenu("");
   };
+
   const [isLinks, setIsLinks] = useState("");
-  const onLinkEnter = (event) => {
+  const onIconEnter = (event) => {
     let id = event.target.id;
-    if (id === "User" || id === "User_link") {
+    if (id === "User" || id === "User1" || id === "User_link") {
       setIsLinks("User");
+    } else if (
+      id === "Calendar" ||
+      id === "Calendar1" ||
+      id === "Calendar_link"
+    ) {
+      setIsLinks("Calendar");
+    } else if (id === "Museum" || id === "Museum1" || id === "Museum_link") {
+      setIsLinks("Museum");
+    } else if (id === "Glasses" || id === "Glasses1" || id === "Glasses_link") {
+      setIsLinks("Glasses");
     }
   };
-  const onLinkOut = (e) => {
+  const onIconOut = (e) => {
     setIsLinks("");
   };
+  const toggleIsHidden = () => {
+    setIsMegaMenu(false);
+  };
+  const [isDisabled, setIsDisabled] = useState(false);
+  const toggleDisabled = () => {
+    setIsDisabled(!isDisabled);
+  };
+  console.log(isDisabled);
+
   return (
-    <div
-      onMouseEnter={(e) => onMouseEnter(e)}
-      onMouseLeave={(e) => onMouseOut(e)}
-      className="leftPanel__wrapper"
-    >
+    <div className="leftPanel__wrapper">
+      {isDisabled ? (
+        <div
+          className={`leftPanel__wrapper-moove-disabled ${
+            isDisabled ? "isShow" : ""
+          }`}
+        >
+          Версия для слабовидящих
+        </div>
+      ) : null}
       <div
         onMouseEnter={(e) => megaMenuIsActive(e)}
         onMouseLeave={(e) => megaMenuIsOut(e)}
-        className={`leftPanel__wrapper-moove ${isMegaMenu ? isMegaMenu : ""}`}
+        className={`leftPanel__wrapper-moove ${isMegaMenu ? "isShow" : ""}`}
       >
         <div className="leftPanel__wrapper-moove-top">
           <div> Стань капитаном своей судьбы!</div>
         </div>
         <div className="leftPanel__wrapper-moove-links">
           <div
+            onMouseLeave={(e) => onIconOut(e)}
+            onMouseEnter={(e) => onIconEnter(e)}
             id="User_link"
             className={`links__container ${
               isLinks === "User" ? "links__container-active" : ""
@@ -64,18 +88,50 @@ const LeftPanel = observer(() => {
           >
             <NavLink to={""}>Личный кабинет</NavLink>
           </div>
-          <div className="links__container">
-            <NavLink to={""}>Расписание занятий</NavLink>
-          </div>
-          <div className="links__container">
-            <NavLink to={""}>Сведения об образовательной организации</NavLink>
-          </div>
-          <div className="links__container">
-            <NavLink to={""}>Версия для слабовидящих</NavLink>
+          <NavLink to={"schedule"}>
+            <div
+              onMouseLeave={(e) => onIconOut(e)}
+              onMouseEnter={(e) => onIconEnter(e)}
+              onClick={() => toggleIsHidden()}
+              id="Calendar_link"
+              className={`links__container ${
+                isLinks === "Calendar" ? "links__container-active" : ""
+              }`}
+            >
+              Расписание занятий
+            </div>
+          </NavLink>
+          <NavLink to={"sveden/common"}>
+            <div
+              onMouseLeave={(e) => onIconOut(e)}
+              onMouseEnter={(e) => onIconEnter(e)}
+              onClick={() => toggleIsHidden()}
+              id="Museum_link"
+              className={`links__container ${
+                isLinks === "Museum" ? "links__container-active" : ""
+              }`}
+            >
+              Сведения об образовательной организации
+            </div>
+          </NavLink>
+          <div
+            onMouseLeave={(e) => onIconOut(e)}
+            onMouseEnter={(e) => onIconEnter(e)}
+            onClick={() => toggleDisabled()}
+            id="Glasses_link"
+            className={`links__container ${
+              isLinks === "Glasses" ? "links__container-active" : ""
+            }`}
+          >
+            Версия для слабовидящих
           </div>
         </div>
       </div>
-      <div className="leftPanel__wrapper-static">
+      <div
+        onMouseEnter={(e) => onMouseEnter(e)}
+        onMouseLeave={(e) => onMouseOut(e)}
+        className="leftPanel__wrapper-static"
+      >
         <div className="leftPanel__wrapper-static-top">
           <div>
             <Logo
@@ -86,40 +142,93 @@ const LeftPanel = observer(() => {
           </div>
         </div>
         <div className="leftPanel__wrapper-static-icons">
+          <div className="icon__container">
+            {isLinks === "User" ? (
+              <User
+                onMouseLeave={(e) => onIconOut(e)}
+                onMouseEnter={(e) => onIconEnter(e)}
+                id="User"
+                width={"100%"}
+                height={"100%"}
+              />
+            ) : (
+              <User1
+                onMouseEnter={(e) => onIconEnter(e)}
+                onMouseLeave={(e) => onIconOut(e)}
+                id="User1"
+                width={"100%"}
+                height={"100%"}
+              />
+            )}
+          </div>
+          <div onClick={() => toggleIsHidden()} className="icon__container">
+            <NavLink to="schedule">
+              {isLinks === "Calendar" ? (
+                <Calendar
+                  onMouseLeave={(e) => onIconOut(e)}
+                  onMouseEnter={(e) => onIconEnter(e)}
+                  id="Calendar"
+                  width={"100%"}
+                  height={"100%"}
+                />
+              ) : (
+                <Calendar1
+                  onMouseEnter={(e) => onIconEnter(e)}
+                  onMouseLeave={(e) => onIconOut(e)}
+                  id="Calendar1"
+                  width={"100%"}
+                  height={"100%"}
+                />
+              )}
+            </NavLink>
+          </div>
           <div
-            onMouseEnter={(e) => onLinkEnter(e)}
-            onMouseLeave={(e) => onLinkOut(e)}
-            id="User"
-            className={`icon__container ${
-              isLinks === "User" ? "icon__container-active" : ""
-            }`}
+            onClick={() => toggleIsHidden()}
+            id="Museum"
+            className="icon__container"
           >
-            <User
-              fill={toggleIconColor("#fff")}
-              width={"100%"}
-              height={"100%"}
-            />
+            <NavLink to="sveden/common">
+              {isLinks === "Museum" ? (
+                <Museum
+                  onMouseLeave={(e) => onIconOut(e)}
+                  onMouseEnter={(e) => onIconEnter(e)}
+                  id="Museum"
+                  width={"100%"}
+                  height={"100%"}
+                />
+              ) : (
+                <Museum1
+                  onMouseEnter={(e) => onIconEnter(e)}
+                  onMouseLeave={(e) => onIconOut(e)}
+                  id="Museum1"
+                  width={"100%"}
+                  height={"100%"}
+                />
+              )}
+            </NavLink>
           </div>
-          <div id="Calendar" className="icon__container">
-            <Calendar
-              fill={toggleIconColor("#fff")}
-              width={"100%"}
-              height={"100%"}
-            />
-          </div>
-          <div id="Museum" className="icon__container">
-            <Museum
-              fill={toggleIconColor("#fff")}
-              width={"100%"}
-              height={"100%"}
-            />
-          </div>
-          <div id="Glasses" className="icon__container">
-            <Glasses
-              fill={toggleIconColor("#fff")}
-              width={"100%"}
-              height={"100%"}
-            />
+          <div
+            onClick={() => toggleDisabled()}
+            id="Glasses"
+            className="icon__container"
+          >
+            {isLinks === "Glasses" ? (
+              <Glasses
+                onMouseLeave={(e) => onIconOut(e)}
+                onMouseEnter={(e) => onIconEnter(e)}
+                id="Glasses"
+                width={"100%"}
+                height={"100%"}
+              />
+            ) : (
+              <Glasses1
+                onMouseEnter={(e) => onIconEnter(e)}
+                onMouseLeave={(e) => onIconOut(e)}
+                id="Glasses1"
+                width={"100%"}
+                height={"100%"}
+              />
+            )}
           </div>
         </div>
       </div>
