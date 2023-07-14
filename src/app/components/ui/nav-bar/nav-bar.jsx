@@ -65,12 +65,12 @@ const NavBar = observer(() => {
     <>
       <div id="navBar" className="app__wrapper-navBar">
         <header
-          className={toggleClassName(
+          className={`header ${toggleClassName(
             "header",
             "header-white",
             "header-black",
             "header-contrast"
-          )}
+          )}`}
         >
           <div className="header-title">
             <NavLink to={"/"}>
@@ -137,14 +137,20 @@ const NavBar = observer(() => {
           <div
             onMouseEnter={(e) => megaMenuIsActive(e)}
             onMouseLeave={(e) => megaMenuIsOut(e)}
-            className={`navbar__menu-container ${
-              isMegaMenuContainerIsActive ? "show-menu-container" : ""
-            }`}
+            className={`navbar__menu-container ${toggleClassName(
+              "navbar__menu-container",
+              "navbar__menu-container-white",
+              "navbar__menu-container-black",
+              "navbar__menu-container-contrast"
+            )} ${isMegaMenuContainerIsActive ? "show-menu-container" : ""}`}
           >
             <div
-              className={`navbar__menu-item ${
-                isMegaMenu === "main" ? "show-menu-item" : ""
-              }`}
+              className={`navbar__menu-item ${toggleClassName(
+                "navbar__menu-item",
+                "navbar__menu-item-white",
+                "navbar__menu-item-black",
+                "navbar__menu-item-contrast"
+              )} ${isMegaMenu === "main" ? "show-menu-item" : ""}`}
             >
               <ul onClick={() => megaMenuIsOut()}>
                 <NavLink onClick={() => megaMenuIsOut()} to={""}>
@@ -180,9 +186,12 @@ const NavBar = observer(() => {
               </ul>
             </div>
             <div
-              className={`navbar__menu-item ${
-                isMegaMenu === "education" ? "show-menu-item" : ""
-              }`}
+              className={`navbar__menu-item ${toggleClassName(
+                "navbar__menu-item",
+                "navbar__menu-item-white",
+                "navbar__menu-item-black",
+                "navbar__menu-item-contrast"
+              )} ${isMegaMenu === "education" ? "show-menu-item" : ""}`}
             >
               <ul>
                 <NavLink onClick={() => megaMenuIsOut()} to={"learning/cadets"}>
@@ -215,9 +224,12 @@ const NavBar = observer(() => {
               </ul>
             </div>
             <div
-              className={`navbar__menu-item ${
-                isMegaMenu === "enrolle" ? "show-menu-item" : ""
-              }`}
+              className={`navbar__menu-item ${toggleClassName(
+                "navbar__menu-item",
+                "navbar__menu-item-white",
+                "navbar__menu-item-black",
+                "navbar__menu-item-contrast"
+              )} ${isMegaMenu === "enrolle" ? "show-menu-item" : ""}`}
             >
               <ul>
                 <NavLink
@@ -259,9 +271,12 @@ const NavBar = observer(() => {
               </ul>
             </div>
             <div
-              className={`navbar__menu-item ${
-                isMegaMenu === "additional" ? "show-menu-item" : ""
-              }`}
+              className={`navbar__menu-item ${toggleClassName(
+                "navbar__menu-item",
+                "navbar__menu-item-white",
+                "navbar__menu-item-black",
+                "navbar__menu-item-contrast"
+              )} ${isMegaMenu === "additional" ? "show-menu-item" : ""}`}
             >
               <ul>
                 <NavLink
@@ -288,9 +303,12 @@ const NavBar = observer(() => {
               </ul>
             </div>
             <div
-              className={`navbar__menu-item ${
-                isMegaMenu === "live" ? "show-menu-item" : ""
-              }`}
+              className={`navbar__menu-item ${toggleClassName(
+                "navbar__menu-item",
+                "navbar__menu-item-white",
+                "navbar__menu-item-black",
+                "navbar__menu-item-contrast"
+              )} ${isMegaMenu === "live" ? "show-menu-item" : ""}`}
             >
               <ul>
                 <NavLink
@@ -311,9 +329,12 @@ const NavBar = observer(() => {
               </ul>
             </div>
             <div
-              className={`navbar__menu-item ${
-                isMegaMenu === "contacts" ? "show-menu-item" : ""
-              }`}
+              className={`navbar__menu-item ${toggleClassName(
+                "navbar__menu-item",
+                "navbar__menu-item-white",
+                "navbar__menu-item-black",
+                "navbar__menu-item-contrast"
+              )} ${isMegaMenu === "contacts" ? "show-menu-item" : ""}`}
             >
               <ul>
                 <NavLink onClick={() => megaMenuIsOut()} to={"home/reviews"}>

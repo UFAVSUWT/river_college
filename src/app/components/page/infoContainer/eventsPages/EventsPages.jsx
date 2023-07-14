@@ -17,7 +17,7 @@ const EventsPages = observer(() => {
         <span className="infocontainer__titile">Ближайшие мероприятия</span>
         <NavLink to="home/univercityEvents">
           <Button
-            style={{ fontSize: toggleFontSize(1) }}
+            style={{ fontSize: toggleFontSize(18) }}
             className={toggleClassName(
               "infopage__button",
               "white white-radius",
@@ -62,7 +62,7 @@ const EventsPages = observer(() => {
         />
         <EventCard
           num={"22"}
-          month={"Яндваря"}
+          month={"Января"}
           title={"Благотворительный вечер"}
           className={toggleClassName(
             "thirdCard",

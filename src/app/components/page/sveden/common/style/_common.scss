@@ -1,7 +1,7 @@
 @import "../../../../../style/variables";
 .common__container{
     max-width: 930px;
-    font-size: 1rem;
+/*     font-size: 1rem; */
     text-align: justify;
     &-title{
         text-align: center;
@@ -16,7 +16,7 @@
             background: #F7F7F7;
         }
         a{  
-            font-size: 0.8rem;
+           /*  font-size: 0.8rem; */
             color: $MAIN_COLOR;
             border-bottom: solid 1px $MAIN_COLOR;
             font-weight: 500;
@@ -64,7 +64,7 @@
 .common__container-white{
     color: $DISABLED_FONT_COLOR;
     background-color: $BACK_WHITE;
-    font-size: 1rem;
+/*     font-size: 1rem; */
     &-title{
         text-align: center;
     }
@@ -84,7 +84,7 @@
 .common__container-black{
     color: $WHITE_FONT_COLOR;
     background-color: $BACK_BLACK;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     &-title{
         text-align: center;
     }
@@ -104,7 +104,7 @@
 .common__container-contrast{
     color: $FONT_CONTRAST;
     background-color: $BACK_CONTRAST;
-    font-size: 1rem;
+/*     font-size: 1rem; */
     &-title{
         text-align: center;
     }
@@ -174,9 +174,9 @@
 }
 @media screen and (max-width:715px) {
     .common__container{
-        font-size: 0.7rem;
+     /*    font-size: 0.7rem; */
         table{
-            font-size: 0.6rem;
+         /*    font-size: 0.6rem; */
             td {
                 text-align: left;
                 min-width: 10px;
@@ -189,7 +189,7 @@
 @media screen and (max-width:623px) {
     .common__container{
         h1,h3,p{
-            font-size: 0.8rem;
+        /*     font-size: 0.8rem; */
         }
         
     }

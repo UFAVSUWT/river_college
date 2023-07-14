@@ -3,10 +3,15 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { ReactComponent as RiverUniversityLogo } from "../../../assets/svg/riveruniversityLogo.svg";
 import { ReactComponent as Vk } from "../../../assets/svg/vk.svg";
-import { toggleClassName, toggleIconColor } from "../../../utils/disabled";
+import {
+  toggleClassName,
+  toggleFontSize,
+  toggleIconColor,
+} from "../../../utils/disabled";
 const Footer = observer(() => {
   return (
     <footer
+      style={{ fontSize: toggleFontSize(18) }}
       className={toggleClassName(
         "footer",
         "footer-white",

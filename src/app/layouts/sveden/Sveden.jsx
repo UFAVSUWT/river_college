@@ -3,7 +3,7 @@ import React from "react";
 import { Outlet } from "react-router";
 import BreadCrumbs from "../../components/common/breadCrumbs/BreadCrumbs";
 import Menu from "../../components/ui/commonMenu/Menu";
-import { toggleClassName } from "../../utils/disabled";
+import { toggleClassName, toggleFontSize } from "../../utils/disabled";
 const Sveden = observer(() => {
   return (
     <>
@@ -20,7 +20,12 @@ const Sveden = observer(() => {
         )} background-blue`}
       >
         <Menu />
-        <div className="sveden__container-item">
+        <div
+          style={{
+            fontSize: toggleFontSize(18),
+          }}
+          className="sveden__container-item"
+        >
           <Outlet />
         </div>
       </div>

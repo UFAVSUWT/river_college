@@ -1,5 +1,6 @@
 import { CaretRightOutlined } from "@ant-design/icons";
 import { Collapse, theme } from "antd";
+import { toggleFontSize } from "../../../../utils/disabled";
 
 const Cadets = () => {
   const { token } = theme.useToken();
@@ -341,6 +342,7 @@ const Cadets = () => {
         )}
         style={{
           background: token.colorBgContainer,
+          fontSize: toggleFontSize(14),
         }}
         items={getItemsStudyProcess(panelStyle)}
       />
@@ -352,6 +354,7 @@ const Cadets = () => {
         )}
         style={{
           background: token.colorBgContainer,
+          fontSize: toggleFontSize(14),
         }}
         items={getItemsCommitteeSelection(panelStyle)}
       />

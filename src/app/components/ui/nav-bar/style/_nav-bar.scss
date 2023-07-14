@@ -13,7 +13,6 @@
   transition: top 0.2s;
 }
 .header{
-  
   display: flex;
   align-items: center;
   width: 100%;
@@ -21,8 +20,6 @@
   left: 5%;
   z-index: 100;
   padding: 0 10px;
-  
-
    &-title{
     width: 23%;
     font-size: 14px;
@@ -58,6 +55,57 @@
   
 }
 
+.header-white{
+  background-color: white;
+   .header-title{ 
+    border: solid 1px black;
+    a{
+      color: black;
+    }
+   }
+  .header-menu{
+    ul{
+      color: black;
+      li{
+      border: solid 1px black;
+      }
+    }
+  }
+}
+.header-black{
+  background-color: black;
+   .header-title{ 
+    border: solid 1px white;
+    a{
+      color: white;
+    }
+   }
+  .header-menu{
+    ul{
+      color: white;
+      li{
+      border: solid 1px white;
+      }
+    }
+  }
+}
+.header-contrast{
+  background-color: $BACK_CONTRAST;
+   .header-title{ 
+    border: solid 1px $FONT_CONTRAST;
+    a{
+      color: $FONT_CONTRAST;
+    }
+   }
+  .header-menu{
+    ul{
+      color: $FONT_CONTRAST;
+      li{
+      border: solid 1px $FONT_CONTRAST;
+      }
+    }
+  }
+}
 //выпадающее меню
 .navbar__menu-container{
   position: absolute;
@@ -73,16 +121,40 @@
   -moz-box-shadow: 0px 4px 8px 0px rgba(20, 49, 71, 0.2);
   box-shadow: 0px 4px 8px 0px rgba(20, 49, 71, 0.2);
   ul{
-   
     a{
-   
       color: $LINK_COLOR;
     }
-  
- 
+  }
 }
 
+.navbar__menu-container-white{
+  ul{
+    
+      a{
+        color: black;
+      }
+  
+  }
 }
+.navbar__menu-container-black{
+  ul{
+    
+      a{
+        color: white;
+      
+    }
+  }
+}
+.navbar__menu-container-contrast{
+  ul{
+    
+      a{
+        color: $FONT_CONTRAST;
+      }
+    
+  }
+}
+
 .navbar__menu-item{
   margin-top: 25px;
   width:100%;
@@ -110,13 +182,50 @@
           vertical-align: middle;
      }
       li:hover{
-          border-bottom: solid 2px $RED_COLOR;
+          border-bottom: solid 2px black;
           background-color:rgba(12, 29, 44, 0.05);
           cursor: pointer;
           padding-bottom: 4px;
       }
   }
 }
+.navbar__menu-item-white{
+  background-color: white;
+  ul{
+      color: black;
+      li{
+        border: solid 2px black;
+       }
+     }  
+      li:hover{
+          border-bottom: solid 2px black;
+      }
+}
+.navbar__menu-item-black{
+  background-color: black;
+  ul{
+      color: white;
+      li{
+        border: solid 2px white;
+       }
+     }  
+      li:hover{
+          border-bottom: solid 2px white;
+      }
+}
+.navbar__menu-item-contrast{
+  background-color: $BACK_CONTRAST;
+  ul{
+      color: $FONT_CONTRAST;
+      li{
+        border: solid 2px $FONT_CONTRAST;
+       }
+     }  
+      li:hover{
+          border-bottom: solid 2px $FONT_CONTRAST;
+      }
+}
+
 .show-menu-item{
   display: block;
 }

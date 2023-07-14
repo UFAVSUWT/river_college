@@ -31,7 +31,7 @@ const NewsNavbar = observer(() => {
               Новости
             </NavLink>
           </li>
-          <li
+          {/* <li
             className={toggleClassName(
               "navbar__button",
               "navbar__button-white",
@@ -54,7 +54,7 @@ const NewsNavbar = observer(() => {
             >
               Мероприятия
             </NavLink>
-          </li>
+          </li> */}
           <li
             className={toggleClassName(
               "navbar__button",
@@ -79,7 +79,7 @@ const NewsNavbar = observer(() => {
               Поступающим
             </NavLink>
           </li>
-          <li
+          {/* <li
             className={toggleClassName(
               "navbar__button",
               "navbar__button-white",
@@ -102,7 +102,7 @@ const NewsNavbar = observer(() => {
             >
               Безопасность
             </NavLink>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </>

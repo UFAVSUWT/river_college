@@ -38,9 +38,9 @@ const Main = observer(() => {
           )}
         >
           {!params.element && <InfoPage />}
-          {params.element === "events" ? <EventsPages /> : null}
+          {/*     {params.element === "events" ? <EventsPages /> : null} */}
           {params.element === "applicants" ? <ApplicantsPage /> : null}
-          {params.element === "security" ? <SecurityPage /> : null}
+          {/*       {params.element === "security" ? <SecurityPage /> : null} */}
         </div>
       </div>
       <LiveCardContainer />

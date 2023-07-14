@@ -14,8 +14,8 @@ const Schedule = () => {
             <Button>На главную</Button>
           </NavLink>
         </dib>
-
-        <Calendar />
+        {/* <Calendar /> */}
+        Расписание отсутствует
       </div>
     </main>
   );

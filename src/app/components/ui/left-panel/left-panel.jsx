@@ -9,7 +9,7 @@ import { ReactComponent as User1 } from "../../../assets/svg/leftPanel/user1.svg
 import { ReactComponent as Glasses1 } from "../../../assets/svg/leftPanel/glasses1.svg";
 import { ReactComponent as Museum1 } from "../../../assets/svg/leftPanel/museum1.svg";
 import { ReactComponent as Calendar1 } from "../../../assets/svg/leftPanel/calendar1.svg";
-import { toggleIconColor } from "../../../utils/disabled";
+import { toggleClassName, toggleIconColor } from "../../../utils/disabled";
 import { observer } from "mobx-react-lite";
 import { NavLink } from "react-router-dom";
 import Disabled from "../disabled/disabled-panel";
@@ -70,7 +70,14 @@ const LeftPanel = observer(() => {
   console.log(isDisabled);
 
   return (
-    <div className="leftPanel__wrapper">
+    <div
+      className={`leftPanel__wrapper ${toggleClassName(
+        "leftPanel__wrapper",
+        "leftPanel__wrapper-white",
+        "leftPanel__wrapper-black",
+        "leftPanel__wrapper-contrast"
+      )}`}
+    >
       <div
         onMouseEnter={(e) => megaMenuIsActive(e)}
         onMouseLeave={(e) => megaMenuIsOut(e)}

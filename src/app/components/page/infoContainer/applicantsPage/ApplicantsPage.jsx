@@ -18,7 +18,7 @@ const ApplicantsPage = observer(() => {
         <span className="infocontainer__titile">Приемная кампания</span>
         <NavLink to="enrollee/applicantsInfo">
           <Button
-            style={{ fontSize: toggleFontSize(1) }}
+            style={{ fontSize: toggleFontSize(18) }}
             className={toggleClassName(
               "infopage__button",
               "white white-radius",
