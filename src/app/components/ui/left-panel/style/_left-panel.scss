@@ -33,6 +33,7 @@
                 align-items: center;
                 border-bottom: solid 1px $MAIN_COLOR;
                 margin-left:  10px;
+                cursor: pointer;
                 a{
                     color: $MAIN_COLOR;
                 }
@@ -67,7 +68,7 @@
             height: 70%;
             div{
                 height: 10vh;
-                padding: 10px;
+                padding: 10%;
                 opacity: 1;
                 border-bottom: solid 1px #8090bec3;
             }
@@ -99,16 +100,42 @@
     transition: max-width 0.5s ease-in;
 }
 .leftPanel__wrapper-moove-disabled{
-    position: absolute;
-    left:100%;
-    width: 30vh;
+    
+    display: none;
+    
+    width: 100%;
     transition: max-width 0.5s ease-in;
     overflow: hidden;
-    background-color: rgb(234, 67, 67);
+    background-color: $DISABLED;
     -webkit-box-shadow: 4px 0px 8px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 4px 0px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 4px 0px 8px 0px rgba(34, 60, 80, 0.2);
     height: 100vh;
     z-index: 101;
+    &-back{
+        width: 384px;
+        margin: 5% 2%;
+        display: flex;
+        justify-content: end;
+        div{
+            border: solid 2px #000;
+            width: max-content;
+            padding: 0.3em;
+            font-size: 22px;
+        }
+    }
 
+}
+
+
+.leftPanel__wrapper-moove-disabled-show{
+    display: block;
+}
+
+@media screen and (max-width:1270){
+    .leftPanel__wrapper{
+        position: static;
+        width: 0;
+        display: none;
+    }
 }

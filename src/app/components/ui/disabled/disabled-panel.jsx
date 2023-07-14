@@ -18,6 +18,14 @@ const Disabled = observer(() => {
     <>
       <div className="header__section-disabled">
         <div className="disabled__container">
+          <div
+            onClick={() => handleThemeMain()}
+            className="disabled__container-back"
+          >
+            Обычная версия сайта
+          </div>
+        </div>
+        <div className="disabled__container">
           <div className="disabled__container-label">Размер</div>
           <div className="disabled__container-block">
             <div
@@ -41,7 +49,7 @@ const Disabled = observer(() => {
                 "disabled__container-block-aa"
               )}`}
             >
-              А
+              АA
             </div>
 
             <div
@@ -53,7 +61,7 @@ const Disabled = observer(() => {
                 "disabled__container-block-aaa-large"
               )}`}
             >
-              А
+              АAA
             </div>
           </div>
         </div>
@@ -80,7 +88,7 @@ const Disabled = observer(() => {
                 "disabled__container-block-cc"
               )}`}
             >
-              С
+              СC
             </div>
             <div
               onClick={() => theme.contrast()}
@@ -91,7 +99,7 @@ const Disabled = observer(() => {
                 "disabled__container-block-ccc-contrast"
               )}`}
             >
-              С
+              СCC
             </div>
           </div>
         </div>
@@ -126,14 +134,6 @@ const Disabled = observer(() => {
             >
               Выкл.
             </div>
-          </div>
-        </div>
-        <div className="disabled__container">
-          <div
-            onClick={() => handleThemeMain()}
-            className="disabled__container-back"
-          >
-            Обычная версия сайта
           </div>
         </div>
       </div>

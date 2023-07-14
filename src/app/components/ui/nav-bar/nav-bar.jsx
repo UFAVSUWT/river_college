@@ -62,258 +62,279 @@ const NavBar = observer(() => {
     }
   };
   return (
-    <div id="navBar" className="app__wrapper-navBar">
-      <header
-        className={toggleClassName(
-          "header",
-          "header-white",
-          "header-black",
-          "header-contrast"
-        )}
-      >
-        <div className="header-title">
-          <NavLink to={"/"}>
-            Уфимский филиал ФГБОУ ВО <br /> "Волжский государственный
-            университет <br />
-            водного транспорта"
-          </NavLink>
-        </div>
-        <div className="header-menu">
-          <ul>
-            <li
-              onMouseEnter={(e) => onMouseEnter(e)}
-              onMouseOut={(e) => onMouseOut(e)}
-              className={`${isMegaMenu === "main" ? "show-menu-list" : ""}`}
-            >
-              Главная
-            </li>
-            <li
-              onMouseEnter={(e) => onMouseEnter(e)}
-              onMouseOut={(e) => onMouseOut(e)}
-              className={`${
-                isMegaMenu === "education" ? "show-menu-list" : ""
-              }`}
-            >
-              Образование
-            </li>
-            <li
-              onMouseEnter={(e) => onMouseEnter(e)}
-              onMouseOut={(e) => onMouseOut(e)}
-              className={`${isMegaMenu === "enrolle" ? "show-menu-list" : ""}`}
-            >
-              Абитуриенту
-            </li>
-            <li
-              onMouseEnter={(e) => onMouseEnter(e)}
-              onMouseOut={(e) => onMouseOut(e)}
-              className={`${
-                isMegaMenu === "additional" ? "show-menu-list" : ""
-              }`}
-            >
-              Дополнительное образование
-            </li>
-            <li
-              onMouseEnter={(e) => onMouseEnter(e)}
-              onMouseOut={(e) => onMouseOut(e)}
-              className={`${isMegaMenu === "live" ? "show-menu-list" : ""}`}
-            >
-              Студенческая жизнь
-            </li>
-            <li
-              onMouseEnter={(e) => onMouseEnter(e)}
-              onMouseOut={(e) => onMouseOut(e)}
-              className={`${isMegaMenu === "contacts" ? "show-menu-list" : ""}`}
-            >
-              Контакты
-            </li>
-          </ul>
-        </div>
-
-        <div
-          onMouseEnter={(e) => megaMenuIsActive(e)}
-          onMouseLeave={(e) => megaMenuIsOut(e)}
-          className={`navbar__menu-container ${
-            isMegaMenuContainerIsActive ? "show-menu-container" : ""
-          }`}
+    <>
+      <div id="navBar" className="app__wrapper-navBar">
+        <header
+          className={toggleClassName(
+            "header",
+            "header-white",
+            "header-black",
+            "header-contrast"
+          )}
         >
-          <div
-            className={`navbar__menu-item ${
-              isMegaMenu === "main" ? "show-menu-item" : ""
-            }`}
-          >
-            <ul onClick={() => megaMenuIsOut()}>
-              <NavLink onClick={() => megaMenuIsOut()} to={""}>
-                <li>Главная</li>
-              </NavLink>
-              <NavLink onClick={() => megaMenuIsOut()} to={"home/aboutBranch"}>
-                <li>О филиале</li>
-              </NavLink>
-              <NavLink
-                onClick={() => megaMenuIsOut()}
-                to={"home/historicalReference"}
-              >
-                <li>Историческая справка</li>
-              </NavLink>
-              <NavLink
-                onClick={() => megaMenuIsOut()}
-                to={"home/univercityNews"}
-              >
-                <li>Новости</li>
-              </NavLink>
-              <NavLink
-                onClick={() => megaMenuIsOut()}
-                to={"home/univercityEvents"}
-              >
-                <li>План мероприятий</li>
-              </NavLink>
-              <NavLink onClick={() => megaMenuIsOut()} to={"sveden/common"}>
-                <li>Сведения об образовательной организации</li>
-              </NavLink>
-            </ul>
+          <div className="header-title">
+            <NavLink to={"/"}>
+              Уфимский филиал ФГБОУ ВО <br /> "Волжский государственный
+              университет <br />
+              водного транспорта"
+            </NavLink>
           </div>
-          <div
-            className={`navbar__menu-item ${
-              isMegaMenu === "education" ? "show-menu-item" : ""
-            }`}
-          >
+          <div className="header-menu">
             <ul>
-              <NavLink onClick={() => megaMenuIsOut()} to={"learning/cadets"}>
-                <li>Курсантам</li>
-              </NavLink>
-              <NavLink
-                onClick={() => megaMenuIsOut()}
-                to={"learning/correspondenceStudents"}
+              <li
+                onMouseEnter={(e) => onMouseEnter(e)}
+                onMouseOut={(e) => onMouseOut(e)}
+                className={`${isMegaMenu === "main" ? "show-menu-list" : ""}`}
               >
-                <li>Заочникам</li>
-              </NavLink>
-              <NavLink onClick={() => megaMenuIsOut()} to={"learning/parents"}>
-                <li>Родителям</li>
-              </NavLink>
-              <NavLink onClick={() => megaMenuIsOut()} to={"learning/practice"}>
-                <li>Практическая подготовка</li>
-              </NavLink>
-              <NavLink
-                onClick={() => megaMenuIsOut()}
-                to={"learning/employmentService"}
+                Главная
+              </li>
+              <li
+                onMouseEnter={(e) => onMouseEnter(e)}
+                onMouseOut={(e) => onMouseOut(e)}
+                className={`${
+                  isMegaMenu === "education" ? "show-menu-list" : ""
+                }`}
               >
-                <li>Служба трудоустройства</li>
-              </NavLink>
+                Образование
+              </li>
+              <li
+                onMouseEnter={(e) => onMouseEnter(e)}
+                onMouseOut={(e) => onMouseOut(e)}
+                className={`${
+                  isMegaMenu === "enrolle" ? "show-menu-list" : ""
+                }`}
+              >
+                Абитуриенту
+              </li>
+              <li
+                onMouseEnter={(e) => onMouseEnter(e)}
+                onMouseOut={(e) => onMouseOut(e)}
+                className={`${
+                  isMegaMenu === "additional" ? "show-menu-list" : ""
+                }`}
+              >
+                Дополнительное образование
+              </li>
+              <li
+                onMouseEnter={(e) => onMouseEnter(e)}
+                onMouseOut={(e) => onMouseOut(e)}
+                className={`${isMegaMenu === "live" ? "show-menu-list" : ""}`}
+              >
+                Студенческая жизнь
+              </li>
+              <li
+                onMouseEnter={(e) => onMouseEnter(e)}
+                onMouseOut={(e) => onMouseOut(e)}
+                className={`${
+                  isMegaMenu === "contacts" ? "show-menu-list" : ""
+                }`}
+              >
+                Контакты
+              </li>
             </ul>
           </div>
+
           <div
-            className={`navbar__menu-item ${
-              isMegaMenu === "enrolle" ? "show-menu-item" : ""
+            onMouseEnter={(e) => megaMenuIsActive(e)}
+            onMouseLeave={(e) => megaMenuIsOut(e)}
+            className={`navbar__menu-container ${
+              isMegaMenuContainerIsActive ? "show-menu-container" : ""
             }`}
           >
-            <ul>
-              <NavLink
-                onClick={() => megaMenuIsOut()}
-                to={"enrollee/reception"}
-              >
-                <li>Приёмная кампания 2023</li>
-              </NavLink>
-              <NavLink
-                onClick={() => megaMenuIsOut()}
-                to={"enrollee/submissionDoc"}
-              >
-                <li>Подача документов</li>
-              </NavLink>
-              <NavLink
-                onClick={() => megaMenuIsOut()}
-                to={"enrollee/messageFromDirector"}
-              >
-                <li>Обращение директора</li>
-              </NavLink>
-              <NavLink
-                onClick={() => megaMenuIsOut()}
-                to={"enrollee/monitoring"}
-              >
-                <li>Мониторинг подачи документов</li>
-              </NavLink>
-              <NavLink
-                onClick={() => megaMenuIsOut()}
-                to={"enrollee/applicantsInfo"}
-              >
-                <li>Узнать как стать нашим курсантом</li>
-              </NavLink>
-              <NavLink onClick={() => megaMenuIsOut()} to={"enrollee/open-day"}>
-                <li>Дни открытых дверей</li>
-              </NavLink>
-            </ul>
+            <div
+              className={`navbar__menu-item ${
+                isMegaMenu === "main" ? "show-menu-item" : ""
+              }`}
+            >
+              <ul onClick={() => megaMenuIsOut()}>
+                <NavLink onClick={() => megaMenuIsOut()} to={""}>
+                  <li>Главная</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"home/aboutBranch"}
+                >
+                  <li>О филиале</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"home/historicalReference"}
+                >
+                  <li>Историческая справка</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"home/univercityNews"}
+                >
+                  <li>Новости</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"home/univercityEvents"}
+                >
+                  <li>План мероприятий</li>
+                </NavLink>
+                <NavLink onClick={() => megaMenuIsOut()} to={"sveden/common"}>
+                  <li>Сведения об образовательной организации</li>
+                </NavLink>
+              </ul>
+            </div>
+            <div
+              className={`navbar__menu-item ${
+                isMegaMenu === "education" ? "show-menu-item" : ""
+              }`}
+            >
+              <ul>
+                <NavLink onClick={() => megaMenuIsOut()} to={"learning/cadets"}>
+                  <li>Курсантам</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"learning/correspondenceStudents"}
+                >
+                  <li>Заочникам</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"learning/parents"}
+                >
+                  <li>Родителям</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"learning/practice"}
+                >
+                  <li>Практическая подготовка</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"learning/employmentService"}
+                >
+                  <li>Служба трудоустройства</li>
+                </NavLink>
+              </ul>
+            </div>
+            <div
+              className={`navbar__menu-item ${
+                isMegaMenu === "enrolle" ? "show-menu-item" : ""
+              }`}
+            >
+              <ul>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"enrollee/reception"}
+                >
+                  <li>Приёмная кампания 2023</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"enrollee/submissionDoc"}
+                >
+                  <li>Подача документов</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"enrollee/messageFromDirector"}
+                >
+                  <li>Обращение директора</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"enrollee/monitoring"}
+                >
+                  <li>Мониторинг подачи документов</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"enrollee/applicantsInfo"}
+                >
+                  <li>Узнать как стать нашим курсантом</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"enrollee/open-day"}
+                >
+                  <li>Дни открытых дверей</li>
+                </NavLink>
+              </ul>
+            </div>
+            <div
+              className={`navbar__menu-item ${
+                isMegaMenu === "additional" ? "show-menu-item" : ""
+              }`}
+            >
+              <ul>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"training/aboutCdo"}
+                >
+                  <li>
+                    О центре конвенционной подготовки и дополнительного
+                    образования
+                  </li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"training/advancedTraining"}
+                >
+                  <li>Программы повышения квалификации</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"training/distanceLearning"}
+                >
+                  <li>Дистанционное обучение</li>
+                </NavLink>
+              </ul>
+            </div>
+            <div
+              className={`navbar__menu-item ${
+                isMegaMenu === "live" ? "show-menu-item" : ""
+              }`}
+            >
+              <ul>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"home/univercityNews"}
+                >
+                  <li>Новости</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"home/univercityEvents"}
+                >
+                  <li>Мероприятия</li>
+                </NavLink>
+                <NavLink onClick={() => megaMenuIsOut()} to={"live/ourPride"}>
+                  <li>Наша гордость</li>
+                </NavLink>
+              </ul>
+            </div>
+            <div
+              className={`navbar__menu-item ${
+                isMegaMenu === "contacts" ? "show-menu-item" : ""
+              }`}
+            >
+              <ul>
+                <NavLink onClick={() => megaMenuIsOut()} to={"home/reviews"}>
+                  <li>Отзывы и обратная связь</li>
+                </NavLink>
+                <NavLink onClick={() => megaMenuIsOut()} to={"home/userSurvey"}>
+                  <li>Анкетирование получателей услуг</li>
+                </NavLink>
+                <NavLink onClick={() => megaMenuIsOut()} to={"home/contacts"}>
+                  <li>Контакты</li>
+                </NavLink>
+                <NavLink onClick={() => megaMenuIsOut()} to={"live/vacancies"}>
+                  <li>Вакансии</li>
+                </NavLink>
+              </ul>
+            </div>
           </div>
-          <div
-            className={`navbar__menu-item ${
-              isMegaMenu === "additional" ? "show-menu-item" : ""
-            }`}
-          >
-            <ul>
-              <NavLink onClick={() => megaMenuIsOut()} to={"training/aboutCdo"}>
-                <li>
-                  О центре конвенционной подготовки и дополнительного
-                  образования
-                </li>
-              </NavLink>
-              <NavLink
-                onClick={() => megaMenuIsOut()}
-                to={"training/advancedTraining"}
-              >
-                <li>Программы повышения квалификации</li>
-              </NavLink>
-              <NavLink
-                onClick={() => megaMenuIsOut()}
-                to={"training/distanceLearning"}
-              >
-                <li>Дистанционное обучение</li>
-              </NavLink>
-            </ul>
-          </div>
-          <div
-            className={`navbar__menu-item ${
-              isMegaMenu === "live" ? "show-menu-item" : ""
-            }`}
-          >
-            <ul>
-              <NavLink
-                onClick={() => megaMenuIsOut()}
-                to={"home/univercityNews"}
-              >
-                <li>Новости</li>
-              </NavLink>
-              <NavLink
-                onClick={() => megaMenuIsOut()}
-                to={"home/univercityEvents"}
-              >
-                <li>Мероприятия</li>
-              </NavLink>
-              <NavLink onClick={() => megaMenuIsOut()} to={"live/ourPride"}>
-                <li>Наша гордость</li>
-              </NavLink>
-            </ul>
-          </div>
-          <div
-            className={`navbar__menu-item ${
-              isMegaMenu === "contacts" ? "show-menu-item" : ""
-            }`}
-          >
-            <ul>
-              <NavLink onClick={() => megaMenuIsOut()} to={"home/reviews"}>
-                <li>Отзывы и обратная связь</li>
-              </NavLink>
-              <NavLink onClick={() => megaMenuIsOut()} to={"home/userSurvey"}>
-                <li>Анкетирование получателей услуг</li>
-              </NavLink>
-              <NavLink onClick={() => megaMenuIsOut()} to={"home/contacts"}>
-                <li>Контакты</li>
-              </NavLink>
-              <NavLink onClick={() => megaMenuIsOut()} to={"live/vacancies"}>
-                <li>Вакансии</li>
-              </NavLink>
-            </ul>
-          </div>
-        </div>
-      </header>
+        </header>
+      </div>
       <PhoneMenu />
-    </div>
+    </>
   );
 });
 export default NavBar;

@@ -12,7 +12,10 @@ import { ReactComponent as Calendar1 } from "../../../assets/svg/leftPanel/calen
 import { toggleIconColor } from "../../../utils/disabled";
 import { observer } from "mobx-react-lite";
 import { NavLink } from "react-router-dom";
-
+import Disabled from "../disabled/disabled-panel";
+/* import theme from "../../../store/theme";
+import images from "../../../store/images";
+import fontSize from "../../../store/fontSize"; */
 const LeftPanel = observer(() => {
   const [isMegaMenu, setIsMegaMenu] = useState(false); //переменная для отображения контента контейнера меню, когда мышка на элементе меню
   /* Открываем меню при наведении на элементы главного списка */
@@ -31,6 +34,7 @@ const LeftPanel = observer(() => {
 
   const [isLinks, setIsLinks] = useState("");
   const onIconEnter = (event) => {
+    console.log(event.target.id);
     let id = event.target.id;
     if (id === "User" || id === "User1" || id === "User_link") {
       setIsLinks("User");
@@ -55,25 +59,38 @@ const LeftPanel = observer(() => {
   const [isDisabled, setIsDisabled] = useState(false);
   const toggleDisabled = () => {
     setIsDisabled(!isDisabled);
+    /*  if (isDisabled) {
+      fontSize.medium();
+      theme.black();
+      images.off();
+    } else {
+      handleThemeMain();
+    } */
   };
   console.log(isDisabled);
 
   return (
     <div className="leftPanel__wrapper">
-      {isDisabled ? (
-        <div
-          className={`leftPanel__wrapper-moove-disabled ${
-            isDisabled ? "isShow" : ""
-          }`}
-        >
-          Версия для слабовидящих
-        </div>
-      ) : null}
       <div
         onMouseEnter={(e) => megaMenuIsActive(e)}
         onMouseLeave={(e) => megaMenuIsOut(e)}
         className={`leftPanel__wrapper-moove ${isMegaMenu ? "isShow" : ""}`}
       >
+        {isDisabled ? (
+          <div
+            className={`leftPanel__wrapper-moove-disabled ${
+              isDisabled ? "leftPanel__wrapper-moove-disabled-show" : ""
+            }`}
+          >
+            <div
+              className="leftPanel__wrapper-moove-disabled-back"
+              onClick={() => toggleDisabled()}
+            >
+              <div>Закрыть</div>
+            </div>
+            <Disabled />
+          </div>
+        ) : null}
         <div className="leftPanel__wrapper-moove-top">
           <div> Стань капитаном своей судьбы!</div>
         </div>
