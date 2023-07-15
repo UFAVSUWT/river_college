@@ -83,7 +83,7 @@ const TextField = observer(
                           "27px",
                           "30px"
                         )}
-                        stroke={toggleIconColor("#fff")}
+                        stroke={toggleIconColor("#325572")}
                       />
                     ) : (
                       <LogoEye
@@ -100,7 +100,7 @@ const TextField = observer(
                           "27px",
                           "30px"
                         )}
-                        stroke={toggleIconColor("#fff")}
+                        stroke={toggleIconColor("#325572")}
                       />
                     )}
                   </button>
