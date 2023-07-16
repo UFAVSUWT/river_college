@@ -1,5 +1,5 @@
 import React from "react";
 const CorrespondenceStudents = () => {
-  return <>Заочникам</>;
+  return <>Страница находится в разработке</>;
 };
 export default CorrespondenceStudents;

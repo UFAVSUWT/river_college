@@ -1,5 +1,5 @@
 import React from "react";
 const OurPride = () => {
-  return <>Наша Гордость</>;
+  return <>Страница находится в разработке</>;
 };
 export default OurPride;

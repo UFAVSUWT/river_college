@@ -6,7 +6,7 @@ import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import Arctica from "../../../assets/img/main/arctica.jpg";
+/* import Arctica from "../../../assets/img/main/arctica.jpg"; */
 import Boat from "../../../assets/img/main/boat.png";
 import Students from "../../../assets/img/main/students.jpg";
 import { NavLink } from "react-router-dom";
@@ -52,7 +52,7 @@ const ImageSlider = ({ className, ...rest }) => {
               <img src={Students} alt="Картинка уплыла" />
             </NavLink>
           </SwiperSlide>
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <div className="marquee-infinite">
               <span>
                 <img src={Boat} alt="" width={"250px"} height={"96px"} />
@@ -74,7 +74,7 @@ const ImageSlider = ({ className, ...rest }) => {
               </NavLink>
             </div>
             <img src={Arctica} alt="Картинка уплыла" />
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </div>
     </>

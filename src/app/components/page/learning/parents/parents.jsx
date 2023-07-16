@@ -1,5 +1,5 @@
 import React from "react";
 const Parents = () => {
-  return <>Родителям</>;
+  return <>Страница находится в разработке</>;
 };
 export default Parents;

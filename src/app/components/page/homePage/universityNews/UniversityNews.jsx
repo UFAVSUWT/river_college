@@ -1,5 +1,5 @@
 import React from "react";
 const UniversityNews = () => {
-  return <>universityNews</>;
+  return <>Страница находится в разработке</>;
 };
 export default UniversityNews;

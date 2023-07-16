@@ -1,5 +1,5 @@
 import React from "react";
 const UserSurvey = () => {
-  return <>Анкетирование получателей услуг</>;
+  return <>Страница находится в разработке</>;
 };
 export default UserSurvey;

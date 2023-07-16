@@ -16,7 +16,9 @@ const Vacancies = () => {
 
   return (
     <section>
-      <h1>Ищете работу? Мы вас ждем!</h1>
+      <h1>
+        Ищете работу? Мы вас ждем! Обращайтесь в приемную 8 (347) 278-28-83
+      </h1>
       {/*    <div>{vacants && vacants.map((v) => console.log(v))}</div> */}
     </section>
   );

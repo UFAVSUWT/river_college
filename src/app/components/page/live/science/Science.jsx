@@ -1,5 +1,5 @@
 import React from "react";
 const Science = () => {
-  return <>Наука</>;
+  return <>Страница находится в разработке</>;
 };
 export default Science;
