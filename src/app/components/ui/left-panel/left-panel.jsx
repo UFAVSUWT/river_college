@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import { ReactComponent as Logo } from "../../../assets/svg/riveruniversityLogo.svg";
 import { ReactComponent as User } from "../../../assets/svg/leftPanel/user.svg";
@@ -12,21 +12,13 @@ import { ReactComponent as Calendar1 } from "../../../assets/svg/leftPanel/calen
 import {
   toggleClassName,
   toggleIconColor,
-  toggleIconHeightSize,
-  toggleIconWidthSize,
 } from "../../../utils/disabled";
 import { observer } from "mobx-react-lite";
 import { NavLink } from "react-router-dom";
 import Disabled from "../disabled/disabled-panel";
-import Button from "../../common/button/Button";
-import TextField from "../../common/form/textField/TextField";
-import { ReactComponent as Users } from "../../../assets/svg/user.svg";
-import { ReactComponent as Key } from "../../../assets/svg/key.svg";
-import { ReactComponent as Vector } from "../../../assets/svg/Vector.svg";
+
 import DesktopLogIn from "../logIn/desktopLogIn";
-/* import theme from "../../../store/theme";
-import images from "../../../store/images";
-import fontSize from "../../../store/fontSize"; */
+
 const LeftPanel = observer(() => {
   const [isMegaMenu, setIsMegaMenu] = useState(false); //переменная для отображения контента контейнера меню, когда мышка на элементе меню
   /* Открываем меню при наведении на элементы главного списка */
@@ -83,30 +75,6 @@ const LeftPanel = observer(() => {
     setIsLogin(!isLogIn);
   };
 
-  const [isActive, setIsActive] = useState(false);
-  const [data, setData] = useState({ login: "", password: "" });
-  const handleChange = (target) => {
-    setData((prevState) => ({ ...prevState, [target.name]: target.value }));
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-  useEffect(() => {
-    document.addEventListener("keydown", detectKeyDown, true);
-  });
-  const detectKeyDown = (e) => {
-    if (e.key === "Escape") {
-      setIsActive(false);
-    }
-  };
-  const getModalWindow = (e) => {
-    if (
-      e.target.id === "loginModalWindow" ||
-      e.target.id === "loginModalWindow_wrapper"
-    ) {
-      setIsActive(false);
-    }
-  };
   return (
     <div
       className={`leftPanel__wrapper ${toggleClassName(
@@ -197,6 +165,7 @@ const LeftPanel = observer(() => {
         className="leftPanel__wrapper-static"
       >
         <div className="leftPanel__wrapper-static-top">
+          <NavLink to="/">
           <div>
             <Logo
               fill={toggleIconColor("#0C1C2B", "", "#000")}
@@ -204,6 +173,7 @@ const LeftPanel = observer(() => {
               height={"100%"}
             />
           </div>
+          </NavLink>
         </div>
         <div className="leftPanel__wrapper-static-icons">
           <div onClick={() => toggleLogin()} className="icon__container">

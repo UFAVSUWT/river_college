@@ -4,7 +4,6 @@ import TextField from "../../common/form/textField/TextField";
 import Button from "../../common/button/Button";
 import { ReactComponent as User } from "../../../assets/svg/user.svg";
 import { ReactComponent as Key } from "../../../assets/svg/key.svg";
-import { ReactComponent as Vector } from "../../../assets/svg/Vector.svg";
 import { observer } from "mobx-react-lite";
 import {
   toggleIconColor,

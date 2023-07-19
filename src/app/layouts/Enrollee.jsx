@@ -30,7 +30,7 @@ const Enrolly = observer(() => {
   ];
 
   return (
-    <div className="_container min-height">
+    <div className={` ${toggleClassName("_container-main min-height", "_container-white min-height-white"," _container-black min-height-black","_container-contrast min-height-contrast",)}`}>
       <BreadCrumbs />
       <div className="chapter__menu-show">
         <ChapterMenu linksArray={linksMenu} />

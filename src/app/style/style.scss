@@ -85,6 +85,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	min-height: 600px;
 	background-color: $BLUE;
 }
+.min-height-white{
+	min-height: 600px;
+	background-color: white;
+}
+.min-height-black{
+	min-height: 600px;
+	background-color: black;
+}
+.min-height-contrast{
+	min-height: 600px;
+	background-color: $BACK_CONTRAST;
+}
 li{
 	ul, ol{
 		padding-top: 5px;
@@ -92,6 +104,34 @@ li{
 }
 
 .app__wrapper{
+	&-leftPanel{
+		width: 4%;
+	}
+	
+	&-main{
+		position: absolute;
+		width: 96%;
+		left: 4%;
+		top: 10%;
+
+	}
+}
+.app__wrapper-main-black{
+	background-color: black;
+	&-leftPanel{
+		width: 4%;
+	}
+	
+	&-main{
+		position: absolute;
+		width: 96%;
+		left: 4%;
+		top: 10%;
+
+	}
+}
+.app__wrapper-main-contrast{
+	background-color: $BACK_CONTRAST;
 	&-leftPanel{
 		width: 4%;
 	}

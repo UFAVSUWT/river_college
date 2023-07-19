@@ -6,6 +6,7 @@ import { observer } from "mobx-react-lite";
 import fontSize from "./store/fontSize";
 import LeftPanel from "./components/ui/left-panel/left-panel";
 import ScrollUp from "./components/ui/scroll-up/scroll-up";
+import { toggleClassName } from "./utils/disabled";
 const App = observer(() => {
   const element = useRoutes(routes());
   const toggleFontSize = () => {
@@ -21,7 +22,12 @@ const App = observer(() => {
         <LeftPanel />
       </div>
       <NavBar />
-      <div className="app__wrapper-main">
+      <div  className={`app__wrapper-main ${toggleClassName(
+          "",
+          "",
+          "app__wrapper-main-black",
+          "app__wrapper-main-contrast"
+        )}`}>
         <div>
           {element}
           <ScrollUp />

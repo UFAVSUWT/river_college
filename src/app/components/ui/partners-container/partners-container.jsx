@@ -16,7 +16,12 @@ const PartnersContainer = observer(() => {
         "_container-contrast"
       )}
     >
-      <div className="partners">
+      <div className={`partners ${toggleClassName(
+        "partners",
+        "partners-white",
+        "partners-black",
+        "partners-contrast"
+      )}`}>
         <h3>Наши партнеры</h3>
         <div
           style={{ fontSize: toggleFontSize(14) }}

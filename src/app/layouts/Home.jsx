@@ -1,7 +1,9 @@
 import React from "react";
 import { Outlet } from "react-router";
 import ChapterMenu from "../components/ui/chapterMenu/ChapterMenu";
-const Home = () => {
+import { toggleClassName } from "../utils/disabled";
+import { observer } from "mobx-react-lite";
+const Home = observer(() => {
   const linksArray = [
     { title: "Главная", path: "/" },
     { title: "О филиале", path: "/home/aboutBranch" },
@@ -10,12 +12,12 @@ const Home = () => {
     { title: "План мероприятий", path: "/home/univercityEvents" },
   ];
   return (
-    <div className="_container min-height">
+    <div className={` ${toggleClassName("_container-main min-height", "_container-white min-height-white"," _container-black min-height-black","_container-contrast min-height-contrast",)}`}>
       <div className="chapter__menu-show">
         <ChapterMenu linksArray={linksArray} />
       </div>
       <Outlet />
     </div>
   );
-};
+});
 export default Home;

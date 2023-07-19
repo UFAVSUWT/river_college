@@ -2,7 +2,9 @@ import React from "react";
 import { Outlet } from "react-router";
 import BreadCrumbs from "../components/common/breadCrumbs/BreadCrumbs";
 import ChapterMenu from "../components/ui/chapterMenu/ChapterMenu";
-const Live = () => {
+import { toggleClassName } from "../utils/disabled";
+import { observer } from "mobx-react-lite";
+const Live = observer(() => {
   const linksArray = [
     {
       title: "Новости",
@@ -15,7 +17,7 @@ const Live = () => {
     { title: "Наша гордость", path: "ourPride" },
   ];
   return (
-    <main className="_container min-height">
+    <main className={` ${toggleClassName("_container-main min-height", "_container-white min-height-white"," _container-black min-height-black","_container-contrast min-height-contrast",)}`}>
       <BreadCrumbs />
       <div className="chapter__menu-show">
         <ChapterMenu linksArray={linksArray} />
@@ -23,5 +25,5 @@ const Live = () => {
       <Outlet />
     </main>
   );
-};
+});
 export default Live;

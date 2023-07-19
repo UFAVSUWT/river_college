@@ -28,7 +28,7 @@ const Training = observer(() => {
         "_container-contrast"
       )} background-blue`}
     >
-      <div className="_container min-height ">
+      <div className={` ${toggleClassName("min-height", "min-height-white","min-height-black","min-height-contrast",)}`}>
         <BreadCrumbs />
         <div className="chapter__menu-show">
           <ChapterMenu linksArray={linksMenu} />

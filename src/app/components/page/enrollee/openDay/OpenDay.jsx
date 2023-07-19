@@ -11,7 +11,7 @@ const OpenDay = observer(() => {
         "education__container-contrast"
       )}
     >
-      <div className="min-height">
+      <div className={` ${toggleClassName("min-height", "min-height-white","min-height-black","min-height-contrast",)}`}>
         <h1 className="education__container-title">Вниманию абитуриентов!</h1>
         <div className="education__container-content">
           <p>
