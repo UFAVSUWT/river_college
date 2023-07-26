@@ -1,6 +1,6 @@
 import React from "react";
-import List from "../../../../../../assets/doc/enrollee/Списки подавших документы - с указанием сведений о приеме.docx";
-import Svodka from "../../../../../../assets/doc/enrollee/Сводка на сайт.docx";
+import List from "../../../../../../assets/doc/enrollee/Списки подавших документы - с указанием сведений о приеме27.docx";
+import Svodka from "../../../../../../assets/doc/enrollee/Сводка на сайт26.docx";
 import { ReactComponent as DOC } from "../../../../../../assets/svg/office/word.svg";
 import { toggleClassName } from "../../../../../../utils/disabled";
 const ListsOfPersonsWhoAppliedForAdmission = () => {
