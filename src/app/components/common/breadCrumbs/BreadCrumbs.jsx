@@ -8,6 +8,7 @@ const BreadCrumbs = observer(() => {
   const location = useLocation();
   const breadCrumbView = () => {
     const { pathname } = location;
+    console.log(pathname)
     const pathnames = pathname.split("/").filter((item) => item);
     const capatilize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
     return (
