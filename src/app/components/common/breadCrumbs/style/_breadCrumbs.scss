@@ -1,45 +1,57 @@
 @import "../../../../style/variables";
 .breadCrumbs__container {
     padding: 5px 30px;
-    &>nav>ol{
-        color: $MAIN_COLOR;
-        &>li>span>a {
-            margin: 0px 2px;
-            &:hover {
-                background-color: $BLUE;
-            }
-        }
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    color:$LINK_COLOR;
+    a{
+        color: $ACTIV_LINK_COLOR;
+        margin-left: 4px;
+    }
+    .breadCrumbs__container-last{
+        margin-left: 4px;
     }
 }
 .breadCrumbs__container-white{
     padding: 5px 30px;
-    &>nav>ol{
-        color: $DISABLED_FONT_COLOR;
-        &>li>span>a {
-            color: $DISABLED_FONT_COLOR;
-            margin: 0px 2px;
-        }
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    color:black;
+    a{
+        color:black;
+        margin-left: 4px;
+    }
+    .breadCrumbs__container-last{
+        margin-left: 4px;
     }
 }
 .breadCrumbs__container-black{
     padding: 5px 30px;
-    background-color: $BACK_BLACK;
-    &>nav>ol{
-        color: $WHITE_FONT_COLOR;
-        &>li>span>a {
-            color: $WHITE_FONT_COLOR;
-            margin: 0px 2px;
-        }
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    color:white;
+    a{
+        color: white;
+        margin-left: 4px;
+    }
+    .breadCrumbs__container-last{
+        margin-left: 4px;
     }
 }
 .breadCrumbs__container-contrast {
     padding: 5px 30px;
-    background-color: $BACK_CONTRAST;
-    &>nav>ol{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    color:$FONT_CONTRAST;
+    a{
         color: $FONT_CONTRAST;
-        &>li>span>a {
-            color: $FONT_CONTRAST;
-            margin: 0px 2px;
-        }
+        margin-left: 4px;
+    }
+    .breadCrumbs__container-last{
+        margin-left: 4px;
     }
 }

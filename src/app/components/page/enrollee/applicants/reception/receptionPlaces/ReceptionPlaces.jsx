@@ -21,21 +21,7 @@ const ReceptionPlaces = observer(() => {
           target={"_blank"}
           rel="noreferrer"
         >
-          +73472782883
-        </a>
-        ,{" "}
-        <a
-          href="tel:+7 (347) 2782886"
-          className={toggleClassName(
-            "education__link",
-            "education__link-white",
-            "education__link-black",
-            "education__link-contrast"
-          )}
-          target={"_blank"}
-          rel="noreferrer"
-        >
-          +73472782886
+          +7 (347) 215-14-00 доб. 4
         </a>
       </p>
       <p>

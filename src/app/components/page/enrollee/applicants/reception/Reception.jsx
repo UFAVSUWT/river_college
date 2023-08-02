@@ -41,7 +41,7 @@ const Reception = observer(() => {
             <ul>
               <li>
                 <a
-                  href="tel:+7 (347) 2782886"
+                  href="tel:+7 (347) 2151400"
                   className={toggleClassName(
                     "education__link",
                     "education__link-white",
@@ -51,23 +51,7 @@ const Reception = observer(() => {
                   target={"_blank"}
                   rel="noreferrer"
                 >
-                  +73472782886
-                </a>
-              </li>
-              <li>
-                {" "}
-                <a
-                  href="tel:+7 (347) 2782883"
-                  className={toggleClassName(
-                    "education__link",
-                    "education__link-white",
-                    "education__link-black",
-                    "education__link-contrast"
-                  )}
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  +73472782883
+                  +7 (347) 215-14-00 доб. 4
                 </a>
               </li>
               <li>
