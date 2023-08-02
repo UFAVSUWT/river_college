@@ -45,25 +45,25 @@ const Employees = observer(() => {
             <tr itemProp="rucovodstvo">
               <td itemProp="fio">Ахмадеева Фарида Шариповна </td>
               <td itemProp="post">Директор </td>
-              <td itemProp="telephone">8 (347) 278-28-83 </td>
+              <td itemProp="telephone">8 (347) 215-14-00 доб. 6</td>
               <td itemProp="email">uf-vsuwt@uf-vsuwt.ru</td>
             </tr>
             <tr itemProp="rucovodstvo">
               <td itemProp="fio">Мусина Гульфия Ириковна </td>
               <td itemProp="post">Заместитель директора </td>
-              <td itemProp="telephone">8 (347) 278-28-86 </td>
+              <td itemProp="telephone">8 (347) 215-14-00 доб. # 312</td>
               <td itemProp="email">pur@uf-vsuwt.ru</td>
             </tr>
             <tr itemProp="rucovodstvo">
               <td itemProp="fio">Акбашева Альбина Галимзяновна </td>
               <td itemProp="post">Заместитель директора </td>
-              <td itemProp="telephone">8 (347) 278-28-86 </td>
+              <td itemProp="telephone">8 (347) 215-14-00 доб. # 320</td>
               <td itemProp="email">pvr@uf-vsuwt.ru</td>
             </tr>
             <tr itemProp="rucovodstvo">
               <td itemProp="fio">Жоссан Елена Евгеньевна </td>
               <td itemProp="post">Главный бухгалтер </td>
-              <td itemProp="telephone">8 (347) 278-03-25 </td>
+              <td itemProp="telephone">8 (347) 215-14-00 доб. 1</td>
               <td itemProp="email">buh@uf-vsuwt.ru</td>
             </tr>
             <tr itemProp="rucovodstvo">
@@ -72,7 +72,7 @@ const Employees = observer(() => {
                 Начальник центра организационно-правовой работы{" "}
               </td>
               <td itemProp="telephone">
-                8 (347) 278-28-83, 278-28-86, вн.110{" "}
+              8 (347) 215-14-00 доб. # 311
               </td>
               <td itemProp="email">copr@uf-vsuwt.ru</td>
             </tr>

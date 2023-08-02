@@ -37,7 +37,7 @@ const AboutCdo = observer(() => {
           <ul>
             <li>
               <a
-                href="tel:+7 (347) 2782886"
+                href="tel:+7 (347) 2151400"
                 className={toggleClassName(
                   "education__link",
                   "education__link-white",
@@ -47,7 +47,7 @@ const AboutCdo = observer(() => {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                +73472782886
+               +7 (347) 215-14-00 доб. 3
               </a>
             </li>
             <li>

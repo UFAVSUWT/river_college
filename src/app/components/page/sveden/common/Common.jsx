@@ -120,7 +120,7 @@ const Common = observer(() => {
             <tbody>
               <tr>
                 <td>Дата создания образовательной организации</td>
-                <td itemProp="regDate">07.08.1970</td>
+                <td itemProp="regDate">31.08.2017</td>
               </tr>
               <tr>
                 <td>Адрес местонахождения образовательной организации</td>
@@ -145,15 +145,11 @@ const Common = observer(() => {
               </tr>
               <tr>
                 <td>Контактные телефоны</td>
-                <td itemProp="telephone">8 (347) 278-28-83 (приемная);</td>
+                <td itemProp="telephone">8 (347) 215-14-00 доб. 6 (приемная);</td>
               </tr>
               <tr>
                 <td></td>
-                <td itemProp="telephone">8 (347) 278-28-86</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td itemProp="telephone">8 (347) 278-03-25 (бухгалтерия)</td>
+                <td itemProp="telephone">8 (347) 215-14-00 доб. 1 (бухгалтерия)</td>
               </tr>
               <tr>
                 <td>Адреса электронной почты</td>

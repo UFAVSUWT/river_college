@@ -1,16 +1,14 @@
 import React from "react";
-import { useLocation, Link } from "react-router-dom";
-import { Breadcrumb } from "antd";
-import { toggleClassName } from "../../../utils/disabled";
+import { useLocation, NavLink } from "react-router-dom";
+import { toggleClassName, toggleIconColor } from "../../../utils/disabled";
 import { observer } from "mobx-react-lite";
+import { ReactComponent as Home } from "../../../assets/svg/home.svg";
 
 const BreadCrumbs = observer(() => {
   const location = useLocation();
   const breadCrumbView = () => {
     const { pathname } = location;
-    console.log(pathname)
-    const pathnames = pathname.split("/").filter((item) => item);
-    const capatilize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+    const pathnames = pathname.split("/").filter((item) => item);   
     return (
       <div
         className={toggleClassName(
@@ -20,162 +18,227 @@ const BreadCrumbs = observer(() => {
           "breadCrumbs__container-contrast"
         )}
       >
-        <Breadcrumb>
-          {pathnames.length > 0 ? (
-            <Breadcrumb.Item>
-              <Link to="/">Главная</Link>
-            </Breadcrumb.Item>
-          ) : (
-            <Breadcrumb.Item>Главная</Breadcrumb.Item>
-          )}
-          {pathnames.map((name, index) => {
-            const routeToReactRouter = `/${pathnames
-              .slice(0, index + 1)
-              .join("/")}`;
-            let routeTo = routeToReactRouter;
-            switch (routeToReactRouter) {
-              /*сведения об образовательной организации */
-              case "/sveden":
-                return (routeTo = null);
-              case "/sveden/common":
-                return (routeTo = "/ Основные сведения");
-              case "/sveden/struct":
-                return (routeTo = "/ Структура и органы управления");
-              case "/sveden/document":
-                return (routeTo = "/ Документы");
-              case "/sveden/education":
-                return (routeTo = "/ Образование");
-              case "/sveden/eduStandarts":
-                return (routeTo = "/ Образовательные стандарты и требования");
-              case "/sveden/employees":
-                return (routeTo = "/ Руководство");
-              case "/sveden/objects":
-                return (routeTo = "/ Материально-техническое обеспечение");
-              case "/sveden/grants":
-                return (routeTo = "/ Меры поддержки обучающихся");
-              case "/sveden/paid__edu":
-                return (routeTo = "/ Платные образовательные услуги");
-              case "/sveden/budget":
-                return (routeTo = "/ Финансово-хозяйственная деятельность");
-              case "/sveden/vacant":
-                return (routeTo = "/ Вакантных мест для приема (перевода)");
-              case "/sveden/ovz":
-                return (routeTo = "/ Доступная среда");
-              case "/sveden/inter":
-                return (routeTo = " / Международное сотрудничество");
-              /* Жизнь ВГУВТ */
-              case "/live":
-                return (routeTo = null);
-              case "/live/studentsLive":
-                return (routeTo = "/ Студенческая жизнь");
-              case "/live/rest":
-                return (routeTo = "/ Отдых");
-              case "/live/sport":
-                return (routeTo = "/ Спорт");
-              case "/live/photoGallery":
-                return (routeTo = "/ Фотогаллерея");
-              case "/live/teachers":
-                return (routeTo = "/ Преподаватели");
-              case "/live/ourPride":
-                return (routeTo = "/ Наша гордость");
-              case "/live/science":
-                return (routeTo = "/ Наука");
-              case "/live/vacancies":
-                return (routeTo = "/ Вакансии");
-              /* Главная страница*/
-              case "/home":
-                return (routeTo = null);
-              case "/home/aboutBranch":
-                return (routeTo = "/ О филиале");
-              case "/home/historicalReference":
-                return (routeTo = "/ Историческая справка");
-              case "/home/univercityNews":
-                return (routeTo = "/ Новости");
-              case "/home/univercityEvents":
-                return (routeTo = "/ План мероприятий");
-              /* Образование*/
-              /* Практическая подготовка*/
-              case "/learning":
-                return (routeTo = null);
-              case "/learning/practice":
-                return (routeTo = "/ Отдел практической подготовки");
-              case "/learning/practice/reviews":
-                return (routeTo = "/ Курсанты и выпускники филиала о практике");
-              case "/learning/practice/shedule":
-                return (routeTo = "/ График практикие");
-              case "/learning/practice/utc":
-                return (routeTo = "/ Учебно-тренажерный центр");
-              /* Служба трудоустройства*/
-              case "/learning/employmentService":
-                return (routeTo = "/ О службе трудоустройства выпускников");
-              case "/learning/employmentService/faq":
-                return (routeTo = "/ Вопросы и ответы");
-              case "/learning/employmentService/partners":
-                return (routeTo = "/ Социальные партнеры филиала");
-              case "/learning/employmentService/news":
-                return (routeTo = "/ Новости трудоустройства 2023 года");
-              case "/learning/employmentService/jobFair":
-                return (routeTo = "/ Ярмарки вакансий");
-              case "/learning/employmentService/vacanciesFrom":
-                return (routeTo = "/ Вакансии от работодателей");
-              case "/learning/employmentService/feedback":
-                return (routeTo = "/ Обратная связь");
-              case "/learning/employmentService/links":
-                return (routeTo = "/ Полезные ссылки");
-              /* Абитуриенту*/
-              case "/enrollee":
-                return (routeTo = null);
-              case "/enrollee/messageFromDirector":
-                return (routeTo = "/ Обращение директора");
-              case "/enrollee/reception":
-                return (routeTo = "/ Приемная кампания 2023");
-              case "/enrollee/submissionDoc":
-                return (routeTo = "/ Подача документов");
-              case "/enrollee/monitoring":
-                return (routeTo = "/ Мониторинг подачи документов");
-              case "/enrollee/monitoring/listsOfPersonsWhoAppliedForAdmission":
-                return (routeTo =
-                  "/ Списки лиц, подавших заявление на поступление");
-              case "/enrollee/monitoring/competitionLists":
-                return (routeTo = "/ Конкурсные списки");
-              case "/enrollee/monitoring/draftOrdersForEnrollment":
-                return (routeTo = "/ Проекты приказов на зачисление");
-              case "/enrollee/monitoring/enlistedOrders":
-                return (routeTo = "/ Приказы зачисленных");
-              case "/enrollee/applicantsInfo":
-                return (routeTo = "/ Как стать нашим курсантом");
-              case "/enrollee/open-day":
-                return (routeTo = "/ Дни открытых дверей");
-              /* ЦДО*/
-              /* Центр конвенционной подготовки и дополнительного образования*/
-              case "/training":
-                return (routeTo = null);
-              case "/training/aboutCdo":
-                return (routeTo =
-                  "/ Центр конвенционной подготовки и дополнительного образования");
-              case "/training/advancedTraining":
-                return (routeTo = "/ Программы повышения квалификации");
-              case "/training/distanceLearning":
-                return (routeTo = "/ Cистемa дистанционного обучения");
+           <NavLink to={"/"}><Home stroke={toggleIconColor("#0c1c2a")}/></NavLink>
+         <NavLink to={"/"}>Главная </NavLink> 
+         {pathnames.map((name, index)=>{
+          let route = `/${pathnames
+            .slice(0, index + 1)
+            .join("/")}`;
+          let linkName = name;
+            switch (linkName) {
+                  case "sveden":
+                    (linkName = null);
+                    break
+                  case "common":
+                    (linkName = "/ Основные сведения ");
+                    break
+                  case "struct":
+                    (linkName = "/ Структура и органы управления ");
+                    break
+                  case "document":
+                    (linkName = "/ Документы ");
+                    break
+                  case "education":
+                    (linkName = "/ Образование ");
+                    break
+                  case "eduStandarts":
+                    (linkName = "/ Образовательные стандарты и требования ");
+                    break
+                  case "employees":
+                    (linkName = "/ Руководство ");
+                    break
+                  case "objects":
+                    (linkName = "/ Материально-техническое обеспечение ");
+                    break
+                  case "grants":
+                    (linkName = "/ Меры поддержки обучающихся ");
+                    break
+                  case "paid__edu":
+                    (linkName = "/ Платные образовательные услуги ");
+                    break
+                  case "budget":
+                    (linkName = "/ Финансово-хозяйственная деятельность ");
+                    break
+                  case "vacant":
+                    (linkName = "/ Вакантные места для приема (перевода) ");
+                    break
+                  case "ovz":
+                    (linkName = "/ Доступная среда ");
+                    break
+                  case "inter":
+                    (linkName = " / Международное сотрудничество ");
+                    break
+                  case "live":
+                     (linkName = null);
+                     break
+                  case "studentsLive":
+                     (linkName = "/ Студенческая жизнь ");
+                     break
+                  case "rest":
+                     (linkName = "/ Отдых ");
+                     break
+                  case "sport":
+                     (linkName = "/ Спорт ");
+     
+                     break
+                  case "photoGallery":
+                     (linkName = "/ Фотогаллерея " );
+                     break
+                  case "teachers":
+                     (linkName = "/ Преподаватели ");
+                     break
+                  case "ourPride":
+                     (linkName = "/ Наша гордость ");
+                     break
+                  case "science":
+                     (linkName = "/ Наука ");
 
-              default:
-                routeTo = null;
-                break;
-            }
-            const isLast = index === pathnames.length - 1;
-            return isLast ? (
-              <Breadcrumb.Item value="large" key={index}>
-                {capatilize(name)}
-              </Breadcrumb.Item>
-            ) : (
-              <Breadcrumb.Item value="large" key={index}>
-                <Link value="large" to={`${routeTo}`}>
-                  {capatilize(name)}
-                </Link>
-              </Breadcrumb.Item>
-            );
-          })}
-        </Breadcrumb>
+                     break
+                  case "vacancies":
+                     (linkName = "/ Вакансии ");
+                     break
+                  case "home":
+                     (linkName = null);
+                     break
+                  case "aboutBranch":
+                     (linkName = "/ О филиале ");
+                     break
+                  case "historicalReference":
+                     (linkName = "/ Историческая справка ");
+                     break
+                  case "univercityNews":
+                     (linkName = "/ Новости " );
+                     break
+                  case "univercityEvents":
+                     (linkName = "/ План мероприятий ");
+                     break
+                  case "learning":
+                     (linkName = null);
+                     break
+                  case "cadets":
+                     (linkName = "/ Курсантам ");
+                     break
+                  case "correspondenceStudents":
+                     (linkName = "/ Заочникам ");
+                     break
+                  case "parents":
+                     (linkName = "/ Родителям ");
+                     break
+                  case "practice":
+                     (linkName = "/ Отдел практической подготовки ");
+                     break
+                  case "reviews":
+                     (linkName = "/ Курсанты и выпускники филиала о практике ");
+                     break
+                  case "shedule":
+                     (linkName = "/ График практикие ");
+                     break
+                  case "utc":
+                     (linkName = "/ Учебно-тренажерный центр ");
+                     break
+                  case "employmentService":
+                     (linkName = "/ О службе трудоустройства выпускников ");
+                     break
+                  case "faq":
+                     (linkName = "/ Вопросы и ответы ");
+                     break
+                  case "partners":
+                     (linkName = "/ Социальные партнеры филиала ");
+                     break
+                  case "news":
+                     (linkName = "/ Новости трудоустройства 2023 года ");
+                     break
+                  case "jobFair":
+                     (linkName = "/ Ярмарки вакансий ");
+                     break
+                  case "vacanciesFrom":
+                     (linkName = "/ Вакансии от работодателей ");
+                     break
+                  case "feedback":
+                     (linkName = "/ Обратная связь ");
+                     break
+                  case "links":
+                     (linkName = "/ Полезные ссылки ");
+                     break
+                  case "enrollee":
+                     (linkName = null);
+                     break
+                  case "kcp":
+                     (linkName = "/ КЦП СПО на 2023/2024 учeбный год ");
+                     break
+                  case "educationLvlRequirements":
+                     (linkName = "/ Требования к уровню образования ");
+                     break
+                  case "admissionConditions":
+                        (linkName = "/ Условия приема на обучение ");
+                     break
+                     case "receptionPlaces":
+                        (linkName = "/ Места приема документов ");
+                     break
+                     case "receptionTiming":
+                        (linkName = "/ Информация о сроках проведения приема ");
+                     break
+                     case "educationCosts":
+                        (linkName = "/ Стоимость обучения на коммерческой основе на 2023/2024 учебный год ");
+                     break
+                  case "messageFromDirector":
+                     (linkName = "/ Обращение директора ");
+                     break
+                  case "reception":
+                     (linkName = "/ Приемная кампания 2023 ");
+                     break
+                  case "submissionDoc":
+                     (linkName = "/ Подача документов ");
+                     break
+                  case "monitoring":
+                   (linkName = "/ Мониторинг подачи документов ");
+                   break
+                  case "listsOfPersonsWhoAppliedForAdmission":
+                     (linkName =
+                     "/ Списки лиц, подавших заявление на поступление ");
+                     break 
+                  case "competitionLists":
+                     (linkName = "/ Конкурсные списки ");
+                     break
+                  case "draftOrdersForEnrollment":
+                     (linkName = "/ Проекты приказов на зачисление ");
+                     break
+                  case "enlistedOrders":
+                     (linkName = "/ Приказы зачисленных ");
+                     break
+                  case "applicantsInfo":
+                     (linkName = "/ Как стать нашим курсантом ");
+                     break
+                  case "open-day":
+                     (linkName = "/ Дни открытых дверей ");
+                     break
+                  case "training":
+                     (linkName = null);
+                     break
+                  case "professionalTrainingPrograms":
+                     (linkName = "/ Перечень программ профессионального обучения ");
+                     break
+                  case "addEducationProgramsChildrenAdults":
+                     (linkName = "/ Общеразвивающие программы ");
+                     break
+                  case "aboutCdo":
+                     (linkName =
+                      "/ Центр конвенционной подготовки и дополнительного образования ");
+                      break
+                  case "advancedTraining":
+                     (linkName = "/ Программы повышения квалификации ");
+                     break
+                  case "distanceLearning":
+                     (linkName = "/ Cистемa дистанционного обучения ");
+                     break
+                  default:
+                    linkName = null;
+                    break;
+                }  
+                const isLast = index === pathnames.length - 1;   
+           return  isLast? <div className="breadCrumbs__container-last">{linkName}</div> :  <NavLink to={`${route}`}>{linkName}</NavLink> 
+         })
+         }
       </div>
     );
   };

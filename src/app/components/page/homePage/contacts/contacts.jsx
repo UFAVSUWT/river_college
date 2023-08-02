@@ -25,7 +25,7 @@ const Contacts = () => {
             <ul>
               <li>
                 <a
-                  href="tel:+7 (347) 2782886"
+                  href="tel:+7 (347) 2151400"
                   className={toggleClassName(
                     "education__link",
                     "education__link-white",
@@ -35,7 +35,7 @@ const Contacts = () => {
                   target={"_blank"}
                   rel="noreferrer"
                 >
-                  8 (347) 278-28-83
+                  8 (347) 215-14-00
                 </a>
               </li>
 
