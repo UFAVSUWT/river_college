@@ -1,6 +1,8 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName } from "../../../../../utils/disabled";
+import {ReactComponent as PDF} from "../../../../../assets/svg/office/pdf.svg"
+import soglashenie_39 from "../../../../../assets/pdf/learning/Соглашение №39 от 19.06.2023 о сотрудничестве и совместой деятельности на рынке труда  студентов и выпускников.PDF"
 const About = observer(() => {
   return (
     <>
@@ -45,6 +47,22 @@ const About = observer(() => {
       <section>
         <h2>Полезные документы:</h2>
         <ul>
+        <li>
+            <PDF height={"25px"} width={"25px"} />{" "}
+            <a
+              href={soglashenie_39}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={toggleClassName(
+                "education__link",
+                "education__link-white",
+                "education__link-black",
+                "education__link-contrast"
+              )}
+            >
+              Соглашение №39 от 19.06.2023 г. о сотрудничестве и совместой деятельности по вопросам содействия в поиске подходящей работы, социально-профессиональной адаптации на рынке труда студентов и выпускников
+            </a>
+          </li>
           <li>
             <a
               href="http://www.consultant.ru/document/cons_doc_LAW_130855/"
@@ -80,6 +98,7 @@ const About = observer(() => {
             </a>
           </li>
           <li>
+            <PDF height={"25px"} width={"25px"} />{" "}
             <a
               href="https://vsuwt.ru/obrazovanie/tsentr-sodeystviya-trudoustroystvu-vypusknikov/files/dokumenty/%d0%9f%d1%80%d0%b8%d0%ba%d0%b0%d0%b7%20%d0%9c%d0%b8%d0%bd%d0%be%d0%b1%d1%80%d0%bd%d0%b0%d1%83%d0%ba%d0%b8%20%d0%a0%d0%a4%20N%20885,%20%d0%9c%d0%b8%d0%bd%d0%bf%d1%80%d0%be%d1%81%d0%b2%d0%b5%d1%89%d0%b5%d0%bd%d0%b8%d1%8f%20%d0%a0%d0%a4%20N%20390%20%d0%be%d1%82%2005.08.2020.pdf"
               target="_blank"
@@ -96,6 +115,7 @@ const About = observer(() => {
             </a>
           </li>
           <li>
+            <PDF height={"25px"} width={"25px"} />{" "}
             <a
               href="https://vsuwt.ru/obrazovanie/tsentr-sodeystviya-trudoustroystvu-vypusknikov/files/dokumenty/%d0%9f%d0%b8%d1%81%d1%8c%d0%bc%d0%be%20%d0%be%20%d0%bf%d1%80%d0%b0%d0%b2%d0%be%d0%b2%d0%be%d0%bc%20%d1%80%d0%b5%d0%b3%d1%83%d0%bb%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b8%20%d0%9f%d0%9f%d0%9e%20%d0%be%d1%82%2030.10.2020.pdf"
               target="_blank"
