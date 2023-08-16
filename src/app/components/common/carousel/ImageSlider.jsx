@@ -26,14 +26,14 @@ const ImageSlider = ({ className, ...rest }) => {
         <ChapterMenu linksArray={linksArray} />
       </div>
       <div className="imageSlider-show">
-        <Swiper
+        {/* <Swiper
           loop={true}
           modules={[Autoplay]}
           autoplay={{
             delay: 5000,
           }}
         >
-          <SwiperSlide>
+          <SwiperSlide> */}
             <NavLink to={"enrollee/reception"}>
               <div className="marquee-infinite">
                 <span>
@@ -51,7 +51,7 @@ const ImageSlider = ({ className, ...rest }) => {
               </div>
               <img src={Students} alt="Картинка уплыла" />
             </NavLink>
-          </SwiperSlide>
+       {/*    </SwiperSlide> */}
           {/* <SwiperSlide>
             <div className="marquee-infinite">
               <span>
@@ -75,7 +75,7 @@ const ImageSlider = ({ className, ...rest }) => {
             </div>
             <img src={Arctica} alt="Картинка уплыла" />
           </SwiperSlide> */}
-        </Swiper>
+        {/* </Swiper> */}
       </div>
     </>
   );

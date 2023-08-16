@@ -7,7 +7,7 @@ const DraftOrdersForEnrollment = observer(() => {
   return (
     <section>
       <h1>Проекты приказов на зачисление</h1>
-      <p>Список лиц рекомендованных к зачислению без среднего балла{" "}
+      <p>Список лиц, рекомендованных к зачислению{" "}
         <a
           href={spiski}
           target={"_blank"}

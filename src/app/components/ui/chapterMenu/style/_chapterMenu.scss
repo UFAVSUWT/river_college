@@ -1,29 +1,38 @@
 .chapter__menu{
  
-
-    justify-content: center;
+    display: table;
+ /*    justify-content: center; */
     width: 100%;
-    height: max-content;
+    height:fit-content;
     margin: 1em 0;
     border-radius: 0.5em;
     -webkit-box-shadow:2px 1px 5px 1px rgba(12, 29, 44, 0.139);
     -moz-box-shadow: 2px 1px 5px 1px rgba(12, 29, 44, 0.139);
     box-shadow: 2px 1px 5px 1px rgba(12, 29, 44, 0.139);
+    overflow:visible;
     h3{
        margin: 10px auto;
     }
     ul{
-
+        justify-content: space-around;
         padding: 0.5em;
-        columns: 3;
+       /*  columns: 3;
         -webkit-columns: 3 ;
-        -moz-columns: 3;
-
-
+        -moz-columns: 3; */
+       
+        li:before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
         li {
             text-align: center;
-           margin-bottom: 20px;
-      
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 20px;
+            width: calc(100%/3);
+            float: left;
             a{
                 color: $LINK_COLOR;
     
@@ -49,18 +58,28 @@
     }
 }
 .chapter__menu-white {
-    display: block;
+    display: table;
     width: 100%;
     font-size: 0.8rem;
     margin: 20px 10px;
     padding: 10px;
     border: solid 1px  $BACK_BLACK;
     ul{
-        padding: 1em;
-        columns: 3;
+        justify-content: space-around;
+        padding: 0.5em;
+        li:before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
         li {
             text-align: center;
-            margin:10px ;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: calc(100%/3);
+            float: left;
             a{
                 color: $DISABLED_FONT_COLOR;
                 margin: 10px 0px;
@@ -86,18 +105,28 @@
     }
 }
 .chapter__menu-black {
-    display: block;
+    display: table;
     width: 100%;
     font-size: 0.8rem;
     margin: 20px 10px;
     padding: 10px;
     border:solid 1px $WHITE_FONT_COLOR;
     ul{
-        padding: 1em;
-        columns: 3;
+        justify-content: space-around;
+        padding: 0.5em;
+        li:before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
         li {
+            padding-left: 10px;
+            padding-right: 10px;
             text-align: center;
-            margin:10px ;
+            margin-bottom: 20px;
+            width: calc(100%/3);
+            float: left;
             a{
                 color: $WHITE_FONT_COLOR;
                 margin: 10px 0px;
@@ -123,19 +152,28 @@
     }
 }
 .chapter__menu-contrast {
-    display: block;
+    display: table;
     width: 100%;
     font-size: 0.8rem;
     margin: 20px 10px;
     padding: 10px;
     border:solid 1px  $FONT_CONTRAST;
     ul{
-    
-        padding: 1em;
-        columns: 3;
+        justify-content: space-around;
+        padding: 0.5em;
+        li:before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
         li {
+            padding-left: 10px;
+            padding-right: 10px;
             text-align: center;
-            margin:10px ;
+            margin-bottom: 20px;
+            width: calc(100%/3);
+            float: left;
             a{
                 color:  $FONT_CONTRAST;
                 margin: 10px 0px;
@@ -161,55 +199,67 @@
     }
 }
 
-
-@include tablets{
+@media screen and (max-width:1150px){
     .chapter__menu{
-         ul{
-             columns: 2;
+        ul{
+           li{
+               width: calc(100%/2);
+           } 
+        }
+    }
+    .chapter__menu-white{
+        ul{
+            li{
+                width: calc(100%/2);
+            }
          }
-     }
-     .chapter__menu-white{
-       
-         ul{
-             columns: 2;
+    }
+    .chapter__menu-black{
+        ul{
+            li{
+                width: calc(100%/2);
+            } 
          }
-     }
-     .chapter__menu-black{
-    
-         ul{
-             columns: 2;
+    }
+    .chapter__menu-contrast{
+        ul{
+            li{
+                width: calc(100%/2);
+            }
          }
-     }
-     .chapter__menu-contrast{
-
-         ul{
-             columns: 2;
-         }
-     }
+    }
 }
-@include phones{
-    
+@media screen and (max-width:600px){
     .chapter__menu{
-         ul{
-             columns: 1;
+        ul{
+           li{
+               width: 100%;
+           } 
+        }
+    }
+    .chapter__menu-white{
+        ul{
+            li{
+                width: 100%;
+            }
          }
-     }
-     .chapter__menu-white{
-         ul{
-             columns: 1;
+    }
+    .chapter__menu-black{
+        ul{
+            li{
+                width: 100%;
+            } 
          }
-     }
-     .chapter__menu-black{
-         ul{
-             columns: 1;
+    }
+    .chapter__menu-contrast{
+        ul{
+            li{
+                width: 100%;
+            }
          }
-     }
-     .chapter__menu-contrast{
-         ul{
-             columns: 1;
-         }
-     }
+    }
 }
+
 .chapter__menu-show{
     display: none;
 }
