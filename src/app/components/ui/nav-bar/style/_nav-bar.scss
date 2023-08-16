@@ -21,9 +21,11 @@
   z-index: 100;
   padding: 0 10px;
    &-title{
-    width: 23%;
+    width: 23%;   
     font-size: 14px;
-    line-height: 1rem;
+     line-height: 1rem;
+/*     font-size: 1.5vh;
+    line-height: 1.8vh; */
     a{
       color: white;
     }
@@ -37,6 +39,7 @@
       }
       display: flex;
       font-size: 16px;
+   /*    font-size: 2vh; */
       height: 100%;
       align-items: center;
       justify-content: space-around; 
