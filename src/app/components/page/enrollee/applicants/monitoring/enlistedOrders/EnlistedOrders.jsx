@@ -1,9 +1,130 @@
 import React from "react";
+import { toggleClassName } from "../../../../../../utils/disabled";
+import { ReactComponent as DOC } from "../../../../../../assets/svg/office/word.svg";
+import prikaz26 from "../../../../../../assets/doc/enrollee/Приказ № 26 от 16.08.2023 №371-Спо-1 СВ.docx"
+import prikaz27 from "../../../../../../assets/doc/enrollee/Приказ № 27 от 17.08.2023 №370-Спо1 ОП.docx"
+import prikaz32 from "../../../../../../assets/doc/enrollee/Приказ № 32 от 17.08.2023 №372-Спо-1 СМ.docx"
+import prikaz33 from "../../../../../../assets/doc/enrollee/Приказ № 33 от 17.08.2023 №373-Спо-1 ЭМ.docx"
 const EnlistedOrders = () => {
   return (
     <section>
       <h1>Приказы зачисленных</h1>
-      <p>Приказы зачисленных, будут объявлены позже</p>
+      <p>
+      Приказ №26 от 16.08.2023 №371-Спо-1 СВ Судовождение{" "}
+        <a
+          href={prikaz26}
+          target={"_blank"}
+          rel="noreferrer"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
+          <DOC width={"25px"} height={"25px"} />
+        </a>{" "}
+        <a
+          href={prikaz26}
+          target={"_blank"}
+          rel="noreferrer"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
+          скачать
+        </a>
+      </p>
+      <p>
+        Приказ №27 от 17.08.2023 №370-Спо1 ОП Организация перевозок и управление на транспорте (по видам){" "}
+        <a
+          href={prikaz27}
+          target={"_blank"}
+          rel="noreferrer"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
+          <DOC width={"25px"} height={"25px"} />
+        </a>{" "}
+        <a
+          href={prikaz27}
+          target={"_blank"}
+          rel="noreferrer"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
+          скачать
+        </a>
+      </p>
+      <p>
+        Приказ №32 от 17.08.2023 №372-Спо-1 СМ Эксплуатация судовых энергетических установок{" "}
+        <a
+          href={prikaz32}
+          target={"_blank"}
+          rel="noreferrer"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
+          <DOC width={"25px"} height={"25px"} />
+        </a>{" "}
+        <a
+          href={prikaz32}
+          target={"_blank"}
+          rel="noreferrer"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
+          скачать
+        </a>
+      </p>
+      <p>
+        Приказ №33 от 17.08.2023 №373-Спо-1 ЭМ Эксплуатация судового электрооборудования и средств автоматики{" "}
+        <a
+          href={prikaz33}
+          target={"_blank"}
+          rel="noreferrer"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
+          <DOC width={"25px"} height={"25px"} />
+        </a>{" "}
+        <a
+          href={prikaz33}
+          target={"_blank"}
+          rel="noreferrer"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
+          скачать
+        </a>
+      </p>
     </section>
   );
 };
