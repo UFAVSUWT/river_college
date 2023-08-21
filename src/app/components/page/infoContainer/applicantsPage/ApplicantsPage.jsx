@@ -15,12 +15,16 @@ const ApplicantsPage = observer(() => {
   return (
     <div className="applicantsPage">
       <div className="infocontainer__button eventsBtn__container">
-        <span className={toggleClassName(
-              "infocontainer__titile",
-              "infocontainer__titile-white",
-              "infocontainer__titile-black",
-              "infocontainer__titile-contrast"
-            )}>Приемная кампания</span>
+        <span
+          className={toggleClassName(
+            "infocontainer__titile",
+            "infocontainer__titile-white",
+            "infocontainer__titile-black",
+            "infocontainer__titile-contrast"
+          )}
+        >
+          Приемная кампания
+        </span>
         <NavLink to="enrollee/applicantsInfo">
           <Button
             style={{ fontSize: toggleFontSize(18) }}
@@ -90,8 +94,9 @@ const ApplicantsPage = observer(() => {
               </a>
             </li>
             <li>
-
-              <NavLink to={"enrollee/dormitory"}>Информация о заселении в общежитие и оплате.</NavLink>
+              <NavLink to={"enrollee/dormitory"}>
+                Информация о заселении в общежитие и оплате
+              </NavLink>
             </li>
           </ul>
         </div>
