@@ -79,6 +79,7 @@ import AddEducationProgramsChildrenAdults from "./components/page/training/add-e
 import Cadets from "./components/page/learning/cadets/cadets";
 import Parents from "./components/page/learning/parents/parents";
 import CorrespondenceStudents from "./components/page/learning/correspondence-students/correspondence-students";
+import Dormitory from "./components/page/enrollee/applicants/dormitory/dormitory";
 const routes = () => [
   {
     path: "",
@@ -266,6 +267,10 @@ const routes = () => [
         path: "applicants",
         element: <ApplicantsEnrollee />,
       }, */
+      {
+        path: "dormitory",
+        element: <Dormitory/>
+      },
       {
         path: "messageFromDirector",
         element: <Message />,

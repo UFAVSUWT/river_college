@@ -62,7 +62,6 @@ const ApplicantsPage = observer(() => {
               {" "}
               <NavLink to={"enrollee/submissionDoc"}>Подача документов</NavLink>
             </li>
-
             <li>
               <NavLink to={"enrollee/messageFromDirector"}>
                 Обращение директора
@@ -89,6 +88,10 @@ const ApplicantsPage = observer(() => {
                 {" "}
                 Памятка для абитуриента
               </a>
+            </li>
+            <li>
+
+              <NavLink to={"enrollee/dormitory"}>Информация о заселении в общежитие и оплате.</NavLink>
             </li>
           </ul>
         </div>
