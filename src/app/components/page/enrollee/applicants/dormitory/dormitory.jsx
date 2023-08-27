@@ -1,8 +1,40 @@
 import React from "react";
+import { ReactComponent as PDF } from "../../../../../assets/svg/office/pdf.svg";
+import Prikaz from "../../../../../assets/pdf/enrolle/scanprikaz.pdf";
+import { toggleClassName } from "../../../../../utils/disabled";
 const Dormitory = () => {
   return (
     <>
       <h1>Информация о заселении в общежитие</h1>
+      <p>
+        Приказ о заселение студентов 1 курса. № 309 от 22.08.2023 г.{" "}
+        <a
+          href={Prikaz}
+          rel="noreferrer"
+          target="_blank"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
+          <PDF width={"25px"} height={"25px"} />
+        </a>{" "}
+        <a
+          href={Prikaz}
+          rel="noreferrer"
+          target="_blank"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
+          скачать
+        </a>{" "}
+      </p>
       <p>
         Заселение в общежитие 1 курса будет производиться{" "}
         <b>31 августа 2023г. с 9ч.до 15ч.</b> по местному времени.
