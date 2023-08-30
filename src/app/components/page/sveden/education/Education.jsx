@@ -417,7 +417,7 @@ const Education = observer(() => {
         программам за счет бюджетных ассигнований федерального бюджета, бюджетов
         субъектов Российской Федерации, местных бюджетов и по договорам об
         образовании за счет средств физических и (или) юридических лиц на
-        01.10.2022:"
+        01.09.2023:"
       >
         <table>
           <tbody>
@@ -442,13 +442,13 @@ const Education = observer(() => {
                 Общая численность обучающихся
               </td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td colSpan="2">бюджетных ассигнований федерального бюджета</td>
               <td colSpan="2">бюджетов субъектов Российской Федерации</td>
               <td colSpan="2">местных бюджетов </td>
               <td colSpan="2">средств физических и (или) юридических лиц</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td itemProp="numberBF">всего</td>
               <td itemProp="numberBFF">в том числе иностранных граждан</td>
               <td itemProp="numberBR">всего</td>
@@ -458,7 +458,7 @@ const Education = observer(() => {
               <td itemProp="numberP">всего</td>
               <td itemProp="numberPF">в том числе иностранных граждан</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td>-</td>
               <td>-</td>
               <td>высшее образование - бакалавриат</td>
@@ -473,7 +473,7 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td>-</td>
               <td>-</td>
               <td>высшее образование - специалитет</td>
@@ -488,7 +488,7 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td>-</td>
               <td>-</td>
               <td>высшее образование - магистратура</td>
@@ -498,12 +498,12 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
               <td>-</td>
-              <td>--</td>
+              <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td>-</td>
               <td>-</td>
               <td>
@@ -520,24 +520,24 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td rowSpan="3">23.02.01</td>
               <td rowSpan="3">
                 Организация перевозок и управление на транспорте
               </td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td>очная</td>
-              <td>71</td>
+              <td>94</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
-              <td>3</td>
+              <td>5</td>
               <td>-</td>
-              <td>74</td>
+              <td>99</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td>очно-заочная</td>
               <td>-</td>
               <td>-</td>
@@ -549,8 +549,9 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td>заочная</td>
+              <td>3</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
@@ -558,25 +559,24 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
               <td>-</td>
-              <td>-</td>
-              <td>-</td>
+              <td>3</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td rowSpan="3">23.02.03</td>
               <td rowSpan="3">Судовождение</td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td>очная</td>
-              <td>319</td>
+              <td>297</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
-              <td>10</td>
+              <td>9</td>
               <td>-</td>
-              <td>329</td>
+              <td>306</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td>очно-заочная</td>
               <td>-</td>
               <td>-</td>
@@ -588,34 +588,34 @@ const Education = observer(() => {
               <td>-</td>
               <td></td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td>заочная</td>
+              <td>5</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
+              <td>50</td>
               <td>-</td>
-              <td>75</td>
-              <td>-</td>
-              <td>75</td>
+              <td>55</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td rowSpan="3">23.02.05</td>
               <td rowSpan="3">Эксплуатация судовых энергетических установок</td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td>очная</td>
-              <td>187</td>
+              <td>182</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
-              <td>8</td>
+              <td>4</td>
               <td>-</td>
-              <td>195</td>
+              <td>186</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td>очно-заочная</td>
               <td>-</td>
               <td>-</td>
@@ -627,36 +627,36 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td>заочная</td>
+              <td>5</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
-              <td>2</td>
               <td>-</td>
-              <td>2</td>
+              <td>5</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td rowSpan="3">23.02.06</td>
               <td rowSpan="3">
                 Эксплуатация судового электрооборудования и средств автоматики
               </td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td>очная</td>
-              <td>193</td>
+              <td>199</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
-              <td>2</td>
+              <td>1</td>
               <td>-</td>
-              <td>195</td>
+              <td>200</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td>очно-заочная</td>
               <td>-</td>
               <td>-</td>
@@ -668,7 +668,7 @@ const Education = observer(() => {
               <td>-</td>
               <td>-</td>
             </tr>
-            <tr>
+            <tr itemProp="eduChislen">
               <td>заочная</td>
               <td>-</td>
               <td>-</td>
