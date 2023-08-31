@@ -65,9 +65,11 @@ const PhoneMenu = () => {
             </li>
           </ul> */}
           <div className="button__container">
-            <Button className={"button__container-btn"}>
-              {<Schedul className={"button__container-btn-icon"} />}
-            </Button>
+            <NavLink to={"/schedule"}>
+              <Button className={"button__container-btn"}>
+                {<Schedul className={"button__container-btn-icon"} />}
+              </Button>
+            </NavLink>
             <Button
               onClick={() => setLogin(true)}
               className={"button__container-btn"}
