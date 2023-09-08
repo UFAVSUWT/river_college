@@ -237,9 +237,13 @@ const BreadCrumbs = observer(() => {
           }
           const isLast = index === pathnames.length - 1;
           return isLast ? (
-            <div className="breadCrumbs__container-last">{linkName}</div>
+            <div key={index} className="breadCrumbs__container-last">
+              {linkName}
+            </div>
           ) : (
-            <NavLink to={`${route}`}>{linkName}</NavLink>
+            <NavLink key={"link" + index} to={`${route}`}>
+              {linkName}
+            </NavLink>
           );
         })}
       </div>

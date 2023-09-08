@@ -80,6 +80,13 @@ import Cadets from "./components/page/learning/cadets/cadets";
 import Parents from "./components/page/learning/parents/parents";
 import CorrespondenceStudents from "./components/page/learning/correspondence-students/correspondence-students";
 import Dormitory from "./components/page/enrollee/applicants/dormitory/dormitory";
+import StudentsLiveNews from "./components/page/live/studentsLive/students-live-news";
+import SportNews from "./components/page/live/sport/sport-news";
+import OurPrideNews from "./components/page/live/ourPride/our-pride-news";
+import ScienceNews from "./components/page/live/science/science-news";
+import Admin from "./components/page/admin/admin-panel";
+import Auth from "./layouts/auth/auth";
+import StudentPage from "./components/page/studentPage/student-page";
 const routes = () => [
   {
     path: "",
@@ -91,6 +98,15 @@ const routes = () => [
       },
     ],
   },
+  /*Авторизированные пользователи*/
+  {
+    path: "auth",
+    element: <Auth />,
+  },
+  { path: "admin", element: <Admin /> },
+  { path: "student", element: <StudentPage /> },
+  { path: "pur", element: <StudentPage /> },
+  /*Публичные пользователи*/
   {
     path: "educationPrograms",
     element: <EducationPrograms />,
@@ -237,16 +253,32 @@ const routes = () => [
         element: <StudentsLive />,
       },
       {
+        path: "studentsLive/:id",
+        element: <StudentsLiveNews />,
+      },
+      {
         path: "sport",
         element: <Sport />,
+      },
+      {
+        path: "sport/:id",
+        element: <SportNews />,
       },
       {
         path: "ourPride",
         element: <OurPride />,
       },
       {
+        path: "ourPride/:id",
+        element: <OurPrideNews />,
+      },
+      {
         path: "science",
         element: <Science />,
+      },
+      {
+        path: "science/:id",
+        element: <ScienceNews />,
       },
       {
         path: "vacancies",
@@ -269,7 +301,7 @@ const routes = () => [
       }, */
       {
         path: "dormitory",
-        element: <Dormitory/>
+        element: <Dormitory />,
       },
       {
         path: "messageFromDirector",

@@ -9,15 +9,13 @@ import { ReactComponent as User1 } from "../../../assets/svg/leftPanel/user1.svg
 import { ReactComponent as Glasses1 } from "../../../assets/svg/leftPanel/glasses1.svg";
 import { ReactComponent as Museum1 } from "../../../assets/svg/leftPanel/museum1.svg";
 import { ReactComponent as Calendar1 } from "../../../assets/svg/leftPanel/calendar1.svg";
-import {
-  toggleClassName,
-  toggleIconColor,
-} from "../../../utils/disabled";
+import { toggleClassName, toggleIconColor } from "../../../utils/disabled";
 import { observer } from "mobx-react-lite";
 import { NavLink } from "react-router-dom";
 import Disabled from "../disabled/disabled-panel";
 
 import DesktopLogIn from "../logIn/desktopLogIn";
+import AuthLeftPanel from "../../../layouts/auth/auth-left-panel";
 
 const LeftPanel = observer(() => {
   const [isMegaMenu, setIsMegaMenu] = useState(false); //переменная для отображения контента контейнера меню, когда мышка на элементе меню
@@ -74,7 +72,7 @@ const LeftPanel = observer(() => {
   const toggleLogin = () => {
     setIsLogin(!isLogIn);
   };
-
+  const [isAuth, setIsAuth] = useState(false);
   return (
     <div
       className={`leftPanel__wrapper ${toggleClassName(
@@ -104,7 +102,11 @@ const LeftPanel = observer(() => {
             <Disabled />
           </div>
         ) : null}
-        <DesktopLogIn isActive={isLogIn} />
+        {isAuth ? (
+          <AuthLeftPanel isActive={isAuth} />
+        ) : (
+          <DesktopLogIn isActive={isLogIn} />
+        )}
         <div className="leftPanel__wrapper-moove-top">
           <div> Стань капитаном своей судьбы!</div>
         </div>
@@ -118,7 +120,11 @@ const LeftPanel = observer(() => {
               isLinks === "User" ? "links__container-active" : ""
             }`}
           >
-            <NavLink to={""}>Личный кабинет</NavLink>
+            {isAuth ? (
+              <NavLink to={"auth"}>Личный кабинет</NavLink>
+            ) : (
+              <NavLink to={""}>Личный кабинет</NavLink>
+            )}
           </div>
           <NavLink to={"schedule"}>
             <div
@@ -166,33 +172,59 @@ const LeftPanel = observer(() => {
       >
         <div className="leftPanel__wrapper-static-top">
           <NavLink to="/">
-          <div>
-            <Logo
-              fill={toggleIconColor("#0C1C2B", "", "#000")}
-              width={"100%"}
-              height={"100%"}
-            />
-          </div>
+            <div>
+              <Logo
+                fill={toggleIconColor("#0C1C2B", "", "#000")}
+                width={"100%"}
+                height={"100%"}
+              />
+            </div>
           </NavLink>
         </div>
         <div className="leftPanel__wrapper-static-icons">
           <div onClick={() => toggleLogin()} className="icon__container">
-            {isLinks === "User" ? (
-              <User
-                onMouseLeave={(e) => onIconOut(e)}
-                onMouseEnter={(e) => onIconEnter(e)}
-                id="User"
-                width={"100%"}
-                height={"100%"}
-              />
+            {isAuth ? (
+              <NavLink to="auth">
+                {" "}
+                {isLinks === "User" ? (
+                  <User
+                    onMouseLeave={(e) => onIconOut(e)}
+                    onMouseEnter={(e) => onIconEnter(e)}
+                    id="User"
+                    width={"100%"}
+                    height={"100%"}
+                  />
+                ) : (
+                  <User1
+                    onMouseEnter={(e) => onIconEnter(e)}
+                    onMouseLeave={(e) => onIconOut(e)}
+                    id="User1"
+                    width={"100%"}
+                    height={"100%"}
+                  />
+                )}
+              </NavLink>
             ) : (
-              <User1
-                onMouseEnter={(e) => onIconEnter(e)}
-                onMouseLeave={(e) => onIconOut(e)}
-                id="User1"
-                width={"100%"}
-                height={"100%"}
-              />
+              <NavLink to="">
+                {" "}
+                {isLinks === "User" ? (
+                  <User
+                    onMouseLeave={(e) => onIconOut(e)}
+                    onMouseEnter={(e) => onIconEnter(e)}
+                    id="User"
+                    width={"100%"}
+                    height={"100%"}
+                  />
+                ) : (
+                  <User1
+                    onMouseEnter={(e) => onIconEnter(e)}
+                    onMouseLeave={(e) => onIconOut(e)}
+                    id="User1"
+                    width={"100%"}
+                    height={"100%"}
+                  />
+                )}
+              </NavLink>
             )}
           </div>
           <div onClick={() => toggleIsHidden()} className="icon__container">

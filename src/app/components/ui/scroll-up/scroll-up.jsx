@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 const ScrollUp = () => {
+  // Кнопка, которая появляется, когда прокручиваешь страницу ниже одного экрана. Поднимает в самый верх
   const scrollY = window.scrollY || document.documentElement.scrollTop;
 
   const [scrollTop, setScrollTop] = useState(0);
