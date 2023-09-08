@@ -25,7 +25,7 @@ import Prikaz706 from "../../../../assets/pdf/documentPage/Prikaz706.pdf";
 import Prikaz734 from "../../../../assets/pdf/documentPage/Prikaz734.pdf";
 import Prikaz950 from "../../../../assets/pdf/documentPage/Prikaz950.pdf";
 
-import Plan_FHD_2021 from "../../../../assets/xlsx/Plan_FHD_2021.xlsx";
+import Plan_FHD_2023 from "../../../../assets/doc/documentPage/План ФХД 2023г. от 30.06.2023.docx";
 
 import PravPriem from "../../../../assets/pdf/documentPage/pravila_priema_2022.pdf";
 import Raspisanie from "../../../../assets/pdf/documentPage/raspisanie.pdf";
@@ -51,8 +51,8 @@ import SamoobsOrchet22 from "../../../../assets/pdf/documentPage/othet_o_samoobs
 import PoryadPlatnUslug from "../../../../assets/pdf/documentPage/Poryadok_platn_uslug.pdf";
 import PoryadPlatnObrUslug21 from "../../../../assets/pdf/documentPage/Dogovor_platn_obraz_uslug_2021.pdf";
 import StoimObuch22 from "../../../../assets/pdf/documentPage/Stoimost_obuch_2022.pdf";
-import OplProzivan20 from "../../../../assets/pdf/documentPage/Poryadok_oplatu_za_progivanie_2020.pdf";
-import OplProzivan from "../../../../assets/pdf/documentPage/Poryadok_oplatu_za_progivanie.pdf";
+import OplProzivan from "../../../../assets/pdf/documentPage/Poryadoc_oplati.pdf";
+import smeta from "../../../../assets/pdf/documentPage/сметы на общежитие.pdf";
 import PolStDorm18 from "../../../../assets/pdf/documentPage/Pol_st_dorm_2018.pdf";
 import Predpis from "../../../../assets/pdf/documentPage/predpisanie_transp_prok1.pdf";
 import PismoTransp from "../../../../assets/pdf/documentPage/pismo_transp_prok_2020.pdf";
@@ -72,7 +72,7 @@ import vipiska_iz_reestra11042023 from "../../../../assets/pdf/documentPage/vipi
 import SEZ_predreisovaya from "../../../../assets/pdf/documentPage/SEZ_predreisovaya.pdf";
 
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
-import { ReactComponent as EXCEL } from "../../../../assets/svg/office/excel.svg";
+import { ReactComponent as DOC } from "../../../../assets/svg/office/word.svg";
 import { toggleClassName } from "../../../../utils/disabled";
 import HrLine from "../../../common/hrLine/HrLine";
 const MainDocs = ({ isActive }) => {
@@ -312,8 +312,8 @@ const MainDocs = ({ isActive }) => {
         >
           <ul>
             <li className="doc__item">
-              <EXCEL height={"40px"} width={"40px"} />
-              <a href={Plan_FHD_2021} target={"_blank"} rel="noreferrer">
+              <DOC height={"40px"} width={"40px"} />
+              <a href={Plan_FHD_2023} target={"_blank"} rel="noreferrer">
                 План финансово-хозяйственной деятельности
               </a>
             </li>
@@ -613,7 +613,7 @@ const MainDocs = ({ isActive }) => {
           <ul>
             <li className="doc__item">
               <PDF height={"40px"} width={"40px"} />
-              <a href={OplProzivan20} target={"_blank"} rel="noreferrer">
+              <a href={OplProzivan} target={"_blank"} rel="noreferrer">
                 Документ об установлении размера платы, взимаемой с родителей
                 (законных представителей) за присмотр и уход за детьми,
                 осваивающими образовательные программы дошкольного образования в
@@ -630,8 +630,8 @@ const MainDocs = ({ isActive }) => {
             </li>
             <li className="doc__item">
               <PDF height={"40px"} width={"40px"} />
-              <a href={OplProzivan} target={"_blank"} rel="noreferrer">
-                Смета стоимости проживания в общежитии с 01.07.2022
+              <a href={smeta} target={"_blank"} rel="noreferrer">
+                Смета стоимости проживания в общежитии с 01.01.2023
               </a>
             </li>
             <li className="doc__item">
