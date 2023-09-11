@@ -26,9 +26,9 @@ const Struct = observer(() => {
       >
         <table>
           <tbody>
-            <tr>
+            <tr itemProp="structOrgUprav">
               <td itemProp="name">
-                Наименование органа управления/ структурного подразделения{" "}
+                Наименование органа управления/ структурного подразделения
               </td>
               <td itemProp="fio">
                 ФИО руководителя структурного подразделения
@@ -56,15 +56,15 @@ const Struct = observer(() => {
                 </h3>
               </td>
             </tr>
-            <tr>
-              <td>Уфимский филиал </td>
-              <td>Ахмадеева Фарида Шариповна</td>
-              <td>Директор</td>
-              <td>
+            <tr itemProp="structOrgUprav">
+              <td itemProp="name">Уфимский филиал ВГУВТ</td>
+              <td itemProp="fio">Ахмадеева Фарида Шариповна</td>
+              <td itemProp="post">Директор</td>
+              <td itemProp="addressStr">
                 450017, Приволжский ФО, Республика Башкортостан, г. Уфа, ул.
                 Ахметова, 275
               </td>
-              <td>
+              <td itemProp="site">
                 <a
                   href="http://www.rivercollege.ru/"
                   target={"_blank"}
@@ -73,7 +73,7 @@ const Struct = observer(() => {
                   www.rivercollege.ru
                 </a>
               </td>
-              <td>
+              <td itemProp="email">
                 <a
                   href="mailto:uf-vsuwt@uf-vsuwt.ru"
                   target="_blank"
@@ -88,7 +88,7 @@ const Struct = observer(() => {
                   uf-vsuwt@uf-vsuwt.ru
                 </a>
               </td>
-              <td>
+              <td itemProp="divisionClauseDocLink">
                 <ul>
                   <li>
                     <PDF width={"25px"} height={"25px"} />
@@ -114,15 +114,15 @@ const Struct = observer(() => {
                 Структурные подразделения образовательной организации:
               </td>
             </tr>
-            <tr>
-              <td>Подразделение учебной работы </td>
-              <td>Мусина Гульфия Ириковна </td>
-              <td>Заместитель директора филиала </td>
-              <td>
+            <tr itemProp="structOrgUprav">
+              <td itemProp="name">Подразделение учебной работы</td>
+              <td itemProp="fio">Мусина Гульфия Ириковна</td>
+              <td itemProp="post">Заместитель директора филиала</td>
+              <td itemProp="addressStr">
                 450017, Приволжский ФО, Республика Башкортостан, г. Уфа, ул.
-                Ахметова, 275{" "}
+                Ахметова, 275
               </td>
-              <td>
+              <td itemProp="site">
                 <a
                   href="http://www.rivercollege.ru/"
                   target={"_blank"}
@@ -131,7 +131,7 @@ const Struct = observer(() => {
                   www.rivercollege.ru
                 </a>
               </td>
-              <td>
+              <td itemProp="email">
                 <a
                   href="mailto:pur@uf-vsuwt.ru"
                   target="_blank"
@@ -146,7 +146,7 @@ const Struct = observer(() => {
                   pur@uf-vsuwt.ru
                 </a>
               </td>
-              <td>
+              <td itemProp="divisionClauseDocLink">
                 <ul>
                   <li>
                     <PDF width={"25px"} height={"25px"} />
@@ -167,15 +167,15 @@ const Struct = observer(() => {
                 </ul>
               </td>
             </tr>
-            <tr>
-              <td>Подразделение воспитательной работы </td>
-              <td>Акбашева Альбина Галимзяновна </td>
-              <td>Заместитель директора филиала </td>
-              <td>
+            <tr itemProp="structOrgUprav">
+              <td itemProp="name">Подразделение воспитательной работы</td>
+              <td itemProp="fio">Акбашева Альбина Галимзяновна</td>
+              <td itemProp="post">Заместитель директора филиала</td>
+              <td itemProp="addressStr">
                 450017, Приволжский ФО, Республика Башкортостан, г. Уфа, ул.
                 Ахметова, 275{" "}
               </td>
-              <td>
+              <td itemProp="site">
                 <a
                   href="http://www.rivercollege.ru/"
                   target={"_blank"}
@@ -184,7 +184,7 @@ const Struct = observer(() => {
                   www.rivercollege.ru
                 </a>
               </td>
-              <td>
+              <td itemProp="email">
                 <a
                   href="mailto:pvr@uf-vsuwt.ru"
                   target="_blank"
@@ -199,7 +199,7 @@ const Struct = observer(() => {
                   pvr@uf-vsuwt.ru
                 </a>
               </td>
-              <td>
+              <td itemProp="divisionClauseDocLink">
                 <ul>
                   <li>
                     <PDF width={"25px"} height={"25px"} />
@@ -220,15 +220,17 @@ const Struct = observer(() => {
                 </ul>
               </td>
             </tr>
-            <tr>
-              <td>Центр организационно-правовой работы</td>
-              <td>Мукимов Ралиф Фаритович</td>
-              <td>Начальник центра организационно-правовой работы</td>
-              <td>
+            <tr itemProp="structOrgUprav">
+              <td itemProp="name">Центр организационно-правовой работы</td>
+              <td itemProp="fio">Мукимов Ралиф Фаритович</td>
+              <td itemProp="post">
+                Начальник центра организационно-правовой работы
+              </td>
+              <td itemProp="addressStr">
                 450017, Приволжский ФО, Республика Башкортостан, г. Уфа, ул.
                 Ахметова, 275
               </td>
-              <td>
+              <td itemProp="site">
                 <a
                   href="http://www.rivercollege.ru/"
                   target={"_blank"}
@@ -237,7 +239,7 @@ const Struct = observer(() => {
                   www.rivercollege.ru
                 </a>
               </td>
-              <td>
+              <td itemProp="email">
                 <a
                   href="mailto:copr@uf-vsuwt.ru"
                   target="_blank"
@@ -252,7 +254,7 @@ const Struct = observer(() => {
                   copr@uf-vsuwt.ru
                 </a>
               </td>
-              <td>
+              <td itemProp="divisionClauseDocLink">
                 <ul>
                   <li>
                     <PDF width={"25px"} height={"25px"} />
@@ -273,15 +275,17 @@ const Struct = observer(() => {
                 </ul>
               </td>
             </tr>
-            <tr>
-              <td>Административно-хозяйственный отдел</td>
-              <td>Самушия Автандил Давидович</td>
-              <td>Начальник административно-хозяйственного отдела</td>
-              <td>
+            <tr itemProp="structOrgUprav">
+              <td itemProp="name">Административно-хозяйственный отдел</td>
+              <td itemProp="fio">Самушия Автандил Давидович</td>
+              <td itemProp="post">
+                Начальник административно-хозяйственного отдела
+              </td>
+              <td itemProp="addressStr">
                 450017, Приволжский ФО, Республика Башкортостан, г. Уфа, ул.
                 Ахметова, 275
               </td>
-              <td>
+              <td itemProp="site">
                 <a
                   href="http://www.rivercollege.ru/"
                   target={"_blank"}
@@ -290,7 +294,7 @@ const Struct = observer(() => {
                   www.rivercollege.ru
                 </a>
               </td>
-              <td>
+              <td itemProp="email">
                 <a
                   href="mailto:aho@uf-vsuwt.ru"
                   target="_blank"
@@ -305,7 +309,7 @@ const Struct = observer(() => {
                   aho@uf-vsuwt.ru
                 </a>
               </td>
-              <td>
+              <td itemProp="divisionClauseDocLink">
                 <ul>
                   <li>
                     <PDF width={"25px"} height={"25px"} />
@@ -326,15 +330,15 @@ const Struct = observer(() => {
                 </ul>
               </td>
             </tr>
-            <tr>
-              <td>Бухгалтерия</td>
-              <td>Жоссан Елена Евгеньевна</td>
-              <td>Главный бухгалтер</td>
-              <td>
+            <tr itemProp="structOrgUprav">
+              <td itemProp="name">Бухгалтерия</td>
+              <td itemProp="fio">Жоссан Елена Евгеньевна</td>
+              <td itemProp="post">Главный бухгалтер</td>
+              <td itemProp="addressStr">
                 450017, Приволжский ФО, Республика Башкортостан, г. Уфа, ул.
                 Ахметова, 275
               </td>
-              <td>
+              <td itemProp="site">
                 <a
                   href="http://www.rivercollege.ru/"
                   target={"_blank"}
@@ -343,7 +347,7 @@ const Struct = observer(() => {
                   www.rivercollege.ru
                 </a>
               </td>
-              <td>
+              <td itemProp="email">
                 <a
                   href="mailto:buh@uf-vsuwt.ru"
                   target="_blank"
@@ -358,7 +362,7 @@ const Struct = observer(() => {
                   buh@uf-vsuwt.ru
                 </a>
               </td>
-              <td>
+              <td itemProp="divisionClauseDocLink">
                 <ul>
                   <li>
                     <PDF width={"25px"} height={"25px"} />
@@ -379,15 +383,15 @@ const Struct = observer(() => {
                 </ul>
               </td>
             </tr>
-            <tr>
-              <td>Отдел коллективного питания</td>
-              <td>Макулова Зиля Шамиловна</td>
-              <td>Заведующий производством</td>
-              <td>
+            <tr itemProp="structOrgUprav">
+              <td itemProp="name">Отдел коллективного питания</td>
+              <td itemProp="fio">Макулова Зиля Шамиловна</td>
+              <td itemProp="post">Заведующий производством</td>
+              <td itemProp="addressStr">
                 450017, Приволжский ФО, Республика Башкортостан, г. Уфа, ул.
                 Ахметова, 275
               </td>
-              <td>
+              <td itemProp="site">
                 <a
                   href="http://www.rivercollege.ru/"
                   target={"_blank"}
@@ -396,7 +400,7 @@ const Struct = observer(() => {
                   www.rivercollege.ru
                 </a>
               </td>
-              <td>
+              <td itemProp="email">
                 <a
                   href="mailto:kolpit@uf-vsuwt.ru"
                   target="_blank"
@@ -411,7 +415,7 @@ const Struct = observer(() => {
                   kolpit@uf-vsuwt.ru
                 </a>
               </td>
-              <td>
+              <td itemProp="divisionClauseDocLink">
                 <ul>
                   <li>
                     <PDF width={"25px"} height={"25px"} />

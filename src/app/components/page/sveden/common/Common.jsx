@@ -145,11 +145,15 @@ const Common = observer(() => {
               </tr>
               <tr>
                 <td>Контактные телефоны</td>
-                <td itemProp="telephone">8 (347) 215-14-00 доб. 6 (приемная);</td>
+                <td itemProp="telephone">
+                  8 (347) 215-14-00 доб. 6 (приемная);
+                </td>
               </tr>
               <tr>
                 <td></td>
-                <td itemProp="telephone">8 (347) 215-14-00 доб. 1 (бухгалтерия)</td>
+                <td itemProp="telephone">
+                  8 (347) 215-14-00 доб. 1 (бухгалтерия)
+                </td>
               </tr>
               <tr>
                 <td>Адреса электронной почты</td>
@@ -266,7 +270,6 @@ const Common = observer(() => {
           в том числе находящихся за пределами Российской Федерации.
         </h3>
         <h3
-          itemProp="uchredLaw"
           className={`common__container-title ${toggleClassName(
             "title",
             "title-white",
@@ -277,7 +280,7 @@ const Common = observer(() => {
           Информация об учредителе
         </h3>
         <div className="common__scrollTable">
-          <table className="">
+          <table itemProp="uchredLaw">
             <tbody>
               <tr>
                 <td>Наименование учредителя</td>
@@ -350,8 +353,8 @@ const Common = observer(() => {
                 </tr>
                 <tr>
                   <td>1</td>
-                  <td itemProp="addressPlacePodg">Учебный корпус</td>
-                  <td>
+                  <td>Учебный корпус</td>
+                  <td itemProp="addressPlacePodg">
                     450017, Республика Башкортостан, г.Уфа, ул. Ахметова, д. 275
                   </td>
                   <td>
@@ -363,10 +366,10 @@ const Common = observer(() => {
                 <tr>
                   <td>2</td>
                   <td> Общежитие</td>
-                  <td>
+                  <td itemProp="addressPlaceDop">
                     450017, Республика Башкортостан, г.Уфа, ул. Ахметова, д. 275
                   </td>
-                  <td itemProp="addressPlaceDop">
+                  <td>
                     основная, дополнительная профессиональная программа,
                     основная программа профессионального обучения проведение
                     практической подготовки обучающихся, проведение ГИА
@@ -383,11 +386,11 @@ const Common = observer(() => {
                 </tr>
                 <tr>
                   <td>4</td>
-                  <td itemProp="addressPlacePodg">
+                  <td>
                     Открытый стадион широкого профиля с элементами полосы
                     препятствий
                   </td>
-                  <td>
+                  <td itemProp="addressPlacePodg">
                     450064, Республика Башкортостан, г.Уфа, ул. Комарова, 9
                   </td>
                   <td>
