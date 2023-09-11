@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 import { ReactComponent as Logo } from "../../../assets/svg/riveruniversityLogo.svg";
 import { ReactComponent as User } from "../../../assets/svg/leftPanel/user.svg";
@@ -16,6 +16,7 @@ import Disabled from "../disabled/disabled-panel";
 
 import DesktopLogIn from "../logIn/desktopLogIn";
 import AuthLeftPanel from "../../../layouts/auth/auth-left-panel";
+import { Context } from "../../../../index";
 
 const LeftPanel = observer(() => {
   const [isMegaMenu, setIsMegaMenu] = useState(false); //переменная для отображения контента контейнера меню, когда мышка на элементе меню
@@ -72,7 +73,8 @@ const LeftPanel = observer(() => {
   const toggleLogin = () => {
     setIsLogin(!isLogIn);
   };
-  const [isAuth, setIsAuth] = useState(false);
+  const { user } = useContext(Context);
+  const isAuth = user.isAuth;
   return (
     <div
       className={`leftPanel__wrapper ${toggleClassName(

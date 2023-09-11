@@ -87,6 +87,9 @@ import ScienceNews from "./components/page/live/science/science-news";
 import Admin from "./components/page/admin/admin-panel";
 import Auth from "./layouts/auth/auth";
 import StudentPage from "./components/page/studentPage/student-page";
+import RequireAuth from "./hoc/require-auth";
+import Pur from "./components/page/pur/pur";
+import { Navigate } from "react-router";
 const routes = () => [
   {
     path: "",
@@ -101,11 +104,36 @@ const routes = () => [
   /*Авторизированные пользователи*/
   {
     path: "auth",
-    element: <Auth />,
+    element: (
+      <RequireAuth>
+        <Auth />
+      </RequireAuth>
+    ),
   },
-  { path: "admin", element: <Admin /> },
-  { path: "student", element: <StudentPage /> },
-  { path: "pur", element: <StudentPage /> },
+  {
+    path: "admin",
+    element: (
+      <RequireAuth>
+        <Admin />
+      </RequireAuth>
+    ),
+  },
+  {
+    path: "student",
+    element: (
+      <RequireAuth>
+        <StudentPage />
+      </RequireAuth>
+    ),
+  },
+  {
+    path: "pur",
+    element: (
+      <RequireAuth>
+        <Pur />
+      </RequireAuth>
+    ),
+  },
   /*Публичные пользователи*/
   {
     path: "educationPrograms",
@@ -472,6 +500,10 @@ const routes = () => [
         element: <UserSurvey />,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <Navigate to={"/"} />,
   },
 ];
 export default routes;
