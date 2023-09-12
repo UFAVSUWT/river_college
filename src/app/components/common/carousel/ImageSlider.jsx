@@ -11,8 +11,10 @@ import Boat from "../../../assets/img/main/boat.png";
 import Students from "../../../assets/img/main/students.jpg";
 import { NavLink } from "react-router-dom";
 import ChapterMenu from "../../ui/chapterMenu/ChapterMenu";
+import images from "../../../store/images";
+import { observer } from "mobx-react-lite";
 
-const ImageSlider = ({ className, ...rest }) => {
+const ImageSlider = observer(({ className, ...rest }) => {
   const linksArray = [
     { title: "Главная", path: "/" },
     { title: "О филиале", path: "/home/aboutBranch" },
@@ -22,11 +24,13 @@ const ImageSlider = ({ className, ...rest }) => {
   ];
   return (
     <>
-      <div className="main-mobileMenu">
-        <ChapterMenu linksArray={linksArray} />
-      </div>
-      <div className="imageSlider-show">
-        {/* <Swiper
+      {images.image !== "off" ? (
+        <>
+          <div className="main-mobileMenu">
+            <ChapterMenu linksArray={linksArray} />
+          </div>
+          <div className="imageSlider-show">
+            {/* <Swiper
           loop={true}
           modules={[Autoplay]}
           autoplay={{
@@ -37,7 +41,15 @@ const ImageSlider = ({ className, ...rest }) => {
             <NavLink to={"enrollee/reception"}>
               <div className="marquee-infinite">
                 <span>
-                  <img src={Boat} alt="" width={"250px"} height={"96px"} />
+                  <img
+                    className={`${
+                      images.image === "gray" ? "imageFilter" : null
+                    }`}
+                    src={Boat}
+                    alt=""
+                    width={"250px"}
+                    height={"96px"}
+                  />
                 </span>
               </div>
               <div className="_container">
@@ -49,10 +61,14 @@ const ImageSlider = ({ className, ...rest }) => {
                   </div>
                 </div>
               </div>
-              <img src={Students} alt="Картинка уплыла" />
+              <img
+                className={`${images.image === "gray" ? "imageFilter" : null}`}
+                src={Students}
+                alt="Картинка уплыла"
+              />
             </NavLink>
-       {/*    </SwiperSlide> */}
-          {/* <SwiperSlide>
+            {/*    </SwiperSlide> */}
+            {/* <SwiperSlide>
             <div className="marquee-infinite">
               <span>
                 <img src={Boat} alt="" width={"250px"} height={"96px"} />
@@ -75,11 +91,13 @@ const ImageSlider = ({ className, ...rest }) => {
             </div>
             <img src={Arctica} alt="Картинка уплыла" />
           </SwiperSlide> */}
-        {/* </Swiper> */}
-      </div>
+            {/* </Swiper> */}
+          </div>
+        </>
+      ) : null}
     </>
   );
-};
+});
 
 ImageSlider.defaultProps = {
   pagination: true,
