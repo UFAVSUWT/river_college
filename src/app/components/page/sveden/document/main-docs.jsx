@@ -178,7 +178,6 @@ const MainDocs = ({ isActive }) => {
               </a>
             </li>
           </ul>
-          <HrLine className="document__hrLine" />
 
           <ul>
             <li itemProp="accreditationDocLink" className="doc__item">
@@ -189,7 +188,7 @@ const MainDocs = ({ isActive }) => {
               </a>
             </li>
 
-            <li className="doc__item">
+            <li itemProp="accreditationDocLink" className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={AkrVsuwtPril1} target={"_blank"} rel="noreferrer">
                 Приложение №1 к свидетельству о государственной аккредитации
@@ -197,7 +196,7 @@ const MainDocs = ({ isActive }) => {
               </a>
             </li>
 
-            <li className="doc__item">
+            <li itemProp="accreditationDocLink" className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={AkrVsuwtPril2} target={"_blank"} rel="noreferrer">
                 Приложение №2 к свидетельству о государственной аккредитации
@@ -205,7 +204,7 @@ const MainDocs = ({ isActive }) => {
               </a>
             </li>
 
-            <li className="doc__item">
+            <li itemProp="accreditationDocLink" className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={AkrVsuwtPril3} target={"_blank"} rel="noreferrer">
                 Приложение №3 к свидетельству о государственной аккредитации
@@ -214,7 +213,7 @@ const MainDocs = ({ isActive }) => {
               </a>
             </li>
 
-            <li className="doc__item">
+            <li itemProp="accreditationDocLink" className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={AkrVsuwtPril4} target={"_blank"} rel="noreferrer">
                 Приложение №4 к свидетельству о государственной аккредитации
@@ -222,7 +221,7 @@ const MainDocs = ({ isActive }) => {
               </a>
             </li>
 
-            <li className="doc__item">
+            <li itemProp="accreditationDocLink" className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={AkrVsuwtPril5} target={"_blank"} rel="noreferrer">
                 Приложение №5 к свидетельству о государственной аккредитации
@@ -230,7 +229,7 @@ const MainDocs = ({ isActive }) => {
               </a>
             </li>
 
-            <li className="doc__item">
+            <li itemProp="accreditationDocLink" className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={AkrVsuwtPril6} target={"_blank"} rel="noreferrer">
                 Приложение №6 к свидетельству о государственной аккредитации
@@ -238,14 +237,14 @@ const MainDocs = ({ isActive }) => {
               </a>
             </li>
 
-            <li className="doc__item">
+            <li itemProp="accreditationDocLink" className="doc__item">
               <a href={AkrVsuwtPril9} target={"_blank"} rel="noreferrer">
                 Приложение №9 к свидетельству о государственной аккредитации
                 (Магистратура ВГУВТ, Юриспруденция)
               </a>
             </li>
 
-            <li className="doc__item">
+            <li itemProp="accreditationDocLink" className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={AkrVsuwtPril10} target={"_blank"} rel="noreferrer">
                 Приложение №10 к свидетельству о государственной аккредитации
@@ -253,7 +252,7 @@ const MainDocs = ({ isActive }) => {
               </a>
             </li>
 
-            <li className="doc__item">
+            <li itemProp="accreditationDocLink" className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={AkrVsuwtPril12} target={"_blank"} rel="noreferrer">
                 Приложение №12 к свидетельству о государственной аккредитации
@@ -261,7 +260,7 @@ const MainDocs = ({ isActive }) => {
               </a>
             </li>
 
-            <li className="doc__item">
+            <li itemProp="accreditationDocLink" className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={AkrVsuwtPril13} target={"_blank"} rel="noreferrer">
                 Приложение №13 к свидетельству о государственной аккредитации
