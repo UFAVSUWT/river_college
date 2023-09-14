@@ -6,6 +6,8 @@ import UstavChange17 from "../../../../assets/pdf/documentPage/rasp_ustav_2017.p
 import UstavChange18 from "../../../../assets/pdf/documentPage/rasp_ustav_2018.pdf";
 import UstavChange19 from "../../../../assets/pdf/documentPage/rasp_ustav_2019.pdf";
 import UstavChange21 from "../../../../assets/pdf/documentPage/rasp_ustav_2021.pdf";
+import UstavChange23 from "../../../../assets/pdf/documentPage/Изменения в устав от 08.09.2023.pdf";
+import listZapisi from "../../../../assets/pdf/documentPage/Лист записи от 08.09.2023.pdf";
 import Pologen22 from "../../../../assets/pdf/documentPage/Pologen_2022.pdf";
 import Pologen22Dop from "../../../../assets/pdf/documentPage/Pologen_dop.pdf";
 import LicenzVip from "../../../../assets/pdf/documentPage/licenz_vip20220916.pdf";
@@ -27,9 +29,7 @@ import Prikaz950 from "../../../../assets/pdf/documentPage/Prikaz950.pdf";
 
 import Plan_FHD_2023 from "../../../../assets/doc/documentPage/План ФХД 2023г. от 30.06.2023.docx";
 
-import PravPriem from "../../../../assets/pdf/documentPage/pravila_priema_2022.pdf";
 import Raspisanie from "../../../../assets/pdf/documentPage/raspisanie.pdf";
-import Rezim from "../../../../assets/pdf/documentPage/Rezhim_zanyat_2022-2023.jpg";
 
 import PolozOvz from "../../../../assets/pdf/documentPage/Pologenie_ucheb_prozess_ovz_2017.pdf";
 import PolozPromItog from "../../../../assets/pdf/documentPage/Pologenie_promegut_itogov_attest2017.pdf";
@@ -38,7 +38,7 @@ import Perev21 from "../../../../assets/pdf/documentPage/Perevod_UF_2021.pdf";
 import Otchisl21 from "../../../../assets/pdf/documentPage/Otchisl_UF_2021.pdf";
 
 import Otchisl17 from "../../../../assets/pdf/documentPage/Otnoshenie_2017.pdf";
-import Raspor18 from "../../../../assets/pdf/documentPage/pravila_rasporyadka_2018.pdf";
+
 import TrudRasp17 from "../../../../assets/pdf/documentPage/Pravila_trud_rasporyadka_2017.pdf";
 import KolDogov from "../../../../assets/pdf/documentPage/Kol_dogovor_2017.pdf";
 import KolDogovPril from "../../../../assets/pdf/documentPage/Pril_kol_dogovor_2017.pdf";
@@ -101,36 +101,13 @@ const MainDocs = ({ isActive }) => {
                 Устав
               </a>
             </li>
-
             <li className="doc__item">
               <PDF height={"40px"} width={"40px"} />
-              <a href={UstavChange1415} target={"_blank"} rel="noreferrer">
-                Распоряжения о внесении изменений в Устав 2014,2015
+              <a href={UstavChange23} target={"_blank"} rel="noreferrer">
+                Распоряжение о внесении изменений в Устав от 08.09.2023г
+                3Д-320-р
               </a>
             </li>
-
-            <li className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={UstavChange17} target={"_blank"} rel="noreferrer">
-                Распоряжения о внесении изменений в Устав 2017
-              </a>
-            </li>
-
-            <li className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={UstavChange18} target={"_blank"} rel="noreferrer">
-                Распоряжение в внесении изменений в Устав 2018
-              </a>
-            </li>
-
-            <li className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={UstavChange19} target={"_blank"} rel="noreferrer">
-                Распоряжение в внесении изменений в Устав 2019 - №ЮЦ-55-р от
-                04.03.19
-              </a>
-            </li>
-
             <li className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={UstavChange21} target={"_blank"} rel="noreferrer">
@@ -138,14 +115,43 @@ const MainDocs = ({ isActive }) => {
                 11.08.2021
               </a>
             </li>
-
+            <li className="doc__item">
+              <PDF height={"40px"} width={"40px"} />
+              <a href={UstavChange19} target={"_blank"} rel="noreferrer">
+                Распоряжение в внесении изменений в Устав 2019 - №ЮЦ-55-р от
+                04.03.19
+              </a>
+            </li>
+            <li className="doc__item">
+              <PDF height={"40px"} width={"40px"} />
+              <a href={UstavChange18} target={"_blank"} rel="noreferrer">
+                Распоряжение в внесении изменений в Устав 2018
+              </a>
+            </li>
+            <li className="doc__item">
+              <PDF height={"40px"} width={"40px"} />
+              <a href={UstavChange17} target={"_blank"} rel="noreferrer">
+                Распоряжение о внесении изменений в Устав 2017
+              </a>
+            </li>
+            <li className="doc__item">
+              <PDF height={"40px"} width={"40px"} />
+              <a href={UstavChange1415} target={"_blank"} rel="noreferrer">
+                Распоряжение о внесении изменений в Устав 2014,2015
+              </a>
+            </li>
+            <li className="doc__item">
+              <PDF height={"40px"} width={"40px"} />
+              <a href={listZapisi} target={"_blank"} rel="noreferrer">
+                Лист записи ЕГРЮЛ о внесении изменений в Устав 2023 года
+              </a>
+            </li>
             <li className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={Pologen22} target={"_blank"} rel="noreferrer">
                 Положение о филиале{" "}
               </a>
             </li>
-
             <li className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={Pologen22Dop} target={"_blank"} rel="noreferrer">
@@ -319,24 +325,10 @@ const MainDocs = ({ isActive }) => {
           </ul>
           <HrLine className="document__hrLine" />
           <ul>
-            <li itemProp="priemDocLink" className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={PravPriem} target={"_blank"} rel="noreferrer">
-                Правила приема обучающихся
-              </a>
-            </li>
-
             <li className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={Raspisanie} target={"_blank"} rel="noreferrer">
                 Расписание учебных занятий
-              </a>
-            </li>
-
-            <li itemProp="modeDocLink" className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={Rezim} target={"_blank"} rel="noreferrer">
-                Режим занятий обучающихся
               </a>
             </li>
           </ul>
@@ -456,7 +448,12 @@ const MainDocs = ({ isActive }) => {
           <ul>
             <li itemProp="vozDocLink" className="doc__item">
               <PDF height={"40px"} width={"40px"} />
-              <a href={Otchisl17} target={"_blank"} rel="noreferrer">
+              <a
+                itemProp="vozDocLink"
+                href={Otchisl17}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Порядок оформления возникновения, приостановления и прекращения
                 отношений между образовательной организацией и обучающимися и
                 (или) родителями (законными представителями) несовершеннолетних
@@ -466,12 +463,6 @@ const MainDocs = ({ isActive }) => {
           </ul>
           <HrLine className="document__hrLine" />
           <ul>
-            <li itemProp="localActStud" className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={Raspor18} target={"_blank"} rel="noreferrer">
-                Правила внутреннего распорядка обучающихся
-              </a>
-            </li>
             <li itemProp="localActOrder" className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={TrudRasp17} target={"_blank"} rel="noreferrer">
@@ -657,7 +648,6 @@ const MainDocs = ({ isActive }) => {
           title={"Предписания и отчеты"}
         >
           <h3
-            itemProp="prescriptionDocLink"
             className={`common__container-title ${toggleClassName(
               "title",
               "title-white",
@@ -671,7 +661,12 @@ const MainDocs = ({ isActive }) => {
           <ul>
             <li className="doc__item">
               <PDF height={"40px"} width={"40px"} />
-              <a href={Predpis} target={"_blank"} rel="noreferrer">
+              <a
+                itemProp="prescriptionDocLink"
+                href={Predpis}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Предписание Уфимской транспортной прокуратуры № 23/1-5-2020 от
                 09.09.2020
               </a>

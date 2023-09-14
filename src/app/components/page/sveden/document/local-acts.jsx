@@ -21,9 +21,14 @@ const LocalActs = ({ isActive }) => {
       <div className={`${!isActive ? "doc_item-show" : "doc_item-hidden"}`}>
         <p>Документы, регламентирующие правила приема обучающихся</p>
         <ul>
-          <li itemProp="ustavDocLink" className="doc__item">
+          <li className="doc__item">
             <PDF height={"40px"} width={"40px"} />
-            <a href={pravila_priema} target={"_blank"} rel="noreferrer">
+            <a
+              itemProp="priemDocLink"
+              href={pravila_priema}
+              target={"_blank"}
+              rel="noreferrer"
+            >
               Правила приема на обучение по образовательным программам среднего
               профессионального образования
             </a>
@@ -32,13 +37,18 @@ const LocalActs = ({ isActive }) => {
         <HrLine className="document__hrLine" />
         <p>Документы, регламентирующие режим занятий обучающихся</p>
         <ul>
-          <li itemProp="ustavDocLink" className="doc__item">
+          <li className="doc__item">
             <PDF height={"40px"} width={"40px"} />
-            <a href={rejim_zanyatiy} target={"_blank"} rel="noreferrer">
+            <a
+              itemProp="modeDocLink"
+              href={rejim_zanyatiy}
+              target={"_blank"}
+              rel="noreferrer"
+            >
               Режим занятий обучающихся
             </a>
           </li>
-          <li itemProp="ustavDocLink" className="doc__item">
+          <li className="doc__item">
             <PDF height={"40px"} width={"40px"} />
             <a
               href={pravila_o_poryadke_sostav_raspis}
@@ -56,7 +66,7 @@ const LocalActs = ({ isActive }) => {
           контроля успеваемости и промежуточной аттестации обучающихся
         </p>
         <ul>
-          <li itemProp="ustavDocLink" className="doc__item">
+          <li className="doc__item">
             <PDF height={"40px"} width={"40px"} />
             <a
               href={pravila_o_tek_kontrole_atest}
@@ -67,7 +77,7 @@ const LocalActs = ({ isActive }) => {
               аттестации
             </a>
           </li>
-          <li itemProp="ustavDocLink" className="doc__item">
+          <li className="doc__item">
             <PDF height={"40px"} width={"40px"} />
             <a
               href={pravila_o_tek_kontrole_atest_dot}
@@ -78,13 +88,13 @@ const LocalActs = ({ isActive }) => {
               обучающихся с применением дистанционных образовательных технологий
             </a>
           </li>
-          <li itemProp="ustavDocLink" className="doc__item">
+          <li className="doc__item">
             <PDF height={"40px"} width={"40px"} />
             <a href={pravila_ob_itog_atest} target={"_blank"} rel="noreferrer">
               Положение об итоговой аттестации
             </a>
           </li>
-          <li itemProp="ustavDocLink" className="doc__item">
+          <li className="doc__item">
             <PDF height={"40px"} width={"40px"} />
             <a
               href={pravila_ob_org_uch_proc}
@@ -102,13 +112,13 @@ const LocalActs = ({ isActive }) => {
           восстановления обучающихся
         </p>
         <ul>
-          <li itemProp="ustavDocLink" className="doc__item">
+          <li className="doc__item">
             <PDF height={"40px"} width={"40px"} />
             <a href={pravila_o_perevode} target={"_blank"} rel="noreferrer">
               Положение о переводе и восстановлении обучающихся
             </a>
           </li>
-          <li itemProp="ustavDocLink" className="doc__item">
+          <li className="doc__item">
             <PDF height={"40px"} width={"40px"} />
             <a href={pravila_ob_otchis} target={"_blank"} rel="noreferrer">
               Положение об отчислении обучающихся
@@ -123,7 +133,7 @@ const LocalActs = ({ isActive }) => {
           представителями) несовершеннолетних обучающихся
         </p>
         <ul>
-          <li itemProp="ustavDocLink" className="doc__item">
+          <li className="doc__item">
             <PDF height={"40px"} width={"40px"} />
             <a href={pravila_priost_otn} target={"_blank"} rel="noreferrer">
               Положение о порядке оформления, возникновения, приостановления и
@@ -135,13 +145,13 @@ const LocalActs = ({ isActive }) => {
         <HrLine className="document__hrLine" />
         <p>Правила внутреннего распорядка обучающихся</p>
         <ul>
-          <li itemProp="ustavDocLink" className="doc__item">
+          <li itemProp="localActStud" className="doc__item">
             <PDF height={"40px"} width={"40px"} />
             <a href={pravila_vnutr_rasp} target={"_blank"} rel="noreferrer">
               Правила внутреннего распорядка обучающихся
             </a>
           </li>
-          <li itemProp="ustavDocLink" className="doc__item">
+          <li className="doc__item">
             <PDF height={"40px"} width={"40px"} />
             <a href={pravila_org_sluzb} target={"_blank"} rel="noreferrer">
               Правила внутреннего распорядка и организации службы курсантов

@@ -66,7 +66,7 @@ const Struct = observer(() => {
               </td>
               <td itemProp="site">
                 <a
-                  href="http://www.rivercollege.ru/"
+                  href="https://rivercollege.ru/"
                   target={"_blank"}
                   rel="noreferrer"
                 >
@@ -124,7 +124,7 @@ const Struct = observer(() => {
               </td>
               <td itemProp="site">
                 <a
-                  href="http://www.rivercollege.ru/"
+                  href="https://rivercollege.ru/"
                   target={"_blank"}
                   rel="noreferrer"
                 >
@@ -177,7 +177,7 @@ const Struct = observer(() => {
               </td>
               <td itemProp="site">
                 <a
-                  href="http://www.rivercollege.ru/"
+                  href="https://rivercollege.ru/"
                   target={"_blank"}
                   rel="noreferrer"
                 >
@@ -232,7 +232,7 @@ const Struct = observer(() => {
               </td>
               <td itemProp="site">
                 <a
-                  href="http://www.rivercollege.ru/"
+                  href="https://rivercollege.ru/"
                   target={"_blank"}
                   rel="noreferrer"
                 >
@@ -287,7 +287,7 @@ const Struct = observer(() => {
               </td>
               <td itemProp="site">
                 <a
-                  href="http://www.rivercollege.ru/"
+                  href="https://rivercollege.ru/"
                   target={"_blank"}
                   rel="noreferrer"
                 >
@@ -340,7 +340,7 @@ const Struct = observer(() => {
               </td>
               <td itemProp="site">
                 <a
-                  href="http://www.rivercollege.ru/"
+                  href="https://rivercollege.ru/"
                   target={"_blank"}
                   rel="noreferrer"
                 >
@@ -393,7 +393,7 @@ const Struct = observer(() => {
               </td>
               <td itemProp="site">
                 <a
-                  href="http://www.rivercollege.ru/"
+                  href="https://rivercollege.ru/"
                   target={"_blank"}
                   rel="noreferrer"
                 >

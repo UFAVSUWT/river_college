@@ -79,18 +79,18 @@ const Schedule = () => {
             className={`${week ? "schedule_btn" : null}`}
             onClick={() => setWeek(true)}
           >
-            2 неделя первый семестр
+            3 неделя первый семестр
           </Button>
           <Button
             style={{ margin: "0 0 0 10px" }}
             className={`${!week ? "schedule_btn" : null}`}
             onClick={() => setWeek(false)}
           >
-            3 неделя первый семестр
+            4 неделя первый семестр
           </Button>
         </dib>
         {/* <Calendar /> */}
-        {week ? (
+        {!week ? (
           <ul>
             <li>
               <a href={OP106png} target="_blank" rel="noopener noreferrer">

@@ -2,7 +2,9 @@ import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName } from "../../../../utils/disabled";
 import TableWrapper from "../../../common/tableWrapper/TableWrapper";
+import dogovorUfanet from "../../../../assets/pdf/objects/ufanetdogovor.pdf";
 import { ReactComponent as DOC } from "../../../../assets/svg/office/word.svg";
+import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
 import Usloviya from "../../../../assets/doc/sveden/УСЛОВИЯ ОХРАНЫ ЗДОРОВЬЯ ОБУЧАЮЩИХСЯ.docx";
 const Ovz = observer(() => {
   return (
@@ -1033,8 +1035,25 @@ const Ovz = observer(() => {
       В филиале создана электронная информационно-образовательная среда,
       включающая в себя следующие элементы:
       <ol itemProp="comNet">
-        <li>Официальный сайт</li>
+        <li>
+          Официальный сайт
+          <a href="https://rivercollege.ru/" target={"_blank"} rel="noreferrer">
+            www.rivercollege.ru
+          </a>
+        </li>
+        <li>
+          Система дистанционного обучения «Парус»
+          <a href="https://parus.vsuwt.ru/" target={"_blank"} rel="noreferrer">
+            https://parus.vsuwt.ru/
+          </a>
+        </li>
         <li>Автоматизированная система управления АСУ "Учебный процесс"</li>
+        <li>
+          <PDF width={"25px"} height={"25px"} />
+          <a href={dogovorUfanet} target={"_blank"} rel="noreferrer">
+            Договор о подключении к сети "Интернет"
+          </a>
+        </li>
       </ol>
       Электронная информационно-образовательная среда филиала обеспечивает:
       <ol itemProp="purposeEios">
@@ -1102,28 +1121,59 @@ const Ovz = observer(() => {
       </h3>
       <ol itemProp="eoisSide">
         <li>
-          minobrnauki.gov.ru - Министерство науки и высшего образования
-          Российской Федерации
-        </li>
-        <li>edu.gov.ru - Министерство просвещения Российской Федерации</li>
-        <li>
-          http://obrnadzor.gov.ru/ru/ - Федеральная служба по надзору в сфере
-          образования и науки
-        </li>
-        <li>
-          http://window.edu.ru/ - Информационная система "Единое окно доступа к
-          образовательным ресурсам"
+          <a
+            href="https://minobrnauki.gov.ru"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            minobrnauki.gov.ru
+          </a>{" "}
+          - Министерство науки и высшего образования Российской Федерации
         </li>
         <li>
-          http://fcior.edu.ru// - Федеральный центр
-          информационно-образовательных ресурсов
+          <a href="https://edu.gov.ru" target={"_blank"} rel="noreferrer">
+            edu.gov.ru
+          </a>{" "}
+          - Министерство просвещения Российской Федерации
         </li>
         <li>
-          https://www.garant.ru/- «ГАРАНТ»- информационно-правовой портал{" "}
+          <a
+            href="http://obrnadzor.gov.ru/ru/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            obrnadzor.gov.ru/ru
+          </a>{" "}
+          - Федеральная служба по надзору в сфере образования и науки
         </li>
         <li>
-          http://www.consultant.ru/ - «Консультант плюс»- Разработка правовых
-          систем
+          <a href="http://window.edu.ru/" target={"_blank"} rel="noreferrer">
+            window.edu.ru
+          </a>{" "}
+          - Информационная система "Единое окно доступа к образовательным
+          ресурсам"
+        </li>
+        <li>
+          <a href="http://fcior.edu.ru/" target={"_blank"} rel="noreferrer">
+            fcior.edu.ru
+          </a>{" "}
+          - Федеральный центр информационно-образовательных ресурсов
+        </li>
+        <li>
+          <a href="https://www.garant.ru/" target={"_blank"} rel="noreferrer">
+            www.garant.ru
+          </a>{" "}
+          - «ГАРАНТ», информационно-правовой портал{" "}
+        </li>
+        <li>
+          <a
+            href="https://www.consultant.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            www.consultant.ru
+          </a>
+          - «Консультант плюс»- Разработка правовых систем
         </li>
       </ol>
       <h3
@@ -1137,8 +1187,13 @@ const Ovz = observer(() => {
         Сторонние электронные образовательные и информационные ресурсы
       </h3>
       <ol>
-        <li>информационный ресурс библиотеки образовательной организации</li>
-        <li>единая электронная информационно-образовательная среда с ВГУВТ</li>
+        <li>Информационный ресурс библиотеки образовательной организации</li>
+        <li>
+          Единая электронная информационно-образовательная среда с
+          <a href="https://vsuwt.ru/" target={"_blank"} rel="noreferrer">
+            ВГУВТ
+          </a>
+        </li>
       </ol>
       <p itemProp="bdec">
         База данных электронного каталога учебной литературы установлена в
@@ -1158,21 +1213,49 @@ const Ovz = observer(() => {
       </h3>
       <ol itemProp="erList">
         <li>
-          Электронный каталог ВГУВТ (через Электронный каталог ВГУВТ возможен
-          доступ к электронной библиотеке университета и НРУ)
+          Электронный каталог
+          <a href="https://vsuwt.ru/" target={"_blank"} rel="noreferrer">
+            ВГУВТ
+          </a>{" "}
+          (через Электронный каталог ВГУВТ возможен доступ к электронной
+          библиотеке университета и НРУ)
         </li>
         <li>Электронный каталог НРУ</li>
         <li>
-          Электронно-библиотечная система «Юрайт»: https://biblio-online.ru/
+          Электронно-библиотечная система
+          <a
+            href="https://biblio-online.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            «Юрайт»
+          </a>{" "}
         </li>
-        <li>Электронно-библиотечная система «Лань»: http://e.lanbook.com</li>
         <li>
-          Электронно – библиотечная система "Моркнига "
-          https://www.morkniga.ru/library/
+          Электронно-библиотечная система
+          <a href="http://e.lanbook.com" target={"_blank"} rel="noreferrer">
+            «Лань»
+          </a>{" "}
         </li>
         <li>
-          Электронно- библиотечная система ЭБС «IPRbooks»(ООО Компания «Ай Пи Ар
-          Медиа») http://www.iprbookshop.ru/
+          Электронно – библиотечная система
+          <a
+            href="https://www.morkniga.ru/library/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            "Моркнига"
+          </a>{" "}
+        </li>
+        <li>
+          Электронно-библиотечная система ЭБС
+          <a
+            href="http://www.iprbookshop.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            «IPRbooks» (ООО Компания «Ай Пи Ар Медиа»)
+          </a>{" "}
         </li>
       </ol>
       <h3
@@ -1739,32 +1822,68 @@ const Ovz = observer(() => {
       </h3>
       <ol>
         <li>
-          minobrnauki.gov.ru - Министерство науки и высшего образования
-          Российской Федерации
+          <a
+            href="https://minobrnauki.gov.ru"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            minobrnauki.gov.ru
+          </a>
+          - министерство науки и высшего образования Российской Федерации
         </li>
-        <li>edu.gov.ru - Министерство просвещения Российской Федерации</li>
         <li>
-          http://obrnadzor.gov.ru/ru/ - Федеральная служба по надзору в сфере
-          образования и науки
+          <a href="https://edu.gov.ru" target={"_blank"} rel="noreferrer">
+            edu.gov.ru
+          </a>{" "}
+          - Министерство просвещения Российской Федерации
         </li>
         <li>
-          www.edu.ru - "Российское образование. Федеральный портал". Каталог
+          <a
+            href="http://obrnadzor.gov.ru/ru/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            obrnadzor.gov.ru/ru
+          </a>{" "}
+          - Федеральная служба по надзору в сфере образования и науки
+        </li>
+        <li>
+          <a href="http://edu.ru/" target={"_blank"} rel="noreferrer">
+            www.edu.ru
+          </a>{" "}
+          - "Российское образование. Федеральный портал". Каталог
           образовательных интернет-ресурсов: Нормативные документы и стандарты.
           Образовательные учреждения. Каталог сайтов и электронных библиотек.
           Учебно-методическая библиотека
         </li>
         <li>
-          http://window.edu.ru/ - Информационная система "Единое окно доступа к
-          образовательным ресурсам"
+          <a href="http://window.edu.ru/" target={"_blank"} rel="noreferrer">
+            window.edu.ru
+          </a>{" "}
+          - Информационная система "Единое окно доступа к образовательным
+          ресурсам"
         </li>
         <li>
-          http://fcior.edu.ru// - Федеральный центр
-          информационно-образовательных ресурсов
+          <a href="http://fcior.edu.ru/" target={"_blank"} rel="noreferrer">
+            fcior.edu.ru
+          </a>{" "}
+          - Федеральный центр информационно-образовательных ресурсов
         </li>
-        <li>https://www.garant.ru/- «ГАРАНТ»- информационно-правовой портал</li>
         <li>
-          http://www.consultant.ru/ - «Консультант плюс»- Разработка правовых
-          систем
+          <a href="https://www.garant.ru/" target={"_blank"} rel="noreferrer">
+            www.garant.ru
+          </a>{" "}
+          - «ГАРАНТ»- информационно-правовой портал
+        </li>
+        <li>
+          <a
+            href="https://www.consultant.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            www.consultant.ru
+          </a>{" "}
+          - «Консультант плюс»- Разработка правовых систем
         </li>
       </ol>
       <p>Собственные электронные образовательные и информационные ресурсы:</p>
@@ -1790,21 +1909,49 @@ const Ovz = observer(() => {
       </h3>
       <ol>
         <li>
-          Электронный каталог ВГУВТ (через Электронный каталог ВГУВТ возможен
-          доступ к электронной библиотеке университета и НРУ)
+          Электронный каталог{" "}
+          <a href="https://vsuwt.ru/" target={"_blank"} rel="noreferrer">
+            ВГУВТ
+          </a>{" "}
+          (через Электронный каталог ВГУВТ возможен доступ к электронной
+          библиотеке университета и НРУ)
         </li>
         <li>Электронный каталог НРУ</li>
         <li>
-          Электронно-библиотечная система «Юрайт»: https://biblio-online.ru/
+          Электронно-библиотечная система{" "}
+          <a
+            href="https://biblio-online.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            «Юрайт»
+          </a>{" "}
         </li>
-        <li>Электронно-библиотечная система «Лань»: http://e.lanbook.com</li>
         <li>
-          Электронно – библиотечная система "Моркнига "
-          https://www.morkniga.ru/library/
+          Электронно-библиотечная система{" "}
+          <a href="http://e.lanbook.com" target={"_blank"} rel="noreferrer">
+            «Лань»
+          </a>{" "}
         </li>
         <li>
-          Электронно- библиотечная система ЭБС «IPRbooks»(ООО Компания «Ай Пи Ар
-          Медиа») http://www.iprbookshop.ru/
+          Электронно – библиотечная система{" "}
+          <a
+            href="https://www.morkniga.ru/library/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            "Моркнига"
+          </a>{" "}
+        </li>
+        <li>
+          Электронно- библиотечная система ЭБС{" "}
+          <a
+            href="http://www.iprbookshop.ru/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            «IPRbooks» (ООО Компания «Ай Пи Ар Медиа»)
+          </a>{" "}
         </li>
       </ol>
       <p>
