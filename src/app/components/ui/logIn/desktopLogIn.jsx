@@ -26,14 +26,14 @@ const DesktopLogIn = observer(({ isActive, setIsActive }) => {
       setIsActive(false);
     }
   };
-  const getModalWindow = (e) => {
+  /* const getModalWindow = (e) => {
     if (
       e.target.id === "loginModalWindow" ||
       e.target.id === "loginModalWindow_wrapper"
     ) {
       setIsActive(false);
     }
-  };
+  }; */
   return (
     <>
       {isActive ? (

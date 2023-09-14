@@ -90,6 +90,7 @@ import StudentPage from "./components/page/studentPage/student-page";
 import RequireAuth from "./hoc/require-auth";
 import Pur from "./components/page/pur/pur";
 import { Navigate } from "react-router";
+import EditorNewsPage from "./components/page/editorNewsPage/editor-news-page";
 const routes = () => [
   {
     path: "",
@@ -117,6 +118,16 @@ const routes = () => [
         <Admin />
       </RequireAuth>
     ),
+    children: [
+      {
+        path: "editorNews",
+        element: (
+          <RequireAuth>
+            <EditorNewsPage />
+          </RequireAuth>
+        ),
+      },
+    ],
   },
   {
     path: "student",

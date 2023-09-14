@@ -43,6 +43,7 @@ const NavBar = observer(() => {
     setIsElementOfMenu("");
   };
   const prevScrollY = window.scrollY || document.documentElement.scrollTop;
+  // eslint-disable-next-line
   const [scrollTop, setScrollTop] = useState(0);
   useEffect(() => {
     const handleScroll = (event) => {
