@@ -14,6 +14,16 @@ import pravila_priost_otn from "../../../../assets/pdf/documentPage/local/10. П
 import pravila_vnutr_rasp from "../../../../assets/pdf/documentPage/local/11. Правила внутреннего распорядка обучающихся.pdf";
 import pravila_org_sluzb from "../../../../assets/pdf/documentPage/local/12. Правила внутр.распорядка и орг-ции службы курсантов.pdf";
 import HrLine from "../../../common/hrLine/HrLine";
+import poloz1 from "../../../../assets/pdf/documentPage/Для акредитации/ПЛЖ о внутренней оценке качества образоват.деят..pdf";
+import poloz2 from "../../../../assets/pdf/documentPage/Для акредитации/Положение о проведении текущего контроля и промежуточной аттестации.pdf";
+
+import poloz3 from "../../../../assets/pdf/documentPage/Для акредитации/Положение о текущем контроле и промежуточ. аттестации обучающихся с применением ДОТ.PDF";
+
+import poloz4 from "../../../../assets/pdf/documentPage/Для акредитации/Приказ ВГУВТ О проведении ВОКО № 534-с от 05.12.22.pdf";
+
+import poloz5 from "../../../../assets/pdf/documentPage/Для акредитации/Приказ Уф.ф. О назначении ответственных за ВОКО №299 от 27.09.22.PDF";
+
+import poloz6 from "../../../../assets/pdf/documentPage/Для акредитации/Приказ Уф.ф. О проведении ВОКО №361 от 07.12.22.PDF";
 
 const LocalActs = ({ isActive }) => {
   return (
@@ -155,6 +165,49 @@ const LocalActs = ({ isActive }) => {
             <PDF height={"40px"} width={"40px"} />
             <a href={pravila_org_sluzb} target={"_blank"} rel="noreferrer">
               Правила внутреннего распорядка и организации службы курсантов
+            </a>
+          </li>
+        </ul>
+        <HrLine className="document__hrLine" />
+        <p>Внутренняя оценка качества образования</p>
+        <ul>
+          <li itemProp="localActStud" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={poloz1} target={"_blank"} rel="noreferrer">
+              Положение о внутренней оценке качества образовательной
+              деятельности
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={poloz2} target={"_blank"} rel="noreferrer">
+              Положение о проведении текущего контроля и промежуточной
+              аттестации
+            </a>
+          </li>
+          <li itemProp="localActStud" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={poloz3} target={"_blank"} rel="noreferrer">
+              Положение о текущем контроле и промежуточной аттестации
+              обучающихся с применением ДОТ
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={poloz4} target={"_blank"} rel="noreferrer">
+              Приказ ВГУВТ О проведении ВОКО № 534-с от 05.12.22
+            </a>
+          </li>
+          <li itemProp="localActStud" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={poloz5} target={"_blank"} rel="noreferrer">
+              Приказ Уф.ф. О назначении ответственных за ВОКО №299 от 27.09.22
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={poloz6} target={"_blank"} rel="noreferrer">
+              Приказ Уф.ф. О проведении ВОКО №361 от 07.12.22
             </a>
           </li>
         </ul>
