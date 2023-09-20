@@ -36,7 +36,7 @@ const LeftPanel = observer(() => {
 
   const [isLinks, setIsLinks] = useState("");
   const onIconEnter = (event) => {
-    console.log(event.target.id);
+    /*     console.log(event.target.id); */
     let id = event.target.id;
     if (id === "User" || id === "User1" || id === "User_link") {
       setIsLinks("User");
@@ -70,9 +70,11 @@ const LeftPanel = observer(() => {
     } */
   };
   const [isLogIn, setIsLogin] = useState(false);
+
   const toggleLogin = () => {
     setIsLogin(!isLogIn);
   };
+
   const { user } = useContext(Context);
   const isAuth = user.isAuth;
   return (
@@ -104,11 +106,12 @@ const LeftPanel = observer(() => {
             <Disabled />
           </div>
         ) : null}
-        {isAuth ? (
-          <AuthLeftPanel isActive={isAuth} />
+        {isAuth && isLogIn ? (
+          <AuthLeftPanel isActive={isLogIn} />
         ) : (
           <DesktopLogIn isActive={isLogIn} />
         )}
+
         <div className="leftPanel__wrapper-moove-top">
           <div> Стань капитаном своей судьбы!</div>
         </div>
