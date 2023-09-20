@@ -32,6 +32,8 @@ import { ReactComponent as SV254 } from "../../../assets/img/schedule/254SV.svg"
 import SV254png from "../../../assets/img/schedule/254SV.png";
 import { ReactComponent as OP303 } from "../../../assets/img/schedule/303OP.svg";
 import OP303PNG from "../../../assets/img/schedule/303OP.png";
+import { ReactComponent as EM328 } from "../../../assets/img/schedule/328EM.svg";
+import { ReactComponent as EM329 } from "../../../assets/img/schedule/329EM.svg";
 import { ReactComponent as SV350 } from "../../../assets/img/schedule/350SV.svg";
 import SV350png from "../../../assets/img/schedule/350SV.png";
 import { ReactComponent as SV351 } from "../../../assets/img/schedule/351SV.svg";
@@ -55,6 +57,8 @@ import SM235pngnew from "../../../assets/img/schedule/new/235SM.png";
 import SV253PNGnew from "../../../assets/img/schedule/new/253SV.png";
 import SV254pngnew from "../../../assets/img/schedule/new/254SV.png";
 import OP303PNGnew from "../../../assets/img/schedule/new/303OP.png";
+import EM328PNGnew from "../../../assets/img/schedule/new/328EM.png";
+import EM329PNGnew from "../../../assets/img/schedule/new/329EM.png";
 import SV350pngnew from "../../../assets/img/schedule/new/350SV.png";
 import SV351PNGnew from "../../../assets/img/schedule/new/351SV.png";
 import SV355PNGnew from "../../../assets/img/schedule/new/355SV.png";
@@ -79,18 +83,18 @@ const Schedule = () => {
             className={`${week ? "schedule_btn" : null}`}
             onClick={() => setWeek(true)}
           >
-            3 неделя первый семестр
+            4 неделя первый семестр
           </Button>
           <Button
             style={{ margin: "0 0 0 10px" }}
             className={`${!week ? "schedule_btn" : null}`}
             onClick={() => setWeek(false)}
           >
-            4 неделя первый семестр
+            5 неделя первый семестр
           </Button>
         </dib>
         {/* <Calendar /> */}
-        {!week ? (
+        {week ? (
           <ul>
             <li>
               <a href={OP106png} target="_blank" rel="noopener noreferrer">
@@ -258,6 +262,16 @@ const Schedule = () => {
             <li>
               <a href={OP303PNGnew} target="_blank" rel="noopener noreferrer">
                 <OP303 width={"200px"} height={"120px"} />
+              </a>
+            </li>
+            <li>
+              <a href={EM328PNGnew} target="_blank" rel="noopener noreferrer">
+                <EM328 width={"200px"} height={"120px"} />
+              </a>
+            </li>
+            <li>
+              <a href={EM329PNGnew} target="_blank" rel="noopener noreferrer">
+                <EM329 width={"200px"} height={"120px"} />
               </a>
             </li>
             <li>
