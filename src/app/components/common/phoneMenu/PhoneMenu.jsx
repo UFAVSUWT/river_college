@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { ReactComponent as RiverUniversityLogo } from "../../../assets/svg/riveruniversityLogo.svg";
 import { ReactComponent as MenuLogo } from "../../../assets/svg/menuLogo.svg";
 import { ReactComponent as Burger } from "../../../assets/svg/burger.svg";
-import { ReactComponent as Cross } from "../../../assets/svg/cross.svg";
+import { ReactComponent as Vector } from "../../../assets/svg/Vector.svg";
 import { ReactComponent as Schedul } from "../../../assets/svg/calendar.svg";
 import { ReactComponent as User } from "../../../assets/svg/user.svg";
 import {
@@ -11,12 +11,25 @@ import {
   toggleIconWidthSize,
 } from "../../../utils/disabled";
 import Button from "../button/Button";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import MobileLogIn from "../../ui/logIn/MobileLogIn";
+import { Context } from "../../../../index.js";
 
 const PhoneMenu = () => {
+  const navigate = useNavigate();
   const [nav, setNav] = useState(false);
   const [login, setLogin] = useState(false);
+  const { user } = useContext(Context);
+  const auth = user.isAuth;
+  function toggleLogin() {
+    if (auth) {
+      setNav(false);
+      navigate("auth");
+    } else {
+      setLogin(true);
+    }
+  }
+
   /*   const [disabled, setDisabled] = useState(false); */
   return (
     <header className="phoneMenu">
@@ -50,10 +63,10 @@ const PhoneMenu = () => {
       <nav className="phoneMenu__menu">
         <div className={`phoneMenu__menu-dropdown ${!nav ? "" : " is-open "} `}>
           <div onClick={() => setNav(!nav)} className="phoneMenu__menu-toggle">
-            <Cross
+            <Vector
               stroke={toggleIconColor("#C80000")}
-              width={toggleIconWidthSize("35px", "37px", "40px", "43px")}
-              height={toggleIconHeightSize("35px", "37px", "40px", "43px")}
+              width={toggleIconWidthSize("25px", "27px", "27px", "30px")}
+              height={toggleIconHeightSize("25px", "27px", "27px", "30px")}
             />
           </div>
           {/*  <ul className="nav-menu">
@@ -71,7 +84,7 @@ const PhoneMenu = () => {
               </Button>
             </NavLink>
             <Button
-              onClick={() => setLogin(true)}
+              onClick={() => toggleLogin()}
               className={"button__container-btn"}
             >
               {<User className={"button__container-btn-icon"} />}

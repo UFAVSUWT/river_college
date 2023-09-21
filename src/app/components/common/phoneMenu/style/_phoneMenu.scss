@@ -1,14 +1,14 @@
 @import "../../../../style/variables";
 @import "../../../../style/mixins/response-mixins.scss";
 
-.phoneMenu{
+.phoneMenu {
   display: none;
 }
 @include desktop {
-  .phoneMenu{
+  .phoneMenu {
     width: 100%;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     background-color: $MAIN_COLOR;
     padding: 0.4em 1em;
     display: flex;
@@ -20,15 +20,15 @@
         margin: 1rem;
       }
     }
-    
-    a{
+
+    a {
       color: $WHITE_FONT_COLOR;
     }
-   
-    &__menu{
+
+    &__menu {
       position: relative;
-      &-dropdown{
-        background-color:$MENU_COLOR;
+      &-dropdown {
+        background-color: $MENU_COLOR;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -42,105 +42,99 @@
         z-index: 10;
         transition: left 1s;
       }
-      &-toggle{
+      &-toggle {
         position: absolute;
-        top: 35px;
-        right: 30px;
+        top: 29px;
+        right: 29px;
         z-index: 11;
-  
+
         cursor: pointer;
       }
     }
   }
-  .nav-menu-sveden{
-     a{
+  .nav-menu-sveden {
+    a {
       font-size: 0.825rem;
       border-bottom: solid 1px white;
     }
   }
-  .nav-menu-disabled{
+  .nav-menu-disabled {
     position: absolute;
     border-bottom: solid 2px white;
     top: 3%;
     left: 50%;
-    transform:translate(-55%,-50%);  
+    transform: translate(-55%, -50%);
   }
-  .menuLogo{
+  .menuLogo {
     z-index: 10;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:translate(-50%, -50%);
-  
+    transform: translate(-50%, -50%);
   }
-  .is-open{
+  .is-open {
     left: 0;
   }
-  .phoneMenu__title>h1 {
+  .phoneMenu__title > h1 {
     color: $WHITE_FONT_COLOR;
     text-align: center;
     font-size: 1rem;
     margin: 0.2em 0;
     margin-right: 0px;
   }
-  .phoneMenu__title>h3 {
+  .phoneMenu__title > h3 {
     display: none;
   }
-  .button__container{
+  .button__container {
     z-index: 12;
     display: flex;
     justify-content: center;
-    button{
+    button {
       background-color: inherit;
     }
-    &-btn{
+    &-btn {
       background-color: #325472 !important;
       padding: 0.2em 1.5em;
       border-radius: 0.6em;
       margin: 0 1.2em;
-      &-icon{
+      &-icon {
         fill: $WHITE_FONT_COLOR;
         width: 20px;
         height: 20px;
-    
       }
     }
-   
   }
 }
 @include laptop {
-  .phoneMenu__title>h1 {
+  .phoneMenu__title > h1 {
     font-size: 0.8rem;
-
   }
 }
 @include tablets {
-  .phoneMenu__title>h1 {
+  .phoneMenu__title > h1 {
     font-size: 0.6rem;
-
   }
 }
 @include phones {
-  .menuLogo{
+  .menuLogo {
     width: 430px;
     height: 386px;
   }
-  .button__container{
-    &-btn{
+  .button__container {
+    &-btn {
       margin: 0 0.6em;
     }
-   
   }
 }
-@media screen and (max-width:380px){
-  .menuLogo{
+@media screen and (max-width: 380px) {
+  .menuLogo {
     width: 350px;
     height: 315px;
   }
-  .phoneMenu__title>h1 {
+  .phoneMenu__title > h1 {
     display: none;
   }
-  .phoneMenu__title>h3 {
+  .phoneMenu__title > h3 {
     display: block;
     color: $WHITE_FONT_COLOR;
     text-align: center;
@@ -149,14 +143,14 @@
     margin-right: 40px;
   }
 }
-@media screen and (max-width:310px){
-  .menuLogo{
+@media screen and (max-width: 310px) {
+  .menuLogo {
     width: 315px;
     height: 283px;
   }
 }
-@media screen and (max-width:290px){
-  .phoneMenu__title>h3 {
+@media screen and (max-width: 290px) {
+  .phoneMenu__title > h3 {
     font-size: 0.6rem;
   }
 }
