@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-
 import { ReactComponent as Logo } from "../../../assets/svg/riveruniversityLogo.svg";
 import { ReactComponent as User } from "../../../assets/svg/leftPanel/user.svg";
 import { ReactComponent as Glasses } from "../../../assets/svg/leftPanel/glasses.svg";
@@ -13,7 +12,6 @@ import { toggleClassName, toggleIconColor } from "../../../utils/disabled";
 import { observer } from "mobx-react-lite";
 import { NavLink } from "react-router-dom";
 import Disabled from "../disabled/disabled-panel";
-
 import DesktopLogIn from "../logIn/desktopLogIn";
 import AuthLeftPanel from "../../../layouts/auth/auth-left-panel";
 import { Context } from "../../../../index";
@@ -35,6 +33,7 @@ const LeftPanel = observer(() => {
   };
 
   const [isLinks, setIsLinks] = useState("");
+  /* --------здесь реализована логика  */
   const onIconEnter = (event) => {
     /*     console.log(event.target.id); */
     let id = event.target.id;
@@ -58,6 +57,7 @@ const LeftPanel = observer(() => {
   const toggleIsHidden = () => {
     setIsMegaMenu(false);
   };
+  /* ---------------версия для слабовидящих------------------- */
   const [isDisabled, setIsDisabled] = useState(false);
   const toggleDisabled = () => {
     setIsDisabled(!isDisabled);
@@ -69,14 +69,12 @@ const LeftPanel = observer(() => {
       handleThemeMain();
     } */
   };
+  /* переменная отвечает за отображения формы входа в левой панели */
   const [isLogIn, setIsLogin] = useState(false);
-
-  const toggleLogin = () => {
-    setIsLogin(!isLogIn);
-  };
-
+  /* проверка пользователя на авторизацию */
   const { user } = useContext(Context);
   const isAuth = user.isAuth;
+
   return (
     <div
       className={`leftPanel__wrapper ${toggleClassName(
@@ -109,7 +107,7 @@ const LeftPanel = observer(() => {
         {isAuth && isLogIn ? (
           <AuthLeftPanel isActive={isLogIn} />
         ) : (
-          <DesktopLogIn isActive={isLogIn} />
+          <DesktopLogIn isActive={isLogIn} user={user} />
         )}
 
         <div className="leftPanel__wrapper-moove-top">
@@ -119,7 +117,7 @@ const LeftPanel = observer(() => {
           <div
             onMouseLeave={(e) => onIconOut(e)}
             onMouseEnter={(e) => onIconEnter(e)}
-            onClick={() => toggleLogin()}
+            onClick={() => setIsLogin(!isLogIn)}
             id="User_link"
             className={`links__container ${
               isLinks === "User" ? "links__container-active" : ""
@@ -187,7 +185,7 @@ const LeftPanel = observer(() => {
           </NavLink>
         </div>
         <div className="leftPanel__wrapper-static-icons">
-          <div onClick={() => toggleLogin()} className="icon__container">
+          <div onClick={() => setIsLogin(!isLogIn)} className="icon__container">
             {isAuth ? (
               <NavLink to="auth">
                 {" "}

@@ -10,13 +10,26 @@ import {
   toggleIconHeightSize,
   toggleIconWidthSize,
 } from "../../../utils/disabled";
-const DesktopLogIn = observer(({ isActive, setIsActive }) => {
+import { loginAuth } from "../../../httpService/userApi";
+import { useNavigate } from "react-router";
+
+const DesktopLogIn = observer(({ isActive, setIsActive, user }) => {
+  const navigate = useNavigate();
   const [data, setData] = useState({ login: "", password: "" });
+  const [error, setIsError] = useState(null);
   const handleChange = (target) => {
     setData((prevState) => ({ ...prevState, [target.name]: target.value }));
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    try {
+      let userInfo = await loginAuth(data.login, data.password);
+      user.setUser(userInfo);
+      user.setIsAuth(true);
+      navigate("auth");
+    } catch (e) {
+      setIsError(e.response.data.message);
+    }
   };
   useEffect(() => {
     document.addEventListener("keydown", detectKeyDown, true);
@@ -26,6 +39,7 @@ const DesktopLogIn = observer(({ isActive, setIsActive }) => {
       setIsActive(false);
     }
   };
+  console.log(data);
   /* const getModalWindow = (e) => {
     if (
       e.target.id === "loginModalWindow" ||
@@ -79,6 +93,7 @@ const DesktopLogIn = observer(({ isActive, setIsActive }) => {
                   placeholder={"Введите ваш пароль"}
                 />
               </div>
+              <span>{error}</span>
               <Button
                 className="login_form-btnLogin"
                 text="Войти"

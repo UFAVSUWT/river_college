@@ -10,7 +10,6 @@ class Theme {
 
   constructor() {
     makeAutoObservable(this);
-    console.log(this.theme);
   }
 
   main() {

@@ -13,7 +13,7 @@ import {
 import Button from "../button/Button";
 import { NavLink, useNavigate } from "react-router-dom";
 import MobileLogIn from "../../ui/logIn/MobileLogIn";
-import { Context } from "../../../../index.js";
+import { Context } from "../../../../index";
 
 const PhoneMenu = () => {
   const navigate = useNavigate();
