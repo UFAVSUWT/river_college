@@ -1,9 +1,9 @@
 import React from "react";
 import NewsCard from "../../../common/newsCard/news-card";
-import studentLife from "../../../../assets/img/liveImg/life.JPG";
-import sport from "../../../../assets/img/liveImg/sprt.jpg";
-import science from "../../../../assets/img/liveImg/nau.jpg";
-import winner from "../../../../assets/img/liveImg/gordost.JPG";
+import studentLife from "../../../../assets/img/liveImg/3.png";
+import sport from "../../../../assets/img/liveImg/2.png";
+import science from "../../../../assets/img/liveImg/4.png";
+import winner from "../../../../assets/img/liveImg/1.png";
 import { toggleClassName } from "../../../../utils/disabled";
 
 const UniversityNews = () => {

@@ -1,35 +1,23 @@
-import React, { useState } from "react";
-/* import CardOne from "../../common/newsCard/cardOne/CardOne";
-import CardTwo from "../../common/newsCard/cardTwo/CardTwo";
-import CardThree from "../../common/newsCard/cardThree/CardThree";
-import CardFour from "../../common/newsCard/cardFour/CardFour";
-import CardFive from "../../common/newsCard/cardFive/CardFive";
-import CardSix from "../../common/newsCard/cardSix/CardSix";
-import CardSeven from "../../common/newsCard/cardSeven/CardSeven";
-import CardEight from "../../common/newsCard/cardEight/CardEight"; */
+import React, { useContext, useState } from "react";
+
 import NewsCard from "../../common/newsCard/news-card";
+import NewsCardsWrapper from "../newsCardsWrapper/news-cards-wrapper";
+import { Context } from "../../../../index";
 
 const NewsCardContainer = () => {
   const [isShowing, setIsShowing] = useState(false);
+  const { news } = useContext(Context);
+  const cardsNews = news.news.filter((n) => n.card !== "");
   return (
     <div
       onClick={() => setIsShowing(!isShowing)}
-      className={`cards + ${isShowing ? "showing" : ""}`}
+      className={isShowing ? "showing" : ""}
     >
-      <NewsCard />
-      <NewsCard />
-      <NewsCard />
-      <NewsCard />
-      <NewsCard />
-      <NewsCard />
-      {/* <CardOne />
-      <CardTwo />
-      <CardThree />
-      <CardFour />
-      <CardFive />
-      <CardSix />
-      <CardSeven />
-      <CardEight /> */}
+      <NewsCardsWrapper>
+        {cardsNews.map((n) => (
+          <NewsCard link={n.id} title={n.title} image={n.image} />
+        ))}
+      </NewsCardsWrapper>
     </div>
   );
 };
