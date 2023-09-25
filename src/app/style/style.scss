@@ -4,159 +4,205 @@
 @import "./components/index.scss";
 @import "./variables";
 /*Обнуление*/
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-nav,footer,header,aside{display: block;}
-
-html,body{
-	height: 100%;
-	width: 100%;
-	font-size: 18px;
-	line-height: 1;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+:focus,
+:active {
+  outline: none;
 }
-input,button,textarea{font-family:inherit;}
-
- input::-ms-clear{display: none;} 
- button{cursor: pointer;} 
-button::-moz-focus-inner {padding:0;border:0;} 
-a, a:visited{text-decoration: none;} 
- a:hover{text-decoration: none;} 
-ul li{list-style: none;}
-
-
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-
-._container {/*технический класс, содержит общие стили*/
-    max-width: 1270px; 
-    margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
-    box-sizing: content-box;
-    padding: 0 15px;
+a:focus,
+a:active {
+  outline: none;
 }
-._container-main{
-	max-width: 1270px;
-	background-color: $BLUE;
-    margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
-    box-sizing: content-box;
-    padding: 0 15px;
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+._container {
+  /*технический класс, содержит общие стили*/
+  max-width: 1270px;
+  margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
+  box-sizing: content-box;
+  padding: 0 15px;
+}
+._container-main {
+  max-width: 1270px;
+  background-color: $BLUE;
+  margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
+  box-sizing: content-box;
+  padding: 0 15px;
 }
 ._container-white {
-	max-width: 1270px;
-	background-color: $BACK_WHITE;
-	color: $DISABLED_FONT_COLOR;
-    margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
-    box-sizing: content-box;
-    padding: 0 15px;
+  max-width: 1270px;
+  background-color: $BACK_WHITE;
+  color: $DISABLED_FONT_COLOR;
+  margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
+  box-sizing: content-box;
+  padding: 0 15px;
 }
 ._container-black {
-	max-width: 1270px;
-	background-color: $BACK_BLACK;
-	color: $WHITE_FONT_COLOR;
-    margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
-    box-sizing: content-box;
-    padding: 0 15px;
+  max-width: 1270px;
+  background-color: $BACK_BLACK;
+  color: $WHITE_FONT_COLOR;
+  margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
+  box-sizing: content-box;
+  padding: 0 15px;
 }
 ._container-contrast {
-	max-width: 1270px; 
-	background-color: $BACK_CONTRAST;
-	color: $FONT_CONTRAST;
-    margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
-    box-sizing: content-box;
-    padding: 0 15px;
-
+  max-width: 1270px;
+  background-color: $BACK_CONTRAST;
+  color: $FONT_CONTRAST;
+  margin: 0px auto; /*выравнивает контейнер по середине (для ограниченных по ширине блоков)*/
+  box-sizing: content-box;
+  padding: 0 15px;
 }
 .overflow-hidden {
-    overflow: hidden;
+  overflow: hidden;
 }
-.min-height{
-	min-height: 600px;
-	background-color: $BLUE;
+.min-height {
+  min-height: 600px;
+  background-color: $BLUE;
 }
-.min-height-white{
-	min-height: 600px;
-	background-color: white;
+.min-height-white {
+  min-height: 600px;
+  background-color: white;
 }
-.min-height-black{
-	min-height: 600px;
-	background-color: black;
+.min-height-black {
+  min-height: 600px;
+  background-color: black;
 }
-.min-height-contrast{
-	min-height: 600px;
-	background-color: $BACK_CONTRAST;
+.min-height-contrast {
+  min-height: 600px;
+  background-color: $BACK_CONTRAST;
 }
-li{
-	ul, ol{
-		padding-top: 5px;
-	}
+li {
+  ul,
+  ol {
+    padding-top: 5px;
+  }
 }
 
-.app__wrapper{
-	&-leftPanel{
-		width: 4%;
-	}
-	
-	&-main{
-		position: absolute;
-		width: 96%;
-		left: 4%;
-		top: 10%;
+.app__wrapper {
+  &-leftPanel {
+    width: 4%;
+  }
 
-	}
+  &-main {
+    position: absolute;
+    width: 96%;
+    left: 4%;
+    top: 10%;
+  }
 }
-.app__wrapper-main-black{
-	background-color: black;
-	&-leftPanel{
-		width: 4%;
-	}
-	
-	&-main{
-		position: absolute;
-		width: 96%;
-		left: 4%;
-		top: 10%;
+.app__wrapper-main-black {
+  background-color: black;
+  &-leftPanel {
+    width: 4%;
+  }
 
-	}
+  &-main {
+    position: absolute;
+    width: 96%;
+    left: 4%;
+    top: 10%;
+  }
 }
-.app__wrapper-main-contrast{
-	background-color: $BACK_CONTRAST;
-	&-leftPanel{
-		width: 4%;
-	}
-	
-	&-main{
-		position: absolute;
-		width: 96%;
-		left: 4%;
-		top: 10%;
+.app__wrapper-main-contrast {
+  background-color: $BACK_CONTRAST;
+  &-leftPanel {
+    width: 4%;
+  }
 
-	}
+  &-main {
+    position: absolute;
+    width: 96%;
+    left: 4%;
+    top: 10%;
+  }
 }
-@media screen and (max-width:1270px) {
-	.app__wrapper{
-		&-leftPanel{
-			display: none;
-			width: 0;
-		}
-		
-		&-main{
-			position:static;
-			width: 100%;
-			left: 0%;
-			top: 0%;
-	
-		}
-	}
+@media screen and (max-width: 1270px) {
+  .app__wrapper {
+    &-leftPanel {
+      display: none;
+      width: 0;
+    }
+
+    &-main {
+      position: static;
+      width: 100%;
+      left: 0%;
+      top: 0%;
+    }
+  }
+}
+.spinWrapper {
+  height: 100vh;
+  position: relative;
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

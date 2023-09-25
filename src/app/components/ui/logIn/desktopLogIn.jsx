@@ -39,7 +39,6 @@ const DesktopLogIn = observer(({ isActive, setIsActive, user }) => {
       setIsActive(false);
     }
   };
-  console.log(data);
   /* const getModalWindow = (e) => {
     if (
       e.target.id === "loginModalWindow" ||

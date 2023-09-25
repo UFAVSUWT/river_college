@@ -14,17 +14,16 @@ import { Space, Spin } from "antd";
 const App = observer(() => {
   const element = useRoutes(routes());
   const { user } = useContext(Context);
-  const [loading, setIsLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => {
-      check()
-        .then(() => {
-          user.setUser(true);
-          user.setIsAuth(true);
-        })
-        .finally(() => setIsLoading(false));
-    }, 1000);
+    check()
+      .then(() => {
+        user.setUser(true);
+        user.setIsAuth(true);
+      })
+      .finally(() => setLoading(false));
   }, []);
+  console.log(user.isAuth);
   //получаем развер шрифта, если он изменяется
   const toggleFontSize = () => {
     const size = fontSize.fontSize;
@@ -34,11 +33,15 @@ const App = observer(() => {
   };
   if (loading) {
     return (
-      <Space>
-        <Spin tip="Загрузка" size="small">
-          <div className="content" />
-        </Spin>
-      </Space>
+      <div className="spinWrapper">
+        <div>
+          <Space>
+            <Spin tip="Загрузка" size="large">
+              <div className="content" />
+            </Spin>
+          </Space>
+        </div>
+      </div>
     );
   }
   return (
