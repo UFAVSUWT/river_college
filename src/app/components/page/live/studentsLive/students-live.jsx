@@ -7,6 +7,7 @@ import { paginate } from "../../../../utils/utils";
 
 const StudentsLive = () => {
   const { news } = useContext(Context);
+
   /* сортируем новости постранично */
   const liveNews = news.news.filter((n) => n.page === "STUDENT_LIFE");
   /* задаем размер страницы */
@@ -20,7 +21,12 @@ const StudentsLive = () => {
     <>
       <NewsCardsWrapper>
         {newsCrop.map((n) => (
-          <NewsCard key={n.id} link={n.id} title={n.title} image={n.image} />
+          <NewsCard
+            key={n.id}
+            link={n.id}
+            title={n.title}
+            image={process.env.REACT_APP_API_URL + n.image}
+          />
         ))}
       </NewsCardsWrapper>
       {liveNews.length <= pageSize ? null : (

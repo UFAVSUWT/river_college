@@ -23,12 +23,13 @@ const InfoPage = observer(() => {
     >
       {main.map((n) => (
         <InfoContainer
+          key={n.id}
           title="Новости университета"
           newsTitle={n.title}
           btnTitle="Все новости"
           image={
             <Image
-              src={n.image}
+              src={process.env.REACT_APP_API_URL + n.image}
               alt="Фото уплыло:("
               height="100%"
               width="100%"

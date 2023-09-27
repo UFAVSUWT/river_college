@@ -7,7 +7,7 @@ import { Context } from "../../../../index";
 const NewsCardContainer = () => {
   const [isShowing, setIsShowing] = useState(false);
   const { news } = useContext(Context);
-  const cardsNews = news.news.filter((n) => n.card !== "");
+  const cardsNews = news.news.filter((n) => n.card >= 1 || n.card <= 6);
   return (
     <div
       onClick={() => setIsShowing(!isShowing)}
@@ -15,7 +15,12 @@ const NewsCardContainer = () => {
     >
       <NewsCardsWrapper>
         {cardsNews.map((n) => (
-          <NewsCard link={n.id} title={n.title} image={n.image} />
+          <NewsCard
+            key={n.id}
+            link={n.id}
+            title={n.title}
+            image={process.env.REACT_APP_API_URL + n.image}
+          />
         ))}
       </NewsCardsWrapper>
     </div>

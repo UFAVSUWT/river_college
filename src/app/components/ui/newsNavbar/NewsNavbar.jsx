@@ -7,7 +7,7 @@ const NewsNavbar = observer(() => {
     <>
       <nav className="news__navbar">
         <ul>
-          {/* <li
+          <li
             className={toggleClassName(
               "navbar__button",
               "navbar__button-white",
@@ -30,7 +30,7 @@ const NewsNavbar = observer(() => {
             >
               Новости
             </NavLink>
-          </li> */}
+          </li>
           {/* <li
             className={toggleClassName(
               "navbar__button",

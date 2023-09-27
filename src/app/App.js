@@ -11,6 +11,7 @@ import { useContext, useEffect, useState } from "react";
 import { Context } from "../index";
 import { check } from "./httpService/userApi";
 import { Space, Spin } from "antd";
+import { fetchNews } from "./httpService/newsApi";
 const App = observer(() => {
   const element = useRoutes(routes());
   const { user } = useContext(Context);
@@ -22,6 +23,10 @@ const App = observer(() => {
         user.setIsAuth(true);
       })
       .finally(() => setLoading(false));
+  }, []);
+  const { news } = useContext(Context);
+  useEffect(() => {
+    fetchNews().then((data) => news.setNews(data));
   }, []);
   console.log(user.isAuth);
   //получаем развер шрифта, если он изменяется

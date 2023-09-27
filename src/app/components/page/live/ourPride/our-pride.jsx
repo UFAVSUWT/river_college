@@ -18,7 +18,12 @@ const OurPride = () => {
     <>
       <NewsCardsWrapper>
         {newsCrop.map((n) => (
-          <NewsCard key={n.id} link={n.id} title={n.title} image={n.image} />
+          <NewsCard
+            key={n.id}
+            link={n.id}
+            title={n.title}
+            image={process.env.REACT_APP_API_URL + n.image}
+          />
         ))}
       </NewsCardsWrapper>
       {prideNews.length <= pageSize ? null : (
