@@ -3,6 +3,7 @@ import React, { useContext, useState } from "react";
 import NewsCard from "../../common/newsCard/news-card";
 import NewsCardsWrapper from "../newsCardsWrapper/news-cards-wrapper";
 import { Context } from "../../../../index";
+import { useNavigate } from "react-router";
 
 const NewsCardContainer = () => {
   const [isShowing, setIsShowing] = useState(false);

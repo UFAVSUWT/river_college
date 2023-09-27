@@ -1,6 +1,5 @@
 import { observer } from "mobx-react-lite";
-import React from "react";
-import { useParams } from "react-router";
+import React, { useState } from "react";
 import ImageSlider from "../components/common/carousel/ImageSlider";
 import LiveCardContainer from "../components/common/liveCardContainer/LiveCardContainer";
 import ApplicantsPage from "../components/page/infoContainer/applicantsPage/ApplicantsPage";
@@ -13,7 +12,7 @@ import { toggleClassName } from "../utils/disabled";
 import HrLine from "../components/common/hrLine/HrLine";
 
 const Main = observer(() => {
-  const params = useParams();
+  const [mainComponents, setMainComponents] = useState("news");
 
   return (
     <>
@@ -45,7 +44,10 @@ const Main = observer(() => {
           "_container-contrast"
         )}
       >
-        <NewsNavbar />
+        <NewsNavbar
+          mainComponents={mainComponents}
+          setMainComponents={setMainComponents}
+        />
       </div>
       <div>
         <div
@@ -56,9 +58,14 @@ const Main = observer(() => {
             "_container-contrast"
           )}
         >
-          {!params.element && <InfoPage />}
+          {mainComponents === "news" ? (
+            <InfoPage />
+          ) : mainComponents === "applicants" ? (
+            <ApplicantsPage />
+          ) : null}
+
           {/*     {params.element === "events" ? <EventsPages /> : null} */}
-          {params.element === "applicants" ? <ApplicantsPage /> : null}
+
           {/*       {params.element === "security" ? <SecurityPage /> : null} */}
         </div>
       </div>

@@ -28,7 +28,6 @@ const App = observer(() => {
   useEffect(() => {
     fetchNews().then((data) => news.setNews(data));
   }, []);
-  console.log(user.isAuth);
   //получаем развер шрифта, если он изменяется
   const toggleFontSize = () => {
     const size = fontSize.fontSize;

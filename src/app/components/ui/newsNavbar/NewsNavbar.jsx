@@ -1,35 +1,33 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { toggleClassName } from "../../../utils/disabled";
-const NewsNavbar = observer(() => {
+import { toggleClassName, toggleFontSize } from "../../../utils/disabled";
+import PropTypes from "prop-types";
+const NewsNavbar = observer(({ mainComponents, setMainComponents }) => {
   return (
     <>
       <nav className="news__navbar">
         <ul>
           <li
-            className={toggleClassName(
-              "navbar__button",
-              "navbar__button-white",
-              "navbar__button-black",
-              "navbar__button-contrast"
-            )}
+            className={
+              mainComponents === "news"
+                ? toggleClassName(
+                    "navbar__button-active",
+                    "navbar__button-active",
+                    "navbar__button-active-black",
+                    "navbar__button-active-contrast"
+                  )
+                : toggleClassName(
+                    "navbar__button",
+                    "navbar__button-white",
+                    "navbar__button-black",
+                    "navbar__button-contrast"
+                  )
+            }
+            style={{ fontSize: toggleFontSize(22) }}
+            onClick={() => setMainComponents("news")}
           >
-            <NavLink
-              to="/"
-              className={(navData) =>
-                navData.isActive
-                  ? toggleClassName(
-                      "navbar__button-active",
-                      "navbar__button-white-active",
-                      "navbar__button-black-active",
-                      "navbar__button-contrast-active"
-                    )
-                  : ""
-              }
-            >
-              Новости
-            </NavLink>
+            Новости
           </li>
           {/* <li
             className={toggleClassName(
@@ -45,9 +43,9 @@ const NewsNavbar = observer(() => {
                 navData.isActive
                   ? toggleClassName(
                       "navbar__button-active",
-                      "navbar__button-white-active",
-                      "navbar__button-black-active",
-                      "navbar__button-contrast-active"
+                      "navbar__button-active",
+                      "navbar__button-active-black",
+                      "navbar__button-active-contrast"
                     )
                   : ""
               }
@@ -56,28 +54,25 @@ const NewsNavbar = observer(() => {
             </NavLink>
           </li> */}
           <li
-            className={toggleClassName(
-              "navbar__button",
-              "navbar__button-white",
-              "navbar__button-black",
-              "navbar__button-contrast"
-            )}
+            className={
+              mainComponents === "applicants"
+                ? toggleClassName(
+                    "navbar__button-active",
+                    "navbar__button-active",
+                    "navbar__button-active-black",
+                    "navbar__button-active-contrast"
+                  )
+                : toggleClassName(
+                    "navbar__button",
+                    "navbar__button-white",
+                    "navbar__button-black",
+                    "navbar__button-contrast"
+                  )
+            }
+            onClick={() => setMainComponents("applicants")}
+            style={{ fontSize: toggleFontSize(22) }}
           >
-            <NavLink
-              to="/applicants"
-              className={(navData) =>
-                navData.isActive
-                  ? toggleClassName(
-                      "navbar__button-active",
-                      "navbar__button-white-active",
-                      "navbar__button-black-active",
-                      "navbar__button-contrast-active"
-                    )
-                  : ""
-              }
-            >
-              Поступающим
-            </NavLink>
+            Поступающим
           </li>
           {/* <li
             className={toggleClassName(
@@ -93,9 +88,9 @@ const NewsNavbar = observer(() => {
                 navData.isActive
                   ? toggleClassName(
                       "navbar__button-active",
-                      "navbar__button-white-active",
-                      "navbar__button-black-active",
-                      "navbar__button-contrast-active"
+                      "navbar__button-active",
+                      "navbar__button-active-black",
+                      "navbar__button-active-contrast"
                     )
                   : ""
               }
@@ -108,4 +103,8 @@ const NewsNavbar = observer(() => {
     </>
   );
 });
+NewsNavbar.propTypes = {
+  mainComponents: PropTypes.string,
+  setMainComponents: PropTypes.func,
+};
 export default NewsNavbar;

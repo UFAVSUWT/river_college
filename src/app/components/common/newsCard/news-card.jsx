@@ -1,11 +1,18 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { ReactComponent as Arrow } from "../../../assets/svg/arrowButton.svg";
 import { observer } from "mobx-react-lite";
 import { toggleIconColor } from "../../../utils/disabled";
-const NewsCard = observer(({ link, image, date, title }) => {
+const NewsCard = observer(({ link, image, date, title, id }) => {
+  const navigate = useNavigate();
+  function onNavigate() {
+    /*     if(id) */
+  }
   return (
-    <div className="newsCard-wrapper">
+    <div
+      className="newsCard-wrapper"
+      /*       id ? onClick={() => navigate(`newsPage/${id}`)} : null */
+    >
       <NavLink to={link}>
         <div className="imageContainer">
           <img src={image} alt="Картинка уплыла :(" />

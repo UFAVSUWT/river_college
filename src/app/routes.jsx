@@ -91,16 +91,17 @@ import RequireAuth from "./hoc/require-auth";
 import Pur from "./components/page/pur/pur";
 import { Navigate } from "react-router";
 import EditorNewsPage from "./components/page/editorNewsPage/editor-news-page";
+import OneNewsPage from "./components/page/oneNewsPage/one-news-page";
 const routes = () => [
   {
     path: "",
     element: <Main />,
-    children: [
+    /*  children: [
       {
         path: ":element",
         element: <Main />,
       },
-    ],
+    ], */
   },
   /*Авторизированные пользователи*/
   {
