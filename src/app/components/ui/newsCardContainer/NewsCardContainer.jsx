@@ -17,8 +17,10 @@ const NewsCardContainer = () => {
       <NewsCardsWrapper>
         {cardsNews.map((n) => (
           <NewsCard
+            id={n.id}
             key={n.id}
-            link={n.id}
+            staticCard={false}
+            /* link={n.id} */
             title={n.title}
             image={process.env.REACT_APP_API_URL + n.image}
           />

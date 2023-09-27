@@ -6,8 +6,8 @@ import Image from "../../common/image/Image";
 
 const OneNewsPage = () => {
   const [news, setNews] = useState([{}]);
-  const params = useParams();
-  console.log(params.id);
+  const { id } = useParams();
+
   return (
     <div
       style={{ fontSize: toggleFontSize(18) }}
@@ -18,7 +18,8 @@ const OneNewsPage = () => {
         "infopage-contrast"
       )}`}
     >
-      {news.map((n) => (
+      {id}
+      {/* {news.map((n) => (
         <InfoContainer
           key={n.id}
           title="Новости университета"
@@ -35,7 +36,7 @@ const OneNewsPage = () => {
         >
           {n.text}
         </InfoContainer>
-      ))}
+      ))} */}
     </div>
   );
 };

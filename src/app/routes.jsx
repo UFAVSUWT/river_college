@@ -80,10 +80,6 @@ import Cadets from "./components/page/learning/cadets/cadets";
 import Parents from "./components/page/learning/parents/parents";
 import CorrespondenceStudents from "./components/page/learning/correspondence-students/correspondence-students";
 import Dormitory from "./components/page/enrollee/applicants/dormitory/dormitory";
-import StudentsLiveNews from "./components/page/live/studentsLive/students-live-news";
-import SportNews from "./components/page/live/sport/sport-news";
-import OurPrideNews from "./components/page/live/ourPride/our-pride-news";
-import ScienceNews from "./components/page/live/science/science-news";
 import Admin from "./components/page/admin/admin-panel";
 import Auth from "./layouts/auth/auth";
 import StudentPage from "./components/page/studentPage/student-page";
@@ -97,11 +93,12 @@ const routes = () => [
     path: "",
     element: <Main />,
     /*  children: [
-      {
-        path: ":element",
-        element: <Main />,
-      },
+     
     ], */
+  },
+  {
+    path: ":id",
+    element: <OneNewsPage />,
   },
   /*Авторизированные пользователи*/
   {
@@ -294,7 +291,7 @@ const routes = () => [
       },
       {
         path: "studentsLive/:id",
-        element: <StudentsLiveNews />,
+        element: <OneNewsPage />,
       },
       {
         path: "sport",
@@ -302,15 +299,16 @@ const routes = () => [
       },
       {
         path: "sport/:id",
-        element: <SportNews />,
+        element: <OneNewsPage />,
       },
+
       {
         path: "ourPride",
         element: <OurPride />,
       },
       {
         path: "ourPride/:id",
-        element: <OurPrideNews />,
+        element: <OneNewsPage />,
       },
       {
         path: "science",
@@ -318,7 +316,7 @@ const routes = () => [
       },
       {
         path: "science/:id",
-        element: <ScienceNews />,
+        element: <OneNewsPage />,
       },
       {
         path: "vacancies",

@@ -43,6 +43,7 @@ const UniversityNews = () => {
         {newsLinks.map((item, index) => {
           return (
             <NewsCard
+              staticCard={true}
               key={index}
               link={item.link}
               image={item.image}

@@ -19,6 +19,8 @@ const Science = () => {
       <NewsCardsWrapper>
         {newsCrop.map((n) => (
           <NewsCard
+            id={n.id}
+            staticCard={false}
             key={n.id}
             link={n.id}
             title={n.title}

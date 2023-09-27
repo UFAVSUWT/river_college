@@ -22,8 +22,9 @@ const StudentsLive = () => {
       <NewsCardsWrapper>
         {newsCrop.map((n) => (
           <NewsCard
+            id={n.id}
+            staticCard={false}
             key={n.id}
-            link={n.id}
             title={n.title}
             image={process.env.REACT_APP_API_URL + n.image}
           />
