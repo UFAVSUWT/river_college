@@ -163,6 +163,9 @@ const BreadCrumbs = observer(() => {
             case "enrollee":
               linkName = null;
               break;
+            case "dormitory":
+              linkName = "/ Информация о заселении в общежитие";
+              break;
             case "kcp":
               linkName = "/ КЦП СПО на 2023/2024 учeбный год ";
               break;
