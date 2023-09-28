@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 const Collapse = ({ fac }) => {
   const [isShow, setIsShow] = useState(false);
-  console.log(isShow);
 
   return (
     <div className="collapse_wrapper">

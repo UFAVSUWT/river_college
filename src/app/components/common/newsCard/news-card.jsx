@@ -6,7 +6,6 @@ import { toggleIconColor } from "../../../utils/disabled";
 const NewsCard = observer(({ link, image, date, title, staticCard, id }) => {
   const navigate = useNavigate();
   const onNavigate = () => {
-    console.log(id);
     navigate(`${id}`);
   };
   return (

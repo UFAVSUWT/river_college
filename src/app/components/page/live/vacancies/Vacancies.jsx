@@ -12,7 +12,7 @@ const Vacancies = () => {
     });
   }, [setAppState]);
 
-  console.log(appState);
+  /*   console.log(appState); */
 
   return (
     <section>

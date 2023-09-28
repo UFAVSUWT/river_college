@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { toggleClassName, toggleFontSize } from "../../../utils/disabled";
-import InfoContainer from "../../common/infoContainer/InfoContainer";
 import Image from "../../common/image/Image";
 import { fetchOneNews } from "../../../httpService/newsApi";
 import { Context } from "../../../../index";
@@ -9,7 +8,6 @@ import { Context } from "../../../../index";
 const OneNewsPage = () => {
   const [news, setNews] = useState({});
   const { user } = useContext(Context);
-  console.log(user.user.role);
   const { id } = useParams();
   useEffect(() => {
     fetchOneNews(id).then((data) => setNews(data));

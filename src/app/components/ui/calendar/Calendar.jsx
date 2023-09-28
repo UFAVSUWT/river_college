@@ -10,7 +10,7 @@ const Calendar = ({ selectedDay, handlSelectDay }) => {
     .get("https://cloud.mail.ru/public/teph/1vGVRnswq") // Возвращение обещаний используя get-запрос
     .then((response) => {
       // Получение данных и их обработка
-      console.log(response.data);
+      /*       console.log(response.data); */
     })
     .catch((error) => {
       // Если запрос не будет выполнен, то ошибка выводится в терминал

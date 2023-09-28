@@ -31,7 +31,6 @@ const MenuNavbar = () => {
   };
   /* закрываем меню при уходе курсора с элемента списка */
   const onMouseOut = (event) => {
-    console.log(event);
     setIsMegaMenu(false);
   };
   const megaMenuIsActive = (e) => {
