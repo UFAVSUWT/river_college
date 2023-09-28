@@ -10,6 +10,6 @@ export const fetchNews = async () => {
   return data;
 };
 export const fetchOneNews = async (id) => {
-  const { data } = await $host.get("api/news" + id);
+  const { data } = await $host.get("api/news/" + id);
   return data;
 };
