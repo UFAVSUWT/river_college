@@ -1,16 +1,15 @@
 import React, { useContext } from "react";
 import { toggleClassName } from "../../utils/disabled";
 import { observer } from "mobx-react-lite";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Button from "../../components/common/button/Button";
 import { Context } from "../../../index";
+import { logOut } from "../../utils/utils";
 
 const Auth = observer(() => {
   const { user } = useContext(Context);
-  const logOut = () => {
-    user.setUser({});
-    user.setIsAuth(false);
-  };
+  const navigate = useNavigate();
+
   return (
     <section
       className={toggleClassName(
@@ -24,9 +23,11 @@ const Auth = observer(() => {
       <div className="education__container-content flex min-height">
         {" "}
         <div>
-          <NavLink to="../admin">Панель администратора</NavLink>
+          {user.user.role === "ADMIN" ? (
+            <NavLink to="../admin">Панель администратора</NavLink>
+          ) : null}
         </div>
-        <Button onClick={() => logOut()}>Выйти</Button>
+        <Button onClick={() => logOut(user, navigate)}>Выйти</Button>
       </div>
     </section>
   );

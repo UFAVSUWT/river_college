@@ -1,15 +1,13 @@
 import React, { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Button from "../../components/common/button/Button";
 import { observer } from "mobx-react-lite";
 import { Context } from "../../../index";
+import { logOut } from "../../utils/utils";
 
 const AuthLeftPanel = observer(({ isActive }) => {
   const { user } = useContext(Context);
-  const logOut = () => {
-    user.setUser({});
-    user.setIsAuth(false);
-  };
+  const navigate = useNavigate();
   return (
     <>
       {isActive ? (
@@ -20,7 +18,7 @@ const AuthLeftPanel = observer(({ isActive }) => {
             <div>
               <NavLink to="admin">Панель администратора</NavLink>
             </div>
-            <Button onClick={() => logOut()}>Выйти</Button>
+            <Button onClick={() => logOut(user, navigate)}>Выйти</Button>
           </div>
         </div>
       ) : null}
