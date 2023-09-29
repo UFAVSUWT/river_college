@@ -11,6 +11,7 @@ import {
   UploadProps,
 } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
+import { createNews } from "../../../httpService/newsApi";
 const EditorNewsPage = () => {
   const editorRef = useRef(null);
   const [data, setData] = useState({
@@ -20,7 +21,8 @@ const EditorNewsPage = () => {
     text: "",
     card: "",
     author: "",
-    image: "",
+
+    date: "",
   });
 
   const log = () => {
@@ -44,12 +46,34 @@ const EditorNewsPage = () => {
     },
   };
  */
+
+  const onFinishFailed = (errorInfo) => {
+    console.log("Failed:", errorInfo);
+  };
+  const [image, setImage] = useState({});
+  const getFile = (e) => {
+    setImage({ ...e.file });
+  };
+  const addNews = () => {
+    const formData = new FormData();
+    formData.append("title", `${data.title}`);
+    formData.append("text", `${data.text}`);
+    formData.append("image", `${data.image}`);
+    formData.append("author", `${data.author}`);
+    formData.append("card", `${data.card}`);
+    formData.append("page", `${data.page}`);
+    formData.append("main", `${data.main}`);
+    formData.append("date", `${data.date}`);
+    /*     console.log(formData); */
+    /*     createNews() */
+  };
   const onFinish = (values) => {
     const text = log();
     /*     console.log(text);
     console.log(values); */
-    setData({ ...data, ...values, text });
-    /*  setData((prevState) => ({
+    setData({ ...data, ...values, text, image });
+    addNews();
+    /* setData((prevState) => ({
       ...prevState,
       page: values.page,
       main: values.main,
@@ -58,13 +82,10 @@ const EditorNewsPage = () => {
       card: values.card,
       author: values.author,
       image: "",
-    }));
-    console.log(data); */
+    })); */
+    console.log(data);
   };
-  console.log(data);
-  const onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
-  };
+  /*  console.log(data); */
   return (
     <section className="editor-news-page_wrapper">
       <Form
@@ -135,6 +156,12 @@ const EditorNewsPage = () => {
           ]}
         >
           <Input />
+        </Form.Item>
+        <Form.Item name="image" getValueFromEvent={getFile}>
+          <Upload>
+            {" "}
+            <Button icon={<UploadOutlined />}>Добавить изображение</Button>
+          </Upload>
         </Form.Item>
         {/* Редактор текста */}
         <Editor
