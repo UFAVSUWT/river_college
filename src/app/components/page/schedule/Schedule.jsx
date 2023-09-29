@@ -33,7 +33,13 @@ import SV254png from "../../../assets/img/schedule/254SV.png";
 import { ReactComponent as OP303 } from "../../../assets/img/schedule/303OP.svg";
 import OP303PNG from "../../../assets/img/schedule/303OP.png";
 import { ReactComponent as EM328 } from "../../../assets/img/schedule/328EM.svg";
+import EM328png from "../../../assets/img/schedule/328EM.png";
 import { ReactComponent as EM329 } from "../../../assets/img/schedule/329EM.svg";
+import EM329png from "../../../assets/img/schedule/329EM.png";
+import { ReactComponent as SM332 } from "../../../assets/img/schedule/332SM.svg";
+import SM332png from "../../../assets/img/schedule/332SM.png";
+import { ReactComponent as SM333 } from "../../../assets/img/schedule/333SM.svg";
+import SM333png from "../../../assets/img/schedule/332SM.png";
 import { ReactComponent as SV350 } from "../../../assets/img/schedule/350SV.svg";
 import SV350png from "../../../assets/img/schedule/350SV.png";
 import { ReactComponent as SV351 } from "../../../assets/img/schedule/351SV.svg";
@@ -68,13 +74,24 @@ const Schedule = () => {
   return (
     <main className="schedule__container">
       <div className="schedule__wrapper">
-        <dib className="schedule__wrapper-btn-container">
+        <div className="schedule__wrapper-btn-container">
           <Button onClick={() => navigate(-1)}>Назад</Button>
           <NavLink to="/">
             <Button>На главную</Button>
           </NavLink>
-        </dib>
-        <dib
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            margin: "20px",
+          }}
+        >
+          <div>5 неделя с 25.09.2023</div>
+          <div>6 неделя с 02.10.2023</div>
+        </div>
+
+        <div
           style={{ margin: "20px 0" }}
           className="schedule__wrapper-btn-container"
         >
@@ -83,18 +100,18 @@ const Schedule = () => {
             className={`${week ? "schedule_btn" : null}`}
             onClick={() => setWeek(true)}
           >
-            4 неделя первый семестр
+            5 неделя первый семестр
           </Button>
           <Button
             style={{ margin: "0 0 0 10px" }}
             className={`${!week ? "schedule_btn" : null}`}
             onClick={() => setWeek(false)}
           >
-            5 неделя первый семестр
+            6 неделя первый семестр
           </Button>
-        </dib>
+        </div>
         {/* <Calendar /> */}
-        {week ? (
+        {!week ? (
           <ul>
             <li>
               <a href={OP106png} target="_blank" rel="noopener noreferrer">
@@ -169,6 +186,26 @@ const Schedule = () => {
             <li>
               <a href={OP303PNG} target="_blank" rel="noopener noreferrer">
                 <OP303 width={"200px"} height={"120px"} />
+              </a>
+            </li>
+            <li>
+              <a href={EM328png} target="_blank" rel="noopener noreferrer">
+                <EM328 width={"200px"} height={"120px"} />
+              </a>
+            </li>
+            <li>
+              <a href={EM329png} target="_blank" rel="noopener noreferrer">
+                <EM329 width={"200px"} height={"120px"} />
+              </a>
+            </li>
+            <li>
+              <a href={SM332png} target="_blank" rel="noopener noreferrer">
+                <SM332 width={"200px"} height={"120px"} />
+              </a>
+            </li>
+            <li>
+              <a href={SM333png} target="_blank" rel="noopener noreferrer">
+                <SM333 width={"200px"} height={"120px"} />
               </a>
             </li>
             <li>
