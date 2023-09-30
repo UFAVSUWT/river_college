@@ -31,7 +31,7 @@ const Vacant = observer(() => {
         )}`}
       >
         Информация о количестве вакантных мест для приема (перевода) на
-        01.09.2023г.
+        01.10.2023г.
       </h3>
       <TableWrapper>
         <table>
@@ -110,7 +110,7 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">1</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">0</td>
+              <td itemProp="numberBFVacant">1</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">2</td>
@@ -123,7 +123,7 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">2</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">4</td>
+              <td itemProp="numberBFVacant">5</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">3</td>
@@ -136,7 +136,7 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">3</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">1</td>
+              <td itemProp="numberBFVacant">2</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">0</td>
@@ -176,7 +176,7 @@ const Vacant = observer(() => {
               <td itemProp="numberBFVacant">0</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">5</td>
+              <td itemProp="numberPVacant">4</td>
             </tr>
             <tr itemProp="vacant">
               <td itemProp="eduCode">26.02.03</td>
@@ -187,7 +187,7 @@ const Vacant = observer(() => {
               <td itemProp="numberBFVacant">1</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">1</td>
+              <td itemProp="numberPVacant">3</td>
             </tr>
             <tr itemProp="vacant">
               <td itemProp="eduCode">26.02.03</td>
@@ -206,10 +206,10 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">3</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">9</td>
+              <td itemProp="numberBFVacant">11</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">1</td>
+              <td itemProp="numberPVacant">0</td>
             </tr>
             <tr itemProp="vacant">
               <td itemProp="eduCode">26.02.03</td>
@@ -239,7 +239,7 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Среднее (полное) общее</td>
               <td itemProp="eduCourse">4</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">5</td>
+              <td itemProp="numberBFVacant">6</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">0</td>
@@ -296,7 +296,7 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">2</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">0</td>
+              <td itemProp="numberBFVacant">1</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">5</td>
@@ -309,7 +309,7 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">3</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">10</td>
+              <td itemProp="numberBFVacant">11</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">1</td>
@@ -322,7 +322,7 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">4</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">7</td>
+              <td itemProp="numberBFVacant">8</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">1</td>
@@ -348,7 +348,7 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">1</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">0</td>
+              <td itemProp="numberBFVacant">1</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">4</td>
@@ -361,7 +361,7 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">2</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">2</td>
+              <td itemProp="numberBFVacant">0</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">5</td>
@@ -372,9 +372,22 @@ const Vacant = observer(() => {
                 Эксплуатация судового электрооборудования и средств автоматики
               </td>
               <td itemProp="eduLevel">Основное общее</td>
+              <td itemProp="eduCourse">3</td>
+              <td itemProp="eduForm">очная</td>
+              <td itemProp="numberBFVacant">0</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">0</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.02.06</td>
+              <td itemProp="eduName">
+                Эксплуатация судового электрооборудования и средств автоматики
+              </td>
+              <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">4</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">3</td>
+              <td itemProp="numberBFVacant">4</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">1</td>
