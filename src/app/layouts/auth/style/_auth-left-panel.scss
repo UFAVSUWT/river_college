@@ -1,50 +1,65 @@
 @import "../../../style/variables";
 .auth-leftpanel-wrapper {
-  display: none;
+  position: relative;
+  padding: 20px 0;
   width: 100%;
   overflow: hidden;
   background-color: white;
   height: 100vh;
   z-index: 101;
-  /*   &-form{
+  position: relative;
 
-        height: 40%;
-        padding: 3%;
-        h1{
-            text-align: center;
-        }
-        .login_form-btnLogin{
-            width: 100%;
-            border-radius: 2px;
-        }
-        .login_form-inputWrapper-input{
-
-            border-bottom: solid 1px $MAIN_COLOR;
-            color: $MAIN_COLOR;
-            
-        }
-        .login_form-inputWrapper-input::placeholder{
-            color: $MAIN_COLOR;
-            font-size: 16px;
-        }
-
-    }
-    &-top{
-        height: 60%;
-        div{
-            height: 10vh;
-            text-align: center; 
-            color: $MAIN_COLOR;
-            padding: 10px; 
-            width: 400px; 
-            font-size: 30px;
-            margin-left: 10px;
-            overflow: hidden;
-            border-bottom: solid 1px #8090be77;
-        }
-    } */
+  button {
+    background-color: white;
+    color: $MAIN_COLOR;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 40px;
+    border-bottom: solid 1px $LINK_COLOR;
+  }
+  button:hover {
+    background-color: rgba(12, 29, 44, 0.05);
+    border-bottom: solid 1px $RED_COLOR;
+  }
+  button:last-child {
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+  }
 }
-
-.auth-leftpanel-wrapper-show {
-  display: block;
+.auth-leftpanel-wrapper-white {
+  button {
+    color: black;
+    border: solid 1px black;
+  }
+  button:hover {
+    background-color: white;
+    border: solid 1px black;
+  }
+}
+.auth-leftpanel-wrapper-black {
+  background-color: black;
+  button {
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+  }
+  button:hover {
+    background-color: black;
+    border: solid 1px white;
+  }
+}
+.auth-leftpanel-wrapper-contrast {
+  background-color: $BACK_CONTRAST;
+  button {
+    background-color: $BACK_CONTRAST;
+    color: $FONT_CONTRAST;
+    border: solid 1px $FONT_CONTRAST;
+  }
+  button:hover {
+    background-color: $BACK_CONTRAST;
+    border: solid 1px $FONT_CONTRAST;
+  }
 }
