@@ -6,7 +6,10 @@ import { Context } from "../../../../index";
 const NewsCardContainer = () => {
   const [isShowing, setIsShowing] = useState(false);
   const { news } = useContext(Context);
-  const cardsNews = news.news.filter((n) => n.card >= 1 || n.card <= 6);
+  const cardsNews = news.news.filter(
+    (n) => (Number(n.card) >= 1 || Number(n.card) <= 6) && n.card !== ""
+  );
+  console.log(cardsNews);
   return (
     <div
       onClick={() => setIsShowing(!isShowing)}

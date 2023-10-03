@@ -14,87 +14,84 @@ import { UploadOutlined } from "@ant-design/icons";
 import { createNews } from "../../../httpService/newsApi";
 const EditorNewsPage = () => {
   const editorRef = useRef(null);
-  const [data, setData] = useState({
+  const [file, setFile] = useState(null);
+  const [page, setPage] = useState("STUDENT_LIFE");
+  const [main, setMain] = useState(false);
+  const [title, setTitle] = useState("");
+  const [text, setText] = useState("");
+  const [card, setCard] = useState("");
+  const [author, setAuthor] = useState("");
+  const [date, setDate] = useState("01.02.23");
+  /* const [data, setData] = useState({
     page: "STUDENT_LIFE",
     main: false,
     title: "",
     text: "",
     card: "",
     author: "",
-
+    image: image,
     date: "",
-  });
+  }); */
+  /*   useEffect(
 
+    [data]
+  ); */
+  function tooglePage(e) {
+    console.log(e);
+  }
+  useEffect(() => {
+    setText(log());
+  }, [title]);
   const log = () => {
     if (editorRef.current) {
       return editorRef.current.getContent();
     }
   };
-
-  /*   const handleChange = (value) => {
-    console.log(`selected ${value}`);
-  }; */
-  /*   const onChange = (e) => {
-    console.log(`checked = ${e.target.checked}`);
-  };
-  const props = {
-    action: "https://www.mocky.io/v2/5cc8019d300000980a055e76",
-    onChange({ file, fileList }) {
-      if (file.status !== "uploading") {
-        console.log(file, fileList);
-      }
-    },
-  };
- */
-
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
   };
-  const [image, setImage] = useState({});
-  const getFile = (e) => {
-    setImage({ ...e.file });
-  };
+  /*  const getFile = (e) => {
+    setFile(e.target.files[0]);
+  }; */
   const addNews = () => {
     const formData = new FormData();
-    formData.append("title", `${data.title}`);
-    formData.append("text", `${data.text}`);
-    formData.append("image", `${data.image}`);
-    formData.append("author", `${data.author}`);
-    formData.append("card", `${data.card}`);
-    formData.append("page", `${data.page}`);
-    formData.append("main", `${data.main}`);
-    formData.append("date", `${data.date}`);
-    /*     console.log(formData); */
-    /*     createNews() */
+    formData.append("title", `${title}`);
+    formData.append("text", `${text}`);
+    formData.append("image", file);
+    formData.append("author", `${author}`);
+    formData.append("card", `${card}`);
+    formData.append("page", `${page}`);
+    formData.append("main", `${main}`);
+    formData.append("date", `${date}`);
+    /*  for (var key of formData.entries()) {
+      console.log(key[0] + ", " + key[1]);
+    } */
+    createNews(formData);
   };
   const onFinish = (values) => {
-    const text = log();
-    /*     console.log(text);
-    console.log(values); */
-    setData({ ...data, ...values, text, image });
-    addNews();
-    /* setData((prevState) => ({
-      ...prevState,
-      page: values.page,
-      main: values.main,
-      title: values.title,
-      text: text,
-      card: values.card,
-      author: values.author,
-      image: "",
-    })); */
-    console.log(data);
+    /* const text = log();
+    setData({ ...data, ...values, text, image }); */
+    /*     const formData = new FormData();
+    formData.append("title", `${data.title}`);
+    formData.append("text", `${data.text}`);
+    formData.append("author", `${data.author}`);
+    formData.append("card", `${data.card}`);
+    formData.append("main", `${data.main}`);
+    formData.append("date", `${data.date}`);
+    formData.append("page", `${data.page}`);
+    formData.append("image", data.image); */
+    /*  createNews(data); */
   };
-  /*  console.log(data); */
+  console.log(file);
   return (
     <section className="editor-news-page_wrapper">
       <Form
         name="basic"
-        initialValues={{
+        /*  initialValues={{
           main: data.main,
           page: data.page,
           card: data.card,
-        }}
+        }} */
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
         autoComplete="off"
@@ -109,11 +106,12 @@ const EditorNewsPage = () => {
               { value: "STUDENT_PRIDE", label: "Наша гордость" },
               { value: "STUDENT_SCIENCE", label: "Наука" },
             ]}
+            onChange={(e) => setPage(e)}
           />
         </Form.Item>
         {/* Главная новость! */}
         <Form.Item label="Главная новость" name="main" valuePropName="checked">
-          <Checkbox />
+          <Checkbox onChange={(e) => setMain(e.target.checked)} />
         </Form.Item>
         {/* Выбор карточки */}
         <Form.Item label="Выберите карточку" name="card">
@@ -128,6 +126,7 @@ const EditorNewsPage = () => {
               { value: "5", label: "5" },
               { value: "6", label: "6" },
             ]}
+            onChange={(e) => setCard(e)}
           />
         </Form.Item>
         {/* Заголовок */}
@@ -138,11 +137,11 @@ const EditorNewsPage = () => {
             {
               required: true,
               message: "Введите название новости!",
-              defaultField: data.title,
+              /*   defaultField: data.title, */
             },
           ]}
         >
-          <Input />
+          <Input onChange={(e) => setTitle(e.target.value)} />
         </Form.Item>
         {/* Автор */}
         <Form.Item
@@ -155,10 +154,15 @@ const EditorNewsPage = () => {
             },
           ]}
         >
-          <Input />
+          <Input onChange={(e) => setAuthor(e.target.value)} />
         </Form.Item>
-        <Form.Item name="image" getValueFromEvent={getFile}>
-          <Upload>
+        <Form.Item
+          name="image"
+          onChange={(e) =>
+            setFile(e.target.files[0])
+          } /* getValueFromEvent={getFile} */
+        >
+          <Upload maxCount={1}>
             {" "}
             <Button icon={<UploadOutlined />}>Добавить изображение</Button>
           </Upload>
@@ -197,6 +201,7 @@ const EditorNewsPage = () => {
             content_style:
               "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }",
           }}
+          onChange={(e) => setText(e.level.content)}
         />
         <hr />
         <Form.Item
@@ -205,11 +210,12 @@ const EditorNewsPage = () => {
             span: 16,
           }}
         >
-          <Button type="primary" htmlType="submit">
+          <Button type="primary" htmlType="submit" onClick={addNews}>
             Submit
           </Button>
         </Form.Item>
       </Form>
+
       {/* <Form>
         <Space wrap>
           <div className="editor-news-page_select-container">

@@ -12,7 +12,8 @@ const OneNewsPage = () => {
   useEffect(() => {
     fetchOneNews(id).then((data) => setNews(data));
   }, []);
-
+  const string = new DOMParser().parseFromString(news.text, "text/xml");
+  console.log(string);
   return (
     <div
       style={{ fontSize: toggleFontSize(18) }}
@@ -28,7 +29,7 @@ const OneNewsPage = () => {
         />
       </div>
 
-      <p>{news.text}</p>
+      <div dangerouslySetInnerHTML={{ __html: news.text }}></div>
       <div>
         {user.isAuth && user.user.role === "ADMIN" ? news.author : null}
       </div>
