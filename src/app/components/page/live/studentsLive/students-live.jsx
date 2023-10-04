@@ -1,15 +1,19 @@
 import { Context } from "../../../../../index";
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import NewsCard from "../../../common/newsCard/news-card";
 import NewsCardsWrapper from "../../../ui/newsCardsWrapper/news-cards-wrapper";
 import Pagination from "../../../common/pagination/Pagination";
 import { paginate } from "../../../../utils/utils";
+import { fetchNews } from "../../../../httpService/newsApi";
+import { observer } from "mobx-react-lite";
 
-const StudentsLive = () => {
+const StudentsLive = observer(() => {
   const { news } = useContext(Context);
-
+  useEffect(() => {
+    fetchNews().then((data) => news.setNews(data));
+  }, [news]);
   /* сортируем новости постранично */
-  const liveNews = news.news.filter((n) => n.page === "STUDENT_LIFE");
+  const liveNews = news.news.filter((n) => n.page === "STUDENT_LIFE").reverse();
   /* задаем размер страницы */
   const pageSize = 12;
   /* текущая страница */
@@ -40,5 +44,5 @@ const StudentsLive = () => {
       )}
     </>
   );
-};
+});
 export default StudentsLive;

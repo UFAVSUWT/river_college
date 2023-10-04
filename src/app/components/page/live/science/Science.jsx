@@ -1,13 +1,20 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../../../../../index";
 import NewsCardsWrapper from "../../../ui/newsCardsWrapper/news-cards-wrapper";
 import NewsCard from "../../../common/newsCard/news-card";
 import { paginate } from "../../../../utils/utils";
 import PaginationComponent from "../../../common/pagination/Pagination";
-const Science = () => {
+import { fetchNews } from "../../../../httpService/newsApi";
+import { observer } from "mobx-react-lite";
+const Science = observer(() => {
   const { news } = useContext(Context);
+  useEffect(() => {
+    fetchNews().then((data) => news.setNews(data));
+  }, [news]);
   /* сортируем новости постранично */
-  const scienceNews = news.news.filter((n) => n.page === "STUDENT_SCIENCE");
+  const scienceNews = news.news
+    .filter((n) => n.page === "STUDENT_SCIENCE")
+    .reverse();
   /* задаем размер страницы */
   const pageSize = 12;
   /* текущая страница */
@@ -38,5 +45,5 @@ const Science = () => {
       )}
     </>
   );
-};
+});
 export default Science;

@@ -1,18 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Editor } from "@tinymce/tinymce-react";
-import {
-  Button,
-  Checkbox,
-  Form,
-  Input,
-  Select,
-  Space,
-  Upload,
-  UploadProps,
-} from "antd";
+import { Button, Checkbox, Form, Input, Select, Upload } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
-import { createNews } from "../../../httpService/newsApi";
-const EditorNewsPage = () => {
+import { createNews, fetchNews } from "../../../httpService/newsApi";
+import { useNavigate } from "react-router";
+import { Context } from "../../../../index";
+import { observer } from "mobx-react-lite";
+const EditorNewsPage = observer(() => {
   const editorRef = useRef(null);
   const [file, setFile] = useState(null);
   const [page, setPage] = useState("STUDENT_LIFE");
@@ -22,37 +16,22 @@ const EditorNewsPage = () => {
   const [card, setCard] = useState("");
   const [author, setAuthor] = useState("");
   const [date, setDate] = useState("01.02.23");
-  /* const [data, setData] = useState({
-    page: "STUDENT_LIFE",
-    main: false,
-    title: "",
-    text: "",
-    card: "",
-    author: "",
-    image: image,
-    date: "",
-  }); */
-  /*   useEffect(
 
-    [data]
-  ); */
-  function tooglePage(e) {
-    console.log(e);
-  }
-  useEffect(() => {
-    setText(log());
-  }, [title]);
-  const log = () => {
-    if (editorRef.current) {
-      return editorRef.current.getContent();
+  const navigate = useNavigate();
+  function onNavigate() {
+    if (page === "STUDENT_LIFE") {
+      navigate("../../live/studentsLive");
+    } else if (page === "STUDENT_SPORT") {
+      navigate("../../live/sport");
+    } else if (page === "STUDENT_SCIENCE") {
+      navigate("../../live/science");
+    } else if (page === "STUDENT_PRIDE") {
+      navigate("../../live/ourPride");
     }
-  };
+  }
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
   };
-  /*  const getFile = (e) => {
-    setFile(e.target.files[0]);
-  }; */
   const addNews = () => {
     const formData = new FormData();
     formData.append("title", `${title}`);
@@ -63,36 +42,19 @@ const EditorNewsPage = () => {
     formData.append("page", `${page}`);
     formData.append("main", `${main}`);
     formData.append("date", `${date}`);
-    /*  for (var key of formData.entries()) {
-      console.log(key[0] + ", " + key[1]);
-    } */
     createNews(formData);
+    onNavigate();
   };
-  const onFinish = (values) => {
-    /* const text = log();
-    setData({ ...data, ...values, text, image }); */
-    /*     const formData = new FormData();
-    formData.append("title", `${data.title}`);
-    formData.append("text", `${data.text}`);
-    formData.append("author", `${data.author}`);
-    formData.append("card", `${data.card}`);
-    formData.append("main", `${data.main}`);
-    formData.append("date", `${data.date}`);
-    formData.append("page", `${data.page}`);
-    formData.append("image", data.image); */
-    /*  createNews(data); */
-  };
-  console.log(file);
+
   return (
     <section className="editor-news-page_wrapper">
       <Form
         name="basic"
-        /*  initialValues={{
-          main: data.main,
-          page: data.page,
-          card: data.card,
-        }} */
-        onFinish={onFinish}
+        initialValues={{
+          /*  main: data.main, */
+          page: page,
+          /*     card: data.card, */
+        }}
         onFinishFailed={onFinishFailed}
         autoComplete="off"
       >
@@ -211,7 +173,7 @@ const EditorNewsPage = () => {
           }}
         >
           <Button type="primary" htmlType="submit" onClick={addNews}>
-            Submit
+            Добавить новость
           </Button>
         </Form.Item>
       </Form>
@@ -348,5 +310,5 @@ const EditorNewsPage = () => {
       </Form> */}
     </section>
   );
-};
+});
 export default EditorNewsPage;
