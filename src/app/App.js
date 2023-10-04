@@ -17,24 +17,31 @@ const App = observer(() => {
   };
 
   return (
-    <div style={{ fontSize: toggleFontSize() }} className={"app__wrapper"}>
-      <div className="app__wrapper-leftPanel">
-        <LeftPanel />
-      </div>
-      <NavBar />
-      <div  className={`app__wrapper-main ${toggleClassName(
-          "",
-          "",
-          "app__wrapper-main-black",
-          "app__wrapper-main-contrast"
-        )}`}>
-        <div>
+    <>
+      <div style={{ fontSize: toggleFontSize() }} className={"app__wrapper"}>
+        <div className="app__wrapper-leftPanel">
+          <LeftPanel />
+        </div>
+        <div className="header-wrapper">
+          {" "}
+          <NavBar />
+        </div>
+        <div
+          className={toggleClassName(
+            "main-wrapper",
+            "main-wrapper-white",
+            "main-wrapper-black",
+            "main-wrapper-contrast"
+          )}
+        >
           {element}
           <ScrollUp />
         </div>
-        <Footer />
+        <div className="footer-wrapper">
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
 });
 
