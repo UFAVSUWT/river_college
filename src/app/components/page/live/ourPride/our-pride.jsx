@@ -21,6 +21,8 @@ const OurPride = observer(() => {
   const [currentPage, setCurrentPage] = useState(1);
   /* получаем размер массива на одну страницу */
   const newsCrop = paginate(prideNews, currentPage, pageSize);
+  if (newsCrop.length === 0 || !newsCrop)
+    return "На этой странице новостей пока что нет...";
   return (
     <>
       <NewsCardsWrapper>
