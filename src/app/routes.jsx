@@ -88,6 +88,7 @@ import Pur from "./components/page/pur/pur";
 import { Navigate } from "react-router";
 import EditorNewsPage from "./components/page/editorNewsPage/editor-news-page";
 import OneNewsPage from "./components/page/oneNewsPage/one-news-page";
+import EditNewsPage from "./components/page/editorNewsPage/edit-news-page";
 const routes = () => [
   {
     path: "",
@@ -126,6 +127,14 @@ const routes = () => [
         ),
       },
     ],
+  },
+  {
+    path: "editNewsPage/:id",
+    element: (
+      <RequireAuth>
+        <EditNewsPage />
+      </RequireAuth>
+    ),
   },
   {
     path: "student",

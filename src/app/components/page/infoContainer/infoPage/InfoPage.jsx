@@ -36,7 +36,7 @@ const InfoPage = observer(() => {
             />
           }
         >
-          {n.text}
+          <div dangerouslySetInnerHTML={{ __html: n.text }}></div>
         </InfoContainer>
       ))}
 

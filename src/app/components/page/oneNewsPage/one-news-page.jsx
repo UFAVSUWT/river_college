@@ -58,6 +58,7 @@ const OneNewsPage = () => {
     Object.keys(oneNews).length === 0
   )
     return "Эта новость удалена или еще не создана...";
+
   return (
     <>
       <div
@@ -91,7 +92,12 @@ const OneNewsPage = () => {
           <div className="one-news-page_container-admin-btns">
             <div>
               {user.isAuth && user.user.role === "ADMIN" ? (
-                <Button className={"edit"}>Редактировать новость</Button>
+                <Button
+                  className={"edit"}
+                  onClick={() => navigate(`../../../editNewsPage/${id}`)}
+                >
+                  Редактировать новость
+                </Button>
               ) : null}
             </div>
             <div>
