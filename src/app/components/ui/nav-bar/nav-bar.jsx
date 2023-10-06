@@ -199,6 +199,15 @@ const NavBar = observer(() => {
                 </NavLink>
                 <NavLink
                   onClick={() => megaMenuIsOut()}
+                  to={"learning/educationsPlatforms"}
+                >
+                  <li>
+                    Сторонние электронные образовательные и информационные
+                    ресурсы
+                  </li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
                   to={"learning/correspondenceStudents"}
                 >
                   <li>Заочникам</li>
