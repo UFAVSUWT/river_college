@@ -6,6 +6,13 @@ import dogovorUfanet from "../../../../assets/pdf/objects/ufanetdogovor.pdf";
 import { ReactComponent as DOC } from "../../../../assets/svg/office/word.svg";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
 import Usloviya from "../../../../assets/doc/sveden/УСЛОВИЯ ОХРАНЫ ЗДОРОВЬЯ ОБУЧАЮЩИХСЯ.docx";
+
+import id_lani from "../../../../assets/pdf/objects/44-96-23 ИД Лань_copy.pdf";
+import ebs_lani from "../../../../assets/pdf/objects/44-97-23 ЭБС Лань_copy.pdf";
+import urait from "../../../../assets/pdf/objects/Контракт Юрайт 2023-24.pdf";
+import morkniga from "../../../../assets/pdf/objects/Контракт № 44-65-23 Оказание услуг по предоставлению доступа к электронной библиотечной системе Моркнига.PDF";
+import znanium from "../../../../assets/pdf/objects/Контракт № 44-99-23 Знаниум_Просвещение_copy.pdf";
+import ebs_znanium from "../../../../assets/pdf/objects/ЛИЦЕНЗИОННЫЙ ДОГОВОР ЭБС ЗНАНИУМ ВГУВТ (Просвещение) 09.08.2023 итог.doc";
 const Ovz = observer(() => {
   return (
     <div
@@ -1256,6 +1263,57 @@ const Ovz = observer(() => {
           >
             «IPRbooks» (ООО Компания «Ай Пи Ар Медиа»)
           </a>{" "}
+        </li>
+      </ol>
+      <h3
+        className={`common__container-title ${toggleClassName(
+          "title",
+          "title-white",
+          "title-black",
+          "title-contrast"
+        )}`}
+      >
+        Документов, подтверждающих доступ к цифровым электронным библиотекам:
+      </h3>
+      <ol>
+        <li>
+          <PDF width={"25px"} height={"25px"} />
+          <a href={id_lani} target={"_blank"} rel="noreferrer">
+            Договор 44-96-23 об оказании доступа к "Электронно-библиотечной
+            истеме" («Лань»)
+          </a>
+          <li>
+            <PDF width={"25px"} height={"25px"} />
+            <a href={ebs_lani} target={"_blank"} rel="noreferrer">
+              Договор 44-97-23 об оказании доступа к "Электронно-библиотечной
+              истеме" («Лань»)
+            </a>
+          </li>
+          <li>
+            <PDF width={"25px"} height={"25px"} />
+            <a href={morkniga} target={"_blank"} rel="noreferrer">
+              Контракт № 44-65-23 Оказание услуг по предоставлению доступа к
+              электронной библиотечной системе «Моркнига»
+            </a>
+          </li>
+          <li>
+            <PDF width={"25px"} height={"25px"} />
+            <a href={urait} target={"_blank"} rel="noreferrer">
+              Контракт Юрайт 2023-24
+            </a>
+          </li>
+          <li>
+            <PDF width={"25px"} height={"25px"} />
+            <a href={znanium} target={"_blank"} rel="noreferrer">
+              Контракт № 44-99-23 Знаниум Просвещение
+            </a>
+          </li>
+          <li>
+            <DOC width={"25px"} height={"25px"} />
+            <a href={ebs_znanium} target={"_blank"} rel="noreferrer">
+              ЛИЦЕНЗИОННЫЙ ДОГОВОР ЭБС ЗНАНИУМ ВГУВТ (Просвещение) 09.08.2023г.
+            </a>
+          </li>
         </li>
       </ol>
       <h3
