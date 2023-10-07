@@ -46,6 +46,8 @@ import { ReactComponent as SV351 } from "../../../assets/img/schedule/351SV.svg"
 import SV351PNG from "../../../assets/img/schedule/351SV.png";
 import { ReactComponent as SV355 } from "../../../assets/img/schedule/355SV.svg";
 import SV355PNG from "../../../assets/img/schedule/355SV.png";
+import { ReactComponent as SV447 } from "../../../assets/img/schedule/447SV.svg";
+import { ReactComponent as SV448 } from "../../../assets/img/schedule/448SV.svg";
 /* новая неделя */
 
 import OP106pngnew from "../../../assets/img/schedule/new/106OP.png";
@@ -62,13 +64,22 @@ import SM234pngnew from "../../../assets/img/schedule/new/234SM.png";
 import SM235pngnew from "../../../assets/img/schedule/new/235SM.png";
 import SV253PNGnew from "../../../assets/img/schedule/new/253SV.png";
 import SV254pngnew from "../../../assets/img/schedule/new/254SV.png";
+import SM332pngnew from "../../../assets/img/schedule/new/332SM.png";
+import SM333pngnew from "../../../assets/img/schedule/new/333SM.png";
 import OP303PNGnew from "../../../assets/img/schedule/new/303OP.png";
 import EM328PNGnew from "../../../assets/img/schedule/new/328EM.png";
 import EM329PNGnew from "../../../assets/img/schedule/new/329EM.png";
 import SV350pngnew from "../../../assets/img/schedule/new/350SV.png";
 import SV351PNGnew from "../../../assets/img/schedule/new/351SV.png";
 import SV355PNGnew from "../../../assets/img/schedule/new/355SV.png";
+import SV447PNGnew from "../../../assets/img/schedule/new/447SV.png";
+import SV448PNGnew from "../../../assets/img/schedule/new/448SV.png";
+import raspisanieJSON from "../../../mockData/Расписание_8.json";
 const Schedule = () => {
+  const raspisanie = decodeURIComponent(
+    JSON.parse(JSON.stringify(raspisanieJSON))
+  ).faculties;
+  console.log(raspisanie);
   const navigate = useNavigate();
   const [week, setWeek] = useState(true);
   return (
@@ -80,16 +91,6 @@ const Schedule = () => {
             <Button>На главную</Button>
           </NavLink>
         </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            margin: "20px",
-          }}
-        >
-          <div>5 неделя с 25.09.2023</div>
-          <div>6 неделя с 02.10.2023</div>
-        </div>
 
         <div
           style={{ margin: "20px 0" }}
@@ -100,18 +101,18 @@ const Schedule = () => {
             className={`${week ? "schedule_btn" : null}`}
             onClick={() => setWeek(true)}
           >
-            5 неделя первый семестр
+            6 неделя с 02.10.2023
           </Button>
           <Button
             style={{ margin: "0 0 0 10px" }}
             className={`${!week ? "schedule_btn" : null}`}
             onClick={() => setWeek(false)}
           >
-            6 неделя первый семестр
+            7 неделя с 9.10.2023
           </Button>
         </div>
         {/* <Calendar /> */}
-        {!week ? (
+        {week ? (
           <ul>
             <li>
               <a href={OP106png} target="_blank" rel="noopener noreferrer">
@@ -312,6 +313,16 @@ const Schedule = () => {
               </a>
             </li>
             <li>
+              <a href={SM332pngnew} target="_blank" rel="noopener noreferrer">
+                <SM332 width={"200px"} height={"120px"} />
+              </a>
+            </li>
+            <li>
+              <a href={SM333pngnew} target="_blank" rel="noopener noreferrer">
+                <SM333 width={"200px"} height={"120px"} />
+              </a>
+            </li>
+            <li>
               <a href={SV350pngnew} target="_blank" rel="noopener noreferrer">
                 <SV350 width={"200px"} height={"120px"} />
               </a>
@@ -324,6 +335,16 @@ const Schedule = () => {
             <li>
               <a href={SV355PNGnew} target="_blank" rel="noopener noreferrer">
                 <SV355 width={"200px"} height={"120px"} />
+              </a>
+            </li>
+            <li>
+              <a href={SV447PNGnew} target="_blank" rel="noopener noreferrer">
+                <SV447 width={"200px"} height={"120px"} />
+              </a>
+            </li>
+            <li>
+              <a href={SV448PNGnew} target="_blank" rel="noopener noreferrer">
+                <SV448 width={"200px"} height={"120px"} />
               </a>
             </li>
           </ul>
