@@ -2854,7 +2854,7 @@ const Document = observer(() => {
       <ul>
         <li>
           <a
-            href="http://lib.vsuwt.ru/marcweb2/Default.asp"
+            href="http://lib.vsuwt.ru/marcweb2/"
             target={"_blank"}
             rel="noreferrer"
           >
@@ -2864,20 +2864,7 @@ const Document = observer(() => {
           библиотеке университета и НРУ)
         </li>
         <li>
-          <a
-            href={"https://primo.nlr.ru/primo-explore/"}
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            Электронный каталог НРУ{" "}
-          </a>
-        </li>
-        <li>
-          <a
-            href={"http://biblio-online.ru/"}
-            target={"_blank"}
-            rel="noreferrer"
-          >
+          <a href="https://urait.ru/" target={"_blank"} rel="noreferrer">
             Электронно-библиотечная система «Юрайт»{" "}
           </a>
         </li>

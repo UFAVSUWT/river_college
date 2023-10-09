@@ -1221,20 +1221,19 @@ const Ovz = observer(() => {
       <ol itemProp="erList">
         <li>
           Электронный каталог
-          <a href="https://vsuwt.ru/" target={"_blank"} rel="noreferrer">
+          <a
+            href="http://lib.vsuwt.ru/marcweb2/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             ВГУВТ
           </a>{" "}
           (через Электронный каталог ВГУВТ возможен доступ к электронной
           библиотеке университета и НРУ)
         </li>
-        <li>Электронный каталог НРУ</li>
         <li>
           Электронно-библиотечная система
-          <a
-            href="https://biblio-online.ru/"
-            target={"_blank"}
-            rel="noreferrer"
-          >
+          <a href="https://urait.ru/" target={"_blank"} rel="noreferrer">
             «Юрайт»
           </a>{" "}
         </li>
@@ -1252,16 +1251,6 @@ const Ovz = observer(() => {
             rel="noreferrer"
           >
             "Моркнига"
-          </a>{" "}
-        </li>
-        <li>
-          Электронно-библиотечная система ЭБС
-          <a
-            href="http://www.iprbookshop.ru/"
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            «IPRbooks» (ООО Компания «Ай Пи Ар Медиа»)
           </a>{" "}
         </li>
       </ol>
@@ -1968,13 +1957,16 @@ const Ovz = observer(() => {
       <ol>
         <li>
           Электронный каталог{" "}
-          <a href="https://vsuwt.ru/" target={"_blank"} rel="noreferrer">
+          <a
+            href="http://lib.vsuwt.ru/marcweb2/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             ВГУВТ
           </a>{" "}
           (через Электронный каталог ВГУВТ возможен доступ к электронной
           библиотеке университета и НРУ)
         </li>
-        <li>Электронный каталог НРУ</li>
         <li>
           Электронно-библиотечная система{" "}
           <a

@@ -118,6 +118,10 @@ const BreadCrumbs = observer(() => {
             case "cadets":
               linkName = "/ Курсантам ";
               break;
+            case "educationsPlatforms":
+              linkName =
+                "/ Сторонние электронные образовательные и информационные ресурсы: ";
+              break;
             case "correspondenceStudents":
               linkName = "/ Заочникам ";
               break;

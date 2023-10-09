@@ -66,7 +66,10 @@ const PhoneMenu = () => {
           </ul> */}
           <div className="button__container">
             <NavLink to={"/schedule"}>
-              <Button className={"button__container-btn"}>
+              <Button
+                onClick={() => setNav(false)}
+                className={"button__container-btn"}
+              >
                 {<Schedul className={"button__container-btn-icon"} />}
               </Button>
             </NavLink>
