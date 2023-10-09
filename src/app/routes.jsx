@@ -81,6 +81,7 @@ import Parents from "./components/page/learning/parents/parents";
 import CorrespondenceStudents from "./components/page/learning/correspondence-students/correspondence-students";
 import Dormitory from "./components/page/enrollee/applicants/dormitory/dormitory";
 import EducationsPlatforms from "./components/page/learning/educations-platforms";
+import AutoSchedule from "./components/page/schedule/auto-schedule";
 const routes = () => [
   {
     path: "",
@@ -91,6 +92,10 @@ const routes = () => [
         element: <Main />,
       },
     ],
+  },
+  {
+    path: "autoSchedule",
+    element: <AutoSchedule />,
   },
   {
     path: "educationPrograms",

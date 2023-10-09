@@ -1,4 +1,3 @@
-
 // Сведения об образовательной организации
 @import "../../components/page/sveden/common/style/common";
 @import "../../components/page/sveden/budget/style/budget";
@@ -19,6 +18,7 @@
 @import "../../components/page/enrollee/style/enrollee";
 @import "../../components/page/schedule/style/schedule";
 @import "../../components/page/educationsPrograms/style/educationsPrograms";
+@import "../../components/page/schedule/style/auto-schedule";
 // common
 @import "../../components/common/phoneMenu/style/phoneMenu";
 @import "../../components/common/breadCrumbs/style/breadCrumbs";
@@ -50,7 +50,7 @@
 // --------------------ui----------------------------------
 @import "../../components/ui/disabled/style/disabled";
 @import "../../components/ui/commonMenu/style/commonMenu";
-@import "../../components/ui/footer/style/footer"; 
+@import "../../components/ui/footer/style/footer";
 @import "../../components/ui/newsCardContainer/style/newsCardContainer";
 @import "../../components/ui/newsNavbar/style/newsNavbar";
 @import "../../components/ui/chapterMenu/style/chapterMenu";
