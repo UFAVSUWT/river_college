@@ -2874,6 +2874,12 @@ const Document = observer(() => {
           </a>
         </li>
         <li>
+          Электронно-библиотечная система{" "}
+          <a href="https://znanium.com/" target={"_blank"} rel="noreferrer">
+            «Знаниум»
+          </a>{" "}
+        </li>
+        <li>
           <a
             href={"http://morkniga.ru/library/"}
             target={"_blank"}

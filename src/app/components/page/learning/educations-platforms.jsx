@@ -110,6 +110,12 @@ const EducationsPlatforms = observer(() => {
             </a>{" "}
           </li>
           <li>
+            Электронно-библиотечная система{" "}
+            <a href="https://znanium.com/" target={"_blank"} rel="noreferrer">
+              «Знаниум»
+            </a>{" "}
+          </li>
+          <li>
             Электронно – библиотечная система{" "}
             <a
               href="https://www.morkniga.ru/library/"
