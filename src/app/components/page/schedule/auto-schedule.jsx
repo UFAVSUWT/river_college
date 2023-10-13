@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import raspisanieJSON from "../../../mockData/Расписание_8.json";
+import raspisanieJSON8 from "../../../mockData/Расписание_8.json";
+import raspisanieJSON9 from "../../../mockData/Расписание_9.json";
 import locale from "antd/es/date-picker/locale/ru_RU";
 import "dayjs/locale/ru";
 import EducationContainer from "../../common/educationContainer/education-container";
@@ -7,20 +8,27 @@ import { Button, ConfigProvider, DatePicker, Select } from "antd";
 import AutoScheduleNav from "./auto-schedule-nav";
 
 const AutoSchedule = () => {
-  const raspisanie = JSON.parse(JSON.stringify(raspisanieJSON));
-  const groups = raspisanie.faculties[0].groups;
+  const raspisanie8 = JSON.parse(JSON.stringify(raspisanieJSON8));
+  const groups8 = raspisanie8.faculties[0].groups;
+  const raspisanie9 = JSON.parse(JSON.stringify(raspisanieJSON9));
+  const groups9 = raspisanie9.faculties[0].groups;
 
   /* Навигация раздела */
   const [nav, setNav] = useState("groups");
 
   /* фильтрация по курсу */
-  const [groupsOfSelectedCourse, setGroupsOfSelectedCourse] = useState([]);
+  const [groupsOfSelectedCourse8, setGroupsOfSelectedCourse8] = useState([]);
+  const [groupsOfSelectedCourse9, setGroupsOfSelectedCourse9] = useState([]);
+  /* выбираем неделю, ее нужно менять каждый раз!!! */
+  const [week, setWeek] = useState();
+
   /* выбранный курс */
   const [course, setCource] = useState("");
   /* номер выбранной группы */
   const [groupNumber, setGroupNumber] = useState("");
-  /* выбранныя группа */
-  const [selectedGroup, setSelectedGroup] = useState(null);
+  /* выбранная группа */
+  const [selectedGroup8, setSelectedGroup8] = useState(null);
+  const [selectedGroup9, setSelectedGroup9] = useState(null);
   /* список групп на курсе */
   const [allGroupName, setAllGroupName] = useState([
     { label: "Сперва укажите ваш курс!" },
@@ -29,28 +37,40 @@ const AutoSchedule = () => {
   useEffect(() => {
     setAllGroupName([{ label: "Сперва укажите ваш курс!" }]);
     setCource("");
+    /*  setGroupNumber("");
+    setWeek(); */
+    /*    setSelectedGroup8();
+    setSelectedGroup9(); */
   }, [nav]);
 
   useEffect(() => {
     /* фильтруем группы, если курс менялся */
-    const filtredGroupsFromCourse = groups.filter((e) => e.course === course);
-    setGroupsOfSelectedCourse(filtredGroupsFromCourse);
+    const filtredGroupsFromCourse8 = groups8.filter((e) => e.course === course);
+    setGroupsOfSelectedCourse8(filtredGroupsFromCourse8);
+    const filtredGroupsFromCourse9 = groups9.filter((e) => e.course === course);
+    setGroupsOfSelectedCourse9(filtredGroupsFromCourse9);
     /* если не первый раз переходим по курсу, то сбрасываем список групп и получаем новый список */
     if (allGroupName.length !== 0) {
       allGroupName.splice(0, allGroupName.length);
     }
     /* получаем новый список */
-    filtredGroupsFromCourse.forEach((e) =>
+    filtredGroupsFromCourse8.forEach((e) =>
       allGroupName.push({ value: e.group_name, label: e.group_name })
     );
   }, [course]);
+  /* указываем стартовый день */
+  const [day, setDay] = useState("");
   useEffect(() => {
     /* если выбрали новую группу, меням массив группы */
-    setSelectedGroup(
-      groupsOfSelectedCourse.filter((g) => g.group_name === groupNumber)
+    setSelectedGroup8(
+      groupsOfSelectedCourse8.filter((g) => g.group_name === groupNumber)
+    );
+    setSelectedGroup9(
+      groupsOfSelectedCourse9.filter((g) => g.group_name === groupNumber)
     );
   }, [groupNumber]);
-
+  const classesOfSelectedGroupOnWeek8 = selectedGroup8?.map((e) => e.days);
+  const classesOfSelectedGroupOnWeek9 = selectedGroup9?.map((e) => e.days);
   /* выбор курса */
   const handleChangeCourse = (value) => {
     setCource(value);
@@ -58,6 +78,10 @@ const AutoSchedule = () => {
   /* выбор группы */
   const handleChangeGroup = (value) => {
     setGroupNumber(value);
+    setSelectedDayLessons(null);
+    /*    setSelectedGroup8(null);
+    setSelectedGroup9(null);
+    setDay(""); */
   };
   /* Выбор даты */
   function getDayNumber() {
@@ -73,12 +97,57 @@ const AutoSchedule = () => {
       return 5;
     } else if (day === "21-10-2023") {
       return 6;
+    } else if (day === "23-10-2023") {
+      return 1;
+    } else if (day === "24-10-2023") {
+      return 2;
+    } else if (day === "25-10-2023") {
+      return 3;
+    } else if (day === "26-10-2023") {
+      return 4;
+    } else if (day === "27-10-2023") {
+      return 5;
+    } else if (day === "28-10-2023") {
+      return 6;
     }
   }
-  const [day, setDay] = useState("16-10-2023");
-  const [selectedDayNumber, setSelectedDayNumber] = useState(getDayNumber());
+  useEffect(() => {
+    if (day === "16-10-2023") {
+      setWeek(8);
+    } else if (day === "17-10-2023") {
+      setWeek(8);
+    } else if (day === "18-10-2023") {
+      setWeek(8);
+    } else if (day === "19-10-2023") {
+      setWeek(8);
+    } else if (day === "20-10-2023") {
+      setWeek(8);
+    } else if (day === "21-10-2023") {
+      setWeek(8);
+    } else if (day === "23-10-2023") {
+      setWeek(9);
+    } else if (day === "24-10-2023") {
+      setWeek(9);
+    } else if (day === "25-10-2023") {
+      setWeek(9);
+    } else if (day === "26-10-2023") {
+      setWeek(9);
+    } else if (day === "27-10-2023") {
+      setWeek(9);
+    } else if (day === "28-10-2023") {
+      setWeek(9);
+    }
+  }, [day]);
+  const [selectedDayNumber, setSelectedDayNumber] = useState("");
+
   const [selectedDaylessons, setSelectedDayLessons] = useState(null);
-  const classesOfSelectedGroupOnWeek = selectedGroup?.map((e) => e.days);
+
+  /*   const classesOfSelectedGroupOnWeek = selectedGroup8?.map((e) => e.days);
+  const classesOfSelectedGroupOnWeek9 = selectedGroup9?.map((e) => e.days); */
+
+  console.log(selectedGroup8);
+
+  console.log(selectedGroup9);
   /*   useEffect(() => {
     setSelectedDayLessons(
       classesOfSelectedGroupOnWeek?.filter(
@@ -88,28 +157,76 @@ const AutoSchedule = () => {
   }, [selectedDayNumber]); */
   /* фильтрация по дню недели */
   useEffect(() => {
-    if (classesOfSelectedGroupOnWeek && selectedDayNumber) {
-      setSelectedDayNumber(getDayNumber());
-      setSelectedDayLessons(
-        classesOfSelectedGroupOnWeek[0]?.filter(
-          (e) => e.weekday === selectedDayNumber
-        )
-      );
+    if (
+      classesOfSelectedGroupOnWeek8 &&
+      classesOfSelectedGroupOnWeek9 &&
+      selectedDayNumber
+    ) {
+      if (week === 8) {
+        setSelectedDayLessons(
+          classesOfSelectedGroupOnWeek8[0]?.filter(
+            (e) => e.weekday === selectedDayNumber
+          )
+        );
+      } else if (week === 9) {
+        setSelectedDayLessons(
+          classesOfSelectedGroupOnWeek9[0]?.filter(
+            (e) => e.weekday === selectedDayNumber
+          )
+        );
+      }
     }
-  }, [selectedDayNumber, groupNumber, day]);
-  console.log(day);
+  }, [
+    selectedDayNumber,
+    groupNumber,
+    day,
+    selectedGroup9,
+    selectedGroup8,
+    week,
+  ]);
 
+  useEffect(() => {
+    setSelectedDayNumber(getDayNumber());
+  }, [day]);
   const onChange = (date, dateString) => {
+    setSelectedDayNumber(getDayNumber());
     setDay(dateString);
   };
-  const getDayToday = () => {
-    const dateToday = new Date();
-    const getYearToday = dateToday.getFullYear();
-    const getMonthToday = dateToday.getMonth() + 1;
-    const getDayToday = dateToday.getDate();
-    return `${getDayToday}-${getMonthToday}-${getYearToday}`;
+  const onChangeDayOnToday = () => {
+    setSelectedDayNumber(getDayNumber());
+    setDay(getDayToday());
+    console.log(getDayToday());
   };
-  console.log(classesOfSelectedGroupOnWeek);
+  const getDayToday = (tomorrow) => {
+    const dateToday = new Date(2023, 9, 16);
+
+    if (tomorrow) {
+      const timeOfDay = 60 * 60 * 1000 * 24;
+      const tomorrowDate = new Date(dateToday.getTime() + timeOfDay);
+      const getYearToday = tomorrowDate.getFullYear();
+      const getMonthToday = tomorrowDate.getMonth() + 1;
+      const getDayToday = tomorrowDate.getDate();
+      return `${getDayToday}-${getMonthToday}-${getYearToday}`;
+    } else {
+      const getYearToday = dateToday.getFullYear();
+      const getMonthToday = dateToday.getMonth() + 1;
+      const getDayToday = dateToday.getDate();
+      return `${getDayToday}-${getMonthToday}-${getYearToday}`;
+    }
+  };
+  /* делаем активными дни в календаря */
+  function disabledDate(current) {
+    const startDate = new Date(2023, 9, 16); // не забываем про месяцы -1
+    const endDate = new Date(2023, 9, 29); // дата окончания недели должна быть +1
+    return (
+      current.$d < startDate || // проверяем, что дата находится в заданном диапазоне
+      current.$d > endDate ||
+      current.$W === 0 // отключаем вс
+    );
+  }
+  useEffect(() => {
+    setSelectedDayLessons(null);
+  }, [course]);
   return (
     <EducationContainer classes={"back_white"}>
       <ConfigProvider
@@ -197,7 +314,10 @@ const AutoSchedule = () => {
             <Button className="button" onClick={() => setDay(getDayToday())}>
               На сегодня
             </Button>
-            <Button className="button" onClick={() => setSelectedDayNumber(1)}>
+            <Button
+              className="button"
+              onClick={() => setDay(getDayToday(true))}
+            >
               На завтра
             </Button>
             <DatePicker
@@ -205,11 +325,15 @@ const AutoSchedule = () => {
               locale={locale}
               format="DD-MM-YYYY"
               placeholder="Выберите дату"
+              disabledDate={disabledDate}
               onChange={onChange}
             />
           </div>
           <div className="auto-schedule__container-lessons-container">
-            <div className="group-name">{groupNumber}</div>
+            {selectedDaylessons &&
+            selectedDaylessons[0].lessons !== undefined ? (
+              <div className="group-name">{groupNumber}</div>
+            ) : null}
             {selectedDaylessons &&
             selectedDaylessons[0].lessons === undefined ? (
               <div className="absent">Расписание отсутствует!</div>

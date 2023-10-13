@@ -12,11 +12,13 @@ const AutoScheduleNav = ({ nav, setNav }) => {
       </Button>
       <Button
         onClick={() => setNav("teacher")}
+        disabled={true}
         className={`buttons ${nav === "teacher" ? "active" : null}`}
       >
         Преподаватели
       </Button>
       <Button
+        disabled={true}
         onClick={() => setNav("class")}
         className={`buttons ${nav === "class" ? "active" : null}`}
       >
