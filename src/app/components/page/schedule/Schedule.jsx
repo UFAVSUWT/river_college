@@ -89,7 +89,13 @@ const Schedule = () => {
             <Button>На главную</Button>
           </NavLink>
         </div>
-
+        <div className="schedule__wrapper-btn-container">
+          <NavLink to="../autoSchedule">
+            <Button style={{ "margin-top": "20px" }}>
+              С 8 недели расписание доступно в новом формате!
+            </Button>
+          </NavLink>
+        </div>
         <div
           style={{ margin: "20px 0" }}
           className="schedule__wrapper-btn-container"
