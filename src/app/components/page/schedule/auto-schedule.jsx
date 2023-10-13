@@ -198,7 +198,7 @@ const AutoSchedule = () => {
     console.log(getDayToday());
   };
   const getDayToday = (tomorrow) => {
-    const dateToday = new Date(2023, 9, 16);
+    const dateToday = new Date();
 
     if (tomorrow) {
       const timeOfDay = 60 * 60 * 1000 * 24;
