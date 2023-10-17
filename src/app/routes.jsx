@@ -45,7 +45,6 @@ import AboutBranch from "./components/page/homePage/aboutBranch/AboutBranch";
 import HistoricalReference from "./components/page/homePage/historicalReference/HistoricalReference";
 import UniversityNews from "./components/page/homePage/universityNews/UniversityNews";
 import UniversityEvents from "./components/page/homePage/universityEvents/UniversityEvents";
-import Schedule from "./components/page/schedule/Schedule";
 import ListsOfPersonsWhoAppliedForAdmission from "./components/page/enrollee/applicants/monitoring/listsOfPersonsWhoAppliedForAdmission/ListsOfPersonsWhoAppliedForAdmission";
 import CompetitionLists from "./components/page/enrollee/applicants/monitoring/competitionLists/СompetitionLists";
 import EnlistedOrders from "./components/page/enrollee/applicants/monitoring/enlistedOrders/EnlistedOrders";
@@ -92,10 +91,6 @@ const routes = () => [
         element: <Main />,
       },
     ],
-  },
-  {
-    path: "autoSchedule",
-    element: <AutoSchedule />,
   },
   {
     path: "educationPrograms",
@@ -174,7 +169,7 @@ const routes = () => [
   },
   {
     path: "schedule",
-    element: <Schedule />,
+    element: <AutoSchedule />,
   },
   {
     path: "sveden",

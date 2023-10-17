@@ -6,12 +6,19 @@ import "dayjs/locale/ru";
 import EducationContainer from "../../common/educationContainer/education-container";
 import { Button, ConfigProvider, DatePicker, Select } from "antd";
 import AutoScheduleNav from "./auto-schedule-nav";
-
+import { ReactComponent as StarSelected } from "../../../assets/svg/schedule/star_selected.svg";
+import { ReactComponent as Star } from "../../../assets/svg/schedule/star.svg";
 const AutoSchedule = () => {
   const raspisanie8 = JSON.parse(JSON.stringify(raspisanieJSON8));
   const groups8 = raspisanie8.faculties[0].groups;
   const raspisanie9 = JSON.parse(JSON.stringify(raspisanieJSON9));
   const groups9 = raspisanie9.faculties[0].groups;
+  const [localCourse, setLocalCourse] = useState(
+    +localStorage.getItem("course")
+  );
+  const [localGroup, setLocalGroup] = useState(
+    localStorage.getItem("groupNumber")
+  );
 
   /* Навигация раздела */
   const [nav, setNav] = useState("groups");
@@ -25,7 +32,7 @@ const AutoSchedule = () => {
   /* выбранный курс */
   const [course, setCource] = useState("");
   /* номер выбранной группы */
-  const [groupNumber, setGroupNumber] = useState("");
+  const [groupNumber, setGroupNumber] = useState(localGroup ? localGroup : "");
   /* выбранная группа */
   const [selectedGroup8, setSelectedGroup8] = useState(null);
   const [selectedGroup9, setSelectedGroup9] = useState(null);
@@ -33,35 +40,65 @@ const AutoSchedule = () => {
   const [allGroupName, setAllGroupName] = useState([
     { label: "Сперва укажите ваш курс!" },
   ]);
+  const [selectedDayNumber, setSelectedDayNumber] = useState("");
+  const [selectedDaylessons, setSelectedDayLessons] = useState(null);
   /* если переходили по навигации в преподы или аудитори и вернулись обратно, сбрасываем указанную группу и курс */
   useEffect(() => {
     setAllGroupName([{ label: "Сперва укажите ваш курс!" }]);
     setCource("");
-    /*  setGroupNumber("");
-    setWeek(); */
-    /*    setSelectedGroup8();
-    setSelectedGroup9(); */
   }, [nav]);
 
   useEffect(() => {
     /* фильтруем группы, если курс менялся */
+
     const filtredGroupsFromCourse8 = groups8.filter((e) => e.course === course);
     setGroupsOfSelectedCourse8(filtredGroupsFromCourse8);
     const filtredGroupsFromCourse9 = groups9.filter((e) => e.course === course);
     setGroupsOfSelectedCourse9(filtredGroupsFromCourse9);
+    /* получаем новый список */
+    const groupNames = filtredGroupsFromCourse8.map((e) => ({
+      value: e.group_name,
+      label: e.group_name,
+    }));
+    setAllGroupName(groupNames);
     /* если не первый раз переходим по курсу, то сбрасываем список групп и получаем новый список */
     if (allGroupName.length !== 0) {
       allGroupName.splice(0, allGroupName.length);
     }
-    /* получаем новый список */
-    filtredGroupsFromCourse8.forEach((e) =>
-      allGroupName.push({ value: e.group_name, label: e.group_name })
-    );
   }, [course]);
+
+  useEffect(
+    () => {
+      /* фильтруем группы, если курс менялся */
+      if (localCourse && localCourse !== null) {
+        const filtredGroupsFromCourse8 = groups8.filter(
+          (e) => e.course === localCourse
+        );
+        setGroupsOfSelectedCourse8(filtredGroupsFromCourse8);
+        const filtredGroupsFromCourse9 = groups9.filter(
+          (e) => e.course === localCourse
+        );
+        setGroupsOfSelectedCourse9(filtredGroupsFromCourse9);
+        /* получаем новый список */
+        /* filtredGroupsFromCourse8.forEach((e) =>
+        allGroupName.push({ value: e.group_name, label: e.group_name })
+      ); */
+      }
+      /* если не первый раз переходим по курсу, то сбрасываем список групп и получаем новый список */
+      /*  if (allGroupName.length !== 0) {
+      allGroupName.splice(0, allGroupName.length);
+    } */
+    },
+    [
+      /* localCourse */
+    ]
+  );
+
   /* указываем стартовый день */
   const [day, setDay] = useState("");
   useEffect(() => {
     /* если выбрали новую группу, меням массив группы */
+
     setSelectedGroup8(
       groupsOfSelectedCourse8.filter((g) => g.group_name === groupNumber)
     );
@@ -69,6 +106,23 @@ const AutoSchedule = () => {
       groupsOfSelectedCourse9.filter((g) => g.group_name === groupNumber)
     );
   }, [groupNumber]);
+  useEffect(() => {
+    /* если выбрали новую группу, меням массив группы */
+    if (
+      localGroup &&
+      localGroup != null &&
+      groupsOfSelectedCourse8 &&
+      groupsOfSelectedCourse9
+    ) {
+      setSelectedGroup8(
+        groupsOfSelectedCourse8.filter((g) => g.group_name === localGroup)
+      );
+      setSelectedGroup9(
+        groupsOfSelectedCourse9.filter((g) => g.group_name === localGroup)
+      );
+    }
+  }, [, /* localGroup */ groupsOfSelectedCourse8, groupsOfSelectedCourse9]);
+
   const classesOfSelectedGroupOnWeek8 = selectedGroup8?.map((e) => e.days);
   const classesOfSelectedGroupOnWeek9 = selectedGroup9?.map((e) => e.days);
   /* выбор курса */
@@ -79,9 +133,6 @@ const AutoSchedule = () => {
   const handleChangeGroup = (value) => {
     setGroupNumber(value);
     setSelectedDayLessons(null);
-    /*    setSelectedGroup8(null);
-    setSelectedGroup9(null);
-    setDay(""); */
   };
   /* Выбор даты */
   function getDayNumber() {
@@ -138,23 +189,7 @@ const AutoSchedule = () => {
       setWeek(9);
     }
   }, [day]);
-  const [selectedDayNumber, setSelectedDayNumber] = useState("");
 
-  const [selectedDaylessons, setSelectedDayLessons] = useState(null);
-
-  /*   const classesOfSelectedGroupOnWeek = selectedGroup8?.map((e) => e.days);
-  const classesOfSelectedGroupOnWeek9 = selectedGroup9?.map((e) => e.days); */
-
-  console.log(selectedGroup8);
-
-  console.log(selectedGroup9);
-  /*   useEffect(() => {
-    setSelectedDayLessons(
-      classesOfSelectedGroupOnWeek?.filter(
-        (e) => e.weekday === selectedDayNumber
-      )
-    );
-  }, [selectedDayNumber]); */
   /* фильтрация по дню недели */
   useEffect(() => {
     if (
@@ -192,11 +227,7 @@ const AutoSchedule = () => {
     setSelectedDayNumber(getDayNumber());
     setDay(dateString);
   };
-  const onChangeDayOnToday = () => {
-    setSelectedDayNumber(getDayNumber());
-    setDay(getDayToday());
-    console.log(getDayToday());
-  };
+
   const getDayToday = (tomorrow) => {
     const dateToday = new Date();
 
@@ -227,9 +258,57 @@ const AutoSchedule = () => {
   useEffect(() => {
     setSelectedDayLessons(null);
   }, [course]);
+  const [bookmark, setBookmark] = useState(false);
+  function toggleBookmark(bookmark) {
+    if (bookmark) {
+      localStorage.setItem("course", course);
+      localStorage.setItem("groupNumber", groupNumber);
+      setLocalCourse(localStorage.getItem("course"));
+      setLocalGroup(localStorage.getItem("groupNumber"));
+    } else {
+      localStorage.removeItem("course", course);
+      localStorage.removeItem("groupNumber", groupNumber);
+      setLocalCourse("");
+      setLocalGroup("");
+    }
+    setBookmark(bookmark);
+  }
+
+  /* если localGroup === groupNumber рисуем закрашенную звездочку, если нет, то пустую */
+  function getBookmark() {
+    if (localGroup === groupNumber) {
+      return (
+        <div className="first-container">
+          <div className="group-info-name">{localGroup}</div>
+          <div className="group-info-mark">
+            <StarSelected
+              width={"25px"}
+              height={"25px"}
+              onClick={() => toggleBookmark(false)}
+            />
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="first-container">
+          <div className="group-info-name">{groupNumber}</div>
+          <div className="group-info-mark">
+            <Star
+              width={"25px"}
+              height={"25px"}
+              onClick={() => toggleBookmark(true)}
+            />
+          </div>
+        </div>
+      );
+    }
+  }
+  console.log(localGroup);
   return (
     <EducationContainer classes={"back_white"}>
       <ConfigProvider
+        renderEmpty={() => "Выберите курс!"}
         theme={{
           components: {
             Select: {
@@ -256,6 +335,7 @@ const AutoSchedule = () => {
           {nav === "groups" ? (
             <div className="auto-schedule__container-groups-container">
               <Select
+                defaultValue={localCourse ? localCourse : null}
                 placeholder="Выберите курс"
                 className="select"
                 onChange={handleChangeCourse}
@@ -288,6 +368,7 @@ const AutoSchedule = () => {
               />
 
               <Select
+                defaultValue={localGroup ? localGroup : null}
                 placeholder="Выберите группу"
                 className="select"
                 onChange={handleChangeGroup}
@@ -332,7 +413,13 @@ const AutoSchedule = () => {
           <div className="auto-schedule__container-lessons-container">
             {selectedDaylessons &&
             selectedDaylessons[0].lessons !== undefined ? (
-              <div className="group-name">{groupNumber}</div>
+              <div className="group-info">
+                {getBookmark()}
+                <div className="second-container">
+                  <div className="group-info-date">{day}</div>
+                  <div className="group-info-week">{week} неделя</div>
+                </div>
+              </div>
             ) : null}
             {selectedDaylessons &&
             selectedDaylessons[0].lessons === undefined ? (
