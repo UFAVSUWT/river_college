@@ -8,11 +8,18 @@ import { Button, ConfigProvider, DatePicker, Select } from "antd";
 import AutoScheduleNav from "./auto-schedule-nav";
 import { ReactComponent as StarSelected } from "../../../assets/svg/schedule/star_selected.svg";
 import { ReactComponent as Star } from "../../../assets/svg/schedule/star.svg";
+import AutoScheduleGroups from "./auto-schedule-groups";
+import AutoScheduleTeachers from "./auto-schedule-teachers";
+
+import AutoScheduleGroupsWrapper from "./auto-schedule-groups-wrapper";
+import AutoScheduleTeacherClassWrapper from "./auto-schedule-teacher-class-wrapper";
+import AutoScheduleClass from "./auto-schedule-class";
 const AutoSchedule = () => {
   const raspisanie8 = JSON.parse(JSON.stringify(raspisanieJSON8));
   const groups8 = raspisanie8.faculties[0].groups;
   const raspisanie9 = JSON.parse(JSON.stringify(raspisanieJSON9));
   const groups9 = raspisanie9.faculties[0].groups;
+  //значения группы и курса для добавления в избранное
   const [localCourse, setLocalCourse] = useState(
     +localStorage.getItem("course")
   );
@@ -50,7 +57,6 @@ const AutoSchedule = () => {
 
   useEffect(() => {
     /* фильтруем группы, если курс менялся */
-
     const filtredGroupsFromCourse8 = groups8.filter((e) => e.course === course);
     setGroupsOfSelectedCourse8(filtredGroupsFromCourse8);
     const filtredGroupsFromCourse9 = groups9.filter((e) => e.course === course);
@@ -67,32 +73,19 @@ const AutoSchedule = () => {
     }
   }, [course]);
 
-  useEffect(
-    () => {
-      /* фильтруем группы, если курс менялся */
-      if (localCourse && localCourse !== null) {
-        const filtredGroupsFromCourse8 = groups8.filter(
-          (e) => e.course === localCourse
-        );
-        setGroupsOfSelectedCourse8(filtredGroupsFromCourse8);
-        const filtredGroupsFromCourse9 = groups9.filter(
-          (e) => e.course === localCourse
-        );
-        setGroupsOfSelectedCourse9(filtredGroupsFromCourse9);
-        /* получаем новый список */
-        /* filtredGroupsFromCourse8.forEach((e) =>
-        allGroupName.push({ value: e.group_name, label: e.group_name })
-      ); */
-      }
-      /* если не первый раз переходим по курсу, то сбрасываем список групп и получаем новый список */
-      /*  if (allGroupName.length !== 0) {
-      allGroupName.splice(0, allGroupName.length);
-    } */
-    },
-    [
-      /* localCourse */
-    ]
-  );
+  useEffect(() => {
+    /* фильтруем группы, если курс менялся для сохраненной группы*/
+    if (localCourse && localCourse !== null) {
+      const filtredGroupsFromCourse8 = groups8.filter(
+        (e) => e.course === localCourse
+      );
+      setGroupsOfSelectedCourse8(filtredGroupsFromCourse8);
+      const filtredGroupsFromCourse9 = groups9.filter(
+        (e) => e.course === localCourse
+      );
+      setGroupsOfSelectedCourse9(filtredGroupsFromCourse9);
+    }
+  }, []);
 
   /* указываем стартовый день */
   const [day, setDay] = useState("");
@@ -304,7 +297,114 @@ const AutoSchedule = () => {
       );
     }
   }
-  console.log(localGroup);
+
+  //логика для работы блока преподавателей
+  const [localTeacher, setLocalTeacher] = useState(
+    localStorage.getItem("savedTeacher")
+  );
+  const [teachersLessonsOnDay, setTeachersLessonsOnDay] = useState(null);
+  const [selectedTeacher, setSelectedTeacher] = useState(
+    localTeacher ? localTeacher : "Выберите преподавателя"
+  );
+  useEffect(() => {
+    setSelectedDayLessons(null);
+  }, [course]);
+  const [bookmarkTeachers, setBookmarkTeachers] = useState(false);
+  function toggleBookmarkTeachers(bookmarkTeachers) {
+    if (bookmarkTeachers) {
+      localStorage.setItem("savedTeacher", selectedTeacher);
+
+      setLocalTeacher(localStorage.getItem("savedTeacher"));
+    } else {
+      localStorage.removeItem("savedTeacher");
+
+      setLocalTeacher("");
+    }
+    setBookmarkTeachers(bookmarkTeachers);
+  }
+  function getBookmarkTeacher() {
+    if (localTeacher === selectedTeacher) {
+      return (
+        <div className="first-container">
+          <div className="group-info-name">{localTeacher}</div>
+          <div className="group-info-mark">
+            <StarSelected
+              width={"25px"}
+              height={"25px"}
+              onClick={() => toggleBookmarkTeachers(false)}
+            />
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="first-container">
+          <div className="group-info-name">{selectedTeacher}</div>
+          <div className="group-info-mark">
+            <Star
+              width={"25px"}
+              height={"25px"}
+              onClick={() => toggleBookmarkTeachers(true)}
+            />
+          </div>
+        </div>
+      );
+    }
+  }
+
+  //логика для работы блока аудиторий
+  const [localClass, setLocalClass] = useState(localStorage.getItem("class"));
+  const [classLessonsOnDay, setClassLessonsOnDay] = useState(null);
+  const [selectedClass, setSelectedClass] = useState(
+    localClass ? localClass : "Выберите аудиторию"
+  );
+
+  useEffect(() => {
+    setSelectedDayLessons(null);
+  }, [course]);
+  const [bookmarkClass, setBookmarkClass] = useState(false);
+  function toggleBookmarkClass(bookmarkClass) {
+    if (bookmarkClass) {
+      localStorage.setItem("class", selectedClass);
+
+      setLocalClass(localStorage.getItem("class"));
+    } else {
+      localStorage.removeItem("class");
+
+      setLocalClass("");
+    }
+    setBookmarkClass(bookmarkClass);
+  }
+  function getBookmarkClass() {
+    if (localClass === selectedClass) {
+      return (
+        <div className="first-container">
+          <div className="group-info-name">{localClass}</div>
+          <div className="group-info-mark">
+            <StarSelected
+              width={"25px"}
+              height={"25px"}
+              onClick={() => toggleBookmarkClass(false)}
+            />
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="first-container">
+          <div className="group-info-name">{selectedClass}</div>
+          <div className="group-info-mark">
+            <Star
+              width={"25px"}
+              height={"25px"}
+              onClick={() => toggleBookmarkClass(true)}
+            />
+          </div>
+        </div>
+      );
+    }
+  }
+
   return (
     <EducationContainer classes={"back_white"}>
       <ConfigProvider
@@ -333,63 +433,35 @@ const AutoSchedule = () => {
           <AutoScheduleNav nav={nav} setNav={setNav} />
 
           {nav === "groups" ? (
-            <div className="auto-schedule__container-groups-container">
-              <Select
-                defaultValue={localCourse ? localCourse : null}
-                placeholder="Выберите курс"
-                className="select"
-                onChange={handleChangeCourse}
-                options={[
-                  {
-                    value: 1,
-                    label: 1,
-                  },
-                  {
-                    value: 2,
-                    label: 2,
-                  },
-                  {
-                    value: 3,
-                    label: 3,
-                  },
-                  {
-                    value: 4,
-                    label: 4,
-                  },
-                  {
-                    value: 5,
-                    label: 5,
-                  },
-                  {
-                    value: 6,
-                    label: 6,
-                  },
-                ]}
-              />
-
-              <Select
-                defaultValue={localGroup ? localGroup : null}
-                placeholder="Выберите группу"
-                className="select"
-                onChange={handleChangeGroup}
-                options={allGroupName}
-                key={allGroupName.map((option) => option.value).join("-")}
-              />
-            </div>
+            <AutoScheduleGroups
+              localCourse={localCourse}
+              handleChangeCourse={handleChangeCourse}
+              allGroupName={allGroupName}
+              handleChangeGroup={handleChangeGroup}
+              localGroup={localGroup}
+            />
           ) : nav === "teacher" ? (
-            <div className="auto-schedule__container-teacher-container">
-              <Select
-                placeholder="Выберите преподавателя"
-                className="select"
-                onChange={handleChangeGroup}
-                options={allGroupName}
-                key={allGroupName.map((option) => option.value).join("-")}
-              />
-            </div>
+            <AutoScheduleTeachers
+              groups8={groups8}
+              groups9={groups9}
+              week={week}
+              day={day}
+              /*   teachersLessonsOnDay={teachersLessonsOnDay} */
+              setTeachersLessonsOnDay={setTeachersLessonsOnDay}
+              selectedTeacher={selectedTeacher}
+              setSelectedTeacher={setSelectedTeacher}
+            />
           ) : (
-            <div className="auto-schedule__container-classes-container">
-              Аудитории
-            </div>
+            <AutoScheduleClass
+              groups8={groups8}
+              groups9={groups9}
+              week={week}
+              day={day}
+              /*    classLessonsOnDay={classLessonsOnDay} */
+              setClassLessonsOnDay={setClassLessonsOnDay}
+              selectedClass={selectedClass}
+              setSelectedClass={setSelectedClass}
+            />
           )}
           <div className="auto-schedule__container-date-container">
             <Button className="button" onClick={() => setDay(getDayToday())}>
@@ -410,54 +482,28 @@ const AutoSchedule = () => {
               onChange={onChange}
             />
           </div>
-          <div className="auto-schedule__container-lessons-container">
-            {selectedDaylessons &&
-            selectedDaylessons[0].lessons !== undefined ? (
-              <div className="group-info">
-                {getBookmark()}
-                <div className="second-container">
-                  <div className="group-info-date">{day}</div>
-                  <div className="group-info-week">{week} неделя</div>
-                </div>
-              </div>
-            ) : null}
-            {selectedDaylessons &&
-            selectedDaylessons[0].lessons === undefined ? (
-              <div className="absent">Расписание отсутствует!</div>
-            ) : selectedDaylessons &&
-              selectedDaylessons[0].lessons !== undefined ? (
-              selectedDaylessons[0].lessons.map((e, index) => (
-                <div className="lessons-container" key={`lessons` + index}>
-                  <div className="lessons-container-number">
-                    <div>{index + 1}</div>
-                  </div>
-                  <div className="lessons-container-time">
-                    <div>{e.time_start}</div>
-                    <div>{e.time_end}</div>
-                  </div>{" "}
-                  <div className="lessons-container-lessons-common">
-                    <div className="lessons-container-lessons-common-lesson">
-                      {e.subject}
-                    </div>
-                    <div className="lessons-container-lessons-common-teacher">
-                      {e.teachers.map((e, index) => (
-                        <div key={`${index} + ${e.teacher_name}`}>
-                          {e.teacher_name}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="lessons-container-auditory">
-                    {e.auditories.map((e, index) => (
-                      <div key={`${index} + ${e.auditory_name}`}>
-                        {e.auditory_name}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))
-            ) : null}
-          </div>
+          {nav === "groups" ? (
+            <AutoScheduleGroupsWrapper
+              selectedDaylessons={selectedDaylessons}
+              day={day}
+              week={week}
+              getBookmark={getBookmark}
+            />
+          ) : nav === "teacher" ? (
+            <AutoScheduleTeacherClassWrapper
+              data={teachersLessonsOnDay}
+              getBookmark={getBookmarkTeacher}
+              day={day}
+              week={week}
+            />
+          ) : (
+            <AutoScheduleTeacherClassWrapper
+              data={classLessonsOnDay}
+              getBookmark={getBookmarkClass}
+              day={day}
+              week={week}
+            />
+          )}
         </div>
       </ConfigProvider>
     </EducationContainer>
