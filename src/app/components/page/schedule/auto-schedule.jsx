@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import raspisanieJSON8 from "../../../mockData/Расписание_8.json";
+import raspisanieJSON8 from "../../../mockData/Расписание_10.json";
 import raspisanieJSON9 from "../../../mockData/Расписание_9.json";
 import locale from "antd/es/date-picker/locale/ru_RU";
 import "dayjs/locale/ru";
 import EducationContainer from "../../common/educationContainer/education-container";
-import { Button, ConfigProvider, DatePicker, Select } from "antd";
+import { Button, ConfigProvider, DatePicker } from "antd";
 import AutoScheduleNav from "./auto-schedule-nav";
 import { ReactComponent as StarSelected } from "../../../assets/svg/schedule/star_selected.svg";
 import { ReactComponent as Star } from "../../../assets/svg/schedule/star.svg";
@@ -114,7 +114,7 @@ const AutoSchedule = () => {
         groupsOfSelectedCourse9.filter((g) => g.group_name === localGroup)
       );
     }
-  }, [, /* localGroup */ groupsOfSelectedCourse8, groupsOfSelectedCourse9]);
+  }, [groupsOfSelectedCourse8, groupsOfSelectedCourse9]);
 
   const classesOfSelectedGroupOnWeek8 = selectedGroup8?.map((e) => e.days);
   const classesOfSelectedGroupOnWeek9 = selectedGroup9?.map((e) => e.days);
@@ -129,17 +129,17 @@ const AutoSchedule = () => {
   };
   /* Выбор даты */
   function getDayNumber() {
-    if (day === "16-10-2023") {
+    if (day === "30-10-2023") {
       return 1;
-    } else if (day === "17-10-2023") {
+    } else if (day === "31-10-2023") {
       return 2;
-    } else if (day === "18-10-2023") {
+    } else if (day === "1-11-2023") {
       return 3;
-    } else if (day === "19-10-2023") {
+    } else if (day === "2-11-2023") {
       return 4;
-    } else if (day === "20-10-2023") {
+    } else if (day === "3-11-2023") {
       return 5;
-    } else if (day === "21-10-2023") {
+    } else if (day === "4-11-2023") {
       return 6;
     } else if (day === "23-10-2023") {
       return 1;
@@ -156,18 +156,18 @@ const AutoSchedule = () => {
     }
   }
   useEffect(() => {
-    if (day === "16-10-2023") {
-      setWeek(8);
-    } else if (day === "17-10-2023") {
-      setWeek(8);
-    } else if (day === "18-10-2023") {
-      setWeek(8);
-    } else if (day === "19-10-2023") {
-      setWeek(8);
-    } else if (day === "20-10-2023") {
-      setWeek(8);
-    } else if (day === "21-10-2023") {
-      setWeek(8);
+    if (day === "30-10-2023") {
+      setWeek(10);
+    } else if (day === "31-10-2023") {
+      setWeek(10);
+    } else if (day === "1-11-2023") {
+      setWeek(10);
+    } else if (day === "2-11-2023") {
+      setWeek(10);
+    } else if (day === "3-11-2023") {
+      setWeek(10);
+    } else if (day === "4-11-2023") {
+      setWeek(10);
     } else if (day === "23-10-2023") {
       setWeek(9);
     } else if (day === "24-10-2023") {
@@ -190,7 +190,8 @@ const AutoSchedule = () => {
       classesOfSelectedGroupOnWeek9 &&
       selectedDayNumber
     ) {
-      if (week === 8) {
+      if (week === 10) {
+        /* Меняем неделю!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
         setSelectedDayLessons(
           classesOfSelectedGroupOnWeek8[0]?.filter(
             (e) => e.weekday === selectedDayNumber
@@ -223,7 +224,6 @@ const AutoSchedule = () => {
 
   const getDayToday = (tomorrow) => {
     const dateToday = new Date();
-
     if (tomorrow) {
       const timeOfDay = 60 * 60 * 1000 * 24;
       const tomorrowDate = new Date(dateToday.getTime() + timeOfDay);
@@ -240,8 +240,8 @@ const AutoSchedule = () => {
   };
   /* делаем активными дни в календаря */
   function disabledDate(current) {
-    const startDate = new Date(2023, 9, 16); // не забываем про месяцы -1
-    const endDate = new Date(2023, 9, 29); // дата окончания недели должна быть +1
+    const startDate = new Date(2023, 9, 23); // не забываем про месяцы -1
+    const endDate = new Date(2023, 10, 5); // дата окончания недели должна быть +1
     return (
       current.$d < startDate || // проверяем, что дата находится в заданном диапазоне
       current.$d > endDate ||
@@ -476,7 +476,7 @@ const AutoSchedule = () => {
             <DatePicker
               className="button"
               locale={locale}
-              format="DD-MM-YYYY"
+              format="D-MM-YYYY"
               placeholder="Выберите дату"
               disabledDate={disabledDate}
               onChange={onChange}
@@ -495,6 +495,7 @@ const AutoSchedule = () => {
               getBookmark={getBookmarkTeacher}
               day={day}
               week={week}
+              teachersComponent={true}
             />
           ) : (
             <AutoScheduleTeacherClassWrapper

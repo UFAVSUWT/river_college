@@ -71,34 +71,38 @@ const AutoScheduleTeachers = ({
       lessonsOfSelectedTeacher9.splice(0, lessonsOfSelectedTeacher9.length);
     }
     const lesOn8week = [];
-    groups8.forEach((e) =>
+    groups8.forEach((e) => {
+      const currentGroup = e.group_name;
       e.days.forEach((e) =>
         e.lessons?.forEach((e) =>
           e?.teachers?.[0]?.teacher_name === selectedTeacher &&
           e?.teachers?.[0]?.length !== 0
-            ? lesOn8week.push(e)
+            ? lesOn8week.push({ ...e, currentGroup: currentGroup })
             : null
         )
-      )
-    );
+      );
+    });
+
     setLessonsOfSelectedTeacher8(lesOn8week);
     const lesOn9week = [];
-    groups9.forEach((e) =>
+    groups9.forEach((e) => {
+      const currentGroup = e.group_name;
       e.days.forEach((e) =>
         e.lessons?.forEach((e) =>
           e?.teachers?.[0]?.teacher_name === selectedTeacher &&
           e?.teachers?.[0]?.length !== 0
-            ? lesOn9week.push(e)
+            ? lesOn9week.push({ ...e, currentGroup: currentGroup })
             : null
         )
-      )
-    );
+      );
+    });
     setLessonsOfSelectedTeacher9(lesOn9week);
   }, [selectedTeacher]);
 
   useEffect(() => {
     if (lessonsOfSelectedTeacher8 && lessonsOfSelectedTeacher9 && day && week) {
-      if (week === 8) {
+      /* меняем номер недели!!!!!!!!!!!!!!!!!!!!! */
+      if (week === 10) {
         setTeachersLessonsOnDay(
           lessonsOfSelectedTeacher8.filter((e) => e.date === day)
         );
@@ -115,7 +119,6 @@ const AutoScheduleTeachers = ({
     lessonsOfSelectedTeacher9,
     lessonsOfSelectedTeacher8,
   ]);
-
   return (
     <div className="auto-schedule__container-teacher-container">
       <Select
