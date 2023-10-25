@@ -19,13 +19,15 @@ const EditNewsPage = observer(() => {
   const { news } = useContext(Context);
   useEffect(() => {
     fetchOneNews(id).then((data) => setOneNews(data));
-  }, [id]);
-
+  }, []);
+  useEffect(() => {
+    setTitle(oneNews.title);
+  }, [oneNews]);
   /*   const [page, setPage] = useState("STUDENT_SPORT"); */
   /*   const [page, setPage] = useState(oneNews.page); */
 
   /*   const [title, setTitle] = useState("Новость"); */
-  const [title, setTitle] = useState(oneNews.title);
+  const [title, setTitle] = useState("");
   console.log(oneNews.title);
 
   const [form] = useForm();
@@ -33,7 +35,7 @@ const EditNewsPage = observer(() => {
   useEffect(() => {
     form.resetFields();
     form.setFieldsValue({ title: oneNews.title });
-  }, [form, title]);
+  }, [title]);
   /*   useEffect(() => {
      setPage(oneNews.page);
     setTitle(oneNews.title); 
@@ -59,18 +61,7 @@ const EditNewsPage = observer(() => {
       {" "}
       {oneNewKeys.length !== 0 ? (
         <section className="editor-news-page_wrapper">
-          <Form
-            name="basic"
-            /*  onFieldsChange={{
-              page: page,
-              title: title,
-            }} */
-            onFieldsChange={{ title: oneNews.title }}
-            /*  initialvalues={title} */
-            onFinishFailed={onFinishFailed}
-            autoComplete="off"
-          >
-            {/*  <Form.Item
+          {/*  <Form.Item
               label="Страница"
               name="page"
               rules={[{ required: true }]}
@@ -87,7 +78,7 @@ const EditNewsPage = observer(() => {
               />
             </Form.Item> */}
 
-            {/*   <Form.Item
+          {/*   <Form.Item
               label="Главная новость"
               name="main"
               valuePropName="checked"
@@ -95,7 +86,7 @@ const EditNewsPage = observer(() => {
               <Checkbox onChange={(e) => setMain(e.target.checked)} />
             </Form.Item> */}
 
-            {/*  <Form.Item label="Выберите карточку" name="card">
+          {/*  <Form.Item label="Выберите карточку" name="card">
               <Select
                 style={{ width: 300 }}
                 options={[
@@ -111,7 +102,7 @@ const EditNewsPage = observer(() => {
               />
             </Form.Item>
  */}
-            <Form.Item
+          {/*        <Form.Item
               label="Название новости"
               name="title"
               rules={[
@@ -120,11 +111,11 @@ const EditNewsPage = observer(() => {
                   message: "Введите название новости!",
                 },
               ]}
-            >
-              <Input onChange={(e) => setTitle(e.target.value)} />
-            </Form.Item>
+            > */}
+          <Input onChange={(e) => setTitle(e.target.value)} value={title} />
+          {/*  </Form.Item> */}
 
-            {/*  <Form.Item
+          {/*  <Form.Item
               label="Автор новости"
               name="author"
               rules={[
@@ -192,7 +183,6 @@ const EditNewsPage = observer(() => {
                 Добавить новость
               </Button>
             </Form.Item> */}
-          </Form>
         </section>
       ) : (
         "Загрузка..."
