@@ -1,12 +1,8 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName } from "../../../../utils/disabled";
-import Licenz from "../../../../assets/pdf/documentPage/licenz_vip20220916.pdf";
+import Licenz1 from "../../../../assets/pdf/educationPage/1. Лицензия.pdf";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
-import d230201 from "../../../../assets/pdf/educationPage/disciplin230201.pdf";
-import d230203 from "../../../../assets/pdf/educationPage/disciplin260203.pdf";
-import d230205 from "../../../../assets/pdf/educationPage/disciplin260205.pdf";
-import d230206 from "../../../../assets/pdf/educationPage/disciplin260206.pdf";
 import Pologenie_Parus from "../../../../assets/pdf/educationPage/Pologenie_Parus.pdf";
 import Pologhenie_DO from "../../../../assets/pdf/educationPage/Pologhenie_DO.pdf";
 import Pologhenie_EL_Sreda from "../../../../assets/pdf/educationPage/Pologhenie_EL_Sreda.pdf";
@@ -155,6 +151,8 @@ import Pologen_Fizra from "../../../../assets/pdf/educationPage/260203/Pologen_F
 
 import kpvr_VO from "../../../../assets/pdf/educationPage/260506/kpvr_VO.pdf";
 import rp_23_24 from "../../../../assets/pdf/educationPage/260506/rp_23_24.pdf";
+import InfoORealisUrovnyahObrazovaniya from "./info-o-realis-urovnyah-obrazovaniya";
+import SpisokObsheobrazovatelnDisciplin from "./spisok-obsheobrazovateln-disciplin";
 
 const Education = observer(() => {
   return (
@@ -179,203 +177,13 @@ const Education = observer(() => {
       <ul>
         <li className="doc__item">
           <PDF height={"25px"} width={"25px"} />
-          <a href={Licenz} target={"_blank"} rel="noreferrer">
+          <a href={Licenz1} target={"_blank"} rel="noreferrer">
             Выписка из реестра лицензий Федеральной службы по надзору в сфере
             образования и науки (16.09.2022)
           </a>
         </li>
       </ul>
-      <TableWrapper
-        title="Информация о сроке действия государственной аккредитации образовательной
-        программы, о языках, на которых осуществляется образование (обучение):"
-      >
-        <table>
-          <tbody itemProp="eduAccred">
-            <tr>
-              <td itemProp="eduCode">Код</td>
-              <td itemProp="eduName">
-                Наименование профессии, специальности, направления подготовки
-              </td>
-              <td itemProp="eduProf">
-                Образовательная программа, направленность, профиль, шифр и
-                наименование научной специальности
-              </td>
-              <td itemProp="eduLevel">Уровень образования</td>
-              <td itemProp="eduForm">Формы обучения</td>
-              <td itemProp="learningTerm">Срок получения образования</td>
-              <td itemProp="dateEnd">
-                Срок действия государственной аккредитации (дата окончания
-                действия свидетельства о государственной аккредитации)
-              </td>
-              <td itemProp="language">
-                Языки, на которых осуществляется образование (обучение)
-              </td>
-              <td itemProp="eduCode">
-                Учебные предметы, курсы, дисциплины (модули), предусмотренные
-                соответствующей образовательной программой
-              </td>
-              <td itemProp="eduCode">
-                Практики, предусмотренные соответствующей образовательной
-                программой
-              </td>
-              <td itemProp="eduCode">
-                Информация об использовании при реализации образовательных
-                программ электронного обучения и дистанционных образовательных
-                технологий
-              </td>
-            </tr>
-
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-              <td>высшее образование - специалитет</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-              <td style={{ backgroundColor: "red" }}>-</td>
-            </tr>
-
-            <tr>
-              <td rowSpan="3">26.02.03</td>
-              <td rowSpan="3">"Судовождение" (углубленная подготовка)</td>
-              <td rowSpan="3">"Судовождение" (углубленная подготовка)</td>
-              <td rowSpan="3">среднее профессиональное образование</td>
-              <td>очная форма</td>
-              <td>
-                4 года 10 мес <br /> 3 года 10 мес
-              </td>
-              <td rowSpan="3">27.02.2025</td>
-              <td rowSpan="3">Русский</td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-            </tr>
-            <tr>
-              <td>очно-заочная форма</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>заочная форма</td>
-              <td>
-                4 года 10 мес <br /> 5 лет 10 мес
-              </td>
-            </tr>
-            <tr>
-              <td rowSpan="3">26.02.05 </td>
-              <td rowSpan="3">
-                "Эксплуатация судовых энергетических установок" (базовый
-                уровень)
-              </td>
-              <td rowSpan="3">
-                "Эксплуатация судового электрооборудования и средств автоматики"
-                (базовый уровень)
-              </td>
-              <td rowSpan="3">среднее профессиональное образование</td>
-              <td>очная форма</td>
-              <td>
-                3 года 10 мес <br /> 2 года 10 мес
-              </td>
-              <td rowSpan="3">27.02.2025</td>
-              <td rowSpan="3">Русский</td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-            </tr>
-            <tr>
-              <td>очно-заочная форма</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>заочная форма</td>
-              <td>
-                4 года 10 мес <br /> 3 года 10 мес
-              </td>
-            </tr>
-            <tr>
-              <td rowSpan="3">26.02.06</td>
-              <td rowSpan="3">
-                "Эксплуатация судового электрооборудования и средств автоматики"
-                (базовый уровень)
-              </td>
-              <td rowSpan="3">
-                "Эксплуатация судовых энергетических установок" (базовый
-                уровень)
-              </td>
-              <td rowSpan="3">среднее профессиональное образование</td>
-              <td>очная форма</td>
-              <td>3 года 10 мес</td>
-              <td rowSpan="3">27.02.2025</td>
-              <td rowSpan="3">Русский</td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-            </tr>
-            <tr>
-              <td>очно-заочная форма</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>заочная форма</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td rowSpan="3">23.02.01</td>
-              <td rowSpan="3">
-                "Организация перевозок и управление на транспорте" (по видам)
-                (базовый уровень)
-              </td>
-              <td rowSpan="3">
-                "Организация перевозок и управление на транспорте" (по видам)
-                (базовый уровень)
-              </td>
-              <td rowSpan="3">среднее профессиональное образование</td>
-              <td>очная форма</td>
-              <td>3 года 10 мес</td>
-              <td rowSpan="3">27.02.2025</td>
-              <td rowSpan="3">Русский</td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-              <td rowSpan="3" style={{ backgroundColor: "red" }}>
-                -
-              </td>
-            </tr>
-            <tr>
-              <td>очно-заочная форма</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>заочная форма</td>
-              <td>2 года 10 мес</td>
-            </tr>
-          </tbody>
-        </table>
-      </TableWrapper>
+      <InfoORealisUrovnyahObrazovaniya />
       <h3
         style={{ backgroundColor: "red" }}
         className={`common__container-title ${toggleClassName(
@@ -1099,34 +907,7 @@ const Education = observer(() => {
         Реализуемые образовательные программы (учебные предметы, курсы,
         дисциплины (модули), практики), в том числе адаптированные
       </h3>
-      <ul>
-        <li className="doc__item">
-          <PDF height={"25px"} width={"25px"} />
-          <a href={d230203} target={"_blank"} rel="noreferrer">
-            26.02.03 "Судовождение"{" "}
-          </a>
-        </li>
-        <li className="doc__item">
-          <PDF height={"25px"} width={"25px"} />
-          <a href={d230206} target={"_blank"} rel="noreferrer">
-            26.02.06 "Эксплуатация судового электрооборудования и средств
-            автоматики"
-          </a>
-        </li>
-        <li className="doc__item">
-          <PDF height={"25px"} width={"25px"} />
-          <a href={d230205} target={"_blank"} rel="noreferrer">
-            26.02.05 "Эксплуатация судовых энергетических установок"
-          </a>
-        </li>
-        <li className="doc__item">
-          <PDF height={"25px"} width={"25px"} />
-          <a href={d230201} target={"_blank"} rel="noreferrer">
-            23.02.01 "Организация перевозок и управление на транспорте (по
-            видам)
-          </a>
-        </li>
-      </ul>
+      <SpisokObsheobrazovatelnDisciplin />
 
       <TableWrapper title="Информация по неадаптированным образовательным программам:">
         <table>
