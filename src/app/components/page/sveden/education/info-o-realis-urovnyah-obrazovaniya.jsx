@@ -3,6 +3,7 @@ import TableWrapper from "../../../common/tableWrapper/TableWrapper";
 const InfoORealisUrovnyahObrazovaniya = () => {
   return (
     <TableWrapper
+      itemProp="languageEl"
       title="Информация о реализуемых уровнях 
 образования, о формах обучения, нормативных сроках 
 обучения, сроке действия государственной 
