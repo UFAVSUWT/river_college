@@ -185,7 +185,6 @@ const Education = observer(() => {
       </ul>
       <InfoORealisUrovnyahObrazovaniya />
       <h3
-        style={{ backgroundColor: "red" }}
         className={`common__container-title ${toggleClassName(
           "title",
           "title-white",
@@ -194,28 +193,29 @@ const Education = observer(() => {
         )}`}
       >
         Информация о профессионально-общественной аккредитации образовательной
-        программы:
+        программы: - образовательные программы, реализуемые в образовательном
+        учреждении, не имеют профессионально-общественной аккредитации.
       </h3>
       <div className="common__container scroll-table struct__scrollTable">
         <table className="">
           <tbody>
-            <tr>
-              <td>Код</td>
-              <td>
+            <tr itemProp="eduPOAccred">
+              <td itemProp="eduCode">Код</td>
+              <td itemProp="eduName">
                 Наименование профессии, специальности, направления подготовки
               </td>
-              <td>Наименование аккредитующей организации</td>
-              <td>
+              <td itemProp="orgName">Наименование аккредитующей организации</td>
+              <td itemProp="dateEnd">
                 Срок действия профессионально-общественной аккредитации (дата
                 окончания действия свидетельства о профессионально-общественной
                 аккредитации)
               </td>
             </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
+            <tr itemProp="eduPOAccred">
+              <td itemProp="eduCode">-</td>
+              <td itemProp="eduName">-</td>
+              <td itemProp="orgName">-</td>
+              <td itemProp="dateEnd">-</td>
             </tr>
           </tbody>
         </table>
