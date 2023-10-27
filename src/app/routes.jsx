@@ -81,6 +81,10 @@ import CorrespondenceStudents from "./components/page/learning/correspondence-st
 import Dormitory from "./components/page/enrollee/applicants/dormitory/dormitory";
 import EducationsPlatforms from "./components/page/learning/educations-platforms";
 import AutoSchedule from "./components/page/schedule/auto-schedule";
+import LocalActs from "./components/page/sveden/education/local-acts";
+import Navigation2020FOS from "./components/page/educationsPrograms/260203/Navigation2020FOS";
+import Navigation2019FOS from "./components/page/educationsPrograms/260203/Navigation2019FOS";
+import Navigation2019FOSZ from "./components/page/educationsPrograms/260203/Navigation2019FOS-Z";
 const routes = () => [
   {
     path: "",
@@ -116,6 +120,9 @@ const routes = () => [
         path: "navigation2019",
         element: <Navigation2019 />,
       },
+      { path: "navigation2020FOS", element: <Navigation2020FOS /> },
+      { path: "navigation2019FOS", element: <Navigation2019FOS /> },
+      { path: "navigation2019FOSZ", element: <Navigation2019FOSZ /> },
       {
         path: "navigation2020",
         element: <Navigation2020 />,
@@ -166,6 +173,10 @@ const routes = () => [
         element: <MarineElectricalEquipment2020 />,
       },
     ],
+  },
+  {
+    path: "local-acts",
+    element: <LocalActs />,
   },
   {
     path: "schedule",

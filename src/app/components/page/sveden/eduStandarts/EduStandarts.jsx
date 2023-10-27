@@ -48,7 +48,7 @@ const EduStandarts = observer(() => {
           <tr>
             <td>
               <ul>
-                <li className="doc__item ">
+                <li className="doc__item">
                   <PDF width={"25px"} height={"25px"} />
                   <a
                     itemProp="eduFedDoc"
