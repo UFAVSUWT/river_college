@@ -84,6 +84,8 @@ import Navigation2021 from "./components/page/educationsPrograms/260203/Navigati
 import Navigation2021FOS from "./components/page/educationsPrograms/260203/Navigation2021FOS";
 import MarineElectricalEquipment2021 from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2021";
 import MarineElectricalEquipment2021FOS from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2021FOS";
+import ShipPowerPlants2021 from "./components/page/educationsPrograms/260205/ShipPowerPlants2021";
+import ShipPowerPlants2021FOS from "./components/page/educationsPrograms/260205/ShipPowerPlants2021FOS";
 const routes = () => [
   {
     path: "",
@@ -139,6 +141,14 @@ const routes = () => [
       {
         path: "shipPowerPlants2020FOS",
         element: <ShipPowerPlants2020FOS />,
+      },
+      {
+        path: "shipPowerPlants2021",
+        element: <ShipPowerPlants2021 />,
+      },
+      {
+        path: "shipPowerPlants2021FOS",
+        element: <ShipPowerPlants2021FOS />,
       },
       {
         path: "shipPowerPlantsVO2023",

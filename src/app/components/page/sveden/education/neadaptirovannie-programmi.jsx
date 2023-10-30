@@ -10,6 +10,7 @@ import SPOEkspluatSudovEnergUstanovok_20_260205 from "./neadaptirovannieProgramm
 import SPOOrganiz_perevoz_upravlenia_20_230201 from "./neadaptirovannieProgrammi/20_230201_SPO_organiz_perevoz_upravleniya";
 import SPOSudovojdenie_21_260203 from "./neadaptirovannieProgrammi/21_260203_SPO_sudovojdenie";
 import SPOEkspluatSudovEelectrooborud_21_260206 from "./neadaptirovannieProgrammi/21_260206_SPO_expluat_sudov_electroob";
+import SPOEkspluatSudovEnergUstanovok_21_260205 from "./neadaptirovannieProgrammi/21_260205_SPO_expluat_sudov_energ_ustanovok";
 
 const NeadaptirovannieProgrammi = () => {
   return (
@@ -64,6 +65,7 @@ const NeadaptirovannieProgrammi = () => {
           <SPOSudovojdenie_19_Z_260203 PDF={PDF} />
           <SPOEkspluatSudovEelectrooborud_21_260206 PDF={PDF} />
           <SPOEkspluatSudovEelectrooborud_20_260206 PDF={PDF} />
+          <SPOEkspluatSudovEnergUstanovok_21_260205 PDF={PDF} />
           <SPOEkspluatSudovEnergUstanovok_20_260205 PDF={PDF} />
           <SPOOrganiz_perevoz_upravlenia_20_230201 PDF={PDF} />
         </tbody>
