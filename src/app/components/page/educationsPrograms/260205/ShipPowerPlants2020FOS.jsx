@@ -1,17 +1,16 @@
 import React from "react";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
-import RP_UCH_PR_260203 from "../../../../assets/pdf/educationPage/260203/RP_pr_prakt_2018ugl_3-10.pdf";
-import FOS_PR_PR_260203 from "../../../../assets/pdf/educationPage/260203/FOS_pr_prakt_2018ugl_3-10.pdf";
+import RP_260205 from "../../../../assets/pdf/educationPage/260205/RP_Uch_prakt_260205.pdf";
+import FOS_UCH_PR_260205 from "../../../../assets/pdf/educationPage/260205/FOS_Uch_prakt_260205.pdf";
+import RP_UCH_PR_260205 from "../../../../assets/pdf/educationPage/260205/RP_Pr_prakt_260205.pdf";
+import FOS_PR_PR_260205 from "../../../../assets/pdf/educationPage/260205/FOS_Pr_prakt_260205.pdf";
 
-import RP_260203 from "../../../../assets/pdf/educationPage/260203/RP_Uch_prakt_2018ugl_3-10.pdf";
-import FOS_UCH_PR_260203 from "../../../../assets/pdf/educationPage/260203/FOS_Uch_prakt_2018ugl_3-10.pdf";
-
-const Navigation2020FOS = () => {
+const ShipPowerPlants2020FOS = () => {
   return (
     <section className="workProgramm__wrapper">
       <h1>
         Ссылка на рабочие программы практик, предусмотренных образовательной
-        программой 26.02.03 "Судовождение"
+        программой 26.02.05 "Эксплуатация судовых энергетических установок"
       </h1>
       <h2>Рабочие программы практик</h2>
       <table>
@@ -28,7 +27,7 @@ const Navigation2020FOS = () => {
             <td>
               {" "}
               <PDF height={"25px"} width={"25px"} />
-              <a href={RP_260203} target={"_blank"} rel="noreferrer">
+              <a href={RP_260205} target={"_blank"} rel="noreferrer">
                 Рабочая программа учебной практики
               </a>
             </td>
@@ -39,8 +38,8 @@ const Navigation2020FOS = () => {
             <td>
               {" "}
               <PDF height={"25px"} width={"25px"} />
-              <a href={RP_UCH_PR_260203} target={"_blank"} rel="noreferrer">
-                Рабочая программа производственной практики, (очная)
+              <a href={RP_UCH_PR_260205} target={"_blank"} rel="noreferrer">
+                Рабочая программа производственной практики
               </a>
             </td>
             <td></td>
@@ -62,8 +61,8 @@ const Navigation2020FOS = () => {
             <td>
               {" "}
               <PDF height={"25px"} width={"25px"} />
-              <a href={FOS_UCH_PR_260203} target={"_blank"} rel="noreferrer">
-                ФОС учебной практики (очная)
+              <a href={FOS_UCH_PR_260205} target={"_blank"} rel="noreferrer">
+                Фонд оценочных средств по учебной практике
               </a>
             </td>
             <td></td>
@@ -73,8 +72,8 @@ const Navigation2020FOS = () => {
             <td>
               {" "}
               <PDF height={"25px"} width={"25px"} />
-              <a href={FOS_PR_PR_260203} target={"_blank"} rel="noreferrer">
-                ФОС производственной практики (очная)
+              <a href={FOS_PR_PR_260205} target={"_blank"} rel="noreferrer">
+                Фонд оценочных средств по производственной практике
               </a>
             </td>
             <td></td>
@@ -84,4 +83,4 @@ const Navigation2020FOS = () => {
     </section>
   );
 };
-export default Navigation2020FOS;
+export default ShipPowerPlants2020FOS;

@@ -52,18 +52,10 @@ import DraftOrdersForEnrollment from "./components/page/enrollee/applicants/moni
 import EducationPrograms from "./layouts/EducationPrograms";
 import OrganizationOfTransportation from "./components/page/educationsPrograms/230201/OrganizationOfTransportation";
 import OrganizationOfTransportation2020 from "./components/page/educationsPrograms/230201/OrganizationOfTransportation2020";
-import Navigation2017 from "./components/page/educationsPrograms/260203/Navigation2017";
-import Navigation2018 from "./components/page/educationsPrograms/260203/Navigation2018";
 import Navigation2019 from "./components/page/educationsPrograms/260203/Navigation2019";
 import Navigation2020 from "./components/page/educationsPrograms/260203/Navigation2020";
 import NavigationDepth from "./components/page/educationsPrograms/260203/NavigationDepth";
-import ShipPowerPlants2017 from "./components/page/educationsPrograms/260205/ShipPowerPlants2017";
-import ShipPowerPlants2019 from "./components/page/educationsPrograms/260205/ShipPowerPlants2019";
-import ShipPowerPlants2018 from "./components/page/educationsPrograms/260205/ShipPowerPlants2018";
 import ShipPowerPlants2020 from "./components/page/educationsPrograms/260205/ShipPowerPlants2020";
-import MarineElectricalEquipment2017 from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2017";
-import MarineElectricalEquipment2018 from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2018";
-import MarineElectricalEquipment2019 from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2019";
 import MarineElectricalEquipment2020 from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2020";
 import EducationLvlRequirements from "./components/page/enrollee/applicants/reception/educationLvlRequirements/EducationLvlRequirements";
 import AdmissionConditions from "./components/page/enrollee/applicants/reception/admissionConditions/AdmissionConditions";
@@ -85,6 +77,9 @@ import LocalActs from "./components/page/sveden/education/local-acts";
 import Navigation2020FOS from "./components/page/educationsPrograms/260203/Navigation2020FOS";
 import Navigation2019FOS from "./components/page/educationsPrograms/260203/Navigation2019FOS";
 import Navigation2019FOSZ from "./components/page/educationsPrograms/260203/Navigation2019FOS-Z";
+import MarineElectricalEquipment2020FOS from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2020FOS";
+import ShipPowerPlants2020FOS from "./components/page/educationsPrograms/260205/ShipPowerPlants2020FOS";
+import OrganizationOfTransportation2020FOS from "./components/page/educationsPrograms/230201/OrganizationOfTransportation2020FOS";
 const routes = () => [
   {
     path: "",
@@ -109,12 +104,8 @@ const routes = () => [
         element: <OrganizationOfTransportation2020 />,
       },
       {
-        path: "navigation2017",
-        element: <Navigation2017 />,
-      },
-      {
-        path: "navigation2018",
-        element: <Navigation2018 />,
+        path: "organizationOfTransportation2020FOS",
+        element: <OrganizationOfTransportation2020FOS />,
       },
       {
         path: "navigation2019",
@@ -132,20 +123,12 @@ const routes = () => [
         element: <NavigationDepth />,
       },
       {
-        path: "shipPowerPlants2017",
-        element: <ShipPowerPlants2017 />,
-      },
-      {
-        path: "shipPowerPlants2018",
-        element: <ShipPowerPlants2018 />,
-      },
-      {
-        path: "shipPowerPlants2019",
-        element: <ShipPowerPlants2019 />,
-      },
-      {
         path: "shipPowerPlants2020",
         element: <ShipPowerPlants2020 />,
+      },
+      {
+        path: "shipPowerPlants2020FOS",
+        element: <ShipPowerPlants2020FOS />,
       },
       {
         path: "shipPowerPlantsVO2023",
@@ -157,20 +140,12 @@ const routes = () => [
       },
 
       {
-        path: "marineElectricalEquipment2017",
-        element: <MarineElectricalEquipment2017 />,
-      },
-      {
-        path: "marineElectricalEquipment2018",
-        element: <MarineElectricalEquipment2018 />,
-      },
-      {
-        path: "marineElectricalEquipment2019",
-        element: <MarineElectricalEquipment2019 />,
-      },
-      {
         path: "marineElectricalEquipment2020",
         element: <MarineElectricalEquipment2020 />,
+      },
+      {
+        path: "marineElectricalEquipment2020FOS",
+        element: <MarineElectricalEquipment2020FOS />,
       },
     ],
   },
