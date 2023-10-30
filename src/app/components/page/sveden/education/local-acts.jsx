@@ -31,6 +31,7 @@ const LocalActs = () => {
               {" "}
               <PDF height={"25px"} width={"25px"} />
               <a
+                itemProp="methodology"
                 href={Pologenie_attest_vipusk}
                 target={"_blank"}
                 rel="noreferrer"
@@ -45,7 +46,12 @@ const LocalActs = () => {
             <td>
               {" "}
               <PDF height={"25px"} width={"25px"} />
-              <a href={Pologenie_OOP} target={"_blank"} rel="noreferrer">
+              <a
+                itemProp="methodology"
+                href={Pologenie_OOP}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Положение об основной образовательной программе
               </a>
             </td>
@@ -57,6 +63,7 @@ const LocalActs = () => {
               {" "}
               <PDF height={"25px"} width={"25px"} />
               <a
+                itemProp="methodology"
                 href={Programma_IA_SV_uglubl}
                 target={"_blank"}
                 rel="noreferrer"
@@ -72,7 +79,12 @@ const LocalActs = () => {
             <td>
               {" "}
               <PDF height={"25px"} width={"25px"} />
-              <a href={FOS_IA_SV_uglubl} target={"_blank"} rel="noreferrer">
+              <a
+                itemProp="methodology"
+                href={FOS_IA_SV_uglubl}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Фонды оценочных средств итоговой аттестации для специальности
                 260203 "Судовождение" (углубленная)
               </a>
@@ -84,7 +96,12 @@ const LocalActs = () => {
             <td>
               {" "}
               <PDF height={"25px"} width={"25px"} />
-              <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+              <a
+                itemProp="methodology"
+                href={Pologhenie_DO}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Положение о дистанционном обучении
               </a>
             </td>
@@ -95,7 +112,12 @@ const LocalActs = () => {
             <td>
               {" "}
               <PDF height={"25px"} width={"25px"} />
-              <a href={Pologenie_Parus} target={"_blank"} rel="noreferrer">
+              <a
+                itemProp="methodology"
+                href={Pologenie_Parus}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Положение о создании электронных учебных курсов в системе
                 дистанционного обучения "Парус"
               </a>
@@ -107,7 +129,12 @@ const LocalActs = () => {
             <td>
               {" "}
               <PDF height={"25px"} width={"25px"} />
-              <a href={Pologhenie_kontrolDO} target={"_blank"} rel="noreferrer">
+              <a
+                itemProp="methodology"
+                href={Pologhenie_kontrolDO}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Положение о текущем контроле и промежуточной аттестации
                 обучающихся с применением дистанционных образовательных
                 технологий
@@ -120,7 +147,12 @@ const LocalActs = () => {
             <td>
               {" "}
               <PDF height={"25px"} width={"25px"} />
-              <a href={Pologhenie_EL_Sreda} target={"_blank"} rel="noreferrer">
+              <a
+                itemProp="methodology"
+                href={Pologhenie_EL_Sreda}
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 Положение об электронной информационно-образовательной среде
               </a>
             </td>
@@ -132,6 +164,7 @@ const LocalActs = () => {
               {" "}
               <PDF height={"25px"} width={"25px"} />
               <a
+                itemProp="methodology"
                 href={Programma_IA_SV_uglubl}
                 target={"_blank"}
                 rel="noreferrer"

@@ -8,6 +8,8 @@ import SPOSudovojdenie_19_Z_260203 from "./neadaptirovannieProgrammi/19_Z_260203
 import SPOEkspluatSudovEelectrooborud_20_260206 from "./neadaptirovannieProgrammi/20_260206_SPO_expluat_sudov_electroob";
 import SPOEkspluatSudovEnergUstanovok_20_260205 from "./neadaptirovannieProgrammi/20_260205_SPO_expluat_sudov_energ_ustanovok";
 import SPOOrganiz_perevoz_upravlenia_20_230201 from "./neadaptirovannieProgrammi/20_230201_SPO_organiz_perevoz_upravleniya";
+import SPOSudovojdenie_21_260203 from "./neadaptirovannieProgrammi/21_260203_SPO_sudovojdenie";
+import SPOEkspluatSudovEelectrooborud_21_260206 from "./neadaptirovannieProgrammi/21_260206_SPO_expluat_sudov_electroob";
 
 const NeadaptirovannieProgrammi = () => {
   return (
@@ -56,9 +58,11 @@ const NeadaptirovannieProgrammi = () => {
             </td>
           </tr>
           <VOEkspluatSudEnergUstanovok_23_260506 PDF={PDF} />
+          <SPOSudovojdenie_21_260203 PDF={PDF} />
           <SPOSudovojdenie_20_260203 PDF={PDF} />
           <SPOSudovojdenie_19_260203 PDF={PDF} />
           <SPOSudovojdenie_19_Z_260203 PDF={PDF} />
+          <SPOEkspluatSudovEelectrooborud_21_260206 PDF={PDF} />
           <SPOEkspluatSudovEelectrooborud_20_260206 PDF={PDF} />
           <SPOEkspluatSudovEnergUstanovok_20_260205 PDF={PDF} />
           <SPOOrganiz_perevoz_upravlenia_20_230201 PDF={PDF} />

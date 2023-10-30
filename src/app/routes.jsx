@@ -80,6 +80,10 @@ import Navigation2019FOSZ from "./components/page/educationsPrograms/260203/Navi
 import MarineElectricalEquipment2020FOS from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2020FOS";
 import ShipPowerPlants2020FOS from "./components/page/educationsPrograms/260205/ShipPowerPlants2020FOS";
 import OrganizationOfTransportation2020FOS from "./components/page/educationsPrograms/230201/OrganizationOfTransportation2020FOS";
+import Navigation2021 from "./components/page/educationsPrograms/260203/Navigation2021";
+import Navigation2021FOS from "./components/page/educationsPrograms/260203/Navigation2021FOS";
+import MarineElectricalEquipment2021 from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2021";
+import MarineElectricalEquipment2021FOS from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2021FOS";
 const routes = () => [
   {
     path: "",
@@ -111,13 +115,19 @@ const routes = () => [
         path: "navigation2019",
         element: <Navigation2019 />,
       },
-      { path: "navigation2020FOS", element: <Navigation2020FOS /> },
+
       { path: "navigation2019FOS", element: <Navigation2019FOS /> },
       { path: "navigation2019FOSZ", element: <Navigation2019FOSZ /> },
       {
         path: "navigation2020",
         element: <Navigation2020 />,
       },
+      { path: "navigation2020FOS", element: <Navigation2020FOS /> },
+      {
+        path: "navigation2021",
+        element: <Navigation2021 />,
+      },
+      { path: "navigation2021FOS", element: <Navigation2021FOS /> },
       {
         path: "navigationDepth",
         element: <NavigationDepth />,
@@ -138,7 +148,6 @@ const routes = () => [
         path: "shipPowerPlantsVO2023FOS",
         element: <ShipPowerPlantsVO2023FOS />,
       },
-
       {
         path: "marineElectricalEquipment2020",
         element: <MarineElectricalEquipment2020 />,
@@ -146,6 +155,14 @@ const routes = () => [
       {
         path: "marineElectricalEquipment2020FOS",
         element: <MarineElectricalEquipment2020FOS />,
+      },
+      {
+        path: "marineElectricalEquipment2021",
+        element: <MarineElectricalEquipment2021 />,
+      },
+      {
+        path: "marineElectricalEquipment2021FOS",
+        element: <MarineElectricalEquipment2021FOS />,
       },
     ],
   },
