@@ -70,6 +70,7 @@ import DropDown from "../../../common/dropDown/DropDown";
 
 import vipiska_iz_reestra11042023 from "../../../../assets/pdf/documentPage/vipiska_iz_reestra11.04.2023.pdf";
 import SEZ_predreisovaya from "../../../../assets/pdf/documentPage/SEZ_predreisovaya.pdf";
+import polojenie_ob_electron_obr_srede from "../../../../assets/pdf/documentPage/ПЛЖ об ЭИОС 2017.pdf";
 
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
 import { ReactComponent as DOC } from "../../../../assets/svg/office/word.svg";
@@ -390,6 +391,16 @@ const MainDocs = ({ isActive }) => {
                 технологий и электронного обучения при реализации программ
                 дополнительного образования детей и взрослых, дополнительного
                 профессионального образования и профессионального обучения
+              </a>
+            </li>
+            <li className="doc__item">
+              <PDF height={"40px"} width={"40px"} />
+              <a
+                href={polojenie_ob_electron_obr_srede}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                Положение об электронной информационно-образовательной среде
               </a>
             </li>
           </ul>
