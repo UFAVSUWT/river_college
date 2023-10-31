@@ -1,16 +1,15 @@
 import React from "react";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
-import rp_ucheb_prakt from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/6. Рабочая программа учебной практики.pdf";
-import rp_proizv_prakt from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/6. Рабочая программа производственной практики.pdf";
-import rp_diplom_prakt from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/6. Рабочая программа преддипломной практики.pdf";
+import rp_ucheb_prakt from "../../../../assets/pdf/educationPage/260206/ЭМ 2022 гп/6. Рабочая программа учебной практики 2022.pdf";
+import rp_proizv_prakt from "../../../../assets/pdf/educationPage/260206/ЭМ 2022 гп/6. Рабочая программа производственной практики 2022.pdf";
 
-const ShipPowerPlants2021FOS = () => {
+const MarineElectricalEquipment2022FOS = () => {
   return (
     <section className="workProgramm__wrapper">
       <h1>
         Ссылка на рабочие программы практик, предусмотренных образовательной
-        программой 26.02.05 "Эксплуатация судовых энергетических установок" (год
-        набора 2021)
+        программой 26.02.06 "Эксплуатация судового электрооборудования и средств
+        автоматики"
       </h1>
       <h2>Рабочие программы практик</h2>
       <table>
@@ -44,20 +43,9 @@ const ShipPowerPlants2021FOS = () => {
             </td>
             <td></td>
           </tr>
-          <tr>
-            <td>3</td>
-            <td>
-              {" "}
-              <PDF height={"25px"} width={"25px"} />
-              <a href={rp_diplom_prakt} target={"_blank"} rel="noreferrer">
-                Рабочая программа производственной практики
-              </a>
-            </td>
-            <td></td>
-          </tr>
         </tbody>
       </table>
-      {/*  <h2>ФОНД ОЦЕНОЧНЫХ СРЕДСТВ</h2>
+      {/*      <h2>ФОНД ОЦЕНОЧНЫХ СРЕДСТВ</h2>
       <table>
         <thead>
           <tr>
@@ -72,8 +60,8 @@ const ShipPowerPlants2021FOS = () => {
             <td>
               {" "}
               <PDF height={"25px"} width={"25px"} />
-              <a href={FOS_UCH_PR_260203} target={"_blank"} rel="noreferrer">
-                ФОС учебной практики (очная)
+              <a href={FOS_UCH_PR_260206} target={"_blank"} rel="noreferrer">
+                Фонд оценочных средств по учебной практике
               </a>
             </td>
             <td></td>
@@ -83,8 +71,19 @@ const ShipPowerPlants2021FOS = () => {
             <td>
               {" "}
               <PDF height={"25px"} width={"25px"} />
-              <a href={FOS_PR_PR_260203} target={"_blank"} rel="noreferrer">
-                ФОС производственной практики (очная)
+              <a href={FOS_PR_PR_260206} target={"_blank"} rel="noreferrer">
+                Фонд оценочных средств по производственной практике
+              </a>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              {" "}
+              <PDF height={"25px"} width={"25px"} />
+              <a href={RP_UCH_PR_Z_260206} target={"_blank"} rel="noreferrer">
+                Фонд оценочных средств по преддипломной практике
               </a>
             </td>
             <td></td>
@@ -94,4 +93,4 @@ const ShipPowerPlants2021FOS = () => {
     </section>
   );
 };
-export default ShipPowerPlants2021FOS;
+export default MarineElectricalEquipment2022FOS;

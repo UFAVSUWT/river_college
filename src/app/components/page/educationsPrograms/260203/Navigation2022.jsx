@@ -1,49 +1,46 @@
 import React from "react";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
-import astronomia from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Астрономия 26.02.05, 2021 г.п. РУП 11.pdf";
-import bj_sv_rup from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП БЖ  26.02.05, 2021 г.п. РУП 11.pdf";
-import gidravlika from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Гидравлика 26.02.05, 2021 г.п. РУП 11.pdf";
-import injenern_graf from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Инженерная графика 26.02.05, 2021 г.п. РУП 11.pdf";
-import inostr_v_prof from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Иностранный язык 1 курс  26.02.05, 2021 г.п. РУП 11.pdf";
-import in_1 from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Иностранный язык в профессиональной деятельности  26.02.05, 2021 г.п. РУП 11.pdf";
-import inform1 from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Информатика  26.02.05, 2021 СМ 1 курс 11.pdf";
-import inform2 from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Информатика и информационные технологии в профессиональной деятельности 23.02.05. 2021гп РУП 11.pdf";
-import istor1 from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП История 1 курс 26.02.05, 2021 г.п. РУП 11.pdf";
-import istor2 from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП История 26.02.05, 2021 г.п. РУП 11.pdf";
-import literatura from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Литература 26.02.05, 2021 г.п. РУП 11.pdf";
-import matem1 from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Математика  26.02.05, 2021 СМ 1 курс 11.pdf";
-import matem2 from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Математика 26.02.05  2021 гп РУП 11.pdf";
-import material from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Материаловедение 26.02.05, 2021 г.п. РУП 11.pdf";
-import metrol from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Метрология и стандартизация 26.02.05, 2021 г.п. РУП 11.pdf";
-import obj from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП ОБЖ 26.02.05, 2021 г.п. РУП 11.pdf";
-import osnov_filos1 from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Основы философии 26.02.05, 2021 г.п. РУП 11.pdf";
-import osnov_fin from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Основы финансовой грамотности 26.02.05, 2021 г.п. РУП 11.pdf";
-import ohr_truda from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Охрана труда 26.02.05, 2021 г.п., РУП 11.pdf";
-import pm1 from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП ПМ 1, 26.02.05, 2021 г.п. РУП 11.pdf";
-import pm2 from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП ПМ 2, 26.02.05, 2021 г.п. РУП 11.pdf";
-import pm3 from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП ПМ 3, 26.02.05, 2021 г.п. РУП 11.pdf";
-import pm4 from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП ПМ 4, 26.02.05, 2021 г.п. РУП 11.pdf";
-import pm02 from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП ПМ.02 Обеспечение безопасности плавания 26.02.05 2021 г.п. РУП 11.pdf";
-import psiholog from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Психология общения 26.02.05, 2021 г.п. РУП 11.pdf";
-import rodnoy from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Родной язык 26.02.05 2021 г.п.РУП 11.pdf";
-import russkiy from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Русский язык 26.02.05, 2021 г.п. РУП 11.pdf";
-import tus from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП ТУС 26.02.05, 2021  г.п. РУП 11.pdf";
-import teh_meh from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Техническая Механика 26.02.05, 2020 г.п. РУП 11.pdf";
-import teh_termodin from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Техническая термодинамика и теплопередача 26.02.05, 2021 г.п. РУП 11.pdf";
-import fizika from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Физика 26.02.05, 2021 г.п. РУП 11.pdf";
-import fizra1 from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Физкультура 1 курс 26.02.05, 2021 г.п. РУП 11.pdf";
-import fizra2 from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Физкультура 26.02.05, 2021  г.п. РУП 11.pdf";
-import chimia from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Химия 26.02.05, 2021 г.п. РУП 11.pdf";
-import electronika from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП Электроника и электротехника 26.02.05, 2021 г.п. РУП 11.pdf";
-import rpeop from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/4. Рабочие программы/РП ЭОП 26.02.05, 2021 г.п. РУП 11.pdf";
+import astronomia from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Астрономия.pdf";
+import bj_sv_rup from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Безопасности жизнедеятельности.pdf";
+import in_yaz from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Инженерная графика.pdf";
+import injenern_graf from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Иностранный в профессиональной деятельности.pdf";
+import inostr_v_prof from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Иностранный язык 1 курс.pdf";
+import in_1 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Информатика  1.pdf";
+import inform1 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Информатика  2.pdf";
+import inform2 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП История 1.pdf";
+import inform3 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Литература.pdf";
+import istor1 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Математика    1 курс.pdf";
+import istor2 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Математика   2курс.pdf";
+import literatura from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Материаловедение.pdf";
+import matem1 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Метрология и стандартизация.pdf";
+import matem2 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Механика.pdf";
+import material from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП ОБЖ.pdf";
+import metrol from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Основы философии.pdf";
+import mehanika from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Основы финансовой грамотности в профессиональной деятельности.pdf";
+import obj from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП ПМ 1.pdf";
+import osnov_filos1 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП ПМ 2.pdf";
+import osnov_fin from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП ПМ 3.pdf";
+import pm1 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП ПМ 4.pdf";
+import pm12 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП ПОПД.pdf";
+import pm2 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Психология общения.pdf";
+import pm3 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Родной язык.pdf";
+import pm4 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Русский язык.pdf";
+import pm5 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Теория устройства судна.pdf";
+import popd from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Техническая термодинамика и теплопередача.pdf";
+import psiholog from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Физика.pdf";
+import rodnoy from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Физкультура    1 курс.pdf";
+import russkiy from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Физкультура    2-5 курс.pdf";
+import tus from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Химия.pdf";
+import fizika from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Экологические основы природопользования.pdf";
+import fizra1 from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/4. РП/РП Электроника и электротехника.pdf";
 
-const ShipPowerPlants2021 = () => {
+const Navigation2022 = () => {
   return (
     <section className="workProgramm__wrapper">
       <h1>
         Основная профессиональная образовательная программа среднего
-        профессионального образования для специальности 26.02.05 "Эксплуатация
-        судовых энергетических установок" (год набора 2021)
+        профессионального образования для специальности 26.02.03 "Судовождение"
+        (углубленная подготовка) (год набора 2022)
       </h1>
       <h2>Рабочие программы</h2>
       <table>
@@ -66,7 +63,7 @@ const ShipPowerPlants2021 = () => {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Астрономия 26.02.05, 2021 г.п. РУП 11
+                Астрономия
               </a>
             </td>
             <td></td>
@@ -82,7 +79,7 @@ const ShipPowerPlants2021 = () => {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП БЖ 26.02.05, 2021 г.п. РУП 11.
+                Безопасности жизнедеятельности
               </a>
             </td>
             <td></td>
@@ -94,11 +91,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={gidravlika}
+                href={in_yaz}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                Гидравлика 26.02.05, 2021 г.п. РУП 11
+                Инженерная графика
               </a>
             </td>
             <td></td>
@@ -114,7 +111,7 @@ const ShipPowerPlants2021 = () => {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                Инженерная графика 26.02.05, 2021 г.п. РУП 11
+                Иностранный в профессиональной деятельности
               </a>
             </td>
             <td></td>
@@ -130,7 +127,7 @@ const ShipPowerPlants2021 = () => {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                Иностранный язык 1 курс 26.02.05, 2021 г.п. РУП 11
+                Иностранный язык 1 курс
               </a>
             </td>
             <td></td>
@@ -146,8 +143,7 @@ const ShipPowerPlants2021 = () => {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                Иностранный язык в профессиональной деятельности 26.02.05, 2021
-                г.п. РУП 11
+                Информатика 1
               </a>
             </td>
             <td></td>
@@ -163,7 +159,7 @@ const ShipPowerPlants2021 = () => {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Информатика 26.02.05, 2021 СМ 1 курс 11
+                Информатика 2
               </a>
             </td>
             <td></td>
@@ -179,8 +175,7 @@ const ShipPowerPlants2021 = () => {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Информатика и информационные технологии в профессиональной
-                деятельности 23.02.05. 2021гп РУП 11
+                История 1
               </a>
             </td>
             <td></td>
@@ -192,11 +187,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={istor1}
+                href={inform3}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП История 1 курс 26.02.05, 2021 г.п. РУП 11
+                Литература
               </a>
             </td>
             <td></td>
@@ -208,11 +203,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={istor2}
+                href={istor1}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП История 26.02.05, 2021 г.п. РУП 11
+                Математика 1 курс
               </a>
             </td>
             <td></td>
@@ -224,11 +219,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={literatura}
+                href={istor2}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Литература 26.02.05, 2021 г.п. РУП 11
+                Математика 2 курс
               </a>
             </td>
             <td></td>
@@ -240,11 +235,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={matem1}
+                href={literatura}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Математика 26.02.05, 2021 СМ 1 курс 11
+                Материаловедение
               </a>
             </td>
             <td></td>
@@ -256,11 +251,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={matem2}
+                href={matem1}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Математика 26.02.05 2021 гп РУП 11.
+                Метрология и стандартизация
               </a>
             </td>
             <td></td>
@@ -272,11 +267,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={material}
+                href={matem2}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Материаловедение 26.02.05, 2021 г.п. РУП 11
+                Механика
               </a>
             </td>
             <td></td>
@@ -288,11 +283,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={metrol}
+                href={material}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Метрология и стандартизация 26.02.05, 2021 г.п. РУП 11
+                ОБЖ
               </a>
             </td>
             <td></td>
@@ -304,12 +299,12 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={obj}
+                href={metrol}
                 target={"_blank"}
                 rel="noreferrer"
               >
                 {" "}
-                РП ОБЖ 26.02.05, 2021 г.п. РУП 11
+                Основы философии
               </a>
             </td>
             <td></td>
@@ -321,11 +316,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={osnov_filos1}
+                href={mehanika}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Основы философии 26.02.05, 2021 г.п. РУП 11
+                Основы финансовой грамотности в профессиональной деятельности
               </a>
             </td>
             <td></td>
@@ -337,11 +332,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={osnov_fin}
+                href={obj}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Основы финансовой грамотности 26.02.05, 2021 г.п. РУП 11
+                ПМ 1
               </a>
             </td>
             <td></td>
@@ -353,11 +348,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={ohr_truda}
+                href={osnov_filos1}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Охрана труда 26.02.05, 2021 г.п., РУП 11
+                ПМ 2
               </a>
             </td>
             <td></td>
@@ -369,11 +364,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={pm1}
+                href={osnov_fin}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП ПМ 1, 26.02.05, 2021 г.п. РУП 11
+                ПМ 3
               </a>
             </td>
             <td></td>
@@ -385,11 +380,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={pm2}
+                href={pm1}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП ПМ 2, 26.02.05, 2021 г.п. РУП 11
+                ПМ 4
               </a>
             </td>
             <td></td>
@@ -401,11 +396,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={pm3}
+                href={pm12}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП ПМ 3, 26.02.05, 2021 г.п. РУП 11
+                ПОПД
               </a>
             </td>
             <td></td>
@@ -417,11 +412,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={pm4}
+                href={pm2}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП ПМ 4, 26.02.05, 2021 г.п. РУП 11
+                Психология общения
               </a>
             </td>
             <td></td>
@@ -433,12 +428,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={pm02}
+                href={pm3}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП ПМ.02 Обеспечение безопасности плавания 26.02.05 2021 г.п.
-                РУП 11
+                Родной язык
               </a>
             </td>
             <td></td>
@@ -450,11 +444,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={psiholog}
+                href={pm4}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                Психология общения 26.02.05, 2021 г.п. РУП 11.
+                Русский язык
               </a>
             </td>
             <td></td>
@@ -466,11 +460,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={rodnoy}
+                href={pm5}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Родной язык 26.02.05 2021 г.п.РУП 11
+                Теория устройства судна
               </a>
             </td>
             <td></td>
@@ -482,11 +476,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={russkiy}
+                href={popd}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Русский язык 26.02.05, 2021 г.п. РУП 11
+                Техническая термодинамика и теплопередача
               </a>
             </td>
             <td></td>
@@ -498,11 +492,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={tus}
+                href={psiholog}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП ТУС 26.02.05, 2021 г.п. РУП 11
+                Физика
               </a>
             </td>
             <td></td>
@@ -514,11 +508,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={teh_meh}
+                href={rodnoy}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Техническая Механика 26.02.05, 2020 г.п. РУП 11
+                Физкультура 1 курс
               </a>
             </td>
             <td></td>
@@ -530,12 +524,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={teh_termodin}
+                href={russkiy}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Техническая термодинамика и теплопередача 26.02.05, 2021 г.п.
-                РУП 11
+                Физкультура 2-5 курс
               </a>
             </td>
             <td></td>
@@ -547,11 +540,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={fizika}
+                href={tus}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Физика 26.02.05, 2021 г.п. РУП 11
+                Химия
               </a>
             </td>
             <td></td>
@@ -563,11 +556,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={fizra1}
+                href={fizika}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Физкультура 1 курс 26.02.05, 2021 г.п. РУП 11
+                Экологические основы природопользования
               </a>
             </td>
             <td></td>
@@ -579,59 +572,11 @@ const ShipPowerPlants2021 = () => {
               <PDF height={"25px"} width={"25px"} />
               <a
                 itemProp="educationRpd"
-                href={fizra2}
+                href={fizra1}
                 target={"_blank"}
                 rel="noreferrer"
               >
-                РП Физкультура 26.02.05, 2021 г.п. РУП 11.
-              </a>
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>34</td>
-            <td>
-              {" "}
-              <PDF height={"25px"} width={"25px"} />
-              <a
-                itemProp="educationRpd"
-                href={chimia}
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                РП Химия 26.02.05, 2021 г.п. РУП 11.
-              </a>
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>35</td>
-            <td>
-              {" "}
-              <PDF height={"25px"} width={"25px"} />
-              <a
-                itemProp="educationRpd"
-                href={electronika}
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                РП Электроника и электротехника 26.02.05, 2021 г.п. РУП 11
-              </a>
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>36</td>
-            <td>
-              {" "}
-              <PDF height={"25px"} width={"25px"} />
-              <a
-                itemProp="educationRpd"
-                href={rpeop}
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                РП ЭОП 26.02.05, 2021 г.п. РУП 11
+                Электроника и электротехника
               </a>
             </td>
             <td></td>
@@ -641,4 +586,4 @@ const ShipPowerPlants2021 = () => {
     </section>
   );
 };
-export default ShipPowerPlants2021;
+export default Navigation2022;

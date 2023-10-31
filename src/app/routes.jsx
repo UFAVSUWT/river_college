@@ -88,6 +88,12 @@ import ShipPowerPlants2021 from "./components/page/educationsPrograms/260205/Shi
 import ShipPowerPlants2021FOS from "./components/page/educationsPrograms/260205/ShipPowerPlants2021FOS";
 import OrganizationOfTransportation2021 from "./components/page/educationsPrograms/230201/OrganizationOfTransportation2021";
 import OrganizationOfTransportation2021FOS from "./components/page/educationsPrograms/230201/OrganizationOfTransportation2021FOS";
+import Navigation2022 from "./components/page/educationsPrograms/260203/Navigation2022";
+import Navigation2022FOS from "./components/page/educationsPrograms/260203/Navigation2022FOS";
+import ShipPowerPlants2022FOS from "./components/page/educationsPrograms/260205/ShipPowerPlants2022FOS";
+import ShipPowerPlants2022 from "./components/page/educationsPrograms/260205/ShipPowerPlants2022";
+import MarineElectricalEquipment2022 from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2022";
+import MarineElectricalEquipment2022FOS from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2022FOS";
 const routes = () => [
   {
     path: "",
@@ -139,7 +145,12 @@ const routes = () => [
         path: "navigation2021",
         element: <Navigation2021 />,
       },
-      { path: "navigation2021FOS", element: <Navigation2021FOS /> },
+      { path: "navigation2022FOS", element: <Navigation2021FOS /> },
+      {
+        path: "navigation2022",
+        element: <Navigation2022 />,
+      },
+      { path: "navigation2022FOS", element: <Navigation2022FOS /> },
       {
         path: "navigationDepth",
         element: <NavigationDepth />,
@@ -159,6 +170,14 @@ const routes = () => [
       {
         path: "shipPowerPlants2021FOS",
         element: <ShipPowerPlants2021FOS />,
+      },
+      {
+        path: "shipPowerPlants2022",
+        element: <ShipPowerPlants2022 />,
+      },
+      {
+        path: "shipPowerPlants2022FOS",
+        element: <ShipPowerPlants2022FOS />,
       },
       {
         path: "shipPowerPlantsVO2023",
@@ -183,6 +202,14 @@ const routes = () => [
       {
         path: "marineElectricalEquipment2021FOS",
         element: <MarineElectricalEquipment2021FOS />,
+      },
+      {
+        path: "marineElectricalEquipment2022",
+        element: <MarineElectricalEquipment2022 />,
+      },
+      {
+        path: "marineElectricalEquipment2022FOS",
+        element: <MarineElectricalEquipment2022FOS />,
       },
     ],
   },

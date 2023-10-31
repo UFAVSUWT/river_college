@@ -1,16 +1,14 @@
 import React from "react";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
-import rp_ucheb_prakt from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/6. Рабочая программа учебной практики.pdf";
-import rp_proizv_prakt from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/6. Рабочая программа производственной практики.pdf";
-import rp_diplom_prakt from "../../../../assets/pdf/educationPage/260205/СМ 2021 гп/6. Рабочая программа преддипломной практики.pdf";
+import rp_ucheb_prakt from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/6. Рабочая программа учебной практики 2022.pdf";
+import rp_proizv_prakt from "../../../../assets/pdf/educationPage/260203/СВ 2022 гп/6. Рабочая программа производственной практики 2022.pdf";
 
-const ShipPowerPlants2021FOS = () => {
+const Navigation2022FOS = () => {
   return (
     <section className="workProgramm__wrapper">
       <h1>
         Ссылка на рабочие программы практик, предусмотренных образовательной
-        программой 26.02.05 "Эксплуатация судовых энергетических установок" (год
-        набора 2021)
+        программой 26.02.03 "Судовождение"
       </h1>
       <h2>Рабочие программы практик</h2>
       <table>
@@ -39,17 +37,6 @@ const ShipPowerPlants2021FOS = () => {
               {" "}
               <PDF height={"25px"} width={"25px"} />
               <a href={rp_proizv_prakt} target={"_blank"} rel="noreferrer">
-                Рабочая программа производственной практики
-              </a>
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>
-              {" "}
-              <PDF height={"25px"} width={"25px"} />
-              <a href={rp_diplom_prakt} target={"_blank"} rel="noreferrer">
                 Рабочая программа производственной практики
               </a>
             </td>
@@ -94,4 +81,4 @@ const ShipPowerPlants2021FOS = () => {
     </section>
   );
 };
-export default ShipPowerPlants2021FOS;
+export default Navigation2022FOS;

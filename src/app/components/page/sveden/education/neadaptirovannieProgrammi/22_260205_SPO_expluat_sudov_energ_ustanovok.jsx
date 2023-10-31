@@ -1,41 +1,39 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import RPV_EM from "../../../../../assets/pdf/educationPage/260206/ЭМ 2021 гп/7. Рабочая прогарамма воспитания.pdf";
-import Image12 from "../../../../../assets/pdf/educationPage/260206/ЭМ 2021 гп/5. Календарный  график учебного процесса.pdf";
-import OOP5 from "../../../../../assets/pdf/educationPage/260206/ЭМ 2021 гп/1. Описание образовательной программы.pdf";
-import Annot5 from "../../../../../assets/pdf/educationPage/260206/ЭМ 2021 гп/3. Аннотации к рабочим программам дисциплин.pdf";
-import KPV from "../../../../../assets/pdf/educationPage/260206/ЭМ 2021 гп/8. Календарный план Воспитательной работы.pdf";
-import educationPlan from "../../../../../assets/pdf/educationPage/260206/ЭМ 2021 гп/2. Учебный план.pdf";
-
-const SPOEkspluatSudovEelectrooborud_21_260206 = ({ PDF }) => {
+/* import RPV_SM from "../../../../../assets/pdf/educationPage/260205/СМ 2022 гп/7. Рабочая программа воспитания.pdf"; */
+import Image16 from "../../../../../assets/pdf/educationPage/260205/СМ 2022 гп/5. Календарный учебный график.pdf";
+import OOP9 from "../../../../../assets/pdf/educationPage/260205/СМ 2022 гп/1. Описание образовательной программы.pdf";
+import Annot9 from "../../../../../assets/pdf/educationPage/260205/СМ 2022 гп/3. Аннотации программ дисциплин  для специальности СПО  26.02.05.Эксплуатация судовых энергетических установок.pdf";
+/* import KPV from "../../../../../assets/pdf/educationPage/260205/СМ 2022 гп/8. Календарный план Воспитательной работы.pdf"; */
+import UP12 from "../../../../../assets/pdf/educationPage/260205/СМ 2022 гп/2. Учебный план очное.pdf";
+import UP22 from "../../../../../assets/pdf/educationPage/260205/СМ 2022 гп/2. Учебный план заочное.pdf";
+const SPOEkspluatSudovEnergUstanovok_22_260205 = ({ PDF }) => {
   return (
     <tr itemProp="eduOp">
-      <td itemProp="eduCode">26.02.06</td>
+      <td itemProp="eduCode">26.02.05</td>
       <td>
         <NavLink
           itemProp="eduName"
-          to="../../educationPrograms/marineElectricalEquipment2021"
+          to="../../educationPrograms/shipPowerPlants2022"
         >
-          Эксплуатация судового электрооборудования и средств автоматики ФГОС
-          №675 от 26.11.2020
+          Эксплуатация судовых энергетических установок ФГОС №674 от 26.11.2020
         </NavLink>
       </td>
       <td itemProp="eduLevel">Cреднее профессиональное образование</td>
       <td>
         <NavLink
           itemProp="eduProf"
-          to="../../educationPrograms/marineElectricalEquipment2021"
+          to="../../educationPrograms/shipPowerPlants2022"
         >
-          Эксплуатация судового электрооборудования и средств автоматики (прием
-          2021)
+          Эксплуатация судовых энергетических установок (прием 2022)
         </NavLink>
       </td>
-      <td itemProp="eduForm">Очная</td>
+      <td itemProp="eduForm">Очная-заочная</td>
       <td>
         <ul>
           <li className="doc__item">
             <PDF height={"25px"} width={"25px"} />
-            <a itemProp="opMain" href={OOP5} target={"_blank"} rel="noreferrer">
+            <a itemProp="opMain" href={OOP9} target={"_blank"} rel="noreferrer">
               Скачать
             </a>
           </li>
@@ -46,12 +44,23 @@ const SPOEkspluatSudovEelectrooborud_21_260206 = ({ PDF }) => {
           <li className="doc__item">
             <PDF height={"25px"} width={"25px"} />
             <a
-              itemProp={"educationPlan"}
-              href={educationPlan}
+              itemProp="educationPlan"
+              href={UP12}
               target={"_blank"}
               rel="noreferrer"
             >
-              Скачать
+              Скачать (очная)
+            </a>
+          </li>
+          <li className="doc__item">
+            <PDF height={"25px"} width={"25px"} />
+            <a
+              itemProp="educationPlan"
+              href={UP22}
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              Скачать (заочная)
             </a>
           </li>
         </ul>
@@ -62,7 +71,7 @@ const SPOEkspluatSudovEelectrooborud_21_260206 = ({ PDF }) => {
             <PDF height={"25px"} width={"25px"} />
             <a
               itemProp="educationAnnotation"
-              href={Annot5}
+              href={Annot9}
               target={"_blank"}
               rel="noreferrer"
             >
@@ -76,7 +85,7 @@ const SPOEkspluatSudovEelectrooborud_21_260206 = ({ PDF }) => {
           <li className="doc__item">
             <NavLink
               itemProp="educationRpd"
-              to="../../educationPrograms/marineElectricalEquipment2021"
+              to="../../educationPrograms/shipPowerPlants2022"
             >
               Скачать РП
             </NavLink>
@@ -84,7 +93,7 @@ const SPOEkspluatSudovEelectrooborud_21_260206 = ({ PDF }) => {
           <li className="doc__item">
             <NavLink
               itemProp="educationRpd"
-              to="../../educationPrograms/marineElectricalEquipment2021FOS"
+              to="../../educationPrograms/shipPowerPlants2022FOS"
             >
               Скачать РП РЦ
             </NavLink>
@@ -97,7 +106,7 @@ const SPOEkspluatSudovEelectrooborud_21_260206 = ({ PDF }) => {
             <PDF height={"25px"} width={"25px"} />
             <a
               itemProp="educationShedule"
-              href={Image12}
+              href={Image16}
               target={"_blank"}
               rel="noreferrer"
             >
@@ -112,7 +121,7 @@ const SPOEkspluatSudovEelectrooborud_21_260206 = ({ PDF }) => {
           <li className="doc__item">
             <NavLink
               itemProp="educationRpd"
-              to="../../educationPrograms/marineElectricalEquipment2021FOS"
+              to="../../educationPrograms/shipPowerPlants2022FOS"
             >
               Скачать
             </NavLink>
@@ -123,7 +132,7 @@ const SPOEkspluatSudovEelectrooborud_21_260206 = ({ PDF }) => {
         <ul>
           <li className="doc__item">
             <PDF height={"25px"} width={"25px"} />
-            <a href={RPV_EM} target={"_blank"} rel="noreferrer">
+            <a href={"RPV_SM"} target={"_blank"} rel="noreferrer">
               Скачать
             </a>
           </li>
@@ -133,7 +142,7 @@ const SPOEkspluatSudovEelectrooborud_21_260206 = ({ PDF }) => {
         <ul>
           <li className="doc__item">
             <PDF height={"25px"} width={"25px"} />
-            <a href={KPV} target={"_blank"} rel="noreferrer">
+            <a href={"KPV"} target={"_blank"} rel="noreferrer">
               Скачать
             </a>
           </li>
@@ -152,4 +161,4 @@ const SPOEkspluatSudovEelectrooborud_21_260206 = ({ PDF }) => {
     </tr>
   );
 };
-export default SPOEkspluatSudovEelectrooborud_21_260206;
+export default SPOEkspluatSudovEnergUstanovok_22_260205;
