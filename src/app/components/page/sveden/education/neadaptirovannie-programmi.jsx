@@ -1,20 +1,21 @@
 import React from "react";
 import TableWrapper from "../../../common/tableWrapper/TableWrapper";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
-import VOEkspluatSudEnergUstanovok_23_260506 from "./neadaptirovannieProgrammi/23_260506_VO_ekspluat-sud-energ-ustanovok";
-import SPOSudovojdenie_20_260203 from "./neadaptirovannieProgrammi/20_260203_SPO_sudovojdenie";
-import SPOSudovojdenie_19_260203 from "./neadaptirovannieProgrammi/19_260203_SPO_sudovojdenie";
-import SPOSudovojdenie_19_Z_260203 from "./neadaptirovannieProgrammi/19_Z_260203_SPO_sudovojdenie";
-import SPOEkspluatSudovEelectrooborud_20_260206 from "./neadaptirovannieProgrammi/20_260206_SPO_expluat_sudov_electroob";
-import SPOEkspluatSudovEnergUstanovok_20_260205 from "./neadaptirovannieProgrammi/20_260205_SPO_expluat_sudov_energ_ustanovok";
-import SPOOrganiz_perevoz_upravlenia_20_230201 from "./neadaptirovannieProgrammi/20_230201_SPO_organiz_perevoz_upravleniya";
-import SPOSudovojdenie_21_260203 from "./neadaptirovannieProgrammi/21_260203_SPO_sudovojdenie";
-import SPOEkspluatSudovEelectrooborud_21_260206 from "./neadaptirovannieProgrammi/21_260206_SPO_expluat_sudov_electroob";
-import SPOEkspluatSudovEnergUstanovok_21_260205 from "./neadaptirovannieProgrammi/21_260205_SPO_expluat_sudov_energ_ustanovok";
-import SPOOrganiz_perevoz_upravlenia_21_230201 from "./neadaptirovannieProgrammi/21_230201_SPO_organiz_perevoz_upravleniya";
-import SPOSudovojdenie_22_260203 from "./neadaptirovannieProgrammi/22_260203_SPO_sudovojdenie";
-import SPOEkspluatSudovEnergUstanovok_22_260205 from "./neadaptirovannieProgrammi/22_260205_SPO_expluat_sudov_energ_ustanovok";
-import SPOEkspluatSudovEelectrooborud_22_260206 from "./neadaptirovannieProgrammi/22_260206_SPO_expluat_sudov_electroob";
+import VOEkspluatSudEnergUstanovok23260506 from "./neadaptirovannieProgrammi/23_260506_VO_ekspluat-sud-energ-ustanovok";
+import SPOSudovojdenie20260203 from "./neadaptirovannieProgrammi/20_260203_SPO_sudovojdenie";
+import SPOSudovojdenie19260203 from "./neadaptirovannieProgrammi/19_260203_SPO_sudovojdenie";
+import SPOSudovojdenie19Z260203 from "./neadaptirovannieProgrammi/19_Z_260203_SPO_sudovojdenie";
+import SPOEkspluatSudovEelectrooborud20260206 from "./neadaptirovannieProgrammi/20_260206_SPO_expluat_sudov_electroob";
+import SPOEkspluatSudovEnergUstanovok20260205 from "./neadaptirovannieProgrammi/20_260205_SPO_expluat_sudov_energ_ustanovok";
+import SPOOrganizPerevozUpravlenia20230201 from "./neadaptirovannieProgrammi/20_230201_SPO_organiz_perevoz_upravleniya";
+import SPOSudovojdenie21260203 from "./neadaptirovannieProgrammi/21_260203_SPO_sudovojdenie";
+import SPOEkspluatSudovEelectrooborud21260206 from "./neadaptirovannieProgrammi/21_260206_SPO_expluat_sudov_electroob";
+import SPOEkspluatSudovEnergUstanovok21260205 from "./neadaptirovannieProgrammi/21_260205_SPO_expluat_sudov_energ_ustanovok";
+import SPOOrganizPerevozUpravlenia21230201 from "./neadaptirovannieProgrammi/21_230201_SPO_organiz_perevoz_upravleniya";
+import SPOSudovojdenie22260203 from "./neadaptirovannieProgrammi/22_260203_SPO_sudovojdenie";
+import SPOEkspluatSudovEnergUstanovok22260205 from "./neadaptirovannieProgrammi/22_260205_SPO_expluat_sudov_energ_ustanovok";
+import SPOEkspluatSudovEelectrooborud22260206 from "./neadaptirovannieProgrammi/22_260206_SPO_expluat_sudov_electroob";
+import SPOOrganizPerevozUpravlenia22230201 from "./neadaptirovannieProgrammi/22_230201_SPO_organiz_perevoz_upravleniya";
 
 const NeadaptirovannieProgrammi = () => {
   return (
@@ -62,20 +63,21 @@ const NeadaptirovannieProgrammi = () => {
               обеспечения образовательного процесса
             </td>
           </tr>
-          <VOEkspluatSudEnergUstanovok_23_260506 PDF={PDF} />
-          <SPOSudovojdenie_22_260203 PDF={PDF} />
-          <SPOSudovojdenie_21_260203 PDF={PDF} />
-          <SPOSudovojdenie_20_260203 PDF={PDF} />
-          <SPOSudovojdenie_19_260203 PDF={PDF} />
-          <SPOSudovojdenie_19_Z_260203 PDF={PDF} />
-          <SPOEkspluatSudovEelectrooborud_22_260206 PDF={PDF} />
-          <SPOEkspluatSudovEelectrooborud_21_260206 PDF={PDF} />
-          <SPOEkspluatSudovEelectrooborud_20_260206 PDF={PDF} />
-          <SPOEkspluatSudovEnergUstanovok_22_260205 PDF={PDF} />
-          <SPOEkspluatSudovEnergUstanovok_21_260205 PDF={PDF} />
-          <SPOEkspluatSudovEnergUstanovok_20_260205 PDF={PDF} />
-          <SPOOrganiz_perevoz_upravlenia_21_230201 PDF={PDF} />
-          <SPOOrganiz_perevoz_upravlenia_20_230201 PDF={PDF} />
+          <VOEkspluatSudEnergUstanovok23260506 PDF={PDF} />
+          <SPOSudovojdenie22260203 PDF={PDF} />
+          <SPOSudovojdenie21260203 PDF={PDF} />
+          <SPOSudovojdenie20260203 PDF={PDF} />
+          <SPOSudovojdenie19260203 PDF={PDF} />
+          <SPOSudovojdenie19Z260203 PDF={PDF} />
+          <SPOEkspluatSudovEelectrooborud22260206 PDF={PDF} />
+          <SPOEkspluatSudovEelectrooborud21260206 PDF={PDF} />
+          <SPOEkspluatSudovEelectrooborud20260206 PDF={PDF} />
+          <SPOEkspluatSudovEnergUstanovok22260205 PDF={PDF} />
+          <SPOEkspluatSudovEnergUstanovok21260205 PDF={PDF} />
+          <SPOEkspluatSudovEnergUstanovok20260205 PDF={PDF} />
+          <SPOOrganizPerevozUpravlenia22230201 PDF={PDF} />
+          <SPOOrganizPerevozUpravlenia21230201 PDF={PDF} />
+          <SPOOrganizPerevozUpravlenia20230201 PDF={PDF} />
         </tbody>
       </table>
       * Информация по реализуемым общеобразовательным программам: программа

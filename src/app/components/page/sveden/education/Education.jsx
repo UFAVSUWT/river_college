@@ -8,31 +8,22 @@ import Pologhenie_DO from "../../../../assets/pdf/educationPage/Pologhenie_DO.pd
 import Pologhenie_EL_Sreda from "../../../../assets/pdf/educationPage/Pologhenie_EL_Sreda.pdf";
 import Pologhenie_kontrolDO from "../../../../assets/pdf/educationPage/Pologhenie_kontrolDO.pdf";
 import FOS_IA_SV_uglubl from "../../../../assets/pdf/educationPage/260203/FOS_IA_SV_uglubl.pdf";
-import FOS_IA_SV_uglublSig from "../../../../assets/pdf/educationPage/260203/FOS_IA_SV_uglubl.pdf.sig";
-
 import Programma_IA_SV_uglubl from "../../../../assets/pdf/educationPage/260203/Programma_IA_SV_uglubl.pdf";
-import Programma_IA_SV_uglublSig from "../../../../assets/pdf/educationPage/260203/Programma_IA_SV_uglubl.pdf.sig";
-
 import KPV from "../../../../assets/pdf/educationPage/KPV.pdf";
-
 import TableWrapper from "../../../common/tableWrapper/TableWrapper";
 import { NavLink } from "react-router-dom";
 import adOOP1 from "../../../../assets/pdf/educationPage/260203/oop/adOOP_260203.pdf";
-
 import UP19 from "../../../../assets/pdf/educationPage/260203/syllabus/adUP_260203.pdf";
 import adAnnot from "../../../../assets/pdf/educationPage/260203/annot/annot_SV_AD.pdf";
-
 import RP_260203 from "../../../../assets/pdf/educationPage/260203/RP_Uch_prakt_2018ugl_3-10.pdf";
 import FOS_UCH_PR_260203 from "../../../../assets/pdf/educationPage/260203/FOS_Uch_prakt_2018ugl_3-10.pdf";
 import RP_UCH_PR_260203 from "../../../../assets/pdf/educationPage/260203/RP_pr_prakt_2018ugl_3-10.pdf";
 import FOS_PR_PR_260203 from "../../../../assets/pdf/educationPage/260203/FOS_pr_prakt_2018ugl_3-10.pdf";
 import RP_PR_PR_260203 from "../../../../assets/pdf/educationPage/260203/RP_Pr_prakt_2018ugl_ZO_3-10.pdf";
 import RP_UCH_PR_Z_260203 from "../../../../assets/pdf/educationPage/260203/RP_Uch_prakt_2018ugl_ZO_3-10.pdf";
-
 import adkug_260203 from "../../../../assets/pdf/educationPage/260203/adkug_260203.pdf";
 import Pologenie_ucheb_prozess_ovz_2017 from "../../../../assets/pdf/educationPage/260203/Pologenie_ucheb_prozess_ovz_2017.pdf";
 import Pologen_Fizra from "../../../../assets/pdf/educationPage/260203/Pologen_Fizra.pdf";
-
 import InfoORealisUrovnyahObrazovaniya from "./info-o-realis-urovnyah-obrazovaniya";
 import SpisokObsheobrazovatelnDisciplin from "./spisok-obsheobrazovateln-disciplin";
 import InfoOChislenObuch from "./info-o-chislen-obuch";
@@ -134,7 +125,6 @@ const Education = observer(() => {
       </h3>
       <SpisokObsheobrazovatelnDisciplin />
       <NeadaptirovannieProgrammi />
-
       <TableWrapper title="Информация по адаптированным образовательным программам:">
         {" "}
         <table>
@@ -151,7 +141,7 @@ const Education = observer(() => {
                 магистратура; 4) высшее образование - подготовка кадров высшей
                 квалификации; 5) среднее профессиональное образование
               </td>
-              <td style={{ backgroundColor: "red" }} itemProp="eduProf">
+              <td itemProp="eduProf">
                 Образовательная программа, направленность, профиль, шифр и
                 наименование научной специальности
               </td>
@@ -187,89 +177,32 @@ const Education = observer(() => {
                 электронного обучения и дистанционных образовательных технологий
               </td>
             </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>высшее образование - бакалавриат</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>высшее образование - специалитет</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td> высшее образование - магистратура</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>
-                высшее образование - подготовка кадров высшей квалификации
-              </td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>26.02.03</td>
-              <td>
+            <tr itemProp="eduAdOp">
+              <td itemProp="eduCode">26.02.03</td>
+              <td itemProp="eduName">
                 <NavLink to="../../educationPrograms/navigationDepth">
                   Судовождение (углубленная подготовка), на базе основного
                   общего образования (9 классов)
                 </NavLink>
               </td>
-              <td>среднее профессиональное образование</td>
-              <td>
+              <td itemProp="eduLevel">среднее профессиональное образование</td>
+              <td itemProp="eduProf">
                 <NavLink to="../../educationPrograms/navigationDepth">
                   Судовождение (углубленная подготовка), на базе основного
                   общего образования (9 классов)
                 </NavLink>
               </td>
-              <td>очная</td>
+              <td itemProp="eduForm">Очная</td>
               <td>
                 <ul>
                   <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
-                    <a href={adOOP1} target={"_blank"} rel="noreferrer">
+                    <a
+                      itemProp="opMain"
+                      href={adOOP1}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
                       Адаптированная ООП для специальности 26.02.03
                       "Судовождение" на базе 9 классов
                     </a>
@@ -280,7 +213,12 @@ const Education = observer(() => {
                 <ul>
                   <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
-                    <a href={UP19} target={"_blank"} rel="noreferrer">
+                    <a
+                      itemProp="educationPlan"
+                      href={UP19}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
                       Учебный план 26.02.03 "Судовождение"
                     </a>
                   </li>
@@ -290,7 +228,12 @@ const Education = observer(() => {
                 <ul>
                   <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
-                    <a href={adAnnot} target={"_blank"} rel="noreferrer">
+                    <a
+                      itemProp="educationAnnotation"
+                      href={adAnnot}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
                       Аннотации к рабочим программам дисциплин для специальности
                       СПО 26.02.03 "Судовождение"
                     </a>
@@ -299,7 +242,12 @@ const Education = observer(() => {
               </td>
               <td>
                 <PDF height={"25px"} width={"25px"} />
-                <a href={adkug_260203} target={"_blank"} rel="noreferrer">
+                <a
+                  itemProp="educationShedule"
+                  href={adkug_260203}
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
                   Календарный учебный график для специальности 26.02.03
                   "Судовождение" (на базе 9 классов)
                 </a>
@@ -413,15 +361,7 @@ const Education = observer(() => {
                       "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href={Programma_IA_SV_uglublSig}
-                      target={"_blank"}
-                      rel="noreferrer"
-                    >
-                      ЭЦП{" "}
-                    </a>
-                  </li>
+                  <li></li>
                   <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
@@ -433,28 +373,25 @@ const Education = observer(() => {
                       специальности 260203 "Судовождение" (углубленная)
                     </a>
                   </li>
-                  <li>
-                    <a
-                      href={FOS_IA_SV_uglublSig}
-                      target={"_blank"}
-                      rel="noreferrer"
-                    >
-                      ЭЦП{" "}
-                    </a>
-                  </li>
                 </ul>
               </td>
               <td>
                 <ul>
                   <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
-                    <a href={Pologhenie_DO} target={"_blank"} rel="noreferrer">
+                    <a
+                      itemProp="methodology"
+                      href={Pologhenie_DO}
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
                       Положение о дистанционном обучении
                     </a>
                   </li>
                   <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
+                      itemProp="methodology"
                       href={Pologenie_Parus}
                       target={"_blank"}
                       rel="noreferrer"
@@ -466,6 +403,7 @@ const Education = observer(() => {
                   <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
+                      itemProp="methodology"
                       href={Pologhenie_kontrolDO}
                       target={"_blank"}
                       rel="noreferrer"
@@ -478,6 +416,7 @@ const Education = observer(() => {
                   <li className="doc__item">
                     <PDF height={"25px"} width={"25px"} />
                     <a
+                      itemProp="methodology"
                       href={Pologhenie_EL_Sreda}
                       target={"_blank"}
                       rel="noreferrer"
@@ -492,7 +431,6 @@ const Education = observer(() => {
           </tbody>
         </table>
       </TableWrapper>
-
       <TableWrapper
         title=" Информация о направлениях и результатах научной
         (научно-исследовательской) деятельности:"
@@ -525,17 +463,19 @@ const Education = observer(() => {
                 научной (научно-исследовательской) деятельности
               </td>
             </tr>
-            <tr>
-              <td>26.02.03 </td>
-              <td>Судовождение</td>
-              <td rowspan="4">
+            <tr itemProp="eduNir">
+              <td itemProp="eduCode">26.02.03 </td>
+              <td itemProp="eduName">Судовождение</td>
+              <td itemProp="perechenNir" rowspan="4">
                 Инновационные технологии в преподавании дисциплин;
                 Компетентностный подход в системе СПО
               </td>
-              <td>Судовождение</td>
-              <td rowspan="4">среднее профессиональное образование</td>
-              <td>Судовождение</td>
-              <td rowspan="4">
+              <td itemProp="eduProf">Судовождение</td>
+              <td itemProp="eduLevel" rowspan="4">
+                среднее профессиональное образование
+              </td>
+              <td itemProp="napravNir">Судовождение</td>
+              <td itemProp="resultNir" rowspan="4">
                 Публикация статей в сборник ежегодной НПК преподавателей филиала
                 «Инновационные технологии в преподавании дисциплин»; Участие в
                 работе НПК, в том числе международного уровня (свыше 20
@@ -545,7 +485,7 @@ const Education = observer(() => {
                 деятельностью курсантов – участников предметных и
                 профессиональных олимпиад, конкурсов проф.мастерства
               </td>
-              <td rowspan="4">
+              <td itemProp="baseNir" rowspan="4">
                 Научно-образовательный портал Znanium (new.znanium.com)
                 Электронно-библиотечная система "Лань" Электронная библиотечная
                 система «Юрайт» biblio-online.ru Система дистанционного обучения
@@ -564,51 +504,45 @@ const Education = observer(() => {
                 столов, научных семинаров (музей им.В. Альбанова, каб.20)
               </td>
             </tr>
-            <tr>
-              <td>26.02.05</td>
-              <td>Эксплуатация судовых энергетических установок</td>
-              <td>Эксплуатация судовых энергетических установок</td>
-              <td>Эксплуатация судовых энергетических установок</td>
-            </tr>
-            <tr>
-              <td>26.02.06</td>
-              <td>
-                Эксплуатация судового электрооборудования и средств автоматики
+            <tr itemProp="eduNir">
+              <td itemProp="eduCode">26.02.05</td>
+              <td itemProp="eduName">
+                Эксплуатация судовых энергетических установок
               </td>
-              <td>
-                Эксплуатация судового электрооборудования и средств автоматики
+              <td itemProp="eduProf">
+                Эксплуатация судовых энергетических установок
               </td>
-              <td>
-                Эксплуатация судового электрооборудования и средств автоматики
+              <td itemProp="napravNir">
+                Эксплуатация судовых энергетических установок
               </td>
             </tr>
-            <tr>
-              <td>26.02.01</td>
-              <td>
+            <tr itemProp="eduNir">
+              <td itemProp="eduCode">26.02.06</td>
+              <td itemProp="eduName">
+                Эксплуатация судового электрооборудования и средств автоматики
+              </td>
+              <td itemProp="eduProf">
+                Эксплуатация судового электрооборудования и средств автоматики
+              </td>
+              <td itemProp="napravNir">
+                Эксплуатация судового электрооборудования и средств автоматики
+              </td>
+            </tr>
+            <tr itemProp="eduNir">
+              <td itemProp="eduCode">26.02.01</td>
+              <td itemProp="eduName">
                 Организация перевозок и управление на транспорте (по видам)
               </td>
-              <td>
+              <td itemProp="eduProf">
                 Организация перевозок и управление на транспорте (по видам)
               </td>
-              <td>
+              <td itemProp="napravNir">
                 Организация перевозок и управление на транспорте (по видам)
               </td>
             </tr>
           </tbody>
         </table>
       </TableWrapper>
-
-      <ul>
-        <a href={"Ustav"} target={"_blank"} rel="noreferrer">
-          <li
-            className="doc__item active__link"
-            style={{ backgroundColor: "red" }}
-          >
-            Направления и результаты научной (научно-исследовательской)
-            деятельности и научно-исследовательская база для ее осуществления
-          </li>
-        </a>
-      </ul>
     </div>
   );
 });

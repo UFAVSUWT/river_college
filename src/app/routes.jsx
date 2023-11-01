@@ -94,6 +94,8 @@ import ShipPowerPlants2022FOS from "./components/page/educationsPrograms/260205/
 import ShipPowerPlants2022 from "./components/page/educationsPrograms/260205/ShipPowerPlants2022";
 import MarineElectricalEquipment2022 from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2022";
 import MarineElectricalEquipment2022FOS from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2022FOS";
+import OrganizationOfTransportation2022 from "./components/page/educationsPrograms/230201/OrganizationOfTransportation2022";
+import OrganizationOfTransportation2022FOS from "./components/page/educationsPrograms/230201/OrganizationOfTransportation2022FOS";
 const routes = () => [
   {
     path: "",
@@ -128,6 +130,14 @@ const routes = () => [
       {
         path: "organizationOfTransportation2021FOS",
         element: <OrganizationOfTransportation2021FOS />,
+      },
+      {
+        path: "organizationOfTransportation2022",
+        element: <OrganizationOfTransportation2022 />,
+      },
+      {
+        path: "organizationOfTransportation2022FOS",
+        element: <OrganizationOfTransportation2022FOS />,
       },
       {
         path: "navigation2019",
