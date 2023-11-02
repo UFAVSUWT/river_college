@@ -15,16 +15,16 @@ import pravila_vnutr_rasp from "../../../../assets/pdf/documentPage/local/11. П
 import pravila_org_sluzb from "../../../../assets/pdf/documentPage/local/12. Правила внутр.распорядка и орг-ции службы курсантов.pdf";
 import HrLine from "../../../common/hrLine/HrLine";
 import poloz1 from "../../../../assets/pdf/documentPage/Для акредитации/ПЛЖ о внутренней оценке качества образоват.деят..pdf";
-import poloz2 from "../../../../assets/pdf/documentPage/Для акредитации/Положение о проведении текущего контроля и промежуточной аттестации.pdf";
+/* import poloz2 from "../../../../assets/pdf/documentPage/Для акредитации/Положение о проведении текущего контроля и промежуточной аттестации.pdf";
 
 import poloz3 from "../../../../assets/pdf/documentPage/Для акредитации/Положение о текущем контроле и промежуточ. аттестации обучающихся с применением ДОТ.PDF";
-
+ */
 import poloz4 from "../../../../assets/pdf/documentPage/Для акредитации/Приказ ВГУВТ О проведении ВОКО № 534-с от 05.12.22.pdf";
-
 import poloz5 from "../../../../assets/pdf/documentPage/Для акредитации/Приказ Уф.ф. О назначении ответственных за ВОКО №299 от 27.09.22.PDF";
-
 import poloz6 from "../../../../assets/pdf/documentPage/Для акредитации/Приказ Уф.ф. О проведении ВОКО №361 от 07.12.22.PDF";
-
+import vokoSudovojd from "../../../../assets/pdf/documentPage/local/Отчет по ВОКО 26.02.03 Судовождение.pdf";
+import vokoElectrooborud from "../../../../assets/pdf/documentPage/local/Отчет по ВОКО 26.02.06 Эксплуатация судового электрооборудования и средств автоматики.pdf";
+import vokoEnerg from "../../../../assets/pdf/documentPage/local/Отчет по ВОКО 26.02.05 Эксплуатация судовых энергетических установок.pdf";
 const LocalActs = ({ isActive }) => {
   return (
     <>
@@ -173,23 +173,29 @@ const LocalActs = ({ isActive }) => {
         <ul>
           <li itemProp="localActStud" className="doc__item">
             <PDF height={"40px"} width={"40px"} />
-            <a href={poloz1} target={"_blank"} rel="noreferrer">
-              Положение о внутренней оценке качества образовательной
-              деятельности
-            </a>
-          </li>
-          <li className="doc__item">
-            <PDF height={"40px"} width={"40px"} />
-            <a href={poloz2} target={"_blank"} rel="noreferrer">
-              Положение о проведении текущего контроля и промежуточной
-              аттестации
+            <a href={vokoSudovojd} target={"_blank"} rel="noreferrer">
+              Отчет по ВОКО 26.02.03 Судовождение
             </a>
           </li>
           <li itemProp="localActStud" className="doc__item">
             <PDF height={"40px"} width={"40px"} />
-            <a href={poloz3} target={"_blank"} rel="noreferrer">
-              Положение о текущем контроле и промежуточной аттестации
-              обучающихся с применением ДОТ
+            <a href={vokoEnerg} target={"_blank"} rel="noreferrer">
+              Отчет по ВОКО 26.02.05 Эксплуатация судовых энергетических
+              установок
+            </a>
+          </li>
+          <li itemProp="localActStud" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={vokoElectrooborud} target={"_blank"} rel="noreferrer">
+              Отчет по ВОКО 26.02.06 Эксплуатация судового электрооборудования и
+              средств автоматики
+            </a>
+          </li>
+          <li itemProp="localActStud" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={poloz1} target={"_blank"} rel="noreferrer">
+              Положение о внутренней оценке качества образовательной
+              деятельности
             </a>
           </li>
           <li className="doc__item">

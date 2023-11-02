@@ -31,7 +31,7 @@ const Vacant = observer(() => {
         )}`}
       >
         Информация о количестве вакантных мест для приема (перевода) на
-        01.10.2023г.
+        01.11.2023г.
       </h3>
       <TableWrapper>
         <table>
@@ -176,7 +176,7 @@ const Vacant = observer(() => {
               <td itemProp="numberBFVacant">0</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">4</td>
+              <td itemProp="numberPVacant">3</td>
             </tr>
             <tr itemProp="vacant">
               <td itemProp="eduCode">26.02.03</td>
@@ -209,7 +209,7 @@ const Vacant = observer(() => {
               <td itemProp="numberBFVacant">11</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">0</td>
+              <td itemProp="numberPVacant">1</td>
             </tr>
             <tr itemProp="vacant">
               <td itemProp="eduCode">26.02.03</td>
@@ -309,10 +309,10 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">3</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">11</td>
+              <td itemProp="numberBFVacant">10</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">1</td>
+              <td itemProp="numberPVacant">2</td>
             </tr>
             <tr itemProp="vacant">
               <td itemProp="eduCode">26.02.05</td>
@@ -348,10 +348,10 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">1</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">1</td>
+              <td itemProp="numberBFVacant">2</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">4</td>
+              <td itemProp="numberPVacant">5</td>
             </tr>
             <tr itemProp="vacant">
               <td itemProp="eduCode">26.02.06</td>

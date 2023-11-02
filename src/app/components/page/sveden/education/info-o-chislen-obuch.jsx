@@ -7,7 +7,7 @@ const InfoOChislenObuch = () => {
         программам за счет бюджетных ассигнований федерального бюджета, бюджетов
         субъектов Российской Федерации, местных бюджетов и по договорам об
         образовании за счет средств физических и (или) юридических лиц на
-        01.10.2023:"
+        01.11.2023:"
     >
       <table>
         <tbody>
@@ -121,7 +121,7 @@ const InfoOChislenObuch = () => {
               среднее профессиональное образование
             </td>
             <td itemProp="eduForm">очная</td>
-            <td itemProp="numberBF">92</td>
+            <td itemProp="numberBF">91</td>
             <td itemProp="numberBFF">-</td>
             <td itemProp="numberBR">-</td>
             <td itemProp="numberBRF">-</td>
@@ -129,7 +129,7 @@ const InfoOChislenObuch = () => {
             <td itemProp="numberBMF">-</td>
             <td itemProp="numberP">5</td>
             <td itemProp="numberPF">-</td>
-            <td itemProp="numberAll">97</td>
+            <td itemProp="numberAll">96</td>
           </tr>
           <tr itemProp="eduChislen">
             <td itemProp="eduForm">очно-заочная</td>
@@ -160,13 +160,13 @@ const InfoOChislenObuch = () => {
             <td rowSpan="3">Судовождение</td>
             <td rowSpan="3">среднее профессиональное образование</td>
             <td itemProp="eduForm">очная</td>
-            <td itemProp="numberBF">293</td>
+            <td itemProp="numberBF">292</td>
             <td itemProp="numberBFF">-</td>
             <td itemProp="numberBR">-</td>
             <td itemProp="numberBRF">-</td>
             <td itemProp="numberBM">-</td>
             <td itemProp="numberBMF">-</td>
-            <td itemProp="numberP">8</td>
+            <td itemProp="numberP">9</td>
             <td itemProp="numberPF">-</td>
             <td itemProp="numberAll">301</td>
           </tr>
@@ -205,7 +205,7 @@ const InfoOChislenObuch = () => {
               среднее профессиональное образование
             </td>
             <td itemProp="eduForm">очная</td>
-            <td itemProp="numberBF">179</td>
+            <td itemProp="numberBF">181</td>
             <td itemProp="numberBFF">-</td>
             <td itemProp="numberBR">-</td>
             <td itemProp="numberBRF">-</td>
@@ -213,7 +213,7 @@ const InfoOChislenObuch = () => {
             <td itemProp="numberBMF">-</td>
             <td itemProp="numberP">4</td>
             <td itemProp="numberPF">-</td>
-            <td itemProp="numberAll">183</td>
+            <td itemProp="numberAll">185</td>
           </tr>
           <tr itemProp="eduChislen">
             <td itemProp="eduForm">очно-заочная</td>
@@ -252,9 +252,9 @@ const InfoOChislenObuch = () => {
             <td itemProp="numberBRF">-</td>
             <td itemProp="numberBM">-</td>
             <td itemProp="numberBMF">-</td>
-            <td itemProp="numberP">1</td>
+            <td itemProp="numberP">-</td>
             <td itemProp="numberPF">-</td>
-            <td itemProp="numberAll">198</td>
+            <td itemProp="numberAll">197</td>
           </tr>
           <tr itemProp="eduChislen">
             <td itemProp="eduForm">очно-заочная</td>

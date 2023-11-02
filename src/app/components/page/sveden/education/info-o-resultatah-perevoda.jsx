@@ -4,7 +4,7 @@ const InfoOResultatahPerevoda = () => {
   return (
     <TableWrapper
       title="Информация о результатах перевода, восстановления и отчисления на
-        01.10.2023"
+        01.11.2023"
     >
       <table>
         <tbody>
@@ -47,7 +47,7 @@ const InfoOResultatahPerevoda = () => {
               среднее профессиональное образование
             </td>
             <td itemProp="eduForm">очная</td>
-            <td itemProp="numberOut">4</td>
+            <td itemProp="numberOut">5</td>
             <td itemProp="numberTo">-</td>
             <td>-</td>
             <td>1</td>
@@ -101,7 +101,7 @@ const InfoOResultatahPerevoda = () => {
             <td itemProp="numberOut">-</td>
             <td itemProp="numberTo">-</td>
             <td itemProp="numberRes">-</td>
-            <td itemProp="numberExp">3</td>
+            <td itemProp="numberExp">5</td>
           </tr>
           <tr itemProp="eduPerevod">
             <td itemProp="eduForm">заочная</td>
