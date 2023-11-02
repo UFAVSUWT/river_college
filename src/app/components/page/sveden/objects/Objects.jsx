@@ -6,7 +6,6 @@ import dogovorUfanet from "../../../../assets/pdf/objects/ufanetdogovor.pdf";
 import { ReactComponent as DOC } from "../../../../assets/svg/office/word.svg";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
 import Usloviya from "../../../../assets/doc/sveden/УСЛОВИЯ ОХРАНЫ ЗДОРОВЬЯ ОБУЧАЮЩИХСЯ.docx";
-
 import id_lani from "../../../../assets/pdf/objects/44-96-23 ИД Лань_copy.pdf";
 import ebs_lani from "../../../../assets/pdf/objects/44-97-23 ЭБС Лань_copy.pdf";
 import urait from "../../../../assets/pdf/objects/Контракт Юрайт 2023-24.pdf";

@@ -93,7 +93,7 @@ const Document = observer(() => {
               <td itemProp="osnCab">
                 ученические столы, стулья, наглядные пособия и макеты{" "}
               </td>
-              <td>Да</td>
+              <td itemProp="ovzCab">Да</td>
             </tr>
             <tr itemProp="purposeCab">
               <td itemProp="addressCab" rowSpan="3">

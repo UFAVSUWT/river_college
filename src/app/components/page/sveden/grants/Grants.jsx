@@ -268,6 +268,10 @@ const Grants = observer(() => {
               <td>
                 Наименование профессии, специальности, направления подготовки
               </td>
+              <td>
+                Образовательная программа, направленность, профиль, шифр и
+                наименование научной специальности
+              </td>
               <td colSpan="2">2019 год</td>
               <td colSpan="2">2020 год</td>
               <td colSpan="2">2021 год</td>
@@ -276,6 +280,7 @@ const Grants = observer(() => {
             <tr itemProp="graduateJob">
               <td itemProp="eduCode">26.02.03</td>
               <td itemProp="eduName">"Судовождение"</td>
+              <td itemProp="eduProf">"Судовождение"</td>
               <td>0</td>
               <td>0</td>
               <td>38</td>
@@ -288,6 +293,9 @@ const Grants = observer(() => {
             <tr itemProp="graduateJob">
               <td itemProp="eduCode">26.02.05</td>
               <td itemProp="eduName">
+                "Эксплуатация судовых энергетических установок"
+              </td>
+              <td itemProp="eduProf">
                 "Эксплуатация судовых энергетических установок"
               </td>
               <td>0</td>
@@ -304,6 +312,9 @@ const Grants = observer(() => {
               <td itemProp="eduName">
                 "Эксплуатация судового электрооборудования и средств автоматики"
               </td>
+              <td itemProp="eduProf">
+                "Эксплуатация судового электрооборудования и средств автоматики"
+              </td>
               <td>0</td>
               <td>0</td>
               <td>26</td>
@@ -317,6 +328,9 @@ const Grants = observer(() => {
               <td itemProp="eduCode">23.02.01</td>
               <td itemProp="eduName">
                 Организация перевозок и управление на транспорте (по видам)
+              </td>
+              <td itemProp="eduProf">
+                Организация перевозок и управление на водном транспорте{" "}
               </td>
               <td>0</td>
               <td>0</td>

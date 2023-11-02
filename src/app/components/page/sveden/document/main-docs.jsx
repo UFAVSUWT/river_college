@@ -324,15 +324,6 @@ const MainDocs = ({ isActive }) => {
               </a>
             </li>
           </ul>
-          <HrLine className="document__hrLine" />
-          <ul>
-            <li className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={Raspisanie} target={"_blank"} rel="noreferrer">
-                Расписание учебных занятий
-              </a>
-            </li>
-          </ul>
         </DropDown>
         <DropDown
           className={`${toggleClassName(
