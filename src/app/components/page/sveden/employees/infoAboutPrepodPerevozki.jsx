@@ -8,12 +8,12 @@ const InfoAboutPrepodPerevozki = () => {
         </td>
       </tr>
       <tr itemProp="teachingStaff">
-        <td itemProp="fio">Акбарова Залия Шамсуновна</td>
+        ы<td itemProp="fio">Акбарова Залия Шамсуновна</td>
         <td itemProp="post">
           Преподаватель, высшая квалификационная категория
         </td>
         <td itemProp="teachingDiscipline">Математика</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Учитель физики и математики</td>
         <td itemProp="employeeQualification">Физика и математика</td>
         <td itemProp="degree">
@@ -36,7 +36,7 @@ const InfoAboutPrepodPerevozki = () => {
         <td itemProp="fio">Акбердин Венер Минисламович</td>
         <td itemProp="post">Воспитатель, преподаватель</td>
         <td itemProp="teachingDiscipline">ОБЖ Основы обороны государства</td>
-        <td itemProp="teachingLevel">Высшее, специалист</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">
           Инженер по эксплуатации радиотехнических средств
         </td>
@@ -59,9 +59,7 @@ const InfoAboutPrepodPerevozki = () => {
         <td itemProp="fio">Арсланова Наталья Анатольевна</td>
         <td itemProp="post">Медицинская сестра, преподаватель</td>
         <td itemProp="teachingDiscipline">ОБЖ. Основы медицинских знаний</td>
-        <td itemProp="teachingLevel">
-          "Высшее, специалист. Среднее профессиональное, специалист"
-        </td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">
           "Лингвист, переводчик немецкого и английского языка. Медицинская
           сестра"
@@ -93,7 +91,7 @@ const InfoAboutPrepodPerevozki = () => {
           Инженерная графика. Механика. Метрология, стандартизация и
           сертификация
         </td>
-        <td itemProp="teachingLevel">Высшее, специалист</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">"Инженер-механик. Экономист"</td>
         <td itemProp="employeeQualification">
           "Механизация сельского хозяйства, Финансы и кредит"
@@ -141,7 +139,7 @@ const InfoAboutPrepodPerevozki = () => {
         <td itemProp="fio">Байсаков Фатых Тимерказыкович</td>
         <td itemProp="post">Преподаватель, высшая квалификационая категория</td>
         <td itemProp="teachingDiscipline">Электроника и электротехника</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">
           Учитель математики и физики средней школы
         </td>
@@ -162,7 +160,7 @@ const InfoAboutPrepodPerevozki = () => {
         <td itemProp="fio">Бровко Вальдемар Дмитриевич</td>
         <td itemProp="post">Преподаватель</td>
         <td itemProp="teachingDiscipline">Охрана труда</td>
-        <td itemProp="teachingLevel">Н/высшее</td>
+        <td itemProp="teachingLevel">Н/Высшее образование</td>
         <td itemProp="teachingQual">-</td>
         <td itemProp="employeeQualification">Электротехнические устройства</td>
         <td itemProp="degree">-</td>
@@ -190,7 +188,7 @@ const InfoAboutPrepodPerevozki = () => {
           выпускников, преподаватель, высшая квалификационная категория
         </td>
         <td itemProp="teachingDiscipline">Теория устройства судна</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер</td>
         <td itemProp="employeeQualification">Судовождение</td>
         <td itemProp="degree">-</td>
@@ -222,7 +220,7 @@ const InfoAboutPrepodPerevozki = () => {
           Преподаватель, высшая квалификационная категория
         </td>
         <td itemProp="teachingDiscipline">Теория и устройство судна</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер кораблестроитель</td>
         <td itemProp="employeeQualification">Судостроение и судоремонт</td>
         <td itemProp="degree">-</td>
@@ -247,7 +245,7 @@ const InfoAboutPrepodPerevozki = () => {
           Преподаватель, высшая квалификационная категория
         </td>
         <td itemProp="teachingDiscipline">Математика</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Учитель математики</td>
         <td itemProp="employeeQualification">Математика</td>
         <td itemProp="degree">-</td>
@@ -270,7 +268,7 @@ const InfoAboutPrepodPerevozki = () => {
           Преподаватель, высшая квалификационная категория
         </td>
         <td itemProp="teachingDiscipline">Физика</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Физик</td>
         <td itemProp="employeeQualification">Физика</td>
         <td itemProp="degree">-</td>
@@ -294,7 +292,7 @@ const InfoAboutPrepodPerevozki = () => {
           видам транспорта/. Автоматизированные системы управления на транспорте
           /по видам транспорта/
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Учитель математики и информатики</td>
         <td itemProp="employeeQualification">Математика и информатика</td>
         <td itemProp="degree">-</td>
@@ -316,7 +314,7 @@ const InfoAboutPrepodPerevozki = () => {
         <td itemProp="fio">Зкриева Гульнара Робертовна</td>
         <td itemProp="post">Преподаватель высшая квалификационная категория</td>
         <td itemProp="teachingDiscipline">Электротехника и электроника</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер-электрик</td>
         <td itemProp="employeeQualification">
           Электрофикация и автоматизация сельского хозяйства
@@ -344,7 +342,7 @@ const InfoAboutPrepodPerevozki = () => {
           Преподаватель, первая квалификационная категория
         </td>
         <td itemProp="teachingDiscipline">Химия</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Учитель биологии и химии</td>
         <td itemProp="employeeQualification">Биология и химия</td>
         <td itemProp="degree">-</td>
@@ -373,7 +371,7 @@ const InfoAboutPrepodPerevozki = () => {
           транспорте. Перевзки в особых условиях. Квалификационный экзамен.
           Технические средства /по видам/. Организация движения
         </td>
-        <td itemProp="teachingLevel">Высшее, бакалавр</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Бакалавр</td>
         <td itemProp="employeeQualification">
           Технология транспортных процессов
@@ -397,7 +395,7 @@ const InfoAboutPrepodPerevozki = () => {
           Преподаватель, высшая квалификационная категория
         </td>
         <td itemProp="teachingDiscipline">Русский язык. Литература</td>
-        <td itemProp="teachingLevel">Высшее, бакалавр</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Бакалавр</td>
         <td itemProp="employeeQualification">Филология</td>
         <td itemProp="degree">-</td>
@@ -420,7 +418,7 @@ const InfoAboutPrepodPerevozki = () => {
         <td itemProp="fio">Кульмухаметова Гульнара Айдаровна</td>
         <td itemProp="post">Преподаватель</td>
         <td itemProp="teachingDiscipline">Инженерная графика</td>
-        <td itemProp="teachingLevel">Высшее, магистр</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Магистр</td>
         <td itemProp="employeeQualification">
           Технологические машины и обрудования
@@ -446,7 +444,7 @@ const InfoAboutPrepodPerevozki = () => {
           Технические средства судовождения. Правовое обеспечение. Технология
           перевозочного процесса. Квалификационный экзамен
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер водного транспорта</td>
         <td itemProp="employeeQualification">
           Эксплуатация водного транспорта
@@ -470,7 +468,7 @@ const InfoAboutPrepodPerevozki = () => {
           Заведующий отделением СПО, преподаватель высшей категории
         </td>
         <td itemProp="teachingDiscipline">Физика. Индувидуальный проект</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Учитель информатики</td>
         <td itemProp="employeeQualification">Информатика</td>
         <td itemProp="degree">-</td>
@@ -492,7 +490,7 @@ const InfoAboutPrepodPerevozki = () => {
         <td itemProp="teachingDiscipline">
           Иностранный язык в профессиональной деятельности
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Филолог. Преподаватель немецкого языка</td>
         <td itemProp="employeeQualification">Немецкий язык. Филология</td>
         <td itemProp="degree">-</td>
@@ -515,7 +513,7 @@ const InfoAboutPrepodPerevozki = () => {
         <td itemProp="fio">Рябова Зинаида Николаевна</td>
         <td itemProp="post">Преподаватель</td>
         <td itemProp="teachingDiscipline">Физическая культура</td>
-        <td itemProp="teachingLevel">Высшее, специалист</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">
           Специалист по физической культуре и спорту
         </td>
@@ -537,7 +535,7 @@ const InfoAboutPrepodPerevozki = () => {
         <td itemProp="teachingDiscipline">
           История. Обществознание. Основы философии
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Историк. Преподаватель истории</td>
         <td itemProp="employeeQualification">История</td>
         <td itemProp="degree">-</td>
@@ -559,7 +557,7 @@ const InfoAboutPrepodPerevozki = () => {
           Транспортная система России. Правовое обеспечение. Основы
           делопроизводства. Физическая культура. ОБЖ
         </td>
-        <td itemProp="teachingLevel">Высшее, специалист</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">
           Инженер транспортных и технологических машин и оборудования
           /нефтегазодобыча/
@@ -588,7 +586,7 @@ const InfoAboutPrepodPerevozki = () => {
         <td itemProp="teachingDiscipline">
           ОБЖ Безопасность жизнедеятельности
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Историк. Преподаватель истории</td>
         <td itemProp="employeeQualification">История</td>
         <td itemProp="degree">-</td>

@@ -1,7 +1,7 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName } from "../../../../utils/disabled";
-import Licenz1 from "../../../../assets/pdf/educationPage/1. Лицензия.pdf";
+import Licenz1 from "../../../../assets/pdf/documentPage/Выписка из реестра лицензий по состоянию на 04.07.2023 г..pdf";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
 import Pologenie_Parus from "../../../../assets/pdf/educationPage/Pologenie_Parus.pdf";
 import Pologhenie_DO from "../../../../assets/pdf/educationPage/Pologhenie_DO.pdf";

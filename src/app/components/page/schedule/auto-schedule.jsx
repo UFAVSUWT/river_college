@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import raspisanieJSON8 from "../../../mockData/Расписание_10.json";
+import raspisanieJSON8 from "../../../mockData/Расписание_12.json";
 import raspisanieJSON9 from "../../../mockData/Расписание_11.json";
 import locale from "antd/es/date-picker/locale/ru_RU";
 import "dayjs/locale/ru";
@@ -129,17 +129,17 @@ const AutoSchedule = () => {
   };
   /* Выбор даты !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
   function getDayNumber() {
-    if (day === "30-10-2023") {
+    if (day === "13-11-2023") {
       return 1;
-    } else if (day === "31-10-2023") {
+    } else if (day === "14-11-2023") {
       return 2;
-    } else if (day === "1-11-2023") {
+    } else if (day === "15-11-2023") {
       return 3;
-    } else if (day === "2-11-2023") {
+    } else if (day === "16-11-2023") {
       return 4;
-    } else if (day === "3-11-2023") {
+    } else if (day === "17-11-2023") {
       return 5;
-    } else if (day === "4-11-2023") {
+    } else if (day === "18-11-2023") {
       return 6;
     } else if (day === "6-11-2023") {
       return 1;
@@ -156,18 +156,18 @@ const AutoSchedule = () => {
     }
   }
   useEffect(() => {
-    if (day === "30-10-2023") {
-      setWeek(10);
-    } else if (day === "31-10-2023") {
-      setWeek(10);
-    } else if (day === "1-11-2023") {
-      setWeek(10);
-    } else if (day === "2-11-2023") {
-      setWeek(10);
-    } else if (day === "3-11-2023") {
-      setWeek(10);
-    } else if (day === "4-11-2023") {
-      setWeek(10);
+    if (day === "13-11-2023") {
+      setWeek(12);
+    } else if (day === "14-11-2023") {
+      setWeek(12);
+    } else if (day === "15-11-2023") {
+      setWeek(12);
+    } else if (day === "16-11-2023") {
+      setWeek(12);
+    } else if (day === "17-11-2023") {
+      setWeek(12);
+    } else if (day === "18-11-2023") {
+      setWeek(12);
     } else if (day === "6-11-2023") {
       setWeek(11);
     } else if (day === "7-11-2023") {
@@ -190,7 +190,7 @@ const AutoSchedule = () => {
       classesOfSelectedGroupOnWeek9 &&
       selectedDayNumber
     ) {
-      if (week === 10) {
+      if (week === 12) {
         /* Меняем неделю!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
         setSelectedDayLessons(
           classesOfSelectedGroupOnWeek8[0]?.filter(
@@ -240,8 +240,8 @@ const AutoSchedule = () => {
   };
   /* делаем активными дни в календаря */
   function disabledDate(current) {
-    const startDate = new Date(2023, 9, 30); // не забываем про месяцы -1
-    const endDate = new Date(2023, 10, 12); // дата окончания недели должна быть +1
+    const startDate = new Date(2023, 10, 6); // не забываем про месяцы -1
+    const endDate = new Date(2023, 10, 19); // дата окончания недели должна быть +1
     return (
       current.$d < startDate || // проверяем, что дата находится в заданном диапазоне
       current.$d > endDate ||

@@ -16,7 +16,7 @@ const InfoAboutPrepodSudov = () => {
           Мореходная астрономия. Тренажерная подготовка. Использование ЭКНИС,
           РЛС, САРП. Оператор связи ГМССБ. Квалификационный экзамен
         </td>
-        <td itemProp="teachingLevel">Высшее, специалист</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер-судоводитель</td>
         <td itemProp="employeeQualification">Судовождение на морских путях</td>
         <td itemProp="degree">-</td>
@@ -36,7 +36,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="fio">Адиятуллина Диля Миннемуслимовна</td>
         <td itemProp="post">Социальный педагог, преподаватель</td>
         <td itemProp="teachingDiscipline">Психология общения</td>
-        <td itemProp="teachingLevel">Высшее, специалист</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">"Социальный педагог, педагог психолог"</td>
         <td itemProp="employeeQualification">Социальная педагогика</td>
         <td itemProp="degree">-</td>
@@ -58,7 +58,7 @@ const InfoAboutPrepodSudov = () => {
           Преподаватель, высшая квалификационная категория
         </td>
         <td itemProp="teachingDiscipline">Математика</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Учитель физики и математики</td>
         <td itemProp="employeeQualification">Физика и математика</td>
         <td itemProp="degree">
@@ -84,7 +84,7 @@ const InfoAboutPrepodSudov = () => {
           Заместитель директора по воспитательной работе, преподаватель
         </td>
         <td itemProp="teachingDiscipline">ПОПД</td>
-        <td itemProp="teachingLevel">Высшее, магистр</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Магистр</td>
         <td itemProp="employeeQualification">Экономика</td>
         <td itemProp="degree">-</td>
@@ -105,7 +105,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="fio">Акбердин Венер Минисламович</td>
         <td itemProp="post">Воспитатель, преподаватель</td>
         <td itemProp="teachingDiscipline">ОБЖ Основы обороны государства</td>
-        <td itemProp="teachingLevel">Высшее, специалист</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">
           Инженер по эксплуатации радиотехнических средств
         </td>
@@ -128,9 +128,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="fio">Арсланова Наталья Анатольевна</td>
         <td itemProp="post">Медицинская сестра, преподаватель</td>
         <td itemProp="teachingDiscipline">ОБЖ. Основы мед. знаний</td>
-        <td itemProp="teachingLevel">
-          "Высшее, специалист. Среднее профессиональное, специалист"
-        </td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">
           "Лингвист, переводчик немецкого и английского языка. Медицинская
           сестра"
@@ -162,7 +160,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="teachingDiscipline">
           Технология перевозки грузов. Квалификационный экзамен
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер водного транспорта</td>
         <td itemProp="employeeQualification">
           Организация перевозок и управление на транспорте (водном)
@@ -188,7 +186,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="teachingDiscipline">
           Метрология и стандартизация. Механика
         </td>
-        <td itemProp="teachingLevel">Высшее, специалист</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">"Инженер-механик. Экономист"</td>
         <td itemProp="employeeQualification">
           "Механизация сельского хозяйства, Финансы и кредит"
@@ -213,7 +211,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="fio">Баширова Альфия Анваровна</td>
         <td itemProp="post">Педагог-организатор, преподаватель</td>
         <td itemProp="teachingDiscipline">География</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Учитель башкирского языка и литературы</td>
         <td itemProp="employeeQualification">Филология</td>
         <td itemProp="degree">-</td>
@@ -234,7 +232,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="fio">Байсаков Фатых Тимерказыкович</td>
         <td itemProp="post">Преподаватель, высшая квалификационая категория</td>
         <td itemProp="teachingDiscipline">Электроника и электротехника.</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">
           Учитель математики и физики средней школы
         </td>
@@ -258,7 +256,7 @@ const InfoAboutPrepodSudov = () => {
           образования. Заслуженный учитель РБ
         </td>
         <td itemProp="teachingDiscipline">Инженерная графика</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">"Инженер-механик"</td>
         <td itemProp="employeeQualification">Авиационные двигатели</td>
         <td itemProp="degree">-</td>
@@ -281,7 +279,7 @@ const InfoAboutPrepodSudov = () => {
           Теория устройства судна. СВМ и системы. Обслуживание и ремонт судовых
           энергетических установок
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер кораблестроитель</td>
         <td itemProp="employeeQualification">Судостроение и судоремонт</td>
         <td itemProp="degree">-</td>
@@ -309,7 +307,7 @@ const InfoAboutPrepodSudov = () => {
           Материаловедение. Судовые энргетические установки /включая тренажер
           вахтенного механика. Квалификационный экзамен.
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер-механик</td>
         <td itemProp="employeeQualification">«Судовые машины и механизмы»</td>
         <td itemProp="degree">-</td>
@@ -334,7 +332,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="teachingDiscipline">
           Основы финансовой грамотности и препринимательской деятельности
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Экономист</td>
         <td itemProp="employeeQualification">Финансы и кредит</td>
         <td itemProp="degree">-</td>
@@ -354,7 +352,7 @@ const InfoAboutPrepodSudov = () => {
           Преподаватель, высшая квалификационная категория
         </td>
         <td itemProp="teachingDiscipline">Математика</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Учитель математики</td>
         <td itemProp="employeeQualification">Математика</td>
         <td itemProp="degree">-</td>
@@ -372,28 +370,12 @@ const InfoAboutPrepodSudov = () => {
         </td>
       </tr>
       <tr itemProp="teachingStaff">
-        <td itemProp="fio"></td>
-        <td itemProp="post"></td>
-        <td itemProp="teachingDiscipline"></td>
-        <td itemProp="teachingLevel"></td>
-        <td itemProp="teachingQual"></td>
-        <td itemProp="employeeQualification"></td>
-        <td itemProp="degree">-</td>
-        <td itemProp="academStat">-</td>
-        <td itemProp="profDevelopment"></td>
-        <td itemProp="genExperience"></td>
-        <td itemProp="specExperience"></td>
-        <td itemProp="teachingOp">
-          26.02.03 «Судовождение» (углубленная подготовка)
-        </td>
-      </tr>
-      <tr itemProp="teachingStaff">
         <td itemProp="fio">Галлямова Раушания Харисовна</td>
         <td itemProp="post">
           Преподаватель, высшая квалификационная категория
         </td>
         <td itemProp="teachingDiscipline">Физика</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Физик</td>
         <td itemProp="employeeQualification">Физика</td>
         <td itemProp="degree">-</td>
@@ -415,7 +397,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="teachingDiscipline">
           Иностранный язык в профессиональной деятельности
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">
           Учитель башкирского языка, литературы и английского языка.
         </td>
@@ -445,7 +427,7 @@ const InfoAboutPrepodSudov = () => {
           Управление судном. Правила плавания и управление судами на ВВП.
           Технические средства судовождения. Оператор связи ГМССБ
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер</td>
         <td itemProp="employeeQualification">Судовождение</td>
         <td itemProp="degree">-</td>
@@ -476,7 +458,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="teachingDiscipline">
           Иностранный язык в профессиональной деятельности.
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">
           Учитель английского и французского языка
         </td>
@@ -502,7 +484,7 @@ const InfoAboutPrepodSudov = () => {
           Преподаватель, первая квалификационная категория
         </td>
         <td itemProp="teachingDiscipline">Химия. Биология. География</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Учитель биологии и химии</td>
         <td itemProp="employeeQualification">Биология и химия</td>
         <td itemProp="degree">-</td>
@@ -529,7 +511,7 @@ const InfoAboutPrepodSudov = () => {
           судовых энергетических установок. Обслуживание и ремонт судовых
           энергетических установок
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер-электрик</td>
         <td itemProp="employeeQualification">
           Электрофикация и автоматизация сельского хозяйства
@@ -560,7 +542,7 @@ const InfoAboutPrepodSudov = () => {
           Технология перевозок. Коммерческая эксплуатация. Квалификационный
           экзамен
         </td>
-        <td itemProp="teachingLevel">Высшее, бакалавр</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Бакалавр</td>
         <td itemProp="employeeQualification">
           Технология транспортных процессов
@@ -584,7 +566,7 @@ const InfoAboutPrepodSudov = () => {
           Преподаватель, высшая квалификационная категория
         </td>
         <td itemProp="teachingDiscipline">Русский язык</td>
-        <td itemProp="teachingLevel">Высшее, бакалавр</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Бакалавр</td>
         <td itemProp="employeeQualification">Филология</td>
         <td itemProp="degree">-</td>
@@ -609,7 +591,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="teachingDiscipline">
           Техническая термодинамика и теплопередача. Инженерная графика
         </td>
-        <td itemProp="teachingLevel">Высшее, магистр</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Магистр</td>
         <td itemProp="employeeQualification">
           Технологические машины и обрудования
@@ -632,7 +614,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="fio">Котухов Сергей Владимирович</td>
         <td itemProp="post">Преподаватель</td>
         <td itemProp="teachingDiscipline">Новигация и лоция</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер-судоводитель</td>
         <td itemProp="employeeQualification">
           Судовождение на внутренних водных путях
@@ -658,7 +640,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="teachingDiscipline">
           Навигация и лоция. Навигационная гидрометеорология
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер-судоводитель</td>
         <td itemProp="employeeQualification">
           Судовождение на внутренних водных путях
@@ -685,7 +667,7 @@ const InfoAboutPrepodSudov = () => {
           технологий. Квалификационный экзамен. Оценка эффективности и качества
           работы. Квалификационный экзамен
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер водного транспорта</td>
         <td itemProp="employeeQualification">
           Эксплуатация водного транспорта
@@ -710,7 +692,7 @@ const InfoAboutPrepodSudov = () => {
           квалификационная категория
         </td>
         <td itemProp="teachingDiscipline">Литература</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Учитель русского языка и литературы</td>
         <td itemProp="employeeQualification">Русский язык и литература</td>
         <td itemProp="degree">-</td>
@@ -739,7 +721,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="teachingDiscipline">
           Иностранный язык в профессиональной деятельности
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Филолог. Преподаватель немецкого языка</td>
         <td itemProp="employeeQualification">Немецкий язык. Филология</td>
         <td itemProp="degree">-</td>
@@ -765,7 +747,7 @@ const InfoAboutPrepodSudov = () => {
           выпускников, преподаватель
         </td>
         <td itemProp="teachingDiscipline">Обществознание</td>
-        <td itemProp="teachingLevel">Высшее, бакалавр</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Бакалавр</td>
         <td itemProp="employeeQualification">Юриспруденция</td>
         <td itemProp="degree">-</td>
@@ -786,7 +768,7 @@ const InfoAboutPrepodSudov = () => {
           Управление судом. ПП и управление судами на ВВП. Общая и социальная
           лоции ВВП РФ
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер-судоводитель</td>
         <td itemProp="employeeQualification">
           Судовождение на внутренних водных путях
@@ -808,7 +790,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="fio">Рябова Зинаида Николаевна</td>
         <td itemProp="post">Преподаватель</td>
         <td itemProp="teachingDiscipline">Физическая культура</td>
-        <td itemProp="teachingLevel">Высшее, специалист</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">
           Специалист по физической культуре и спорту
         </td>
@@ -828,7 +810,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="fio">Решетников Виталий Евгеньевич</td>
         <td itemProp="post">Преподаватель</td>
         <td itemProp="teachingDiscipline">История</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Историк. Преподаватель истории</td>
         <td itemProp="employeeQualification">История</td>
         <td itemProp="degree">-</td>
@@ -852,7 +834,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="teachingDiscipline">
           ОБЖ Безопасность жизнедеятельности
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Историк. Преподаватель истории</td>
         <td itemProp="employeeQualification">История</td>
         <td itemProp="degree">-</td>
@@ -869,22 +851,6 @@ const InfoAboutPrepodSudov = () => {
         </td>
       </tr>{" "}
       <tr itemProp="teachingStaff">
-        <td itemProp="fio"></td>
-        <td itemProp="post"></td>
-        <td itemProp="teachingDiscipline"></td>
-        <td itemProp="teachingLevel"></td>
-        <td itemProp="teachingQual"></td>
-        <td itemProp="employeeQualification"></td>
-        <td itemProp="degree">-</td>
-        <td itemProp="academStat">-</td>
-        <td itemProp="profDevelopment"></td>
-        <td itemProp="genExperience"></td>
-        <td itemProp="specExperience"></td>
-        <td itemProp="teachingOp">
-          26.02.03 «Судовождение» (углубленная подготовка)
-        </td>
-      </tr>{" "}
-      <tr itemProp="teachingStaff">
         <td itemProp="fio">Сиразетдинова Эльвира Раисовна</td>
         <td itemProp="post">
           Старший мтодист, преподаватель, первая квалификационная категория
@@ -893,7 +859,7 @@ const InfoAboutPrepodSudov = () => {
           Предупреждение и предотвращение загрязнения окружающей среды.
           Квалификационный экзамен.
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Историк. Преподаватель истории</td>
         <td itemProp="employeeQualification">История</td>
         <td itemProp="degree">-</td>
@@ -922,7 +888,7 @@ const InfoAboutPrepodSudov = () => {
           Обеспечение безопасности плавания и живучести судна. БЖ на судне.
           Транспортная безопасность на судне. Квалификационный экзамен.
         </td>
-        <td itemProp="teachingLevel">Высшее, специалист</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер</td>
         <td itemProp="employeeQualification">Судовождение на ВВП</td>
         <td itemProp="degree">-</td>
@@ -942,7 +908,7 @@ const InfoAboutPrepodSudov = () => {
           Преподаватель, первая квалификационная категория
         </td>
         <td itemProp="teachingDiscipline">Устройство и эксплуатации судов</td>
-        <td itemProp="teachingLevel">Высшее, специалист, бакалавр</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">"Техник-судомеханик. Бакалавр"</td>
         <td itemProp="employeeQualification">
           "Технологические машины и оборудование. Эксплуатация транспортных
@@ -973,7 +939,7 @@ const InfoAboutPrepodSudov = () => {
           Основы анализа эффективности работы судна с применением информационных
           систем. Физическая культура
         </td>
-        <td itemProp="teachingLevel">Высшее, специалист</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">
           Инженер транспортных и технологических машин и оборудования
           /нефтегазодобыча/
@@ -998,7 +964,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="fio">Филлипов Эдуард Валерьевич</td>
         <td itemProp="post">Преподаватель</td>
         <td itemProp="teachingDiscipline">Физическая культура</td>
-        <td itemProp="teachingLevel">Высшее, специалист</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер-экономист</td>
         <td itemProp="employeeQualification">
           Экономика и управление на предприятиях
@@ -1021,7 +987,7 @@ const InfoAboutPrepodSudov = () => {
           Судовая автоматика и КИП. Обслуживание и ремонт судового
           электрического и электронного оборудования. Квалифицированный экзамен
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер-электрик</td>
         <td itemProp="employeeQualification">
           Электропривод и автоматизация промышленных установок
@@ -1046,7 +1012,7 @@ const InfoAboutPrepodSudov = () => {
           категории
         </td>
         <td itemProp="teachingDiscipline">Обществознание</td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">
           Историк, преподаватель истории и обществоведения
         </td>
@@ -1074,9 +1040,7 @@ const InfoAboutPrepodSudov = () => {
           Подготовка по бортьбе с пожаром. Навигационная гидрометеорология.
           Технические средства судовождения
         </td>
-        <td itemProp="teachingLevel">
-          Среднее профессиональное образование, специалист
-        </td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Техник-судомеханик</td>
         <td itemProp="employeeQualification">
           Судовождение на внутренних водных путях
@@ -1096,7 +1060,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="teachingDiscipline">
           Судовые работы и основы судовождения. Квалификационный экзамен
         </td>
-        <td itemProp="teachingLevel">Высшее, бакалавр</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Техник-судоводитель</td>
         <td itemProp="employeeQualification">
           Судовождение на внутренних водных путях
@@ -1117,9 +1081,7 @@ const InfoAboutPrepodSudov = () => {
           Судовые энергетические установки и их эксплуатация /включая тренажер
           вахтенного механизма/
         </td>
-        <td itemProp="teachingLevel">
-          Среднее профессиональное образование, специалист
-        </td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Техник-судоводитель</td>
         <td itemProp="employeeQualification">
           Судовождение на внутренних водных путях
@@ -1140,9 +1102,7 @@ const InfoAboutPrepodSudov = () => {
           Судовые энергетические установки /включая тренажер вахтенного
           механизма/
         </td>
-        <td itemProp="teachingLevel">
-          Среднее профессиональное образование, специалист
-        </td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Техник-судоводитель</td>
         <td itemProp="employeeQualification">
           Судовождение на внутренних водных путях
@@ -1163,7 +1123,7 @@ const InfoAboutPrepodSudov = () => {
           Государственного портового контроля ФБУ Администрации "Камводпуть")
         </td>
         <td itemProp="teachingDiscipline">Председатель ГЭК</td>
-        <td itemProp="teachingLevel">"Высшее, специалист, СПО"</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">"Менеджер Техник судоводитель"</td>
         <td itemProp="employeeQualification">
           "Экономика и менеджмент, управление муниципальными организациями
@@ -1184,7 +1144,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="teachingDiscipline">
           Председатель квалификационной комиссии
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер-судоводитель</td>
         <td itemProp="employeeQualification">Судовождение на ВВП</td>
         <td itemProp="degree">-</td>
@@ -1205,7 +1165,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="teachingDiscipline">
           Председатель квалификационной комиссии
         </td>
-        <td itemProp="teachingLevel">Высшее, бакалавриат</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Бакалавр</td>
         <td itemProp="employeeQualification">
           Технология транспортных процессов
@@ -1228,7 +1188,7 @@ const InfoAboutPrepodSudov = () => {
         <td itemProp="teachingDiscipline">
           Председатель квалификационной комиссии
         </td>
-        <td itemProp="teachingLevel">Высшее</td>
+        <td itemProp="teachingLevel">Высшее образование</td>
         <td itemProp="teachingQual">Инженер-судоводитель</td>
         <td itemProp="employeeQualification">Судовождение на ВВП</td>
         <td itemProp="degree">-</td>
