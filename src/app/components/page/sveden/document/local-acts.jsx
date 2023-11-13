@@ -71,6 +71,7 @@ import ureg_konfl from "../../../../assets/pdf/documentPage/local/59. 1621430308
 import pol_o_kom from "../../../../assets/pdf/documentPage/local/60. 00000000423.pdf";
 import konk_kom from "../../../../assets/pdf/documentPage/local/61. Положение о конкурсной комиссии и порядке проведения конкурсов на замещение вакантных должностей.pdf";
 import pol_o_priemn from "../../../../assets/pdf/documentPage/local/62. 00000000574.pdf";
+import vokoPerev from "../../../../assets/pdf/documentPage/local/Отчет по ВОКО 23.02.01 Организация перевозок и управление на транспорте.pdf";
 
 const LocalActs = ({ isActive }) => {
   return (
@@ -236,6 +237,13 @@ const LocalActs = ({ isActive }) => {
             <a href={vokoElectrooborud} target={"_blank"} rel="noreferrer">
               Отчет по ВОКО 26.02.06 Эксплуатация судового электрооборудования и
               средств автоматики
+            </a>
+          </li>
+          <li itemProp="localActStud" className="doc__item">
+            <PDF height={"40px"} width={"40px"} />
+            <a href={vokoPerev} target={"_blank"} rel="noreferrer">
+              Отчет по ВОКО 23.02.01 Организация перевозок и управление на
+              транспорте
             </a>
           </li>
           <li itemProp="localActStud" className="doc__item">
