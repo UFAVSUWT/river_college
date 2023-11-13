@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-/* import RPV_SM from "../../../../../assets/pdf/educationPage/260205/СМ 2022 гп/7. Рабочая программа воспитания.pdf"; */
+import RPV_SM from "../../../../../assets/pdf/educationPage/260205/СМ 2022 гп/ВР СМ 2022-2023.pdf";
 import Image16 from "../../../../../assets/pdf/educationPage/260205/СМ 2022 гп/5. Календарный учебный график.pdf";
 import OOP9 from "../../../../../assets/pdf/educationPage/260205/СМ 2022 гп/1. Описание образовательной программы.pdf";
 import Annot9 from "../../../../../assets/pdf/educationPage/260205/СМ 2022 гп/3. Аннотации программ дисциплин  для специальности СПО  26.02.05.Эксплуатация судовых энергетических установок.pdf";
@@ -132,7 +132,7 @@ const SPOEkspluatSudovEnergUstanovok_22_260205 = ({ PDF }) => {
         <ul>
           <li className="doc__item">
             <PDF height={"25px"} width={"25px"} />
-            <a href={"RPV_SM"} target={"_blank"} rel="noreferrer">
+            <a href={RPV_SM} target={"_blank"} rel="noreferrer">
               Скачать
             </a>
           </li>

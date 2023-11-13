@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import raspisanieJSON8 from "../../../mockData/Расписание_12.json";
-import raspisanieJSON9 from "../../../mockData/Расписание_11.json";
+import raspisanieJSON9 from "../../../mockData/Расписание_13.json";
 import locale from "antd/es/date-picker/locale/ru_RU";
 import "dayjs/locale/ru";
 import EducationContainer from "../../common/educationContainer/education-container";
@@ -141,17 +141,17 @@ const AutoSchedule = () => {
       return 5;
     } else if (day === "18-11-2023") {
       return 6;
-    } else if (day === "6-11-2023") {
+    } else if (day === "20-11-2023") {
       return 1;
-    } else if (day === "7-11-2023") {
+    } else if (day === "21-11-2023") {
       return 2;
-    } else if (day === "8-11-2023") {
+    } else if (day === "22-11-2023") {
       return 3;
-    } else if (day === "9-11-2023") {
+    } else if (day === "23-11-2023") {
       return 4;
-    } else if (day === "10-11-2023") {
+    } else if (day === "24-11-2023") {
       return 5;
-    } else if (day === "11-11-2023") {
+    } else if (day === "25-11-2023") {
       return 6;
     }
   }
@@ -168,18 +168,18 @@ const AutoSchedule = () => {
       setWeek(12);
     } else if (day === "18-11-2023") {
       setWeek(12);
-    } else if (day === "6-11-2023") {
-      setWeek(11);
-    } else if (day === "7-11-2023") {
-      setWeek(11);
-    } else if (day === "8-11-2023") {
-      setWeek(11);
-    } else if (day === "9-11-2023") {
-      setWeek(11);
-    } else if (day === "10-11-2023") {
-      setWeek(11);
-    } else if (day === "11-11-2023") {
-      setWeek(11);
+    } else if (day === "20-11-2023") {
+      setWeek(13);
+    } else if (day === "21-11-2023") {
+      setWeek(13);
+    } else if (day === "22-11-2023") {
+      setWeek(13);
+    } else if (day === "23-11-2023") {
+      setWeek(13);
+    } else if (day === "24-11-2023") {
+      setWeek(13);
+    } else if (day === "25-11-2023") {
+      setWeek(13);
     }
   }, [day]);
 
@@ -197,7 +197,7 @@ const AutoSchedule = () => {
             (e) => e.weekday === selectedDayNumber
           )
         );
-      } else if (week === 11) {
+      } else if (week === 13) {
         setSelectedDayLessons(
           classesOfSelectedGroupOnWeek9[0]?.filter(
             (e) => e.weekday === selectedDayNumber
@@ -240,8 +240,8 @@ const AutoSchedule = () => {
   };
   /* делаем активными дни в календаря */
   function disabledDate(current) {
-    const startDate = new Date(2023, 10, 6); // не забываем про месяцы -1
-    const endDate = new Date(2023, 10, 19); // дата окончания недели должна быть +1
+    const startDate = new Date(2023, 10, 13); // не забываем про месяцы -1
+    const endDate = new Date(2023, 10, 26); // дата окончания недели должна быть +1
     return (
       current.$d < startDate || // проверяем, что дата находится в заданном диапазоне
       current.$d > endDate ||

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-/* import KPV from "../../../../../assets/pdf/educationPage/260203/СВ 2022 гп/8. Календарный план ВР.pdf";
-import RPV_SV from "../../../../../assets/pdf/educationPage/260203/СВ 2022 гп/7. Рабочая программа воспитания СВ.pdf"; */
+/*  import KPV from "../../../../../assets/pdf/educationPage/260203/СВ 2022 гп/8. Календарный план ВР.pdf"; */
+import RPV_SV from "../../../../../assets/pdf/educationPage/260203/СВ 2022 гп/ВР СВ 2022-2023.pdf";
 import Image1 from "../../../../../assets/pdf/educationPage/260203/СВ 2022 гп/5. Календарный график учебного процесса 2022-2023.pdf";
 import OOP1 from "../../../../../assets/pdf/educationPage/260203/СВ 2022 гп/1. Описание образовательной программы.pdf";
 import UP1 from "../../../../../assets/pdf/educationPage/260203/СВ 2022 гп/2. Учебный план 26.02.03  Судовождение очное.pdf";
@@ -129,7 +129,7 @@ const SPOSudovojdenie_22_260203 = ({ PDF }) => {
         <ul>
           <li className="doc__item">
             <PDF height={"25px"} width={"25px"} />
-            <a href={"RPV_SV"} target={"_blank"} rel="noreferrer">
+            <a href={RPV_SV} target={"_blank"} rel="noreferrer">
               Скачать
             </a>
           </li>

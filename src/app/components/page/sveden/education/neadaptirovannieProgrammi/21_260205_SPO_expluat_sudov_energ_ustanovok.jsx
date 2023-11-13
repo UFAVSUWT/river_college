@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import RPV_SM from "../../../../../assets/pdf/educationPage/260205/СМ 2021 гп/7. Рабочая программа воспитания.pdf";
+import RPV_SM from "../../../../../assets/pdf/educationPage/260205/СМ 2021 гп/ВР СМ 2021-2022 г.п.pdf";
 import Image16 from "../../../../../assets/pdf/educationPage/260205/СМ 2021 гп/5. Календарный рафик учебного процесса.pdf";
 import OOP9 from "../../../../../assets/pdf/educationPage/260205/СМ 2021 гп/1. Описание образовательной программы.pdf";
 import Annot9 from "../../../../../assets/pdf/educationPage/260205/СМ 2021 гп/3. Аннотация к рабочим  программам дисциплиндля специальности.pdf";

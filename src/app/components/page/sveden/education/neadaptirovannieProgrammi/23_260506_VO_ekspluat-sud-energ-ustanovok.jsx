@@ -4,7 +4,7 @@ import OOP2023vo from "../../../../../assets/pdf/educationPage/260506/OOP2023vo.
 import Ucheb_plan_VO_260506_2023 from "../../../../../assets/pdf/educationPage/260506/Ucheb_plan_VO_26.05.06_2023.pdf";
 import annot_2023_260506 from "../../../../../assets/pdf/educationPage/260506/annot_2023_26.05.06.pdf";
 import KUG2023_260506 from "../../../../../assets/pdf/educationPage/260506/KUG2023_26.05.06.pdf";
-import rp_23_24 from "../../../../../assets/pdf/educationPage/260506/rp_23_24.pdf";
+import rp_23_24 from "../../../../../assets/pdf/educationPage/260506/ВР СМ 2023-2024.pdf";
 import kpvr_VO from "../../../../../assets/pdf/educationPage/260506/kpvr_VO.pdf";
 
 const VOEkspluatSudEnergUstanovok_23_260506 = ({ PDF }) => {

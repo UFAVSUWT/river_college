@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import RPV_OP from "../../../../../assets/pdf/educationPage/230201/ОП 2021 гп/8. Календарный план Воспитательной работы.pdf";
+import RPV_OP from "../../../../../assets/pdf/educationPage/230201/ОП 2021 гп/ВР ОП  2021-2022 г.п..pdf";
 import Image22 from "../../../../../assets/pdf/educationPage/230201/ОП 2021 гп/5. Календарный график учебного процесса.pdf";
 import OOP13 from "../../../../../assets/pdf/educationPage/230201/ОП 2021 гп/1. Описание образовательной программы ППССЗ.pdf";
 import annot_OP from "../../../../../assets/pdf/educationPage/230201/ОП 2021 гп/3. Аннотации программ дисциплин и проф.модулей.pdf";
-import KPV from "../../../../../assets/pdf/educationPage/230201/ОП 2021 гп/7. Рабочая программа воспитания.pdf";
+import KPV from "../../../../../assets/pdf/educationPage/230201/ОП 2021 гп/8. Календарный план Воспитательной работы.pdf";
 import UP17 from "../../../../../assets/pdf/educationPage/230201/ОП 2021 гп/2. Учебный план 23.02.01.pdf";
 
 const SPOOrganiz_perevoz_upravlenia_21_230201 = ({ PDF }) => {

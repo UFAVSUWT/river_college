@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import KPV from "../../../../../assets/pdf/educationPage/260203/СВ 2021 гп/8. Календарный план ВР.pdf";
-import RPV_SV from "../../../../../assets/pdf/educationPage/260203/СВ 2021 гп/7. Рабочая программа воспитания СВ.pdf";
+import RPV_SV from "../../../../../assets/pdf/educationPage/260203/СВ 2021 гп/ВР СВ  2021-2022 г.п..pdf";
 import Image1 from "../../../../../assets/pdf/educationPage/260203/СВ 2021 гп/8. Календарный план ВР.pdf";
 import OOP1 from "../../../../../assets/pdf/educationPage/260203/СВ 2021 гп/1. ООП   26 02 03 Судовождение  Среднее образование.pdf";
 import UP1 from "../../../../../assets/pdf/educationPage/260203/СВ 2021 гп/2. Учебный план 26.02.03 Судовождение.pdf";

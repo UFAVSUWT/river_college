@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-/* import RPV_OP from "../../../../../assets/pdf/educationPage/230201/ОП 2022 гп/8. Календарный план Воспитательной работы.pdf"; */
+import RPV_OP from "../../../../../assets/pdf/educationPage/230201/ОП 2022 гп/ВР ОП 2022-2023.pdf";
 import Image22 from "../../../../../assets/pdf/educationPage/230201/ОП 2022 гп/5. Календарный график учебного процесса.pdf";
 import OOP13 from "../../../../../assets/pdf/educationPage/230201/ОП 2022 гп/1. Описание образовательной программы.pdf";
 import annot_OP from "../../../../../assets/pdf/educationPage/230201/ОП 2022 гп/3. Аннотации программ дисциплин.pdf";
@@ -140,7 +140,7 @@ const SPOOrganiz_perevoz_upravlenia_22_230201 = ({ PDF }) => {
         <ul>
           <li className="doc__item">
             <PDF height={"25px"} width={"25px"} />
-            <a href={"RPV_OP"} target={"_blank"} rel="noreferrer">
+            <a href={RPV_OP} target={"_blank"} rel="noreferrer">
               Скачать
             </a>
           </li>

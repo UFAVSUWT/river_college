@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-/* import RPV_EM from "../../../../../assets/pdf/educationPage/260206/ЭМ 2022 гп/7. Рабочая прогарамма воспитания.pdf"; */
+import RPV_EM from "../../../../../assets/pdf/educationPage/260206/ЭМ 2022 гп/ВР ЭМ 2022-2023.pdf";
 import Image12 from "../../../../../assets/pdf/educationPage/260206/ЭМ 2022 гп/5. Календарный график учебного процесса 2022-2023.pdf";
 import OOP5 from "../../../../../assets/pdf/educationPage/260206/ЭМ 2022 гп/1. Описание образовательной программы.pdf";
 import Annot5 from "../../../../../assets/pdf/educationPage/260206/ЭМ 2022 гп/3. Аннотации программ дисциплин.pdf";
@@ -135,7 +135,7 @@ const SPOEkspluatSudovEelectrooborud_22_260206 = ({ PDF }) => {
         <ul>
           <li className="doc__item">
             <PDF height={"25px"} width={"25px"} />
-            <a href={"RPV_EM"} target={"_blank"} rel="noreferrer">
+            <a href={RPV_EM} target={"_blank"} rel="noreferrer">
               Скачать
             </a>
           </li>
