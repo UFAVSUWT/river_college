@@ -32,7 +32,7 @@ import poloj_o_dist from "../../../../assets/pdf/documentPage/local/19. 00000000
 import poloj_o_dist_dpo from "../../../../assets/pdf/documentPage/local/20. 00000000456.pdf";
 import pol_o_dop_obr from "../../../../assets/pdf/documentPage/local/21. 00000000706.pdf";
 import pol_o_komis from "../../../../assets/pdf/documentPage/local/22. Положение о комиссии по переводу студентов с платного обучения на бесплатное.pdf";
-import pol_o_perezach from "../../../../assets/pdf/documentPage/local/23. Положение о перезачете (переаттестации) изученных учебных дисциплин, пройденных практик, выполненных научных исследований.pdf";
+import pol_o_perezach from "../../../../assets/pdf/documentPage/local/23. Положение о перезачете (переаттестации) изученных учебных дисциплин.pdf";
 import pol_o_plan from "../../../../assets/pdf/documentPage/local/24. 00000000409.pdf";
 import prikaz107 from "../../../../assets/pdf/documentPage/local/25. Приказ 107 от 05.07.2022.pdf";
 import prim_dist from "../../../../assets/pdf/documentPage/local/26. 199402560.pdf";
