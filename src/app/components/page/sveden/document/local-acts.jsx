@@ -273,7 +273,7 @@ const LocalActs = ({ isActive }) => {
           </li>
         </ul>
         <HrLine className="document__hrLine" />
-        <p>Правила внутреннего трудового распорядка обучающихся</p>
+        <p>Правила внутреннего трудового распорядка сотрудников</p>
         <ul>
           <li itemProp="localActStud" className="doc__item">
             <PDF height={"40px"} width={"40px"} />
@@ -352,13 +352,13 @@ const LocalActs = ({ isActive }) => {
               Положение о дополнительном профессиональном образовании
             </a>
           </li>
-          <li itemProp="localActStud" className="doc__item">
+          {/*  <li itemProp="localActStud" className="doc__item">
             <PDF height={"40px"} width={"40px"} />
             <a href={pol_o_komis} target={"_blank"} rel="noreferrer">
               Положение о комиссии по переводу студентов с платного обучения на
               бесплатное
             </a>
-          </li>
+          </li> */}
           <li itemProp="localActStud" className="doc__item">
             <PDF height={"40px"} width={"40px"} />
             <a href={pol_o_perezach} target={"_blank"} rel="noreferrer">

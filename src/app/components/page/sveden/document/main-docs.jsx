@@ -179,7 +179,7 @@ const MainDocs = ({ isActive }) => {
               <PDF height={"40px"} width={"40px"} />
               <a href={LicenzVip} target={"_blank"} rel="noreferrer">
                 Выписка из реестра лицензий Федеральной службы по надзору в
-                сфере образования и науки (16.09.2022)
+                сфере образования и науки (4.07.2023)
               </a>
             </li>
           </ul>

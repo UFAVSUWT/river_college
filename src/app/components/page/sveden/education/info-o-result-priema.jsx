@@ -54,7 +54,7 @@ const InfoOResultPriema = () => {
             <td itemProp="numberBF">50</td>
             <td itemProp="numberBR">-</td>
             <td itemProp="numberBM">-</td>
-            <td itemProp="numberP">1</td>
+            <td itemProp="numberP">2</td>
             <td itemProp="score">-</td>
           </tr>
           <tr itemProp="eduPriem">
@@ -68,7 +68,7 @@ const InfoOResultPriema = () => {
             <td itemProp="numberBF">50</td>
             <td itemProp="numberBR">-</td>
             <td itemProp="numberBM">-</td>
-            <td itemProp="numberP">-</td>
+            <td itemProp="numberP">1</td>
             <td itemProp="score">-</td>
           </tr>
           <tr itemProp="eduPriem">
