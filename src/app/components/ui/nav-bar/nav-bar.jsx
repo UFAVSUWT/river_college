@@ -197,15 +197,7 @@ const NavBar = observer(() => {
                 <NavLink onClick={() => megaMenuIsOut()} to={"learning/cadets"}>
                   <li>Курсантам</li>
                 </NavLink>
-                <NavLink
-                  onClick={() => megaMenuIsOut()}
-                  to={"learning/educationsPlatforms"}
-                >
-                  <li>
-                    Сторонние электронные образовательные и информационные
-                    ресурсы
-                  </li>
-                </NavLink>
+
                 <NavLink
                   onClick={() => megaMenuIsOut()}
                   to={"learning/correspondenceStudents"}
@@ -229,6 +221,15 @@ const NavBar = observer(() => {
                   to={"learning/employmentService"}
                 >
                   <li>Служба трудоустройства</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"learning/educationsPlatforms"}
+                >
+                  <li>
+                    Сторонние электронные образовательные и информационные
+                    ресурсы
+                  </li>
                 </NavLink>
               </ul>
             </div>
