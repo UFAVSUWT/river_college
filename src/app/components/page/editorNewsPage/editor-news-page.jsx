@@ -1,35 +1,65 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { Editor } from "@tinymce/tinymce-react";
-import { Button, Checkbox, Form, Input, Select, Upload } from "antd";
+import { Button, Switch, Form, Input, Select, Upload } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
 import { createNews, fetchNews } from "../../../httpService/newsApi";
 import { useNavigate } from "react-router";
 import { Context } from "../../../../index";
 import { observer } from "mobx-react-lite";
 const EditorNewsPage = observer(() => {
-  const editorRef = useRef(null);
-  const [file, setFile] = useState(null);
-  const [page, setPage] = useState("STUDENT_LIFE");
-  const [main, setMain] = useState(false);
-  const [title, setTitle] = useState("");
-  const [text, setText] = useState("");
-  const [card, setCard] = useState("");
-  const [author, setAuthor] = useState("");
-  const [date, setDate] = useState("01.02.23");
   const { news } = useContext(Context);
+  const navigate = useNavigate();
+  const editorRef = useRef(null);
+  const [text, setText] = useState("");
+  const [main, setMain] = useState(false);
+  const [file, setFile] = useState(null);
+  const [data, setData] = useState({
+    file: file,
+    page: "STUDENT_LIFE",
+    main: main,
+    title: "",
+    card: "",
+    author: "",
+    date: "01.02.23",
+    text: text,
+  });
+  console.log(data);
+  console.log(text);
+  useEffect(() => {
+    setData((p) => ({ ...p, main, file, text }));
+  }, [main, file, text]);
+  const handleSwitchChange = () => {
+    setMain(() => !main);
+  };
+  const handlePageChange = (e) => {
+    setData((p) => ({ ...p, page: e }));
+  };
+  const handleCardChange = (e) => {
+    setData((p) => ({ ...p, card: e }));
+  };
+
+  console.log(data);
+  function handleChange(e) {
+    setData((p) => ({ ...p, [e.target.name]: e.target.value }));
+  }
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log({ ...data, text });
+    addNews();
+  }
+
   /*   useEffect(() => {
     fetchNews().then((data) => news.setNews(data));
   }, [news]); */
 
-  const navigate = useNavigate();
-  function onNavigate() {
-    if (page === "STUDENT_LIFE") {
+  function onNavigate(data) {
+    if (data.page === "STUDENT_LIFE") {
       navigate("../../live/studentsLive");
-    } else if (page === "STUDENT_SPORT") {
+    } else if (data.page === "STUDENT_SPORT") {
       navigate("../../live/sport");
-    } else if (page === "STUDENT_SCIENCE") {
+    } else if (data.page === "STUDENT_SCIENCE") {
       navigate("../../live/science");
-    } else if (page === "STUDENT_PRIDE") {
+    } else if (data.page === "STUDENT_PRIDE") {
       navigate("../../live/ourPride");
     }
   }
@@ -37,18 +67,19 @@ const EditorNewsPage = observer(() => {
     console.log("Failed:", errorInfo);
   };
   const addNews = () => {
+    console.log(data);
     const formData = new FormData();
-    formData.append("title", `${title}`);
-    formData.append("text", `${text}`);
-    formData.append("image", file);
-    formData.append("author", `${author}`);
-    formData.append("card", `${card}`);
-    formData.append("page", `${page}`);
-    formData.append("main", `${main}`);
-    formData.append("date", `${date}`);
+    formData.append("title", `${data.title}`);
+    formData.append("text", `${data.text}`);
+    formData.append("image", data.file);
+    formData.append("author", `${data.author}`);
+    formData.append("card", `${data.card}`);
+    formData.append("page", `${data.page}`);
+    formData.append("main", `${data.main}`);
+    formData.append("date", `${data.date}`);
     createNews(formData);
     fetchNews().then((data) => news.setNews(data));
-    onNavigate();
+    onNavigate(data);
   };
 
   return (
@@ -57,9 +88,11 @@ const EditorNewsPage = observer(() => {
         name="basic"
         initialValues={{
           /*  main: data.main, */
-          page: page,
+          page: data.page,
           /*     card: data.card, */
         }}
+        onChange={handleChange}
+        onSubmitCapture={handleSubmit}
         onFinishFailed={onFinishFailed}
         autoComplete="off"
       >
@@ -73,17 +106,19 @@ const EditorNewsPage = observer(() => {
               { value: "STUDENT_PRIDE", label: "Наша гордость" },
               { value: "STUDENT_SCIENCE", label: "Наука" },
             ]}
-            onChange={(e) => setPage(e)}
+            onChange={handlePageChange}
           />
         </Form.Item>
         {/* Главная новость! */}
-        <Form.Item label="Главная новость" name="main" valuePropName="checked">
-          <Checkbox onChange={(e) => setMain(e.target.checked)} />
+        <Form.Item label="Главная новость" valuePropName="checked">
+          <Switch name="main" onChange={handleSwitchChange} />
         </Form.Item>
         {/* Выбор карточки */}
-        <Form.Item label="Выберите карточку" name="card">
+        <Form.Item label="Выберите карточку">
           <Select
+            name="card"
             style={{ width: 300 }}
+            onChange={handleCardChange}
             options={[
               { value: "", label: "" },
               { value: "1", label: "1" },
@@ -93,13 +128,11 @@ const EditorNewsPage = observer(() => {
               { value: "5", label: "5" },
               { value: "6", label: "6" },
             ]}
-            onChange={(e) => setCard(e)}
           />
         </Form.Item>
         {/* Заголовок */}
         <Form.Item
           label="Название новости"
-          name="title"
           rules={[
             {
               required: true,
@@ -108,12 +141,11 @@ const EditorNewsPage = observer(() => {
             },
           ]}
         >
-          <Input onChange={(e) => setTitle(e.target.value)} />
+          <Input name="title" />
         </Form.Item>
         {/* Автор */}
         <Form.Item
           label="Автор новости"
-          name="author"
           rules={[
             {
               required: true,
@@ -121,21 +153,16 @@ const EditorNewsPage = observer(() => {
             },
           ]}
         >
-          <Input onChange={(e) => setAuthor(e.target.value)} />
+          <Input name="author" />
         </Form.Item>
-        <Form.Item
-          name="image"
-          onChange={(e) =>
-            setFile(e.target.files[0])
-          } /* getValueFromEvent={getFile} */
-        >
-          <Upload maxCount={1}>
-            {" "}
+        <Form.Item onChange={(e) => setFile(e.target.files[0])}>
+          <Upload name="file" maxCount={1}>
             <Button icon={<UploadOutlined />}>Добавить изображение</Button>
           </Upload>
         </Form.Item>
         {/* Редактор текста */}
         <Editor
+          name="text"
           apiKey="zd2ikpvwav8hhbalfmc0ksg1w0wj5chfei2uer8esvxyf40t"
           onInit={(evt, editor) => (editorRef.current = editor)}
           init={{
@@ -177,7 +204,7 @@ const EditorNewsPage = observer(() => {
             span: 16,
           }}
         >
-          <Button type="primary" htmlType="submit" onClick={addNews}>
+          <Button type="primary" htmlType="submit">
             Добавить новость
           </Button>
         </Form.Item>

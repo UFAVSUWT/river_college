@@ -14,10 +14,12 @@ const NewsCard = observer(({ link, image, date, title, staticCard, id }) => {
       onClick={!staticCard ? () => onNavigate() : null}
     >
       <NavLink to={link}>
-        <div className="imageContainer">
-          <img src={image} alt="Картинка уплыла :(" />
-          {date ? <div className="time">{date}</div> : null}
-        </div>
+        {image !== null && (
+          <div className="imageContainer">
+            <img src={image} alt="Картинка уплыла :(" />
+            {date ? <div className="time">{date}</div> : null}
+          </div>
+        )}
 
         <div className="titleContainer">
           {" "}
