@@ -31,7 +31,7 @@ const Vacant = observer(() => {
         )}`}
       >
         Информация о количестве вакантных мест для приема (перевода) на
-        01.11.2023г.
+        01.12.2023г.
       </h3>
       <TableWrapper>
         <table>
@@ -173,7 +173,7 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">1</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">0</td>
+              <td itemProp="numberBFVacant">1</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">3</td>
@@ -184,7 +184,7 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">2</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">1</td>
+              <td itemProp="numberBFVacant">2</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">3</td>

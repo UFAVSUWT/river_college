@@ -11,7 +11,7 @@ const InfoOChislenObuch = () => {
         программам за счет бюджетных ассигнований федерального бюджета, бюджетов
         субъектов Российской Федерации, местных бюджетов и по договорам об
         образовании за счет средств физических и (или) юридических лиц на
-        01.11.2023:"
+        01.12.2023:"
       >
         <table>
           <tbody>
@@ -164,7 +164,7 @@ const InfoOChislenObuch = () => {
               <td rowSpan="3">Судовождение</td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBF">292</td>
+              <td itemProp="numberBF">290</td>
               <td itemProp="numberBFF">-</td>
               <td itemProp="numberBR">-</td>
               <td itemProp="numberBRF">-</td>
@@ -172,7 +172,7 @@ const InfoOChislenObuch = () => {
               <td itemProp="numberBMF">-</td>
               <td itemProp="numberP">9</td>
               <td itemProp="numberPF">-</td>
-              <td itemProp="numberAll">301</td>
+              <td itemProp="numberAll">299</td>
             </tr>
             <tr itemProp="eduChislen">
               <td itemProp="eduForm">очно-заочная</td>
@@ -194,9 +194,9 @@ const InfoOChislenObuch = () => {
               <td itemProp="numberBRF">-</td>
               <td itemProp="numberBM">-</td>
               <td itemProp="numberBMF">-</td>
-              <td itemProp="numberP">47</td>
+              <td itemProp="numberP">46</td>
               <td itemProp="numberPF">-</td>
-              <td itemProp="numberAll">52</td>
+              <td itemProp="numberAll">51</td>
             </tr>
             <tr itemProp="eduChislen">
               <td itemProp="eduCode" rowSpan="3">
@@ -300,7 +300,7 @@ const InfoOChislenObuch = () => {
             программам за счет бюджетных ассигнований федерального бюджета,
             бюджетов субъектов Российской Федерации, местных бюджетов и по
             договорам об образовании за счет средств физических и (или)
-            юридических лиц на 01.11.2023
+            юридических лиц на 01.12.2023
           </a>
         </li>
       </ul>
