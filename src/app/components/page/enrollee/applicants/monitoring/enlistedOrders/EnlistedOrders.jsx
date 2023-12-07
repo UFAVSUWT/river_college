@@ -7,10 +7,70 @@ import prikaz32 from "../../../../../../assets/doc/enrollee/Приказ № 32 
 import prikaz33 from "../../../../../../assets/doc/enrollee/Приказ № 33 от 17.08.2023 №373-Спо-1 ЭМ.docx";
 import prikaz34 from "../../../../../../assets/doc/enrollee/Приказ № 34 от 25.08.2023.docx";
 import prikaz35 from "../../../../../../assets/doc/enrollee/Приказ № 35 от 25.08.2023.docx";
+import prikaz39 from "../../../../../../assets/doc/enrollee/Приказ № 39 от 01.12.2023.docx";
+import prikaz40 from "../../../../../../assets/doc/enrollee/Приказ № 40 от 29.11.2023.docx";
 const EnlistedOrders = () => {
   return (
     <section>
       <h1>Приказы зачисленных</h1>
+      <p>
+        Приказ № 39 от 01.12.2023г.
+        <a
+          href={prikaz39}
+          target={"_blank"}
+          rel="noreferrer"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
+          <DOC width={"25px"} height={"25px"} />
+        </a>{" "}
+        <a
+          href={prikaz39}
+          target={"_blank"}
+          rel="noreferrer"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
+          скачать
+        </a>
+      </p>
+      <p>
+        Приказ № 40 от 01.12.2023г.
+        <a
+          href={prikaz40}
+          target={"_blank"}
+          rel="noreferrer"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
+          <DOC width={"25px"} height={"25px"} />
+        </a>{" "}
+        <a
+          href={prikaz40}
+          target={"_blank"}
+          rel="noreferrer"
+          className={toggleClassName(
+            "education__link",
+            "education__link-white",
+            "education__link-black",
+            "education__link-contrast"
+          )}
+        >
+          скачать
+        </a>
+      </p>
       <p>
         Приказ №26 от 16.08.2023 №371-Спо-1 СВ Судовождение{" "}
         <a
