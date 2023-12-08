@@ -1,5 +1,6 @@
 import React from "react";
-
+import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
+import { ReactComponent as DOC } from "../../../../assets/svg/office/word.svg";
 import Prez1 from "../../../../assets/pdf/practice/prez1.pdf";
 import Prez2 from "../../../../assets/pdf/practice/prez2.pdf";
 import Prez3 from "../../../../assets/pdf/practice/prez3.pdf";
@@ -7,6 +8,7 @@ import Image from "../../../common/image/Image";
 import Port from "../../../../assets/img/education/port.jpg";
 import PractZaochn from "../../../../assets/pdf/practice/grafik_praktik_2023_zaoch.pdf";
 import PractOchn from "../../../../assets/pdf/practice/grafik_praktik_2023_ochn.pdf";
+import bazi from "../../../../assets/pdf/practice/Базы учебной и производственной (по профилю специальности и преддипломной) практики.pdf";
 import { observer } from "mobx-react-lite";
 import { toggleClassName } from "../../../../utils/disabled";
 const Practice = observer(() => {
@@ -177,6 +179,21 @@ const Practice = observer(() => {
               Башкортостан
             </h2>
             <ul>
+              <li itemProp="localActStud" className="doc__item">
+                <PDF height={"40px"} width={"40px"} />{" "}
+                <a href={bazi} target={"_blank"} rel="noreferrer">
+                  Базы учебной и производственной (по профилю специальности и
+                  преддипломной) практики
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>
+              Презентации ведущих предприятий водного транспорта Республики
+              Башкортостан
+            </h2>
+            <ul>
               <li>
                 {" "}
                 <a
@@ -232,7 +249,7 @@ const Practice = observer(() => {
             </h1>
 
             <p>
-              {" "}
+              <PDF height={"40px"} width={"40px"} />{" "}
               <a
                 href={PractOchn}
                 target={"_blank"}
@@ -251,9 +268,10 @@ const Practice = observer(() => {
           <section>
             <h1>
               График проведения учебных, производственных и преддипломных
-              практик заочного обучения СПО в 2022-2023 учебном году
+              практик заочного обучения СПО в 2023-2024 учебном году
             </h1>
             <p>
+              <PDF height={"40px"} width={"40px"} />{" "}
               <a
                 href={PractZaochn}
                 target={"_blank"}
