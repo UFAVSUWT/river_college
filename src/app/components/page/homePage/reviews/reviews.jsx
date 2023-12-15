@@ -4,6 +4,7 @@ import { observer } from "mobx-react-lite";
 import vipusk from "../../../../assets/img/reviews/vipusk.png";
 import work from "../../../../assets/img/reviews/work.png";
 import prakt from "../../../../assets/img/reviews/prakt.png";
+import pedagogi from "../../../../assets/img/reviews/pedagogi.png";
 const Reviews = observer(() => {
   return (
     <>
@@ -94,6 +95,37 @@ const Reviews = observer(() => {
             </div>
             <div className="image">
               <img src={vipusk} alt="изображение уплыло" />
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Уважаемые сотрудники!</h2>
+          <div>
+            {" "}
+            <div className="content">
+              <p>
+                В целях совершенствования качества образования мы проводим
+                анкетирование наших педагогических работников. Ответив на
+                вопросы нашей анкеты, Вы поможете нам сделать процесс обучения и
+                условия труда в нашем филиале еще лучше. Для этого вам нужно
+                заполнить анкету. Ваше мнение важно для нас!{" "}
+                <a
+                  href="https://forms.yandex.ru/u/657bc875d04688a12a6bc577/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  Анкета педагогического работника
+                </a>
+              </p>
+            </div>
+            <div className="image">
+              <img src={pedagogi} alt="изображение уплыло" />
             </div>
           </div>
         </section>
