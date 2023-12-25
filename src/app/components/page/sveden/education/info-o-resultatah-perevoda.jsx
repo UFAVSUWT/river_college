@@ -8,7 +8,7 @@ const InfoOResultatahPerevoda = () => {
     <>
       <TableWrapper
         title="Информация о результатах перевода, восстановления и отчисления на
-        01.12.2023"
+        01.01.2024"
       >
         <table>
           <tbody>
@@ -52,16 +52,16 @@ const InfoOResultatahPerevoda = () => {
               </td>
               <td itemProp="eduForm">очная</td>
               <td itemProp="numberOut">6</td>
-              <td itemProp="numberTo">2</td>
+              <td itemProp="numberTo">3</td>
               <td>-</td>
-              <td>3</td>
+              <td>4</td>
             </tr>
             <tr itemProp="eduPerevod">
               <td itemProp="eduForm">заочная</td>
               <td itemProp="numberOut">-</td>
               <td itemProp="numberTo">-</td>
               <td itemProp="numberRes">-</td>
-              <td itemProp="numberExp">3</td>
+              <td itemProp="numberExp">4</td>
             </tr>
             <tr></tr>
             <tr></tr>
@@ -79,7 +79,7 @@ const InfoOResultatahPerevoda = () => {
               </td>
               <td itemProp="eduForm">очная</td>
               <td itemProp="numberOut">2</td>
-              <td itemProp="numberTo">2</td>
+              <td itemProp="numberTo">3</td>
               <td itemProp="numberRes">-</td>
               <td itemProp="numberExp">2</td>
             </tr>
@@ -136,7 +136,7 @@ const InfoOResultatahPerevoda = () => {
               <td itemProp="numberOut">-</td>
               <td itemProp="numberTo">-</td>
               <td itemProp="numberRes">-</td>
-              <td itemProp="numberExp">-</td>
+              <td itemProp="numberExp">1</td>
             </tr>
           </tbody>
         </table>
@@ -151,7 +151,7 @@ const InfoOResultatahPerevoda = () => {
             rel="noreferrer"
           >
             Информация о результатах перевода, восстановления и отчисления на
-            01.12.2023
+            01.01.2024
           </a>
         </li>
       </ul>

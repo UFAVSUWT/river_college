@@ -1,0 +1,4632 @@
+{
+  "faculties" : [{
+    "faculty_name" : null,
+    "date_start" : null,
+    "date_end" : null,
+    "groups" : [{
+      "group_name" : "156СВ",
+      "course" : 1,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Обществознание",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Щербакова А.Б."
+          }],
+          "auditories" : [{
+            "auditory_name" : "45"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "пр.",
+          "subgroup" : 1,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Рябова З.Н."
+          }],
+          "auditories" : [{
+            "auditory_name" : "спортивный зал №1"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "пр.",
+          "subgroup" : 2,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Филиппова С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "спортивный зал №2"
+          }]
+        }, {
+          "subject" : "Информатика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Жилина А.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "34"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Математика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Акбарова З.Ш."
+          }],
+          "auditories" : [{
+            "auditory_name" : "36"
+          }]
+        }, {
+          "subject" : "История",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Решетников В.Е."
+          }],
+          "auditories" : [{
+            "auditory_name" : "21"
+          }]
+        }, {
+          "subject" : "Биология ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Зараев И.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "48"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "157СВ",
+      "course" : 1,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Математика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Акбарова З.Ш."
+          }],
+          "auditories" : [{
+            "auditory_name" : "36"
+          }]
+        }, {
+          "subject" : "Обществознание",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Щербакова А.Б."
+          }],
+          "auditories" : [{
+            "auditory_name" : "45"
+          }]
+        }, {
+          "subject" : "Биология ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Зараев И.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "48"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "История",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Решетников В.Е."
+          }],
+          "auditories" : [{
+            "auditory_name" : "21"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "пр.",
+          "subgroup" : 1,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Рябова З.Н."
+          }],
+          "auditories" : [{
+            "auditory_name" : "спортивный зал №1"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "пр.",
+          "subgroup" : 2,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Филиппова С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "спортивный зал №2"
+          }]
+        }, {
+          "subject" : "Информатика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Жилина А.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "34"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "136СМ",
+      "course" : 1,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Физика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Галлямова Р.Х."
+          }],
+          "auditories" : [{
+            "auditory_name" : "35"
+          }]
+        }, {
+          "subject" : "Математика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Галимова А.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "109"
+          }]
+        }, {
+          "subject" : "Литература",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Козырь С.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "32"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Физическая культура",
+          "type" : "пр.",
+          "subgroup" : 1,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Рябова З.Н."
+          }],
+          "auditories" : [{
+            "auditory_name" : "спортивный зал №1"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "пр.",
+          "subgroup" : 2,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Филиппов Э.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "спортивный зал №2"
+          }]
+        }, {
+          "subject" : "Математика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Галимова А.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "109"
+          }]
+        }, {
+          "subject" : "Физика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Галлямова Р.Х."
+          }],
+          "auditories" : [{
+            "auditory_name" : "35"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "137СМ",
+      "course" : 1,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Математика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Галимова А.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "109"
+          }]
+        }, {
+          "subject" : "Литература",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Козырь С.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "32"
+          }]
+        }, {
+          "subject" : "Физика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Галлямова Р.Х."
+          }],
+          "auditories" : [{
+            "auditory_name" : "35"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Математика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Галимова А.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "109"
+          }]
+        }, {
+          "subject" : "Физика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Галлямова Р.Х."
+          }],
+          "auditories" : [{
+            "auditory_name" : "35"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "пр.",
+          "subgroup" : 1,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Рябова З.Н."
+          }],
+          "auditories" : [{
+            "auditory_name" : "спортивный зал №1"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "пр.",
+          "subgroup" : 2,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Филиппов Э.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "спортивный зал №2"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "132ЭМ",
+      "course" : 1,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Иностранный язык",
+          "type" : "пр.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Мухутдинова Л.И."
+          }],
+          "auditories" : [{
+            "auditory_name" : "33"
+          }]
+        }, {
+          "subject" : "Математика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Акбарова З.Ш."
+          }],
+          "auditories" : [{
+            "auditory_name" : "36"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "пр.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Филиппов Э.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "Бассейн"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Физика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Галлямова Р.Х."
+          }],
+          "auditories" : [{
+            "auditory_name" : "35"
+          }]
+        }, {
+          "subject" : "Биология ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Зараев И.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "48"
+          }]
+        }, {
+          "subject" : "Математика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Акбарова З.Ш."
+          }],
+          "auditories" : [{
+            "auditory_name" : "36"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "133ЭМ",
+      "course" : 1,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Информатика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Жилина А.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "34"
+          }]
+        }, {
+          "subject" : "Физика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Галлямова Р.Х."
+          }],
+          "auditories" : [{
+            "auditory_name" : "35"
+          }]
+        }, {
+          "subject" : "Математика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Акбарова З.Ш."
+          }],
+          "auditories" : [{
+            "auditory_name" : "36"
+          }]
+        }, {
+          "subject" : "Иностранный язык",
+          "type" : "пр.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Мухутдинова Л.И."
+          }],
+          "auditories" : [{
+            "auditory_name" : "33"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Биология ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Зараев И.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "48"
+          }]
+        }, {
+          "subject" : "Математика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Акбарова З.Ш."
+          }],
+          "auditories" : [{
+            "auditory_name" : "36"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "106ОП",
+      "course" : 1,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Физическая культура",
+          "type" : "пр.",
+          "subgroup" : 1,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Рябова З.Н."
+          }],
+          "auditories" : [{
+            "auditory_name" : "спортивный зал №1"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "пр.",
+          "subgroup" : 2,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Филиппова С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "спортивный зал №2"
+          }]
+        }, {
+          "subject" : "Информатика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Жилина А.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "34"
+          }]
+        }, {
+          "subject" : "Математика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Галимова А.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "109"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Иностранный язык",
+          "type" : "пр.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Мухутдинова Л.И."
+          }],
+          "auditories" : [{
+            "auditory_name" : "33"
+          }]
+        }, {
+          "subject" : "Физика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Миннулина С.Р."
+          }],
+          "auditories" : [{
+            "auditory_name" : "108"
+          }]
+        }, {
+          "subject" : "Математика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Галимова А.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "109"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "121СВ",
+      "course" : 1,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5
+      }, {
+        "weekday" : 6
+      }]
+    }, {
+      "group_name" : "253СВ",
+      "course" : 2,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК 01.01.01 Навигация и лоция",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Котухов С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "40"
+          }]
+        }, {
+          "subject" : "МДК 01.02.02 ПП и управление судами на ВВП",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Портнягина И.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "46"
+          }]
+        }, {
+          "subject" : "Инженерная графика ",
+          "type" : "пр.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Белобородова Н.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "5"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Материаловедение",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }, {
+          "subject" : "МДК 02.01.02 Обеспечение живучести судна.",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Уткина Е.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "228"
+          }]
+        }, {
+          "subject" : "Теория и устройство судна",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бублис Ю.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "11"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "254СВ",
+      "course" : 2,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Материаловедение",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }, {
+          "subject" : "Инженерная графика ",
+          "type" : "пр.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Белобородова Н.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "5"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Навигация и лоция",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Котухов С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "40"
+          }]
+        }, {
+          "subject" : "МДК 01.02.02 ПП и управление судами на ВВП",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Портнягина И.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "46"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Теория и устройство судна",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бублис Ю.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "11"
+          }]
+        }, {
+          "subject" : "МДК 02.01.02 Обеспечение живучести судна.",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Уткина Е.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "228"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "230ЭМ",
+      "course" : 2,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Теория и устройство судна",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бублис Ю.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "11"
+          }]
+        }, {
+          "subject" : "Механика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Ахметшин М.Р."
+          }],
+          "auditories" : [{
+            "auditory_name" : "30"
+          }]
+        }, {
+          "subject" : "Электроника и электротехника",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Байсаков Ф.Т."
+          }],
+          "auditories" : [{
+            "auditory_name" : "114"
+          }]
+        }, {
+          "subject" : "МДК 03.01.02 Борьба  за  живучесть  судна  и обеспечение выживаемости людей",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Уткина Е.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "228"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Инженерная графика ",
+          "type" : "пр.",
+          "subgroup" : 1,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Ахметшин М.Р."
+          }],
+          "auditories" : [{
+            "auditory_name" : "30"
+          }]
+        }, {
+          "subject" : "Инженерная графика ",
+          "type" : "пр.",
+          "subgroup" : 2,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Кульмухаметова Г.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "39"
+          }]
+        }, {
+          "subject" : "МДК 04.01 Эксплуатация судовых энергетических установок на вспомогательном уровне",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Тарба Р.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "116"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "231ЭМ",
+      "course" : 2,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК 03.01.02 Борьба  за  живучесть  судна  и обеспечение выживаемости людей",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Уткина Е.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "228"
+          }]
+        }, {
+          "subject" : "Теория и устройство судна",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бублис Ю.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "11"
+          }]
+        }, {
+          "subject" : "МДК 04.01 Эксплуатация судовых энергетических установок на вспомогательном уровне",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Тарба Р.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "116"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Электроника и электротехника",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Байсаков Ф.Т."
+          }],
+          "auditories" : [{
+            "auditory_name" : "114"
+          }]
+        }, {
+          "subject" : "Механика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Ахметшин М.Р."
+          }],
+          "auditories" : [{
+            "auditory_name" : "30"
+          }]
+        }, {
+          "subject" : "Инженерная графика ",
+          "type" : "пр.",
+          "subgroup" : 1,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Ахметшин М.Р."
+          }],
+          "auditories" : [{
+            "auditory_name" : "30"
+          }]
+        }, {
+          "subject" : "Инженерная графика ",
+          "type" : "пр.",
+          "subgroup" : 2,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Кульмухаметова Г.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "39"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "234СМ",
+      "course" : 2,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Механика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Ахметшин М.Р."
+          }],
+          "auditories" : [{
+            "auditory_name" : "30"
+          }]
+        }, {
+          "subject" : "МДК 04.01 Эксплуатация судовых энергетических установок на вспомогательном уровне",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Тарба Р.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "116"
+          }]
+        }, {
+          "subject" : "МДК 02.01.03 Оказание первой помощи",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Арсланова Н.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "110"
+          }]
+        }, {
+          "subject" : "Электроника и электротехника",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Байсаков Ф.Т."
+          }],
+          "auditories" : [{
+            "auditory_name" : "114"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "МДК 04.01 Эксплуатация судовых энергетических установок на вспомогательном уровне",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Тарба Р.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "116"
+          }]
+        }, {
+          "subject" : "Техническая термодинамика и телопередача",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Кульмухаметова Г.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "39"
+          }]
+        }, {
+          "subject" : "Иностранный язык в профессиональной деятельности",
+          "type" : "пр.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Жукова Ж.С."
+          }],
+          "auditories" : [{
+            "auditory_name" : "20"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "235СМ",
+      "course" : 2,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК 04.01 Эксплуатация судовых энергетических установок на вспомогательном уровне",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Тарба Р.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "116"
+          }]
+        }, {
+          "subject" : "Техническая термодинамика и телопередача",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Кульмухаметова Г.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "39"
+          }]
+        }, {
+          "subject" : "Механика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Ахметшин М.Р."
+          }],
+          "auditories" : [{
+            "auditory_name" : "30"
+          }]
+        }, {
+          "subject" : "МДК 02.01.03 Оказание первой помощи",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Арсланова Н.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "110"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Электроника и электротехника",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Байсаков Ф.Т."
+          }],
+          "auditories" : [{
+            "auditory_name" : "114"
+          }]
+        }, {
+          "subject" : "Иностранный язык в профессиональной деятельности",
+          "type" : "пр.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Гарифуллина З.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "21"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "204ОП",
+      "course" : 2,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Транспортно-экспедиционная деятельность (по видам)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Муратов Р.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "117"
+          }]
+        }, {
+          "subject" : "Электроника и электротехника",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Байсаков Ф.Т."
+          }],
+          "auditories" : [{
+            "auditory_name" : "114"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "пр.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Филиппова С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "крытая беговая дорожка"
+          }]
+        }, {
+          "subject" : "МДК 02.01 Организация движения (по видам транспорта)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Филиппова С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "37"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Технические средства (по видам транспорта)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Муратов Р.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "117"
+          }]
+        }, {
+          "subject" : "Электроника и электротехника",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Байсаков Ф.Т."
+          }],
+          "auditories" : [{
+            "auditory_name" : "114"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "220СМ",
+      "course" : 2,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5
+      }, {
+        "weekday" : 6
+      }]
+    }, {
+      "group_name" : "220СВ",
+      "course" : 2,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5
+      }, {
+        "weekday" : 6
+      }]
+    }, {
+      "group_name" : "205ОП",
+      "course" : 2,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5
+      }, {
+        "weekday" : 6
+      }]
+    }, {
+      "group_name" : "350СВ",
+      "course" : 3,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Физическая культура",
+          "type" : "пр.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Филиппов Э.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "крытая беговая дорожка"
+          }]
+        }, {
+          "subject" : "Иностранный язык в профессиональной деятельности",
+          "type" : "пр.",
+          "subgroup" : 1,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Гарифуллина З.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "43"
+          }]
+        }, {
+          "subject" : "Иностранный язык в профессиональной деятельности",
+          "type" : "пр.",
+          "subgroup" : 2,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Жукова Ж.С."
+          }],
+          "auditories" : [{
+            "auditory_name" : "42А"
+          }]
+        }, {
+          "subject" : "МДК 01.02.04 Судовое  Радиооборудование ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Абкадиров И.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "219"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Навигация и лоция",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Крикунов С.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "47"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "МДК 01.01.02 Общая и специальная лоция ВВП РФ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Портнягина И.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "46"
+          }]
+        }, {
+          "subject" : "МДК 01.01.02 Общая и специальная лоция ВВП РФ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Портнягина И.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "46"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "351СВ",
+      "course" : 3,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК 01.03.03 Электрооборудование судов",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Зкриева Г.Р."
+          }],
+          "auditories" : [{
+            "auditory_name" : "107"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Навигация и лоция",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Крикунов С.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "47"
+          }]
+        }, {
+          "subject" : "Иностранный язык в профессиональной деятельности",
+          "type" : "пр.",
+          "subgroup" : 1,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Гарифуллина З.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "43"
+          }]
+        }, {
+          "subject" : "Иностранный язык в профессиональной деятельности",
+          "type" : "пр.",
+          "subgroup" : 2,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Жукова Ж.С."
+          }],
+          "auditories" : [{
+            "auditory_name" : "42А"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "МДК 01.01.01 Навигация и лоция",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Крикунов С.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "47"
+          }]
+        }, {
+          "subject" : "Иностранный язык в профессиональной деятельности",
+          "type" : "пр.",
+          "subgroup" : 1,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Гарифуллина З.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "43"
+          }]
+        }, {
+          "subject" : "Иностранный язык в профессиональной деятельности",
+          "type" : "пр.",
+          "subgroup" : 2,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Жукова Ж.С."
+          }],
+          "auditories" : [{
+            "auditory_name" : "42А"
+          }]
+        }, {
+          "subject" : "МДК 01.02.04 Судовое  Радиооборудование ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Абкадиров И.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "219"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "355СВ",
+      "course" : 3,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК 01.02.04 Судовое  Радиооборудование ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Абкадиров И.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "219"
+          }]
+        }, {
+          "subject" : "МДК 03.01.01 Технология перевозки грузов ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Ахмадеева Ф.Ш."
+          }],
+          "auditories" : [{
+            "auditory_name" : "45"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Филиппов Э.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "спортивный зал №2"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Иностранный язык в профессиональной деятельности",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Мухутдинова Л.И."
+          }],
+          "auditories" : [{
+            "auditory_name" : "33"
+          }]
+        }, {
+          "subject" : "МДК 01.02.04 Судовое  Радиооборудование ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Абкадиров И.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "219"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "328ЭМ",
+      "course" : 3,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК 01.01.02 Эксплуатация,  техническое обслуживание и ремонт судовых  электроэнергетических систем",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Зкриева Г.Р."
+          }],
+          "auditories" : [{
+            "auditory_name" : "107"
+          }]
+        }, {
+          "subject" : "МДК 01.01.04 Эксплуатация,  техническое обслуживание и ремонт судовых электрических приводов",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }, {
+          "subject" : "МДК 01.02.03 Эксплуатация судовых систем",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "МДК 02.01.01 Планирование,  организация  и руководство работой  коллектива исполнителей",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Муратов Р.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "117"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Филиппов Э.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "стадион"
+          }]
+        }, {
+          "subject" : "МДК 02.01.02 Нормативное  правовое  регулирование в области руководства  работой  коллектива  исполн",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Муратов Р.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "117"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "329ЭМ",
+      "course" : 3,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК 02.01.01 Планирование,  организация  и руководство работой  коллектива исполнителей",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Муратов Р.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "117"
+          }]
+        }, {
+          "subject" : "МДК 01.01.04 Эксплуатация,  техническое обслуживание и ремонт судовых электрических приводов",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }, {
+          "subject" : "МДК 01.02.03 Эксплуатация судовых систем",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "16:15",
+          "time_end" : "17:55",
+          "time" : 5,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "МДК 01.01.02 Эксплуатация,  техническое обслуживание и ремонт судовых  электроэнергетических систем",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Зкриева Г.Р."
+          }],
+          "auditories" : [{
+            "auditory_name" : "107"
+          }]
+        }, {
+          "subject" : "МДК 01.01.02 Эксплуатация  судовых  механизмов",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }, {
+          "subject" : "МДК 02.01.02 Нормативное  правовое  регулирование в области руководства  работой  коллектива  исполн",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Муратов Р.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "117"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "332СМ",
+      "course" : 3,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Судоремонтная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Преп. практ. СМ"
+          }],
+          "auditories" : [{
+            "auditory_name" : "база ССЗОР"
+          }]
+        }, {
+          "subject" : "Судоремонтная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Преп. практ. СМ"
+          }],
+          "auditories" : [{
+            "auditory_name" : "база ССЗОР"
+          }]
+        }, {
+          "subject" : "Судоремонтная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Преп. практ. СМ"
+          }],
+          "auditories" : [{
+            "auditory_name" : "база ССЗОР"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Судоремонтная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Преп. практ. СМ"
+          }],
+          "auditories" : [{
+            "auditory_name" : "база ССЗОР"
+          }]
+        }, {
+          "subject" : "Судоремонтная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Преп. практ. СМ"
+          }],
+          "auditories" : [{
+            "auditory_name" : "база ССЗОР"
+          }]
+        }, {
+          "subject" : "Судоремонтная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Преп. практ. СМ"
+          }],
+          "auditories" : [{
+            "auditory_name" : "база ССЗОР"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "333СМ",
+      "course" : 3,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Ин.язык",
+          "type" : "пр.",
+          "subgroup" : 1,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Гарифуллина З.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "43"
+          }]
+        }, {
+          "subject" : "Ин.язык",
+          "type" : "пр.",
+          "subgroup" : 2,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Жукова Ж.С."
+          }],
+          "auditories" : [{
+            "auditory_name" : "42А"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Техническая эксплуатация  главных энергетических установок судна",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Техническая эксплуатация  главных энергетических установок судна",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }, {
+          "subject" : "МДК 01.01.02 Техническая эксплуатация  вспомогательных механизмов и систем",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Тарба Р.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "116"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "МДК 01.01.03 Техническое обслуживание и ремонт судового оборудования",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Техническая эксплуатация  главных энергетических установок судна",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "303ОП",
+      "course" : 3,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК.01.01 Технология перевозочного процесса (по видам транспорта)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Исхакова Л.Л."
+          }],
+          "auditories" : [{
+            "auditory_name" : "217"
+          }]
+        }, {
+          "subject" : "МДК 03.02 Обеспечение грузовых перевозок (по видам)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Исхакова Л.Л."
+          }],
+          "auditories" : [{
+            "auditory_name" : "217"
+          }]
+        }, {
+          "subject" : "Правовое обеспечение профессиональной деятельности",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Муратов Р.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "117"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Организация доступной среды для инвалидов на транспорте",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Филиппова С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "37"
+          }]
+        }, {
+          "subject" : "Иностранный язык",
+          "type" : "пр.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Мухутдинова Л.И."
+          }],
+          "auditories" : [{
+            "auditory_name" : "38"
+          }]
+        }, {
+          "subject" : "Экономика и управление на транспорте",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Исхакова Л.Л."
+          }],
+          "auditories" : [{
+            "auditory_name" : "217"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "447СВ",
+      "course" : 4,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК 01.01.01 Навигация и лоция",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Крикунов С.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "47"
+          }]
+        }, {
+          "subject" : "МДК.04.01 Осн.эф.раб.суд.с прим.ИТ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Муратов Р.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "117"
+          }]
+        }, {
+          "subject" : "МДК 01.04.01 ПП и управление судами на ВВП",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Портнягина И.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "46"
+          }]
+        }, {
+          "subject" : "МДК 01.03.02 СЭУ (включая тренажер машинного отделения)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "МДК 01.04.01 ПП и управление судами на ВВП",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Портнягина И.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "46"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Филиппов Э.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "стадион"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "448СВ",
+      "course" : 4,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК 01.04.01 ПП и управление судами на ВВП",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Портнягина И.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "46"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Филиппов Э.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "стадион"
+          }]
+        }, {
+          "subject" : "Правовые основы профессиональной деятельности",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Акбашева А.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "38"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "МДК 03.01.01 Коммерческая эксплуатация",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Исхакова Л.Л."
+          }],
+          "auditories" : [{
+            "auditory_name" : "217"
+          }]
+        }, {
+          "subject" : "МДК 01.03.02 СЭУ (включая тренажер машинного отделения)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }, {
+          "subject" : "МДК 01.04.01 ПП и управление судами на ВВП",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Портнягина И.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "46"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "452СВ",
+      "course" : 4,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК 01.03.02 СЭУ (включая тренажер машинного отделения)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Малофеев А.С."
+          }],
+          "auditories" : [{
+            "auditory_name" : "21"
+          }]
+        }, {
+          "subject" : "Правовые основы профессиональной деятельности",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Акбашева А.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "38"
+          }]
+        }, {
+          "subject" : "Иностранный язык в профессиональной деятельности",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Мухутдинова Л.И."
+          }],
+          "auditories" : [{
+            "auditory_name" : "33"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "МДК 01.01.04 Мореходная астрономия ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Абкадиров И.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "218"
+          }]
+        }, {
+          "subject" : "МДК 01.02 04 Тренажерная подготовка. Использование РЛС и САРП",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Абкадиров И.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "219"
+          }]
+        }, {
+          "subject" : "МДК 01.03.06Обслуживание и ремонт судового электрического и электронного оборудования",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "426ЭМ",
+      "course" : 4,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК 01.01.03 Электрические системы автоматики и контроля судовых технических средств",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }, {
+          "subject" : "Ин.язык",
+          "type" : "пр.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Мухутдинова Л.И."
+          }],
+          "auditories" : [{
+            "auditory_name" : "33"
+          }]
+        }, {
+          "subject" : "МДК 01.01.05 Судовые электроприводы",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Зкриева Г.Р."
+          }],
+          "auditories" : [{
+            "auditory_name" : "107"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "МДК 03.01.08 Подготовка по борьбе с пожаром по расширенной программе (Правило VI/3)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Уткина Е.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "228"
+          }]
+        }, {
+          "subject" : "Охрана труда ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бровко В.Д."
+          }],
+          "auditories" : [{
+            "auditory_name" : "29"
+          }]
+        }, {
+          "subject" : "МДК 01.01.05 Судовые электроприводы",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Зкриева Г.Р."
+          }],
+          "auditories" : [{
+            "auditory_name" : "107"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "427ЭМ",
+      "course" : 4,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Охрана труда ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бровко В.Д."
+          }],
+          "auditories" : [{
+            "auditory_name" : "29"
+          }]
+        }, {
+          "subject" : "МДК 01.01.05 Судовые электроприводы",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Зкриева Г.Р."
+          }],
+          "auditories" : [{
+            "auditory_name" : "107"
+          }]
+        }, {
+          "subject" : "МДК 01.01.06 Судовые автоматизированные электроэнергетические системы",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "16:15",
+          "time_end" : "17:55",
+          "time" : 5,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Зкриева Г.Р."
+          }],
+          "auditories" : [{
+            "auditory_name" : "107"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "МДК 01.01.05 Судовые электроприводы",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Зкриева Г.Р."
+          }],
+          "auditories" : [{
+            "auditory_name" : "107"
+          }]
+        }, {
+          "subject" : "Охрана труда ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бровко В.Д."
+          }],
+          "auditories" : [{
+            "auditory_name" : "29"
+          }]
+        }, {
+          "subject" : "МДК 01.01.03 Электрические системы автоматики и контроля судовых технических средств",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "430СМ",
+      "course" : 4,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2,
+        "lessons" : [{
+          "subject" : "МДК 01.01.03 Техническое обслуживание и ремонт судового оборудования",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }, {
+          "subject" : "МДК 01.01.05 Электрооборудование судов ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Байсаков Ф.Т."
+          }],
+          "auditories" : [{
+            "auditory_name" : "114"
+          }]
+        }, {
+          "subject" : "МДК 01.01.03 Техническое обслуживание и ремонт судового оборудования",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }]
+      }, {
+        "weekday" : 3,
+        "lessons" : [{
+          "subject" : "МДК 01.01.02 СВМ и их эксплуатация",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "10-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Тарба Р.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "116"
+          }]
+        }, {
+          "subject" : "МДК 01.01.03 Техническое обслуживание и ремонт судового оборудования",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "10-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }, {
+          "subject" : "МДК 01.01.03 Техническое обслуживание и ремонт судового оборудования",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "10-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }]
+      }, {
+        "weekday" : 4,
+        "lessons" : [{
+          "subject" : "МДК 01.01.03 Техническое обслуживание и ремонт судового оборудования",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Рябова З.Н."
+          }],
+          "auditories" : [{
+            "auditory_name" : "спортивный зал №2"
+          }]
+        }, {
+          "subject" : "МДК 01.01.03 Техническое обслуживание и ремонт судового оборудования",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }, {
+          "subject" : "МДК 02.01.08 Подготовка по борьбе с пожаром по расширенной программе (Правило VI/3)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Уткина Е.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "228"
+          }]
+        }]
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК 03.01.02 Анализ деятельности структурного подразделения",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бровко В.Д."
+          }],
+          "auditories" : [{
+            "auditory_name" : "29"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Судовые энергетические установки и их эксплуатация",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Иванов Г.Н."
+          }],
+          "auditories" : [{
+            "auditory_name" : "21"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Судовые энергетические установки и их эксплуатация",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Иванов Г.Н."
+          }],
+          "auditories" : [{
+            "auditory_name" : "21"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "Компьютерная графика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Жилина А.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "34"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Судовые энергетические установки и их эксплуатация",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Иванов Г.Н."
+          }],
+          "auditories" : [{
+            "auditory_name" : "110"
+          }]
+        }, {
+          "subject" : "МДК 01.01.02 СВМ и их эксплуатация",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Тарба Р.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "116"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "431СМ",
+      "course" : 4,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2,
+        "lessons" : [{
+          "subject" : "МДК 01.01.05 Электрооборудование судов ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Байсаков Ф.Т."
+          }],
+          "auditories" : [{
+            "auditory_name" : "114"
+          }]
+        }, {
+          "subject" : "МДК 01.01.03 Техническое обслуживание и ремонт судового оборудования",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }, {
+          "subject" : "МДК 02.01.08 Подготовка по борьбе с пожаром по расширенной программе (Правило VI/3)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Уткина Е.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "228"
+          }]
+        }]
+      }, {
+        "weekday" : 3,
+        "lessons" : [{
+          "subject" : "МДК 01.01.03 Техническое обслуживание и ремонт судового оборудования",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "10-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }, {
+          "subject" : "МДК 01.01.02 СВМ и их эксплуатация",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "10-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Тарба Р.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "116"
+          }]
+        }, {
+          "subject" : "МДК 01.01.02 СВМ и их эксплуатация",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "10-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Тарба Р.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "116"
+          }]
+        }]
+      }, {
+        "weekday" : 4,
+        "lessons" : [{
+          "subject" : "Физическая культура",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Рябова З.Н."
+          }],
+          "auditories" : [{
+            "auditory_name" : "спортивный зал №2"
+          }]
+        }, {
+          "subject" : "МДК 01.01.03 Техническое обслуживание и ремонт судового оборудования",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }, {
+          "subject" : "МДК 02.01.08 Подготовка по борьбе с пожаром по расширенной программе (Правило VI/3)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Уткина Е.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "228"
+          }]
+        }, {
+          "subject" : "МДК 01.01.03 Техническое обслуживание и ремонт судового оборудования",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Фомичев С.Ю."
+          }],
+          "auditories" : [{
+            "auditory_name" : "111"
+          }]
+        }]
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "Эксплуатация судна на вспомогательном уровне ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бровко В.Д."
+          }],
+          "auditories" : [{
+            "auditory_name" : "29"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Рябова З.Н."
+          }],
+          "auditories" : [{
+            "auditory_name" : "спортивный зал №2"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "МДК 03.01.02 Анализ деятельности структурного подразделения",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бровко В.Д."
+          }],
+          "auditories" : [{
+            "auditory_name" : "29"
+          }]
+        }, {
+          "subject" : "Компьютерная графика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Жилина А.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "34"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Судовые энергетические установки и их эксплуатация",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Иванов Г.Н."
+          }],
+          "auditories" : [{
+            "auditory_name" : "110"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "402ОП",
+      "course" : 4,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК 03.03 Перевозка грузов на особых условиях",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Исхакова Л.Л."
+          }],
+          "auditories" : [{
+            "auditory_name" : "217"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "МДК 03.03 Перевозка грузов на особых условиях",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Исхакова Л.Л."
+          }],
+          "auditories" : [{
+            "auditory_name" : "217"
+          }]
+        }, {
+          "subject" : "МДК 01.03Автоматизированные системы управления на транспорте (по видам транспорта)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Соловьев Д.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "230"
+          }]
+        }, {
+          "subject" : "Физическая культура",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Филиппова С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "стадион"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "431СВ",
+      "course" : 4,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5
+      }, {
+        "weekday" : 6
+      }]
+    }, {
+      "group_name" : "432СВ",
+      "course" : 4,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5
+      }, {
+        "weekday" : 6
+      }]
+    }, {
+      "group_name" : "544СВ",
+      "course" : 5,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2,
+        "lessons" : [{
+          "subject" : "МДК 01.01.01 Навигация и лоция",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Крикунов С.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "47"
+          }]
+        }, {
+          "subject" : "МДК 02.01.08 Подготовка по борьбе с пожаром по расширенной программе (Правило VI/3)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Котухов С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "40"
+          }]
+        }, {
+          "subject" : "Ин.язык",
+          "type" : "пр.",
+          "subgroup" : 1,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Гарифуллина З.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "43"
+          }]
+        }, {
+          "subject" : "Ин.язык",
+          "type" : "пр.",
+          "subgroup" : 2,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Жукова Ж.С."
+          }],
+          "auditories" : [{
+            "auditory_name" : "42А"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Навигация и лоция",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Крикунов С.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "47"
+          }]
+        }]
+      }, {
+        "weekday" : 3,
+        "lessons" : [{
+          "subject" : "МДК 01.03.02 Судовые энергетические установки и их эксплуатация (включая тренажер вахтенного механик",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "10-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }, {
+          "subject" : "МДК 01.03.04 Обслуживание и ремонт судовых энергетических установок",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "10-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бублис Ю.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "11"
+          }]
+        }, {
+          "subject" : "МДК.02.01.01 БЖС и ТБ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "10-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Уткина Е.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "228"
+          }]
+        }]
+      }, {
+        "weekday" : 4,
+        "lessons" : [{
+          "subject" : "МДК 01.03.02 Судовые энергетические установки и их эксплуатация (включая тренажер вахтенного механик",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }, {
+          "subject" : "МДК 01.03.02 Судовые энергетические установки и их эксплуатация (включая тренажер вахтенного механик",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }, {
+          "subject" : "МДК 01.03.04 Обслуживание и ремонт судовых энергетических установок",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бублис Ю.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "11"
+          }]
+        }]
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК 02.01.08 Подготовка по борьбе с пожаром по расширенной программе (Правило VI/3)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Котухов С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "40"
+          }]
+        }, {
+          "subject" : "МДК.02.01.01 БЖС и ТБ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Уткина Е.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "228"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "МДК 01.03.04 Обслуживание и ремонт судовых энергетических установок",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бублис Ю.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "11"
+          }]
+        }, {
+          "subject" : "МДК 02.01.08 Подготовка по борьбе с пожаром по расширенной программе (Правило VI/3)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Котухов С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "40"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Навигация и лоция",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Крикунов С.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "47"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "545СВ",
+      "course" : 5,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2,
+        "lessons" : [{
+          "subject" : "МДК 01.03.02 Судовые энергетические установки и их эксплуатация (включая тренажер вахтенного механик",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }, {
+          "subject" : "МДК 01.03.02 Судовые энергетические установки и их эксплуатация (включая тренажер вахтенного механик",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }, {
+          "subject" : "МДК 01.03.02 Судовые энергетические установки и их эксплуатация (включая тренажер вахтенного механик",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }]
+      }, {
+        "weekday" : 3,
+        "lessons" : [{
+          "subject" : "МДК 01.03.04 Обслуживание и ремонт судовых энергетических установок",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "10-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бублис Ю.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "11"
+          }]
+        }, {
+          "subject" : "МДК.02.01.01 БЖС и ТБ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "10-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Уткина Е.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "228"
+          }]
+        }, {
+          "subject" : "МДК 01.03.02 Судовые энергетические установки и их эксплуатация (включая тренажер вахтенного механик",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "10-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }]
+      }, {
+        "weekday" : 4,
+        "lessons" : [{
+          "subject" : "МДК 01.01.01 Навигация и лоция",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Крикунов С.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "47"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Навигация и лоция",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Крикунов С.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "47"
+          }]
+        }, {
+          "subject" : "МДК 02.01.08 Подготовка по борьбе с пожаром по расширенной программе (Правило VI/3)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Котухов С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "40"
+          }]
+        }, {
+          "subject" : "МДК 01.03.04 Обслуживание и ремонт судовых энергетических установок",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бублис Ю.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "11"
+          }]
+        }]
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК.02.01.01 БЖС и ТБ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Уткина Е.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "228"
+          }]
+        }, {
+          "subject" : "Ин.язык",
+          "type" : "пр.",
+          "subgroup" : 1,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Гарифуллина З.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "43"
+          }]
+        }, {
+          "subject" : "Ин.язык",
+          "type" : "пр.",
+          "subgroup" : 2,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Жукова Ж.С."
+          }],
+          "auditories" : [{
+            "auditory_name" : "42А"
+          }]
+        }]
+      }, {
+        "weekday" : 6,
+        "lessons" : [{
+          "subject" : "МДК 02.01.08 Подготовка по борьбе с пожаром по расширенной программе (Правило VI/3)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Котухов С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "40"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Навигация и лоция",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Крикунов С.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "47"
+          }]
+        }, {
+          "subject" : "МДК 02.01.08 Подготовка по борьбе с пожаром по расширенной программе (Правило VI/3)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "13-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Котухов С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "40"
+          }]
+        }]
+      }]
+    }, {
+      "group_name" : "549СВ",
+      "course" : 5,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2,
+        "lessons" : [{
+          "subject" : "МДК 02.01.08 Подготовка по борьбе с пожаром по расширенной программе (Правило VI/3)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Котухов С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "40"
+          }]
+        }, {
+          "subject" : "МДК.02.01.01 БЖС и ТБ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Уткина Е.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "228"
+          }]
+        }, {
+          "subject" : "МДК 02.01.08 Подготовка по борьбе с пожаром по расширенной программе (Правило VI/3)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Котухов С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "40"
+          }]
+        }, {
+          "subject" : "Ин.язык",
+          "type" : "пр.",
+          "subgroup" : 1,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Гарифуллина З.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "43"
+          }]
+        }, {
+          "subject" : "Ин.язык",
+          "type" : "пр.",
+          "subgroup" : 2,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "9-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Жукова Ж.С."
+          }],
+          "auditories" : [{
+            "auditory_name" : "42А"
+          }]
+        }]
+      }, {
+        "weekday" : 3,
+        "lessons" : [{
+          "subject" : "МДК.02.01.01 БЖС и ТБ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "10-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Уткина Е.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "228"
+          }]
+        }, {
+          "subject" : "МДК 01.03.02 Судовые энергетические установки и их эксплуатация (включая тренажер вахтенного механик",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "10-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }, {
+          "subject" : "МДК 01.03.04 Обслуживание и ремонт судовых энергетических установок",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "10-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бублис Ю.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "11"
+          }]
+        }]
+      }, {
+        "weekday" : 4,
+        "lessons" : [{
+          "subject" : "МДК.02.01.01 БЖС и ТБ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Уткина Е.М."
+          }],
+          "auditories" : [{
+            "auditory_name" : "228"
+          }]
+        }, {
+          "subject" : "МДК 02.01.08 Подготовка по борьбе с пожаром по расширенной программе (Правило VI/3)",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Котухов С.В."
+          }],
+          "auditories" : [{
+            "auditory_name" : "40"
+          }]
+        }, {
+          "subject" : "МДК 01.03.02 Судовые энергетические установки и их эксплуатация (включая тренажер вахтенного механик",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "ГайнетдиноваЭ.Г."
+          }],
+          "auditories" : [{
+            "auditory_name" : "44"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Навигация и лоция",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "11-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Крикунов С.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "47"
+          }]
+        }]
+      }, {
+        "weekday" : 5,
+        "lessons" : [{
+          "subject" : "МДК 01.02.06 Оператор связи ГМССБ",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Абкадиров И.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "218"
+          }]
+        }, {
+          "subject" : "МДК 01.01.01 Навигация и лоция",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Крикунов С.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "47"
+          }]
+        }, {
+          "subject" : "МДК 01.03.04 Обслуживание и ремонт судовых энергетических установок",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Бублис Ю.Ф."
+          }],
+          "auditories" : [{
+            "auditory_name" : "11"
+          }]
+        }, {
+          "subject" : "МДК 01.02 04 Тренажерная подготовка. Использование РЛС и САРП",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "14:30",
+          "time_end" : "16:05",
+          "time" : 4,
+          "week" : 1,
+          "date" : "12-01-2024",
+          "teachers" : [{
+            "teacher_name" : "Абкадиров И.А."
+          }],
+          "auditories" : [{
+            "auditory_name" : "219"
+          }]
+        }]
+      }, {
+        "weekday" : 6
+      }]
+    }, {
+      "group_name" : "529СВ",
+      "course" : 5,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5
+      }, {
+        "weekday" : 6
+      }]
+    }, {
+      "group_name" : "530СВ",
+      "course" : 5,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5
+      }, {
+        "weekday" : 6
+      }]
+    }, {
+      "group_name" : "519СВ",
+      "course" : 5,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5
+      }, {
+        "weekday" : 6
+      }]
+    }, {
+      "group_name" : "627СВ",
+      "course" : 6,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5
+      }, {
+        "weekday" : 6
+      }]
+    }, {
+      "group_name" : "628СВ",
+      "course" : 6,
+      "days" : [{
+        "weekday" : 1
+      }, {
+        "weekday" : 2
+      }, {
+        "weekday" : 3
+      }, {
+        "weekday" : 4
+      }, {
+        "weekday" : 5
+      }, {
+        "weekday" : 6
+      }]
+    }]
+  }]
+}

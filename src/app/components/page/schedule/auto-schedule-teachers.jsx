@@ -102,11 +102,11 @@ const AutoScheduleTeachers = ({
   useEffect(() => {
     if (lessonsOfSelectedTeacher8 && lessonsOfSelectedTeacher9 && day && week) {
       /* меняем номер недели!!!!!!!!!!!!!!!!!!!!! */
-      if (week === 16) {
+      if (week === 18) {
         setTeachersLessonsOnDay(
           lessonsOfSelectedTeacher8.filter((e) => e.date === day)
         );
-      } else if (week === 17) {
+      } else if (week === 1) {
         setTeachersLessonsOnDay(
           lessonsOfSelectedTeacher9.filter((e) => e.date === day)
         );

@@ -94,11 +94,11 @@ const AutoScheduleClass = ({
   useEffect(() => {
     if (lessonsOfSelectedClass8 && lessonsOfSelectedClass9 && day && week) {
       /* Меняем номер недели!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-      if (week === 16) {
+      if (week === 18) {
         setClassLessonsOnDay(
           lessonsOfSelectedClass8.filter((e) => e.date === day)
         );
-      } else if (week === 17) {
+      } else if (week === 1) {
         setClassLessonsOnDay(
           lessonsOfSelectedClass9.filter((e) => e.date === day)
         );
