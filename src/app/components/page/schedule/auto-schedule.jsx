@@ -478,31 +478,32 @@ const AutoSchedule = () => {
         <div className="auto-schedule__container">
           <Row type="flex" justify="space-between">
             <Col span={24}>
-              <h2 style={{ margin: 5, padding: 0, textIndent: 0 }}>
+              <h2 style={{ margin: 5, padding: 0 }}>
                 Вы можете скачать расписание на неделю:
               </h2>
-              <div className="auto-schedule__container-buttons-selectDay">
-                <Button style={{ width: "40%" }}>
-                  {" "}
-                  <a
-                    style={{ textDecoration: "none" }}
-                    href={lastWeek}
-                    target={"_blank"}
-                    rel="noreferrer"
-                  >
-                    18 неделя
-                  </a>
-                </Button>
-                <Button style={{ width: "40%" }}>
-                  <a
-                    style={{ textDecoration: "none" }}
-                    href={newWeek}
-                    target={"_blank"}
-                    rel="noreferrer"
-                  >
-                    1 неделя
-                  </a>
-                </Button>
+              <div
+                style={{ padding: "0px 25px" }}
+                className="auto-schedule__container-buttons-selectDay"
+              >
+                <a
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  href={lastWeek}
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  18 неделя
+                </a>
+
+                <a
+                  style={{ textDecoration: "none" }}
+                  href={newWeek}
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  1 неделя
+                </a>
               </div>
             </Col>
           </Row>

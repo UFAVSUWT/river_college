@@ -13,16 +13,30 @@
   display: flex;
   justify-content: space-between;
   margin: 15px 5px;
+  a {
+    width: 40%;
+    border: solid 1px #325572;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+  }
+  a:hover {
+    color: #6b9dc5;
+    border-color: #6b9dc5;
+  }
 }
 .auto-schedule__container-buttons {
+  padding: 15px 30px;
   width: 100%;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   .buttons {
     width: 30%;
-    margin: 15px;
+    /*  margin: 15px; */
     background-color: white;
     color: #325572;
     border: solid 1px #325572;
@@ -186,10 +200,20 @@
 }
 
 @include laptop {
+  .auto-schedule__container-buttons-selectDay {
+    padding: 0 !important;
+    margin: 10px 5px;
+  }
+  .auto-schedule__container {
+    h2 {
+      text-indent: 0;
+    }
+  }
   .auto-schedule__container-buttons {
+    padding: 15px 5px;
     .buttons {
       width: 100%;
-      margin: 5px;
+      margin: 5px 0;
     }
   }
   .auto-schedule__container-groups-container {
