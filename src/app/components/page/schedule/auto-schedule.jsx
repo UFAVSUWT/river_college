@@ -4,7 +4,7 @@ import raspisanieJSON9 from "../../../mockData/Расписание_1.json";
 import locale from "antd/es/date-picker/locale/ru_RU";
 import "dayjs/locale/ru";
 import EducationContainer from "../../common/educationContainer/education-container";
-import { Button, ConfigProvider, DatePicker } from "antd";
+import { Button, ConfigProvider, DatePicker, Row, Col } from "antd";
 import AutoScheduleNav from "./auto-schedule-nav";
 import { ReactComponent as StarSelected } from "../../../assets/svg/schedule/star_selected.svg";
 import { ReactComponent as Star } from "../../../assets/svg/schedule/star.svg";
@@ -14,6 +14,8 @@ import AutoScheduleTeachers from "./auto-schedule-teachers";
 import AutoScheduleGroupsWrapper from "./auto-schedule-groups-wrapper";
 import AutoScheduleTeacherClassWrapper from "./auto-schedule-teacher-class-wrapper";
 import AutoScheduleClass from "./auto-schedule-class";
+import lastWeek from "../../../assets/doc/schedule/18 неделя 1 семестр.docx";
+import newWeek from "../../../assets/doc/schedule/1 неделя 2 семестр.docx";
 const AutoSchedule = () => {
   const raspisanie8 = JSON.parse(JSON.stringify(raspisanieJSON8));
   const groups8 = raspisanie8.faculties[0].groups;
@@ -48,6 +50,7 @@ const AutoSchedule = () => {
     { label: "Сперва укажите ваш курс!" },
   ]);
   const [selectedDayNumber, setSelectedDayNumber] = useState("");
+
   const [selectedDaylessons, setSelectedDayLessons] = useState(null);
   /* если переходили по навигации в преподы или аудитори и вернулись обратно, сбрасываем указанную группу и курс */
   useEffect(() => {
@@ -88,7 +91,7 @@ const AutoSchedule = () => {
   }, []);
 
   /* указываем стартовый день */
-  const [day, setDay] = useState("");
+  const [day, setDay] = useState(getDayToday());
   useEffect(() => {
     /* если выбрали новую группу, меням массив группы */
 
@@ -127,6 +130,7 @@ const AutoSchedule = () => {
     setGroupNumber(value);
     setSelectedDayLessons(null);
   };
+
   /* Выбор даты !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
   function getDayNumber() {
     if (day === "25-12-2023") {
@@ -157,6 +161,7 @@ const AutoSchedule = () => {
   }
   useEffect(() => {
     if (day === "25-12-2023") {
+      setDisabledDecreaseButton(true);
       setWeek(18);
     } else if (day === "26-12-2023") {
       setWeek(18);
@@ -179,6 +184,7 @@ const AutoSchedule = () => {
     } else if (day === "12-01-2024") {
       setWeek(1);
     } else if (day === "13-01-2024") {
+      setDisabledIncreaseButton(day);
       setWeek(1);
     }
   }, [day]);
@@ -218,11 +224,13 @@ const AutoSchedule = () => {
     setSelectedDayNumber(getDayNumber());
   }, [day]);
   const onChange = (date, dateString) => {
+    setDisabledDecreaseButton(false);
+    setDisabledIncreaseButton(false);
     setSelectedDayNumber(getDayNumber());
     setDay(dateString);
   };
 
-  const getDayToday = (tomorrow) => {
+  function getDayToday(tomorrow) {
     const dateToday = new Date();
     if (tomorrow) {
       const timeOfDay = 60 * 60 * 1000 * 24;
@@ -237,7 +245,7 @@ const AutoSchedule = () => {
       const getDayToday = dateToday.getDate();
       return `${getDayToday}-${getMonthToday}-${getYearToday}`;
     }
-  };
+  }
   /* делаем активными дни в календаря */
   function disabledDate(current) {
     const startDate = new Date(2023, 11, 25); // не забываем про месяцы -1
@@ -408,6 +416,41 @@ const AutoSchedule = () => {
     }
   }
 
+  /* логика переключения дней вперед / назад */
+  const [disabledIncreaseButton, setDisabledIncreaseButton] = useState(false);
+  const [disabledDecreaseButton, setDisabledDecreaseButton] = useState(false);
+
+  function increaseDay() {
+    setDisabledDecreaseButton(false);
+    setDisabledIncreaseButton(false);
+    const dayArr = day.split("-");
+    const oneDay = 60 * 60 * 24 * 1000;
+    const dayTime = new Date(dayArr[2], dayArr[1] - 1, dayArr[0]).getTime();
+    const newDayTime = new Date(dayTime + oneDay);
+    const newYear = newDayTime.getFullYear();
+    let newMonth = newDayTime.getMonth() + 1;
+    if (newMonth < 10) newMonth = `0${newMonth}`;
+    const newDay = newDayTime.getDate();
+    const newFormatDay = `${newDay}-${newMonth}-${newYear}`;
+    setDay(newFormatDay);
+    setWeek(week);
+  }
+  function decreaseDay() {
+    setDisabledIncreaseButton(false);
+    setDisabledDecreaseButton(false);
+    const dayArr = day.split("-");
+    const oneDay = 60 * 60 * 24 * 1000;
+    const dayTime = new Date(dayArr[2], dayArr[1] - 1, dayArr[0]).getTime();
+    const newDayTime = new Date(dayTime - oneDay);
+    const newYear = newDayTime.getFullYear();
+    let newMonth = newDayTime.getMonth() + 1;
+    const newDay = newDayTime.getDate();
+    if (newMonth < 10) newMonth = `0${newMonth}`;
+    const newFormatDay = `${newDay}-${newMonth}-${newYear}`;
+    setDay(newFormatDay);
+    setWeek(week);
+  }
+
   return (
     <EducationContainer classes={"back_white"}>
       <ConfigProvider
@@ -433,6 +476,36 @@ const AutoSchedule = () => {
         }}
       >
         <div className="auto-schedule__container">
+          <Row type="flex" justify="space-between">
+            <Col span={24}>
+              <h2 style={{ margin: 5, padding: 0, textIndent: 0 }}>
+                Вы можете скачать расписание на неделю:
+              </h2>
+              <div className="auto-schedule__container-buttons-selectDay">
+                <Button style={{ width: "40%" }}>
+                  {" "}
+                  <a
+                    style={{ textDecoration: "none" }}
+                    href={lastWeek}
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    18 неделя
+                  </a>
+                </Button>
+                <Button style={{ width: "40%" }}>
+                  <a
+                    style={{ textDecoration: "none" }}
+                    href={newWeek}
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    1 неделя
+                  </a>
+                </Button>
+              </div>
+            </Col>
+          </Row>
           <AutoScheduleNav nav={nav} setNav={setNav} />
 
           {nav === "groups" ? (
@@ -508,6 +581,26 @@ const AutoSchedule = () => {
               week={week}
             />
           )}
+          <Row type="flex" justify="space-between">
+            <Col span={24}>
+              <div className="auto-schedule__container-buttons-selectDay">
+                <Button
+                  disabled={disabledDecreaseButton}
+                  onClick={() => decreaseDay()}
+                  style={{ width: "40%" }}
+                >
+                  Назад
+                </Button>
+                <Button
+                  disabled={disabledIncreaseButton}
+                  onClick={() => increaseDay()}
+                  style={{ width: "40%" }}
+                >
+                  Вперед
+                </Button>
+              </div>
+            </Col>
+          </Row>
         </div>
       </ConfigProvider>
     </EducationContainer>

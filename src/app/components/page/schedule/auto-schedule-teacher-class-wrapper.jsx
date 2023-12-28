@@ -8,7 +8,7 @@ const AutoScheduleTeacherClassWrapper = ({
 }) => {
   // сортируем массив по времени начала занятия
   data?.sort((a, b) => +a.time_start.slice(0, 2) - +b.time_start.slice(0, 2));
-  console.log(data);
+
   return (
     <div className="auto-schedule__container-lessons-container">
       {data && data !== undefined ? (
@@ -39,7 +39,6 @@ const AutoScheduleTeacherClassWrapper = ({
               <div className="lessons-container-lessons-common-teacher">
                 {element.teachers.map((e, index) => (
                   <div key={`${index} + ${e.teacher_name}`}>
-                    {console.log(e)}
                     {teachersComponent ? element.currentGroup : e.teacher_name}
                   </div>
                 ))}

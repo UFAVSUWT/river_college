@@ -98,7 +98,6 @@ const AutoScheduleTeachers = ({
     });
     setLessonsOfSelectedTeacher9(lesOn9week);
   }, [selectedTeacher]);
-
   useEffect(() => {
     if (lessonsOfSelectedTeacher8 && lessonsOfSelectedTeacher9 && day && week) {
       /* меняем номер недели!!!!!!!!!!!!!!!!!!!!! */

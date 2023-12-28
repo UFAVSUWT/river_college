@@ -8,6 +8,12 @@
 .back_white {
   background-color: white !important;
 }
+
+.auto-schedule__container-buttons-selectDay {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 5px;
+}
 .auto-schedule__container-buttons {
   width: 100%;
   align-items: center;
