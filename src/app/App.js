@@ -7,8 +7,20 @@ import fontSize from "./store/fontSize";
 import LeftPanel from "./components/ui/left-panel/left-panel";
 import ScrollUp from "./components/ui/scroll-up/scroll-up";
 import { toggleClassName } from "./utils/disabled";
+import { useContext, useEffect, useState } from "react";
+import { check } from "./httpService/userApi";
+import { Context } from "../index";
+import { fetchNews } from "./httpService/newsApi";
 const App = observer(() => {
   const element = useRoutes(routes());
+  const { user } = useContext(Context);
+  useEffect(() => {
+    user.checkAuthentication();
+  }, []);
+  const { news } = useContext(Context);
+  useEffect(() => {
+    fetchNews().then((data) => news.setNews(data));
+  }, []);
   const toggleFontSize = () => {
     const size = fontSize.fontSize;
     if (size === "normal") return "18px";

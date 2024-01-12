@@ -1,16 +1,22 @@
-import React from "react";
+import React, { createContext } from "react";
 import ReactDOM from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.css";
 import "./app/style/style.scss";
 import App from "./app/App";
 import { BrowserRouter } from "react-router-dom";
+import UserStore from "./app/store/user-store";
+import NewsStore from "./app/store/news-store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
+export const Context = createContext(null);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Context.Provider
+        value={{ user: new UserStore(), news: new NewsStore() }}
+      >
+        <App />
+      </Context.Provider>
     </BrowserRouter>
   </React.StrictMode>
 );

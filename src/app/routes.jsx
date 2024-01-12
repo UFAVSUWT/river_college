@@ -96,16 +96,55 @@ import MarineElectricalEquipment2022 from "./components/page/educationsPrograms/
 import MarineElectricalEquipment2022FOS from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2022FOS";
 import OrganizationOfTransportation2022 from "./components/page/educationsPrograms/230201/OrganizationOfTransportation2022";
 import OrganizationOfTransportation2022FOS from "./components/page/educationsPrograms/230201/OrganizationOfTransportation2022FOS";
+import OneNewsPage from "./components/page/one-news-page/one-news-page";
+import RequireAuth from "./hoc/require-auth";
+import Auth from "./layouts/auth/auth";
+import AdminPanel from "./components/page/admin-panel/admin-panel";
+import EditorNewsPage from "./components/page/create-news-page/create-news-page";
+import EditNewsPage from "./components/page/create-news-page/edit-news-page";
 const routes = () => [
   {
     path: "",
     element: <Main />,
+  },
+  {
+    path: ":id",
+    element: <OneNewsPage />,
+  },
+  /*Авторизированные пользователи*/
+  {
+    path: "auth",
+    element: (
+      <RequireAuth>
+        <Auth />
+      </RequireAuth>
+    ),
+  },
+  {
+    path: "admin",
+    element: (
+      <RequireAuth>
+        <AdminPanel />
+      </RequireAuth>
+    ),
     children: [
       {
-        path: ":element",
-        element: <Main />,
+        path: "editorNews",
+        element: (
+          <RequireAuth>
+            <EditorNewsPage />
+          </RequireAuth>
+        ),
       },
     ],
+  },
+  {
+    path: "editNewsPage/:id",
+    element: (
+      <RequireAuth>
+        <EditNewsPage />
+      </RequireAuth>
+    ),
   },
   {
     path: "educationPrograms",

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import TextField from "../../common/form/textField/TextField";
 import Button from "../../common/button/Button";
@@ -10,13 +10,24 @@ import {
   toggleIconHeightSize,
   toggleIconWidthSize,
 } from "../../../utils/disabled";
-const DesktopLogIn = observer(({ isActive, setIsActive }) => {
+import { useNavigate } from "react-router";
+
+const DesktopLogIn = observer(({ isActive, setIsActive, user }) => {
+  const navigate = useNavigate();
+  const formRef = useRef(null);
   const [data, setData] = useState({ login: "", password: "" });
-  const handleChange = (target) => {
-    setData((prevState) => ({ ...prevState, [target.name]: target.value }));
+  const handleChange = (e) => {
+    setData((prevState) => ({ ...prevState, [e.target.name]: e.target.value }));
   };
-  const handleSubmit = (e) => {
+  const handleReset = () => {
+    setData({ login: "", password: "" });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    user.login(data, navigate);
+    navigate("auth");
+    if (!user.isLoading) formRef.current.reset();
   };
   useEffect(() => {
     document.addEventListener("keydown", detectKeyDown, true);
@@ -26,14 +37,7 @@ const DesktopLogIn = observer(({ isActive, setIsActive }) => {
       setIsActive(false);
     }
   };
-  const getModalWindow = (e) => {
-    if (
-      e.target.id === "loginModalWindow" ||
-      e.target.id === "loginModalWindow_wrapper"
-    ) {
-      setIsActive(false);
-    }
-  };
+  console.log(user.error);
   return (
     <>
       {isActive ? (
@@ -48,7 +52,12 @@ const DesktopLogIn = observer(({ isActive, setIsActive }) => {
           <div className="leftPanel__wrapper-moove-login-form">
             {" "}
             <h1>Авторизация</h1>
-            <form onSubmit={handleSubmit}>
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              onChange={handleChange}
+              onReset={handleReset}
+            >
               <div className="login_form-inputWrapper">
                 <User
                   width={toggleIconWidthSize("25px", "27px", "27px", "30px")}
@@ -57,7 +66,6 @@ const DesktopLogIn = observer(({ isActive, setIsActive }) => {
                 />
                 <TextField
                   inputClassName={"login_form-inputWrapper-input"}
-                  onChange={handleChange}
                   value={data.login}
                   name={"login"}
                   type={"text"}
@@ -72,13 +80,14 @@ const DesktopLogIn = observer(({ isActive, setIsActive }) => {
                 />
                 <TextField
                   inputClassName={"login_form-inputWrapper-input"}
-                  onChange={handleChange}
                   value={data.password}
                   name={"password"}
                   type={"password"}
                   placeholder={"Введите ваш пароль"}
                 />
               </div>
+              <span>{user.error}</span>
+              <span>{user.isLoading && "Загрузка"}</span>
               <Button
                 className="login_form-btnLogin"
                 text="Войти"
