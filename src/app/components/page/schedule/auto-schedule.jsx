@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import raspisanieJSON8 from "../../../mockData/Расписание_2.json";
-import raspisanieJSON9 from "../../../mockData/Расписание_1.json";
+import raspisanieJSON9 from "../../../mockData/Расписание_3.json";
 import locale from "antd/es/date-picker/locale/ru_RU";
 import "dayjs/locale/ru";
 import EducationContainer from "../../common/educationContainer/education-container";
@@ -14,8 +14,8 @@ import AutoScheduleTeachers from "./auto-schedule-teachers";
 import AutoScheduleGroupsWrapper from "./auto-schedule-groups-wrapper";
 import AutoScheduleTeacherClassWrapper from "./auto-schedule-teacher-class-wrapper";
 import AutoScheduleClass from "./auto-schedule-class";
-import lastWeek from "../../../assets/doc/schedule/1 неделя 2 семестр.docx";
-import newWeek from "../../../assets/doc/schedule/2 неделя 2 семестр.docx";
+import lastWeek from "../../../assets/doc/schedule/2 неделя 2 семестр.docx";
+import newWeek from "../../../assets/doc/schedule/3 неделя 2 семестр.docx";
 const AutoSchedule = () => {
   const raspisanie8 = JSON.parse(JSON.stringify(raspisanieJSON8));
   const groups8 = raspisanie8.faculties[0].groups;
@@ -92,6 +92,7 @@ const AutoSchedule = () => {
 
   /* указываем стартовый день */
   const [day, setDay] = useState(getDayToday());
+  console.log(day);
   useEffect(() => {
     /* если выбрали новую группу, меням массив группы */
 
@@ -145,17 +146,17 @@ const AutoSchedule = () => {
       return 5;
     } else if (day === "20-01-2024") {
       return 6;
-    } else if (day === "8-01-2024") {
+    } else if (day === "21-01-2024") {
       return 1;
-    } else if (day === "9-01-2024") {
+    } else if (day === "22-01-2024") {
       return 2;
-    } else if (day === "10-01-2024") {
+    } else if (day === "23-01-2024") {
       return 3;
-    } else if (day === "11-01-2024") {
+    } else if (day === "24-01-2024") {
       return 4;
-    } else if (day === "12-01-2024") {
+    } else if (day === "25-01-2024") {
       return 5;
-    } else if (day === "13-01-2024") {
+    } else if (day === "26-01-2024") {
       return 6;
     }
   }
@@ -173,19 +174,19 @@ const AutoSchedule = () => {
       setWeek(2);
     } else if (day === "20-01-2024") {
       setWeek(2);
-    } else if (day === "8-01-2024") {
-      setWeek(1);
-    } else if (day === "9-01-2024") {
-      setWeek(1);
-    } else if (day === "10-01-2024") {
-      setWeek(1);
-    } else if (day === "11-01-2024") {
-      setWeek(1);
-    } else if (day === "12-01-2024") {
-      setWeek(1);
-    } else if (day === "13-01-2024") {
+    } else if (day === "22-01-2024") {
+      setWeek(3);
+    } else if (day === "23-01-2024") {
+      setWeek(3);
+    } else if (day === "24-01-2024") {
+      setWeek(3);
+    } else if (day === "25-01-2024") {
+      setWeek(3);
+    } else if (day === "26-01-2024") {
+      setWeek(3);
+    } else if (day === "27-01-2024") {
       setDisabledIncreaseButton(day);
-      setWeek(1);
+      setWeek(3);
     }
   }, [day]);
 
@@ -203,7 +204,7 @@ const AutoSchedule = () => {
             (e) => e.weekday === selectedDayNumber
           )
         );
-      } else if (week === 1) {
+      } else if (week === 3) {
         setSelectedDayLessons(
           classesOfSelectedGroupOnWeek9[0]?.filter(
             (e) => e.weekday === selectedDayNumber
@@ -238,28 +239,37 @@ const AutoSchedule = () => {
       const getYearToday = tomorrowDate.getFullYear();
       const getMonthToday = tomorrowDate.getMonth() + 1;
       const getDayToday = tomorrowDate.getDate();
-      return `${getDayToday}-${getMonthToday}-${getYearToday}`;
+      return `${getDayToday}-${
+        getMonthToday.length === 2 ? getMonthToday : `0${getMonthToday}`
+      }-${getYearToday}`;
     } else {
       const getYearToday = dateToday.getFullYear();
       const getMonthToday = dateToday.getMonth() + 1;
       const getDayToday = dateToday.getDate();
-      return `${getDayToday}-${getMonthToday}-${getYearToday}`;
+      return `${getDayToday}-${
+        getMonthToday.length === 2 ? getMonthToday : `0${getMonthToday}`
+      }-${getYearToday}`;
     }
   }
+
   /* делаем активными дни в календаря */
+
   function disabledDate(current) {
-    const startDate = new Date(2024, 0, 8); // не забываем про месяцы -1
-    const endDate = new Date(2024, 0, 21); // дата окончания недели должна быть +1
+    const startDate = new Date(2024, 0, 15); // не забываем про месяцы -1
+    const endDate = new Date(2024, 0, 28); // дата окончания недели должна быть +1
     return (
       current.$d < startDate || // проверяем, что дата находится в заданном диапазоне
       current.$d > endDate ||
       current.$W === 0 // отключаем вс
     );
   }
+
   useEffect(() => {
     setSelectedDayLessons(null);
   }, [course]);
+
   const [bookmark, setBookmark] = useState(false);
+
   function toggleBookmark(bookmark) {
     if (bookmark) {
       localStorage.setItem("course", course);
@@ -317,19 +327,20 @@ const AutoSchedule = () => {
   useEffect(() => {
     setSelectedDayLessons(null);
   }, [course]);
+
   const [bookmarkTeachers, setBookmarkTeachers] = useState(false);
+
   function toggleBookmarkTeachers(bookmarkTeachers) {
     if (bookmarkTeachers) {
       localStorage.setItem("savedTeacher", selectedTeacher);
-
       setLocalTeacher(localStorage.getItem("savedTeacher"));
     } else {
       localStorage.removeItem("savedTeacher");
-
       setLocalTeacher("");
     }
     setBookmarkTeachers(bookmarkTeachers);
   }
+
   function getBookmarkTeacher() {
     if (localTeacher === selectedTeacher) {
       return (
@@ -374,15 +385,14 @@ const AutoSchedule = () => {
   function toggleBookmarkClass(bookmarkClass) {
     if (bookmarkClass) {
       localStorage.setItem("class", selectedClass);
-
       setLocalClass(localStorage.getItem("class"));
     } else {
       localStorage.removeItem("class");
-
       setLocalClass("");
     }
     setBookmarkClass(bookmarkClass);
   }
+
   function getBookmarkClass() {
     if (localClass === selectedClass) {
       return (
@@ -490,7 +500,7 @@ const AutoSchedule = () => {
                   target={"_blank"}
                   rel="noreferrer"
                 >
-                  1 неделя
+                  2 неделя
                 </a>
 
                 <a
@@ -499,7 +509,7 @@ const AutoSchedule = () => {
                   target={"_blank"}
                   rel="noreferrer"
                 >
-                  2 неделя
+                  3 неделя
                 </a>
               </div>
             </Col>
