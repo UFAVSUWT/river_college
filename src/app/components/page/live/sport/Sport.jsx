@@ -1,33 +1,28 @@
-import React from "react";
-/* import { Context } from "../../../../../index";
-import NewsCardsWrapper from "../../../ui/newsCardsWrapper/news-cards-wrapper";
+import React, { useContext, useState } from "react";
+import { Context } from "../../../../../index";
+import NewsCardsWrapper from "../../../common/news-card-wrapper/news-card-wrapper";
 import NewsCard from "../../../common/newsCard/news-card";
-import PaginationComponent from "../../../common/pagination/Pagination";
-
-import { fetchNews } from "../../../../httpService/newsApi"; */
+import PaginationComponent from "../../../common/pagination/paginstion";
 import { paginate } from "../../../../utils/utils";
 import { observer } from "mobx-react-lite";
 const Sport = observer(() => {
-  /*   const { news } = useContext(Context);
-  useEffect(() => {
-    fetchNews().then((data) => news.setNews(data));
-  }, [news]);
-  // сортируем новости постранично 
+  const { news } = useContext(Context);
+  // сортируем новости постранично
   const sportNews = news.news
     .filter((n) => n.page === "STUDENT_SPORT")
     .reverse();
-  // задаем размер страницы 
+  // задаем размер страницы
   const pageSize = 12;
-  // текущая страница 
+  // текущая страница
   const [currentPage, setCurrentPage] = useState(1);
-  // получаем размер массива на одну страницу 
+  // получаем размер массива на одну страницу
   const newsCrop = paginate(sportNews, currentPage, pageSize);
+  if (news.isLoading) return "Загрузка";
   if (newsCrop.length === 0 || !newsCrop)
-    return "На этой странице новостей пока что нет..."; */
+    return "На этой странице новостей пока что нет...";
   return (
     <>
-      Разработка
-      {/*  <NewsCardsWrapper>
+      <NewsCardsWrapper>
         {newsCrop.map((n) => (
           <NewsCard
             id={n.id}
@@ -46,7 +41,7 @@ const Sport = observer(() => {
           setCurrentPage={setCurrentPage}
           news={sportNews}
         />
-      )} */}
+      )}
     </>
   );
 });

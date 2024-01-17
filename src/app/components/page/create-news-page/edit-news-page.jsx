@@ -2,11 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 /* import { Editor } from "@tinymce/tinymce-react"; */
 import { Button, Checkbox, Form, Input, Select, Upload } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
-import {
-  createNews,
-  fetchNews,
-  fetchOneNews,
-} from "../../../httpService/newsApi";
+import { createNews, fetchOneNews } from "../../../httpService/newsApi";
 import { useNavigate, useParams } from "react-router";
 import { Context } from "../../../../index";
 import { observer } from "mobx-react-lite";

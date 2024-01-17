@@ -37,7 +37,6 @@ const DesktopLogIn = observer(({ isActive, setIsActive, user }) => {
       setIsActive(false);
     }
   };
-  console.log(user.error);
   return (
     <>
       {isActive ? (

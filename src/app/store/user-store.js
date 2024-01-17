@@ -67,20 +67,8 @@ export default class UserStore {
     return this._isLoading;
   }
   get error() {
-    console.log("gddfg");
     return this._error;
   }
-
-  /*  get userInfo() {
-    return this.user;
-  } */
-  /* get authInfo() {
-    return {
-      auth: this.auth,
-      isLoading: this.isLoading,
-      error: this.error,
-    };
-  } */
 }
 
 /* import { makeAutoObservable, runInAction } from "mobx";

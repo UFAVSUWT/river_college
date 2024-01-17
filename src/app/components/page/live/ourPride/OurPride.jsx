@@ -1,29 +1,30 @@
-import React, { useState } from "react";
-
+import React, { useContext, useState } from "react";
 import { paginate } from "../../../../utils/utils";
-
 import { observer } from "mobx-react-lite";
+import PaginationComponent from "../../../common/pagination/paginstion";
+import NewsCard from "../../../common/newsCard/news-card";
+import NewsCardsWrapper from "../../../common/news-card-wrapper/news-card-wrapper";
+import { Context } from "../../../../../index";
 const OurPride = observer(() => {
-  /* const { news } = useContext(Context);
-  useEffect(() => {
-    fetchNews().then((data) => news.setNews(data));
-  }, [news]);
-// сортируем новости постранично 
+  const { news } = useContext(Context);
+
+  // сортируем новости постранично
   const prideNews = news.news
     .filter((n) => n.page === "STUDENT_PRIDE")
     .reverse();
-  // задаем размер страницы 
+  // задаем размер страницы
   const pageSize = 12;
-  // текущая страница 
+  // текущая страница
   const [currentPage, setCurrentPage] = useState(1);
-  // получаем размер массива на одну страницу 
+  // получаем размер массива на одну страницу
   const newsCrop = paginate(prideNews, currentPage, pageSize);
+  if (news.isLoading) return "Загрузка";
   if (newsCrop.length === 0 || !newsCrop)
-    return "На этой странице новостей пока что нет...";  */
+    return "На этой странице новостей пока что нет...";
   return (
     <>
       Разработка
-      {/*  <NewsCardsWrapper>
+      <NewsCardsWrapper>
         {newsCrop.map((n) => (
           <NewsCard
             id={n.id}
@@ -42,7 +43,7 @@ const OurPride = observer(() => {
           setCurrentPage={setCurrentPage}
           news={prideNews}
         />
-      )} */}
+      )}
     </>
   );
 });

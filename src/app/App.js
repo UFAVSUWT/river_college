@@ -7,10 +7,8 @@ import fontSize from "./store/fontSize";
 import LeftPanel from "./components/ui/left-panel/left-panel";
 import ScrollUp from "./components/ui/scroll-up/scroll-up";
 import { toggleClassName } from "./utils/disabled";
-import { useContext, useEffect, useState } from "react";
-import { check } from "./httpService/userApi";
+import { useContext, useEffect } from "react";
 import { Context } from "../index";
-import { fetchNews } from "./httpService/newsApi";
 const App = observer(() => {
   const element = useRoutes(routes());
   const { user } = useContext(Context);
@@ -19,7 +17,7 @@ const App = observer(() => {
   }, []);
   const { news } = useContext(Context);
   useEffect(() => {
-    fetchNews().then((data) => news.setNews(data));
+    news.loadNews();
   }, []);
   const toggleFontSize = () => {
     const size = fontSize.fontSize;

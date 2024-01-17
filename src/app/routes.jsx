@@ -107,10 +107,10 @@ const routes = () => [
     path: "",
     element: <Main />,
   },
-  {
+  /*   {
     path: ":id",
     element: <OneNewsPage />,
-  },
+  }, */
   /*Авторизированные пользователи*/
   {
     path: "auth",
@@ -337,16 +337,32 @@ const routes = () => [
         element: <StudentsLive />,
       },
       {
+        path: "studentsLive/:id",
+        element: <OneNewsPage />,
+      },
+      {
         path: "sport",
         element: <Sport />,
+      },
+      {
+        path: "sport/:id",
+        element: <OneNewsPage />,
       },
       {
         path: "ourPride",
         element: <OurPride />,
       },
       {
+        path: "ourPride/:id",
+        element: <OneNewsPage />,
+      },
+      {
         path: "science",
         element: <Science />,
+      },
+      {
+        path: "science/:id",
+        element: <OneNewsPage />,
       },
       {
         path: "vacancies",

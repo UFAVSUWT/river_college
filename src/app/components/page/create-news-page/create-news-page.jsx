@@ -48,10 +48,6 @@ const EditorNewsPage = observer(() => {
     addNews();
   }
 
-  /*   useEffect(() => {
-    fetchNews().then((data) => news.setNews(data));
-  }, [news]); */
-
   function onNavigate(data) {
     if (data.page === "STUDENT_LIFE") {
       navigate("../../live/studentsLive");
@@ -67,7 +63,7 @@ const EditorNewsPage = observer(() => {
     console.log("Failed:", errorInfo);
   };
   const addNews = () => {
-    console.log(data);
+    /*     console.log(data);
     const formData = new FormData();
     formData.append("title", `${data.title}`);
     formData.append("text", `${data.text}`);
@@ -79,7 +75,7 @@ const EditorNewsPage = observer(() => {
     formData.append("date", `${data.date}`);
     createNews(formData);
     fetchNews().then((data) => news.setNews(data));
-    onNavigate(data);
+    onNavigate(data); */
   };
 
   return (

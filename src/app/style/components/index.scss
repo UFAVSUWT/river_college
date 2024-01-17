@@ -20,6 +20,8 @@
 @import "../../components/page/educationsPrograms/style/educationsPrograms";
 @import "../../components/page/schedule/style/auto-schedule";
 @import "../../components/page/homePage/reviews/style/reviews";
+@import "../../components/page/homePage/universityNews/style/university-news";
+@import "../../components/page/one-news-page/style/one-news-page";
 // common
 @import "../../components/common/phoneMenu/style/phoneMenu";
 @import "../../components/common/breadCrumbs/style/breadCrumbs";
@@ -36,17 +38,11 @@
 @import "../../components/common/pageCarousel/style/pageCarousel";
 @import "../../components/common/search/style/search";
 @import "../../components/common/newsCard/style/news-card";
-/* @import "../../components/common/newsCard/cardEight/style/cardEight";
-@import "../../components/common/newsCard/cardFive/style/cardFive";
-@import "../../components/common/newsCard/cardFour/style/cardFour";
-@import "../../components/common/newsCard/cardOne/style/cardOne";
-@import "../../components/common/newsCard/cardSeven/style/cardSeven";
-@import "../../components/common/newsCard/cardSix/style/cardSix";
-@import "../../components/common/newsCard/cardThree/style/cardThree";
-@import "../../components/common/newsCard/cardTwo/style/cardTwo"; */
 @import "../../components/common/articleContainer/style/articleContainer";
 @import "../../components/common/form/textField/textField";
 @import "../../components/common/collapse/style/collapse";
+@import "../../components/common/news-card-wrapper/style/news_card_wrapper";
+@import "../../components/common/pagination/style/pagination";
 
 // --------------------ui----------------------------------
 @import "../../components/ui/disabled/style/disabled";
