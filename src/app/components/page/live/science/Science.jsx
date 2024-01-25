@@ -1,15 +1,19 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../../../../../index";
 import PaginationComponent from "../../../common/pagination/paginstion";
 import { observer } from "mobx-react-lite";
 import NewsCardsWrapper from "../../../common/news-card-wrapper/news-card-wrapper";
 import NewsCard from "../../../common/newsCard/news-card";
 import { paginate } from "../../../../utils/utils";
+import { NewsStore } from "../../../../store/news-store";
 
 const Science = observer(() => {
-  const { news } = useContext(Context);
+  const { news, isLoadingNews, loadNews } = NewsStore;
+  useEffect(() => {
+    loadNews();
+  }, []);
   // сортируем новости постранично
-  const scienceNews = news.news
+  const scienceNews = news
     .filter((n) => n.page === "STUDENT_SCIENCE")
     .reverse();
   // задаем размер страницы
@@ -18,7 +22,7 @@ const Science = observer(() => {
   const [currentPage, setCurrentPage] = useState(1);
   // получаем размер массива на одну страницу
   const newsCrop = paginate(scienceNews, currentPage, pageSize);
-  if (news.isLoading) return "Загрузка";
+  if (isLoadingNews) return "Загрузка";
   if (newsCrop.length === 0 || !newsCrop)
     return "На этой странице новостей пока что нет...";
 

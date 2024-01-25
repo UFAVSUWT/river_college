@@ -9,15 +9,16 @@ import ScrollUp from "./components/ui/scroll-up/scroll-up";
 import { toggleClassName } from "./utils/disabled";
 import { useContext, useEffect } from "react";
 import { Context } from "../index";
+import { NewsStore } from "./store/news-store";
 const App = observer(() => {
   const element = useRoutes(routes());
   const { user } = useContext(Context);
   useEffect(() => {
     user.checkAuthentication();
   }, []);
-  const { news } = useContext(Context);
+  const { loadNews } = NewsStore;
   useEffect(() => {
-    news.loadNews();
+    loadNews();
   }, []);
   const toggleFontSize = () => {
     const size = fontSize.fontSize;

@@ -1,50 +1,73 @@
 import { action, makeAutoObservable, makeObservable, observable } from "mobx";
-import { fetchNews, fetchOneNews } from "../httpService/newsApi";
+import {
+  createNews as createNewNews,
+  fetchNews,
+  editNews as editCurrentNews,
+} from "../httpService/newsApi";
 
-export default class NewsStore {
-  _news = [];
-  _isLoading = false;
-  _error = null;
-  constructor() {
-    makeAutoObservable(
-      this /* {
-      _news: observable,
-      loadNews: action,
-    } */
-    );
-  }
+export const NewsStore = makeAutoObservable({
+  news: [],
+  isLoadingNews: false,
+  errorNews: null,
+  isCreateNewsLoading: false,
+  errorOfCreateingNews: null,
+  currentNews: {},
+  isEditedNewsLoading: false,
+  errorEditedNews: null,
 
-  async loadNews() {
-    this.setLoading(true);
+  *loadNews() {
+    NewsStore.isLoadingNews = true;
     try {
-      const news = await fetchNews();
-      this.setNews(news);
-      this.setLoading(false);
-      this.setAuth(true);
-    } catch (error) {
-      this.setError(error.response.data.message);
-      this.setLoading(false);
+      const data = yield fetchNews();
+      if (data) {
+        NewsStore.news = data;
+      } else {
+        NewsStore.errorNews = "Данные не найдены";
+      }
+    } catch (e) {
+      if (e) NewsStore.error = e.message;
+    } finally {
+      NewsStore.isLoadingNews = false;
     }
-  }
-  setNews(news) {
-    this._news = news;
-  }
-  setLoading(bool) {
-    this._isLoading = bool;
-  }
-  setError(error) {
-    this._error = error;
-  }
-  setAuth(bool) {
-    this._auth = bool;
-  }
-  get news() {
-    return this._news;
-  }
-  get isLoading() {
-    return this._isLoading;
-  }
-  get error() {
-    return this._error;
-  }
-}
+  },
+  *createNews(news, onNavigate) {
+    NewsStore.errorOfCreateingNews = null;
+    NewsStore.isCreateNewsLoading = true;
+    try {
+      const data = yield createNewNews(news);
+      if (data) {
+        NewsStore.news.push(data);
+        NewsStore.currentNews = data;
+      } else {
+        NewsStore.errorOfCreateingNews =
+          "Что-то пошло не так, новость не создана :(";
+      }
+    } catch (e) {
+      if (e) NewsStore.errorOfCreateingNews = e.message;
+    } finally {
+      NewsStore.isCreateNewsLoading = false;
+      onNavigate(NewsStore.currentNews);
+      NewsStore.currentNews = {};
+    }
+  },
+  *editCurrentNews(currentNews) {
+    NewsStore.isEditedNewsLoading = true;
+    try {
+      const data = yield editCurrentNews(currentNews);
+      if (data) {
+        NewsStore.news = NewsStore.news.map((e) => {
+          if (e.id === currentNews.id) {
+            return { ...data };
+          }
+        });
+      } else {
+        NewsStore.errorEditedNews =
+          "Что-то пошло не так, новость не создана :(";
+      }
+    } catch (e) {
+      if (e) NewsStore.errorEditedNews = e.message;
+    } finally {
+      NewsStore.isEditedNewsLoading = false;
+    }
+  },
+});

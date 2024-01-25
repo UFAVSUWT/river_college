@@ -2,14 +2,15 @@ import React, { useContext, useState } from "react";
 import NewsCard from "../../common/newsCard/news-card";
 import NewsCardsWrapper from "../../common/news-card-wrapper/news-card-wrapper";
 import { Context } from "../../../../index";
+import { NewsStore } from "../../../store/news-store";
 
 const NewsCardContainer = () => {
   const [isShowing, setIsShowing] = useState(false);
-  const { news } = useContext(Context);
-  const cardsNews = news.news.filter(
+  const { news, isLoadingNews } = NewsStore;
+  const cardsNews = news.filter(
     (n) => (Number(n.card) >= 1 || Number(n.card) <= 6) && n.card !== ""
   );
-  if (news.isLoading) return "Загрузка...";
+  if (isLoadingNews) return "Загрузка...";
   return (
     <div
       onClick={() => setIsShowing(!isShowing)}

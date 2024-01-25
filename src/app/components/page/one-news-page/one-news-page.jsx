@@ -7,20 +7,22 @@ import { deleteNews } from "../../../httpService/newsApi";
 import { Context } from "../../../../index";
 import Button from "../../common/button/Button";
 import { Modal } from "antd";
+import { NewsStore } from "../../../store/news-store";
 
 const OneNewsPage = () => {
   const navigate = useNavigate();
   const [oneNews, setOneNews] = useState({});
   const { user } = useContext(Context);
-  const { news } = useContext(Context);
+  const { news } = NewsStore;
   const { id } = useParams();
   // Открываем модалку для подтвержения
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [deletedNews, setDeletedNews] = useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [removeLoading, setRemoveLoading] = useState(false);
   const [errorDelite, setErrorDelite] = useState(false);
-  const [loadingDelite, setLoadingDelite] = useState(false);
+
   useEffect(() => {
     setLoading(true);
     fetchOneNews(id)
@@ -32,39 +34,57 @@ const OneNewsPage = () => {
       })
       .then((data) => {
         setOneNews(data);
-        setLoading(false);
       })
-      .catch(() => setError("Не удалось загрузить новость"))
+      .catch(() => {
+        setError("Не удалось загрузить новость");
+        setOneNews({});
+      })
       .finally(setLoading(false));
   }, [id]);
   const showModal = () => {
     setIsModalOpen(true);
   };
   const handleOk = () => {
-    setLoading(true);
+    setRemoveLoading(true);
     deleteNews(id)
-      .then((response) => {
+      .then((data) => {
+        if (data === "Новость удалена") {
+          setIsModalOpen(false);
+          onNavigate();
+          news.filter((e) => e.id !== id);
+        } else {
+          throw new Error("Не удалось удалить новость");
+        }
+      })
+      .catch(() => setErrorDelite("Не удалось удалить новость!"))
+      .finally(() => {
+        setRemoveLoading(false);
+      });
+
+    /*    .then((response) => {
+        console.log(response);
         if (response.status !== 200) {
           throw new Error("Не удалось удалить новость");
         }
-        return response.data;
+
+        return response.json();
       })
       .then((data) => {
         console.log(data);
-        news.filter((e) => e.id !== id);
-        setLoadingDelite(false);
+        //  news.filter((e) => e.id !== id);
+        setIsModalOpen(false);
         onNavigate();
       })
-      .catch(() => setErrorDelite("Не удалось удалить новость"))
+      .catch(() => setErrorDelite("Не удалось удалить новость!"))
       .finally(() => {
-        setDeletedNews(true);
-        setIsModalOpen(false);
-      });
-    /*  deleteNews(id);
-    news.filter((e) => e.id !== id); */
-    /*   setDeletedNews(true);
-    setIsModalOpen(false);
-    onNavigate(); */
+        //      setDeletedNews(true);
+        setRemoveLoading(false);
+      }); */
+    // deleteNews(id);
+    //news.filter((e) => e.id !== id);
+    //  setDeletedNews(true);
+    //setIsModalOpen(false);
+    //onNavigate();
   };
   const handleCancel = () => {
     setIsModalOpen(false);
@@ -86,14 +106,14 @@ const OneNewsPage = () => {
   };
 
   if (loading) return "Загрузка...";
-  if (error) return error;
+  if (error || undefined || null) return error;
   /*   if (
     oneNews === undefined ||
     oneNews === null ||
     Object.keys(oneNews).length === 0
   )
     return "Эта новость удалена или еще не создана..."; */
-
+  console.log(oneNews);
   return (
     <>
       <div
@@ -153,8 +173,7 @@ const OneNewsPage = () => {
         okText="Удалить"
         okType="danger"
       >
-        <p>Эта новость будет удалена!</p>
-        <p>{loadingDelite}</p>
+        <p>{removeLoading ? "Загрузка" : "Эта новость будет удалена!"}</p>
         <p>{errorDelite}</p>
       </Modal>
     </>

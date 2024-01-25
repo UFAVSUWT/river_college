@@ -1,14 +1,14 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
-/* import { Editor } from "@tinymce/tinymce-react"; */
+import React, { useEffect, useRef, useState } from "react";
+import { Editor } from "@tinymce/tinymce-react";
 import { Button, Switch, Form, Input, Select, Upload } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
-import { createNews, fetchNews } from "../../../httpService/newsApi";
 import { useNavigate } from "react-router";
-import { Context } from "../../../../index";
 import { observer } from "mobx-react-lite";
+import { NewsStore } from "../../../store/news-store";
 const EditorNewsPage = observer(() => {
-  const { news } = useContext(Context);
   const navigate = useNavigate();
+  const { news } = NewsStore;
+  const { createNews, isCreateNewsLoading, errorOfCreateingNews } = NewsStore;
   const editorRef = useRef(null);
   const [text, setText] = useState("");
   const [main, setMain] = useState(false);
@@ -23,8 +23,7 @@ const EditorNewsPage = observer(() => {
     date: "01.02.23",
     text: text,
   });
-  console.log(data);
-  console.log(text);
+
   useEffect(() => {
     setData((p) => ({ ...p, main, file, text }));
   }, [main, file, text]);
@@ -38,13 +37,12 @@ const EditorNewsPage = observer(() => {
     setData((p) => ({ ...p, card: e }));
   };
 
-  console.log(data);
   function handleChange(e) {
     setData((p) => ({ ...p, [e.target.name]: e.target.value }));
   }
   function handleSubmit(e) {
     e.preventDefault();
-    console.log({ ...data, text });
+    /* console.log({ ...data, text }); */
     addNews();
   }
 
@@ -63,7 +61,6 @@ const EditorNewsPage = observer(() => {
     console.log("Failed:", errorInfo);
   };
   const addNews = () => {
-    /*     console.log(data);
     const formData = new FormData();
     formData.append("title", `${data.title}`);
     formData.append("text", `${data.text}`);
@@ -73,19 +70,37 @@ const EditorNewsPage = observer(() => {
     formData.append("page", `${data.page}`);
     formData.append("main", `${data.main}`);
     formData.append("date", `${data.date}`);
-    createNews(formData);
-    fetchNews().then((data) => news.setNews(data));
-    onNavigate(data); */
+    const mainNews = news.findIndex((n) => n.main && n.main === data.main);
+    const cardNews = news.findIndex(
+      (n) => n.card >= 1 && n.card <= 6 && data.card === n.card
+    );
+    console.log("mainNews", mainNews);
+    console.log("cardNews", cardNews);
+    if (mainNews !== -1) {
+      const questions = window.confirm(
+        "В карточке главная ность уже существует новость, заменить ее на главной странице?"
+      );
+      if (questions) {
+        console.log("Заменяем новость");
+      }
+    } else if (cardNews !== -1) {
+      const questions = window.confirm(
+        `В карточке № ${cardNews} уже существует новость, заменить ее на главной странице?`
+      );
+      if (questions) {
+        console.log("Заменяем новость");
+      }
+    } else {
+      console.log("все ок, создаем новость!");
+    }
+    /*   createNews(formData, onNavigate); */
   };
-
   return (
     <section className="editor-news-page_wrapper">
       <Form
         name="basic"
         initialValues={{
-          /*  main: data.main, */
           page: data.page,
-          /*     card: data.card, */
         }}
         onChange={handleChange}
         onSubmitCapture={handleSubmit}
@@ -133,7 +148,6 @@ const EditorNewsPage = observer(() => {
             {
               required: true,
               message: "Введите название новости!",
-              /*   defaultField: data.title, */
             },
           ]}
         >
@@ -157,7 +171,7 @@ const EditorNewsPage = observer(() => {
           </Upload>
         </Form.Item>
         {/* Редактор текста */}
-        {/* <Editor
+        <Editor
           name="text"
           apiKey="zd2ikpvwav8hhbalfmc0ksg1w0wj5chfei2uer8esvxyf40t"
           onInit={(evt, editor) => (editorRef.current = editor)}
@@ -192,7 +206,7 @@ const EditorNewsPage = observer(() => {
               "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }",
           }}
           onChange={(e) => setText(e.level.content)}
-        /> */}
+        />
         <hr />
         <Form.Item
           wrapperCol={{
@@ -203,6 +217,10 @@ const EditorNewsPage = observer(() => {
           <Button type="primary" htmlType="submit">
             Добавить новость
           </Button>
+          <span>{isCreateNewsLoading && "Загрузка"}</span>
+          <span>
+            {errorOfCreateingNews && "Произошла ошибка, попробуйте позже!"}
+          </span>
         </Form.Item>
       </Form>
     </section>

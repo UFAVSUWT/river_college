@@ -6,11 +6,12 @@ import Image from "../../../common/image/Image";
 import InfoContainer from "../../../common/infoContainer/InfoContainer";
 import NewsCardContainer from "../../../ui/newsCardContainer/NewsCardContainer";
 import { Context } from "../../../../../index";
+import { NewsStore } from "../../../../store/news-store";
 
 const InfoPage = observer(() => {
-  const { news } = useContext(Context);
-  const main = news.news.filter((n) => n.main);
-  if (news.isLoading) return "Загрузка...";
+  const { news, isLoadingNews } = NewsStore;
+  const main = news.filter((n) => n.main);
+  if (isLoadingNews) return "Загрузка...";
   return (
     <div
       style={{ fontSize: toggleFontSize(18) }}

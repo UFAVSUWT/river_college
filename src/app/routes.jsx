@@ -107,10 +107,10 @@ const routes = () => [
     path: "",
     element: <Main />,
   },
-  /*   {
+  {
     path: ":id",
     element: <OneNewsPage />,
-  }, */
+  },
   /*Авторизированные пользователи*/
   {
     path: "auth",
