@@ -7,12 +7,24 @@ import { toggleClassName } from "../utils/disabled";
 const Enrolly = observer(() => {
   const linksMenu = [
     {
-      title: "Приемная кампания 2023",
+      title: "Приемная кампания 2024",
       path: "reception",
+    },
+    {
+      title: "Прием по программам СПО",
+      path: "spo",
+    },
+    {
+      title: "Прием по программам ВО",
+      path: "higherEducation",
     },
     {
       title: "Подача документов",
       path: "submissionDoc",
+    },
+    {
+      title: "Проходные баллы прошлых лет",
+      path: "passingScores",
     },
     {
       title: "Обращение директора",
@@ -30,7 +42,14 @@ const Enrolly = observer(() => {
   ];
 
   return (
-    <div className={` ${toggleClassName("_container-main min-height", "_container-white min-height-white"," _container-black min-height-black","_container-contrast min-height-contrast",)}`}>
+    <div
+      className={` ${toggleClassName(
+        "_container-main min-height",
+        "_container-white min-height-white",
+        " _container-black min-height-black",
+        "_container-contrast min-height-contrast"
+      )}`}
+    >
       <BreadCrumbs />
       <div className="chapter__menu-show">
         <ChapterMenu linksArray={linksMenu} />

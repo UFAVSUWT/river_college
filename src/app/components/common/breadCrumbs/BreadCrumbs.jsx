@@ -170,6 +170,9 @@ const BreadCrumbs = observer(() => {
             case "kcp":
               linkName = "/ КЦП СПО на 2023/2024 учeбный год ";
               break;
+            case "kcpVo":
+              linkName = "/ КЦП ВО на 2024/2025 учeбный год ";
+              break;
             case "educationLvlRequirements":
               linkName = "/ Требования к уровню образования ";
               break;
@@ -189,8 +192,17 @@ const BreadCrumbs = observer(() => {
             case "messageFromDirector":
               linkName = "/ Обращение директора ";
               break;
+            case "spo":
+              linkName = "/ Прием по программам СПО ";
+              break;
+            case "passingScores":
+              linkName = "/ Проходные баллы прошлых лет ";
+              break;
+            case "higherEducation":
+              linkName = "/ Прием по программам ВО ";
+              break;
             case "reception":
-              linkName = "/ Приемная кампания 2023 ";
+              linkName = "/ Приемная кампания 2024 ";
               break;
             case "submissionDoc":
               linkName = "/ Подача документов ";

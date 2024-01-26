@@ -34,25 +34,25 @@ const ImageSlider = ({ className, ...rest }) => {
           }}
         >
           <SwiperSlide> */}
-            <NavLink to={"enrollee/reception"}>
-              <div className="marquee-infinite">
-                <span>
-                  <img src={Boat} alt="" width={"250px"} height={"96px"} />
-                </span>
+        <NavLink to={"enrollee/reception"}>
+          <div className="marquee-infinite">
+            <span>
+              <img src={Boat} alt="" width={"250px"} height={"96px"} />
+            </span>
+          </div>
+          <div className="_container">
+            <div className="swiperSlideFirs__lable">
+              <div className="_container swiperSlideFirs__lable-content">
+                Открыт прием абитуриентов по специальностям высшего и среднего
+                образования!
+                <br /> Стань капитаном своей судьбы!
               </div>
-              <div className="_container">
-                <div className="swiperSlideFirs__lable">
-                  <div className="_container swiperSlideFirs__lable-content">
-                    Открыт набор курсантов по специальностям высшего и среднего
-                    образования!
-                    <br /> Стань капитаном своей судьбы!
-                  </div>
-                </div>
-              </div>
-              <img src={Students} alt="Картинка уплыла" />
-            </NavLink>
-       {/*    </SwiperSlide> */}
-          {/* <SwiperSlide>
+            </div>
+          </div>
+          <img src={Students} alt="Картинка уплыла" />
+        </NavLink>
+        {/*    </SwiperSlide> */}
+        {/* <SwiperSlide>
             <div className="marquee-infinite">
               <span>
                 <img src={Boat} alt="" width={"250px"} height={"96px"} />

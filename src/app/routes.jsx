@@ -96,6 +96,10 @@ import MarineElectricalEquipment2022 from "./components/page/educationsPrograms/
 import MarineElectricalEquipment2022FOS from "./components/page/educationsPrograms/260206/MarineElectricalEquipment2022FOS";
 import OrganizationOfTransportation2022 from "./components/page/educationsPrograms/230201/OrganizationOfTransportation2022";
 import OrganizationOfTransportation2022FOS from "./components/page/educationsPrograms/230201/OrganizationOfTransportation2022FOS";
+import Spo from "./components/page/enrollee/applicants/reception/spo/spo";
+import HigherEducation from "./components/page/enrollee/applicants/reception/vo/vo";
+import PassingScores from "./components/page/enrollee/applicants/reception/passing-scores/passing-scores";
+import KcpVo from "./components/page/enrollee/applicants/reception/KCP-VO/kcp-vo";
 const routes = () => [
   {
     path: "",
@@ -323,6 +327,10 @@ const routes = () => [
         path: "kcp",
         element: <KCP />,
       },
+      {
+        path: "kcpVo",
+        element: <KcpVo />,
+      },
       /* Скорее всего этот компонент больше будет не нужен, можно будет удалить */
       /*     {
         path: "applicants",
@@ -366,6 +374,18 @@ const routes = () => [
       {
         path: "reception",
         element: <Reception />,
+      },
+      {
+        path: "spo",
+        element: <Spo />,
+      },
+      {
+        path: "passingScores",
+        element: <PassingScores />,
+      },
+      {
+        path: "higherEducation",
+        element: <HigherEducation />,
       },
       {
         path: "submissionDoc",

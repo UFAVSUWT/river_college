@@ -246,13 +246,19 @@ const NavBar = observer(() => {
                   onClick={() => megaMenuIsOut()}
                   to={"enrollee/reception"}
                 >
-                  <li>Приёмная кампания 2023</li>
+                  <li>Приёмная кампания 2024</li>
                 </NavLink>
                 <NavLink
                   onClick={() => megaMenuIsOut()}
                   to={"enrollee/submissionDoc"}
                 >
                   <li>Подача документов</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"enrollee/passingScores"}
+                >
+                  <li>Проходные баллы прошлых лет</li>
                 </NavLink>
                 <NavLink
                   onClick={() => megaMenuIsOut()}

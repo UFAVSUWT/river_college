@@ -60,7 +60,7 @@ const ApplicantsPage = observer(() => {
           >
             <li>
               <NavLink to={"enrollee/reception"}>
-                Приемная кампания 2023
+                Приемная кампания 2024
               </NavLink>
             </li>
             <li>

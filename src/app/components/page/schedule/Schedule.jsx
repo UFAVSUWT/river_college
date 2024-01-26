@@ -74,10 +74,7 @@ import SV351PNGnew from "../../../assets/img/schedule/new/351SV.png";
 import SV355PNGnew from "../../../assets/img/schedule/new/355SV.png";
 import SV447PNGnew from "../../../assets/img/schedule/new/447SV.png";
 import SV448PNGnew from "../../../assets/img/schedule/new/448SV.png";
-import raspisanieJSON from "../../../mockData/Расписание_8.json";
 const Schedule = () => {
-  const raspisanie = JSON.parse(JSON.stringify(raspisanieJSON)).faculties;
-  console.log(raspisanie);
   const navigate = useNavigate();
   const [week, setWeek] = useState(true);
   return (
