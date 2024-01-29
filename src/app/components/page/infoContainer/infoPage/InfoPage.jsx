@@ -1,16 +1,20 @@
 import { observer } from "mobx-react-lite";
-import React, { useContext } from "react";
+import React from "react";
 import images from "../../../../store/images";
 import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
 import Image from "../../../common/image/Image";
 import InfoContainer from "../../../common/infoContainer/InfoContainer";
 import NewsCardContainer from "../../../ui/newsCardContainer/NewsCardContainer";
-import { Context } from "../../../../../index";
-import { NewsStore } from "../../../../store/news-store";
 
+import { NewsStore } from "../../../../store/news-store";
+import { toJS } from "mobx";
 const InfoPage = observer(() => {
   const { news, isLoadingNews } = NewsStore;
-  const main = news.filter((n) => n.main);
+
+  const main = toJS(news)
+    .reverse()
+    .find((e) => e.main === true);
+
   if (isLoadingNews) return "Загрузка...";
   return (
     <div
@@ -22,24 +26,24 @@ const InfoPage = observer(() => {
         "infopage-contrast"
       )}`}
     >
-      {main.map((n) => (
+      {main && (
         <InfoContainer
-          key={n.id}
+          key={main.id}
           title="Новости университета"
-          newsTitle={n.title}
+          newsTitle={main.title}
           btnTitle="Все новости"
           image={
             <Image
-              src={process.env.REACT_APP_API_URL + n.image}
+              src={process.env.REACT_APP_API_URL + main.image}
               alt="Фото уплыло:("
               height="100%"
               width="100%"
             />
           }
         >
-          <div dangerouslySetInnerHTML={{ __html: n.text }}></div>
+          <div dangerouslySetInnerHTML={{ __html: main.text }}></div>
         </InfoContainer>
-      ))}
+      )}
 
       {images.image !== "off" ? <NewsCardContainer /> : null}
     </div>

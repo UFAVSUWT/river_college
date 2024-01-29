@@ -7,7 +7,7 @@ import { observer } from "mobx-react-lite";
 import { NewsStore } from "../../../store/news-store";
 const EditorNewsPage = observer(() => {
   const navigate = useNavigate();
-  const { news } = NewsStore;
+
   const { createNews, isCreateNewsLoading, errorOfCreateingNews } = NewsStore;
   const editorRef = useRef(null);
   const [text, setText] = useState("");
@@ -70,7 +70,7 @@ const EditorNewsPage = observer(() => {
     formData.append("page", `${data.page}`);
     formData.append("main", `${data.main}`);
     formData.append("date", `${data.date}`);
-    const mainNews = news.findIndex((n) => n.main && n.main === data.main);
+    /* const mainNews = news.findIndex((n) => n.main && n.main === data.main);
     const cardNews = news.findIndex(
       (n) => n.card >= 1 && n.card <= 6 && data.card === n.card
     );
@@ -92,8 +92,8 @@ const EditorNewsPage = observer(() => {
       }
     } else {
       console.log("все ок, создаем новость!");
-    }
-    /*   createNews(formData, onNavigate); */
+    } */
+    createNews(formData, onNavigate);
   };
   return (
     <section className="editor-news-page_wrapper">

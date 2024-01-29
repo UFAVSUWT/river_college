@@ -17,7 +17,7 @@ const OneNewsPage = () => {
   const { id } = useParams();
   // Открываем модалку для подтвержения
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [deletedNews, setDeletedNews] = useState(false);
+  /*   const [deletedNews, setDeletedNews] = useState(false); */
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   const [removeLoading, setRemoveLoading] = useState(false);
