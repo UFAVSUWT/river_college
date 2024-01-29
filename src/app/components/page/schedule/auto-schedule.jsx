@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import raspisanieJSON8 from "../../../mockData/Расписание_4.json";
-import raspisanieJSON9 from "../../../mockData/Расписание_3.json";
+import raspisanieJSON9 from "../../../mockData/Расписание_5.json";
 import locale from "antd/es/date-picker/locale/ru_RU";
 import "dayjs/locale/ru";
 import EducationContainer from "../../common/educationContainer/education-container";
@@ -14,8 +14,8 @@ import AutoScheduleTeachers from "./auto-schedule-teachers";
 import AutoScheduleGroupsWrapper from "./auto-schedule-groups-wrapper";
 import AutoScheduleTeacherClassWrapper from "./auto-schedule-teacher-class-wrapper";
 import AutoScheduleClass from "./auto-schedule-class";
-import lastWeek from "../../../assets/doc/schedule/3 неделя 2 семестр.docx";
-import newWeek from "../../../assets/doc/schedule/4 неделя 2 семестр.docx";
+import lastWeek from "../../../assets/doc/schedule/4 неделя 2 семестр.docx";
+import newWeek from "../../../assets/doc/schedule/5 неделя 2 семестр.docx";
 const AutoSchedule = () => {
   const raspisanie8 = JSON.parse(JSON.stringify(raspisanieJSON8));
   const groups8 = raspisanie8.faculties[0].groups;
@@ -146,17 +146,17 @@ const AutoSchedule = () => {
       return 5;
     } else if (day === "3-02-2024") {
       return 6;
-    } else if (day === "22-02-2024") {
+    } else if (day === "5-02-2024") {
       return 1;
-    } else if (day === "23-01-2024") {
+    } else if (day === "6-02-2024") {
       return 2;
-    } else if (day === "24-01-2024") {
+    } else if (day === "7-02-2024") {
       return 3;
-    } else if (day === "25-01-2024") {
+    } else if (day === "8-02-2024") {
       return 4;
-    } else if (day === "26-01-2024") {
+    } else if (day === "9-02-2024") {
       return 5;
-    } else if (day === "27-01-2024") {
+    } else if (day === "10-02-2024") {
       return 6;
     }
   }
@@ -174,19 +174,19 @@ const AutoSchedule = () => {
       setWeek(4);
     } else if (day === "3-02-2024") {
       setWeek(4);
-    } else if (day === "22-01-2024") {
-      setWeek(3);
-    } else if (day === "23-01-2024") {
-      setWeek(3);
-    } else if (day === "24-01-2024") {
-      setWeek(3);
-    } else if (day === "25-01-2024") {
-      setWeek(3);
-    } else if (day === "26-01-2024") {
-      setWeek(3);
-    } else if (day === "27-01-2024") {
+    } else if (day === "5-02-2024") {
+      setWeek(5);
+    } else if (day === "6-02-2024") {
+      setWeek(5);
+    } else if (day === "7-02-2024") {
+      setWeek(5);
+    } else if (day === "8-02-2024") {
+      setWeek(5);
+    } else if (day === "9-02-2024") {
+      setWeek(5);
+    } else if (day === "10-02-2024") {
       setDisabledIncreaseButton(day);
-      setWeek(3);
+      setWeek(5);
     }
   }, [day]);
 
@@ -204,7 +204,7 @@ const AutoSchedule = () => {
             (e) => e.weekday === selectedDayNumber
           )
         );
-      } else if (week === 3) {
+      } else if (week === 5) {
         setSelectedDayLessons(
           classesOfSelectedGroupOnWeek9[0]?.filter(
             (e) => e.weekday === selectedDayNumber
@@ -255,8 +255,8 @@ const AutoSchedule = () => {
   /* делаем активными дни в календаря */
 
   function disabledDate(current) {
-    const startDate = new Date(2024, 0, 22); // не забываем про месяцы -1
-    const endDate = new Date(2024, 1, 4); // дата окончания недели должна быть +1
+    const startDate = new Date(2024, 0, 29); // не забываем про месяцы -1
+    const endDate = new Date(2024, 1, 11); // дата окончания недели должна быть +1
     return (
       current.$d < startDate || // проверяем, что дата находится в заданном диапазоне
       current.$d > endDate ||
@@ -500,7 +500,7 @@ const AutoSchedule = () => {
                   target={"_blank"}
                   rel="noreferrer"
                 >
-                  3 неделя
+                  4 неделя
                 </a>
 
                 <a
@@ -509,7 +509,7 @@ const AutoSchedule = () => {
                   target={"_blank"}
                   rel="noreferrer"
                 >
-                  4 неделя
+                  5 неделя
                 </a>
               </div>
             </Col>

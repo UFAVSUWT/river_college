@@ -25,7 +25,25 @@ const Main = observer(() => {
           "_container-black",
           "_container-contrast"
         )}
-      ></div>
+      >
+        <h1 style={{ fontWeight: "bold", textAlign: "center" }}>
+          Вниманию абитуриентов!
+        </h1>
+        <p style={{ textIndent: "25px" }}>
+          Уфимский филиал ФГБОУ ВО «ВГУВТ» 15 февраля 2024 года в 14.30 часов
+          проводит День открытых дверей. Приглашаем всех желающих.
+        </p>
+        <p style={{ textIndent: "25px" }}>
+          Наш адрес: г.Уфа, Затон, ул. Ахметова, 275.
+        </p>
+        <p style={{ textIndent: "25px" }}>
+          Проезд автобусами №№30,30 К, 107, 108, 112, марш. такси 248, 391 до
+          ост. «Речное училище».
+        </p>
+        <p style={{ textIndent: "25px" }}>
+          Тел.: 8 (347) 215-14-00 доп. (301, 302).
+        </p>
+      </div>
       <div
         className={toggleClassName(
           "_container",

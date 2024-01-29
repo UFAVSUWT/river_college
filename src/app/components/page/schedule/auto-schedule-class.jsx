@@ -98,7 +98,7 @@ const AutoScheduleClass = ({
         setClassLessonsOnDay(
           lessonsOfSelectedClass8.filter((e) => e.date === day)
         );
-      } else if (week === 3) {
+      } else if (week === 5) {
         setClassLessonsOnDay(
           lessonsOfSelectedClass9.filter((e) => e.date === day)
         );
