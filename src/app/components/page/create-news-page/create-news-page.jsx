@@ -96,7 +96,7 @@ const EditorNewsPage = observer(() => {
     createNews(formData, onNavigate);
   };
   return (
-    <section className="editor-news-page_wrapper">
+    <section className="editor-news-page_wrapper margin-top-bg">
       <Form
         name="basic"
         initialValues={{

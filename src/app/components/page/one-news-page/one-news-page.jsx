@@ -134,35 +134,34 @@ const OneNewsPage = () => {
           />
         </div>
 
-        <div dangerouslySetInnerHTML={{ __html: oneNews.text }}></div>
-        <div className="one-news-page_container-admin">
-          <div>
-            {user.auth && user.user.role === "ADMIN" ? (
+        <div
+          className="text-content"
+          dangerouslySetInnerHTML={{ __html: oneNews.text }}
+        ></div>
+        {user.auth && user.user.role === "ADMIN" ? (
+          <div className="one-news-page_container-admin">
+            <div>
               <div className="one-news-page_container-admin-author">
                 Автор новости: {oneNews.author}
               </div>
-            ) : null}
-          </div>
-          <div className="one-news-page_container-admin-btns">
-            <div>
-              {user.auth && user.user.role === "ADMIN" ? (
+            </div>
+            <div className="one-news-page_container-admin-btns">
+              <div>
                 <Button
                   className={"edit"}
                   onClick={() => navigate(`../../../editNewsPage/${id}`)}
                 >
                   Редактировать новость
                 </Button>
-              ) : null}
-            </div>
-            <div>
-              {user.auth && user.user.role === "ADMIN" ? (
+              </div>
+              <div>
                 <Button onClick={() => onDelete()} className={"delite"}>
                   Удалить новость
                 </Button>
-              ) : null}
+              </div>
             </div>
           </div>
-        </div>
+        ) : null}
       </div>
       <Modal
         title="Удалить новость?"

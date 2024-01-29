@@ -8,6 +8,7 @@ import NewsCardContainer from "../../../ui/newsCardContainer/NewsCardContainer";
 
 import { NewsStore } from "../../../../store/news-store";
 import { toJS } from "mobx";
+import HrLine from "../../../common/hrLine/HrLine";
 const InfoPage = observer(() => {
   const { news, isLoadingNews } = NewsStore;
 
@@ -44,7 +45,7 @@ const InfoPage = observer(() => {
           <div dangerouslySetInnerHTML={{ __html: main.text }}></div>
         </InfoContainer>
       )}
-
+      <HrLine />
       {images.image !== "off" ? <NewsCardContainer /> : null}
     </div>
   );

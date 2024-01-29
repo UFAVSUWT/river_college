@@ -1,7 +1,7 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName } from "../../../utils/disabled";
-const EducationContainer = observer(({ title, children, classes }) => {
+const EducationContainer = observer(({ title, children, classes = "" }) => {
   return (
     <section
       className={toggleClassName(

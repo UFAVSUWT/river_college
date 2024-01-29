@@ -14,7 +14,7 @@ const Auth = observer(() => {
       return "Администратор";
     }
   };
-  console.log("load", user.authInfo);
+
   return (
     <section
       className={toggleClassName(
