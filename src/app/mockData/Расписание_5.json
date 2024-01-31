@@ -4567,39 +4567,39 @@
           "subject" : "Слесарная практика",
           "type" : "лек.",
           "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 5,
+          "date" : "5-02-2024",
+          "teachers" : [{
+            "teacher_name" : "Богатенков В.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "Слесарная мастерская"
+          }]
+        }, {
+          "subject" : "Слесарная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 5,
+          "date" : "5-02-2024",
+          "teachers" : [{
+            "teacher_name" : "Богатенков В.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "Слесарная мастерская"
+          }]
+        }, {
+          "subject" : "Слесарная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
           "time_start" : "14:30",
           "time_end" : "16:05",
           "time" : 4,
-          "week" : 5,
-          "date" : "5-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
-          "auditories" : [{
-            "auditory_name" : "Слесарная мастерская"
-          }]
-        }, {
-          "subject" : "Слесарная практика",
-          "type" : "лек.",
-          "subgroup" : 0,
-          "time_start" : "16:15",
-          "time_end" : "17:55",
-          "time" : 5,
-          "week" : 5,
-          "date" : "5-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
-          "auditories" : [{
-            "auditory_name" : "Слесарная мастерская"
-          }]
-        }, {
-          "subject" : "Слесарная практика",
-          "type" : "лек.",
-          "subgroup" : 0,
-          "time_start" : "18:00",
-          "time_end" : "19:35",
-          "time" : 6,
           "week" : 5,
           "date" : "5-02-2024",
           "teachers" : [{
@@ -4615,39 +4615,39 @@
           "subject" : "Слесарная практика",
           "type" : "лек.",
           "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 5,
+          "date" : "6-02-2024",
+          "teachers" : [{
+            "teacher_name" : "Богатенков В.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "Слесарная мастерская"
+          }]
+        }, {
+          "subject" : "Слесарная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 5,
+          "date" : "6-02-2024",
+          "teachers" : [{
+            "teacher_name" : "Богатенков В.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "Слесарная мастерская"
+          }]
+        }, {
+          "subject" : "Слесарная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
           "time_start" : "14:30",
           "time_end" : "16:05",
           "time" : 4,
-          "week" : 5,
-          "date" : "6-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
-          "auditories" : [{
-            "auditory_name" : "Слесарная мастерская"
-          }]
-        }, {
-          "subject" : "Слесарная практика",
-          "type" : "лек.",
-          "subgroup" : 0,
-          "time_start" : "16:15",
-          "time_end" : "17:55",
-          "time" : 5,
-          "week" : 5,
-          "date" : "6-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
-          "auditories" : [{
-            "auditory_name" : "Слесарная мастерская"
-          }]
-        }, {
-          "subject" : "Слесарная практика",
-          "type" : "лек.",
-          "subgroup" : 0,
-          "time_start" : "18:00",
-          "time_end" : "19:35",
-          "time" : 6,
           "week" : 5,
           "date" : "6-02-2024",
           "teachers" : [{
@@ -4663,39 +4663,39 @@
           "subject" : "Слесарная практика",
           "type" : "лек.",
           "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 5,
+          "date" : "7-02-2024",
+          "teachers" : [{
+            "teacher_name" : "Богатенков В.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "Слесарная мастерская"
+          }]
+        }, {
+          "subject" : "Слесарная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 5,
+          "date" : "7-02-2024",
+          "teachers" : [{
+            "teacher_name" : "Богатенков В.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "Слесарная мастерская"
+          }]
+        }, {
+          "subject" : "Слесарная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
           "time_start" : "14:30",
           "time_end" : "16:05",
           "time" : 4,
-          "week" : 5,
-          "date" : "7-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
-          "auditories" : [{
-            "auditory_name" : "Слесарная мастерская"
-          }]
-        }, {
-          "subject" : "Слесарная практика",
-          "type" : "лек.",
-          "subgroup" : 0,
-          "time_start" : "16:15",
-          "time_end" : "17:55",
-          "time" : 5,
-          "week" : 5,
-          "date" : "7-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
-          "auditories" : [{
-            "auditory_name" : "Слесарная мастерская"
-          }]
-        }, {
-          "subject" : "Слесарная практика",
-          "type" : "лек.",
-          "subgroup" : 0,
-          "time_start" : "18:00",
-          "time_end" : "19:35",
-          "time" : 6,
           "week" : 5,
           "date" : "7-02-2024",
           "teachers" : [{
@@ -4708,6 +4708,36 @@
       }, {
         "weekday" : 4,
         "lessons" : [{
+          "subject" : "Слесарная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 5,
+          "date" : "8-02-2024",
+          "teachers" : [{
+            "teacher_name" : "Богатенков В.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "Слесарная мастерская"
+          }]
+        }, {
+          "subject" : "Слесарная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 5,
+          "date" : "8-02-2024",
+          "teachers" : [{
+            "teacher_name" : "Богатенков В.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "Слесарная мастерская"
+          }]
+        }, {
           "subject" : "Россия- мои горизонты",
           "type" : "",
           "subgroup" : 0,
@@ -4735,21 +4765,6 @@
           "auditories" : [{
             "auditory_name" : "Слесарная мастерская"
           }]
-        }, {
-          "subject" : "Слесарная практика",
-          "type" : "лек.",
-          "subgroup" : 0,
-          "time_start" : "18:00",
-          "time_end" : "19:35",
-          "time" : 6,
-          "week" : 5,
-          "date" : "8-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
-          "auditories" : [{
-            "auditory_name" : "Слесарная мастерская"
-          }]
         }]
       }, {
         "weekday" : 5,
@@ -4757,39 +4772,39 @@
           "subject" : "Слесарная практика",
           "type" : "лек.",
           "subgroup" : 0,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
+          "week" : 5,
+          "date" : "9-02-2024",
+          "teachers" : [{
+            "teacher_name" : "Богатенков В.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "Слесарная мастерская"
+          }]
+        }, {
+          "subject" : "Слесарная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
+          "week" : 5,
+          "date" : "9-02-2024",
+          "teachers" : [{
+            "teacher_name" : "Богатенков В.П."
+          }],
+          "auditories" : [{
+            "auditory_name" : "Слесарная мастерская"
+          }]
+        }, {
+          "subject" : "Слесарная практика",
+          "type" : "лек.",
+          "subgroup" : 0,
           "time_start" : "14:30",
           "time_end" : "16:05",
           "time" : 4,
-          "week" : 5,
-          "date" : "9-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
-          "auditories" : [{
-            "auditory_name" : "Слесарная мастерская"
-          }]
-        }, {
-          "subject" : "Слесарная практика",
-          "type" : "лек.",
-          "subgroup" : 0,
-          "time_start" : "16:15",
-          "time_end" : "17:55",
-          "time" : 5,
-          "week" : 5,
-          "date" : "9-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
-          "auditories" : [{
-            "auditory_name" : "Слесарная мастерская"
-          }]
-        }, {
-          "subject" : "Слесарная практика",
-          "type" : "лек.",
-          "subgroup" : 0,
-          "time_start" : "18:00",
-          "time_end" : "19:35",
-          "time" : 6,
           "week" : 5,
           "date" : "9-02-2024",
           "teachers" : [{
@@ -4805,9 +4820,9 @@
           "subject" : "Слесарная практика",
           "type" : "лек.",
           "subgroup" : 0,
-          "time_start" : "14:30",
-          "time_end" : "16:05",
-          "time" : 4,
+          "time_start" : "08:30",
+          "time_end" : "10:05",
+          "time" : 1,
           "week" : 5,
           "date" : "10-02-2024",
           "teachers" : [{
@@ -4820,9 +4835,9 @@
           "subject" : "Слесарная практика",
           "type" : "лек.",
           "subgroup" : 0,
-          "time_start" : "16:15",
-          "time_end" : "17:55",
-          "time" : 5,
+          "time_start" : "10:15",
+          "time_end" : "11:50",
+          "time" : 2,
           "week" : 5,
           "date" : "10-02-2024",
           "teachers" : [{
@@ -4835,9 +4850,9 @@
           "subject" : "Слесарная практика",
           "type" : "лек.",
           "subgroup" : 0,
-          "time_start" : "18:00",
-          "time_end" : "19:35",
-          "time" : 6,
+          "time_start" : "12:50",
+          "time_end" : "14:25",
+          "time" : 3,
           "week" : 5,
           "date" : "10-02-2024",
           "teachers" : [{
@@ -6769,9 +6784,7 @@
           "time" : 1,
           "week" : 5,
           "date" : "5-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -6784,9 +6797,7 @@
           "time" : 2,
           "week" : 5,
           "date" : "5-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -6799,9 +6810,7 @@
           "time" : 3,
           "week" : 5,
           "date" : "5-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -6817,9 +6826,7 @@
           "time" : 1,
           "week" : 5,
           "date" : "6-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -6832,9 +6839,7 @@
           "time" : 2,
           "week" : 5,
           "date" : "6-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -6847,9 +6852,7 @@
           "time" : 3,
           "week" : 5,
           "date" : "6-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -6878,9 +6881,7 @@
           "time" : 1,
           "week" : 5,
           "date" : "7-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -6893,9 +6894,7 @@
           "time" : 2,
           "week" : 5,
           "date" : "7-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -6908,9 +6907,7 @@
           "time" : 3,
           "week" : 5,
           "date" : "7-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -6926,9 +6923,7 @@
           "time" : 1,
           "week" : 5,
           "date" : "8-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -6941,9 +6936,7 @@
           "time" : 2,
           "week" : 5,
           "date" : "8-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -6956,9 +6949,7 @@
           "time" : 3,
           "week" : 5,
           "date" : "8-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -7294,9 +7285,7 @@
           "time" : 1,
           "week" : 5,
           "date" : "9-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -7309,9 +7298,7 @@
           "time" : 2,
           "week" : 5,
           "date" : "9-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -7324,9 +7311,7 @@
           "time" : 3,
           "week" : 5,
           "date" : "9-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -7342,9 +7327,7 @@
           "time" : 1,
           "week" : 5,
           "date" : "10-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -7357,9 +7340,7 @@
           "time" : 2,
           "week" : 5,
           "date" : "10-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -7372,9 +7353,7 @@
           "time" : 3,
           "week" : 5,
           "date" : "10-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Богатенков В.П."
-          }],
+          "teachers" : [],
           "auditories" : [{
             "auditory_name" : "БРВПС"
           }]
@@ -7767,19 +7746,6 @@
           }],
           "auditories" : [{
             "auditory_name" : "46"
-          }]
-        }, {
-          "subject" : "Классный час",
-          "type" : "факультатив",
-          "subgroup" : 0,
-          "time_start" : "14:30",
-          "time_end" : "16:05",
-          "time" : 4,
-          "week" : 5,
-          "date" : "6-02-2024",
-          "teachers" : [],
-          "auditories" : [{
-            "auditory_name" : "36"
           }]
         }]
       }, {
@@ -8214,19 +8180,6 @@
           "auditories" : [{
             "auditory_name" : "47"
           }]
-        }, {
-          "subject" : "Классный час",
-          "type" : "факультатив",
-          "subgroup" : 0,
-          "time_start" : "14:30",
-          "time_end" : "16:05",
-          "time" : 4,
-          "week" : 5,
-          "date" : "8-02-2024",
-          "teachers" : [],
-          "auditories" : [{
-            "auditory_name" : "32"
-          }]
         }]
       }, {
         "weekday" : 5,
@@ -8407,19 +8360,6 @@
           }],
           "auditories" : [{
             "auditory_name" : "29"
-          }]
-        }, {
-          "subject" : "Классный час",
-          "type" : "факультатив",
-          "subgroup" : 0,
-          "time_start" : "12:50",
-          "time_end" : "14:25",
-          "time" : 3,
-          "week" : 5,
-          "date" : "6-02-2024",
-          "teachers" : [],
-          "auditories" : [{
-            "auditory_name" : "42"
           }]
         }, {
           "subject" : "МДК.04.01 Осн.эф.раб.суд.с прим.ИТ",
@@ -8727,19 +8667,6 @@
           }],
           "auditories" : [{
             "auditory_name" : "33"
-          }]
-        }, {
-          "subject" : "Классный час",
-          "type" : "факультатив",
-          "subgroup" : 0,
-          "time_start" : "14:30",
-          "time_end" : "16:05",
-          "time" : 4,
-          "week" : 5,
-          "date" : "6-02-2024",
-          "teachers" : [],
-          "auditories" : [{
-            "auditory_name" : "плац"
           }]
         }]
       }, {
@@ -9077,19 +9004,6 @@
           }],
           "auditories" : [{
             "auditory_name" : "20"
-          }]
-        }, {
-          "subject" : "Классный час",
-          "type" : "факультатив",
-          "subgroup" : 0,
-          "time_start" : "16:15",
-          "time_end" : "17:55",
-          "time" : 5,
-          "week" : 5,
-          "date" : "6-02-2024",
-          "teachers" : [],
-          "auditories" : [{
-            "auditory_name" : "108"
           }]
         }]
       }, {
@@ -9720,19 +9634,6 @@
           "auditories" : [{
             "auditory_name" : "5"
           }]
-        }, {
-          "subject" : "Классный час",
-          "type" : "факультатив",
-          "subgroup" : 0,
-          "time_start" : "14:30",
-          "time_end" : "16:05",
-          "time" : 4,
-          "week" : 5,
-          "date" : "6-02-2024",
-          "teachers" : [],
-          "auditories" : [{
-            "auditory_name" : "29"
-          }]
         }]
       }, {
         "weekday" : 3,
@@ -10069,19 +9970,6 @@
           }],
           "auditories" : [{
             "auditory_name" : "37"
-          }]
-        }, {
-          "subject" : "Классный час",
-          "type" : "факультатив",
-          "subgroup" : 0,
-          "time_start" : "16:15",
-          "time_end" : "17:55",
-          "time" : 5,
-          "week" : 5,
-          "date" : "6-02-2024",
-          "teachers" : [],
-          "auditories" : [{
-            "auditory_name" : "38"
           }]
         }]
       }, {

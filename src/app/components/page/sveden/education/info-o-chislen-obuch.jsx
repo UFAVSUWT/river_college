@@ -11,7 +11,7 @@ const InfoOChislenObuch = () => {
         программам за счет бюджетных ассигнований федерального бюджета, бюджетов
         субъектов Российской Федерации, местных бюджетов и по договорам об
         образовании за счет средств физических и (или) юридических лиц на
-        01.01.2024:"
+        01.02.2024:"
       >
         <table>
           <tbody>
@@ -125,7 +125,7 @@ const InfoOChislenObuch = () => {
                 среднее профессиональное образование
               </td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBF">91</td>
+              <td itemProp="numberBF">90</td>
               <td itemProp="numberBFF">-</td>
               <td itemProp="numberBR">-</td>
               <td itemProp="numberBRF">-</td>
@@ -133,7 +133,7 @@ const InfoOChislenObuch = () => {
               <td itemProp="numberBMF">-</td>
               <td itemProp="numberP">5</td>
               <td itemProp="numberPF">-</td>
-              <td itemProp="numberAll">96</td>
+              <td itemProp="numberAll">95</td>
             </tr>
             <tr itemProp="eduChislen">
               <td itemProp="eduForm">очно-заочная</td>
@@ -164,13 +164,13 @@ const InfoOChislenObuch = () => {
               <td rowSpan="3">Судовождение</td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBF">290</td>
+              <td itemProp="numberBF">291</td>
               <td itemProp="numberBFF">-</td>
               <td itemProp="numberBR">-</td>
               <td itemProp="numberBRF">-</td>
               <td itemProp="numberBM">-</td>
               <td itemProp="numberBMF">-</td>
-              <td itemProp="numberP">9</td>
+              <td itemProp="numberP">8</td>
               <td itemProp="numberPF">-</td>
               <td itemProp="numberAll">299</td>
             </tr>
@@ -194,9 +194,9 @@ const InfoOChislenObuch = () => {
               <td itemProp="numberBRF">-</td>
               <td itemProp="numberBM">-</td>
               <td itemProp="numberBMF">-</td>
-              <td itemProp="numberP">73</td>
+              <td itemProp="numberP">70</td>
               <td itemProp="numberPF">-</td>
-              <td itemProp="numberAll">78</td>
+              <td itemProp="numberAll">75</td>
             </tr>
             <tr itemProp="eduChislen">
               <td itemProp="eduCode" rowSpan="3">
@@ -250,15 +250,15 @@ const InfoOChislenObuch = () => {
               </td>
               <td rowSpan="3">среднее профессиональное образование</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBF">197</td>
+              <td itemProp="numberBF">198</td>
               <td itemProp="numberBFF">-</td>
               <td itemProp="numberBR">-</td>
               <td itemProp="numberBRF">-</td>
               <td itemProp="numberBM">-</td>
               <td itemProp="numberBMF">-</td>
               <td itemProp="numberP">-</td>
-              <td itemProp="numberPF">-</td>
-              <td itemProp="numberAll">197</td>
+              <td itemProp="numberPF">1</td>
+              <td itemProp="numberAll">199</td>
             </tr>
             <tr itemProp="eduChislen">
               <td itemProp="eduForm">очно-заочная</td>
@@ -300,7 +300,7 @@ const InfoOChislenObuch = () => {
             программам за счет бюджетных ассигнований федерального бюджета,
             бюджетов субъектов Российской Федерации, местных бюджетов и по
             договорам об образовании за счет средств физических и (или)
-            юридических лиц на 01.01.2024
+            юридических лиц на 01.02.2024
           </a>
         </li>
       </ul>

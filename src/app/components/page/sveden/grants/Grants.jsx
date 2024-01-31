@@ -3,9 +3,9 @@ import React from "react";
 import { toggleClassName } from "../../../../utils/disabled";
 import TableWrapper from "../../../common/tableWrapper/TableWrapper";
 import protocol from "../../../../assets/pdf/grants/protocol.pdf";
-import poloj_stepend_obesp from "../../../../assets/pdf/grants/poloj_stepend_obesp.pdf";
+import poloj_stepend_obesp from "../../../../assets/pdf/grants/Положение о стипендиальном обеспечении.pdf";
 import postanovlenie_1390_17122016 from "../../../../assets/pdf/grants/postanovlenie_1390_17.12.2016.pdf";
-import prikaz_527_230922_o_naznach_komis from "../../../../assets/pdf/grants/prikaz_№527_230922_o_naznach_komis.pdf";
+import prikaz_527_230922_o_naznach_komis from "../../../../assets/pdf/grants/приказ № 18 от 29.01.2024 ПЛЖ о стипендии.pdf";
 
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
 const Grants = observer(() => {
@@ -69,8 +69,7 @@ const Grants = observer(() => {
             target={"_blank"}
             rel="noreferrer"
           >
-            Приказ "О назначении стипендиальной комиссии" № 527-УФСПО-06 от
-            23.09.2022 г
+            Приказ "О назначении стипендиальной комиссии" № 18 от 29.01.2024 г.
           </a>
         </li>
         <li className="doc__item">

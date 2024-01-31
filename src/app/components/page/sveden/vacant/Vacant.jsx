@@ -31,7 +31,7 @@ const Vacant = observer(() => {
         )}`}
       >
         Информация о количестве вакантных мест для приема (перевода) на
-        01.01.2024г.
+        01.02.2024г.
       </h3>
       <TableWrapper>
         <table>
@@ -110,7 +110,7 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">1</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">1</td>
+              <td itemProp="numberBFVacant">3</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">2</td>
@@ -123,7 +123,7 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">2</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">5</td>
+              <td itemProp="numberBFVacant">4</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">3</td>
@@ -184,10 +184,10 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">2</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">2</td>
+              <td itemProp="numberBFVacant">1</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">3</td>
+              <td itemProp="numberPVacant">4</td>
             </tr>
             <tr itemProp="vacant">
               <td itemProp="eduCode">26.02.03</td>
@@ -250,7 +250,7 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">5</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">8</td>
+              <td itemProp="numberBFVacant">9</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">8</td>
@@ -294,12 +294,25 @@ const Vacant = observer(() => {
                 Эксплуатация судовых энергетических установок
               </td>
               <td itemProp="eduLevel">Основное общее</td>
-              <td itemProp="eduCourse">2</td>
+              <td itemProp="eduCourse">1</td>
               <td itemProp="eduForm">очная</td>
               <td itemProp="numberBFVacant">1</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
               <td itemProp="numberPVacant">4</td>
+            </tr>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.02.05</td>
+              <td itemProp="eduName">
+                Эксплуатация судовых энергетических установок
+              </td>
+              <td itemProp="eduLevel">Основное общее</td>
+              <td itemProp="eduCourse">2</td>
+              <td itemProp="eduForm">очная</td>
+              <td itemProp="numberBFVacant">0</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">5</td>
             </tr>
             <tr itemProp="vacant">
               <td itemProp="eduCode">26.02.05</td>
@@ -348,10 +361,10 @@ const Vacant = observer(() => {
               <td itemProp="eduLevel">Основное общее</td>
               <td itemProp="eduCourse">1</td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberBFVacant">2</td>
+              <td itemProp="numberBFVacant">1</td>
               <td itemProp="numberBRVacant">-</td>
               <td itemProp="numberBMVacant">-</td>
-              <td itemProp="numberPVacant">5</td>
+              <td itemProp="numberPVacant">4</td>
             </tr>
             <tr itemProp="vacant">
               <td itemProp="eduCode">26.02.06</td>
