@@ -12,6 +12,8 @@ const EditorNewsPage = observer(() => {
   const editorRef = useRef(null);
   const [text, setText] = useState("");
   const [main, setMain] = useState(false);
+  const [mainDisabled, setMainDisabled] = useState(false);
+
   const [file, setFile] = useState(null);
   const [data, setData] = useState({
     file: file,
@@ -23,7 +25,18 @@ const EditorNewsPage = observer(() => {
     date: "01.02.23",
     text: text,
   });
-
+  useEffect(() => {
+    if (data.card !== "") {
+      setMain(false);
+      setMainDisabled(true);
+    }
+    if (data.card === "") {
+      setMainDisabled(false);
+    }
+    if (main === true) {
+      setData((prevState) => ({ ...prevState, card: "" }));
+    }
+  }, [data.card, main]);
   useEffect(() => {
     setData((p) => ({ ...p, main, file, text }));
   }, [main, file, text]);
@@ -70,33 +83,12 @@ const EditorNewsPage = observer(() => {
     formData.append("page", `${data.page}`);
     formData.append("main", `${data.main}`);
     formData.append("date", `${data.date}`);
-    /* const mainNews = news.findIndex((n) => n.main && n.main === data.main);
-    const cardNews = news.findIndex(
-      (n) => n.card >= 1 && n.card <= 6 && data.card === n.card
-    );
-    console.log("mainNews", mainNews);
-    console.log("cardNews", cardNews);
-    if (mainNews !== -1) {
-      const questions = window.confirm(
-        "В карточке главная ность уже существует новость, заменить ее на главной странице?"
-      );
-      if (questions) {
-        console.log("Заменяем новость");
-      }
-    } else if (cardNews !== -1) {
-      const questions = window.confirm(
-        `В карточке № ${cardNews} уже существует новость, заменить ее на главной странице?`
-      );
-      if (questions) {
-        console.log("Заменяем новость");
-      }
-    } else {
-      console.log("все ок, создаем новость!");
-    } */
-    createNews(formData, onNavigate);
+    console.log(data);
+    /*   createNews(formData, onNavigate); */
   };
+
   return (
-    <section className="editor-news-page_wrapper margin-top-bg">
+    <section className="editor-news-page_wrapper margin-top-bg ">
       <Form
         name="basic"
         initialValues={{
@@ -122,11 +114,16 @@ const EditorNewsPage = observer(() => {
         </Form.Item>
         {/* Главная новость! */}
         <Form.Item label="Главная новость" valuePropName="checked">
-          <Switch name="main" onChange={handleSwitchChange} />
+          <Switch
+            disabled={mainDisabled}
+            name="main"
+            onChange={handleSwitchChange}
+          />
         </Form.Item>
         {/* Выбор карточки */}
         <Form.Item label="Выберите карточку">
           <Select
+            disabled={main}
             name="card"
             style={{ width: 300 }}
             onChange={handleCardChange}
@@ -177,6 +174,7 @@ const EditorNewsPage = observer(() => {
           onInit={(evt, editor) => (editorRef.current = editor)}
           init={{
             height: 500,
+            width: "100%",
             menubar: false,
             plugins: [
               "advlist",

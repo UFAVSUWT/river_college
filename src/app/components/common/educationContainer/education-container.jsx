@@ -6,9 +6,9 @@ const EducationContainer = observer(({ title, children, classes = "" }) => {
     <section
       className={toggleClassName(
         `_container education__container ${classes}`,
-        "_container education__container-white",
-        "_container education__container-black",
-        "_container education__container-contrast"
+        `_container education__container-white ${classes}`,
+        `_container education__container-black ${classes}`,
+        `_container education__container-contrast ${classes}`
       )}
     >
       <h1 className="education__container-title">{title}</h1>
