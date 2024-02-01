@@ -85,8 +85,8 @@ const DesktopLogIn = observer(({ isActive, setIsActive, user }) => {
                   placeholder={"Введите ваш пароль"}
                 />
               </div>
-              <span>{user.error}</span>
-              <span>{user.isLoading && "Загрузка"}</span>
+              <div className="message error">{user.error}</div>
+              <div className="message ">{user.isLoading && "Загрузка"}</div>
               <Button
                 className="login_form-btnLogin"
                 text="Войти"

@@ -1,3 +1,5 @@
+@import "../../../../style/variables";
+
 .deskTop_modal {
   position: fixed;
   top: 0;
@@ -112,4 +114,13 @@
 }
 .mobileLoggin-isActive {
   left: 0;
+}
+.leftPanel__wrapper-moove-login-form {
+  .message {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  .message.error {
+    color: $RED_COLOR;
+  }
 }

@@ -7,7 +7,7 @@ import { observer } from "mobx-react-lite";
 import { NewsStore } from "../../../store/news-store";
 const EditorNewsPage = observer(() => {
   const navigate = useNavigate();
-
+  const [form] = Form.useForm();
   const { createNews, isCreateNewsLoading, errorOfCreateingNews } = NewsStore;
   const editorRef = useRef(null);
   const [text, setText] = useState("");
@@ -19,9 +19,9 @@ const EditorNewsPage = observer(() => {
     file: file,
     page: "STUDENT_LIFE",
     main: main,
-    title: "",
+    /*   title: "", */
     card: "",
-    author: "",
+    /*    author: "", */
     date: "01.02.23",
     text: text,
   });
@@ -54,7 +54,7 @@ const EditorNewsPage = observer(() => {
     setData((p) => ({ ...p, [e.target.name]: e.target.value }));
   }
   function handleSubmit(e) {
-    e.preventDefault();
+    /*   e.preventDefault(); */
     /* console.log({ ...data, text }); */
     addNews();
   }
@@ -75,27 +75,34 @@ const EditorNewsPage = observer(() => {
   };
   const addNews = () => {
     const formData = new FormData();
-    formData.append("title", `${data.title}`);
+    formData.append("title", `${form.getFieldValue("title")}`);
     formData.append("text", `${data.text}`);
     formData.append("image", data.file);
-    formData.append("author", `${data.author}`);
+    formData.append("author", `${form.getFieldValue("author")}`);
     formData.append("card", `${data.card}`);
     formData.append("page", `${data.page}`);
     formData.append("main", `${data.main}`);
     formData.append("date", `${data.date}`);
-    console.log(data);
-    /*   createNews(formData, onNavigate); */
+    form
+      .validateFields()
+      .then(() => {
+        createNews(formData, onNavigate);
+      })
+      .catch((e) => {
+        console.log("err", e);
+      });
   };
 
   return (
     <section className="editor-news-page_wrapper margin-top-bg ">
       <Form
+        form={form}
         name="basic"
         initialValues={{
           page: data.page,
         }}
         onChange={handleChange}
-        onSubmitCapture={handleSubmit}
+        onFinish={handleSubmit}
         onFinishFailed={onFinishFailed}
         autoComplete="off"
       >
@@ -113,18 +120,13 @@ const EditorNewsPage = observer(() => {
           />
         </Form.Item>
         {/* Главная новость! */}
-        <Form.Item label="Главная новость" valuePropName="checked">
-          <Switch
-            disabled={mainDisabled}
-            name="main"
-            onChange={handleSwitchChange}
-          />
+        <Form.Item name="main" label="Главная новость" valuePropName="checked">
+          <Switch disabled={mainDisabled} onChange={handleSwitchChange} />
         </Form.Item>
         {/* Выбор карточки */}
-        <Form.Item label="Выберите карточку">
+        <Form.Item name="card" label="Выберите карточку">
           <Select
             disabled={main}
-            name="card"
             style={{ width: 300 }}
             onChange={handleCardChange}
             options={[
@@ -140,6 +142,7 @@ const EditorNewsPage = observer(() => {
         </Form.Item>
         {/* Заголовок */}
         <Form.Item
+          name="title"
           label="Название новости"
           rules={[
             {
@@ -148,10 +151,11 @@ const EditorNewsPage = observer(() => {
             },
           ]}
         >
-          <Input name="title" />
+          <Input />
         </Form.Item>
         {/* Автор */}
         <Form.Item
+          name="author"
           label="Автор новости"
           rules={[
             {
@@ -160,10 +164,19 @@ const EditorNewsPage = observer(() => {
             },
           ]}
         >
-          <Input name="author" />
+          <Input />
         </Form.Item>
-        <Form.Item onChange={(e) => setFile(e.target.files[0])}>
-          <Upload name="file" maxCount={1}>
+        <Form.Item
+          name="file"
+          rules={[
+            {
+              required: true,
+              message: "Прикрепите изображение!",
+            },
+          ]}
+          onChange={(e) => setFile(e.target.files[0])}
+        >
+          <Upload maxCount={1}>
             <Button icon={<UploadOutlined />}>Добавить изображение</Button>
           </Upload>
         </Form.Item>

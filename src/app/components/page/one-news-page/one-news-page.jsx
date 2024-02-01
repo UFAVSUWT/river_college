@@ -15,6 +15,10 @@ const OneNewsPage = () => {
   const { user } = useContext(Context);
   const { news } = NewsStore;
   const { id } = useParams();
+
+  /*   if (typeof Number(id) !== "number") {
+    navigate("/");
+  } */
   // Открываем модалку для подтвержения
   const [isModalOpen, setIsModalOpen] = useState(false);
   /*   const [deletedNews, setDeletedNews] = useState(false); */
@@ -37,6 +41,7 @@ const OneNewsPage = () => {
       })
       .catch(() => {
         setError("Не удалось загрузить новость");
+        navigate("/");
         setOneNews({});
       })
       .finally(setLoading(false));
@@ -107,12 +112,12 @@ const OneNewsPage = () => {
 
   if (loading) return "Загрузка...";
   if (error || undefined || null) return error;
-  /*   if (
+  if (
     oneNews === undefined ||
     oneNews === null ||
     Object.keys(oneNews).length === 0
   )
-    return "Эта новость удалена или еще не создана..."; */
+    return "Эта новость удалена или еще не создана...";
   console.log(oneNews);
   return (
     <>
@@ -125,10 +130,10 @@ const OneNewsPage = () => {
           ""
         )}`}
       >
-        <h1>{oneNews.title}</h1>
+        <h1>{oneNews?.title}</h1>
         <div className="image-news">
           <Image
-            src={process.env.REACT_APP_API_URL + oneNews.image}
+            src={process.env.REACT_APP_API_URL + oneNews?.image}
             alt="Фото уплыло:("
             width={"100%"}
           />
@@ -136,13 +141,13 @@ const OneNewsPage = () => {
 
         <div
           className="text-content"
-          dangerouslySetInnerHTML={{ __html: oneNews.text }}
+          dangerouslySetInnerHTML={{ __html: oneNews?.text }}
         ></div>
         {user.auth && user.user.role === "ADMIN" ? (
           <div className="one-news-page_container-admin">
             <div>
               <div className="one-news-page_container-admin-author">
-                Автор новости: {oneNews.author}
+                Автор новости: {oneNews?.author}
               </div>
             </div>
             <div className="one-news-page_container-admin-btns">
