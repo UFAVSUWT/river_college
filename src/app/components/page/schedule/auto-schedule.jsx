@@ -459,160 +459,155 @@ const AutoSchedule = () => {
   }
 
   return (
-    <EducationContainer classes={"back_white"}>
-      <ConfigProvider
-        renderEmpty={() => "Выберите курс!"}
-        theme={{
-          components: {
-            Select: {
-              fontSize: 18,
-              colorTextPlaceholder: "#123655",
-              colorBorder: "#123655",
-            },
-            Button: {
-              fontSize: 16,
-              colorText: "#123655",
-              colorBorder: "#123655",
-            },
-            DatePicker: {
-              fontSize: 16,
-              colorTextPlaceholder: "#123655",
-              colorBorder: "#123655",
-            },
+    <ConfigProvider
+      renderEmpty={() => "Выберите курс!"}
+      theme={{
+        components: {
+          Select: {
+            fontSize: 18,
+            colorTextPlaceholder: "#123655",
+            colorBorder: "#123655",
           },
-        }}
-      >
-        <div className="auto-schedule__container">
-          <Row type="flex" justify="space-between">
-            <Col span={24}>
-              <h2 style={{ margin: 5, padding: 0 }}>
-                Вы можете скачать расписание на неделю:
-              </h2>
-              <div
-                style={{ padding: "0px 25px" }}
-                className="auto-schedule__container-buttons-selectDay"
-              >
-                <a
-                  style={{
-                    textDecoration: "none",
-                  }}
-                  href={lastWeek}
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  4 неделя
-                </a>
-
-                <a
-                  style={{ textDecoration: "none" }}
-                  href={newWeek}
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  5 неделя
-                </a>
-              </div>
-            </Col>
-          </Row>
-          <AutoScheduleNav nav={nav} setNav={setNav} />
-
-          {nav === "groups" ? (
-            <AutoScheduleGroups
-              localCourse={localCourse}
-              handleChangeCourse={handleChangeCourse}
-              allGroupName={allGroupName}
-              handleChangeGroup={handleChangeGroup}
-              localGroup={localGroup}
-            />
-          ) : nav === "teacher" ? (
-            <AutoScheduleTeachers
-              groups8={groups8}
-              groups9={groups9}
-              week={week}
-              day={day}
-              /*   teachersLessonsOnDay={teachersLessonsOnDay} */
-              setTeachersLessonsOnDay={setTeachersLessonsOnDay}
-              selectedTeacher={selectedTeacher}
-              setSelectedTeacher={setSelectedTeacher}
-            />
-          ) : (
-            <AutoScheduleClass
-              groups8={groups8}
-              groups9={groups9}
-              week={week}
-              day={day}
-              /*    classLessonsOnDay={classLessonsOnDay} */
-              setClassLessonsOnDay={setClassLessonsOnDay}
-              selectedClass={selectedClass}
-              setSelectedClass={setSelectedClass}
-            />
-          )}
-          <div className="auto-schedule__container-date-container">
-            <Button className="button" onClick={() => setDay(getDayToday())}>
-              На сегодня
-            </Button>
-            <Button
-              className="button"
-              onClick={() => setDay(getDayToday(true))}
+          Button: {
+            fontSize: 16,
+            colorText: "#123655",
+            colorBorder: "#123655",
+          },
+          DatePicker: {
+            fontSize: 16,
+            colorTextPlaceholder: "#123655",
+            colorBorder: "#123655",
+          },
+        },
+      }}
+    >
+      <div className="auto-schedule__container">
+        <Row type="flex" justify="space-between">
+          <Col span={24}>
+            <h2 style={{ margin: 5, padding: 0 }}>
+              Вы можете скачать расписание на неделю:
+            </h2>
+            <div
+              style={{ padding: "0px 25px" }}
+              className="auto-schedule__container-buttons-selectDay"
             >
-              На завтра
-            </Button>
-            <DatePicker
-              className="button"
-              locale={locale}
-              format="D-MM-YYYY"
-              placeholder="Выберите дату"
-              disabledDate={disabledDate}
-              onChange={onChange}
-            />
-          </div>
-          {nav === "groups" ? (
-            <AutoScheduleGroupsWrapper
-              selectedDaylessons={selectedDaylessons}
-              day={day}
-              week={week}
-              getBookmark={getBookmark}
-            />
-          ) : nav === "teacher" ? (
-            <AutoScheduleTeacherClassWrapper
-              data={teachersLessonsOnDay}
-              getBookmark={getBookmarkTeacher}
-              day={day}
-              week={week}
-              teachersComponent={true}
-            />
-          ) : (
-            <AutoScheduleTeacherClassWrapper
-              data={classLessonsOnDay}
-              getBookmark={getBookmarkClass}
-              day={day}
-              week={week}
-            />
-          )}
+              <a
+                style={{
+                  textDecoration: "none",
+                }}
+                href={lastWeek}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                4 неделя
+              </a>
 
-          <Row type="flex" justify="space-between">
-            <Col span={24}>
-              <div className="auto-schedule__container-buttons-selectDay">
-                <Button
-                  disabled={disabledDecreaseButton}
-                  onClick={() => decreaseDay()}
-                  style={{ width: "40%" }}
-                >
-                  Назад
-                </Button>
-                <Button
-                  disabled={disabledIncreaseButton}
-                  onClick={() => increaseDay()}
-                  style={{ width: "40%" }}
-                >
-                  Вперед
-                </Button>
-              </div>
-            </Col>
-          </Row>
+              <a
+                style={{ textDecoration: "none" }}
+                href={newWeek}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                5 неделя
+              </a>
+            </div>
+          </Col>
+        </Row>
+        <AutoScheduleNav nav={nav} setNav={setNav} />
+
+        {nav === "groups" ? (
+          <AutoScheduleGroups
+            localCourse={localCourse}
+            handleChangeCourse={handleChangeCourse}
+            allGroupName={allGroupName}
+            handleChangeGroup={handleChangeGroup}
+            localGroup={localGroup}
+          />
+        ) : nav === "teacher" ? (
+          <AutoScheduleTeachers
+            groups8={groups8}
+            groups9={groups9}
+            week={week}
+            day={day}
+            /*   teachersLessonsOnDay={teachersLessonsOnDay} */
+            setTeachersLessonsOnDay={setTeachersLessonsOnDay}
+            selectedTeacher={selectedTeacher}
+            setSelectedTeacher={setSelectedTeacher}
+          />
+        ) : (
+          <AutoScheduleClass
+            groups8={groups8}
+            groups9={groups9}
+            week={week}
+            day={day}
+            /*    classLessonsOnDay={classLessonsOnDay} */
+            setClassLessonsOnDay={setClassLessonsOnDay}
+            selectedClass={selectedClass}
+            setSelectedClass={setSelectedClass}
+          />
+        )}
+        <div className="auto-schedule__container-date-container">
+          <Button className="button" onClick={() => setDay(getDayToday())}>
+            На сегодня
+          </Button>
+          <Button className="button" onClick={() => setDay(getDayToday(true))}>
+            На завтра
+          </Button>
+          <DatePicker
+            className="button"
+            locale={locale}
+            format="D-MM-YYYY"
+            placeholder="Выберите дату"
+            disabledDate={disabledDate}
+            onChange={onChange}
+          />
         </div>
-      </ConfigProvider>
-    </EducationContainer>
+        {nav === "groups" ? (
+          <AutoScheduleGroupsWrapper
+            selectedDaylessons={selectedDaylessons}
+            day={day}
+            week={week}
+            getBookmark={getBookmark}
+          />
+        ) : nav === "teacher" ? (
+          <AutoScheduleTeacherClassWrapper
+            data={teachersLessonsOnDay}
+            getBookmark={getBookmarkTeacher}
+            day={day}
+            week={week}
+            teachersComponent={true}
+          />
+        ) : (
+          <AutoScheduleTeacherClassWrapper
+            data={classLessonsOnDay}
+            getBookmark={getBookmarkClass}
+            day={day}
+            week={week}
+          />
+        )}
+
+        <Row type="flex" justify="space-between">
+          <Col span={24}>
+            <div className="auto-schedule__container-buttons-selectDay">
+              <Button
+                disabled={disabledDecreaseButton}
+                onClick={() => decreaseDay()}
+                style={{ width: "40%" }}
+              >
+                Назад
+              </Button>
+              <Button
+                disabled={disabledIncreaseButton}
+                onClick={() => increaseDay()}
+                style={{ width: "40%" }}
+              >
+                Вперед
+              </Button>
+            </div>
+          </Col>
+        </Row>
+      </div>
+    </ConfigProvider>
   );
 };
 export default AutoSchedule;

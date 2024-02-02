@@ -1,4 +1,30 @@
 @import "../../../../style/variables";
+.schedule-layout {
+  max-width: 1240px;
+  display: flex;
+  margin: 30px auto;
+  flex-wrap: wrap;
+  padding: 5px;
+  &-navBar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 40px;
+    .btn {
+      background-color: #325572;
+      color: white !important;
+    }
+  }
+  &-content {
+    min-width: 100%;
+  }
+}
+.autoScheduleVo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
 .auto-schedule__container {
   width: 100%;
   height: 100%;

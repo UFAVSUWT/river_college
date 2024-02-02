@@ -100,6 +100,8 @@ import Spo from "./components/page/enrollee/applicants/reception/spo/spo";
 import HigherEducation from "./components/page/enrollee/applicants/reception/vo/vo";
 import PassingScores from "./components/page/enrollee/applicants/reception/passing-scores/passing-scores";
 import KcpVo from "./components/page/enrollee/applicants/reception/KCP-VO/kcp-vo";
+import Schedule from "./layouts/schedule";
+import AutoScheduleVo from "./components/page/schedule/auto-shedule-vo";
 const routes = () => [
   {
     path: "",
@@ -233,7 +235,17 @@ const routes = () => [
   },
   {
     path: "schedule",
-    element: <AutoSchedule />,
+    element: <Schedule />,
+    children: [
+      {
+        path: "",
+        element: <AutoSchedule />,
+      },
+      {
+        path: "vo",
+        element: <AutoScheduleVo />,
+      },
+    ],
   },
   {
     path: "sveden",
