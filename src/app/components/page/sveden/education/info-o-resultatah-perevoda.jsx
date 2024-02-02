@@ -42,6 +42,26 @@ const InfoOResultatahPerevoda = () => {
             </tr>
             <tr itemProp="eduPerevod">
               <td itemProp="eduCode" rowSpan="3">
+                26.05.06
+              </td>
+              <td itemProp="eduName" rowSpan="3">
+                Эксплуатация судовых энергетических установок
+              </td>
+              <td itemProp="eduLevel" rowSpan="3">
+                Высшее образование. Специалитет
+              </td>
+              <td itemProp="eduForm">Заочная </td>
+              <td itemProp="numberOut">-</td>
+              <td itemProp="numberTo">-</td>
+              <td itemProp="numberRes">-</td>
+              <td itemProp="numberExp">1</td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr itemProp="eduPerevod">
+              <td itemProp="eduCode" rowSpan="3">
                 26.02.03
               </td>
               <td itemProp="eduName" rowSpan="3">

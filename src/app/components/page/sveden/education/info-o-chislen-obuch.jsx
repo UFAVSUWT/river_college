@@ -53,67 +53,23 @@ const InfoOChislenObuch = () => {
               <td itemProp="numberPF">в том числе иностранных граждан</td>
             </tr>
             <tr itemProp="eduChislen">
-              <td itemProp="eduCode">-</td>
-              <td itemProp="eduName">-</td>
-              <td itemProp="eduLevel">высшее образование - бакалавриат</td>
-              <td itemProp="eduForm">-</td>
-              <td itemProp="numberBF">-</td>
-              <td itemProp="numberBFF">-</td>
-              <td itemProp="numberBR">-</td>
-              <td itemProp="numberBRF">-</td>
-              <td itemProp="numberBM">-</td>
-              <td itemProp="numberBMF">-</td>
-              <td itemProp="numberP">-</td>
-              <td itemProp="numberPF">-</td>
-              <td itemProp="numberAll">-</td>
-            </tr>
-            <tr itemProp="eduChislen">
-              <td itemProp="eduCode">-</td>
-              <td itemProp="eduName">-</td>
-              <td itemProp="eduLevel">высшее образование - специалитет</td>
-              <td itemProp="eduForm">-</td>
-              <td itemProp="numberBF">-</td>
-              <td itemProp="numberBFF">-</td>
-              <td itemProp="numberBR">-</td>
-              <td itemProp="numberBRF">-</td>
-              <td itemProp="numberBM">-</td>
-              <td itemProp="numberBMF">-</td>
-              <td itemProp="numberP">-</td>
-              <td itemProp="numberPF">-</td>
-              <td itemProp="numberAll">-</td>
-            </tr>
-            <tr itemProp="eduChislen">
-              <td itemProp="eduCode">-</td>
-              <td itemProp="eduName">-</td>
-              <td itemProp="eduLevel">высшее образование - магистратура</td>
-              <td itemProp="eduForm">-</td>
-              <td itemProp="numberBF">-</td>
-              <td itemProp="numberBFF">-</td>
-              <td itemProp="numberBR">-</td>
-              <td itemProp="numberBRF">-</td>
-              <td itemProp="numberBM">-</td>
-              <td itemProp="numberBMF">-</td>
-              <td itemProp="numberP">-</td>
-              <td itemProp="numberPF">-</td>
-              <td itemProp="numberAll">-</td>
-            </tr>
-            <tr itemProp="eduChislen">
-              <td itemProp="eduCode">-</td>
-              <td itemProp="eduName">-</td>
-              <td itemProp="eduLevel">
-                высшее образование - подготовка кадров высшей квалификации
+              <td itemProp="eduCode">26.05.06</td>
+              <td itemProp="eduName">
+                Эксплуатация судовых энергетических установок
               </td>
-              <td itemProp="eduForm">-</td>
+              <td itemProp="eduLevel">Высшее образование. Специалитет</td>
+              <td itemProp="eduForm">Заочная</td>
               <td itemProp="numberBF">-</td>
               <td itemProp="numberBFF">-</td>
               <td itemProp="numberBR">-</td>
               <td itemProp="numberBRF">-</td>
               <td itemProp="numberBM">-</td>
               <td itemProp="numberBMF">-</td>
-              <td itemProp="numberP">-</td>
+              <td itemProp="numberP">37</td>
               <td itemProp="numberPF">-</td>
-              <td itemProp="numberAll">-</td>
+              <td itemProp="numberAll">37</td>
             </tr>
+
             <tr itemProp="eduChislen">
               <td itemProp="eduCode" rowSpan="3">
                 23.02.01

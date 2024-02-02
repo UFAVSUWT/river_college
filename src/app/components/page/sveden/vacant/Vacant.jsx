@@ -58,49 +58,18 @@ const Vacant = observer(() => {
                 юридических лиц
               </td>
             </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>Высшее, бакалавриат</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>Высшее, специалитет</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>Высшее, магистратура</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>Высшее, аспирантура</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
+            <tr itemProp="vacant">
+              <td itemProp="eduCode">26.05.06</td>
+              <td itemProp="eduName">
+                Эксплуатация судовых энергетических установок
+              </td>
+              <td itemProp="eduLevel">Высшее. Специалитет</td>
+              <td itemProp="eduCourse">1</td>
+              <td itemProp="eduForm">заочная</td>
+              <td itemProp="numberBFVacant">-</td>
+              <td itemProp="numberBRVacant">-</td>
+              <td itemProp="numberBMVacant">-</td>
+              <td itemProp="numberPVacant">1</td>
             </tr>
             <tr itemProp="vacant">
               <td itemProp="eduCode">23.02.01</td>
