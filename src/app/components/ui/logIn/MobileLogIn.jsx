@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import TextField from "../../common/form/textField/TextField";
 import Button from "../../common/button/Button";
@@ -13,16 +13,29 @@ import {
   toggleIconHeightSize,
   toggleIconWidthSize,
 } from "../../../utils/disabled";
+import { Context } from "../../../../index";
 const MobileLogIn = observer(({ isActive, setIsActive, setNav }) => {
+  const { user } = useContext(Context);
+  const formRef = useRef(null);
   const navigate = useNavigate();
   const [data, setData] = useState({ login: "", password: "" });
-  const handleChange = (target) => {
-    setData((prevState) => ({ ...prevState, [target.name]: target.value }));
+  const handleChange = (e) => {
+    setData((prevState) => ({ ...prevState, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    user.login(data, navigate);
+
+    if (!user.isLoading && !user.error) {
+      formRef.current.reset();
+      setIsActive(false);
+    }
   };
+  const handleReset = () => {
+    setData({ login: "", password: "" });
+  };
+
   useEffect(() => {
     document.addEventListener("keydown", detectKeyDown, true);
   });
@@ -67,7 +80,11 @@ const MobileLogIn = observer(({ isActive, setIsActive, setNav }) => {
           </Button>
         </div>
         <h1>Авторизация</h1>
-        <form onSubmit={handleSubmit}>
+        <form
+          onSubmit={handleSubmit}
+          onReset={handleReset}
+          onChange={handleChange}
+        >
           <div className="login_form-inputWrapper">
             <User
               width={toggleIconWidthSize("25px", "27px", "27px", "30px")}
@@ -76,7 +93,6 @@ const MobileLogIn = observer(({ isActive, setIsActive, setNav }) => {
             />
             <TextField
               inputClassName={"login_form-inputWrapper-input"}
-              onChange={handleChange}
               value={data.login}
               name={"login"}
               type={"text"}
@@ -91,7 +107,6 @@ const MobileLogIn = observer(({ isActive, setIsActive, setNav }) => {
             />
             <TextField
               inputClassName={"login_form-inputWrapper-input"}
-              onChange={handleChange}
               value={data.password}
               name={"password"}
               type={"password"}
@@ -99,6 +114,8 @@ const MobileLogIn = observer(({ isActive, setIsActive, setNav }) => {
             />
           </div>
           <Button className={"mobileLoggin_btn"} text="Войти" type="submit" />
+          <div className="message error">{user.error}</div>
+          <div className="message ">{user.isLoading && "Загрузка"}</div>
         </form>
       </section>
     </div>
