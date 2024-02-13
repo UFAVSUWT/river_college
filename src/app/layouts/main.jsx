@@ -11,11 +11,24 @@ import NewsNavbar from "../components/ui/newsNavbar/NewsNavbar";
 import PartnersContainer from "../components/ui/partners-container/partners-container";
 import { toggleClassName } from "../utils/disabled";
 import HrLine from "../components/common/hrLine/HrLine";
+import ChapterMenu from "../components/ui/chapterMenu/ChapterMenu";
 
 const Main = observer(() => {
   const [mainComponents, setMainComponents] = useState("news");
+  const linksArray = [
+    { title: "Главная", path: "/" },
+    { title: "О филиале", path: "/home/aboutBranch" },
+    { title: "Историческая справка", path: "/home/historicalReference" },
+    { title: "Новости", path: "/home/univercityNews" },
+    { title: "План мероприятий", path: "/home/univercityEvents" },
+    { title: "Интервью с выпускниками", path: "live/interview" },
+  ];
+
   return (
     <>
+      <div className="main-mobileMenu">
+        <ChapterMenu linksArray={linksArray} />
+      </div>
       <ImageSlider />
       <div
         className={toggleClassName(

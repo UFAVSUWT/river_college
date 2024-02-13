@@ -6,34 +6,34 @@ import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-/* import Arctica from "../../../assets/img/main/arctica.jpg"; */
+import Arctica from "../../../assets/img/main/arctica.jpg";
 import Boat from "../../../assets/img/main/boat.png";
 import Students from "../../../assets/img/main/students.jpg";
 import { NavLink } from "react-router-dom";
 import ChapterMenu from "../../ui/chapterMenu/ChapterMenu";
 
 const ImageSlider = ({ className, ...rest }) => {
-  const linksArray = [
+  /*   const linksArray = [
     { title: "Главная", path: "/" },
     { title: "О филиале", path: "/home/aboutBranch" },
     { title: "Историческая справка", path: "/home/historicalReference" },
     { title: "Новости", path: "/home/univercityNews" },
     { title: "План мероприятий", path: "/home/univercityEvents" },
-  ];
+  ]; */
   return (
     <>
-      <div className="main-mobileMenu">
+      {/*       <div className="main-mobileMenu">
         <ChapterMenu linksArray={linksArray} />
-      </div>
+      </div> */}
       <div className="imageSlider-show">
-        {/* <Swiper
+        <Swiper
           loop={true}
           modules={[Autoplay]}
           autoplay={{
             delay: 5000,
           }}
         >
-          <SwiperSlide> */}
+          <SwiperSlide>
             <NavLink to={"enrollee/reception"}>
               <div className="marquee-infinite">
                 <span>
@@ -51,8 +51,8 @@ const ImageSlider = ({ className, ...rest }) => {
               </div>
               <img src={Students} alt="Картинка уплыла" />
             </NavLink>
-       {/*    </SwiperSlide> */}
-          {/* <SwiperSlide>
+          </SwiperSlide>
+          <SwiperSlide>
             <div className="marquee-infinite">
               <span>
                 <img src={Boat} alt="" width={"250px"} height={"96px"} />
@@ -69,13 +69,13 @@ const ImageSlider = ({ className, ...rest }) => {
                 <li>Капитан огромного ледокола в арктике!</li>
                 <li>И еще несколько интересных историй!</li>
               </ul>
-              <NavLink to={"home/univercityNews"}>
+              <NavLink to={"live/interview"}>
                 <div className="swiperSlideFirs__btn">Читать</div>
               </NavLink>
             </div>
             <img src={Arctica} alt="Картинка уплыла" />
-          </SwiperSlide> */}
-        {/* </Swiper> */}
+          </SwiperSlide>
+        </Swiper>
       </div>
     </>
   );

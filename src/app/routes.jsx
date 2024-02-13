@@ -102,6 +102,11 @@ import Auth from "./layouts/auth/auth";
 import AdminPanel from "./components/page/admin-panel/admin-panel";
 import EditorNewsPage from "./components/page/create-news-page/create-news-page";
 import EditNewsPage from "./components/page/create-news-page/edit-news-page";
+import Interview from "./components/page/live/interview/interview";
+import Abkadirov from "./components/page/live/interview/abkadirov";
+import Portnyagina from "./components/page/live/interview/portnyagina";
+import Timofeev from "./components/page/live/interview/timofeev";
+import Tokmakov from "./components/page/live/interview/tokmakov";
 const routes = () => [
   {
     path: "",
@@ -332,6 +337,26 @@ const routes = () => [
     path: "live",
     element: <Live />,
     children: [
+      {
+        path: "interview",
+        element: <Interview />,
+      },
+      {
+        path: "timofeev",
+        element: <Timofeev />,
+      },
+      {
+        path: "tokmakov",
+        element: <Tokmakov />,
+      },
+      {
+        path: "abkadirov",
+        element: <Abkadirov />,
+      },
+      {
+        path: "portnyagina",
+        element: <Portnyagina />,
+      },
       {
         path: "studentsLive",
         element: <StudentsLive />,

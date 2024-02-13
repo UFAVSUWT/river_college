@@ -27,6 +27,11 @@ const UniversityNews = () => {
       image: science,
       link: "../../live/science",
     },
+    {
+      title: "Интервью с нашими выпускниками!",
+      image: science,
+      link: "../../live/interview",
+    },
   ];
   return (
     <section

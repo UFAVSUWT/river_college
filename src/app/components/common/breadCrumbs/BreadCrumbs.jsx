@@ -74,6 +74,9 @@ const BreadCrumbs = observer(() => {
             case "studentsLive":
               linkName = "/ Студенческая жизнь ";
               break;
+            case "interview":
+              linkName = "/ Интервью с выпускниками ";
+              break;
             case "rest":
               linkName = "/ Отдых ";
               break;
