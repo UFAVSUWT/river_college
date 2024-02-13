@@ -10,9 +10,17 @@ const Home = observer(() => {
     { title: "Историческая справка", path: "/home/historicalReference" },
     { title: "Новости", path: "/home/univercityNews" },
     { title: "План мероприятий", path: "/home/univercityEvents" },
+    { title: "Государство для людей", path: "/home/stateForPeople" },
   ];
   return (
-    <div className={` ${toggleClassName("_container-main min-height", "_container-white min-height-white"," _container-black min-height-black","_container-contrast min-height-contrast",)}`}>
+    <div
+      className={` ${toggleClassName(
+        "_container-main min-height",
+        "_container-white min-height-white",
+        " _container-black min-height-black",
+        "_container-contrast min-height-contrast"
+      )}`}
+    >
       <div className="chapter__menu-show">
         <ChapterMenu linksArray={linksArray} />
       </div>

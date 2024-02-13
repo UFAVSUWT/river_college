@@ -51,7 +51,7 @@ import PoryadPlatnObrUslug21 from "../../../../assets/pdf/documentPage/Dogovor_p
 import StoimObuch22 from "../../../../assets/pdf/documentPage/Stoimost_obuch_2022.pdf";
 import OplProzivan from "../../../../assets/pdf/documentPage/Poryadoc_oplati.pdf";
 import smeta from "../../../../assets/pdf/documentPage/сметы на общежитие.pdf";
-import PolStDorm18 from "../../../../assets/pdf/documentPage/Pol_st_dorm_2018.pdf";
+import PolStDorm18 from "../../../../assets/pdf/documentPage/Pol_st_dorm_2024.pdf";
 import Predpis from "../../../../assets/pdf/documentPage/predpisanie_transp_prok1.pdf";
 import PismoTransp from "../../../../assets/pdf/documentPage/pismo_transp_prok_2020.pdf";
 

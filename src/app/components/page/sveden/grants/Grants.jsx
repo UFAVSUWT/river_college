@@ -6,6 +6,7 @@ import protocol from "../../../../assets/pdf/grants/protocol.pdf";
 import poloj_stepend_obesp from "../../../../assets/pdf/grants/Положение о стипендиальном обеспечении.pdf";
 import postanovlenie_1390_17122016 from "../../../../assets/pdf/grants/postanovlenie_1390_17.12.2016.pdf";
 import prikaz_527_230922_o_naznach_komis from "../../../../assets/pdf/grants/приказ № 18 от 29.01.2024 ПЛЖ о стипендии.pdf";
+import polojen from "../../../../assets/pdf/documentPage/Pol_st_dorm_2024.pdf";
 
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
 const Grants = observer(() => {
@@ -202,7 +203,7 @@ const Grants = observer(() => {
       </div>
       <ul>
         <li className="doc__item">
-          <a href={"Ustav"} target={"_blank"} rel="noreferrer">
+          <a href={polojen} target={"_blank"} rel="noreferrer">
             Положение о студенческом общежитии
           </a>
         </li>

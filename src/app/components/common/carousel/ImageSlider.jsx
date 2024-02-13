@@ -13,18 +13,8 @@ import { NavLink } from "react-router-dom";
 import ChapterMenu from "../../ui/chapterMenu/ChapterMenu";
 
 const ImageSlider = ({ className, ...rest }) => {
-  const linksArray = [
-    { title: "Главная", path: "/" },
-    { title: "О филиале", path: "/home/aboutBranch" },
-    { title: "Историческая справка", path: "/home/historicalReference" },
-    { title: "Новости", path: "/home/univercityNews" },
-    { title: "План мероприятий", path: "/home/univercityEvents" },
-  ];
   return (
     <>
-      <div className="main-mobileMenu">
-        <ChapterMenu linksArray={linksArray} />
-      </div>
       <div className="imageSlider-show">
         {/* <Swiper
           loop={true}

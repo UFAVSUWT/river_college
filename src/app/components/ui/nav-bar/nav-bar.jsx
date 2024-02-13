@@ -180,6 +180,12 @@ const NavBar = observer(() => {
                 >
                   <li>План мероприятий</li>
                 </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"home/stateForPeople"}
+                >
+                  <li>Государство для людей</li>
+                </NavLink>
                 <NavLink onClick={() => megaMenuIsOut()} to={"sveden/common"}>
                   <li>Сведения об образовательной организации</li>
                 </NavLink>

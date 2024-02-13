@@ -102,6 +102,7 @@ import PassingScores from "./components/page/enrollee/applicants/reception/passi
 import KcpVo from "./components/page/enrollee/applicants/reception/KCP-VO/kcp-vo";
 import Schedule from "./layouts/schedule";
 import AutoScheduleVo from "./components/page/schedule/auto-shedule-vo";
+import StateForPeople from "./components/page/homePage/state-for-people/state-for-people";
 const routes = () => [
   {
     path: "",
@@ -511,6 +512,10 @@ const routes = () => [
       {
         path: "aboutBranch",
         element: <AboutBranch />,
+      },
+      {
+        path: "stateForPeople",
+        element: <StateForPeople />,
       },
       {
         path: "historicalReference",

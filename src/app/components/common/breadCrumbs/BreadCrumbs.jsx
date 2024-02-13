@@ -103,6 +103,9 @@ const BreadCrumbs = observer(() => {
             case "aboutBranch":
               linkName = "/ О филиале ";
               break;
+            case "stateForPeople":
+              linkName = "/ Государство для людей ";
+              break;
             case "historicalReference":
               linkName = "/ Историческая справка ";
               break;
