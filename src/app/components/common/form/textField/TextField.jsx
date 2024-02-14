@@ -14,8 +14,8 @@ const TextField = observer(
     label,
     type,
     name,
-    value,
-    onChange,
+    /*    value, */
+    /*    onChange, */
     error,
     placeholder,
     className,
@@ -24,9 +24,11 @@ const TextField = observer(
   }) => {
     const [showPassword, setShowPassword] = useState(false);
     const [click, setClick] = useState(false);
-    const handleChange = ({ target }) => {
+
+    /*    const handleChange = ({ target }) => {
       onChange({ name: target.name, value: target.value });
-    };
+    }; */
+
     const inputClasses = classNames("", inputClassName);
     const getInputClasses = () => {
       return inputClasses + (error ? " is-invalid" : "");
@@ -56,8 +58,8 @@ const TextField = observer(
                 id={name}
                 placeholder={click ? "" : placeholder}
                 name={name}
-                value={value}
-                onChange={handleChange}
+                /*   value={value} */
+                /*                 onChange={onChange && handleChange} */
                 onKeyDown={onKeyDown}
                 className={
                   type !== "password"

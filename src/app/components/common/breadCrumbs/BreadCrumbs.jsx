@@ -74,6 +74,9 @@ const BreadCrumbs = observer(() => {
             case "studentsLive":
               linkName = "/ Студенческая жизнь ";
               break;
+            case "interview":
+              linkName = "/ Интервью с выпускниками ";
+              break;
             case "rest":
               linkName = "/ Отдых ";
               break;
@@ -256,9 +259,13 @@ const BreadCrumbs = observer(() => {
           }
           const isLast = index === pathnames.length - 1;
           return isLast ? (
-            <div className="breadCrumbs__container-last">{linkName}</div>
+            <div key={index} className="breadCrumbs__container-last">
+              {linkName}
+            </div>
           ) : (
-            <NavLink to={`${route}`}>{linkName}</NavLink>
+            <NavLink key={index} to={`${route}`}>
+              {linkName}
+            </NavLink>
           );
         })}
       </div>

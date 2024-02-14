@@ -11,6 +11,7 @@ const Home = observer(() => {
     { title: "Новости", path: "/home/univercityNews" },
     { title: "План мероприятий", path: "/home/univercityEvents" },
     { title: "Государство для людей", path: "/home/stateForPeople" },
+    { title: "Интервью с выпускниками", path: "/live/interview" },
   ];
   return (
     <div

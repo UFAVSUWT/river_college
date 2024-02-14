@@ -1,12 +1,12 @@
 import { observer } from "mobx-react-lite";
-import React from "react";
-import { useParams } from "react-router";
+import React, { useState } from "react";
 import ImageSlider from "../components/common/carousel/ImageSlider";
 import LiveCardContainer from "../components/common/liveCardContainer/LiveCardContainer";
 import ApplicantsPage from "../components/page/infoContainer/applicantsPage/ApplicantsPage";
 /* import EventsPages from "../components/page/infoContainer/eventsPages/EventsPages";
-import InfoPage from "../components/page/infoContainer/infoPage/InfoPage";
+
 import SecurityPage from "../components/page/infoContainer/securityPage/SecurityPage"; */
+import InfoPage from "../components/page/infoContainer/infoPage/InfoPage";
 import NewsNavbar from "../components/ui/newsNavbar/NewsNavbar";
 import PartnersContainer from "../components/ui/partners-container/partners-container";
 import { toggleClassName } from "../utils/disabled";
@@ -14,15 +14,18 @@ import HrLine from "../components/common/hrLine/HrLine";
 import ChapterMenu from "../components/ui/chapterMenu/ChapterMenu";
 
 const Main = observer(() => {
-  const params = useParams();
+  const [mainComponents, setMainComponents] = useState("news");
+
   const linksArray = [
     { title: "Главная", path: "/" },
     { title: "О филиале", path: "/home/aboutBranch" },
     { title: "Историческая справка", path: "/home/historicalReference" },
     { title: "Новости", path: "/home/univercityNews" },
     { title: "План мероприятий", path: "/home/univercityEvents" },
+    { title: "Интервью с выпускниками", path: "live/interview" },
     { title: "Государство для людей", path: "/home/stateForPeople" },
   ];
+
   return (
     <>
       <div className="main-mobileMenu">
@@ -63,7 +66,10 @@ const Main = observer(() => {
           "_container-contrast"
         )}
       >
-        <NewsNavbar />
+        <NewsNavbar
+          mainComponents={mainComponents}
+          setMainComponents={setMainComponents}
+        />
       </div>
       <div>
         <div
@@ -74,9 +80,12 @@ const Main = observer(() => {
             "_container-contrast"
           )}
         >
-          {!params.element && <ApplicantsPage /> /* <InfoPage /> */}
+          {mainComponents === "news" ? (
+            <InfoPage />
+          ) : mainComponents === "applicants" ? (
+            <ApplicantsPage />
+          ) : null}
           {/*     {params.element === "events" ? <EventsPages /> : null} */}
-          {params.element === "applicants" ? <ApplicantsPage /> : null}
           {/*       {params.element === "security" ? <SecurityPage /> : null} */}
         </div>
       </div>

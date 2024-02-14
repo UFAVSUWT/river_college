@@ -6,7 +6,17 @@ import Image from "../../../common/image/Image";
 import InfoContainer from "../../../common/infoContainer/InfoContainer";
 import NewsCardContainer from "../../../ui/newsCardContainer/NewsCardContainer";
 
+import { NewsStore } from "../../../../store/news-store";
+import { toJS } from "mobx";
+import HrLine from "../../../common/hrLine/HrLine";
 const InfoPage = observer(() => {
+  const { news, isLoadingNews } = NewsStore;
+
+  const main = toJS(news)
+    .reverse()
+    .find((e) => e.main === true);
+
+  if (isLoadingNews) return "Загрузка...";
   return (
     <div
       style={{ fontSize: toggleFontSize(18) }}
@@ -17,57 +27,25 @@ const InfoPage = observer(() => {
         "infopage-contrast"
       )}`}
     >
-      <InfoContainer
-        title="Новости университета"
-        newsTitle="Заголовок новости"
-        btnTitle="Все новости"
-        image={
-          <Image
-            src="img/newsimg/corpus.jpg"
-            alt="Фото уплыло:("
-            height="100%"
-            width="100%"
-          />
-        }
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quidem
-        facilis a iusto sunt et, reiciendis cumque cupiditate aspernatur,
-        possimus velit nam, officia nihil! Corrupti sapiente pariatur aperiam
-        hic dolore! Voluptatum aliquid sit dolor iste sunt veritatis omnis saepe
-        eligendi magnam, autem laborum corporis tempora provident et obcaecati
-        officia ipsa nobis asperiores inventore sint debitis repudiandae quas
-        molestiae fugit. Eum? Ratione tempora ab vero et aspernatur recusandae
-        aliquam repellendus sed maxime iste, neque quam. Voluptatum natus quos,
-        similique neque voluptatem ipsa distinctio corrupti facilis doloribus
-        dolor quasi hic voluptates magnam. A, ut quisquam. At non modi placeat
-        aliquid eos deleniti sunt! Nihil repellat facere sit pariatur quasi.
-        Consectetur natus itaque est nulla inventore. Vel minus quam quae
-        ratione, alias omnis?Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Odio quidem facilis a iusto sunt et, reiciendis cumque cupiditate
-        aspernatur, possimus velit nam, officia nihil! Corrupti sapiente
-        pariatur aperiam hic dolore! Voluptatum aliquid sit dolor iste sunt
-        veritatis omnis saepe eligendi magnam, autem laborum corporis tempora
-        provident et obcaecati officia ipsa nobis asperiores inventore sint
-        debitis repudiandae quas molestiae fugit. Eum? Ratione tempora ab vero
-        et aspernatur recusandae aliquam repellendus sed maxime iste, neque
-        quam. Voluptatum natus quos, similique neque voluptatem ipsa distinctio
-        corrupti facilis doloribus dolor quasi hic voluptates magnam. A, ut
-        quisquam. At non modi placeat aliquid eos deleniti sunt! Nihil repellat
-        facere sit pariatur quasi. Consectetur natus itaque est nulla inventore.
-        Vel minus quam quae ratione, alias omnis?Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Odio quidem facilis a iusto sunt et,
-        reiciendis cumque cupiditate aspernatur, possimus velit nam, officia
-        nihil! Corrupti sapiente pariatur aperiam hic dolore! Voluptatum aliquid
-        sit dolor iste sunt veritatis omnis saepe eligendi magnam, autem laborum
-        corporis tempora provident et obcaecati officia ipsa nobis asperiores
-        inventore sint debitis repudiandae quas molestiae fugit. Eum? Ratione
-        tempora ab vero et aspernatur recusandae aliquam repellendus sed maxime
-        iste, neque quam. Voluptatum natus quos, similique neque voluptatem ipsa
-        distinctio corrupti facilis doloribus dolor quasi hic voluptates magnam.
-        A, ut quisquam. At non modi placeat aliquid eos deleniti sunt! Nihil
-        repellat facere sit pariatur quasi. Consectetur natus itaque est nulla
-        inventore. Vel minus quam quae ratione, alias omnis?
-      </InfoContainer>
+      {main && (
+        <InfoContainer
+          key={main.id}
+          title="Новости университета"
+          newsTitle={main.title}
+          btnTitle="Все новости"
+          image={
+            <Image
+              src={process.env.REACT_APP_API_URL + main.image}
+              alt="Фото уплыло:("
+              height="100%"
+              width="100%"
+            />
+          }
+        >
+          <div dangerouslySetInnerHTML={{ __html: main.text }}></div>
+        </InfoContainer>
+      )}
+      <HrLine />
       {images.image !== "off" ? <NewsCardContainer /> : null}
     </div>
   );
