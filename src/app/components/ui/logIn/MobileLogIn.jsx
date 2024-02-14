@@ -14,9 +14,11 @@ import {
   toggleIconWidthSize,
 } from "../../../utils/disabled";
 import { Context } from "../../../../index";
+import { logOut } from "../../../utils/utils";
 const MobileLogIn = observer(({ isActive, setIsActive, setNav }) => {
   const { user } = useContext(Context);
   const formRef = useRef(null);
+  console.log(formRef);
   const navigate = useNavigate();
   const [data, setData] = useState({ login: "", password: "" });
   const handleChange = (e) => {
@@ -25,12 +27,8 @@ const MobileLogIn = observer(({ isActive, setIsActive, setNav }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    user.login(data, navigate);
-
-    if (!user.isLoading && !user.error) {
-      formRef.current.reset();
-      setIsActive(false);
-    }
+    user.login(data, goToAuth);
+    if (!user.isLoading) formRef.current.reset();
   };
   const handleReset = () => {
     setData({ login: "", password: "" });
@@ -57,7 +55,13 @@ const MobileLogIn = observer(({ isActive, setIsActive, setNav }) => {
     setNav(false);
     navigate("/");
   };
-
+  const goToAuth = () => {
+    setIsActive(false);
+    setNav(false);
+    navigate("/auth");
+  };
+  console.log(user.user);
+  console.log(user.isAuth);
   return (
     <div
       className={`mobileLoggin  + ${isActive ? "mobileLoggin-isActive" : ""}`}
@@ -79,44 +83,65 @@ const MobileLogIn = observer(({ isActive, setIsActive, setNav }) => {
             />
           </Button>
         </div>
-        <h1>Авторизация</h1>
-        <form
-          onSubmit={handleSubmit}
-          onReset={handleReset}
-          onChange={handleChange}
-        >
-          <div className="login_form-inputWrapper">
-            <User
-              width={toggleIconWidthSize("25px", "27px", "27px", "30px")}
-              height={toggleIconHeightSize("25px", "27px", "27px", "30px")}
-              fill={toggleIconColor("#fff")}
-            />
-            <TextField
-              inputClassName={"login_form-inputWrapper-input"}
-              value={data.login}
-              name={"login"}
-              type={"text"}
-              placeholder={"Введите ваш логин"}
-            />
-          </div>
-          <div className="login_form-inputWrapper">
-            <Key
-              width={toggleIconWidthSize("25px", "27px", "27px", "30px")}
-              height={toggleIconHeightSize("25px", "27px", "27px", "30px")}
-              fill={toggleIconColor("#fff")}
-            />
-            <TextField
-              inputClassName={"login_form-inputWrapper-input"}
-              value={data.password}
-              name={"password"}
-              type={"password"}
-              placeholder={"Введите ваш пароль"}
-            />
-          </div>
-          <Button className={"mobileLoggin_btn"} text="Войти" type="submit" />
-          <div className="message error">{user.error}</div>
-          <div className="message ">{user.isLoading && "Загрузка"}</div>
-        </form>
+        {user.user.role === "ADMIN" ? (
+          <>
+            <Button className={"navigate-button"} onClick={() => goToAuth()}>
+              Личный кабинет
+            </Button>
+            <Button
+              className={"navigate-button"}
+              onClick={() => logOut(user, navigate)}
+            >
+              Выйти
+            </Button>
+          </>
+        ) : (
+          <>
+            <h1>Авторизация</h1>
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              onReset={handleReset}
+              onChange={handleChange}
+            >
+              <div className="login_form-inputWrapper">
+                <User
+                  width={toggleIconWidthSize("25px", "27px", "27px", "30px")}
+                  height={toggleIconHeightSize("25px", "27px", "27px", "30px")}
+                  fill={toggleIconColor("#fff")}
+                />
+                <TextField
+                  inputClassName={"login_form-inputWrapper-input"}
+                  value={data.login}
+                  name={"login"}
+                  type={"text"}
+                  placeholder={"Введите ваш логин"}
+                />
+              </div>
+              <div className="login_form-inputWrapper">
+                <Key
+                  width={toggleIconWidthSize("25px", "27px", "27px", "30px")}
+                  height={toggleIconHeightSize("25px", "27px", "27px", "30px")}
+                  fill={toggleIconColor("#fff")}
+                />
+                <TextField
+                  inputClassName={"login_form-inputWrapper-input"}
+                  value={data.password}
+                  name={"password"}
+                  type={"password"}
+                  placeholder={"Введите ваш пароль"}
+                />
+              </div>
+              <Button
+                className={"mobileLoggin_btn"}
+                text="Войти"
+                type="submit"
+              />
+              <div className="message error">{user.error}</div>
+              <div className="message ">{user.isLoading && "Загрузка"}</div>
+            </form>{" "}
+          </>
+        )}
       </section>
     </div>
   );
