@@ -104,6 +104,9 @@ const PhoneMenu = () => {
             <li onClick={() => setNav(!nav)}>
               <NavLink to="live">Студенческая жизнь</NavLink>
             </li>
+            <li onClick={() => setNav(!nav)}>
+              <NavLink to="contacts/contactsPage">Контакты</NavLink>
+            </li>
           </ul>
           <ul className="nav-menu">
             <li onClick={() => setNav(!nav)} className="nav-menu-sveden">

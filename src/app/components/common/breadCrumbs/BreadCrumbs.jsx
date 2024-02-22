@@ -94,8 +94,18 @@ const BreadCrumbs = observer(() => {
               linkName = "/ Наука ";
 
               break;
+            case "contacts":
+              linkName = null;
+              break;
+            case "contactsPage":
+              linkName = "/ Контакты ";
+              break;
+
             case "vacancies":
               linkName = "/ Вакансии ";
+              break;
+            case "reviews":
+              linkName = "/ Отзывы и обратная связь ";
               break;
             case "home":
               linkName = null;
@@ -133,9 +143,6 @@ const BreadCrumbs = observer(() => {
               break;
             case "practice":
               linkName = "/ Отдел практической подготовки ";
-              break;
-            case "reviews":
-              linkName = "/ Курсанты и выпускники филиала о практике ";
               break;
             case "shedule":
               linkName = "/ График практикие ";

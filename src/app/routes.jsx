@@ -17,7 +17,7 @@ import Live from "./layouts/live";
 import StudentsLive from "./components/page/live/studentsLive/StudentsLive";
 import Sport from "./components/page/live/sport/Sport";
 import OurPride from "./components/page/live/ourPride/OurPride";
-import Vacancies from "./components/page/live/vacancies/Vacancies";
+
 import Science from "./components/page/live/science/Science";
 import Learning from "./layouts/Learning";
 import Practice from "./components/page/learning/Practice/Practice";
@@ -63,9 +63,11 @@ import ProfessionalTrainingPrograms from "./components/page/training/professiona
 import ShipPowerPlantsVO2023 from "./components/page/educationsPrograms/260506/ShipPowerPlantsVO2023";
 import ShipPowerPlantsVO2023FOS from "./components/page/educationsPrograms/260506/ShipPowerPlantsVO2023FOS";
 import KCP from "./components/page/enrollee/applicants/reception/KCP/KCP";
-import Contacts from "./components/page/homePage/contacts/contacts";
-import Reviews from "./components/page/homePage/reviews/reviews";
-import UserSurvey from "./components/page/homePage/user-survey/user-survey";
+import Contacts from "./layouts/contacts";
+import ContactsPage from "./components/page/contacts/contacts/contacts";
+import Reviews from "./components/page/contacts/reviews/reviews";
+import Vacancies from "./components/page/contacts/vacancies/Vacancies";
+
 import AddEducationProgramsChildrenAdults from "./components/page/training/add-education-programs-children-adults/add-education-programs-children-adults";
 import Cadets from "./components/page/learning/cadets/cadets";
 import Parents from "./components/page/learning/parents/parents";
@@ -103,6 +105,16 @@ import KcpVo from "./components/page/enrollee/applicants/reception/KCP-VO/kcp-vo
 import Schedule from "./layouts/schedule";
 import AutoScheduleVo from "./components/page/schedule/auto-shedule-vo";
 import StateForPeople from "./components/page/homePage/state-for-people/state-for-people";
+import Interview from "./components/page/live/interview/interview";
+import Timofeev from "./components/page/live/interview/timofeev";
+import Tokmakov from "./components/page/live/interview/tokmakov";
+import Abkadirov from "./components/page/live/interview/abkadirov";
+import Portnyagina from "./components/page/live/interview/portnyagina";
+import { element } from "prop-types";
+import OneNewsPage1 from "./components/page/one-news-page/one-news-page1";
+import OneNewsPage2 from "./components/page/one-news-page/one-news-page2";
+import OneNewsPage3 from "./components/page/one-news-page/one-news-page3";
+import OneNewsPage4 from "./components/page/one-news-page/one-news-page4";
 const routes = () => [
   {
     path: "",
@@ -315,6 +327,26 @@ const routes = () => [
         element: <StudentsLive />,
       },
       {
+        path: "interview",
+        element: <Interview />,
+      },
+      {
+        path: "timofeev",
+        element: <Timofeev />,
+      },
+      {
+        path: "tokmakov",
+        element: <Tokmakov />,
+      },
+      {
+        path: "abkadirov",
+        element: <Abkadirov />,
+      },
+      {
+        path: "portnyagina",
+        element: <Portnyagina />,
+      },
+      {
         path: "sport",
         element: <Sport />,
       },
@@ -506,6 +538,25 @@ const routes = () => [
     ],
   },
   {
+    path: "contacts",
+    element: <Contacts />,
+    children: [
+      {
+        path: "contactsPage",
+        element: <ContactsPage />,
+      },
+      {
+        path: "reviews",
+        element: <Reviews />,
+      },
+      {
+        path: "vacancies",
+        element: <Vacancies />,
+      },
+    ],
+  },
+
+  {
     path: "home",
     element: <Home />,
     children: [
@@ -522,24 +573,29 @@ const routes = () => [
         element: <HistoricalReference />,
       },
       {
+        path: "univercityNews/gordost",
+        element: <OneNewsPage1 />,
+      },
+      {
+        path: "univercityNews/studentsLive",
+        element: <OneNewsPage2 />,
+      },
+      {
+        path: "univercityNews/sport",
+        element: <OneNewsPage3 />,
+      },
+      {
+        path: "univercityNews/science",
+        element: <OneNewsPage4 />,
+      },
+      {
         path: "univercityNews",
         element: <UniversityNews />,
       },
+
       {
         path: "univercityEvents",
         element: <UniversityEvents />,
-      },
-      {
-        path: "contacts",
-        element: <Contacts />,
-      },
-      {
-        path: "reviews",
-        element: <Reviews />,
-      },
-      {
-        path: "userSurvey",
-        element: <UserSurvey />,
       },
     ],
   },

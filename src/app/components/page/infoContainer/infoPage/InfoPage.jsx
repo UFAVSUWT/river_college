@@ -5,7 +5,8 @@ import { toggleClassName, toggleFontSize } from "../../../../utils/disabled";
 import Image from "../../../common/image/Image";
 import InfoContainer from "../../../common/infoContainer/InfoContainer";
 import NewsCardContainer from "../../../ui/newsCardContainer/NewsCardContainer";
-
+import mainImage from "../../../../assets/img/newsimg/main.jpg";
+import HrLine from "../../../common/hrLine/HrLine";
 const InfoPage = observer(() => {
   return (
     <div
@@ -19,54 +20,43 @@ const InfoPage = observer(() => {
     >
       <InfoContainer
         title="Новости университета"
-        newsTitle="Заголовок новости"
+        newsTitle="Митинг, посвящённый Дню защитника Отечества"
         btnTitle="Все новости"
         image={
           <Image
-            src="img/newsimg/corpus.jpg"
+            src={mainImage}
             alt="Фото уплыло:("
             height="100%"
             width="100%"
           />
         }
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quidem
-        facilis a iusto sunt et, reiciendis cumque cupiditate aspernatur,
-        possimus velit nam, officia nihil! Corrupti sapiente pariatur aperiam
-        hic dolore! Voluptatum aliquid sit dolor iste sunt veritatis omnis saepe
-        eligendi magnam, autem laborum corporis tempora provident et obcaecati
-        officia ipsa nobis asperiores inventore sint debitis repudiandae quas
-        molestiae fugit. Eum? Ratione tempora ab vero et aspernatur recusandae
-        aliquam repellendus sed maxime iste, neque quam. Voluptatum natus quos,
-        similique neque voluptatem ipsa distinctio corrupti facilis doloribus
-        dolor quasi hic voluptates magnam. A, ut quisquam. At non modi placeat
-        aliquid eos deleniti sunt! Nihil repellat facere sit pariatur quasi.
-        Consectetur natus itaque est nulla inventore. Vel minus quam quae
-        ratione, alias omnis?Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Odio quidem facilis a iusto sunt et, reiciendis cumque cupiditate
-        aspernatur, possimus velit nam, officia nihil! Corrupti sapiente
-        pariatur aperiam hic dolore! Voluptatum aliquid sit dolor iste sunt
-        veritatis omnis saepe eligendi magnam, autem laborum corporis tempora
-        provident et obcaecati officia ipsa nobis asperiores inventore sint
-        debitis repudiandae quas molestiae fugit. Eum? Ratione tempora ab vero
-        et aspernatur recusandae aliquam repellendus sed maxime iste, neque
-        quam. Voluptatum natus quos, similique neque voluptatem ipsa distinctio
-        corrupti facilis doloribus dolor quasi hic voluptates magnam. A, ut
-        quisquam. At non modi placeat aliquid eos deleniti sunt! Nihil repellat
-        facere sit pariatur quasi. Consectetur natus itaque est nulla inventore.
-        Vel minus quam quae ratione, alias omnis?Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Odio quidem facilis a iusto sunt et,
-        reiciendis cumque cupiditate aspernatur, possimus velit nam, officia
-        nihil! Corrupti sapiente pariatur aperiam hic dolore! Voluptatum aliquid
-        sit dolor iste sunt veritatis omnis saepe eligendi magnam, autem laborum
-        corporis tempora provident et obcaecati officia ipsa nobis asperiores
-        inventore sint debitis repudiandae quas molestiae fugit. Eum? Ratione
-        tempora ab vero et aspernatur recusandae aliquam repellendus sed maxime
-        iste, neque quam. Voluptatum natus quos, similique neque voluptatem ipsa
-        distinctio corrupti facilis doloribus dolor quasi hic voluptates magnam.
-        A, ut quisquam. At non modi placeat aliquid eos deleniti sunt! Nihil
-        repellat facere sit pariatur quasi. Consectetur natus itaque est nulla
-        inventore. Vel minus quam quae ratione, alias omnis?
+        <div style={{ marginTop: "20px" }}>
+          <p>
+            История России богата знаменательными событиями. Во все века
+            героизм, мужество воинов России, мощь и слава русского оружия были
+            неотъемлемой частью величия Российского государства. Воины,
+            защитники Отечества есть практически в каждой семье, поэтому
+            праздник - День защитника Отечества - считается всенародным.
+          </p>
+          <p>
+            21 февраля курсанты, сотрудники Уфимского филиала, почетные гости
+            почтили память погибших выпускников филиала при исполнении воинского
+            долга. Поименно вспомнили Вячеслава Ильина, Ильдара Зарипова,
+            Станислава Вереденко, Арсения Воробьёва, Данила Фёдорова, Марата
+            Давлянова, Алексея Михайлова, возложили цветы к мемориальным доскам.
+          </p>
+          <p>
+            Перед участниками митинга выступил преподаватель организатор ОБЖ,
+            участник СВО Романов Зульфир Вахитович прибывший в краткосрочный
+            отпуск, который является одним из живых примеров мужества. С начала
+            спецоперации он добровольно принял решение вступить в ряды
+            Вооруженных Сил России. Сегодня военнослужащий посетил родной
+            университет, встретился с коллегами и курсантами.{" "}
+          </p>
+        </div>
+
+        <HrLine />
       </InfoContainer>
       {images.image !== "off" ? <NewsCardContainer /> : null}
     </div>

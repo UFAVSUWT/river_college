@@ -1,58 +1,39 @@
-import React, { useState } from "react";
-const NewsCard = () => {
-  const [isActive, setIsActive] = useState(false);
+import React from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import { ReactComponent as Arrow } from "../../../assets/svg/arrowButton.svg";
+import { observer } from "mobx-react-lite";
+import { toggleIconColor } from "../../../utils/disabled";
+const NewsCard = observer(({ link, image, date, title, staticCard, id }) => {
+  const navigate = useNavigate();
+  const onNavigate = () => {
+    navigate(link);
+  };
   return (
     <div
-      onClick={() => setIsActive(!isActive)}
-      className={`card  ${isActive ? "show z-index" : ""}`}
+      className="newsCard-wrapper"
+      onClick={!staticCard ? () => onNavigate() : null}
     >
-      <div className="card__image-holder">
-        {/* <img src={Image} alt="wave" /> */}
-      </div>
-      <div className="card-title">
-        <a href="/" className="toggle-info btnCard">
-          <span className="left"></span>
-          <span className="right"></span>
-        </a>
-        <h2>
-          Card title
-          <small>Image from unsplash.com</small>
-        </h2>
-      </div>
-      <div className="card-flap flap1">
-        <div className="card-description">
-          This grid is an attempt to make something nice that works on touch
-          devices. Ignoring hover states when they're not available etc.
-        </div>
-        <div className="card-flap flap2">
-          <div className="card-actions">
-            <a href="/" className="btnCard">
-              Read more
-            </a>
+      <NavLink to={link}>
+        {image !== null && (
+          <div className="imageContainer">
+            <img src={image} alt="Картинка уплыла :(" />
+            {date ? <div className="time">{date}</div> : null}
+          </div>
+        )}
+
+        <div className="titleContainer">
+          {" "}
+          {title}
+          <div>
+            <Arrow
+              width={"25px"}
+              height={"25px"}
+              fill={toggleIconColor("#83d9b8")}
+            />
           </div>
         </div>
-      </div>
+      </NavLink>
     </div>
-
-    /*   <div className="newsCard_wrapper">
-      <div className="newsCard_wrapper-image_container">
-        <img src="" alt="" />
-        <div className="newsCard_wrapper-image_container-date"></div>
-      </div>
-      <div className="newsCard_wrapper-content_container">
-        <div className="newsCard_wrapper-content_container-content">
-          <h5>Учебная практика</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi,
-            fugiat ut delectus mollitia minus, illum odit quae in neque suscipit
-            accusantium porro! Similique veniam nulla libero dicta, ullam harum
-            voluptatum?
-          </p>
-          <button className="newsCard_wrapper-content_container-content-btnCard_show"></button>
-          <button className="newsCard_wrapper-content_container-content-btnCard_nav"></button>
-        </div>
-      </div>
-    </div> */
   );
-};
+});
 export default NewsCard;

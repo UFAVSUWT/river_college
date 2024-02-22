@@ -359,16 +359,22 @@ const NavBar = observer(() => {
               )} ${isMegaMenu === "contacts" ? "show-menu-item" : ""}`}
             >
               <ul>
-                <NavLink onClick={() => megaMenuIsOut()} to={"home/reviews"}>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"contacts/reviews"}
+                >
                   <li>Отзывы и обратная связь</li>
                 </NavLink>
-                <NavLink onClick={() => megaMenuIsOut()} to={"home/userSurvey"}>
-                  <li>Анкетирование получателей услуг</li>
-                </NavLink>
-                <NavLink onClick={() => megaMenuIsOut()} to={"home/contacts"}>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"contacts/contactsPage"}
+                >
                   <li>Контакты</li>
                 </NavLink>
-                <NavLink onClick={() => megaMenuIsOut()} to={"live/vacancies"}>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"contacts/vacancies"}
+                >
                   <li>Вакансии</li>
                 </NavLink>
               </ul>

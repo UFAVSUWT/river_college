@@ -5,8 +5,9 @@ import ImageSlider from "../components/common/carousel/ImageSlider";
 import LiveCardContainer from "../components/common/liveCardContainer/LiveCardContainer";
 import ApplicantsPage from "../components/page/infoContainer/applicantsPage/ApplicantsPage";
 /* import EventsPages from "../components/page/infoContainer/eventsPages/EventsPages";
-import InfoPage from "../components/page/infoContainer/infoPage/InfoPage";
+
 import SecurityPage from "../components/page/infoContainer/securityPage/SecurityPage"; */
+import InfoPage from "../components/page/infoContainer/infoPage/InfoPage";
 import NewsNavbar from "../components/ui/newsNavbar/NewsNavbar";
 import PartnersContainer from "../components/ui/partners-container/partners-container";
 import { toggleClassName } from "../utils/disabled";
@@ -21,6 +22,7 @@ const Main = observer(() => {
     { title: "Историческая справка", path: "/home/historicalReference" },
     { title: "Новости", path: "/home/univercityNews" },
     { title: "План мероприятий", path: "/home/univercityEvents" },
+    { title: "Интервью с выпускниками", path: "live/interview" },
     { title: "Государство для людей", path: "/home/stateForPeople" },
   ];
   return (
@@ -29,7 +31,7 @@ const Main = observer(() => {
         <ChapterMenu linksArray={linksArray} />
       </div>
       <ImageSlider />
-      <div
+      {/*  <div
         className={toggleClassName(
           "_container",
           "_container-white",
@@ -54,7 +56,7 @@ const Main = observer(() => {
         <p style={{ textIndent: "25px" }}>
           Тел.: 8 (347) 215-14-00 доп. (301, 302).
         </p>
-      </div>
+      </div> */}
       <div
         className={toggleClassName(
           "_container",
@@ -74,7 +76,7 @@ const Main = observer(() => {
             "_container-contrast"
           )}
         >
-          {!params.element && <ApplicantsPage /> /* <InfoPage /> */}
+          {!params.element && <InfoPage />}
           {/*     {params.element === "events" ? <EventsPages /> : null} */}
           {params.element === "applicants" ? <ApplicantsPage /> : null}
           {/*       {params.element === "security" ? <SecurityPage /> : null} */}
