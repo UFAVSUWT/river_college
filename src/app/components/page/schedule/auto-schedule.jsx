@@ -329,7 +329,7 @@ const AutoSchedule = () => {
   useEffect(() => {
     setSelectedDayLessons(null);
   }, [course]);
-
+  console.log(teachersLessonsOnDay);
   const [bookmarkTeachers, setBookmarkTeachers] = useState(false);
 
   function toggleBookmarkTeachers(bookmarkTeachers) {
@@ -531,7 +531,6 @@ const AutoSchedule = () => {
             groups9={groups9}
             week={week}
             day={day}
-            /*   teachersLessonsOnDay={teachersLessonsOnDay} */
             setTeachersLessonsOnDay={setTeachersLessonsOnDay}
             selectedTeacher={selectedTeacher}
             setSelectedTeacher={setSelectedTeacher}
@@ -542,7 +541,6 @@ const AutoSchedule = () => {
             groups9={groups9}
             week={week}
             day={day}
-            /*    classLessonsOnDay={classLessonsOnDay} */
             setClassLessonsOnDay={setClassLessonsOnDay}
             selectedClass={selectedClass}
             setSelectedClass={setSelectedClass}

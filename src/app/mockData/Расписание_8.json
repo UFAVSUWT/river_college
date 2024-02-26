@@ -78,10 +78,10 @@
           "week" : 8,
           "date" : "26-02-2024",
           "teachers" : [{
-            "teacher_name" : "Акбердин В.М."
+            "teacher_name" : "Иванов Н.С."
           }],
           "auditories" : [{
-            "auditory_name" : "Бассейн1"
+            "auditory_name" : "Плац1"
           }]
         }]
       }, {
@@ -430,10 +430,10 @@
           "week" : 8,
           "date" : "26-02-2024",
           "teachers" : [{
-            "teacher_name" : "Акбердин В.М."
+            "teacher_name" : "Иванов Н.С."
           }],
           "auditories" : [{
-            "auditory_name" : "Бассейн1"
+            "auditory_name" : "Плац1"
           }]
         }]
       }, {
@@ -782,10 +782,10 @@
           "week" : 8,
           "date" : "26-02-2024",
           "teachers" : [{
-            "teacher_name" : "Акбердин В.М."
+            "teacher_name" : "Иванов Н.С."
           }],
           "auditories" : [{
-            "auditory_name" : "Бассейн1"
+            "auditory_name" : "Плац1"
           }]
         }]
       }, {
@@ -1134,10 +1134,10 @@
           "week" : 8,
           "date" : "26-02-2024",
           "teachers" : [{
-            "teacher_name" : "Акбердин В.М."
+            "teacher_name" : "Иванов Н.С."
           }],
           "auditories" : [{
-            "auditory_name" : "Бассейн1"
+            "auditory_name" : "Плац1"
           }]
         }]
       }, {
@@ -1484,10 +1484,10 @@
           "week" : 8,
           "date" : "26-02-2024",
           "teachers" : [{
-            "teacher_name" : "Акбердин В.М."
+            "teacher_name" : "Иванов Н.С."
           }],
           "auditories" : [{
-            "auditory_name" : "Бассейн1"
+            "auditory_name" : "Плац1"
           }]
         }]
       }, {
@@ -1821,10 +1821,10 @@
           "week" : 8,
           "date" : "26-02-2024",
           "teachers" : [{
-            "teacher_name" : "Акбердин В.М."
+            "teacher_name" : "Иванов Н.С."
           }],
           "auditories" : [{
-            "auditory_name" : "Бассейн1"
+            "auditory_name" : "Плац1"
           }]
         }]
       }, {
@@ -2173,10 +2173,10 @@
           "week" : 8,
           "date" : "26-02-2024",
           "teachers" : [{
-            "teacher_name" : "Акбердин В.М."
+            "teacher_name" : "Иванов Н.С."
           }],
           "auditories" : [{
-            "auditory_name" : "Бассейн1"
+            "auditory_name" : "Плац1"
           }]
         }]
       }, {
@@ -10344,7 +10344,7 @@
       "days" : [{
         "weekday" : 1,
         "lessons" : [{
-          "subject" : "Иностранный язык в профессиональной деятельности",
+          "subject" : "МДК 01.01.03 Навигационная гидрометеорология",
           "type" : "лек.",
           "subgroup" : 0,
           "time_start" : "14:30",
@@ -10353,10 +10353,10 @@
           "week" : 8,
           "date" : "26-02-2024",
           "teachers" : [{
-            "teacher_name" : "Мухутдинова Л.И."
+            "teacher_name" : "Еникеев А.Г."
           }],
           "auditories" : [{
-            "auditory_name" : "33"
+            "auditory_name" : "218"
           }]
         }, {
           "subject" : "МДК 04.01 Основы анализа эффективности работы судна с применением информационных технологий",
@@ -10372,56 +10372,10 @@
           }],
           "auditories" : [{
             "auditory_name" : "37"
-          }]
-        }, {
-          "subject" : "МДК 01.01.03 Навигационная гидрометеорология",
-          "type" : "лек.",
-          "subgroup" : 0,
-          "time_start" : "18:00",
-          "time_end" : "19:35",
-          "time" : 6,
-          "week" : 8,
-          "date" : "26-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Еникеев А.Г."
-          }],
-          "auditories" : [{
-            "auditory_name" : "40"
           }]
         }]
       }, {
-        "weekday" : 2,
-        "lessons" : [{
-          "subject" : "МДК 04.01 Основы анализа эффективности работы судна с применением информационных технологий",
-          "type" : "лек.",
-          "subgroup" : 0,
-          "time_start" : "16:15",
-          "time_end" : "17:55",
-          "time" : 5,
-          "week" : 8,
-          "date" : "27-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Филиппова С.В."
-          }],
-          "auditories" : [{
-            "auditory_name" : "37"
-          }]
-        }, {
-          "subject" : "МДК 01.02 04 Тренажерная подготовка. Использование РЛС и САРП",
-          "type" : "лек.",
-          "subgroup" : 0,
-          "time_start" : "18:00",
-          "time_end" : "19:35",
-          "time" : 6,
-          "week" : 8,
-          "date" : "27-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Еникеев А.Г."
-          }],
-          "auditories" : [{
-            "auditory_name" : "40"
-          }]
-        }]
+        "weekday" : 2
       }, {
         "weekday" : 3,
         "lessons" : [{
@@ -10575,7 +10529,7 @@
       "days" : [{
         "weekday" : 1,
         "lessons" : [{
-          "subject" : "Иностранный язык в профессиональной деятельности",
+          "subject" : "МДК 01.01.03 Навигационная гидрометеорология",
           "type" : "лек.",
           "subgroup" : 0,
           "time_start" : "14:30",
@@ -10584,10 +10538,10 @@
           "week" : 8,
           "date" : "26-02-2024",
           "teachers" : [{
-            "teacher_name" : "Мухутдинова Л.И."
+            "teacher_name" : "Еникеев А.Г."
           }],
           "auditories" : [{
-            "auditory_name" : "33"
+            "auditory_name" : "218"
           }]
         }, {
           "subject" : "МДК 04.01 Основы анализа эффективности работы судна с применением информационных технологий",
@@ -10605,8 +10559,8 @@
             "auditory_name" : "37"
           }]
         }, {
-          "subject" : "МДК 01.01.03 Навигационная гидрометеорология",
-          "type" : "лек.",
+          "subject" : "МДК 01.03.02 Судовые энергетические установки и их эксплуатация (включая тренажер вахтенного механик",
+          "type" : "конс.",
           "subgroup" : 0,
           "time_start" : "18:00",
           "time_end" : "19:35",
@@ -10614,17 +10568,17 @@
           "week" : 8,
           "date" : "26-02-2024",
           "teachers" : [{
-            "teacher_name" : "Еникеев А.Г."
+            "teacher_name" : "Иванов Г.Н."
           }],
           "auditories" : [{
-            "auditory_name" : "40"
+            "auditory_name" : "5"
           }]
         }]
       }, {
         "weekday" : 2,
         "lessons" : [{
-          "subject" : "МДК 04.01 Основы анализа эффективности работы судна с применением информационных технологий",
-          "type" : "лек.",
+          "subject" : "МДК 01.03.02 Судовые энергетические установки и их эксплуатация (включая тренажер вахтенного механик",
+          "type" : "экзамен",
           "subgroup" : 0,
           "time_start" : "16:15",
           "time_end" : "17:55",
@@ -10632,25 +10586,10 @@
           "week" : 8,
           "date" : "27-02-2024",
           "teachers" : [{
-            "teacher_name" : "Филиппова С.В."
+            "teacher_name" : "Иванов Г.Н."
           }],
           "auditories" : [{
-            "auditory_name" : "37"
-          }]
-        }, {
-          "subject" : "МДК 01.02 04 Тренажерная подготовка. Использование РЛС и САРП",
-          "type" : "лек.",
-          "subgroup" : 0,
-          "time_start" : "18:00",
-          "time_end" : "19:35",
-          "time" : 6,
-          "week" : 8,
-          "date" : "27-02-2024",
-          "teachers" : [{
-            "teacher_name" : "Еникеев А.Г."
-          }],
-          "auditories" : [{
-            "auditory_name" : "40"
+            "auditory_name" : "5"
           }]
         }]
       }, {

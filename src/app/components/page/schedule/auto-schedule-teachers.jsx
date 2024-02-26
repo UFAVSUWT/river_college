@@ -1,7 +1,7 @@
 import { Select } from "antd";
 import React, { useEffect, useState } from "react";
 import _ from "lodash";
-import PropTypes from "prop-types";
+
 const AutoScheduleTeachers = ({
   groups8,
   groups9,
@@ -96,9 +96,12 @@ const AutoScheduleTeachers = ({
         )
       );
     });
+    console.log(lesOn9week);
     setLessonsOfSelectedTeacher9(lesOn9week);
   }, [selectedTeacher]);
   useEffect(() => {
+    console.log(day);
+    console.log(day);
     if (lessonsOfSelectedTeacher8 && lessonsOfSelectedTeacher9 && day && week) {
       /* меняем номер недели!!!!!!!!!!!!!!!!!!!!! */
       if (week === 8) {
