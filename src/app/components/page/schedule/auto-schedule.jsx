@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import raspisanieJSON8 from "../../../mockData/Расписание_6.json";
-import raspisanieJSON9 from "../../../mockData/Расписание_7.json";
+import raspisanieJSON8 from "../../../mockData/Расписание_8.json";
+import raspisanieJSON9 from "../../../mockData/Расписание_9.json";
 import locale from "antd/es/date-picker/locale/ru_RU";
 import "dayjs/locale/ru";
 
@@ -14,8 +14,8 @@ import AutoScheduleTeachers from "./auto-schedule-teachers";
 import AutoScheduleGroupsWrapper from "./auto-schedule-groups-wrapper";
 import AutoScheduleTeacherClassWrapper from "./auto-schedule-teacher-class-wrapper";
 import AutoScheduleClass from "./auto-schedule-class";
-import lastWeek from "../../../assets/doc/schedule/7 неделя 2 семестр.docx";
-import newWeek from "../../../assets/doc/schedule/8 неделя 2 семестр.docx";
+import lastWeek from "../../../assets/doc/schedule/8 неделя 2 семестр.docx";
+import newWeek from "../../../assets/doc/schedule/9 неделя 2 семестр.docx";
 const AutoSchedule = () => {
   const raspisanie8 = JSON.parse(JSON.stringify(raspisanieJSON8));
   const groups8 = raspisanie8.faculties[0].groups;
@@ -146,24 +146,24 @@ const AutoSchedule = () => {
       return 5;
     } else if (day === "2-03-2024") {
       return 6;
-    } else if (day === "19-02-2024") {
+    } else if (day === "4-03-2024") {
       return 1;
-    } else if (day === "20-02-2024") {
+    } else if (day === "5-03-2024") {
       return 2;
-    } else if (day === "21-02-2024") {
+    } else if (day === "6-03-2024") {
       return 3;
-    } else if (day === "22-02-2024") {
+    } else if (day === "7-03-2024") {
       return 4;
-    } else if (day === "23-02-2024") {
+    } else if (day === "8-03-2024") {
       return 5;
-    } else if (day === "24-02-2024") {
+    } else if (day === "9-03-2024") {
       return 6;
     }
   }
   useEffect(() => {
     if (day === "26-02-2024") {
       setWeek(8);
-      /*  setDisabledDecreaseButton(true); // не забываем поменять!!!!!!!!!!  */
+      setDisabledDecreaseButton(true); // не забываем поменять!!!!!!!!!!
     } else if (day === "27-02-2024") {
       setWeek(8);
     } else if (day === "28-02-2024") {
@@ -174,21 +174,21 @@ const AutoSchedule = () => {
       setWeek(8);
     } else if (day === "2-03-2024") {
       setWeek(8);
+      /*  setDisabledIncreaseButton(day);  */ // не забываем поменять!!!!!!!!!!
+    } else if (day === "4-03-2024") {
+      setWeek(9);
+      /*  setDisabledDecreaseButton(true); */ // не забываем поменять!!!!!!!!!!
+    } else if (day === "5-03-2024") {
+      setWeek(9);
+    } else if (day === "6-03-2024") {
+      setWeek(9);
+    } else if (day === "7-03-2024") {
+      setWeek(9);
+    } else if (day === "8-03-2024") {
+      setWeek(9);
+    } else if (day === "9-03-2024") {
+      setWeek(9);
       setDisabledIncreaseButton(day); // не забываем поменять!!!!!!!!!!
-    } else if (day === "19-02-2024") {
-      setWeek(7);
-      setDisabledDecreaseButton(true); // не забываем поменять!!!!!!!!!!
-    } else if (day === "20-02-2024") {
-      setWeek(7);
-    } else if (day === "21-02-2024") {
-      setWeek(7);
-    } else if (day === "22-02-2024") {
-      setWeek(7);
-    } else if (day === "23-02-2024") {
-      setWeek(7);
-    } else if (day === "24-02-2024") {
-      setWeek(7);
-      /*  setDisabledIncreaseButton(day); // не забываем поменять!!!!!!!!!! */
     }
   }, [day]);
 
@@ -206,7 +206,7 @@ const AutoSchedule = () => {
             (e) => e.weekday === selectedDayNumber
           )
         );
-      } else if (week === 7) {
+      } else if (week === 9) {
         setSelectedDayLessons(
           classesOfSelectedGroupOnWeek9[0]?.filter(
             (e) => e.weekday === selectedDayNumber
@@ -257,8 +257,8 @@ const AutoSchedule = () => {
   /* делаем активными дни в календаря */
 
   function disabledDate(current) {
-    const startDate = new Date(2024, 1, 19); // не забываем про месяцы -1
-    const endDate = new Date(2024, 2, 3); // дата окончания недели должна быть +1
+    const startDate = new Date(2024, 1, 26); // не забываем про месяцы -1
+    const endDate = new Date(2024, 2, 9); // дата окончания недели должна быть +1
     return (
       current.$d < startDate || // проверяем, что дата находится в заданном диапазоне
       current.$d > endDate ||
@@ -501,7 +501,7 @@ const AutoSchedule = () => {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                7 неделя
+                8 неделя
               </a>
 
               <a
@@ -510,7 +510,7 @@ const AutoSchedule = () => {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                8 неделя
+                9 неделя
               </a>
             </div>
           </Col>
