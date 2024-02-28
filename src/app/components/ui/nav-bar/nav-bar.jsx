@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { observer } from "mobx-react-lite";
 import { toggleClassName } from "../../../utils/disabled";
 import PhoneMenu from "../../common/phoneMenu/PhoneMenu";
-const NavBar = observer(() => {
+const NavBar = observer(({ showModal }) => {
   const [isMegaMenu, setIsMegaMenu] = useState(false); //переменная для отображения контента контейнера меню, когда мышка на элементе меню
   const [isElementOfMenu, setIsElementOfMenu] = useState(""); // дублирующая переменная для отображения контента в контейнере меню, когда курсор находится на самом контейнере
   const [isMegaMenuContainerIsActive, setIsMegaMenuContainerIsActive] =
@@ -371,6 +371,7 @@ const NavBar = observer(() => {
                 >
                   <li>Контакты</li>
                 </NavLink>
+                <li onClick={showModal}>Виртуальная приёмная</li>
                 <NavLink
                   onClick={() => megaMenuIsOut()}
                   to={"contacts/vacancies"}
