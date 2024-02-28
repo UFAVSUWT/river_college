@@ -7,6 +7,7 @@ import fontSize from "./store/fontSize";
 import LeftPanel from "./components/ui/left-panel/left-panel";
 import ScrollUp from "./components/ui/scroll-up/scroll-up";
 import { toggleClassName } from "./utils/disabled";
+import QuizButton from "./components/ui/quiz-button/quiz-button";
 const App = observer(() => {
   const element = useRoutes(routes());
   const toggleFontSize = () => {
@@ -36,6 +37,7 @@ const App = observer(() => {
         >
           {element}
           <ScrollUp />
+          <QuizButton />
         </div>
         <div className="footer-wrapper">
           <Footer />
