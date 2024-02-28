@@ -98,7 +98,7 @@ const PhoneMenu = () => {
             </li>
             <li onClick={() => setNav(!nav)}>
               <NavLink to="training/aboutCdo">
-                Дополнительное образование
+                Дополнительное образование и профессиональное обучение
               </NavLink>
             </li>
             <li onClick={() => setNav(!nav)}>

@@ -64,9 +64,6 @@ const Contacts = () => {
               width="50%"
               height={"50%"}
             />
-            <div className="applicantsEnrollee-header-title">
-              Свяжи свою <br /> жизнь с морем!
-            </div>
           </div>
         </div>
         <div>

@@ -20,7 +20,10 @@ const NavBar = observer(({ showModal }) => {
     } else if (event.target.innerHTML === "Абитуриенту") {
       setIsMegaMenu("enrolle");
       setIsElementOfMenu("enrolle");
-    } else if (event.target.innerHTML === "Дополнительное образование") {
+    } else if (
+      event.target.innerHTML ===
+      "Дополнительное образование и профессиональное обучение"
+    ) {
       setIsMegaMenu("additional");
       setIsElementOfMenu("additional");
     } else if (event.target.innerHTML === "Студенческая жизнь") {
@@ -112,8 +115,12 @@ const NavBar = observer(({ showModal }) => {
                 className={`${
                   isMegaMenu === "additional" ? "show-menu-list" : ""
                 }`}
+                style={{
+                  width: "300px",
+                  textAlign: "center",
+                }}
               >
-                Дополнительное образование
+                Дополнительное образование и профессиональное обучение
               </li>
               <li
                 onMouseEnter={(e) => onMouseEnter(e)}
@@ -314,13 +321,46 @@ const NavBar = observer(({ showModal }) => {
                   onClick={() => megaMenuIsOut()}
                   to={"training/advancedTraining"}
                 >
-                  <li>Программы повышения квалификации</li>
+                  <li>
+                    Программы повышения квалификации членов экипажей судов
+                    внутреннего водного транспорта
+                  </li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"training/obsherazvivaushie-programmi"}
+                >
+                  <li>
+                    Программы дополнительного образование детей и взрослых
+                  </li>
+                </NavLink>
+
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"training/programmi-prof-obuchenia"}
+                >
+                  <li>Программы профессионального обучения</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"training/programmi-prof-perepodgotovka"}
+                >
+                  <li>
+                    Программы повышения квалификации и профессиональной
+                    переподготовки
+                  </li>
                 </NavLink>
                 <NavLink
                   onClick={() => megaMenuIsOut()}
                   to={"training/distanceLearning"}
                 >
                   <li>Дистанционное обучение</li>
+                </NavLink>
+                <NavLink
+                  onClick={() => megaMenuIsOut()}
+                  to={"training/contacts"}
+                >
+                  <li>Контакты</li>
                 </NavLink>
               </ul>
             </div>

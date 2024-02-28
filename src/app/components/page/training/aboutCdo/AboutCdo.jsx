@@ -4,7 +4,6 @@ import React from "react";
 import { toggleClassName } from "../../../../utils/disabled";
 import Ustav from "../../../../assets/pdf/documentPage/Ustav_2017.pdf";
 import Licenz from "../../../../assets/pdf/documentPage/licenz_vip20220916.pdf";
-import Pologenie from "../../../../assets/pdf/documentPage/Pologen_2022.pdf";
 import Akkr from "../../../../assets/pdf/documentPage/Akkr_VSUWT_2019.pdf";
 import PolozObObuch from "../../../../assets/pdf/training/polozObObuch.PDF";
 import PolozObPlatn from "../../../../assets/pdf/training/polozObPlatn.pdf";
@@ -14,7 +13,6 @@ import ObrazecProfRab from "../../../../assets/pdf/training/obrazecProfRab.pdf";
 import TrenazPodg from "../../../../assets/pdf/training/trenazPodg.pdf";
 import PovKval from "../../../../assets/pdf/training/povKval.pdf";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
-import { NavLink } from "react-router-dom";
 
 const AboutCdo = observer(() => {
   return (
@@ -47,7 +45,7 @@ const AboutCdo = observer(() => {
                 target={"_blank"}
                 rel="noreferrer"
               >
-               +7 (347) 215-14-00 доб. 3
+                +7 (347) 215-14-00 доб. 3
               </a>
             </li>
             <li>
@@ -128,11 +126,9 @@ const AboutCdo = observer(() => {
             должности служащего без повышения образовательного уровня.
           </li>
         </ul>
-        <p>Документация</p>
+
         <ul>
-          <li>
-            Уставные документы, свидетельства, лицензии, образцы документов
-          </li>
+          <li>Уставные документы, свидетельства и лицензии</li>
           <ul>
             <li>
               <a
@@ -218,34 +214,7 @@ const AboutCdo = observer(() => {
                 Свидетельство об аккредитации образовательной организации
               </a>
             </li>
-            <li>
-              <a
-                href={Pologenie}
-                className={toggleClassName(
-                  "education__link",
-                  "education__link-white",
-                  "education__link-black",
-                  "education__link-contrast"
-                )}
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <PDF width={"25px"} height={"25px"} />
-              </a>{" "}
-              <a
-                href={Pologenie}
-                className={toggleClassName(
-                  "education__link",
-                  "education__link-white",
-                  "education__link-black",
-                  "education__link-contrast"
-                )}
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                Положение о ДПО
-              </a>
-            </li>
+
             <li>
               <a
                 href={PolozObObuch}
@@ -444,19 +413,6 @@ const AboutCdo = observer(() => {
               >
                 Образец удостоверения о повышении квалификации
               </a>
-            </li>
-            <li>
-              <NavLink
-                to={"../professionalTrainingPrograms"}
-                className={toggleClassName(
-                  "education__link",
-                  "education__link-white",
-                  "education__link-black",
-                  "education__link-contrast"
-                )}
-              >
-                Перечень программ профессионального обучения
-              </NavLink>
             </li>
           </ul>
         </ul>

@@ -110,11 +110,16 @@ import Timofeev from "./components/page/live/interview/timofeev";
 import Tokmakov from "./components/page/live/interview/tokmakov";
 import Abkadirov from "./components/page/live/interview/abkadirov";
 import Portnyagina from "./components/page/live/interview/portnyagina";
-import { element } from "prop-types";
+
 import OneNewsPage1 from "./components/page/one-news-page/one-news-page1";
 import OneNewsPage2 from "./components/page/one-news-page/one-news-page2";
 import OneNewsPage3 from "./components/page/one-news-page/one-news-page3";
 import OneNewsPage4 from "./components/page/one-news-page/one-news-page4";
+import ObsherazvivaushieProgrammi from "./components/page/training/obsherazvivaushie-programmi/obsherazvivaushie-programmi";
+import ProgrammiProfObuchenia from "./components/page/training/programmi-prof-obuchenia/programmi-prof-obuchenia";
+import ProgrammiProfPerepodgotovki from "./components/page/training/programmi-prof-perepodgotovki/programmi-prof-perepodgotovki";
+import ContactsCdo from "./components/page/training/contacts/contacts";
+
 const routes = () => [
   {
     path: "",
@@ -534,6 +539,22 @@ const routes = () => [
       {
         path: "addEducationProgramsChildrenAdults",
         element: <AddEducationProgramsChildrenAdults />,
+      },
+      {
+        path: "obsherazvivaushie-programmi",
+        element: <ObsherazvivaushieProgrammi />,
+      },
+      {
+        path: "programmi-prof-obuchenia",
+        element: <ProgrammiProfObuchenia />,
+      },
+      {
+        path: "programmi-prof-perepodgotovka",
+        element: <ProgrammiProfPerepodgotovki />,
+      },
+      {
+        path: "contacts",
+        element: <ContactsCdo />,
       },
     ],
   },
