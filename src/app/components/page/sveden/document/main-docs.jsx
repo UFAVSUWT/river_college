@@ -31,9 +31,10 @@ import Plan_FHD_2023 from "../../../../assets/doc/documentPage/План ФХД 2
 
 import PolozOvz from "../../../../assets/pdf/documentPage/Pologenie_ucheb_prozess_ovz_2017.pdf";
 import PolozPromItog from "../../../../assets/pdf/documentPage/Pologenie_promegut_itogov_attest2017.pdf";
+import PolozPromItogDot from "../../../../assets/pdf/documentPage/Pologenie_promegut_itogov_attest2017Dot.PDF";
 import Pologenie_GIA from "../../../../assets/pdf/documentPage/Pologenie_GIA.pdf";
 import Perev21 from "../../../../assets/pdf/documentPage/Perevod_UF_2021.pdf";
-import Otchisl21 from "../../../../assets/pdf/documentPage/Otchisl_UF_2021.pdf";
+import Otchisl24 from "../../../../assets/pdf/documentPage/Otchisl_UF_2021.pdf";
 
 import Otchisl17 from "../../../../assets/pdf/documentPage/Otnoshenie_2017.pdf";
 
@@ -367,6 +368,14 @@ const MainDocs = ({ isActive }) => {
                 аттестации обучающихся
               </a>
             </li>
+            <li itemProp="tekKontrolDocLink" className="doc__item">
+              <PDF height={"40px"} width={"40px"} />
+              <a href={PolozPromItogDot} target={"_blank"} rel="noreferrer">
+                Положение о проведении текущего контроля и промежуточной
+                аттестации обучающихся c применением дистанционных
+                образовательных технологий
+              </a>
+            </li>
             <li className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={Pologenie_GIA} target={"_blank"} rel="noreferrer">
@@ -418,12 +427,12 @@ const MainDocs = ({ isActive }) => {
             </li>
             <li className="doc__item">
               <PDF height={"40px"} width={"40px"} />
-              <a href={Otchisl21} target={"_blank"} rel="noreferrer">
+              <a href={Otchisl24} target={"_blank"} rel="noreferrer">
                 Положение об отчислении обучающихся{" "}
               </a>
             </li>
-            <li style={{ backgroundColor: "red" }} className="doc__item">
-              <a href={"/"} target={"_blank"} rel="noreferrer">
+            <li className="doc__item">
+              <a href={"/sveden/education"} target={"_blank"} rel="noreferrer">
                 {console.log("Исправь ссылку")}
                 Информация о результатах перевода, восстановления и отчисления
               </a>
