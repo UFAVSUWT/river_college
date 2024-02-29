@@ -57,7 +57,7 @@ const QuizButton = ({ showModal, isModalOpen, setIsModalOpen }) => {
             <div className="quiz-button-content">
               <h2>Уважаемые посетители!</h2>
               <p>
-                Вы можете задать вопрос, воспользовавшись услугами вертуальной
+                Вы можете задать вопрос, воспользовавшись услугами виртуальной
                 приёмной!
               </p>
               <p>
