@@ -235,6 +235,9 @@ const NavBar = observer(({ showModal }) => {
                 >
                   <li>Служба трудоустройства</li>
                 </NavLink>
+                <NavLink onClick={() => megaMenuIsOut()} to={"learning/health"}>
+                  <li>Здоровье</li>
+                </NavLink>
                 <NavLink
                   onClick={() => megaMenuIsOut()}
                   to={"learning/educationsPlatforms"}

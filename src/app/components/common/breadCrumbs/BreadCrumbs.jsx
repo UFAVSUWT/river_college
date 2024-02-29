@@ -128,6 +128,9 @@ const BreadCrumbs = observer(() => {
             case "learning":
               linkName = null;
               break;
+            case "health":
+              linkName = "/ Здоровье ";
+              break;
             case "cadets":
               linkName = "/ Курсантам ";
               break;

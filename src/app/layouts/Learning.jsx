@@ -23,9 +23,24 @@ const Learning = observer(() => {
       title: "Служба трудоустройства",
       path: "employmentService",
     },
+    {
+      title: "Здоровье",
+      path: "health",
+    },
+    {
+      title: "Сторонние электронные образовательные и информационные ресурсы",
+      path: "educationsPlatforms",
+    },
   ];
   return (
-    <div className={` ${toggleClassName("_container-main min-height", "_container-white min-height-white"," _container-black min-height-black","_container-contrast min-height-contrast",)}`}>
+    <div
+      className={` ${toggleClassName(
+        "_container-main min-height",
+        "_container-white min-height-white",
+        " _container-black min-height-black",
+        "_container-contrast min-height-contrast"
+      )}`}
+    >
       <BreadCrumbs />
       <div className="chapter__menu-show">
         <ChapterMenu linksArray={linksMenu} />

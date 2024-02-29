@@ -40,25 +40,25 @@ const Training = observer(() => {
   ];
   return (
     <div
-      className={`sveden__container ${toggleClassName(
-        "_container",
-        "_container-white",
-        "_container-black",
-        "_container-contrast"
-      )} background-blue`}
+      className={` ${toggleClassName(
+        "_container-main min-height",
+        "_container-white min-height-white",
+        " _container-black min-height-black",
+        "_container-contrast min-height-contrast"
+      )}`}
     >
+      <BreadCrumbs />
+      <div className="chapter__menu-show">
+        <ChapterMenu linksArray={linksMenu} />
+      </div>
       <div
-        className={` ${toggleClassName(
-          "min-height",
-          "min-height-white",
-          "min-height-black",
-          "min-height-contrast"
-        )}`}
+        className={toggleClassName(
+          "education__container",
+          "education__container-white",
+          "education__container-black",
+          "education__container-contrast"
+        )}
       >
-        <BreadCrumbs />
-        <div className="chapter__menu-show">
-          <ChapterMenu linksArray={linksMenu} />
-        </div>
         <Outlet />
       </div>
     </div>

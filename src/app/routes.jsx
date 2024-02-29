@@ -119,6 +119,7 @@ import ObsherazvivaushieProgrammi from "./components/page/training/obsherazvivau
 import ProgrammiProfObuchenia from "./components/page/training/programmi-prof-obuchenia/programmi-prof-obuchenia";
 import ProgrammiProfPerepodgotovki from "./components/page/training/programmi-prof-perepodgotovki/programmi-prof-perepodgotovki";
 import ContactsCdo from "./components/page/training/contacts/contacts";
+import Health from "./components/page/learning/health/health";
 
 const routes = () => [
   {
@@ -471,6 +472,10 @@ const routes = () => [
     path: "learning",
     element: <Learning />,
     children: [
+      {
+        path: "health",
+        element: <Health />,
+      },
       {
         path: "practice",
         element: <Practice />,
