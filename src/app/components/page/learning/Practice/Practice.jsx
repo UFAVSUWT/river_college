@@ -9,6 +9,7 @@ import Port from "../../../../assets/img/education/port.jpg";
 import PractZaochn from "../../../../assets/pdf/practice/grafik_praktik_2023_zaoch.pdf";
 import PractOchn from "../../../../assets/pdf/practice/grafik_praktik_2023_ochn.pdf";
 import bazi from "../../../../assets/pdf/practice/Базы учебной и производственной (по профилю специальности и преддипломной) практики.pdf";
+import lopr from "../../../../assets/pdf/practice/lopr.pdf";
 import { observer } from "mobx-react-lite";
 import { toggleClassName } from "../../../../utils/disabled";
 const Practice = observer(() => {
@@ -174,10 +175,6 @@ const Practice = observer(() => {
             </li>
           </ol>
           <section>
-            <h2>
-              Презентации ведущих предприятий водного транспорта Республики
-              Башкортостан
-            </h2>
             <ul>
               <li itemProp="localActStud" className="doc__item">
                 <PDF height={"40px"} width={"40px"} />{" "}
@@ -238,6 +235,21 @@ const Practice = observer(() => {
                   )}
                 >
                   ООО Судоремонтно-судостроительный завод
+                </a>
+              </li>
+              <li>
+                <a
+                  href={lopr}
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  ПАО «ЛОРП»
                 </a>
               </li>
             </ul>
