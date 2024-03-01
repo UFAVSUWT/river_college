@@ -187,6 +187,9 @@ const NavBar = observer(({ showModal }) => {
                 >
                   <li>План мероприятий</li>
                 </NavLink>
+                <NavLink onClick={() => megaMenuIsOut()} to={"home/services"}>
+                  <li>Предоставляемые услуги</li>
+                </NavLink>
                 <NavLink
                   onClick={() => megaMenuIsOut()}
                   to={"home/stateForPeople"}

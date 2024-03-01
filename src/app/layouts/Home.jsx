@@ -10,6 +10,7 @@ const Home = observer(() => {
     { title: "Историческая справка", path: "/home/historicalReference" },
     { title: "Новости", path: "/home/univercityNews" },
     { title: "План мероприятий", path: "/home/univercityEvents" },
+    { title: "Предоставляемые услуги", path: "/home/services" },
     { title: "Государство для людей", path: "/home/stateForPeople" },
   ];
   return (

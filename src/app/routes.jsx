@@ -120,6 +120,7 @@ import ProgrammiProfObuchenia from "./components/page/training/programmi-prof-ob
 import ProgrammiProfPerepodgotovki from "./components/page/training/programmi-prof-perepodgotovki/programmi-prof-perepodgotovki";
 import ContactsCdo from "./components/page/training/contacts/contacts";
 import Health from "./components/page/learning/health/health";
+import Services from "./components/page/homePage/services/services";
 
 const routes = () => [
   {
@@ -586,6 +587,10 @@ const routes = () => [
     path: "home",
     element: <Home />,
     children: [
+      {
+        path: "services",
+        element: <Services />,
+      },
       {
         path: "aboutBranch",
         element: <AboutBranch />,

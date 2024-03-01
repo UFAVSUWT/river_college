@@ -8,7 +8,7 @@ const InfoOResultatahPerevoda = () => {
     <>
       <TableWrapper
         title="Информация о результатах перевода, восстановления и отчисления на
-        01.02.2024"
+        01.03.2024"
       >
         <table>
           <tbody>
@@ -81,7 +81,7 @@ const InfoOResultatahPerevoda = () => {
               <td itemProp="numberOut">-</td>
               <td itemProp="numberTo">-</td>
               <td itemProp="numberRes">-</td>
-              <td itemProp="numberExp">7</td>
+              <td itemProp="numberExp">8</td>
             </tr>
             <tr></tr>
             <tr></tr>
@@ -98,10 +98,10 @@ const InfoOResultatahPerevoda = () => {
                 среднее профессиональное образование
               </td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberOut">2</td>
+              <td itemProp="numberOut">4</td>
               <td itemProp="numberTo">4</td>
               <td itemProp="numberRes">-</td>
-              <td itemProp="numberExp">3</td>
+              <td itemProp="numberExp">5</td>
             </tr>
             <tr itemProp="eduPerevod">
               <td itemProp="eduForm">заочная</td>
@@ -125,7 +125,7 @@ const InfoOResultatahPerevoda = () => {
               <td itemProp="numberOut">-</td>
               <td itemProp="numberTo">3</td>
               <td itemProp="numberRes">-</td>
-              <td itemProp="numberExp">5</td>
+              <td itemProp="numberExp">6</td>
             </tr>
             <tr itemProp="eduPerevod">
               <td itemProp="eduForm">заочная</td>
@@ -146,7 +146,7 @@ const InfoOResultatahPerevoda = () => {
                 среднее профессиональное образование
               </td>
               <td itemProp="eduForm">очная</td>
-              <td itemProp="numberOut">2</td>
+              <td itemProp="numberOut">3</td>
               <td itemProp="numberTo">1</td>
               <td itemProp="numberRes">-</td>
               <td itemProp="numberExp">2</td>
@@ -171,7 +171,7 @@ const InfoOResultatahPerevoda = () => {
             rel="noreferrer"
           >
             Информация о результатах перевода, восстановления и отчисления на
-            01.02.2024
+            01.03.2024
           </a>
         </li>
       </ul>

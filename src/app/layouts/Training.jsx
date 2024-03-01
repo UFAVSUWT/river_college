@@ -16,7 +16,7 @@ const Training = observer(() => {
       path: "advancedTraining",
     },
     {
-      title: "Программы дополнительного образование детей и взрослых",
+      title: "Программы дополнительного образования детей и взрослых",
       path: "obsherazvivaushie-programmi",
     },
     {
