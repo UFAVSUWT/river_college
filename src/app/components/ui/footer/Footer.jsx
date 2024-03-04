@@ -57,7 +57,10 @@ const Footer = observer(() => {
                 <td>Тел./факс:</td>
                 <td>8(347) 215-14-00</td>
               </tr>
-     
+              <tr>
+                <td>Тел.доверия:</td>
+                <td>8(347) 215-14-00 # 7</td>
+              </tr>
               <tr>
                 <td>e-mail:</td>
                 <td>uf-vsuwt@uf-vsuwt.ru</td>

@@ -21,7 +21,7 @@ const Contacts = () => {
             <p>
               Сб, Вс: <b>Выходной</b>
             </p>
-            <h1>Возникли вопросы? Позвоните нам или напишите письмо:</h1>
+            <h2>Возникли вопросы? Позвоните нам или напишите письмо:</h2>
             <ul>
               <li>
                 <a
@@ -53,6 +53,27 @@ const Contacts = () => {
                   )}
                 >
                   uf-vsuwt@uf-vsuwt.ru
+                </a>
+              </li>
+            </ul>
+            <h2>
+              Также для Вас доступен телефон доверия, по которому Вы можете
+              обратиться с любым вопросом:
+            </h2>
+            <ul>
+              <li>
+                <a
+                  href="tel:+7 (347) 2151400"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  8 (347) 215-14-00 # 7
                 </a>
               </li>
             </ul>
