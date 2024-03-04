@@ -2,7 +2,6 @@ import React from "react";
 import { toggleClassName } from "../../../../utils/disabled";
 import { observer } from "mobx-react-lite";
 import { ReactComponent as WORD } from "../../../../assets/svg/office/word.svg";
-import perech from "../../../../assets/doc/training/Перечень дополнительных общеразвивающих программ .docx";
 import TableWrapper from "../../../common/tableWrapper/TableWrapper";
 import vokal from "../../../../assets/doc/training/программы/вокал.docx";
 import voleibol from "../../../../assets/doc/training/программы/волейбол.docx";
@@ -28,36 +27,7 @@ const ObsherazvivaushieProgrammi = observer(() => {
         <h1 className="education__container-title">
           Программы дополнительного образование детей и взрослых
         </h1>
-        <ul>
-          <li>
-            <a
-              href={perech}
-              className={toggleClassName(
-                "education__link",
-                "education__link-white",
-                "education__link-black",
-                "education__link-contrast"
-              )}
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              <WORD width={"25px"} height={"25px"} />
-            </a>{" "}
-            <a
-              href={perech}
-              className={toggleClassName(
-                "education__link",
-                "education__link-white",
-                "education__link-black",
-                "education__link-contrast"
-              )}
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              Программы дополнительного образование детей и взрослых
-            </a>
-          </li>
-        </ul>
+
         <ul>
           <li>
             <a
@@ -331,7 +301,7 @@ const ObsherazvivaushieProgrammi = observer(() => {
                   Дополнительная общеразвивающая программа «Английский язык»
                 </td>
                 <td>72</td>
-                <td>4000</td>
+                <td>4100</td>
                 <td>18</td>
                 <td>36</td>
                 <td>
@@ -339,7 +309,7 @@ const ObsherazvivaushieProgrammi = observer(() => {
                   образовательных технологий и электронного обучения
                 </td>
                 <td>
-                  Тел.: 8 (347) 278-28-86 Отдел конвенционной подготовки и
+                  Тел.: 8 (347) 215-14-00 Отдел конвенционной подготовки и
                   дополнительного образования okpdo@uf-vsuwt.ru ул.Ахметова, 275
                 </td>
               </tr>
@@ -347,7 +317,7 @@ const ObsherazvivaushieProgrammi = observer(() => {
                 <td>2.</td>
                 <td>Дополнительная общеразвивающая программа «Математика»</td>
                 <td>72</td>
-                <td>4900</td>
+                <td>5000</td>
                 <td>15</td>
                 <td>36</td>
                 <td>
@@ -355,7 +325,7 @@ const ObsherazvivaushieProgrammi = observer(() => {
                   образовательных технологий и электронного обучения
                 </td>
                 <td>
-                  Тел.: 8 (347) 278-28-86 Отдел конвенционной подготовки и
+                  Тел.: 8 (347) 215-14-00 Отдел конвенционной подготовки и
                   дополнительного образования okpdo@uf-vsuwt.ru ул.Ахметова, 275
                 </td>
               </tr>

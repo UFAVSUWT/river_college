@@ -1,15 +1,14 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName } from "../../../../../../utils/disabled";
-import Rule from "../../../../../../assets/pdf/applicant/pravila_priema_2023.pdf";
-import PrikazRule from "../../../../../../assets/pdf/applicant/prikaz_pravila_priema_2023.pdf";
+
 import InfoMedOsmotr from "../../../../../../assets/pdf/applicant/infoMedOsmotr.pdf";
 import PerechenSpec from "../../../../../../assets/pdf/applicant/priem2023_special_SPO.pdf";
-import Dogovor from "../../../../../../assets/pdf/applicant/Dogovor_platn_obraz_uslug_2021.pdf";
+import Dogovor from "../../../../../../assets/pdf/applicant/Dogovor_platn_obraz_uslug_2024.pdf";
 import { ReactComponent as PDF } from "../../../../../../assets/svg/office/pdf.svg";
 import { NavLink } from "react-router-dom";
 import kcp2024 from "../../../../../../assets/pdf/applicant/2024-2024/Количество мест для приема на обучение по образовательным программам среднего профессиональн.xlsx";
-import pravilsPriema from "../../../../../../assets/pdf/applicant/2024-2024/Правил приема на обучение по образовательным программам среднего профессионального образования на 2024-25 учебный год.docx";
+
 import pravilsPriema2 from "../../../../../../assets/pdf/applicant/2024-2024/Правила приема на обучение по образовательным программам среднего профессионального образования на 2024-25 учебный год.pdf";
 import prikaz99 from "../../../../../../assets/pdf/applicant/2024-2024/приказ 99.pdf";
 const Spo = observer(() => {
@@ -17,23 +16,6 @@ const Spo = observer(() => {
     <>
       <h1>Информация для студентов, поступающих на направления СПО</h1>{" "}
       <ol>
-        <li>
-          <PDF width={"25px"} height={"25px"} />{" "}
-          <a
-            href={pravilsPriema}
-            className={toggleClassName(
-              "education__link",
-              "education__link-white",
-              "education__link-black",
-              "education__link-contrast"
-            )}
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            Правила приема на обучение по программам среднего профессионального
-            образования в 2024-2025 году
-          </a>
-        </li>{" "}
         <li>
           <PDF width={"25px"} height={"25px"} />{" "}
           <a
@@ -67,22 +49,7 @@ const Spo = observer(() => {
             Приказ об утверждении правил приема на 2024 год
           </a>
         </li>
-        <li>
-          <PDF width={"25px"} height={"25px"} />{" "}
-          <a
-            href={kcp2024}
-            className={toggleClassName(
-              "education__link",
-              "education__link-white",
-              "education__link-black",
-              "education__link-contrast"
-            )}
-            target={"_blank"}
-            rel="noreferrer"
-          >
-            КЦП СПО 24/25 уч.год
-          </a>
-        </li>
+
         <li>
           <NavLink to="../kcp">КЦП СПО 23/24 уч.год</NavLink>
         </li>

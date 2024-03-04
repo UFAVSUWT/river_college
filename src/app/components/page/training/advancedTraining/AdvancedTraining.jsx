@@ -4,10 +4,10 @@ import { toggleClassName } from "../../../../utils/disabled";
 import perech from "../../../../assets/doc/training/Перечень программ повышения квалификации .docx";
 
 import PreiskurantCen from "../../../../assets/pdf/training/PreiskurantCen.pdf";
-import Dogovor from "../../../../assets/pdf/documentPage/Dogovor_platn_obraz_uslug_2021.pdf";
+import Dogovor from "../../../../assets/pdf/applicant/Образец договора об образовании по ДОП.docx";
 import { ReactComponent as PDF } from "../../../../assets/svg/office/pdf.svg";
 import { ReactComponent as DOC } from "../../../../assets/svg/office/word.svg";
-import { NavLink } from "react-router-dom";
+
 const AdvancedTraining = observer(() => {
   return (
     <div
@@ -43,7 +43,7 @@ const AdvancedTraining = observer(() => {
           </li>
           <li>
             <a href={Dogovor} target={"_blank"} rel="noreferrer">
-              <PDF width={"25px"} height={"25px"} />
+              <DOC width={"25px"} height={"25px"} />
             </a>{" "}
             <a href={Dogovor} target={"_blank"} rel="noreferrer">
               Образец договора об оказании платных образовательных услуг
