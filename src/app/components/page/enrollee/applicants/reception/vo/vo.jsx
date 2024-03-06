@@ -15,7 +15,7 @@ import { NavLink } from "react-router-dom";
 const HigherEducation = observer(() => {
   return (
     <>
-      <h1>Информация для студентов, поступающих на направления СПО</h1>
+      <h1>Информация для студентов, поступающих на направления ВО</h1>
       <ol>
         <li>
           <PDF width={"25px"} height={"25px"} />{" "}

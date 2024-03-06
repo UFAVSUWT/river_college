@@ -3,7 +3,7 @@ import React from "react";
 import { toggleClassName } from "../../../../../../utils/disabled";
 
 import InfoMedOsmotr from "../../../../../../assets/pdf/applicant/infoMedOsmotr.pdf";
-import PerechenSpec from "../../../../../../assets/pdf/applicant/priem2023_special_SPO.pdf";
+import PerechenSpec from "../../../../../../assets/pdf/applicant/priem2024_special_SPO.pdf";
 import Dogovor from "../../../../../../assets/pdf/applicant/Dogovor_platn_obraz_uslug_2024.pdf";
 import { ReactComponent as PDF } from "../../../../../../assets/svg/office/pdf.svg";
 import { NavLink } from "react-router-dom";
@@ -51,7 +51,7 @@ const Spo = observer(() => {
         </li>
 
         <li>
-          <NavLink to="../kcp">КЦП СПО 23/24 уч.год</NavLink>
+          <NavLink to="../kcp">КЦП СПО 2024/2025 уч.год</NavLink>
         </li>
         <li>
           <NavLink
@@ -168,7 +168,7 @@ const Spo = observer(() => {
             профессионального образования
           </a>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to="../educationCosts"
             className={toggleClassName(
@@ -180,7 +180,7 @@ const Spo = observer(() => {
           >
             Стоимость обучения на коммерческой основе на 2023/2024 учебный год
           </NavLink>
-        </li>
+        </li> */}
       </ol>
     </>
   );

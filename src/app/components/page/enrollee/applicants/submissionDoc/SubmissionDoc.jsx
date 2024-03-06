@@ -2,7 +2,7 @@ import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName } from "../../../../../utils/disabled";
 import Perechen from "../../../../../assets/doc/applicant/perechen.docx";
-import Priem2023 from "../../../../../assets/pdf/applicant/priem2023_v_el_forme.pdf";
+import Priem2023 from "../../../../../assets/pdf/applicant/priem2024_v_el_forme.pdf";
 import zayavlenie from "../../../../../assets/doc/enrollee/zayavlenie_na_postuplenie.doc";
 import med from "../../../../../assets/pdf/enrolle/медкомиссия.pdf";
 import { ReactComponent as DOC } from "../../../../../assets/svg/office/word.svg";
@@ -164,7 +164,8 @@ const SubmissionDoc = observer(() => {
               "education__link-contrast"
             )}
           >
-            Документация
+            Прием документов для поступления на обучение в университет по
+            основным образовательным программам СПО в электронной форме
           </a>
         </p>
       </section>
