@@ -106,7 +106,7 @@ const AutoScheduleTeachers = ({
         setTeachersLessonsOnDay(
           lessonsOfSelectedTeacher8.filter((e) => e.date === day)
         );
-      } else if (week === 9) {
+      } else if (week === 11) {
         setTeachersLessonsOnDay(
           lessonsOfSelectedTeacher9.filter((e) => e.date === day)
         );

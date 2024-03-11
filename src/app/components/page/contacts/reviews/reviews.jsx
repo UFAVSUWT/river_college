@@ -5,12 +5,43 @@ import vipusk from "../../../../assets/img/reviews/vipusk.png";
 import work from "../../../../assets/img/reviews/work.png";
 import prakt from "../../../../assets/img/reviews/prakt.png";
 import pedagogi from "../../../../assets/img/reviews/pedagogi.png";
+import ank from "../../../../assets/img/reviews/qr-code (2).png";
+
 const Reviews = observer(() => {
   return (
     <>
       {" "}
       <div className="reviews_container">
         <h1>Анкетирование</h1>
+        <section>
+          <h2>Уважаемые студенты!</h2>
+          <div>
+            {" "}
+            <div className="content">
+              <p>
+                Анкета «О ресурсном обеспечении, условиях, содержании,
+                организации и качестве образовательного процесса в части
+                реализации Образовательных Программ»:{" "}
+                <a
+                  href="https://forms.yandex.ru/cloud/65e97f6f73cee70185416be2/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={toggleClassName(
+                    "education__link",
+                    "education__link-white",
+                    "education__link-black",
+                    "education__link-contrast"
+                  )}
+                >
+                  Анкета студента
+                </a>
+              </p>
+            </div>
+            <div className="image">
+              <img src={ank} alt="изображение уплыло" />
+            </div>
+          </div>
+        </section>
         <section>
           <h2>Уважаемые работодатели!</h2>
           <div>

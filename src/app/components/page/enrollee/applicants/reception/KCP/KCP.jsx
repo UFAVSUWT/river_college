@@ -2,6 +2,9 @@ import { observer } from "mobx-react-lite";
 import React from "react";
 import { toggleClassName } from "../../../../../../utils/disabled";
 import TableWrapper from "../../../../../common/tableWrapper/TableWrapper";
+import { ReactComponent as PDF } from "../../../../../../assets/svg/office/pdf.svg";
+import kcp from "../../../../../../assets/pdf/enrolle/План приема на 2024-2025 уч.г.pdf";
+
 const KCP = observer(() => {
   return (
     <section className="flex jcc">
@@ -14,6 +17,24 @@ const KCP = observer(() => {
         )}
       >
         <h1>КЦП СПО на 2024/2025 учeбный год</h1>
+
+        <li>
+          <PDF width={"25px"} height={"25px"} />{" "}
+          <a
+            href={kcp}
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            План приема на 2024-2025 учебный год
+          </a>
+        </li>
+
         <TableWrapper>
           <table>
             <tbody>
