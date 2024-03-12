@@ -110,9 +110,7 @@ const ApplicantsEnrollee = observer(() => {
                 width="50%"
                 height={"50%"}
               />
-              <div className="applicantsEnrollee-header-title">
-                Свяжи свою <br /> жизнь с морем!
-              </div>
+              <div className="applicantsEnrollee-header-title"></div>
             </div>
           </div>
         </section>
