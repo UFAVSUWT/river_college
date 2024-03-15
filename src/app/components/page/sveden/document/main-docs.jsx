@@ -46,6 +46,7 @@ import SamoobsOrchet19 from "../../../../assets/pdf/documentPage/othet_o_samoobs
 import SamoobsOrchet20 from "../../../../assets/pdf/documentPage/othet_o_samoobsledovanii_2020.pdf";
 import SamoobsOrchet21 from "../../../../assets/pdf/documentPage/othet_o_samoobsledovanii_2021.pdf";
 import SamoobsOrchet22 from "../../../../assets/pdf/documentPage/othet_o_samoobsledovanii_2022.pdf";
+import SamoobsOrchet23 from "../../../../assets/pdf/documentPage/othet_o_samoobsledovanii_2023.pdf";
 
 import PoryadPlatnUslug from "../../../../assets/pdf/documentPage/Poryadok_platn_uslug.pdf";
 import PoryadPlatnObrUslug21 from "../../../../assets/pdf/documentPage/Dogovor_platn_obraz_uslug_2021.pdf";
@@ -523,6 +524,13 @@ const MainDocs = ({ isActive }) => {
           title={"Отчеты о самообследовании"}
         >
           <ul>
+            <li itemProp="reportEduDocLink" className="doc__item">
+              <PDF height={"40px"} width={"40px"} />
+              <a href={SamoobsOrchet23} target={"_blank"} rel="noreferrer">
+                Отчет о результатах самообследования Уфимского филиала ФГБОУ ВО
+                "ВГУВТ" за 2023 год
+              </a>
+            </li>
             <li itemProp="reportEduDocLink" className="doc__item">
               <PDF height={"40px"} width={"40px"} />
               <a href={SamoobsOrchet22} target={"_blank"} rel="noreferrer">
