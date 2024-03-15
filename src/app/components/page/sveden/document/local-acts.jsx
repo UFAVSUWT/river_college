@@ -15,12 +15,10 @@ import pravila_vnutr_rasp from "../../../../assets/pdf/documentPage/local/11. П
 import pravila_org_sluzb from "../../../../assets/pdf/documentPage/local/12. Правила внутр.распорядка и орг-ции службы курсантов.pdf";
 import HrLine from "../../../common/hrLine/HrLine";
 import poloz1 from "../../../../assets/pdf/documentPage/Для акредитации/ПЛЖ о внутренней оценке качества образоват.деят..pdf";
-import poloz4 from "../../../../assets/pdf/documentPage/Для акредитации/Приказ ВГУВТ О проведении ВОКО № 534-с от 05.12.22.pdf";
+import poloz4 from "../../../../assets/pdf/documentPage/Для акредитации/приказ № 381-с от 22.09.2023 ВОКО.pdf";
 import poloz5 from "../../../../assets/pdf/documentPage/Для акредитации/Приказ Уф.ф. О назначении ответственных за ВОКО №299 от 27.09.22.PDF";
-import poloz6 from "../../../../assets/pdf/documentPage/Для акредитации/Приказ Уф.ф. О проведении ВОКО №361 от 07.12.22.PDF";
-import vokoSudovojd from "../../../../assets/pdf/documentPage/local/Отчет по ВОКО 26.02.03 Судовождение.pdf";
-import vokoElectrooborud from "../../../../assets/pdf/documentPage/local/Отчет по ВОКО 26.02.06 Эксплуатация судового электрооборудования и средств автоматики.pdf";
-import vokoEnerg from "../../../../assets/pdf/documentPage/local/Отчет по ВОКО 26.02.05 Эксплуатация судовых энергетических установок.pdf";
+import poloz6 from "../../../../assets/pdf/documentPage/Для акредитации/Приказ № 382 от 26.09.23 о проведении внутренней оценки качества образовательной деятельности.PDF";
+import voko from "../../../../assets/pdf/documentPage/Для акредитации/Отчет по ВОКО Уфимский филиал 2023.pdf";
 import poryadok from "../../../../assets/pdf/documentPage/local/13. Порядок организации дистанционной работы и взаимодействия дистанционного работника и работодателя.pdf";
 import prav_trud from "../../../../assets/pdf/documentPage/local/14. 00000000510.pdf";
 import pol_ob_okaz_platn from "../../../../assets/pdf/documentPage/local/15. Положение об оказании платных услуг по программамВО_СПО_Приказ 48 от 08.04.2022.pdf";
@@ -31,7 +29,6 @@ import poloj_o_vneuch from "../../../../assets/pdf/documentPage/local/18. 000000
 import poloj_o_dist from "../../../../assets/pdf/documentPage/local/19. 00000000685.pdf";
 import poloj_o_dist_dpo from "../../../../assets/pdf/documentPage/local/20. 00000000456.pdf";
 import pol_o_dop_obr from "../../../../assets/pdf/documentPage/local/21. 00000000706.pdf";
-import pol_o_komis from "../../../../assets/pdf/documentPage/local/22. Положение о комиссии по переводу студентов с платного обучения на бесплатное.pdf";
 import pol_o_perezach from "../../../../assets/pdf/documentPage/local/23. Положение о перезачете (переаттестации) изученных учебных дисциплин.pdf";
 import pol_o_plan from "../../../../assets/pdf/documentPage/local/24. 00000000409.pdf";
 import prikaz107 from "../../../../assets/pdf/documentPage/local/25. Приказ 107 от 05.07.2022.pdf";
@@ -71,7 +68,6 @@ import ureg_konfl from "../../../../assets/pdf/documentPage/local/59. 1621430308
 import pol_o_kom from "../../../../assets/pdf/documentPage/local/60. 00000000423.pdf";
 import konk_kom from "../../../../assets/pdf/documentPage/local/61. Положение о конкурсной комиссии и порядке проведения конкурсов на замещение вакантных должностей.pdf";
 import pol_o_priemn from "../../../../assets/pdf/documentPage/local/62. 00000000574.pdf";
-import vokoPerev from "../../../../assets/pdf/documentPage/local/Отчет по ВОКО 23.02.01 Организация перевозок и управление на транспорте.pdf";
 
 const LocalActs = ({ isActive }) => {
   return (
@@ -221,29 +217,8 @@ const LocalActs = ({ isActive }) => {
         <ul>
           <li itemProp="localActStud" className="doc__item">
             <PDF height={"40px"} width={"40px"} />
-            <a href={vokoSudovojd} target={"_blank"} rel="noreferrer">
-              Отчет по ВОКО 26.02.03 Судовождение
-            </a>
-          </li>
-          <li itemProp="localActStud" className="doc__item">
-            <PDF height={"40px"} width={"40px"} />
-            <a href={vokoEnerg} target={"_blank"} rel="noreferrer">
-              Отчет по ВОКО 26.02.05 Эксплуатация судовых энергетических
-              установок
-            </a>
-          </li>
-          <li itemProp="localActStud" className="doc__item">
-            <PDF height={"40px"} width={"40px"} />
-            <a href={vokoElectrooborud} target={"_blank"} rel="noreferrer">
-              Отчет по ВОКО 26.02.06 Эксплуатация судового электрооборудования и
-              средств автоматики
-            </a>
-          </li>
-          <li itemProp="localActStud" className="doc__item">
-            <PDF height={"40px"} width={"40px"} />
-            <a href={vokoPerev} target={"_blank"} rel="noreferrer">
-              Отчет по ВОКО 23.02.01 Организация перевозок и управление на
-              транспорте
+            <a href={voko} target={"_blank"} rel="noreferrer">
+              Отчет по ВОКО Уфимский филиал 2023 г.
             </a>
           </li>
           <li itemProp="localActStud" className="doc__item">
@@ -256,7 +231,7 @@ const LocalActs = ({ isActive }) => {
           <li className="doc__item">
             <PDF height={"40px"} width={"40px"} />
             <a href={poloz4} target={"_blank"} rel="noreferrer">
-              Приказ ВГУВТ О проведении ВОКО № 534-с от 05.12.22
+              Приказ № 381-с от 22.09.2023 ВОКО
             </a>
           </li>
           <li itemProp="localActStud" className="doc__item">
@@ -268,7 +243,8 @@ const LocalActs = ({ isActive }) => {
           <li className="doc__item">
             <PDF height={"40px"} width={"40px"} />
             <a href={poloz6} target={"_blank"} rel="noreferrer">
-              Приказ Уф.ф. О проведении ВОКО №361 от 07.12.22
+              Приказ № 382 от 26.09.23 о проведении внутренней оценки качества
+              образовательной деятельности
             </a>
           </li>
         </ul>

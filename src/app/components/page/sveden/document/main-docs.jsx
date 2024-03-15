@@ -10,7 +10,7 @@ import UstavChange23 from "../../../../assets/pdf/documentPage/Изменени�
 import listZapisi from "../../../../assets/pdf/documentPage/Лист записи от 08.09.2023.pdf";
 import Pologen22 from "../../../../assets/pdf/documentPage/Pologen_2022.pdf";
 import Pologen22Dop from "../../../../assets/pdf/documentPage/Pologen_dop.pdf";
-import LicenzVip from "../../../../assets/pdf/documentPage/Выписка из реестра лицензий по состоянию на 04.07.2023 г..pdf";
+import LicenzVip from "../../../../assets/pdf/documentPage/Выписка от 13.03.2024.pdf";
 
 import AkrVsuwt from "../../../../assets/pdf/documentPage/Akkr_VSUWT_2019.pdf";
 import AkrVsuwtPril1 from "../../../../assets/pdf/documentPage/Akkr_VSUWT_2019_pril1.pdf";

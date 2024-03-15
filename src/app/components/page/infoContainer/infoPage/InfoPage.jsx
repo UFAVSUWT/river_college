@@ -18,7 +18,7 @@ const InfoPage = observer(() => {
         "infopage-contrast"
       )}`}
     >
-      <InfoContainer
+      {/*    <InfoContainer
         title="Новости университета"
         newsTitle="Митинг, посвящённый Дню защитника Отечества"
         btnTitle="Все новости"
@@ -57,7 +57,31 @@ const InfoPage = observer(() => {
         </div>
 
         <HrLine />
-      </InfoContainer>
+      </InfoContainer> */}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          padding: "20px",
+        }}
+      >
+        <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
+          Уфимский филиал вошел в видеорепортаж о нашей республике,
+          подготовленный для Всероссийского телемарафона «Истоки», прошедшего 14
+          марта 2024 г. в Международный день рек.{" "}
+        </h2>
+        <iframe
+          src="https://vk.com/video_ext.php?oid=-129739201&id=456239158&hd=2"
+          width="853"
+          height="480"
+          allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+          frameborder="0"
+          allowfullscreen
+          title=" "
+        ></iframe>
+      </div>
+      <HrLine />
       {images.image !== "off" ? <NewsCardContainer /> : null}
     </div>
   );
