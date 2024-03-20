@@ -4,7 +4,7 @@ import React from "react";
 import { toggleClassName } from "../../../../utils/disabled";
 import Ustav from "../../../../assets/pdf/documentPage/Ustav_2017.pdf";
 import Licenz from "../../../../assets/pdf/documentPage/licenz_vip20220916.pdf";
-import Akkr from "../../../../assets/pdf/documentPage/Akkr_VSUWT_2019.pdf";
+import Akkr from "../../../../assets/pdf/documentPage/Выписка от 13.03.2024.pdf";
 import PolozObObuch from "../../../../assets/pdf/training/polozObObuch.PDF";
 import PolozObPlatn from "../../../../assets/pdf/training/polozObPlatn.pdf";
 import ObrazecDiplomaOProfPerepodg from "../../../../assets/pdf/training/obrazecDiplomaOProfPerepodg.pdf";

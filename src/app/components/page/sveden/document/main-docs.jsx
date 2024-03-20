@@ -11,21 +11,8 @@ import listZapisi from "../../../../assets/pdf/documentPage/Лист запис�
 import Pologen22 from "../../../../assets/pdf/documentPage/Pologen_2022.pdf";
 import Pologen22Dop from "../../../../assets/pdf/documentPage/Pologen_dop.pdf";
 import LicenzVip from "../../../../assets/pdf/documentPage/Выписка от 13.03.2024.pdf";
-
-import AkrVsuwt from "../../../../assets/pdf/documentPage/Akkr_VSUWT_2019.pdf";
-import AkrVsuwtPril1 from "../../../../assets/pdf/documentPage/Akkr_VSUWT_2019_pril1.pdf";
-import AkrVsuwtPril2 from "../../../../assets/pdf/documentPage/Akkr_VSUWT_2019_pril2.pdf";
-import AkrVsuwtPril3 from "../../../../assets/pdf/documentPage/Akkr_VSUWT_2019_pril3.pdf";
-import AkrVsuwtPril4 from "../../../../assets/pdf/documentPage/Akkr_VSUWT_2019_pril4.pdf";
-import AkrVsuwtPril5 from "../../../../assets/pdf/documentPage/Akkr_VSUWT_2019_pril5.pdf";
-import AkrVsuwtPril6 from "../../../../assets/pdf/documentPage/Akkr_VSUWT_2019_pril6.pdf";
-import AkrVsuwtPril9 from "../../../../assets/pdf/documentPage/Akkr_VSUWT_2019_pril9.pdf";
-import AkrVsuwtPril10 from "../../../../assets/pdf/documentPage/Akkr_VSUWT_2019_pril10.pdf";
-import AkrVsuwtPril12 from "../../../../assets/pdf/documentPage/Akkr_VSUWT_pril12.pdf";
-import AkrVsuwtPril13 from "../../../../assets/pdf/documentPage/Akkr_VSUWT_pril13.pdf";
-import Prikaz706 from "../../../../assets/pdf/documentPage/Prikaz706.pdf";
-import Prikaz734 from "../../../../assets/pdf/documentPage/Prikaz734.pdf";
-import Prikaz950 from "../../../../assets/pdf/documentPage/Prikaz950.pdf";
+import vipiskaIzReestra from "../../../../assets/pdf/documentPage/Выписка из Реестра о Гос.аккредитации от 18.03.2024.pdf";
+import uvedoml from "../../../../assets/pdf/documentPage/Уведомление о внесении изменений в реестр лицензий от 13.03.2024.pdf";
 
 import Plan_FHD_2023 from "../../../../assets/doc/documentPage/План ФХД 2023г. от 30.06.2023.docx";
 
@@ -181,122 +168,34 @@ const MainDocs = ({ isActive }) => {
               <PDF height={"40px"} width={"40px"} />
               <a href={LicenzVip} target={"_blank"} rel="noreferrer">
                 Выписка из реестра лицензий Федеральной службы по надзору в
-                сфере образования и науки (4.07.2023)
+                сфере образования и науки (13.03.2024)
+              </a>
+            </li>
+            <li className="doc__item">
+              <PDF height={"40px"} width={"40px"} />
+              <a
+                itemProp="accreditationDocLink"
+                href={uvedoml}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                Уведомление о внесении изменений в реестр лицензий от
+                13.03.2024г.
               </a>
             </li>
           </ul>
 
           <ul>
-            <li itemProp="accreditationDocLink" className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={AkrVsuwt} target={"_blank"} rel="noreferrer">
-                Свидетельство о государственной аккредитации № 2998 от
-                27.02.2019 (ВГУВТ)
-              </a>
-            </li>
-
-            <li itemProp="accreditationDocLink" className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={AkrVsuwtPril1} target={"_blank"} rel="noreferrer">
-                Приложение №1 к свидетельству о государственной аккредитации
-                (ВГУВТ)
-              </a>
-            </li>
-
-            <li itemProp="accreditationDocLink" className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={AkrVsuwtPril2} target={"_blank"} rel="noreferrer">
-                Приложение №2 к свидетельству о государственной аккредитации
-                (Казанский филиал)
-              </a>
-            </li>
-
-            <li itemProp="accreditationDocLink" className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={AkrVsuwtPril3} target={"_blank"} rel="noreferrer">
-                Приложение №3 к свидетельству о государственной аккредитации
-                (Каспийский институт морского и речного транспорта, филиал
-                ВГУВТ)
-              </a>
-            </li>
-
-            <li itemProp="accreditationDocLink" className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={AkrVsuwtPril4} target={"_blank"} rel="noreferrer">
-                Приложение №4 к свидетельству о государственной аккредитации
-                (Пермский филиал)
-              </a>
-            </li>
-
-            <li itemProp="accreditationDocLink" className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={AkrVsuwtPril5} target={"_blank"} rel="noreferrer">
-                Приложение №5 к свидетельству о государственной аккредитации
-                (Рыбинский филиал)
-              </a>
-            </li>
-
-            <li itemProp="accreditationDocLink" className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={AkrVsuwtPril6} target={"_blank"} rel="noreferrer">
-                Приложение №6 к свидетельству о государственной аккредитации
-                (Уфимский филиал)
-              </a>
-            </li>
-
-            <li itemProp="accreditationDocLink" className="doc__item">
-              <a href={AkrVsuwtPril9} target={"_blank"} rel="noreferrer">
-                Приложение №9 к свидетельству о государственной аккредитации
-                (Магистратура ВГУВТ, Юриспруденция)
-              </a>
-            </li>
-
-            <li itemProp="accreditationDocLink" className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={AkrVsuwtPril10} target={"_blank"} rel="noreferrer">
-                Приложение №10 к свидетельству о государственной аккредитации
-                (Уфимский филиал, ОП)
-              </a>
-            </li>
-
-            <li itemProp="accreditationDocLink" className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={AkrVsuwtPril12} target={"_blank"} rel="noreferrer">
-                Приложение №12 к свидетельству о государственной аккредитации
-                (ВГУВТ)
-              </a>
-            </li>
-
-            <li itemProp="accreditationDocLink" className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={AkrVsuwtPril13} target={"_blank"} rel="noreferrer">
-                Приложение №13 к свидетельству о государственной аккредитации
-                (Пермский филиал)
-              </a>
-            </li>
-
             <li className="doc__item">
               <PDF height={"40px"} width={"40px"} />
-              <a href={Prikaz706} target={"_blank"} rel="noreferrer">
-                Приказ Рособрнадзора №706 от 29.06.2020 "О переоформлении
-                свидетельства о государственной аккредитации образовательной
-                деятельности ФГБОУ ВО "ВГУВТ"
-              </a>
-            </li>
-            <li className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={Prikaz734} target={"_blank"} rel="noreferrer">
-                Приказ Рособрнадзора №734 от 28.05.2021 "О переоформлении
-                свидетельства о государственной аккредитации образовательной
-                деятельности ФГБОУ ВО "ВГУВТ"
-              </a>
-            </li>
-            <li className="doc__item">
-              <PDF height={"40px"} width={"40px"} />
-              <a href={Prikaz950} target={"_blank"} rel="noreferrer">
-                Приказ Рособрнадзора №950 от 09.07.2021 "О переоформлении
-                свидетельства о государственной аккредитации образовательной
-                деятельности ФГБОУ ВО "ВГУВТ"
+              <a
+                itemProp="accreditationDocLink"
+                href={vipiskaIzReestra}
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                Выписка из Реестра о Государственной аккредитации от
+                18.03.2024г.
               </a>
             </li>
           </ul>

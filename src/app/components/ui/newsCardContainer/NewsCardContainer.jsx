@@ -4,7 +4,7 @@ import NewsCard from "../../common/newsCard/news-card";
 import sport from "../../../assets/img/newsimg/sport.jpg";
 import gord from "../../../assets/img/newsimg/gord.jpg";
 import proect from "../../../assets/img/newsimg/proect.jpg";
-import scien from "../../../assets/img/newsimg/scien.jpg";
+import scien from "../../../assets/img/newsimg/1.jpeg";
 const NewsCardContainer = () => {
   const [isShowing, setIsShowing] = useState(false);
   const info = [
@@ -24,7 +24,7 @@ const NewsCardContainer = () => {
       href: "home/univercityNews/studentsLive",
     },
     {
-      title: "«Ярмарка научных и инновационных проектов»",
+      title: "«Формула профессионального успеха»",
       img: scien,
       href: "home/univercityNews/science",
     },

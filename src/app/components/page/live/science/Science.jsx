@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-import scien from "../../../../assets/img/newsimg/scien.jpg";
+import scien from "../../../../assets/img/newsimg/1.jpeg";
 import NewsCard from "../../../common/newsCard/news-card";
 
 const Science = () => {
   const [isShowing, setIsShowing] = useState(false);
   const info = [
     {
-      title: "«Ярмарка научных и инновационных проектов»",
+      title: "«Формула профессионального успеха»",
       img: scien,
       href: "/home/univercityNews/science",
     },
