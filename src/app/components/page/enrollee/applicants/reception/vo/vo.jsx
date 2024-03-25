@@ -3,7 +3,7 @@ import { observer } from "mobx-react-lite";
 import vozmPodachi from "../../../../../../assets/pdf/applicant/VO/Информация о возможности подачи документов, с использованием суперсервиса Поступление в ВУЗ онлайн посредством ЕПГУ.pdf";
 import osobPrava from "../../../../../../assets/pdf/applicant/VO/Информация о необходимости прохождения поступающими обязательного предварительного  мед. осмотра.pdf";
 import predostOsobPrav from "../../../../../../assets/pdf/applicant/VO/Информация о предоставлении особых прав и особого преимущества.pdf";
-import obrazecDogovora from "../../../../../../assets/pdf/applicant/VO/Образец договора на обучение по образовательным программам среднего профессионального образования и высшего образования.pdf";
+import obrazecDogovora from "../../../../../../assets/pdf/applicant/Dogovor_platn_obraz_uslug_2024.pdf";
 import perechVstupIspit from "../../../../../../assets/pdf/applicant/VO/Перечень вступительных испытаний с указанием по каждому вступительному испытанию следующих сведений.pdf";
 import perechNaptavPodgot from "../../../../../../assets/pdf/applicant/VO/Перечень направлений подготовки (специальностей).pdf";
 import poryadokPodach from "../../../../../../assets/pdf/applicant/VO/Порядок подачи и рассмотрения  апелляции по результатам вступительных испытаний.pdf";

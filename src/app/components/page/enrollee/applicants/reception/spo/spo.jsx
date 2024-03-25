@@ -7,8 +7,6 @@ import PerechenSpec from "../../../../../../assets/pdf/applicant/priem2024_speci
 import Dogovor from "../../../../../../assets/pdf/applicant/Dogovor_platn_obraz_uslug_2024.pdf";
 import { ReactComponent as PDF } from "../../../../../../assets/svg/office/pdf.svg";
 import { NavLink } from "react-router-dom";
-import kcp2024 from "../../../../../../assets/pdf/applicant/2024-2024/Количество мест для приема на обучение по образовательным программам среднего профессиональн.xlsx";
-
 import pravilsPriema2 from "../../../../../../assets/pdf/applicant/2024-2024/Правила приема на обучение по образовательным программам среднего профессионального образования на 2024-25 учебный год.pdf";
 import prikaz99 from "../../../../../../assets/pdf/applicant/2024-2024/приказ 99.pdf";
 const Spo = observer(() => {
