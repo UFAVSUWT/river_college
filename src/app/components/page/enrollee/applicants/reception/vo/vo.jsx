@@ -12,6 +12,11 @@ import pravilaPriema from "../../../../../../assets/pdf/applicant/VO/Прави�
 import { ReactComponent as PDF } from "../../../../../../assets/svg/office/pdf.svg";
 import { toggleClassName } from "../../../../../../utils/disabled";
 import { NavLink } from "react-router-dom";
+
+import cel_obuck from "../../../../../../assets/pdf/enrolle/Квота для приема лиц, поступающих на целевое обучение.pdf";
+import osob_prava from "../../../../../../assets/pdf/enrolle/Квота для приема лиц, поступающих особым правам.pdf";
+import otd_kvota from "../../../../../../assets/pdf/enrolle/Квота для приема лиц, поступающих по отдельной квоте.pdf";
+import preim from "../../../../../../assets/pdf/enrolle/Информация о предоставлении особых прав и особого преимущества.pdf";
 const HigherEducation = observer(() => {
   return (
     <>
@@ -76,8 +81,72 @@ const HigherEducation = observer(() => {
           >
             План приема в Уфимский филиал ФГБОУ ВО "ВГУВТ" по программе высшего
             образования специалитет на 2024-2025 учебный год на 2024-2025 уч.
-            год
+            год (без учета квот)
           </NavLink>
+        </li>
+        <li>
+          <PDF width={"25px"} height={"25px"} />{" "}
+          <a
+            href={cel_obuck}
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            Квота для приема лиц, поступающих на целевое обучение
+          </a>
+        </li>
+        <li>
+          <PDF width={"25px"} height={"25px"} />{" "}
+          <a
+            href={osob_prava}
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            Квота для приема лиц, поступающих особым правам
+          </a>
+        </li>
+        <li>
+          <PDF width={"25px"} height={"25px"} />{" "}
+          <a
+            href={otd_kvota}
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            Квота для приема лиц, поступающих по отдельной квоте
+          </a>
+        </li>
+        <li>
+          <PDF width={"25px"} height={"25px"} />{" "}
+          <a
+            href={preim}
+            className={toggleClassName(
+              "education__link",
+              "education__link-white",
+              "education__link-black",
+              "education__link-contrast"
+            )}
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            Информация о предоставлении особых прав и особого преимущества
+          </a>
         </li>
         <li>
           <NavLink
