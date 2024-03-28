@@ -5,9 +5,21 @@ import sport from "../../../assets/img/newsimg/sport.jpg";
 import gord from "../../../assets/img/newsimg/gord.jpg";
 import proect from "../../../assets/img/newsimg/proect.jpg";
 import scien from "../../../assets/img/newsimg/1.jpeg";
+import anons from "../../../assets/img/newsimg/2.jpg";
+import moryachok from "../../../assets/img/newsimg/3.jpg";
 const NewsCardContainer = () => {
   const [isShowing, setIsShowing] = useState(false);
   const info = [
+    {
+      title: "Викторина А ну-ка, морячок!",
+      img: moryachok,
+      href: "home/univercityNews/moryachok",
+    },
+    {
+      title: "Анонс попечительского совета",
+      img: anons,
+      href: "home/univercityNews/anonsPopechSoveta",
+    },
     {
       title: "Лыжня России — 2024!",
       img: sport,

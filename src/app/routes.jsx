@@ -121,6 +121,8 @@ import ProgrammiProfPerepodgotovki from "./components/page/training/programmi-pr
 import ContactsCdo from "./components/page/training/contacts/contacts";
 import Health from "./components/page/learning/health/health";
 import Services from "./components/page/homePage/services/services";
+import OneNewsPage6 from "./components/page/one-news-page/one-news-page6";
+import OneNewsPage7 from "./components/page/one-news-page/one-news-page7";
 
 const routes = () => [
   {
@@ -618,6 +620,14 @@ const routes = () => [
       {
         path: "univercityNews/science",
         element: <OneNewsPage4 />,
+      },
+      {
+        path: "univercityNews/anonsPopechSoveta",
+        element: <OneNewsPage6 />,
+      },
+      {
+        path: "univercityNews/moryachok",
+        element: <OneNewsPage7 />,
       },
       {
         path: "univercityNews",
